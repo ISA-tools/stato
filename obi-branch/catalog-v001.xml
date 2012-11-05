@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1352106968698" name="http://purl.obolibrary.org/obo/extended-obi.owl" uri="extended-obi.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1352106968698" name="http://purl.obolibrary.org/obo/obi-edit/" uri="obi-edit.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1352106968698" name="http://purl.obolibrary.org/obo/obi.owl" uri="obi-prs.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1352106968698" name="http://purl.obolibrary.org/obo/obi/external-byhand.owl" uri="external-byhand.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1352106968698" name="http://purl.obolibrary.org/obo/obi/external.owl" uri="external.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1352106968698" name="http://purl.obolibrary.org/obo/obi/externalDerived.owl" uri="externalDerived.owl"/>
+    </group>
+</catalog>

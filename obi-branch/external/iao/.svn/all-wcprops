@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/!svn/ver/542/trunk/src/ontology
+END
+external.owl
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/474/trunk/src/ontology/external.owl
+END
+iao-examples.owl
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/181/trunk/src/ontology/iao-examples.owl
+END
+iao-dev.owl
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/181/trunk/src/ontology/iao-dev.owl
+END
+externalDerived.owl
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/474/trunk/src/ontology/externalDerived.owl
+END
+iao-dev-l.pprj
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/116/trunk/src/ontology/iao-dev-l.pprj
+END
+ontology-metadata.owl
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/542/trunk/src/ontology/ontology-metadata.owl
+END
+iao-owl2.owl
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/180/trunk/src/ontology/iao-owl2.owl
+END
+obo2owlconversion.owl
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/469/trunk/src/ontology/obo2owlconversion.owl
+END
+iao-main.owl
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/530/trunk/src/ontology/iao-main.owl
+END
+ontology-metadata.pprj
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/27/trunk/src/ontology/ontology-metadata.pprj
+END
+IAO.owl
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/360/trunk/src/ontology/IAO.owl
+END
+externalByHand.owl
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/489/trunk/src/ontology/externalByHand.owl
+END
+iao.doc
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/12/trunk/src/ontology/iao.doc
+END
+obsolete.owl
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/529/trunk/src/ontology/obsolete.owl
+END
+iao-dev-l.owl
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/177/trunk/src/ontology/iao-dev-l.owl
+END

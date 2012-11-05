@@ -1,0 +1,10 @@
+K 13
+svn:externals
+V 420
+https://information-artifact-ontology.googlecode.com/svn/trunk/src/ontology iao
+https://information-artifact-ontology.googlecode.com/svn/releases/2012-01-05/ontology iao-bfo2
+https://bfo.googlecode.com/svn/trunk/src/ontology/owl-ruttenberg bfo2
+https://information-artifact-ontology.googlecode.com/svn/releases/2012-01-05/merged iao-bfo2-merged
+http://bfo.googlecode.com/svn/releases/owl-ruttenberg-2010-05-25 bfo2-alan
+
+END

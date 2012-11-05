@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/195/trunk/src/ontology/owl-ruttenberg/exploratory
+END
+bfo-2-draft.owl
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/130/trunk/src/ontology/owl-ruttenberg/exploratory/bfo-2-draft.owl
+END
+temporalized-relations.owl
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/195/trunk/src/ontology/owl-ruttenberg/exploratory/temporalized-relations.owl
+END
+organism-temporal-test.owl
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/195/trunk/src/ontology/owl-ruttenberg/exploratory/organism-temporal-test.owl
+END

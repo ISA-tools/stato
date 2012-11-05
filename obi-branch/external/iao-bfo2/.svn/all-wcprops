@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/573/releases/2012-01-05/ontology
+END
+external.owl
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/537/releases/2012-01-05/ontology/external.owl
+END
+externalDerived.owl
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/534/releases/2012-01-05/ontology/externalDerived.owl
+END
+IAO.owl
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/573/releases/2012-01-05/ontology/IAO.owl
+END
+ontology-metadata.owl
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/534/releases/2012-01-05/ontology/ontology-metadata.owl
+END
+externalByHand.owl
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/537/releases/2012-01-05/ontology/externalByHand.owl
+END
+iao-main.owl
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/573/releases/2012-01-05/ontology/iao-main.owl
+END
+obsolete.owl
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/573/releases/2012-01-05/ontology/obsolete.owl
+END
+catalog-v001.xml
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/573/releases/2012-01-05/ontology/catalog-v001.xml
+END
