@@ -23,11 +23,18 @@
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Import>http://purl.obolibrary.org/obo/obi.owl</Import>
     <Declaration>
+        <Class IRI="http://isa-tools.org/isa/ISA0000002"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="http://isa-tools.org/isa/ISA0000001"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="http://urigen_local_uri/c4ea3563-9aec-4114-a204-a010f58a243f#ISA00000"/>
     </Declaration>
+    <SubClassOf>
+        <Class IRI="http://isa-tools.org/isa/ISA0000002"/>
+        <Class IRI="http://purl.obolibrary.org/obo/OBI_0000181"/>
+    </SubClassOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="http://urigen_local_uri/c4ea3563-9aec-4114-a204-a010f58a243f#ISA00000"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
@@ -47,6 +54,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://isa-tools.org/isa/ISA0000001</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">executes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://isa-tools.org/isa/ISA0000002</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">study group population</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
