@@ -35,6 +35,18 @@
         <Class IRI="http://isa-tools.org/isa/ISA0000005"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://isa-tools.org/isa/ISA0000006"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://isa-tools.org/isa/ISA0000007"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://isa-tools.org/isa/ISA0000008"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://isa-tools.org/isa/ISA0000009"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="http://isa-tools.org/isa/ISA0000001"/>
     </Declaration>
     <Declaration>
@@ -76,14 +88,40 @@
         <Class IRI="http://isa-tools.org/isa/ISA0000003"/>
     </SubClassOf>
     <SubClassOf>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal datatypeIRI="&rdf;PlainLiteral">why &apos;setting datum&apos;????</Literal>
-        </Annotation>
+        <Class IRI="http://isa-tools.org/isa/ISA0000006"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000027"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://isa-tools.org/isa/ISA0000007"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000027"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://isa-tools.org/isa/ISA0000008"/>
+        <Class IRI="http://purl.obolibrary.org/obo/OBI_0000750"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://isa-tools.org/isa/ISA0000008"/>
+        <ObjectMinCardinality cardinality="2">
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000605"/>
+            <Class IRI="http://isa-tools.org/isa/ISA0000006"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://isa-tools.org/isa/ISA0000009"/>
+        <Class IRI="http://purl.obolibrary.org/obo/OBI_0000750"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://isa-tools.org/isa/ISA0000009"/>
+        <ObjectMinCardinality cardinality="2">
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000605"/>
+            <Class IRI="http://isa-tools.org/isa/ISA0000007"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0000750"/>
         <ObjectMinCardinality cardinality="2">
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000605"/>
-            <Class IRI="http://purl.obolibrary.org/obo/IAO_0000140"/>
+            <Class IRI="http://purl.obolibrary.org/obo/IAO_0000027"/>
         </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
@@ -132,6 +170,16 @@
         <Literal datatypeIRI="&rdf;PlainLiteral">executes</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://isa-tools.org/isa/ISA0000002</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">is a population whose individual members realize (may be expressed as) a combination of  inclusion rule values specifications</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://isa-tools.org/isa/ISA0000002</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PERSON: Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://isa-tools.org/isa/ISA0000002</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">study group population</Literal>
@@ -165,6 +213,31 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://isa-tools.org/isa/ISA0000005</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">cartesian product 2 sets</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://isa-tools.org/isa/ISA0000006</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">categorical data item</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://isa-tools.org/isa/ISA0000007</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">continuous data item</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://isa-tools.org/isa/ISA0000008</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">categorical independent variable specification</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://isa-tools.org/isa/ISA0000009</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">continuous independent variable specification</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
+        <IRI>http://purl.obolibrary.org/obo/OBI_0000750</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">factor</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
