@@ -35,18 +35,6 @@
         <Class IRI="http://isa-tools.org/isa/ISA0000005"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://isa-tools.org/isa/ISA0000006"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://isa-tools.org/isa/ISA0000007"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://isa-tools.org/isa/ISA0000008"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://isa-tools.org/isa/ISA0000009"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://isa-tools.org/isa/ISA0000010"/>
     </Declaration>
     <Declaration>
@@ -109,28 +97,6 @@
         <Class IRI="http://isa-tools.org/isa/ISA0000003"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://isa-tools.org/isa/ISA0000006"/>
-        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000027"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://isa-tools.org/isa/ISA0000007"/>
-        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000027"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://isa-tools.org/isa/ISA0000008"/>
-        <ObjectMinCardinality cardinality="2">
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000605"/>
-            <Class IRI="http://isa-tools.org/isa/ISA0000006"/>
-        </ObjectMinCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://isa-tools.org/isa/ISA0000009"/>
-        <ObjectMinCardinality cardinality="2">
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000605"/>
-            <Class IRI="http://isa-tools.org/isa/ISA0000007"/>
-        </ObjectMinCardinality>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="http://isa-tools.org/isa/ISA0000010"/>
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0200166"/>
     </SubClassOf>
@@ -148,28 +114,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://isa-tools.org/isa/ISA0000013"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
-            <ObjectIntersectionOf>
-                <Class IRI="http://purl.obolibrary.org/obo/IAO_0000100"/>
-                <ObjectMinCardinality cardinality="2">
-                    <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                    <Class IRI="http://purl.obolibrary.org/obo/IAO_0000027"/>
-                </ObjectMinCardinality>
-            </ObjectIntersectionOf>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal datatypeIRI="&rdf;PlainLiteral">This statement indicates the &apos;type&apos; of the variable. For example,
-&apos;independent variable specification&apos; &apos;specifies value of&apos; compound</Literal>
-        </Annotation>
-        <Class IRI="http://isa-tools.org/isa/ISA0000013"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000605"/>
-            <Class IRI="http://purl.obolibrary.org/obo/BFO_0000001"/>
-        </ObjectSomeValuesFrom>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000100"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://isa-tools.org/isa/ISA0000015"/>
@@ -189,6 +134,13 @@
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0000750"/>
         <Class IRI="http://isa-tools.org/isa/ISA0000013"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/OBI_0000750"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            <Class IRI="http://purl.obolibrary.org/obo/IAO_0000100"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0000751"/>
@@ -231,8 +183,8 @@
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <InverseObjectProperties>
-        <ObjectProperty IRI="http://isa-tools.org/isa/ISA0000014"/>
         <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000605"/>
+        <ObjectProperty IRI="http://isa-tools.org/isa/ISA0000014"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000219"/>
@@ -297,26 +249,6 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://isa-tools.org/isa/ISA0000006</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">categorical data item</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://isa-tools.org/isa/ISA0000007</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">continuous data item</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://isa-tools.org/isa/ISA0000008</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">categorical independent variable specification</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://isa-tools.org/isa/ISA0000009</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">continuous independent variable specification</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://isa-tools.org/isa/ISA0000010</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">group comparison objective</Literal>
     </AnnotationAssertion>
@@ -336,9 +268,14 @@
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">variable specification</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>http://isa-tools.org/isa/ISA0000014</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">This is the inverse of &apos;specifies value of&apos; and it is intended to say things such as &apos;compound&apos; &apos;assumes values specified by&apos; &apos;independent variable specification&apos;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://isa-tools.org/isa/ISA0000014</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">assumes values given by</Literal>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">assumes values specified by</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
