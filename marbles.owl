@@ -1,0 +1,345 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY isa "http://isa-tools.org/isa/" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/agbeltran/ontologies/2013/0/untitled-ontology-81#"
+     xml:base="http://www.semanticweb.org/agbeltran/ontologies/2013/0/untitled-ontology-81"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:isa="http://isa-tools.org/isa/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/agbeltran/ontologies/2013/0/untitled-ontology-81"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://isa-tools.org/isa/ISA0000051 -->
+
+    <owl:ObjectProperty rdf:about="&isa;ISA0000051">
+        <rdfs:label xml:lang="en">contains</rdfs:label>
+        <rdfs:domain rdf:resource="&isa;ISA0000049"/>
+        <rdfs:range rdf:resource="&isa;ISA0000050"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://isa-tools.org/isa/ISA0000052 -->
+
+    <owl:ObjectProperty rdf:about="&isa;ISA0000052">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="en">hasColor</rdfs:label>
+        <rdfs:domain rdf:resource="&isa;ISA0000050"/>
+        <rdfs:range rdf:resource="&isa;ISA0000053"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://isa-tools.org/isa/ISA0000063 -->
+
+    <owl:DatatypeProperty rdf:about="&isa;ISA0000063">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="en">colorName</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://isa-tools.org/isa/ISA0000049 -->
+
+    <owl:Class rdf:about="&isa;ISA0000049">
+        <rdfs:label xml:lang="en">Bag</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://isa-tools.org/isa/ISA0000050 -->
+
+    <owl:Class rdf:about="&isa;ISA0000050">
+        <rdfs:label xml:lang="en">Marble</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&isa;ISA0000052"/>
+                <owl:onClass rdf:resource="&isa;ISA0000053"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://isa-tools.org/isa/ISA0000053 -->
+
+    <owl:Class rdf:about="&isa;ISA0000053">
+        <rdfs:label xml:lang="en">Color</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://isa-tools.org/isa/ISA0000062 -->
+
+    <owl:Class rdf:about="&isa;ISA0000062">
+        <rdfs:label xml:lang="en">MixedBag</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&isa;ISA0000051"/>
+                        <owl:allValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="&isa;ISA0000050"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="&isa;ISA0000052"/>
+                                        <owl:hasValue rdf:resource="&isa;ISA0000054"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                </owl:complementOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://isa-tools.org/isa/ISA0000067 -->
+
+    <owl:Class rdf:about="&isa;ISA0000067">
+        <rdfs:label xml:lang="en">HomegeneousBag</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&isa;ISA0000049"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&isa;ISA0000051"/>
+                        <owl:allValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&isa;ISA0000052"/>
+                                <owl:hasValue rdf:resource="&isa;ISA0000054"/>
+                            </owl:Restriction>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://isa-tools.org/isa/ISA0000054 -->
+
+    <owl:NamedIndividual rdf:about="&isa;ISA0000054">
+        <rdf:type rdf:resource="&isa;ISA0000053"/>
+        <rdfs:label xml:lang="en">aColor</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://isa-tools.org/isa/ISA0000058 -->
+
+    <owl:NamedIndividual rdf:about="&isa;ISA0000058">
+        <rdf:type rdf:resource="&isa;ISA0000053"/>
+        <rdfs:label xml:lang="en">yellow</rdfs:label>
+        <isa:ISA0000063>yellow</isa:ISA0000063>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://isa-tools.org/isa/ISA0000059 -->
+
+    <owl:NamedIndividual rdf:about="&isa;ISA0000059">
+        <rdf:type rdf:resource="&isa;ISA0000053"/>
+        <rdfs:label xml:lang="en">red</rdfs:label>
+        <isa:ISA0000063>red</isa:ISA0000063>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://isa-tools.org/isa/ISA0000060 -->
+
+    <owl:NamedIndividual rdf:about="&isa;ISA0000060">
+        <rdf:type rdf:resource="&isa;ISA0000053"/>
+        <rdfs:label xml:lang="en">blue</rdfs:label>
+        <isa:ISA0000063>blue</isa:ISA0000063>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://isa-tools.org/isa/ISA0000061 -->
+
+    <owl:NamedIndividual rdf:about="&isa;ISA0000061">
+        <rdf:type rdf:resource="&isa;ISA0000053"/>
+        <rdfs:label xml:lang="en">green</rdfs:label>
+        <isa:ISA0000063>green</isa:ISA0000063>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://isa-tools.org/isa/ISA0000065 -->
+
+    <owl:NamedIndividual rdf:about="&isa;ISA0000065">
+        <rdf:type rdf:resource="&isa;ISA0000050"/>
+        <rdfs:label xml:lang="en">marble1</rdfs:label>
+        <isa:ISA0000052 rdf:resource="&isa;ISA0000060"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://isa-tools.org/isa/ISA0000066 -->
+
+    <owl:NamedIndividual rdf:about="&isa;ISA0000066">
+        <rdf:type rdf:resource="&isa;ISA0000050"/>
+        <rdfs:label xml:lang="en">marble2</rdfs:label>
+        <isa:ISA0000052 rdf:resource="&isa;ISA0000060"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://isa-tools.org/isa/ISA0000068 -->
+
+    <owl:NamedIndividual rdf:about="&isa;ISA0000068">
+        <rdf:type rdf:resource="&isa;ISA0000049"/>
+        <rdfs:label xml:lang="en">bag</rdfs:label>
+        <isa:ISA0000051 rdf:resource="&isa;ISA0000065"/>
+        <isa:ISA0000051 rdf:resource="&isa;ISA0000066"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&isa;ISA0000058"/>
+            <rdf:Description rdf:about="&isa;ISA0000059"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&isa;ISA0000059"/>
+            <rdf:Description rdf:about="&isa;ISA0000061"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&isa;ISA0000058"/>
+            <rdf:Description rdf:about="&isa;ISA0000060"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&isa;ISA0000059"/>
+            <rdf:Description rdf:about="&isa;ISA0000060"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&isa;ISA0000058"/>
+            <rdf:Description rdf:about="&isa;ISA0000061"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&isa;ISA0000060"/>
+            <rdf:Description rdf:about="&isa;ISA0000061"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&isa;ISA0000065"/>
+            <rdf:Description rdf:about="&isa;ISA0000066"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.3.1957) http://owlapi.sourceforge.net -->
+
