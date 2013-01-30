@@ -1,0 +1,366 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY isa "http://isa-tools.org/isa/" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY swrl "http://www.w3.org/2003/11/swrl#" >
+    <!ENTITY swrlb "http://www.w3.org/2003/11/swrlb#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/agbeltran/ontologies/2013/0/untitled-ontology-79#"
+     xml:base="http://www.semanticweb.org/agbeltran/ontologies/2013/0/untitled-ontology-79"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:isa="http://isa-tools.org/isa/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/agbeltran/ontologies/2013/0/untitled-ontology-79"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://isa-tools.org/isa/ISA0000030 -->
+
+    <owl:ObjectProperty rdf:about="&isa;ISA0000030">
+        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
+        <rdfs:label xml:lang="en">has part</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://isa-tools.org/isa/ISA0000034 -->
+
+    <owl:ObjectProperty rdf:about="&isa;ISA0000034">
+        <rdfs:label xml:lang="en">has member</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://isa-tools.org/isa/ISA0000024 -->
+
+    <owl:Class rdf:about="&isa;ISA0000024">
+        <rdfs:label xml:lang="en">study design</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&isa;ISA0000030"/>
+                <owl:someValuesFrom rdf:resource="&isa;ISA0000027"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://isa-tools.org/isa/ISA0000025 -->
+
+    <owl:Class rdf:about="&isa;ISA0000025">
+        <rdfs:label xml:lang="en">parallel group design</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&isa;ISA0000024"/>
+    </owl:Class>
+    
+
+
+    <!-- http://isa-tools.org/isa/ISA0000026 -->
+
+    <owl:Class rdf:about="&isa;ISA0000026">
+        <rdfs:label xml:lang="en">population</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://isa-tools.org/isa/ISA0000027 -->
+
+    <owl:Class rdf:about="&isa;ISA0000027">
+        <rdfs:label xml:lang="en">study group population</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&isa;ISA0000026"/>
+    </owl:Class>
+    
+
+
+    <!-- http://isa-tools.org/isa/ISA0000031 -->
+
+    <owl:Class rdf:about="&isa;ISA0000031">
+        <rdfs:label xml:lang="en">processed material</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://isa-tools.org/isa/ISA0000028 -->
+
+    <owl:NamedIndividual rdf:about="&isa;ISA0000028">
+        <rdf:type rdf:resource="&isa;ISA0000027"/>
+        <rdfs:label xml:lang="en">group1</rdfs:label>
+        <isa:ISA0000034 rdf:resource="&isa;ISA0000032"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://isa-tools.org/isa/ISA0000029 -->
+
+    <owl:NamedIndividual rdf:about="&isa;ISA0000029">
+        <rdf:type rdf:resource="&isa;ISA0000027"/>
+        <rdfs:label xml:lang="en">group2</rdfs:label>
+        <isa:ISA0000034 rdf:resource="&isa;ISA0000033"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://isa-tools.org/isa/ISA0000032 -->
+
+    <owl:NamedIndividual rdf:about="&isa;ISA0000032">
+        <rdf:type rdf:resource="&isa;ISA0000031"/>
+        <rdfs:label xml:lang="en">sample1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://isa-tools.org/isa/ISA0000033 -->
+
+    <owl:NamedIndividual rdf:about="&isa;ISA0000033">
+        <rdf:type rdf:resource="&isa;ISA0000031"/>
+        <rdfs:label xml:lang="en">sample2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://isa-tools.org/isa/ISA0000035 -->
+
+    <owl:NamedIndividual rdf:about="&isa;ISA0000035">
+        <rdf:type rdf:resource="&isa;ISA0000024"/>
+        <rdfs:label xml:lang="en">study design</rdfs:label>
+        <isa:ISA0000030 rdf:resource="&isa;ISA0000028"/>
+        <isa:ISA0000030 rdf:resource="&isa;ISA0000029"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://isa-tools.org/isa/ISA0000036 -->
+
+    <owl:NamedIndividual rdf:about="&isa;ISA0000036">
+        <rdf:type rdf:resource="&isa;ISA0000031"/>
+        <rdfs:label xml:lang="en">sample3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://isa-tools.org/isa/ISA0000037 -->
+
+    <owl:NamedIndividual rdf:about="&isa;ISA0000037">
+        <rdf:type rdf:resource="&isa;ISA0000031"/>
+        <rdfs:label xml:lang="en">sample4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&isa;ISA0000032"/>
+            <rdf:Description rdf:about="&isa;ISA0000033"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="urn:swrl#g1">
+        <rdf:type rdf:resource="&swrl;Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#g2">
+        <rdf:type rdf:resource="&swrl;Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#d">
+        <rdf:type rdf:resource="&swrl;Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#m1">
+        <rdf:type rdf:resource="&swrl;Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#m2">
+        <rdf:type rdf:resource="&swrl;Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&swrl;Imp"/>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="&isa;ISA0000025"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#d"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:head>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="&isa;ISA0000027"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#g1"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="&isa;ISA0000027"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#g2"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="&isa;ISA0000030"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#d"/>
+                                        <swrl:argument2 rdf:resource="urn:swrl#g1"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="&swrl;AtomList"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="&swrl;AtomList"/>
+                                                                <rdf:rest rdf:resource="&rdf;nil"/>
+                                                                <rdf:first>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="&swrl;DifferentIndividualsAtom"/>
+                                                                        <swrl:argument1 rdf:resource="urn:swrl#m1"/>
+                                                                        <swrl:argument2 rdf:resource="urn:swrl#m2"/>
+                                                                    </rdf:Description>
+                                                                </rdf:first>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                                                <swrl:propertyPredicate rdf:resource="&isa;ISA0000034"/>
+                                                                <swrl:argument1 rdf:resource="urn:swrl#g2"/>
+                                                                <swrl:argument2 rdf:resource="urn:swrl#m2"/>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="&isa;ISA0000034"/>
+                                                        <swrl:argument1 rdf:resource="urn:swrl#g1"/>
+                                                        <swrl:argument2 rdf:resource="urn:swrl#m1"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="&isa;ISA0000030"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl#d"/>
+                                                <swrl:argument2 rdf:resource="urn:swrl#g2"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.3.1957) http://owlapi.sourceforge.net -->
+
