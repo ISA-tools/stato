@@ -75,6 +75,14 @@
     
 
 
+    <!-- http://isa-tools.org/isa/ISA0000048 -->
+
+    <owl:ObjectProperty rdf:about="&isa;ISA0000048">
+        <rdfs:label xml:lang="en">hasCardinality</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -90,6 +98,16 @@
 
     <owl:Class rdf:about="&isa;ISA0000024">
         <rdfs:label xml:lang="en">study design</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&isa;ISA0000025"/>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="&isa;ISA0000025"/>
+                    </owl:Class>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&isa;ISA0000030"/>
@@ -134,6 +152,45 @@
     
 
 
+    <!-- http://isa-tools.org/isa/ISA0000038 -->
+
+    <owl:Class rdf:about="&isa;ISA0000038">
+        <rdfs:label xml:lang="en">data transformation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://isa-tools.org/isa/ISA0000039 -->
+
+    <owl:Class rdf:about="&isa;ISA0000039">
+        <rdfs:label xml:lang="en">cartesian product</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&isa;ISA0000038"/>
+    </owl:Class>
+    
+
+
+    <!-- http://isa-tools.org/isa/ISA0000047 -->
+
+    <owl:Class rdf:about="&isa;ISA0000047">
+        <rdfs:label xml:lang="en">cartesian product 2 sets</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&isa;ISA0000039"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/agbeltran/ontologies/2013/0/untitled-ontology-79#not_parallel_group_design -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/agbeltran/ontologies/2013/0/untitled-ontology-79#not_parallel_group_design">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:complementOf rdf:resource="&isa;ISA0000025"/>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&isa;ISA0000024"/>
+    </owl:Class>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -151,6 +208,7 @@
         <rdf:type rdf:resource="&isa;ISA0000027"/>
         <rdfs:label xml:lang="en">group1</rdfs:label>
         <isa:ISA0000034 rdf:resource="&isa;ISA0000032"/>
+        <isa:ISA0000034 rdf:resource="&isa;ISA0000033"/>
     </owl:NamedIndividual>
     
 
@@ -160,7 +218,8 @@
     <owl:NamedIndividual rdf:about="&isa;ISA0000029">
         <rdf:type rdf:resource="&isa;ISA0000027"/>
         <rdfs:label xml:lang="en">group2</rdfs:label>
-        <isa:ISA0000034 rdf:resource="&isa;ISA0000033"/>
+        <isa:ISA0000034 rdf:resource="&isa;ISA0000032"/>
+        <isa:ISA0000034 rdf:resource="&isa;ISA0000036"/>
     </owl:NamedIndividual>
     
 
@@ -212,6 +271,26 @@
     
 
 
+    <!-- http://www.semanticweb.org/agbeltran/ontologies/2013/0/untitled-ontology-79#group3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/agbeltran/ontologies/2013/0/untitled-ontology-79#group3">
+        <rdf:type rdf:resource="&isa;ISA0000027"/>
+        <isa:ISA0000034 rdf:resource="&isa;ISA0000036"/>
+        <isa:ISA0000034 rdf:resource="&isa;ISA0000037"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/agbeltran/ontologies/2013/0/untitled-ontology-79#study_design_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/agbeltran/ontologies/2013/0/untitled-ontology-79#study_design_2">
+        <rdf:type rdf:resource="&isa;ISA0000024"/>
+        <isa:ISA0000030 rdf:resource="&isa;ISA0000028"/>
+        <isa:ISA0000030 rdf:resource="http://www.semanticweb.org/agbeltran/ontologies/2013/0/untitled-ontology-79#group3"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -220,6 +299,41 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&isa;ISA0000033"/>
+            <rdf:Description rdf:about="&isa;ISA0000036"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&isa;ISA0000036"/>
+            <rdf:Description rdf:about="&isa;ISA0000037"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&isa;ISA0000032"/>
+            <rdf:Description rdf:about="&isa;ISA0000036"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&isa;ISA0000032"/>
+            <rdf:Description rdf:about="&isa;ISA0000037"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&isa;ISA0000033"/>
+            <rdf:Description rdf:about="&isa;ISA0000037"/>
+        </owl:distinctMembers>
+    </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="&owl;AllDifferent"/>
         <owl:distinctMembers rdf:parseType="Collection">
@@ -238,13 +352,13 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    <rdf:Description rdf:about="urn:swrl#d">
+        <rdf:type rdf:resource="&swrl;Variable"/>
+    </rdf:Description>
     <rdf:Description rdf:about="urn:swrl#g1">
         <rdf:type rdf:resource="&swrl;Variable"/>
     </rdf:Description>
     <rdf:Description rdf:about="urn:swrl#g2">
-        <rdf:type rdf:resource="&swrl;Variable"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="urn:swrl#d">
         <rdf:type rdf:resource="&swrl;Variable"/>
     </rdf:Description>
     <rdf:Description rdf:about="urn:swrl#m1">
@@ -255,29 +369,9 @@
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="&swrl;Imp"/>
-        <swrl:head>
-            <rdf:Description>
-                <rdf:type rdf:resource="&swrl;AtomList"/>
-                <rdf:rest rdf:resource="&rdf;nil"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="&isa;ISA0000025"/>
-                        <swrl:argument1 rdf:resource="urn:swrl#d"/>
-                    </rdf:Description>
-                </rdf:first>
-            </rdf:Description>
-        </swrl:head>
         <swrl:body>
             <rdf:Description>
                 <rdf:type rdf:resource="&swrl;AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="&isa;ISA0000027"/>
-                        <swrl:argument1 rdf:resource="urn:swrl#g1"/>
-                    </rdf:Description>
-                </rdf:first>
                 <rdf:rest>
                     <rdf:Description>
                         <rdf:type rdf:resource="&swrl;AtomList"/>
@@ -285,78 +379,114 @@
                             <rdf:Description>
                                 <rdf:type rdf:resource="&swrl;ClassAtom"/>
                                 <swrl:classPredicate rdf:resource="&isa;ISA0000027"/>
-                                <swrl:argument1 rdf:resource="urn:swrl#g2"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#g1"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
                             <rdf:Description>
                                 <rdf:type rdf:resource="&swrl;AtomList"/>
-                                <rdf:first>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
-                                        <swrl:propertyPredicate rdf:resource="&isa;ISA0000030"/>
-                                        <swrl:argument1 rdf:resource="urn:swrl#d"/>
-                                        <swrl:argument2 rdf:resource="urn:swrl#g1"/>
-                                    </rdf:Description>
-                                </rdf:first>
                                 <rdf:rest>
                                     <rdf:Description>
                                         <rdf:type rdf:resource="&swrl;AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="&isa;ISA0000030"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl#d"/>
+                                                <swrl:argument2 rdf:resource="urn:swrl#g1"/>
+                                            </rdf:Description>
+                                        </rdf:first>
                                         <rdf:rest>
                                             <rdf:Description>
                                                 <rdf:type rdf:resource="&swrl;AtomList"/>
                                                 <rdf:rest>
                                                     <rdf:Description>
                                                         <rdf:type rdf:resource="&swrl;AtomList"/>
-                                                        <rdf:rest>
-                                                            <rdf:Description>
-                                                                <rdf:type rdf:resource="&swrl;AtomList"/>
-                                                                <rdf:rest rdf:resource="&rdf;nil"/>
-                                                                <rdf:first>
-                                                                    <rdf:Description>
-                                                                        <rdf:type rdf:resource="&swrl;DifferentIndividualsAtom"/>
-                                                                        <swrl:argument1 rdf:resource="urn:swrl#m1"/>
-                                                                        <swrl:argument2 rdf:resource="urn:swrl#m2"/>
-                                                                    </rdf:Description>
-                                                                </rdf:first>
-                                                            </rdf:Description>
-                                                        </rdf:rest>
                                                         <rdf:first>
                                                             <rdf:Description>
                                                                 <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
                                                                 <swrl:propertyPredicate rdf:resource="&isa;ISA0000034"/>
-                                                                <swrl:argument1 rdf:resource="urn:swrl#g2"/>
-                                                                <swrl:argument2 rdf:resource="urn:swrl#m2"/>
+                                                                <swrl:argument1 rdf:resource="urn:swrl#g1"/>
+                                                                <swrl:argument2 rdf:resource="urn:swrl#m1"/>
                                                             </rdf:Description>
                                                         </rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="&swrl;AtomList"/>
+                                                                <rdf:first>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                                                        <swrl:propertyPredicate rdf:resource="&isa;ISA0000034"/>
+                                                                        <swrl:argument1 rdf:resource="urn:swrl#g2"/>
+                                                                        <swrl:argument2 rdf:resource="urn:swrl#m2"/>
+                                                                    </rdf:Description>
+                                                                </rdf:first>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                                                                        <rdf:rest rdf:resource="&rdf;nil"/>
+                                                                        <rdf:first>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="&swrl;SameIndividualAtom"/>
+                                                                                <swrl:argument1 rdf:resource="urn:swrl#m1"/>
+                                                                                <swrl:argument2 rdf:resource="urn:swrl#m2"/>
+                                                                            </rdf:Description>
+                                                                        </rdf:first>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
                                                     </rdf:Description>
                                                 </rdf:rest>
                                                 <rdf:first>
                                                     <rdf:Description>
                                                         <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
-                                                        <swrl:propertyPredicate rdf:resource="&isa;ISA0000034"/>
-                                                        <swrl:argument1 rdf:resource="urn:swrl#g1"/>
-                                                        <swrl:argument2 rdf:resource="urn:swrl#m1"/>
+                                                        <swrl:propertyPredicate rdf:resource="&isa;ISA0000030"/>
+                                                        <swrl:argument1 rdf:resource="urn:swrl#d"/>
+                                                        <swrl:argument2 rdf:resource="urn:swrl#g2"/>
                                                     </rdf:Description>
                                                 </rdf:first>
                                             </rdf:Description>
                                         </rdf:rest>
-                                        <rdf:first>
-                                            <rdf:Description>
-                                                <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
-                                                <swrl:propertyPredicate rdf:resource="&isa;ISA0000030"/>
-                                                <swrl:argument1 rdf:resource="urn:swrl#d"/>
-                                                <swrl:argument2 rdf:resource="urn:swrl#g2"/>
-                                            </rdf:Description>
-                                        </rdf:first>
                                     </rdf:Description>
                                 </rdf:rest>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="&isa;ISA0000027"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#g2"/>
+                                    </rdf:Description>
+                                </rdf:first>
                             </rdf:Description>
                         </rdf:rest>
                     </rdf:Description>
                 </rdf:rest>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="&isa;ISA0000024"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#d"/>
+                    </rdf:Description>
+                </rdf:first>
             </rdf:Description>
         </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#d"/>
+                        <swrl:classPredicate>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="&isa;ISA0000025"/>
+                            </owl:Class>
+                        </swrl:classPredicate>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:head>
     </rdf:Description>
 </rdf:RDF>
 
