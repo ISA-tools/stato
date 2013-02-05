@@ -96,6 +96,15 @@
         </ObjectSomeValuesFrom>
     </EquivalentClasses>
     <EquivalentClasses>
+        <Class IRI="http://purl.obolibrary.org/obo/OBI_0500000"/>
+        <ObjectUnionOf>
+            <Class IRI="http://purl.obolibrary.org/obo/OBI_0500006"/>
+            <ObjectComplementOf>
+                <Class IRI="http://purl.obolibrary.org/obo/OBI_0500006"/>
+            </ObjectComplementOf>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0500014"/>
         <ObjectUnionOf>
             <Class IRI="http://isa-tools.org/isa/ISA0000023"/>
@@ -295,7 +304,7 @@
                 <Variable IRI="urn:swrl#g2"/>
             </ClassAtom>
             <ClassAtom>
-                <Class IRI="http://purl.obolibrary.org/obo/OBI_0500006"/>
+                <Class IRI="http://purl.obolibrary.org/obo/OBI_0500000"/>
                 <Variable IRI="urn:swrl#d"/>
             </ClassAtom>
             <ObjectPropertyAtom>
@@ -318,12 +327,22 @@
                 <Variable IRI="urn:swrl#d"/>
                 <Variable IRI="urn:swrl#g2"/>
             </ObjectPropertyAtom>
-        </Body>
-        <Head>
-            <DifferentIndividualsAtom>
+            <SameIndividualAtom>
                 <Variable IRI="urn:swrl#m1"/>
                 <Variable IRI="urn:swrl#m2"/>
+            </SameIndividualAtom>
+            <DifferentIndividualsAtom>
+                <Variable IRI="urn:swrl#g1"/>
+                <Variable IRI="urn:swrl#g2"/>
             </DifferentIndividualsAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <ObjectComplementOf>
+                    <Class IRI="http://purl.obolibrary.org/obo/OBI_0500006"/>
+                </ObjectComplementOf>
+                <Variable IRI="urn:swrl#d"/>
+            </ClassAtom>
         </Head>
     </DLSafeRule>
     <AnnotationAssertion>
