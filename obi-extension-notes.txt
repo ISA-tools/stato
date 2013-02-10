@@ -1,0 +1,3 @@
+http://isa-tools.org/isa/ISA0000001,executes,propertychain(http://purl.obolibrary.org/obo/BFO_0000055,http://purl.obolibrary.org/obo/BFO_0000059)
+http://isa-tools.org/isa/ISA0000002,study group population, subClassOf(http://purl.obolibrary.org/obo/OBI_0000181)
+http://isa-tools.org/isa/ISA0000003, cartesian product, subClassOf(http://purl.obolibrary.org/obo/OBI_0200000)
