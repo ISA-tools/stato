@@ -77,6 +77,21 @@
         <Class IRI="http://isa-tools.org/isa/ISA_0000102"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000103"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000104"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000105"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000106"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000107"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="http://isa-tools.org/isa/ISA0000001"/>
     </Declaration>
     <Declaration>
@@ -265,6 +280,26 @@
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
             <Class IRI="http://isa-tools.org/isa/ISA0000019"/>
         </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000103"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000005"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000104"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000005"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000105"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000033"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000106"/>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000105"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000107"/>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000105"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/IAO_0000100"/>
@@ -548,6 +583,26 @@ The &apos;variable spec&apos; is the &apos;data set&apos;, referring to the set 
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">assumes values specified by</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://isa-tools.org/isa/ISA0000015</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://isa-tools.org/isa/ISA0000015</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
+        <IRI>http://isa-tools.org/isa/ISA0000015</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">qualitative factor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/source"/>
+        <IRI>http://isa-tools.org/isa/ISA0000015</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">https://onlinecourses.science.psu.edu/stat503/node/7</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://isa-tools.org/isa/ISA0000015</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">categorical variable specification</Literal>
@@ -581,6 +636,11 @@ The &apos;variable spec&apos; is the &apos;data set&apos;, referring to the set 
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
         <IRI>http://isa-tools.org/isa/ISA0000019</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
+        <IRI>http://isa-tools.org/isa/ISA0000019</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">nuisance variable specification</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -626,6 +686,98 @@ The &apos;variable spec&apos; is the &apos;data set&apos;, referring to the set 
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://isa-tools.org/isa/ISA_0000102</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">hyper graeco-latin square design</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000103</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A testing objective to ensure that the sample used in a statistical test actually follows a normal distribution.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000103</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000103</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000103</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">distribution normality testing objective</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000104</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">It is a testing objective to ensure the variances of the different groups used in a statistical test are similar (i.e. not too different). </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000104</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000104</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000104</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">homoschedacity testing objective</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000104</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">equal variance testing objective</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000105</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A probability distribution is a directive information entity specifies the probability of the value of a random variable.
+
+For a discrete random variable, a mathematical formula that gives the probability of each value of the variable. For a continuous random variable, a curve described by a mathematical formula which specifies, by way of areas under the curve, the probability that the variable falls within a particular interval.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000105</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000105</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000105</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">theoretical probability distribution</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000106</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Chi-square probability distribution with k degrees of freedom is a theoretical probability distribution which  corresponds to the distribution of a sum of the squares of k independent standard normal random variables.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000106</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000106</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000106</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Chi-square probability distribution</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000107</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">normal distribution</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
