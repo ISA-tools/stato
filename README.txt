@@ -1,0 +1,1 @@
+folders obi and external contain the OBI version corresponding to 14/02/2013

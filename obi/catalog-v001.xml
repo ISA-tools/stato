@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog id="XML Catalog File (see http://www.oasis-open.org/committees/entity/spec-2001-08-06.html) - Created By Protégé 4" prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri name="http://purl.obolibrary.org/obo/obi/external.owl" uri="external.owl"/>
+    <uri name="http://purl.obolibrary.org/obo/obi/externalDerived.owl" uri="externalDerived.owl"/>
+    <uri name="http://purl.obolibrary.org/obo/obi/external-byhand.owl" uri="external-byhand.owl"/>
+    <uri name="http://purl.obolibrary.org/obo/obi.owl" uri="obi.owl"/>
+    <uri name="http://purl.obolibrary.org/obo/iao/dev/iao.owl" uri="../external/iao-bfo2/IAO.owl"/>
+    <uri name="http://purl.obolibrary.org/obo/iao/dev/obsolete.owl" uri="../external/iao-bfo2/obsolete.owl"/>
+    <uri name="http://purl.obolibrary.org/obo/iao/dev/iao-main.owl" uri="../external/iao-bfo2/iao-main.owl"/>
+    <uri name="http://purl.obolibrary.org/obo/iao/dev/externalDerived.owl" uri="../external/iao-bfo2/externalDerived.owl"/>
+    <uri name="http://purl.obolibrary.org/obo/iao/dev/external.owl" uri="../external/iao-bfo2/external.owl"/>
+    <uri name="http://purl.obolibrary.org/obo/iao/dev/externalByHand.owl" uri="../external/iao-bfo2/externalByHand.owl"/>
+    <uri name="http://purl.obolibrary.org/obo/iao/dev/ontology-metadata.owl" uri="../external/iao-bfo2/ontology-metadata.owl"/>
+    <uri name="http://purl.obolibrary.org/obo/bfo/2010-05-25/ruttenberg-bfo2.owl" uri="../external/bfo2-alan/ruttenberg-bfo2.owl"/>
+    <uri name="http://purl.obolibrary.org/obo/bfo/2010-05-25/ruttenberg-classes.owl" uri="../external/bfo2-alan/ruttenberg-classes.owl"/>
+    <uri name="http://purl.obolibrary.org/obo/bfo/2010-05-25/ruttenberg-relations.owl" uri="../external/bfo2-alan/ruttenberg-relations.owl"/>
+    <uri name="http://protege.stanford.edu/plugins/owl/dc/protege-dc.owl" uri="../external/protege-dc.owl"/>
+    <uri name="http://purl.obolibrary.org/obo/obi/dev/crux-staging.owl" uri="crux-staging.owl"/>
+</catalog>

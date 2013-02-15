@@ -1,0 +1,1188 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/obi/dev/crux-staging.owl#"
+     xml:base="http://purl.obolibrary.org/obo/obi/dev/crux-staging.owl"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:UO="http://purl.org/obo/owl/UO#"
+     xmlns:snap="http://www.ifomis.org/bfo/1.1/snap#"
+     xmlns:ro="http://www.obofoundry.org/ro/ro.owl#"
+     xmlns:CHEBI="http://purl.org/obo/owl/CHEBI#"
+     xmlns:OBO_REL="http://purl.org/obo/owl/OBO_REL#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:PATO="http://purl.org/obo/owl/PATO#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:CL="http://purl.org/obo/owl/CL#"
+     xmlns:owlapi="http://www.semanticweb.org/owlapi#"
+     xmlns:NCBITaxon="http://purl.org/obo/owl/NCBITaxon#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:FMA="http://purl.org/obo/owl/FMA#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:span="http://www.ifomis.org/bfo/1.1/span#"
+     xmlns:GO="http://purl.org/obo/owl/GO#">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/obi/dev/crux-staging.owl">
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000118"/>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000116"/>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000117"/>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000112"/>
+    <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#comment"/>
+    <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000119"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CRUXOBI_0004042 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/CRUXOBI_0004042">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:label xml:lang="en">has time stamp</rdfs:label>
+        <obo:IAO_0000117>Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000115>relates a time stamped measurement datum to the time measurement datum that denotes the time when the measurement was taken</obo:IAO_0000115>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/CRUXOBI_0004041"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/IAO_0000416"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CRUXOBI_0004043 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/CRUXOBI_0004043">
+        <rdfs:label xml:lang="en">has measurement datum</rdfs:label>
+        <obo:IAO_0000117>Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000115>relates a time stamped measurement datum to the measurement datum that was measured</obo:IAO_0000115>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/CRUXOBI_0004041"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000109"/>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000416"/>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CRUXOBI_0000431 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CRUXOBI_0000431">
+        <rdfs:label xml:lang="en">sampled substance amount time course</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CRUXOBI_0004026"/>
+        <obo:IAO_0000116 xml:lang="en">A time sampled measurement datum that represents a series of substance amount measurements</obo:IAO_0000116>
+        <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CRUXOBI_0000436 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CRUXOBI_0000436">
+        <rdfs:label xml:lang="en">fluid flow rate measurement datum</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000032"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000221"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/obo/owl/PATO#PATO_0002243"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000039"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.org/obo/owl/UO#UO_0000270"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CRUXOBI_0004000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CRUXOBI_0004000">
+        <rdfs:label>volume of distribution</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/PATO#PATO_0000918"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/obo/owl/PATO#PATO_0000918"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/obo/owl/OBO_REL#inheres_in"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000576"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#part_of"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                                                <owl:someValuesFrom>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000308"/>
+                                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000319"/>
+                                                    </owl:Restriction>
+                                                </owl:someValuesFrom>
+                                            </owl:Restriction>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <obo:IAO_0000117>person:Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000115>the smallest volume containing a scattered aggregate that is the bearer of a target of material addition role realized in some administration of substance</obo:IAO_0000115>
+        <obo:IAO_0000112>in a gene therapy experiment, the volume over which the protein of the inserted gene is expressed, or the volume in which the vector particles are localized.</obo:IAO_0000112>
+        <rdfs:seeAlso>http://www.pdonlineresearch.org/responses/803/83/what-ced</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CRUXOBI_0004001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CRUXOBI_0004001">
+        <rdfs:label>volume of infusion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/PATO#PATO_0000918"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/obo/owl/PATO#PATO_0000918"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/obo/owl/OBO_REL#inheres_in"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0302729"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000295"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000308"/>
+                                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000319"/>
+                                            </owl:Restriction>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <obo:IAO_0000117>person:Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000115>A volume a chemical solution that is administered in vivo</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CRUXOBI_0004002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CRUXOBI_0004002">
+        <rdfs:label>recombinant adeno-associated virus</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0600064"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_10804"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000731"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#derives_from"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_10804"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000118>rAAV</obo:IAO_0000118>
+        <obo:IAO_0000119>person:Alan Ruttenberg</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">A recombinant vector derived from AAV-2 virus by removal of the rep and cap from the DNA of the vector. The desired gene together with a promoter to drive transcription of the gene is inserted between the inverted terminal repeats (ITR) that aid in concatamer formation in the nucleus after the single-stranded vector DNA is converted by host cell DNA polymerase complexes into double-stranded DNA. AAV-based gene therapy vectors form episomal concatamers in the host cell nucleus. In non-dividing cells, these concatamers remain intact for the life of the host cell. In dividing cells, AAV DNA is lost through cell division, since the episomal DNA is not replicated along with the host cell DNA. </obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">web:http://en.wikipedia.org/wiki/Adeno-associated_virus</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CRUXOBI_0004003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CRUXOBI_0004003">
+        <rdfs:label>AAV2-GDNF</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CRUXOBI_0004002"/>
+        <rdfs:comment>A recombinant vector derived from AAV-2 virus with an insert that expresses glial cell line-derived neurotrophic factor</rdfs:comment>
+        <obo:IAO_0000112>PMID:18346734#AAV2-mediated gene transfer of GDNF to the striatum of MPTP monkeys enhances the survival and outgrowth of co-implanted fetal dopamine neurons</obo:IAO_0000112>
+        <obo:IAO_0000117>person:Alan Ruttenberg</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CRUXOBI_0004004 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CRUXOBI_0004004">
+        <rdfs:label>Recombinant AAV-mediated gene delivery to the central nervous system</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0600007"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000308"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000319"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/obo/owl/OBO_REL#inheres_in"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CRUXOBI_0004002"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000308"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000444"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/obo/owl/OBO_REL#inheres_in"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#part_of"/>
+                                                <owl:someValuesFrom rdf:resource="http://purl.org/obo/owl/FMA#FMA_50801"/>
+                                            </owl:Restriction>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/obo/owl/GO#GO_0010467"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0600007"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CRUXOBI_0004005 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CRUXOBI_0004005">
+        <rdfs:label>Navigus Frameless Passive Biopsy System</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CRUXOBI_0004006"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000117>Person:Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000115>A skull-mounted trajectory guide that provides access through a small burr hole</obo:IAO_0000115>
+        <obo:IAO_0000119>web:http://www.medtronic.com/for-healthcare-professionals/products-therapies/neurological/surgical-navigation-and-imaging/neurosurgery-imaging-and-surgical-navigation/surgical-procedures/index.htm#tab2</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CRUXOBI_0004006 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CRUXOBI_0004006">
+        <rdfs:label xml:lang="en">material positioning function</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Function"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000300"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CRUXOBI_0004013"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A function realized in a process in which the bearer(which is designed for this purpose) is used in order to align one material entity to another.</obo:IAO_0000115>
+        <obo:IAO_0000112>The navigus system is used to position needles for biopsy</obo:IAO_0000112>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CRUXOBI_0004007 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CRUXOBI_0004007">
+        <rdfs:label>liposome</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#MaterialEntity"/>
+        <obo:IAO_0000117>person:Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000119>web:http://en.wikipedia.org/wiki/Liposome</obo:IAO_0000119>
+        <obo:IAO_0000115>A liposome is a tiny bubble (vesicle), made out of the same material as a cell membrane. Liposomes can be filled with drugs, and used to deliver drugs for cancer and other diseases.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CRUXOBI_0004008 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CRUXOBI_0004008">
+        <rdfs:label>liposomal solution</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0302729"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0302732"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000576"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000643"/>
+                                        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CRUXOBI_0004007"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A Liposomal solution is a chemical solution in which drugs or DNA are encapsulated in liposomes. Liposomes are used for drug delivery due to their unique properties. A liposome encapsulates a region on aqueous solution inside a hydrophobic membrane; dissolved hydrophilic solutes cannot readily pass through the lipids. Hydrophobic chemicals can be dissolved into the membrane, and in this way liposome can carry both hydrophobic molecules and hydrophilic molecules. To deliver the molecules to sites of action, the lipid bilayer can fuse with other bilayers such as the cell membrane, thus delivering the liposome contents. By making liposomes in a solution of DNA or drugs (which would normally be unable to diffuse through the membrane) they can be (indiscriminately) delivered past the lipid bilayer. </obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">http://en.wikipedia.org/wiki/Liposome</obo:IAO_0000119>
+        <obo:IAO_0000117 xml:lang="en">person:Alan Ruttenberg</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CRUXOBI_0004009 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CRUXOBI_0004009">
+        <rdfs:label>liposomal gadoteridol</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CRUXOBI_0004008"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000576"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000643"/>
+                                                <owl:allValuesFrom rdf:resource="http://purl.org/obo/owl/CHEBI#CHEBI_31643"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0302733"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CRUXOBI_0004008"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CRUXOBI_0004010"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000118 xml:lang="en">A liposomal solution in which gadoteridol is encapsulated in liposomes</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">GDL</obo:IAO_0000118>
+        <obo:IAO_0000117 xml:lang="en">person:Alan Ruttenberg</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CRUXOBI_0004010 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CRUXOBI_0004010">
+        <rdfs:label>MRI contrast agent role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000140"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000300"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000182"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000117 xml:lang="en">A label role realized in magnetic resonance imaging where the bearer is visible in the MRI image.</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">person:Alan Ruttenberg</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CRUXOBI_0004011 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CRUXOBI_0004011">
+        <rdfs:label>gadodiamide solution</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0302729"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000576"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000643"/>
+                                                <owl:allValuesFrom rdf:resource="http://purl.org/obo/owl/CHEBI#CHEBI_37333"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0302733"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0302729"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CRUXOBI_0004010"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000118 xml:lang="en">A chemical solution containing gadodiamide</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">GD</obo:IAO_0000118>
+        <obo:IAO_0000117 xml:lang="en">Person:Alan Ruttenberg</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CRUXOBI_0004012 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CRUXOBI_0004012">
+        <rdfs:label>material arrangement objective</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000686"/>
+        <obo:IAO_0000117>Person:Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000115>A material arrangement objective is an objective to arrange some materials spatially with respect to each other.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CRUXOBI_0004013 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CRUXOBI_0004013">
+        <rdfs:label xml:lang="en">material arrangement</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CRUXOBI_0004012"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0600065"/>
+        <obo:IAO_0000112>placing a person in a harness to keep them still for imaging.</obo:IAO_0000112>
+        <obo:IAO_0000115>a process in which materials are spatially arranged wrt one another.</obo:IAO_0000115>
+        <obo:IAO_0000117>Person:Alan Ruttenberg</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CRUXOBI_0004014 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CRUXOBI_0004014">
+        <rdfs:label xml:lang="en">surgical placement of navigus system</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CRUXOBI_0004013"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CRUXOBI_0004005"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000308"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000097"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.org/obo/owl/OBO_REL#inheres_in"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_9443"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>a material arrangement process in which  burr hole is drilled into the specimen&#39;s skull and the navigus device is mounted directly to the skull using three titanium screws so that a needle can be aligned to penetrate the hole.</obo:IAO_0000115>
+        <obo:IAO_0000119>web:http://www.neurocirugia.com/instrumental/index.php?m=01&amp;y=08&amp;entry=entry080118-073218</obo:IAO_0000119>
+        <obo:IAO_0000117>person:Alan Ruttenberg</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CRUXOBI_0004015 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CRUXOBI_0004015">
+        <rdfs:label>insertion of needle into specimen</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CRUXOBI_0004013"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000436"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000298"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CRUXOBI_0004016"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://purl.org/obo/owl/OBO_REL#towards"/>
+                                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0100051"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000117>person:Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000115>Insertion of needle is a process in which a needle penetrates the surface of a substance, typically in preparation to deliver some substance.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CRUXOBI_0004016 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CRUXOBI_0004016">
+        <rdfs:label xml:lang="en">insertion depth</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/PATO#PATO_0001238"/>
+        <obo:IAO_0000117>person:Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000115>A relational quality, for example between an needle, and some tissue, that is the distance between the end of the inserted object and the surface of the object into which it penetrates.</obo:IAO_0000115>
+        <obo:IAO_0000116>pato requested https://sourceforge.net/tracker/?func=detail&amp;aid=2986777&amp;group_id=76834&amp;atid=595654</obo:IAO_0000116>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CRUXOBI_0004025 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CRUXOBI_0004025">
+        <rdfs:label xml:lang="en">magnetic resonance image</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000101"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000182"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000117>Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000115>An image of  a two dimensional cut through a material entity in a strong magnetic field created by electromagnetic imaging of properties of molecular entities that have been perturbed by radio waves.</obo:IAO_0000115>
+        <obo:IAO_0000119>web:http://web.memberclicks.com/mc/page.do?sitePageId=67009&amp;orgId=lpamrs@2010-08-25</obo:IAO_0000119>
+        <obo:IAO_0000118>MRI</obo:IAO_0000118>
+        <obo:IAO_0000119>web:http://en.wikipedia.org/wiki/Magnetic_resonance_image@2010-08-25</obo:IAO_0000119>
+        <obo:IAO_0000112>http://www.pdonlineresearch.org/responses/803/83/factors-affecting-drug-distribution-through-infusion - Multiple T1 MRIs are performed before and during the cannula insertion to ensure that the tip of the canula reaches the target at the desired angle and depth in one single tissue pass. </obo:IAO_0000112>
+        <obo:IAO_0000116>Used in radiology to visualize detailed internal structure and limited function of the body. MRI provides much greater contrast between the different soft tissues of the body than computed tomography (CT) does, making it especially useful in neurological (brain), musculoskeletal, cardiovascular, and oncological (cancer) imaging</obo:IAO_0000116>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CRUXOBI_0004026 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CRUXOBI_0004026">
+        <rdfs:label xml:lang="en">time sampled measurement data set</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000100"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CRUXOBI_0004041"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A data set that is an aggregate of data recording some measurement at a number of time points. The time series data set is an ordered list of pairs of time measurement data and the corresponding measurement data acquired at that time.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">experimental time series</obo:IAO_0000118>
+        <obo:IAO_0000112 xml:lang="en">pmid:20604925 - time-lapse live cell microscopy</obo:IAO_0000112>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CRUXOBI_0004029 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CRUXOBI_0004029">
+        <rdfs:label xml:lang="en">pressure measurement datum</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000032"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000221"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/obo/owl/PATO#PATO_0001025"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000039"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.org/obo/owl/UO#UO_0000109"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A scalar measurement datum that is the result of measurement of a pressure quality</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CRUXOBI_0004030 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CRUXOBI_0004030">
+        <rdfs:label xml:lang="en">volume measurement datum</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000032"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000221"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/obo/owl/PATO#PATO_0000918"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000039"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.org/obo/owl/UO#UO_0000095"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A scalar measurement datum that is the result of measurement of volume quality</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CRUXOBI_0004031 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CRUXOBI_0004031">
+        <rdfs:label xml:lang="en">sampled pressure time course</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CRUXOBI_0004026"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CRUXOBI_0004041"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/CRUXOBI_0004043"/>
+                                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CRUXOBI_0004029"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A time sampled measurement datum that represents a series of measured pressures</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000112 xml:lang="en">http://www.scielo.br/scielo.php?script=sci_arttext&amp;pid=S0100-879X1997000900006  - blood pressure signals were recorded during a 40-min period with a microcomputer equipped with an analog-to-digital converter board (CODAS, 2-kHz sampling frequency, Dataq Instruments Inc., Akron, OH)</obo:IAO_0000112>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CRUXOBI_0004032 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CRUXOBI_0004032">
+        <rdfs:label xml:lang="en">sampled volume time course</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CRUXOBI_0004026"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CRUXOBI_0004041"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/CRUXOBI_0004043"/>
+                                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CRUXOBI_0004030"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A time sampled measurement datum that represents a series of measured volumes</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000112 xml:lang="en">http://171.66.122.149/cgi/content/abstract/149/1/155 - Because the behavior of right ventricular stroke volume (RVSV) in the obstructive sleep apnea syndrome (OSAS) is undefined, we studied the time course of RVSV by right heart catheterization during sleep in five OSAS patients</obo:IAO_0000112>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CRUXOBI_0004033 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CRUXOBI_0004033">
+        <rdfs:label xml:lang="en">voxel unit</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/UO#UO_0000095"/>
+        <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000116 xml:lang="en">Alan Ruttenberg 2010-08-25: Note that this is a *class* of voxel units. In general voxel units are not directly comparable except when they represent the same actual volume in space. Therefore particular voxel unit instances should be created for each mapping of space to volumetric image, and comparisons only made between measurements that use the same voxel unit instance.</obo:IAO_0000116>
+        <obo:IAO_0000115 xml:lang="en">a unit which is a count of grid regions in a voxelized volumetric image. Each count represents a volume defined by the inverse affine transformation that defines the mapping of spatial regions in to the volumetic image.</obo:IAO_0000115>
+        <obo:IAO_0000112 xml:lang="en">http://www.fil.ion.ucl.ac.uk/spm/doc/papers/john_vbm_methods.pdf - At its simplest, voxel-based morphometry (VBM) involves a voxel-wise comparison of the local concentration of gray matter between two groups of subjects. The procedure is relatively straightforward and involves spatially normalizing high-resolution images from all the subjects in the study into the same stereotactic space.</obo:IAO_0000112>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CRUXOBI_0004034 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CRUXOBI_0004034">
+        <rdfs:label xml:lang="en">volumetric image</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000117>Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000115>A volumetric image is an affine projection to a three dimensional volume of measurements of some quality of an entity or entities in 3d spatial regions, where the measurements are represented as color and luminosity on the projected on volume.</obo:IAO_0000115>
+        <obo:IAO_0000119>http://en.wikipedia.org/wiki/Volumetric_Image</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CRUXOBI_0004035 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CRUXOBI_0004035">
+        <rdfs:label xml:lang="en">voxelized volumetric image</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CRUXOBI_0004034"/>
+        <obo:IAO_0000115>a volumetric image where the measurements are recorded at regions on a regular grid in three dimensional space.</obo:IAO_0000115>
+        <obo:IAO_0000117>Alan Ruttenberg</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CRUXOBI_0004036 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CRUXOBI_0004036">
+        <rdfs:label xml:lang="en">peak value calculation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0200000"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0200078"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CRUXOBI_0004026"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
+                                <owl:allValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CRUXOBI_0004041"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/CRUXOBI_0004043"/>
+                                                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/IAO_0000032"/>
+                                                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:allValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000116 xml:lang="en">Alan Ruttenberg 2010-08-25: Note the restriction to time series that only have parts that are scalar, as maximum is only defined on a scalar.</obo:IAO_0000116>
+        <obo:IAO_0000115 xml:lang="en">a data transformation in which takes as input a time series data set and produces the measurement datum whose measurement value is maximal in the set across time</obo:IAO_0000115>
+        <obo:IAO_0000112 xml:lang="en">http://www.pdonlineresearch.org/responses/803/83/factors-affecting-drug-distribution-through-infusion - The pressure rises to a peak of 43mm Hg and then drops to approximately 25mm Hg in about 30 seconds before decaying to a steady state pressure of 18mm Hg.</obo:IAO_0000112>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CRUXOBI_0004037 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CRUXOBI_0004037">
+        <rdfs:label xml:lang="en">peak time calculation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0200000"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0200078"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/IAO_0000416"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CRUXOBI_0004026"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
+                                <owl:allValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CRUXOBI_0004041"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/CRUXOBI_0004043"/>
+                                                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/IAO_0000032"/>
+                                                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:allValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000116 xml:lang="en">Alan Ruttenberg 2010-08-25: Note the restriction to time series that only have parts that are scalar, as maximum is only defined on a scalar.</obo:IAO_0000116>
+        <obo:IAO_0000115 xml:lang="en">a data transformation in which takes as input a time series data set and produces the time measurement datum at which the (time varying) measurement value is maximal in the set across time</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CRUXOBI_0004038 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CRUXOBI_0004038">
+        <rdfs:label xml:lang="en">MRI image time series</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CRUXOBI_0004026"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CRUXOBI_0004041"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/CRUXOBI_0004043"/>
+                                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CRUXOBI_0004039"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A time sampled measurement datum that represents a series of mri images</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000116 xml:lang="en">Alan Ruttenberg 2010-08-25: Unlike some other time series, a MRI image series might have several images at the same time (withing measurement resolution) corresponding to different parameters such as slice orientation.</obo:IAO_0000116>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CRUXOBI_0004039 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CRUXOBI_0004039">
+        <rdfs:label xml:lang="en">MRI image datum</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/CRUXOBI_0004043"/>
+                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/CRUXOBI_0004040"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/CRUXOBI_0004043"/>
+                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/CRUXOBI_0004025"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CRUXOBI_0004040 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CRUXOBI_0004040">
+        <rdfs:label xml:lang="en">plane description</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000219"/>
+                <owl:someValuesFrom rdf:resource="http://www.ifomis.org/bfo/1.1/snap#TwoDimensionalRegion"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">a data item that denotes a flat two dimension spatial region</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CRUXOBI_0004041 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CRUXOBI_0004041">
+        <rdfs:label xml:lang="en">time stamped measurement datum</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/CRUXOBI_0004042"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000416"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/CRUXOBI_0004043"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000182 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000182">
+        <obo:IAO_0000118 xml:lang="en">magentic resonance imaging assay</obo:IAO_0000118>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000436 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000436">
+        <obo:IAO_0000118 xml:lang="en">cannula</obo:IAO_0000118>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000731 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000731">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000109"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0600000 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0600000">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0600065"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/injection_into_brain -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/injection_into_brain">
+        <rdfs:label xml:lang="en">injection into brain</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0600007"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000308"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000444"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/obo/owl/OBO_REL#inheres_in"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#part_of"/>
+                                                <owl:someValuesFrom rdf:resource="http://purl.org/obo/owl/FMA#FMA_50801"/>
+                                            </owl:Restriction>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0600007"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/pump_driven_brain_infusion -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/pump_driven_brain_infusion">
+        <rdfs:label xml:lang="en">pump driven brain infusion</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/injection_into_brain"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000308"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0001042"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/injection_into_brain"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/CHEBI#CHEBI_31643 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/CHEBI#CHEBI_31643">
+        <rdfs:label>Gadoteridol</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/CHEBI#CHEBI_23367"/>
+        <obo:IAO_0000116>chebi request https://sourceforge.net/tracker/?func=detail&amp;aid=2988677&amp;group_id=125463&amp;atid=703818</obo:IAO_0000116>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/CHEBI#CHEBI_37333 -->
+
+    <owl:Class rdf:about="http://purl.org/obo/owl/CHEBI#CHEBI_37333">
+        <rdfs:label>Gadodiamide</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/CHEBI#CHEBI_23367"/>
+        <obo:IAO_0000116>chebi request https://sourceforge.net/tracker/?func=detail&amp;aid=2988678&amp;group_id=125463&amp;atid=703818</obo:IAO_0000116>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/UO#UO_0000041 -->
+
+    <rdf:Description rdf:about="http://purl.org/obo/owl/UO#UO_0000041">
+        <obo:IAO_0000116 xml:lang="en">Alan Ruttenberg 2010-08-31:
+
+2. When the mole is used, the elementary entities must be specified and may be atoms, molecules, ions, electrons, other particles, or specified groups of such particles.
+
+We will specify it by making unit instances that are e.g. nanomoles of carbon. Thus nanomole is a class of units, each instance being specified as the entity</obo:IAO_0000116>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CRUXOBI_0000430 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/CRUXOBI_0000430">
+        <rdf:type rdf:resource="http://purl.org/obo/owl/UO#UO_0000041"/>
+        <rdfs:label xml:lang="en">nanomole of gadolinium atom</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">A substance unit equal to one thousandth of one millionth of a mole or 10^[-9] mol of gadolinium atoms</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CRUXOBI_0004028 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/CRUXOBI_0004028">
+        <rdf:type rdf:resource="http://purl.org/obo/owl/UO#UO_0000109"/>
+        <rdfs:label xml:lang="en">mmHg</rdfs:label>
+        <obo:IAO_0000116>Alan Ruttenberg 2010-08-25: requested from PATO tracker https://sourceforge.net/tracker/?func=detail&amp;aid=3053162&amp;group_id=76834&amp;atid=595654</obo:IAO_0000116>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://purl.org/obo/owl/UO#UO_0000006">
+        <obo:IAO_0000116 xml:lang="en">Alan Ruttenberg 2010-08-31: I differ from UO in making substance unit a subclass of mass unit. The SI says: 
+
+1. The mole is the amount of substance of a system which contains as many elementary entities as there are atoms in 0.012 kilogram of carbon 12; its symbol is &quot;mol.&quot;
+
+2. When the mole is used, the elementary entities must be specified and may be atoms, molecules, ions, electrons, other particles, or specified groups of such particles.
+
+Because the elementary particle needs to be specified, it measures the same thing as mass</obo:IAO_0000116>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/obo/owl/CHEBI#CHEBI_59424">
+        <rdfs:label xml:lang="en">bromophenol blue</rdfs:label>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.0.0.1451) http://owlapi.sourceforge.net -->
+
