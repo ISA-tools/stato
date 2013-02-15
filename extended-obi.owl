@@ -1482,9 +1482,19 @@ For a discrete random variable, a mathematical formula that gives the probabilit
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">hypergeometric distribution</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000130</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">G test</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://isa-tools.org/isa/ISA_0000130</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">chi square test of goodness of fit</Literal>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Chi square test of goodness of fit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000131</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Chi2 test</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1492,9 +1502,19 @@ For a discrete random variable, a mathematical formula that gives the probabilit
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Pearson&apos;s Chi square test for independence</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000132</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">K-S test</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://isa-tools.org/isa/ISA_0000132</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Kolmogorov-Smirnov test</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000133</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">S-W test</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1522,9 +1542,19 @@ For a discrete random variable, a mathematical formula that gives the probabilit
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Fisher&apos;s exact test</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000138</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CHM test</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://isa-tools.org/isa/ISA_0000138</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Cochran-Mantel-Haenzel test for repeated tests of independence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000139</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">U test</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
@@ -1535,6 +1565,11 @@ For a discrete random variable, a mathematical formula that gives the probabilit
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://isa-tools.org/isa/ISA_0000139</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Mann-Whitney U-test</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000140</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">H test</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1565,6 +1600,11 @@ For a discrete random variable, a mathematical formula that gives the probabilit
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
         <IRI>http://purl.obolibrary.org/obo/OBI_0200201</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Analysis of Variance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
+        <IRI>http://purl.obolibrary.org/obo/OBI_0200201</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">F test</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
