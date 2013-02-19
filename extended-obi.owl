@@ -191,6 +191,18 @@
         <Class IRI="http://isa-tools.org/isa/ISA_0000143"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000145"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000146"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000147"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000148"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="http://isa-tools.org/isa/ISA0000001"/>
     </Declaration>
     <Declaration>
@@ -722,6 +734,93 @@
         <Class IRI="http://purl.obolibrary.org/obo/IAO_0000582"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000145"/>
+        <Class IRI="http://purl.obolibrary.org/obo/OBI_0000066"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000145"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            <ObjectIntersectionOf>
+                <Class IRI="http://purl.obolibrary.org/obo/OBI_0000471"/>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000055"/>
+                    <ObjectIntersectionOf>
+                        <Class IRI="http://purl.obolibrary.org/obo/OBI_0001444"/>
+                        <ObjectSomeValuesFrom>
+                            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000059"/>
+                            <Class IRI="http://isa-tools.org/isa/ISA_0000146"/>
+                        </ObjectSomeValuesFrom>
+                    </ObjectIntersectionOf>
+                </ObjectSomeValuesFrom>
+            </ObjectIntersectionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000146"/>
+        <Class IRI="http://purl.obolibrary.org/obo/OBI_0500000"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000146"/>
+        <Class IRI="http://purl.obolibrary.org/obo/OBI_0500006"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000146"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://isa-tools.org/isa/ISA_0000114"/>
+            <ObjectIntersectionOf>
+                <Class IRI="http://purl.obolibrary.org/obo/OBI_0000750"/>
+                <ObjectIntersectionOf>
+                    <Class IRI="http://isa-tools.org/isa/ISA_0000147"/>
+                    <ObjectIntersectionOf>
+                        <ObjectSomeValuesFrom>
+                            <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                            <ObjectUnionOf>
+                                <Class IRI="http://purl.obolibrary.org/obo/BFO_0000016"/>
+                                <Class IRI="http://purl.obolibrary.org/obo/BFO_0000019"/>
+                            </ObjectUnionOf>
+                        </ObjectSomeValuesFrom>
+                        <ObjectAllValuesFrom>
+                            <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                            <ObjectUnionOf>
+                                <Class IRI="http://purl.obolibrary.org/obo/BFO_0000016"/>
+                                <Class IRI="http://purl.obolibrary.org/obo/BFO_0000019"/>
+                            </ObjectUnionOf>
+                        </ObjectAllValuesFrom>
+                    </ObjectIntersectionOf>
+                </ObjectIntersectionOf>
+            </ObjectIntersectionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000146"/>
+        <ObjectExactCardinality cardinality="2">
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000219"/>
+            <Class IRI="http://isa-tools.org/isa/ISA0000002"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000147"/>
+        <Class IRI="http://isa-tools.org/isa/ISA0000015"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000147"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            <ObjectIntersectionOf>
+                <Class IRI="http://purl.obolibrary.org/obo/OBI_0000938"/>
+                <ObjectExactCardinality cardinality="2">
+                    <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000999"/>
+                    <Class IRI="http://purl.obolibrary.org/obo/OBI_0000963"/>
+                </ObjectExactCardinality>
+            </ObjectIntersectionOf>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000148"/>
+        <Class IRI="http://isa-tools.org/isa/ISA0000015"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0000739"/>
         <ObjectIntersectionOf>
             <ObjectExactCardinality cardinality="1">
@@ -788,6 +887,19 @@
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0000751"/>
         <Class IRI="http://isa-tools.org/isa/ISA0000013"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/OBI_0001444"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://isa-tools.org/isa/ISA_0000114"/>
+            <ObjectIntersectionOf>
+                <Class IRI="http://purl.obolibrary.org/obo/OBI_0000751"/>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                    <Class IRI="http://purl.obolibrary.org/obo/OBI_0001305"/>
+                </ObjectSomeValuesFrom>
+            </ObjectIntersectionOf>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0200201"/>
@@ -1008,8 +1120,8 @@
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <InverseObjectProperties>
-        <ObjectProperty IRI="http://isa-tools.org/isa/ISA0000014"/>
         <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000605"/>
+        <ObjectProperty IRI="http://isa-tools.org/isa/ISA0000014"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="http://isa-tools.org/isa/ISA0000017"/>
@@ -1605,6 +1717,26 @@ For a discrete random variable, a mathematical formula that gives the probabilit
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://isa-tools.org/isa/ISA_0000144</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">has value</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000145</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">genome-wide association study</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000146</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">case-control study design</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000147</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">dichotomous variable specification</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000148</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">polychotomous variable specification</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
