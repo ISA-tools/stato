@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1362077768779" name="http://purl.obolibrary.org/obo/obi.owl" uri="obi-prs.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1362077768779" name="http://www.semanticweb.org/agbeltran/ontologies/2013/0/untitled-ontology-79" uri="exp-design.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1362077768779" name="http://www.semanticweb.org/agbeltran/ontologies/2013/0/untitled-ontology-80" uri="rules.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1362077768779" name="http://www.semanticweb.org/agbeltran/ontologies/2013/0/untitled-ontology-81" uri="marbles.owl"/>
+    </group>
+</catalog>
