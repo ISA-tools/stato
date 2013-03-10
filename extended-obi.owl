@@ -230,6 +230,9 @@
         <Class IRI="#boxplot"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#confidence_interval"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#expected_value"/>
     </Declaration>
     <Declaration>
@@ -243,6 +246,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#manhattan_plot"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#multiway_ANOVA"/>
     </Declaration>
     <Declaration>
         <Class IRI="#negative_binomial_probability_distribution"/>
@@ -1751,6 +1757,10 @@
         <Class IRI="http://purl.obolibrary.org/obo/IAO_0000038"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#confidence_interval"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000027"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#expected_value"/>
         <Class IRI="http://purl.obolibrary.org/obo/IAO_0000027"/>
     </SubClassOf>
@@ -1810,6 +1820,10 @@
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000312"/>
             <Class IRI="http://purl.obolibrary.org/obo/OBI_0200111"/>
         </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#multiway_ANOVA"/>
+        <Class IRI="http://purl.obolibrary.org/obo/OBI_0200201"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#negative_binomial_probability_distribution"/>
@@ -2075,6 +2089,11 @@
         <Literal datatypeIRI="&rdf;PlainLiteral">study group population</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://isa-tools.org/isa/ISA0000003</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://isa-tools.org/isa/ISA0000003</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">a cartesian product is a data transformation which operates on a n Sets to produce a set of all possible ordered n-tuples where each element of the tuple comes from a Set</Literal>
@@ -2095,6 +2114,11 @@
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">cartesian product</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://isa-tools.org/isa/ISA0000004</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://isa-tools.org/isa/ISA0000004</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">A non-negative integer defining how many combination of factor levels (or treatments in the statistical sense) are to be used in a study.</Literal>
@@ -2105,6 +2129,11 @@
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">number of factor level combinations</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://isa-tools.org/isa/ISA0000005</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://isa-tools.org/isa/ISA0000005</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">cartesian product 2 sets</Literal>
@@ -2113,6 +2142,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://isa-tools.org/isa/ISA0000010</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">group comparison objective</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://isa-tools.org/isa/ISA0000011</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -2133,6 +2167,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://isa-tools.org/isa/ISA0000011</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">between group comparison objective</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://isa-tools.org/isa/ISA0000012</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -2247,6 +2286,11 @@ The &apos;variable spec&apos; is the &apos;data set&apos;, referring to the set 
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">blocking variable specification</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://isa-tools.org/isa/ISA0000020</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://isa-tools.org/isa/ISA0000020</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">factor level</Literal>
@@ -2277,14 +2321,29 @@ The &apos;variable spec&apos; is the &apos;data set&apos;, referring to the set 
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">group assignment based on blocking variable specification</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000101</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://isa-tools.org/isa/ISA_0000101</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">graeco-latin square design</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000102</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://isa-tools.org/isa/ISA_0000102</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">hyper graeco-latin square design</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000103</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -2305,6 +2364,11 @@ The &apos;variable spec&apos; is the &apos;data set&apos;, referring to the set 
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://isa-tools.org/isa/ISA_0000103</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">goodness of fit testing objective</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000104</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -2332,6 +2396,11 @@ The &apos;variable spec&apos; is the &apos;data set&apos;, referring to the set 
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">equal variance testing objective</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000105</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://isa-tools.org/isa/ISA_0000105</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">A probability distribution is a directive information entity specifies the probability of the value of a random variable.
@@ -2354,6 +2423,11 @@ For a discrete random variable, a mathematical formula that gives the probabilit
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">probability distribution</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000106</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://isa-tools.org/isa/ISA_0000106</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Chi-square probability distribution with k degrees of freedom is a theoretical probability distribution which  corresponds to the distribution of a sum of the squares of k independent standard normal random variables.</Literal>
@@ -2372,6 +2446,11 @@ For a discrete random variable, a mathematical formula that gives the probabilit
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://isa-tools.org/isa/ISA_0000106</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Chi-square probability distribution</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000107</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -2403,6 +2482,11 @@ http://mathworld.wolfram.com/NormalDistribution.html</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://isa-tools.org/isa/ISA_0000107</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">normal distribution</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000108</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -2440,6 +2524,11 @@ http://mathworld.wolfram.com/NormalDistribution.html</Literal>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">false positive rate</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000109</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://isa-tools.org/isa/ISA_0000109</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Z-test is a statistical test which evaluate the null hypothesis that the means of 2 populations are equal and returns a p-value.</Literal>
@@ -2463,6 +2552,11 @@ http://mathworld.wolfram.com/NormalDistribution.html</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://isa-tools.org/isa/ISA_0000109</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Z-test</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000111</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -2490,6 +2584,11 @@ http://mathworld.wolfram.com/NormalDistribution.html</Literal>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Anderson-Darling test</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000112</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://isa-tools.org/isa/ISA_0000112</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">one-way anova is an analysis of variance where the difference groups being compared are associated the factor levels of only one independent variable</Literal>
@@ -2508,6 +2607,11 @@ http://mathworld.wolfram.com/NormalDistribution.html</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://isa-tools.org/isa/ISA_0000112</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">one-way ANOVA</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000113</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -2530,9 +2634,19 @@ http://mathworld.wolfram.com/NormalDistribution.html</Literal>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">is declared by</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000116</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://isa-tools.org/isa/ISA_0000116</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">block design</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000118</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2540,14 +2654,29 @@ http://mathworld.wolfram.com/NormalDistribution.html</Literal>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">count</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000119</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://isa-tools.org/isa/ISA_0000119</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">number of degrees of freedom</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000120</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://isa-tools.org/isa/ISA_0000120</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">sequence read count</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000121</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -2573,6 +2702,11 @@ http://mathworld.wolfram.com/NormalDistribution.html</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://isa-tools.org/isa/ISA_0000121</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">hypothesis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000122</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -2601,6 +2735,11 @@ The hypothesis contrary to the null hypothesis, usually that the observations ar
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">null hypothesis</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000123</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://isa-tools.org/isa/ISA_0000123</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">goodness of fit is a null hypothesis stating that the distribution computed from the sample population fits a theoretical distribution </Literal>
@@ -2619,6 +2758,11 @@ The hypothesis contrary to the null hypothesis, usually that the observations ar
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://isa-tools.org/isa/ISA_0000123</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">goodness of fit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000124</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -2646,6 +2790,11 @@ The hypothesis contrary to the null hypothesis, usually that the observations ar
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">homoskedasticity</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000125</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://isa-tools.org/isa/ISA_0000125</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">a null hypothesis which states that no linkage exists between 2 categorical variables</Literal>
@@ -2664,6 +2813,11 @@ The hypothesis contrary to the null hypothesis, usually that the observations ar
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://isa-tools.org/isa/ISA_0000125</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">absence of association</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000126</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -2686,6 +2840,11 @@ The hypothesis contrary to the null hypothesis, usually that the observations ar
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">absence of between group difference</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000127</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://isa-tools.org/isa/ISA_0000127</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">is a null hypothesis stating that there are no difference observed across a series of measurements made one same subject.</Literal>
@@ -2706,6 +2865,11 @@ The hypothesis contrary to the null hypothesis, usually that the observations ar
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">absence of within subject difference</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000128</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
         <IRI>http://isa-tools.org/isa/ISA_0000128</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
@@ -2719,6 +2883,11 @@ The hypothesis contrary to the null hypothesis, usually that the observations ar
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://isa-tools.org/isa/ISA_0000128</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Student&apos;s t distribution</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000129</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -2746,6 +2915,11 @@ The hypothesis contrary to the null hypothesis, usually that the observations ar
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">hypergeometric distribution</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000130</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
         <IRI>http://isa-tools.org/isa/ISA_0000130</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
@@ -2766,6 +2940,11 @@ The hypothesis contrary to the null hypothesis, usually that the observations ar
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Chi square test of goodness of fit</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000131</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
         <IRI>http://isa-tools.org/isa/ISA_0000131</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
@@ -2784,6 +2963,11 @@ The hypothesis contrary to the null hypothesis, usually that the observations ar
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://isa-tools.org/isa/ISA_0000131</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Pearson&apos;s Chi square test for independence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000132</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -2812,6 +2996,11 @@ The hypothesis contrary to the null hypothesis, usually that the observations ar
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Kolmogorov-Smirnov test</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000133</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
         <IRI>http://isa-tools.org/isa/ISA_0000133</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
@@ -2830,6 +3019,11 @@ The hypothesis contrary to the null hypothesis, usually that the observations ar
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://isa-tools.org/isa/ISA_0000133</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Shapiro-Wilk test</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000134</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -2855,6 +3049,11 @@ The hypothesis contrary to the null hypothesis, usually that the observations ar
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://isa-tools.org/isa/ISA_0000134</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Levene&apos;s test</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000135</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -2883,6 +3082,11 @@ Bartlett&apos;s test is sensitive to departures from normality. That is, if the 
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Barlett&apos;s test</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000136</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
         <IRI>http://isa-tools.org/isa/ISA_0000136</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
@@ -2901,6 +3105,11 @@ Bartlett&apos;s test is sensitive to departures from normality. That is, if the 
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://isa-tools.org/isa/ISA_0000136</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Brown Forsythe test</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000137</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -2928,6 +3137,11 @@ Bartlett&apos;s test is sensitive to departures from normality. That is, if the 
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Fisher&apos;s exact test</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000138</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
         <IRI>http://isa-tools.org/isa/ISA_0000138</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">CHM test</Literal>
@@ -2936,6 +3150,11 @@ Bartlett&apos;s test is sensitive to departures from normality. That is, if the 
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://isa-tools.org/isa/ISA_0000138</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Cochran-Mantel-Haenzel test for repeated tests of independence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000139</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -2961,6 +3180,11 @@ Bartlett&apos;s test is sensitive to departures from normality. That is, if the 
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://isa-tools.org/isa/ISA_0000139</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Mann-Whitney U-test</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000140</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -2993,6 +3217,11 @@ Bartlett&apos;s test is sensitive to departures from normality. That is, if the 
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Kruskal Wallis test</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000141</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
         <IRI>http://isa-tools.org/isa/ISA_0000141</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
@@ -3011,6 +3240,11 @@ Bartlett&apos;s test is sensitive to departures from normality. That is, if the 
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://isa-tools.org/isa/ISA_0000141</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">paired t-test</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000142</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -3078,6 +3312,11 @@ Bartlett&apos;s test is sensitive to departures from normality. That is, if the 
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">genome-wide association study</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000146</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
         <IRI>http://isa-tools.org/isa/ISA_0000146</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
@@ -3109,6 +3348,11 @@ Bartlett&apos;s test is sensitive to departures from normality. That is, if the 
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">polychotomous variable specification</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000149</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://isa-tools.org/isa/ISA_0000149</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">population size</Literal>
@@ -3124,6 +3368,11 @@ Bartlett&apos;s test is sensitive to departures from normality. That is, if the 
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">single factor design</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://purl.obolibrary.org/obo/OBI_0000739</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
         <IRI>http://purl.obolibrary.org/obo/OBI_0000739</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">t-test</Literal>
@@ -3132,6 +3381,11 @@ Bartlett&apos;s test is sensitive to departures from normality. That is, if the 
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
         <IRI>http://purl.obolibrary.org/obo/OBI_0000750</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">factor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://purl.obolibrary.org/obo/OBI_0000861</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000116"/>
@@ -3150,6 +3404,11 @@ AGB and PRS provide formal definition expressed the test in terms of output and 
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://purl.obolibrary.org/obo/OBI_0200201</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
         <IRI>http://purl.obolibrary.org/obo/OBI_0200201</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Analysis of Variance</Literal>
@@ -3158,6 +3417,11 @@ AGB and PRS provide formal definition expressed the test in terms of output and 
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
         <IRI>http://purl.obolibrary.org/obo/OBI_0200201</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">F test</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>#Bernoulli_distribution</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -3184,6 +3448,11 @@ The variance is p*q</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Bernoulli_distribution</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Bernoulli distribution</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>#F-distribution</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -3226,6 +3495,11 @@ The variance is p*q</Literal>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">F-distribution</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>#Gamma_distribution</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>#Gamma_distribution</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A gamma distribution is a general type of statistical distribution (related to the beta distribution) that arises naturally in processes for which the waiting times between Poisson distributed events are relevant. Gamma distributions have two free parameters shape k and scale denoted theta .</Literal>
@@ -3249,6 +3523,11 @@ The variance is p*q</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Gamma_distribution</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Gamma distribution</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>#Poisson_distribution</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -3278,6 +3557,11 @@ The expected value of a Poisson-distributed random variable is equal to λ and s
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Poisson distribution</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>#association_testing_objective</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>#association_testing_objective</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">the objective of a data transformation to evaluate a null hypothesis of absence of linkage between variables.</Literal>
@@ -3296,6 +3580,11 @@ The expected value of a Poisson-distributed random variable is equal to λ and s
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#association_testing_objective</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">association testing objective</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>#binomial_distribution</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -3333,6 +3622,11 @@ The variance is N*p*q</Literal>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">binomial distribution</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>#boxplot</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
         <IRI>#boxplot</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
@@ -3351,6 +3645,41 @@ The variance is N*p*q</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#boxplot</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">box plot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>#confidence_interval</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#confidence_interval</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A confidence interval is an interval in which a measurement or trial falls corresponding to a given probability.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>#confidence_interval</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>#confidence_interval</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#confidence_interval</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://mathworld.wolfram.com/ConfidenceInterval.html</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#confidence_interval</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">confidence interval</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>#expected_value</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -3393,6 +3722,11 @@ The variance is N*p*q</Literal>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">expected value</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>#false_negative_rate</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>#false_negative_rate</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">the proportion of missed detection of elements known to be meeting the detection criteria</Literal>
@@ -3423,6 +3757,11 @@ The variance is N*p*q</Literal>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">false negative rate</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>#fold_change</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>#fold_change</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Fold change is a number describing how much a quantity changes going from an initial to a final value or one condition to another condition</Literal>
@@ -3446,6 +3785,11 @@ The variance is N*p*q</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#fold_change</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">fold change</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>#kurtosis_excess</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -3473,6 +3817,11 @@ The variance is N*p*q</Literal>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">kurtosis excess</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>#manhattan_plot</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>#manhattan_plot</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">a manhattan plot for gwas is a kind of scatter plot used to facilitate presentation of GWAS data. Genomic coordinates are displayed along the X-axis, with the negative logarithm of the association P-value for each single nucleotide polymorphism displayed on the Y-axis.</Literal>
@@ -3496,6 +3845,16 @@ The variance is N*p*q</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#manhattan_plot</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">manhattan plot for gwas</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>#multiway_ANOVA</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>#negative_binomial_probability_distribution</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -3535,6 +3894,11 @@ The negative binomial distribution, also known as the Pascal distribution or Pó
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">negative binomial distribution</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>#q-q_plot</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>#q-q_plot</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">q-q plot is the output of a graphical method for comparing two probability distributions by plotting their quantiles against each other</Literal>
@@ -3555,6 +3919,11 @@ The negative binomial distribution, also known as the Pascal distribution or Pó
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">q-q plot</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>#ranking</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>#ranking</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">ranking is a data transformation which turns a non-ordinal variable into a Ordinal variable by sorting the values of the input variable and replacing their value by their position in the sorting result</Literal>
@@ -3573,6 +3942,11 @@ The negative binomial distribution, also known as the Pascal distribution or Pó
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#ranking</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">ranking</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>#receiver_operational_characteristics_curve</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -3598,6 +3972,11 @@ The negative binomial distribution, also known as the Pascal distribution or Pó
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#receiver_operational_characteristics_curve</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">receiver operational characteristics curve</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>#sensitivity</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -3633,6 +4012,11 @@ http://mathworld.wolfram.com/Sensitivity.html</Literal>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">true positive rate</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>#skewness</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>#skewness</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Skewness is a measure of the degree of asymmetry of a distribution.</Literal>
@@ -3658,6 +4042,11 @@ http://mathworld.wolfram.com/Sensitivity.html</Literal>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">skewness</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>#specificity</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>#specificity</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">specificity is a measurement datum qualifying a binary classification test and is computed by substracting the false positive rate to the integral numeral 1</Literal>
@@ -3681,6 +4070,11 @@ http://mathworld.wolfram.com/Sensitivity.html</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#specificity</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">true negative rate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>#standard_deviation</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -3713,6 +4107,11 @@ http://mathworld.wolfram.com/Sensitivity.html</Literal>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">standard deviation</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>#standard_normal_distribution</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>#standard_normal_distribution</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">standard normal distribution is a normal distribution with variance = 1 and mean=0</Literal>
@@ -3738,6 +4137,11 @@ http://mathworld.wolfram.com/Sensitivity.html</Literal>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">standard normal distribution</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>#variance</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>#variance</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">variance is a data item about a random variable or probability distribution. it is equivalent to the square of the standard deviation.  It is one of several descriptors of a probability distribution, describing how far the numbers lie from the mean (expected value).The variance is the second moment of a distribution.</Literal>
@@ -3761,6 +4165,11 @@ http://mathworld.wolfram.com/Sensitivity.html</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#variance</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">variance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>#volcano_plot</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
