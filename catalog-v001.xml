@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1362728556428" name="http://http://purl.obolibrary.org/obo/isa-obi-module.owl" uri="isa-obi-module.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1362728556428" name="http://protege.stanford.edu/plugins/owl/dc/protege-dc.owl" uri="external/protege-dc.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1362728556428" name="duplicate:http://purl.obolibrary.org/obo/" uri="obi/external-byhand.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1362728556428" name="duplicate:http://purl.obolibrary.org/obo/" uri="obi/external.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1362728556428" name="duplicate:http://purl.obolibrary.org/obo/bfo/core-classes.owl" uri="external/bfo2-alan/ruttenberg-bfo2.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1362728556428" name="duplicate:http://purl.obolibrary.org/obo/bfo/core-classes.owl" uri="external/bfo2-alan/ruttenberg-classes.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1362728556428" name="http://purl.obolibrary.org/obo/bfo/core-relations.owl" uri="external/bfo2-alan/ruttenberg-relations.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1362728556428" name="http://purl.obolibrary.org/obo/extended-obi.owl" uri="extended-obi.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1362728556428" name="http://purl.obolibrary.org/obo/iao/dev/external.owl" uri="external/iao-bfo2/external.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1362728556428" name="http://purl.obolibrary.org/obo/iao/dev/externalByHand.owl" uri="external/iao-bfo2/externalByHand.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1362728556428" name="http://purl.obolibrary.org/obo/iao/dev/externalDerived.owl" uri="external/iao-bfo2/externalDerived.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1362728556428" name="http://purl.obolibrary.org/obo/iao/dev/iao-main.owl" uri="external/iao-bfo2/iao-main.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1362728556428" name="http://purl.obolibrary.org/obo/iao/dev/iao.owl" uri="external/iao-bfo2/IAO.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1362728556428" name="http://purl.obolibrary.org/obo/iao/dev/ontology-metadata.owl" uri="external/iao-bfo2/ontology-metadata.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1362728556428" name="http://purl.obolibrary.org/obo/obi.owl" uri="obi/obi.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1362728556428" name="http://purl.obolibrary.org/obo/obi/dev/crux-staging.owl" uri="obi/crux-staging.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1362728556428" name="http://purl.obolibrary.org/obo/obi/externalDerived.owl" uri="obi/externalDerived.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1362728556428" name="http://www.semanticweb.org/agbeltran/ontologies/2013/0/untitled-ontology-79" uri="examples/exp-design.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1362728556428" name="http://www.semanticweb.org/agbeltran/ontologies/2013/0/untitled-ontology-80" uri="examples/rules.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1362728556428" name="http://www.semanticweb.org/agbeltran/ontologies/2013/0/untitled-ontology-81" uri="examples/marbles.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1362728556428" name="shadowed:http://purl.obolibrary.org/obo/" uri="external/iao-bfo2/obsolete.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1362728556428" name="shadowed:http://purl.obolibrary.org/obo/obi.owl" uri="examples/obi-prs.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1362728556428" name="shadowed:http://purl.obolibrary.org/obo/obi.owl" uri="obi-branch/obi-prs-earlier.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1362980618323" name="http://http://purl.obolibrary.org/obo/isa-obi-module.owl" uri="isa-obi-module.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1362980618323" name="http://protege.stanford.edu/plugins/owl/dc/protege-dc.owl" uri="external/protege-dc.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1362980618323" name="duplicate:http://purl.obolibrary.org/obo/" uri="obi/external-byhand.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1362980618323" name="duplicate:http://purl.obolibrary.org/obo/" uri="obi/external.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1362980618323" name="duplicate:http://purl.obolibrary.org/obo/bfo/core-classes.owl" uri="external/bfo2-alan/ruttenberg-bfo2.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1362980618323" name="duplicate:http://purl.obolibrary.org/obo/bfo/core-classes.owl" uri="external/bfo2-alan/ruttenberg-classes.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1362980618323" name="http://purl.obolibrary.org/obo/bfo/core-relations.owl" uri="external/bfo2-alan/ruttenberg-relations.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1362980618323" name="http://purl.obolibrary.org/obo/extended-obi.owl" uri="extended-obi.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1362980618323" name="http://purl.obolibrary.org/obo/iao/dev/external.owl" uri="external/iao-bfo2/external.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1362980618323" name="http://purl.obolibrary.org/obo/iao/dev/externalByHand.owl" uri="external/iao-bfo2/externalByHand.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1362980618323" name="http://purl.obolibrary.org/obo/iao/dev/externalDerived.owl" uri="external/iao-bfo2/externalDerived.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1362980618323" name="http://purl.obolibrary.org/obo/iao/dev/iao-main.owl" uri="external/iao-bfo2/iao-main.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1362980618323" name="http://purl.obolibrary.org/obo/iao/dev/iao.owl" uri="external/iao-bfo2/IAO.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1362980618323" name="http://purl.obolibrary.org/obo/iao/dev/ontology-metadata.owl" uri="external/iao-bfo2/ontology-metadata.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1362980618323" name="http://purl.obolibrary.org/obo/obi.owl" uri="obi/obi.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1362980618323" name="http://purl.obolibrary.org/obo/obi/dev/crux-staging.owl" uri="obi/crux-staging.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1362980618323" name="http://purl.obolibrary.org/obo/obi/externalDerived.owl" uri="obi/externalDerived.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1362980618323" name="http://www.semanticweb.org/agbeltran/ontologies/2013/0/untitled-ontology-79" uri="examples/exp-design.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1362980618323" name="http://www.semanticweb.org/agbeltran/ontologies/2013/0/untitled-ontology-80" uri="examples/rules.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1362980618323" name="http://www.semanticweb.org/agbeltran/ontologies/2013/0/untitled-ontology-81" uri="examples/marbles.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1362980618323" name="shadowed:http://purl.obolibrary.org/obo/" uri="external/iao-bfo2/obsolete.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1362980618323" name="shadowed:http://purl.obolibrary.org/obo/obi.owl" uri="examples/obi-prs.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1362980618323" name="shadowed:http://purl.obolibrary.org/obo/obi.owl" uri="obi-branch/obi-prs-earlier.owl"/>
     </group>
 </catalog>
