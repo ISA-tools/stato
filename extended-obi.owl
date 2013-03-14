@@ -209,6 +209,15 @@
         <Class IRI="http://isa-tools.org/isa/ISA_0000151"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#50_percent_confidence_interval"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#95_percent_confidence_interval"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#99_percent_confidence_interval"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Bernoulli_distribution"/>
     </Declaration>
     <Declaration>
@@ -219,6 +228,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#Poisson_distribution"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Strictly_standardized_mean_difference"/>
     </Declaration>
     <Declaration>
         <Class IRI="#allele_frequency"/>
@@ -239,6 +251,9 @@
         <Class IRI="#confidence_interval"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#effect_size"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#expected_value"/>
     </Declaration>
     <Declaration>
@@ -249,6 +264,15 @@
     </Declaration>
     <Declaration>
         <Class IRI="#goodness_of_fit_statistical_test"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#high_content_screening"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#high_throughput_screening"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#hit_selection"/>
     </Declaration>
     <Declaration>
         <Class IRI="#kurtosis_excess"/>
@@ -270,6 +294,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#odds_ratio"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ordinal_variable_specification"/>
     </Declaration>
     <Declaration>
         <Class IRI="#q-q_plot"/>
@@ -346,13 +373,6 @@
         </ObjectUnionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="http://isa-tools.org/isa/ISA0000013"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
-            <Class IRI="http://purl.obolibrary.org/obo/IAO_0000027"/>
-        </ObjectSomeValuesFrom>
-    </EquivalentClasses>
-    <EquivalentClasses>
         <Class IRI="http://isa-tools.org/isa/ISA0000023"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000605"/>
@@ -396,6 +416,19 @@
         </ObjectUnionOf>
     </EquivalentClasses>
     <EquivalentClasses>
+        <Class IRI="http://purl.obolibrary.org/obo/OBI_0500020"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://isa-tools.org/isa/ISA_0000114"/>
+            <ObjectIntersectionOf>
+                <Class IRI="http://purl.obolibrary.org/obo/OBI_0000750"/>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                    <Class IRI="http://purl.obolibrary.org/obo/IAO_0000584"/>
+                </ObjectSomeValuesFrom>
+            </ObjectIntersectionOf>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
         <Class IRI="#between_group_test"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000417"/>
@@ -408,6 +441,23 @@
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000417"/>
             <Class IRI="http://isa-tools.org/isa/ISA_0000103"/>
         </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#high_throughput_screening"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <Class IRI="#hit_selection"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <ObjectUnionOf>
+                    <Class IRI="http://purl.obolibrary.org/obo/OBI_0000164"/>
+                    <Class IRI="http://purl.obolibrary.org/obo/OBI_0100064"/>
+                    <Class IRI="http://purl.obolibrary.org/obo/OBI_1000029"/>
+                </ObjectUnionOf>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#linkage_between_2_categorical_variable_test"/>
@@ -481,6 +531,13 @@
                 <Class IRI="http://isa-tools.org/isa/ISA0000020"/>
             </ObjectSomeValuesFrom>
         </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://isa-tools.org/isa/ISA0000013"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            <Class IRI="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://isa-tools.org/isa/ISA0000013"/>
@@ -1473,6 +1530,13 @@
         </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/OBI_0000175"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000312"/>
+            <Class IRI="http://purl.obolibrary.org/obo/OBI_0000673"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0000739"/>
         <ObjectIntersectionOf>
             <ObjectExactCardinality cardinality="1">
@@ -1609,31 +1673,6 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0200201"/>
-        <ObjectIntersectionOf>
-            <ObjectMinCardinality cardinality="2">
-                <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <ObjectIntersectionOf>
-                    <Class IRI="http://purl.obolibrary.org/obo/IAO_0000100"/>
-                    <ObjectSomeValuesFrom>
-                        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <ObjectIntersectionOf>
-                            <Class IRI="http://purl.obolibrary.org/obo/IAO_0000032"/>
-                            <ObjectExactCardinality cardinality="1">
-                                <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                                <Class IRI="http://purl.obolibrary.org/obo/OBI_0000751"/>
-                            </ObjectExactCardinality>
-                        </ObjectIntersectionOf>
-                    </ObjectSomeValuesFrom>
-                </ObjectIntersectionOf>
-            </ObjectMinCardinality>
-            <ObjectExactCardinality cardinality="1">
-                <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <Class IRI="http://isa-tools.org/isa/ISA0000002"/>
-            </ObjectExactCardinality>
-        </ObjectIntersectionOf>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/OBI_0200201"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
             <ObjectUnionOf>
@@ -1679,6 +1718,25 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/OBI_0200201"/>
+        <ObjectMinCardinality cardinality="2">
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
+            <ObjectIntersectionOf>
+                <Class IRI="http://purl.obolibrary.org/obo/IAO_0000100"/>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                    <ObjectIntersectionOf>
+                        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000032"/>
+                        <ObjectExactCardinality cardinality="1">
+                            <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                            <Class IRI="http://purl.obolibrary.org/obo/OBI_0000751"/>
+                        </ObjectExactCardinality>
+                    </ObjectIntersectionOf>
+                </ObjectSomeValuesFrom>
+            </ObjectIntersectionOf>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
             <Literal datatypeIRI="&rdf;PlainLiteral">This statement can actually be inferred from &apos;plan specification&apos;, because &apos;independent variable specification&apos; is a subclass of &apos;is part of&apos; some &apos;plan specification&apos;</Literal>
@@ -1719,10 +1777,13 @@
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://isa-tools.org/isa/ISA_0000114"/>
             <ObjectIntersectionOf>
-                <Class IRI="http://isa-tools.org/isa/ISA0000019"/>
+                <ObjectIntersectionOf>
+                    <Class IRI="http://isa-tools.org/isa/ISA0000019"/>
+                    <Class IRI="http://purl.obolibrary.org/obo/OBI_0000750"/>
+                </ObjectIntersectionOf>
                 <ObjectSomeValuesFrom>
                     <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                    <Class IRI="http://purl.obolibrary.org/obo/IAO_0000030"/>
+                    <Class IRI="http://purl.obolibrary.org/obo/IAO_0000584"/>
                 </ObjectSomeValuesFrom>
             </ObjectIntersectionOf>
         </ObjectSomeValuesFrom>
@@ -1751,6 +1812,13 @@
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0500000"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/OBI_0500007"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://isa-tools.org/isa/ISA_0000114"/>
+            <Class IRI="http://isa-tools.org/isa/ISA0000019"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0500011"/>
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0500000"/>
     </SubClassOf>
@@ -1764,6 +1832,20 @@
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0500011"/>
         <ObjectExactCardinality cardinality="2">
+            <ObjectProperty IRI="http://isa-tools.org/isa/ISA_0000114"/>
+            <Class IRI="http://isa-tools.org/isa/ISA0000019"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/OBI_0500012"/>
+        <ObjectExactCardinality cardinality="3">
+            <ObjectProperty IRI="http://isa-tools.org/isa/ISA_0000114"/>
+            <Class IRI="http://isa-tools.org/isa/ISA0000019"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/OBI_0500013"/>
+        <ObjectExactCardinality cardinality="4">
             <ObjectProperty IRI="http://isa-tools.org/isa/ISA_0000114"/>
             <Class IRI="http://isa-tools.org/isa/ISA0000019"/>
         </ObjectExactCardinality>
@@ -1820,6 +1902,18 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#50_percent_confidence_interval"/>
+        <Class IRI="#confidence_interval"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#95_percent_confidence_interval"/>
+        <Class IRI="#confidence_interval"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#99_percent_confidence_interval"/>
+        <Class IRI="#confidence_interval"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Bernoulli_distribution"/>
         <Class IRI="#binomial_distribution"/>
     </SubClassOf>
@@ -1834,6 +1928,24 @@
     <SubClassOf>
         <Class IRI="#Poisson_distribution"/>
         <Class IRI="http://isa-tools.org/isa/ISA_0000105"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Strictly_standardized_mean_difference"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000027"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Strictly_standardized_mean_difference"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
+            <Class IRI="#effect_size"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Strictly_standardized_mean_difference"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000295"/>
+            <Class IRI="#hit_selection"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#allele_frequency"/>
@@ -1860,6 +1972,34 @@
         <Class IRI="http://purl.obolibrary.org/obo/IAO_0000027"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#confidence_interval"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
+            <Class IRI="#effect_size"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#confidence_interval"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
+            <ObjectUnionOf>
+                <Class IRI="http://purl.obolibrary.org/obo/OBI_0000674"/>
+                <Class IRI="#odds_ratio"/>
+            </ObjectUnionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#confidence_interval"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000312"/>
+            <Class IRI="http://purl.obolibrary.org/obo/OBI_0000673"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#effect_size"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000027"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#expected_value"/>
         <Class IRI="http://purl.obolibrary.org/obo/IAO_0000027"/>
     </SubClassOf>
@@ -1881,6 +2021,105 @@
     <SubClassOf>
         <Class IRI="#goodness_of_fit_statistical_test"/>
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0000673"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#high_content_screening"/>
+        <Class IRI="http://purl.obolibrary.org/obo/OBI_0000066"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#high_content_screening"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            <Class IRI="http://purl.obolibrary.org/obo/OBI_0000964"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#high_content_screening"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            <Class IRI="http://purl.obolibrary.org/obo/OBI_0200169"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#high_content_screening"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            <Class IRI="#between_group_test"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#high_content_screening"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            <Class IRI="#hit_selection"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#high_content_screening"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            <ObjectUnionOf>
+                <Class IRI="http://purl.obolibrary.org/obo/OBI_0000185"/>
+                <Class IRI="http://purl.obolibrary.org/obo/OBI_0000916"/>
+            </ObjectUnionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#high_content_screening"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
+            <ObjectUnionOf>
+                <Class IRI="http://purl.obolibrary.org/obo/OBI_0000164"/>
+                <Class IRI="http://purl.obolibrary.org/obo/OBI_0100064"/>
+            </ObjectUnionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#high_throughput_screening"/>
+        <Class IRI="http://purl.obolibrary.org/obo/OBI_0000066"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#high_throughput_screening"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            <ObjectUnionOf>
+                <Class IRI="http://purl.obolibrary.org/obo/OBI_0000443"/>
+                <Class IRI="http://purl.obolibrary.org/obo/OBI_0000964"/>
+            </ObjectUnionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#hit_selection"/>
+        <Class IRI="http://purl.obolibrary.org/obo/OBI_0000011"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#hit_selection"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://isa-tools.org/isa/ISA0000001"/>
+            <ObjectIntersectionOf>
+                <Class IRI="http://purl.obolibrary.org/obo/OBI_0001755"/>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                    <Class IRI="#effect_size"/>
+                </ObjectSomeValuesFrom>
+            </ObjectIntersectionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#hit_selection"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
+            <ObjectIntersectionOf>
+                <ObjectUnionOf>
+                    <Class IRI="http://purl.obolibrary.org/obo/OBI_0000175"/>
+                    <Class IRI="#Strictly_standardized_mean_difference"/>
+                </ObjectUnionOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                    <Class IRI="#between_group_test"/>
+                </ObjectSomeValuesFrom>
+            </ObjectIntersectionOf>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#kurtosis_excess"/>
@@ -1952,6 +2191,17 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#ordinal_variable_specification"/>
+        <Class IRI="http://isa-tools.org/isa/ISA0000015"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ordinal_variable_specification"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000312"/>
+            <Class IRI="#ranking"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#q-q_plot"/>
         <Class IRI="http://purl.obolibrary.org/obo/IAO_0000038"/>
     </SubClassOf>
@@ -1975,10 +2225,10 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#ranking"/>
-        <ObjectSomeValuesFrom>
+        <ObjectAllValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000299"/>
-            <Class IRI="http://isa-tools.org/isa/ISA0000015"/>
-        </ObjectSomeValuesFrom>
+            <Class IRI="#ordinal_variable_specification"/>
+        </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#receiver_operational_characteristics_curve"/>
@@ -2073,7 +2323,7 @@
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
             <ObjectIntersectionOf>
-                <Class IRI="http://purl.obolibrary.org/obo/OBI_0000175"/>
+                <Class IRI="#fold_change"/>
                 <ObjectSomeValuesFrom>
                     <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000295"/>
                     <Class IRI="http://purl.obolibrary.org/obo/OBI_0200094"/>
@@ -2086,10 +2336,18 @@
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
             <ObjectIntersectionOf>
-                <Class IRI="#fold_change"/>
+                <ObjectUnionOf>
+                    <Class IRI="http://purl.obolibrary.org/obo/OBI_0000175"/>
+                    <Class IRI="http://purl.obolibrary.org/obo/OBI_0001265"/>
+                    <Class IRI="http://purl.obolibrary.org/obo/OBI_0001442"/>
+                </ObjectUnionOf>
                 <ObjectSomeValuesFrom>
                     <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000295"/>
                     <Class IRI="http://purl.obolibrary.org/obo/OBI_0200094"/>
+                </ObjectSomeValuesFrom>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                    <Class IRI="http://purl.obolibrary.org/obo/OBI_0000673"/>
                 </ObjectSomeValuesFrom>
             </ObjectIntersectionOf>
         </ObjectSomeValuesFrom>
@@ -2098,7 +2356,17 @@
         <Class IRI="#volcano_plot"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
-            <Class IRI="http://purl.obolibrary.org/obo/OBI_0000650"/>
+            <Class IRI="http://purl.obolibrary.org/obo/GO_0010467"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#volcano_plot"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000312"/>
+            <ObjectIntersectionOf>
+                <Class IRI="http://purl.obolibrary.org/obo/OBI_0000650"/>
+                <Class IRI="http://purl.obolibrary.org/obo/OBI_0200191"/>
+            </ObjectIntersectionOf>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -2446,9 +2714,29 @@ The &apos;variable spec&apos; is the &apos;data set&apos;, referring to the set 
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">factor level combination</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://isa-tools.org/isa/ISA0000022</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://isa-tools.org/isa/ISA0000022</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">permutation numbering is a data tranformation allowing to count the number of possible permutations of elements in a set of size n, each element occurring exactly once. This number is factorial n.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://isa-tools.org/isa/ISA0000022</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://isa-tools.org/isa/ISA0000022</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://isa-tools.org/isa/ISA0000022</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">permutation</Literal>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">permutation numbering</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -3559,6 +3847,111 @@ AGB and PRS provide formal definition expressed the test in terms of output and 
         <Literal datatypeIRI="&rdf;PlainLiteral">F test</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000116"/>
+        <IRI>http://purl.obolibrary.org/obo/OBI_0500020</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PRS-AGB adding formal restriction on independent variable specification about time (march 2013) and making time series design class a defined class.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#50_percent_confidence_interval</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2689604/</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>#50_percent_confidence_interval</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#50_percent_confidence_interval</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">a confidence interval which covers 50% of the sampling distribution, meaning that there is a 50% risk of false positive (type I error)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>#50_percent_confidence_interval</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>#50_percent_confidence_interval</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#50_percent_confidence_interval</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">50% confidence interval</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#95_percent_confidence_interval</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2689604/</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>#95_percent_confidence_interval</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#95_percent_confidence_interval</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">a confidence interval which covers 95% of the sampling distribution, meaning that there is a 5% risk of false positive (type I error). If the number of observations made is large enough, the sampling distribution can be assumed to be normal, which entails that 95% of the sampling distributions falls within roughly2 (1.96) standard deviations from the mean.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>#95_percent_confidence_interval</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>#95_percent_confidence_interval</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
+        <IRI>#95_percent_confidence_interval</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">confidence interval at 5% of type I error rate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#95_percent_confidence_interval</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">95% confidence interval</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#99_percent_confidence_interval</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2689604/</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>#99_percent_confidence_interval</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#99_percent_confidence_interval</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">a confidence interval which covers 99% of the sampling distribution, meaning that there is a 1% risk of false positive (type I error)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>#99_percent_confidence_interval</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>#99_percent_confidence_interval</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
+        <IRI>#99_percent_confidence_interval</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">confidence interval at 1% of type I error rate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#99_percent_confidence_interval</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">99% confidence interval</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
         <IRI>#Bernoulli_distribution</IRI>
         <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
@@ -3697,6 +4090,54 @@ The expected value of a Poisson-distributed random variable is equal to λ and s
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Poisson distribution</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#Strictly_standardized_mean_difference</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2789971/</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>#Strictly_standardized_mean_difference</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#Strictly_standardized_mean_difference</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">strictly standardized mean difference (SSMS) is the  ratio of mean to the standard deviation of the difference between two groups. 
+SSMD directly measures the magnitude of difference between two groups.
+SSMD is widely used in High Content Screen for hit selection and quality control.
+
+When the data is preprocessed using log-transformation as normally done in HTS experiments, SSMD is the mean of log fold change divided by the standard deviation of log fold change with respect to a negative reference. 
+
+In other words, SSMD is the average fold change (on the log scale) penalized by the variability of fold change (on the log scale).
+
+For quality control, one index for the quality of an HTS assay is the magnitude of difference between a positive control and a negative reference in an assay plate. For hit selection, the size of effects of a compound (i.e., a small molecule or an siRNA) is represented by the magnitude of difference between the compound and a negative reference. SSMD directly measures the magnitude of difference between two groups. Therefore, SSMD can be used for both quality control and hit selection in HTS experiments.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>#Strictly_standardized_mean_difference</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>#Strictly_standardized_mean_difference</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#Strictly_standardized_mean_difference</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://en.wikipedia.org/wiki/SSMD</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#Strictly_standardized_mean_difference</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2789971/</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Strictly_standardized_mean_difference</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">strictly standardized mean difference</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>#allele_frequency</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">it is the number of copies of a particular allele divided by the number of copies of all alleles at the genetic place (locus) in a population</Literal>
@@ -3740,6 +4181,26 @@ The expected value of a Poisson-distributed random variable is equal to λ and s
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#association_testing_objective</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">association testing objective</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>#between_group_test</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>#between_group_test</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>#between_group_test</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#between_group_test</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">between group comparison statistical test</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
@@ -3807,6 +4268,11 @@ The variance is N*p*q</Literal>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">box plot</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#confidence_interval</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2689604/</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
         <IRI>#confidence_interval</IRI>
         <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
@@ -3835,6 +4301,41 @@ The variance is N*p*q</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#confidence_interval</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">confidence interval</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#effect_size</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2689604/</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>#effect_size</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#effect_size</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">effect size is a data item about the direction and strength of the consequences of a causative agent as explored by statistical methods. Those methods produce estimates of the effect size, e.g. confidence interval</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>#effect_size</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>#effect_size</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#effect_size</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">AGB,PRS,</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#effect_size</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">effect size</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
@@ -3947,9 +4448,132 @@ The variance is N*p*q</Literal>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">fold change</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>#goodness_of_fit_statistical_test</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>#goodness_of_fit_statistical_test</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>#goodness_of_fit_statistical_test</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#goodness_of_fit_statistical_test</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">goodness of fit statistical test</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>#high_content_screening</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#high_content_screening</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">high content screening is a kind of investigation which uses a standardized cellular assays to test the effect of substances (RNAi or small molecules) held in libraries on a cellular phenotype. it relies on microscopy imaging and or flow-cytometry, robotic handling to ensure fast and high-throughput.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>#high_content_screening</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>#high_content_screening</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
+        <IRI>#high_content_screening</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">high throughput screening</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#high_content_screening</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">adapted from:
+http://en.wikipedia.org/wiki/High-content_screening</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#high_content_screening</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">high-content screening</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>#high_throughput_screening</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#high_throughput_screening</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">high throughput screening is a kind of investigation which uses a standardized  assays (cell based, enzymatic or chemometric) to test the effect of substances (RNAi or small molecules) held in libraries on a very specific and measureable outcome (e.g fluorence intensity). it relies on robotic handling to ensure fast and high-throughput in assay performance, data acquisition and hit selection.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>#high_throughput_screening</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>#high_throughput_screening</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#high_throughput_screening</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">AGB,PRS</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#high_throughput_screening</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">high throughput screening</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>#hit_selection</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#hit_selection</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">hit selection is a planned process which in screening processes such as high-throughput screening, lead to the identification of perturbing agent which cause the typical signal generated by a standardized assay to significantly differ from the negative control. The selection hitself results from meeting or exceeding selection threshold (for instance 6 sigma from the mean or SSMD value beyond 5 when compared to positive controls or below -5 when compared to negative controls</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>#hit_selection</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>#hit_selection</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#hit_selection</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">AGB, PRS</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#hit_selection</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">adapted from:
+http://en.wikipedia.org/wiki/SSMD</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#hit_selection</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">adapted from:
+http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2789971/</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hit_selection</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">hit selection</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
@@ -3980,6 +4604,21 @@ The variance is N*p*q</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#kurtosis_excess</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">kurtosis excess</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>#linkage_between_2_categorical_variable_test</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>#linkage_between_2_categorical_variable_test</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>#linkage_between_2_categorical_variable_test</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4114,6 +4753,16 @@ It represents the odds that an outcome will occur given a particular exposure, c
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#odds_ratio</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">odds ratio</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#ordinal_variable_specification</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">ordinal variable specification is a categorical variable specification where category assumed by the variable corresponds to an implicit ranking</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ordinal_variable_specification</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">ordinal variable specification</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
@@ -4443,6 +5092,26 @@ It is a popular method for visualizing differential occurence of variables betwe
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#volcano_plot</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">volcano plot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>#within_subject_comparison_test</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>#within_subject_comparison_test</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>#within_subject_comparison_test</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#within_subject_comparison_test</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">within subject comparison statistical test</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
