@@ -212,7 +212,13 @@
         <Class IRI="http://isa-tools.org/isa/ISA_0000152"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#1_percent_false_positive_rate"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#50_percent_confidence_interval"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#5_percent_false_positive_rate"/>
     </Declaration>
     <Declaration>
         <Class IRI="#95_percent_confidence_interval"/>
@@ -252,6 +258,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#confidence_interval"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#confidence_interval_calculation"/>
     </Declaration>
     <Declaration>
         <Class IRI="#effect_size"/>
@@ -528,7 +537,7 @@
         <Class IRI="http://isa-tools.org/isa/ISA0000012"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
-            <Class IRI="http://isa-tools.org/isa/ISA_0000126"/>
+            <Class IRI="http://isa-tools.org/isa/ISA_0000127"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -619,7 +628,7 @@
     <SubClassOf>
         <Class IRI="http://isa-tools.org/isa/ISA0000023"/>
         <ObjectMinCardinality cardinality="1">
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000605"/>
             <Class IRI="http://purl.obolibrary.org/obo/OBI_0000750"/>
         </ObjectMinCardinality>
     </SubClassOf>
@@ -661,8 +670,22 @@
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0000675"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000103"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            <Class IRI="http://isa-tools.org/isa/ISA_0000123"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="http://isa-tools.org/isa/ISA_0000104"/>
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0000675"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000104"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            <Class IRI="http://isa-tools.org/isa/ISA_0000124"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://isa-tools.org/isa/ISA_0000105"/>
@@ -827,6 +850,13 @@
     <SubClassOf>
         <Class IRI="http://isa-tools.org/isa/ISA_0000118"/>
         <Class IRI="http://purl.obolibrary.org/obo/IAO_0000027"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000118"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="http://isa-tools.org/isa/ISA_0000144"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataExactCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://isa-tools.org/isa/ISA_0000119"/>
@@ -1038,7 +1068,7 @@
         <Class IRI="http://isa-tools.org/isa/ISA_0000133"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000417"/>
-            <Class IRI="http://isa-tools.org/isa/ISA_0000123"/>
+            <Class IRI="http://isa-tools.org/isa/ISA_0000103"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -1621,7 +1651,7 @@
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0000739"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
-            <Class IRI="http://isa-tools.org/isa/ISA_0000107"/>
+            <Class IRI="http://isa-tools.org/isa/ISA_0000105"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -1998,8 +2028,16 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#1_percent_false_positive_rate"/>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000108"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#50_percent_confidence_interval"/>
         <Class IRI="#confidence_interval"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#5_percent_false_positive_rate"/>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000108"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#95_percent_confidence_interval"/>
@@ -2052,6 +2090,13 @@
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0000675"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#association_testing_objective"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            <Class IRI="http://isa-tools.org/isa/ISA_0000125"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#between_group_test"/>
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0000673"/>
     </SubClassOf>
@@ -2089,6 +2134,24 @@
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000312"/>
             <Class IRI="http://purl.obolibrary.org/obo/OBI_0000673"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#confidence_interval_calculation"/>
+        <Class IRI="http://purl.obolibrary.org/obo/OBI_0200000"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#confidence_interval_calculation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
+            <Class IRI="http://isa-tools.org/isa/ISA_0000108"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#confidence_interval_calculation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000299"/>
+            <Class IRI="#confidence_interval"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -2304,6 +2367,13 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#odds_ratio"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000295"/>
+            <Class IRI="#confidence_interval_calculation"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#ordinal_variable_specification"/>
         <Class IRI="http://isa-tools.org/isa/ISA0000015"/>
     </SubClassOf>
@@ -2381,6 +2451,13 @@
     <SubClassOf>
         <Class IRI="#relative_risk"/>
         <Class IRI="http://purl.obolibrary.org/obo/IAO_0000109"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#relative_risk"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000295"/>
+            <Class IRI="#confidence_interval_calculation"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#sensitivity"/>
@@ -3212,6 +3289,38 @@ http://mathworld.wolfram.com/NormalDistribution.html</Literal>
         <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000119</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">The number degree of freedom is a count evaluating the number of values in a calculation that we can vary. In statistics, the number of degrees of freedom ν is equal to N-1 in the case of the direct measurement of a quantity estimated by the arithmetic mean of N independent observations.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000119</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000119</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000119</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://stats.stackexchange.com/questions/16921/how-to-understand-degrees-of-freedom</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000119</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://www.optique-ingenieur.org/en/courses/OPI_ang_M07_C01/co/Contenu_07.html
+
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000119</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">the rank of the quadratic form (mathematical definition)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://isa-tools.org/isa/ISA_0000119</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">number of degrees of freedom</Literal>
@@ -3980,9 +4089,29 @@ Bartlett&apos;s test is sensitive to departures from normality. That is, if the 
         <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000149</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">statistical sample size is a count evaluating the number of individual experimental units</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000149</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000149</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://isa-tools.org/isa/ISA_0000149</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">population size</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000149</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">statistical sample size</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4106,6 +4235,11 @@ AGB and PRS provide formal definition expressed the test in terms of output and 
         <Literal datatypeIRI="&rdf;PlainLiteral">PRS-AGB adding formal restriction on independent variable specification about time (march 2013) and making time series design class a defined class.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#1_percent_false_positive_rate</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">1 % false positive rate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
         <IRI>#50_percent_confidence_interval</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2689604/</Literal>
@@ -4134,6 +4268,11 @@ AGB and PRS provide formal definition expressed the test in terms of output and 
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#50_percent_confidence_interval</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">50% confidence interval</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#5_percent_false_positive_rate</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">5 % false positive rate</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
@@ -4594,6 +4733,31 @@ http://stat.ethz.ch/R-manual/R-patched/library/stats/html/Binomial.html</Literal
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#confidence_interval</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">confidence interval</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#confidence_interval_calculation</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">confidence interval calculation is a data transformation which determines a confidence interval for a given statistical parameter</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>#confidence_interval_calculation</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>#confidence_interval_calculation</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>#confidence_interval_calculation</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#confidence_interval_calculation</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">confidence interval calculation</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
@@ -5509,5 +5673,5 @@ It is a popular method for visualizing differential occurence of variables betwe
 
 
 
-<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+<!-- Generated by the OWL API (version 3.3.1957) http://owlapi.sourceforge.net -->
 
