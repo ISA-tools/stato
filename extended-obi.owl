@@ -891,6 +891,20 @@
         <Class IRI="http://isa-tools.org/isa/ISA_0000118"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000120"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
+            <Class IRI="http://purl.obolibrary.org/obo/OBI_0000626"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000120"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
+            <Class IRI="http://purl.obolibrary.org/obo/OBI_0000811"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="http://isa-tools.org/isa/ISA_0000121"/>
         <Class IRI="http://purl.obolibrary.org/obo/IAO_0000030"/>
     </SubClassOf>
@@ -1637,12 +1651,26 @@
         <Class IRI="http://isa-tools.org/isa/ISA0000015"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000147"/>
+        <ObjectExactCardinality cardinality="2">
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000605"/>
+            <Class IRI="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="http://isa-tools.org/isa/ISA_0000148"/>
         <Class IRI="http://isa-tools.org/isa/ISA0000015"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://isa-tools.org/isa/ISA_0000149"/>
         <Class IRI="http://isa-tools.org/isa/ISA_0000118"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000149"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
+            <Class IRI="http://isa-tools.org/isa/ISA0000002"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://isa-tools.org/isa/ISA_0000150"/>
@@ -2187,6 +2215,16 @@
         <Class IRI="http://purl.obolibrary.org/obo/IAO_0000109"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#allele_frequency"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
+            <ObjectIntersectionOf>
+                <Class IRI="http://purl.obolibrary.org/obo/OBI_0000181"/>
+                <Class IRI="http://purl.obolibrary.org/obo/OBI_0001352"/>
+            </ObjectIntersectionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#association_testing_objective"/>
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0000675"/>
     </SubClassOf>
@@ -2568,6 +2606,13 @@
     <SubClassOf>
         <Class IRI="#power_statistical_test"/>
         <Class IRI="http://purl.obolibrary.org/obo/IAO_0000027"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#power_statistical_test"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
+            <Class IRI="http://purl.obolibrary.org/obo/OBI_0000673"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#q-q_plot"/>
@@ -3075,6 +3120,21 @@
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">within subject comparison objective</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://isa-tools.org/isa/ISA0000013</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">a variable specification is a data item which</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://isa-tools.org/isa/ISA0000013</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://isa-tools.org/isa/ISA0000013</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>http://isa-tools.org/isa/ISA0000013</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">The type of the variable is given by the &apos;is about&apos; relationship pointing to the entity.
@@ -3102,6 +3162,16 @@ The &apos;variable spec&apos; is the &apos;data set&apos;, referring to the set 
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">assumes values specified by</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>http://isa-tools.org/isa/ISA0000015</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://isa-tools.org/isa/ISA0000015</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">a categorical variable specification is a variable specification which declares a variable that can only assume a finite number  of value and cast observation in a small number of categories</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
         <IRI>http://isa-tools.org/isa/ISA0000015</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
@@ -3114,7 +3184,22 @@ The &apos;variable spec&apos; is the &apos;data set&apos;, referring to the set 
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
         <IRI>http://isa-tools.org/isa/ISA0000015</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">discrete variable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
+        <IRI>http://isa-tools.org/isa/ISA0000015</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">nominal variable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
+        <IRI>http://isa-tools.org/isa/ISA0000015</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">qualitative factor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://isa-tools.org/isa/ISA0000015</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://udel.edu/~mcdonald/statvartypes.html</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/source"/>
@@ -3125,6 +3210,36 @@ The &apos;variable spec&apos; is the &apos;data set&apos;, referring to the set 
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://isa-tools.org/isa/ISA0000015</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">categorical variable specification</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>http://isa-tools.org/isa/ISA0000016</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">&quot;Time to solve an anagram problem&quot; is continuous since it could take 2 minutes, 2.13 minutes etc. to finish a problem</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://isa-tools.org/isa/ISA0000016</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A continuous variable is one for which, within the limits the variable ranges, any value is possible.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://isa-tools.org/isa/ISA0000016</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://isa-tools.org/isa/ISA0000016</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://isa-tools.org/isa/ISA0000016</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://davidmlane.com/hyperstat/A97418.html</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://isa-tools.org/isa/ISA0000016</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://udel.edu/~mcdonald/statvartypes.html</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -3172,9 +3287,44 @@ The &apos;variable spec&apos; is the &apos;data set&apos;, referring to the set 
         <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://isa-tools.org/isa/ISA0000020</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A factor level is one of the value assumed by a factor or independent variable manipulated and set by the experimentalist. In the context of factorial design, a factor level is assumed to be or treated as a category in a categorical variable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://isa-tools.org/isa/ISA0000020</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://isa-tools.org/isa/ISA0000020</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://isa-tools.org/isa/ISA0000020</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">AGB-PRS</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://isa-tools.org/isa/ISA0000020</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">factor level</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://isa-tools.org/isa/ISA0000021</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://isa-tools.org/isa/ISA0000021</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://isa-tools.org/isa/ISA0000021</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">a factor level combination is one a possible sets of factor levels resulting from the cartesian product of sets of factor and their levels as defined in a factorial design</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
@@ -3525,6 +3675,16 @@ http://mathworld.wolfram.com/NormalDistribution.html</Literal>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://isa-tools.org/isa/ISA_0000113</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">one-way anova is an analysis of variance where the difference groups being compared are associated the factor levels of exalty 2 independent variables</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000113</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000113</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
@@ -4136,6 +4296,16 @@ Bartlett&apos;s test is sensitive to departures from normality. That is, if the 
         <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000138</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000138</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
         <IRI>http://isa-tools.org/isa/ISA_0000138</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">CHM test</Literal>
@@ -4351,6 +4521,31 @@ Bartlett&apos;s test is sensitive to departures from normality. That is, if the 
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">case-control study design</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000147</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">a dichotomous variable specification is a categorical variable specification which defined a variable to have only 2 categories or possible values</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000147</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000147</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000147</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">AGB-PRS</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000147</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://udel.edu/~mcdonald/statvartypes.html</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>http://isa-tools.org/isa/ISA_0000147</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">&apos;has part&apos; exactly 1 (&apos;categorical measurement datum&apos;
@@ -4360,6 +4555,21 @@ Bartlett&apos;s test is sensitive to departures from normality. That is, if the 
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://isa-tools.org/isa/ISA_0000147</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">dichotomous variable specification</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000148</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000148</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000148</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://udel.edu/~mcdonald/statvartypes.html</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4389,12 +4599,12 @@ Bartlett&apos;s test is sensitive to departures from normality. That is, if the 
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://isa-tools.org/isa/ISA_0000149</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">population size</Literal>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">statistical sample size</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://isa-tools.org/isa/ISA_0000149</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">statistical sample size</Literal>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">study group population size</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4894,7 +5104,8 @@ For quality control, one index for the quality of an HTS assay is the magnitude 
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>#allele_frequency</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">it is the number of copies of a particular allele divided by the number of copies of all alleles at the genetic place (locus) in a population</Literal>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The allele frequency represents the incidence of a gene variant in a population.
+It is the number of copies of a particular allele divided by the number of copies of all alleles at the genetic place (locus) in a population</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -4905,6 +5116,11 @@ For quality control, one index for the quality of an HTS assay is the magnitude 
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
         <IRI>#allele_frequency</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#allele_frequency</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://www.nature.com/scitable/definition/allele-frequency-298</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -5671,7 +5887,27 @@ It represents the odds that an outcome will occur given a particular exposure, c
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>#ordinal_variable_specification</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">ordinal variable specification is a categorical variable specification where category assumed by the variable corresponds to an implicit ranking</Literal>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">ordinal variable specification is a categorical variable specification where category assumed by the variable corresponds to an implicit ranking or for which the possible values are ordered</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>#ordinal_variable_specification</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltan</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>#ordinal_variable_specification</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
+        <IRI>#ordinal_variable_specification</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">ranked variable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#ordinal_variable_specification</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://udel.edu/~mcdonald/statvartypes.html</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -5731,7 +5967,8 @@ It represents the odds that an outcome will occur given a particular exposure, c
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>#power_statistical_test</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">the statistical test power is data item which is about a statistical test and is obtained by subtracting the false negative rate (type II error rate) to 1.</Literal>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">the statistical test power is data item which is about a statistical test and is obtained by subtracting the false negative rate (type II error rate) to 1.
+The power of a statistical test is the probability that it will correctly lead to the rejection of a false null hypothesis (Greene 2000). The statistical power is the ability of a test to detect an effect, if the effect actually exists (High 2000). </Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
