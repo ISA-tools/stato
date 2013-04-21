@@ -978,6 +978,12 @@ Needed to create logical definition for &apos;active cell culutre&apos; and &apo
     
 
 
+    <!-- http://isa-tools.org/isa/ISA_0000120 -->
+
+    <owl:Class rdf:about="http://isa-tools.org/isa/ISA_0000120"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/BFO_0000001 -->
 
     <owl:Class rdf:about="&obo;BFO_0000001">
@@ -10532,7 +10538,14 @@ Proteome Sci. 2008 Dec 10;6(1):34.PMID: 19077203</obo:IAO_0000112>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
-                        <owl:someValuesFrom rdf:resource="&obo;OBI_0001573"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://isa-tools.org/isa/ISA_0000120"/>
+                                    <rdf:Description rdf:about="&obo;OBI_0001573"/>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
