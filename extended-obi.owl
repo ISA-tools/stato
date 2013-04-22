@@ -209,6 +209,57 @@
         <Class IRI="http://isa-tools.org/isa/ISA_0000152"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000159"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000160"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000161"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000162"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000163"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000164"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000165"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000166"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000167"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000168"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000169"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000170"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000171"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000172"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000173"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000174"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000175"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#1_percent_false_positive_rate"/>
     </Declaration>
     <Declaration>
@@ -1763,6 +1814,156 @@
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0500000"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000159"/>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000161"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000160"/>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000161"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000161"/>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000163"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000162"/>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000161"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000163"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000573"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000164"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000164"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
+            <Class IRI="http://purl.obolibrary.org/obo/BFO_0000006"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000165"/>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000164"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000165"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            <Class IRI="http://isa-tools.org/isa/ISA_0000171"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000166"/>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000164"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000167"/>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000164"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000168"/>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000164"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000169"/>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000165"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000169"/>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000175"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000169"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            <Class IRI="http://isa-tools.org/isa/ISA_0000160"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000169"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
+            <Class IRI="http://purl.obolibrary.org/obo/BFO_0000009"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000170"/>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000169"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000170"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            <Class IRI="http://isa-tools.org/isa/ISA_0000162"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000170"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
+            <Class IRI="http://purl.obolibrary.org/obo/BFO_0000028"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000171"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000400"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000172"/>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000171"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000172"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000401"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000172"/>
+        <DataHasValue>
+            <DataProperty IRI="http://purl.obolibrary.org/obo/IAO_0000404"/>
+            <Literal datatypeIRI="&rdf;PlainLiteral">0</Literal>
+        </DataHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000173"/>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000172"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000173"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000402"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000173"/>
+        <DataHasValue>
+            <DataProperty IRI="http://purl.obolibrary.org/obo/IAO_0000406"/>
+            <Literal datatypeIRI="&rdf;PlainLiteral">0</Literal>
+        </DataHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000174"/>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000173"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000174"/>
+        <DataHasValue>
+            <DataProperty IRI="http://purl.obolibrary.org/obo/IAO_0000405"/>
+            <Literal datatypeIRI="&rdf;PlainLiteral">0</Literal>
+        </DataHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000175"/>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000165"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000175"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            <Class IRI="http://isa-tools.org/isa/ISA_0000159"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0000175"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
@@ -3058,8 +3259,8 @@
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <InverseObjectProperties>
-        <ObjectProperty IRI="http://isa-tools.org/isa/ISA0000014"/>
         <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000605"/>
+        <ObjectProperty IRI="http://isa-tools.org/isa/ISA0000014"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="http://isa-tools.org/isa/ISA0000017"/>
@@ -5128,6 +5329,126 @@ hovPlot(y~G,data=mydata)</Literal>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">balanced design</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000159</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">x-axis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000160</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">y-axis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000161</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">axis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000162</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">z-axis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000163</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">cartesian coordinate axis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000164</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">In geometry, a coordinate system is a system which uses one or more numbers, or coordinates, to uniquely determine the position of a point or other geometric element on a manifold such as Euclidean space.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000164</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000164</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000164</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">http://en.wikipedia.org/wiki/Coordinate_system</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000164</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">coordinate system</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000165</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">cartesian coordinate system</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000166</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">In mathematics, the polar coordinate system is a two-dimensional coordinate system in which each point on a plane is determined by a distance from a fixed point and an angle from a fixed direction.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000166</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">http://en.wikipedia.org/wiki/Polar_coordinate_system</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#STATO_alternative_term"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000166</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000166</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">polar coordinate system</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000167</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">cylindrical coordinate system</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000168</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">spherical coordinate system</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000169</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">two dimensional cartesian coordinate system</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000170</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">three dimensional cartesian coordinate system</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000171</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">catersian spatial coordinate origin</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000172</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">one dimensional cartesian spatial coordinate origin</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000173</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">two dimensional cartesian spatial coordinate origin</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000174</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">three dimensional cartesian spatial coordinage origin</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000175</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">one dimensional cartesian coordinate system</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="#STATO_alternative_term"/>
         <IRI>http://purl.obolibrary.org/obo/OBI_0000175</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
@@ -6574,6 +6895,11 @@ http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2789971/</Literal>
 http://www.tengfei.name/ggbio/docs/man/plotGrandLinear.html</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="#STATO_alternative_term"/>
+        <IRI>#manhattan_plot</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#manhattan_plot</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">manhattan plot for gwas</Literal>
@@ -7462,5 +7788,5 @@ It is a popular method for visualizing differential occurence of variables betwe
 
 
 
-<!-- Generated by the OWL API (version 3.3.1957) http://owlapi.sourceforge.net -->
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
 
