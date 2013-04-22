@@ -260,6 +260,27 @@
         <Class IRI="http://isa-tools.org/isa/ISA_0000175"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000176"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000177"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000178"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000179"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000180"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000181"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000182"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#1_percent_false_positive_rate"/>
     </Declaration>
     <Declaration>
@@ -489,6 +510,13 @@
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://isa-tools.org/isa/ISA_0000114"/>
             <Class IRI="http://isa-tools.org/isa/ISA0000019"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000179"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000312"/>
+            <Class IRI="http://purl.obolibrary.org/obo/OBI_0200117"/>
         </ObjectSomeValuesFrom>
     </EquivalentClasses>
     <EquivalentClasses>
@@ -1852,6 +1880,13 @@
         <Class IRI="http://isa-tools.org/isa/ISA_0000165"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            <Class IRI="http://isa-tools.org/isa/ISA_0000163"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000165"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
             <Class IRI="http://isa-tools.org/isa/ISA_0000171"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
@@ -1971,6 +2006,34 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000176"/>
+        <Class IRI="#confidence_interval"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000177"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000027"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000178"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000027"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000179"/>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000177"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000180"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000027"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000181"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000027"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000182"/>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000178"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0000175"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
@@ -1983,6 +2046,14 @@
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000312"/>
             <Class IRI="http://purl.obolibrary.org/obo/OBI_0000673"/>
         </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/OBI_0000674"/>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000177"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/OBI_0000679"/>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000177"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0000739"/>
@@ -3044,14 +3115,11 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#standard_deviation"/>
-        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000178"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#standard_deviation"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
-            <Class IRI="http://isa-tools.org/isa/ISA_0000105"/>
-        </ObjectSomeValuesFrom>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000027"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#standard_error_of_mean"/>
@@ -3170,14 +3238,11 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#variance"/>
-        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000178"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#variance"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
-            <Class IRI="http://isa-tools.org/isa/ISA_0000105"/>
-        </ObjectSomeValuesFrom>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000027"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#volcano_plot"/>
@@ -5569,6 +5634,151 @@ hovPlot(y~G,data=mydata)</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://isa-tools.org/isa/ISA_0000175</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">one dimensional cartesian coordinate system</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000176</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000176</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#STATO_alternative_term"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000176</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000176</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">90% confidence interval</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#STATO_alternative_term"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000177</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">measure of central tendency</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000177</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">data central tendency estimate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000178</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000178</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#STATO_alternative_term"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000178</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">measure of variation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000178</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">data dispersion estimate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000179</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The mode score is the most frequently occur- ring number in a set of scores.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000179</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">http://www.sagepub.com/upm-data/47775_ch_3.pdf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000179</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">mode</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000180</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral"> Outliers are deviant scores that have been legitimately gathered and are not due to equipment failures.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000180</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000180</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000180</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">http://www.sagepub.com/upm-data/47775_ch_3.pdf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000180</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">outlier</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000181</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A data item obtained during the process of collecting data, where there was some equipment failure, or in a consumer preference study, where for example comes from a subject who does not speak English.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000181</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000181</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000181</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Based from definition at http://www.sagepub.com/upm-data/47775_ch_3.pdf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000181</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">klinker</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000182</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The range describes the difference between the lowest score and the highest score in a set of numbers</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000182</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000182</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000182</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">http://www.sagepub.com/upm-data/47775_ch_3.pdf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#STATO_alternative_term"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000182</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000182</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">range</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#STATO_alternative_term"/>
