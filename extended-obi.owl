@@ -1843,23 +1843,23 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://isa-tools.org/isa/ISA_0000159"/>
-        <Class IRI="http://isa-tools.org/isa/ISA_0000161"/>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000163"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://isa-tools.org/isa/ISA_0000160"/>
-        <Class IRI="http://isa-tools.org/isa/ISA_0000161"/>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000163"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://isa-tools.org/isa/ISA_0000161"/>
-        <Class IRI="http://isa-tools.org/isa/ISA_0000163"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000573"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://isa-tools.org/isa/ISA_0000162"/>
-        <Class IRI="http://isa-tools.org/isa/ISA_0000161"/>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000163"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://isa-tools.org/isa/ISA_0000163"/>
-        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000573"/>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000161"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://isa-tools.org/isa/ISA_0000164"/>
@@ -1920,6 +1920,13 @@
     <SubClassOf>
         <Class IRI="http://isa-tools.org/isa/ISA_0000169"/>
         <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            <Class IRI="http://isa-tools.org/isa/ISA_0000173"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000169"/>
+        <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
             <Class IRI="http://purl.obolibrary.org/obo/BFO_0000009"/>
         </ObjectSomeValuesFrom>
@@ -1933,6 +1940,13 @@
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
             <Class IRI="http://isa-tools.org/isa/ISA_0000162"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000170"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            <Class IRI="http://isa-tools.org/isa/ISA_0000174"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -1996,6 +2010,13 @@
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
             <Class IRI="http://isa-tools.org/isa/ISA_0000159"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000175"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            <Class IRI="http://isa-tools.org/isa/ISA_0000172"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
