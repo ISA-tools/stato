@@ -2193,7 +2193,7 @@
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0200201"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000062"/>
             <ObjectUnionOf>
                 <Class IRI="http://isa-tools.org/isa/ISA_0000132"/>
                 <Class IRI="http://isa-tools.org/isa/ISA_0000134"/>
@@ -7143,7 +7143,7 @@ http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2789971/</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#linkage_between_2_categorical_variable_test</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">linkage between 2 categorical variable test</Literal>
+        <Literal datatypeIRI="&rdf;PlainLiteral">linkage test</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
