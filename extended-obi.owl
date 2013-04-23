@@ -2192,6 +2192,13 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/OBI_0200117"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000299"/>
+            <Class IRI="http://isa-tools.org/isa/ISA_0000179"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0200201"/>
         <ObjectIntersectionOf>
             <ObjectMinCardinality cardinality="1">
@@ -3118,10 +3125,6 @@
         <Class IRI="http://isa-tools.org/isa/ISA_0000178"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#standard_deviation"/>
-        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000027"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#standard_error_of_mean"/>
         <Class IRI="http://purl.obolibrary.org/obo/IAO_0000027"/>
     </SubClassOf>
@@ -3239,10 +3242,6 @@
     <SubClassOf>
         <Class IRI="#variance"/>
         <Class IRI="http://isa-tools.org/isa/ISA_0000178"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#variance"/>
-        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000027"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#volcano_plot"/>
