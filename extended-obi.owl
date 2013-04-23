@@ -1089,6 +1089,13 @@
         <Class IRI="http://isa-tools.org/isa/ISA_0000130"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
+            <Class IRI="http://isa-tools.org/isa/ISA0000015"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000130"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
             <Class IRI="http://isa-tools.org/isa/ISA_0000106"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
@@ -1279,6 +1286,20 @@
     <SubClassOf>
         <Class IRI="http://isa-tools.org/isa/ISA_0000135"/>
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0200000"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000135"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
+            <Class IRI="http://isa-tools.org/isa/ISA0000015"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000135"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
+            <Class IRI="http://isa-tools.org/isa/ISA0000016"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://isa-tools.org/isa/ISA_0000135"/>
