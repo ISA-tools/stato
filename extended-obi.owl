@@ -278,6 +278,9 @@
         <Class IRI="http://isa-tools.org/isa/ISA_0000182"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://isa-tools.org/owl/ISA_10000218"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#1_percent_false_positive_rate"/>
     </Declaration>
     <Declaration>
@@ -2039,6 +2042,10 @@
     <SubClassOf>
         <Class IRI="http://isa-tools.org/isa/ISA_0000182"/>
         <Class IRI="http://isa-tools.org/isa/ISA_0000178"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://isa-tools.org/owl/ISA_10000218"/>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000121"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0000175"/>
@@ -5721,6 +5728,16 @@ hovPlot(y~G,data=mydata)</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://isa-tools.org/isa/ISA_0000182</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">range</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#STATO_alternative_term"/>
+        <IRI>http://isa-tools.org/owl/ISA_10000218</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://isa-tools.org/owl/ISA_10000218</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">alternate hypothesis</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#STATO_alternative_term"/>
