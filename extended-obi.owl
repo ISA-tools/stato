@@ -2570,13 +2570,6 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Spearman_s_rank_correlation_coefficient"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000295"/>
-            <Class IRI="#confidence_interval_calculation"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Spearman_s_rank_correlation_coefficient"/>
         <DataSomeValuesFrom>
             <DataProperty IRI="http://isa-tools.org/isa/ISA_0000144"/>
             <DataIntersectionOf>
@@ -2706,6 +2699,13 @@
     <SubClassOf>
         <Class IRI="#correlation_coefficient"/>
         <Class IRI="http://purl.obolibrary.org/obo/IAO_0000109"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#correlation_coefficient"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000295"/>
+            <Class IRI="#confidence_interval_calculation"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#correlation_coefficient"/>
@@ -2868,13 +2868,6 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#kendall_correlation_coefficient"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000295"/>
-            <Class IRI="#confidence_interval_calculation"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#kendall_correlation_coefficient"/>
         <DataSomeValuesFrom>
             <DataProperty IRI="http://isa-tools.org/isa/ISA_0000144"/>
             <DataIntersectionOf>
@@ -3003,13 +2996,6 @@
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
             <Class IRI="#effect_size"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#pearsons_correlation_coefficient"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000295"/>
-            <Class IRI="#confidence_interval_calculation"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -6774,7 +6760,7 @@ http://stat.ethz.ch/R-manual/R-patched/library/stats/html/Binomial.html</Literal
     <AnnotationAssertion>
         <AnnotationProperty IRI="#STATO_alternative_term"/>
         <IRI>#effect_size</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">effect size</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -6852,19 +6838,14 @@ http://stat.ethz.ch/R-manual/R-patched/library/stats/html/Binomial.html</Literal
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
+        <AnnotationProperty IRI="#STATO_alternative_term"/>
         <IRI>#false_negative_rate</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">type II error rate</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
-        <IRI>#false_negative_rate</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">β</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty IRI="#STATO_alternative_term"/>
         <IRI>#false_negative_rate</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">β</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -8044,6 +8025,11 @@ The procedure is conservative, meaning that if sample sizes (the sizes of differ
         <AnnotationProperty IRI="#STATO_alternative_term"/>
         <IRI>#tukeyHSD</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#STATO_alternative_term"/>
+        <IRI>#tukeyHSD</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Tukey&apos;s honestly significant difference</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
