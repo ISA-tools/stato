@@ -308,7 +308,13 @@
         <Class IRI="#F-distribution"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Forest_plot"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Gamma_distribution"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MA_plot"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Poisson_distribution"/>
@@ -335,6 +341,12 @@
         <Class IRI="#boxplot"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#channel1/channel2_fluorescence_intensity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#chromosome_coordinate_system"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#confidence_interval"/>
     </Declaration>
     <Declaration>
@@ -354,6 +366,12 @@
     </Declaration>
     <Declaration>
         <Class IRI="#fold_change"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#genomic_coordinate_datum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#genomic_coordinate_system"/>
     </Declaration>
     <Declaration>
         <Class IRI="#geometric_distribution"/>
@@ -411,6 +429,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#ranking"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#rarefaction_curve"/>
     </Declaration>
     <Declaration>
         <Class IRI="#receiver_operational_characteristics_curve"/>
@@ -625,6 +646,41 @@
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000417"/>
             <Class IRI="#association_testing_objective"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#rarefaction_curve"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            <ObjectIntersectionOf>
+                <Class IRI="http://isa-tools.org/isa/ISA_0000159"/>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                    <ObjectIntersectionOf>
+                        <Class IRI="http://isa-tools.org/isa/ISA_0000160"/>
+                        <ObjectSomeValuesFrom>
+                            <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000219"/>
+                            <ObjectIntersectionOf>
+                                <Class IRI="http://isa-tools.org/isa/ISA_0000118"/>
+                                <ObjectSomeValuesFrom>
+                                    <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                                    <Class IRI="http://purl.obolibrary.org/obo/OBI_0100026"/>
+                                </ObjectSomeValuesFrom>
+                            </ObjectIntersectionOf>
+                        </ObjectSomeValuesFrom>
+                    </ObjectIntersectionOf>
+                </ObjectSomeValuesFrom>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000219"/>
+                    <ObjectIntersectionOf>
+                        <Class IRI="http://isa-tools.org/isa/ISA_0000118"/>
+                        <ObjectSomeValuesFrom>
+                            <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                            <Class IRI="http://isa-tools.org/isa/ISA_0000149"/>
+                        </ObjectSomeValuesFrom>
+                    </ObjectIntersectionOf>
+                </ObjectSomeValuesFrom>
+            </ObjectIntersectionOf>
         </ObjectSomeValuesFrom>
     </EquivalentClasses>
     <EquivalentClasses>
@@ -2228,6 +2284,58 @@
         </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/OBI_0000889"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            <ObjectIntersectionOf>
+                <Class IRI="http://isa-tools.org/isa/ISA_0000159"/>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000219"/>
+                    <Class IRI="http://purl.obolibrary.org/obo/IAO_0000416"/>
+                </ObjectSomeValuesFrom>
+            </ObjectIntersectionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/OBI_0000889"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            <ObjectIntersectionOf>
+                <Class IRI="http://isa-tools.org/isa/ISA_0000160"/>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000219"/>
+                    <Class IRI="http://purl.obolibrary.org/obo/OBI_0000789"/>
+                </ObjectSomeValuesFrom>
+            </ObjectIntersectionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/OBI_0001172"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            <ObjectIntersectionOf>
+                <Class IRI="http://isa-tools.org/isa/ISA_0000159"/>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000219"/>
+                    <Class IRI="http://purl.obolibrary.org/obo/OBI_0000984"/>
+                </ObjectSomeValuesFrom>
+            </ObjectIntersectionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/OBI_0001172"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            <ObjectIntersectionOf>
+                <Class IRI="http://isa-tools.org/isa/ISA_0000160"/>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000219"/>
+                    <Class IRI="http://purl.obolibrary.org/obo/OBI_0000751"/>
+                </ObjectSomeValuesFrom>
+            </ObjectIntersectionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0001444"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://isa-tools.org/isa/ISA_0000114"/>
@@ -2550,8 +2658,67 @@
         <Class IRI="http://isa-tools.org/isa/ISA_0000105"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Forest_plot"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000038"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Forest_plot"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            <ObjectIntersectionOf>
+                <Class IRI="http://isa-tools.org/isa/ISA_0000160"/>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000219"/>
+                    <Class IRI="#effect_size"/>
+                </ObjectSomeValuesFrom>
+            </ObjectIntersectionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Gamma_distribution"/>
         <Class IRI="http://isa-tools.org/isa/ISA_0000105"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MA_plot"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000184"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MA_plot"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            <ObjectIntersectionOf>
+                <Class IRI="http://isa-tools.org/isa/ISA_0000159"/>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000219"/>
+                    <ObjectIntersectionOf>
+                        <Class IRI="http://purl.obolibrary.org/obo/OBI_0000679"/>
+                        <ObjectSomeValuesFrom>
+                            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000295"/>
+                            <Class IRI="http://purl.obolibrary.org/obo/OBI_0200094"/>
+                        </ObjectSomeValuesFrom>
+                    </ObjectIntersectionOf>
+                </ObjectSomeValuesFrom>
+            </ObjectIntersectionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MA_plot"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            <ObjectIntersectionOf>
+                <Class IRI="http://isa-tools.org/isa/ISA_0000160"/>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000219"/>
+                    <ObjectIntersectionOf>
+                        <Class IRI="#channel1/channel2_fluorescence_intensity"/>
+                        <ObjectSomeValuesFrom>
+                            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000295"/>
+                            <Class IRI="http://purl.obolibrary.org/obo/OBI_0200094"/>
+                        </ObjectSomeValuesFrom>
+                    </ObjectIntersectionOf>
+                </ObjectSomeValuesFrom>
+            </ObjectIntersectionOf>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Poisson_distribution"/>
@@ -2642,6 +2809,28 @@
     <SubClassOf>
         <Class IRI="#boxplot"/>
         <Class IRI="http://purl.obolibrary.org/obo/IAO_0000038"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#channel1/channel2_fluorescence_intensity"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000109"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#channel1/channel2_fluorescence_intensity"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            <Class IRI="http://purl.obolibrary.org/obo/OBI_0000010"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#chromosome_coordinate_system"/>
+        <Class IRI="#genomic_coordinate_system"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#chromosome_coordinate_system"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            <Class IRI="http://purl.obolibrary.org/obo/IAO_0000129"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#confidence_interval"/>
@@ -2743,6 +2932,14 @@
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
             <Class IRI="http://isa-tools.org/isa/ISA0000002"/>
         </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#genomic_coordinate_datum"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000027"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#genomic_coordinate_system"/>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000164"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#geometric_distribution"/>
@@ -2910,10 +3107,29 @@
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
             <ObjectIntersectionOf>
-                <Class IRI="http://purl.obolibrary.org/obo/OBI_0000175"/>
+                <Class IRI="http://isa-tools.org/isa/ISA_0000159"/>
                 <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000295"/>
-                    <Class IRI="http://purl.obolibrary.org/obo/OBI_0200094"/>
+                    <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000219"/>
+                    <Class IRI="#genomic_coordinate_datum"/>
+                </ObjectSomeValuesFrom>
+            </ObjectIntersectionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#manhattan_plot"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            <ObjectIntersectionOf>
+                <Class IRI="http://isa-tools.org/isa/ISA_0000160"/>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000219"/>
+                    <ObjectIntersectionOf>
+                        <Class IRI="http://purl.obolibrary.org/obo/OBI_0000175"/>
+                        <ObjectSomeValuesFrom>
+                            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000295"/>
+                            <Class IRI="http://purl.obolibrary.org/obo/OBI_0200094"/>
+                        </ObjectSomeValuesFrom>
+                    </ObjectIntersectionOf>
                 </ObjectSomeValuesFrom>
             </ObjectIntersectionOf>
         </ObjectSomeValuesFrom>
@@ -3036,6 +3252,44 @@
     <SubClassOf>
         <Class IRI="#q-q_plot"/>
         <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            <ObjectIntersectionOf>
+                <Class IRI="http://isa-tools.org/isa/ISA_0000159"/>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000219"/>
+                    <ObjectIntersectionOf>
+                        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000027"/>
+                        <ObjectSomeValuesFrom>
+                            <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                            <Class IRI="http://isa-tools.org/isa/ISA_0000105"/>
+                        </ObjectSomeValuesFrom>
+                    </ObjectIntersectionOf>
+                </ObjectSomeValuesFrom>
+            </ObjectIntersectionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#q-q_plot"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            <ObjectIntersectionOf>
+                <Class IRI="http://isa-tools.org/isa/ISA_0000160"/>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000219"/>
+                    <ObjectIntersectionOf>
+                        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000027"/>
+                        <ObjectSomeValuesFrom>
+                            <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                            <Class IRI="http://isa-tools.org/isa/ISA_0000105"/>
+                        </ObjectSomeValuesFrom>
+                    </ObjectIntersectionOf>
+                </ObjectSomeValuesFrom>
+            </ObjectIntersectionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#q-q_plot"/>
+        <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000312"/>
             <Class IRI="http://purl.obolibrary.org/obo/OBI_0200111"/>
         </ObjectSomeValuesFrom>
@@ -3059,6 +3313,10 @@
         </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#rarefaction_curve"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000573"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#receiver_operational_characteristics_curve"/>
         <Class IRI="http://purl.obolibrary.org/obo/IAO_0000038"/>
     </SubClassOf>
@@ -3066,14 +3324,26 @@
         <Class IRI="#receiver_operational_characteristics_curve"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
-            <Class IRI="#sensitivity"/>
+            <ObjectIntersectionOf>
+                <Class IRI="http://isa-tools.org/isa/ISA_0000159"/>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000219"/>
+                    <Class IRI="#sensitivity"/>
+                </ObjectSomeValuesFrom>
+            </ObjectIntersectionOf>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#receiver_operational_characteristics_curve"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
-            <Class IRI="#specificity"/>
+            <ObjectIntersectionOf>
+                <Class IRI="http://isa-tools.org/isa/ISA_0000160"/>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000219"/>
+                    <Class IRI="#specificity"/>
+                </ObjectSomeValuesFrom>
+            </ObjectIntersectionOf>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -3262,10 +3532,16 @@
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
             <ObjectIntersectionOf>
-                <Class IRI="#fold_change"/>
+                <Class IRI="http://isa-tools.org/isa/ISA_0000159"/>
                 <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000295"/>
-                    <Class IRI="http://purl.obolibrary.org/obo/OBI_0200094"/>
+                    <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000219"/>
+                    <ObjectIntersectionOf>
+                        <Class IRI="#fold_change"/>
+                        <ObjectSomeValuesFrom>
+                            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000295"/>
+                            <Class IRI="http://purl.obolibrary.org/obo/OBI_0200094"/>
+                        </ObjectSomeValuesFrom>
+                    </ObjectIntersectionOf>
                 </ObjectSomeValuesFrom>
             </ObjectIntersectionOf>
         </ObjectSomeValuesFrom>
@@ -3275,14 +3551,20 @@
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
             <ObjectIntersectionOf>
-                <ObjectUnionOf>
-                    <Class IRI="http://purl.obolibrary.org/obo/OBI_0000175"/>
-                    <Class IRI="http://purl.obolibrary.org/obo/OBI_0001265"/>
-                    <Class IRI="http://purl.obolibrary.org/obo/OBI_0001442"/>
-                </ObjectUnionOf>
+                <Class IRI="http://isa-tools.org/isa/ISA_0000160"/>
                 <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000295"/>
-                    <Class IRI="http://purl.obolibrary.org/obo/OBI_0200094"/>
+                    <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000219"/>
+                    <ObjectIntersectionOf>
+                        <ObjectUnionOf>
+                            <Class IRI="http://purl.obolibrary.org/obo/OBI_0000175"/>
+                            <Class IRI="http://purl.obolibrary.org/obo/OBI_0001265"/>
+                            <Class IRI="http://purl.obolibrary.org/obo/OBI_0001442"/>
+                        </ObjectUnionOf>
+                        <ObjectSomeValuesFrom>
+                            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000295"/>
+                            <Class IRI="http://purl.obolibrary.org/obo/OBI_0200094"/>
+                        </ObjectSomeValuesFrom>
+                    </ObjectIntersectionOf>
                 </ObjectSomeValuesFrom>
             </ObjectIntersectionOf>
         </ObjectSomeValuesFrom>
@@ -3340,8 +3622,8 @@
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <InverseObjectProperties>
-        <ObjectProperty IRI="http://isa-tools.org/isa/ISA0000014"/>
         <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000605"/>
+        <ObjectProperty IRI="http://isa-tools.org/isa/ISA0000014"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="http://isa-tools.org/isa/ISA0000017"/>
@@ -5916,6 +6198,21 @@ AGB and PRS provide formal definition expressed the test in terms of output and 
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/OBI_0000889</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/OBI_0000889</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/OBI_0001172</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra, Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="#STATO_alternative_term"/>
         <IRI>http://purl.obolibrary.org/obo/OBI_0001444</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
@@ -6255,6 +6552,31 @@ http://stat.ethz.ch/R-manual/R-patched/library/stats/html/Fdist.html
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">F-distribution</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#Forest_plot</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A forest plot  is a graph designed to illustrate the relative strength of treatment effects in multiple quantitative scientific studies addressing the same question.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>#Forest_plot</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>#Forest_plot</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#Forest_plot</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://en.wikipedia.org/wiki/Forest_plot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Forest_plot</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Forest plot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
         <IRI>#Gamma_distribution</IRI>
         <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
@@ -6295,6 +6617,46 @@ http://stat.ethz.ch/R-manual/R-patched/library/stats/html/GammaDist.html</Litera
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Gamma_distribution</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Gamma distribution</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#MA_plot</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">a scatter plot of log intensity ratios M = log_2(R/G) versus average log intensities A = log_2(R*G)/2, where R and G represent the fluorescence intensities in the red and green channels respectively.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>#MA_plot</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>#MA_plot</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
+        <IRI>#MA_plot</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">M vs A plot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#MA_plot</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://www.stat.berkeley.edu/users/terry/zarray/Software/SMAcode/html/plot.mva.html</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#R_command"/>
+        <IRI>#MA_plot</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">plot.mva()</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#STATO_alternative_term"/>
+        <IRI>#MA_plot</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">MA plot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MA_plot</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">MA plot</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
@@ -6620,12 +6982,75 @@ http://stat.ethz.ch/R-manual/R-patched/library/stats/html/Binomial.html</Literal
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
         <IRI>#boxplot</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">box whisker plot</Literal>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">box plot</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#boxplot</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">box plot</Literal>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">box and whisker plot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#channel1/channel2_fluorescence_intensity</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">is a data item formed by dividing the fluorescence intensity obtained in one channel to that obtained in the other channel, typically the case when considering 2-color microarray data when imaging is done for Cy3 and Cy5 dyes.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>#channel1/channel2_fluorescence_intensity</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>#channel1/channel2_fluorescence_intensity</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#STATO_alternative_term"/>
+        <IRI>#channel1/channel2_fluorescence_intensity</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">channel1/channel2 fluorescence intensity ratio</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#channel1/channel2_fluorescence_intensity</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#channel1/channel2_fluorescence_intensity</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">channel1/channel2 fluorescence intensity ratio</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#chromosome_coordinate_system</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://www.ncbi.nlm.nih.gov/assembly/model/
+
+
+ chrX:35,000,000-36,000,000. </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#chromosome_coordinate_system</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">chromosome coordinate system is a genomic coordinate which uses chromosome of a particular assembly build process to define start and end positions. This coordinate system is unstable and will change with each new genome sequence assembly build. </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>#chromosome_coordinate_system</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>#chromosome_coordinate_system</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#STATO_alternative_term"/>
+        <IRI>#chromosome_coordinate_system</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#chromosome_coordinate_system</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">chromosome coordinate system</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
@@ -6886,6 +7311,56 @@ http://stat.ethz.ch/R-manual/R-patched/library/stats/html/Binomial.html</Literal
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#fold_change</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">fold change</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#genomic_coordinate_datum</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">a data item about a genomic position expressed using a genomic coordinate system</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>#genomic_coordinate_datum</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>#genomic_coordinate_datum</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#genomic_coordinate_datum</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">genomic coordinate datum</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#genomic_coordinate_system</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#genomic_coordinate_system</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">a genomic coordinate system is a coordinate system to describe position of sequence on a genomic scaffold (assembly of chromosome, contig....)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>#genomic_coordinate_system</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>#genomic_coordinate_system</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#genomic_coordinate_system</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">ensembl, ucsc</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#genomic_coordinate_system</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">genomic coordinate system</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -7538,6 +8013,11 @@ The power of a statistical test is the probability that it will correctly lead t
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">q-q plot is the output of a graphical method for comparing two probability distributions by plotting their quantiles against each other</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000116"/>
+        <IRI>#q-q_plot</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">PRS,AGB: need to add the notion of quantile</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
         <IRI>#q-q_plot</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
@@ -7589,6 +8069,26 @@ http://stat.ethz.ch/R-manual/R-patched/library/stats/html/qqnorm.html</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#ranking</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">ranking</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#rarefaction_curve</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">a rarefaction curve is a graph used for estimating species richness in ecology studies</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>#rarefaction_curve</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>#rarefaction_curve</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#rarefaction_curve</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">rarefaction curve</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
@@ -8098,6 +8598,13 @@ It is a popular method for visualizing differential occurence of variables betwe
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://en.wikipedia.org/wiki/Volcano_plot_(statistics)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="#R_command"/>
+        <IRI>#volcano_plot</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">volcanoplot(fit, coef=1, highlight=0, names=fit$genes$ID, ...)
+
+http://rss.acs.unt.edu/Rdoc/library/limma/html/volcanoplot.html</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#volcano_plot</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">volcano plot</Literal>
@@ -8149,5 +8656,5 @@ It is a popular method for visualizing differential occurence of variables betwe
 
 
 
-<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+<!-- Generated by the OWL API (version 3.3.1957) http://owlapi.sourceforge.net -->
 
