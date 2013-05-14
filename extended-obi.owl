@@ -311,6 +311,12 @@
         <Class IRI="http://isa-tools.org/owl/ISA_10000261"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://isa-tools.org/owl/ISA_10000262"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://isa-tools.org/owl/ISA_10000263"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#1_percent_false_positive_rate"/>
     </Declaration>
     <Declaration>
@@ -779,13 +785,6 @@
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
             <Class IRI="http://purl.obolibrary.org/obo/IAO_0000027"/>
         </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://isa-tools.org/isa/ISA0000013"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
-            <Class IRI="http://purl.obolibrary.org/obo/IAO_0000032"/>
-        </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://isa-tools.org/isa/ISA0000015"/>
@@ -2176,8 +2175,15 @@
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0200000"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="http://isa-tools.org/owl/ISA_10000258"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000417"/>
+            <Class IRI="http://purl.obolibrary.org/obo/OBI_0000675"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="http://isa-tools.org/owl/ISA_10000259"/>
-        <Class IRI="http://purl.obolibrary.org/obo/OBI_0200000"/>
+        <Class IRI="http://isa-tools.org/owl/ISA_10000258"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://isa-tools.org/owl/ISA_10000259"/>
@@ -2207,6 +2213,14 @@
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000062"/>
             <Class IRI="http://purl.obolibrary.org/obo/OBI_0200201"/>
         </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://isa-tools.org/owl/ISA_10000262"/>
+        <Class IRI="http://isa-tools.org/owl/ISA_10000218"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://isa-tools.org/owl/ISA_10000263"/>
+        <Class IRI="http://isa-tools.org/owl/ISA_10000218"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0000175"/>
@@ -3699,8 +3713,8 @@
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <InverseObjectProperties>
-        <ObjectProperty IRI="http://isa-tools.org/isa/ISA0000014"/>
         <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000605"/>
+        <ObjectProperty IRI="http://isa-tools.org/isa/ISA0000014"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="http://isa-tools.org/isa/ISA0000017"/>
@@ -4923,7 +4937,12 @@ The hypothesis contrary to the null hypothesis, usually that the observations ar
     <AnnotationAssertion>
         <AnnotationProperty IRI="#STATO_alternative_term"/>
         <IRI>http://isa-tools.org/isa/ISA_0000125</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">no relationship between the variables</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#STATO_alternative_term"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000125</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">variables are independent</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -6224,6 +6243,16 @@ hovPlot(y~G,data=mydata)</Literal>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Least Significance Different test</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://isa-tools.org/owl/ISA_10000262</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">presence of association hypothesis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://isa-tools.org/owl/ISA_10000263</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">presence of between group difference hypothesis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="#STATO_alternative_term"/>
         <IRI>http://purl.obolibrary.org/obo/OBI_0000175</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
@@ -6351,8 +6380,18 @@ AGB and PRS provide formal definition expressed the test in terms of output and 
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#STATO_alternative_term"/>
+        <IRI>http://purl.obolibrary.org/obo/OBI_0001265</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Family-wise type I error rate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#STATO_alternative_term"/>
         <IRI>http://purl.obolibrary.org/obo/OBI_0001444</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#STATO_alternative_term"/>
+        <IRI>http://purl.obolibrary.org/obo/OBI_0200066</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Bonferroni adjustment method</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
