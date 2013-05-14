@@ -317,6 +317,12 @@
         <Class IRI="http://isa-tools.org/owl/ISA_10000263"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://isa-tools.org/owl/ISA_10000264"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://isa-tools.org/owl/ISA_10000265"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#1_percent_false_positive_rate"/>
     </Declaration>
     <Declaration>
@@ -2221,6 +2227,14 @@
     <SubClassOf>
         <Class IRI="http://isa-tools.org/owl/ISA_10000263"/>
         <Class IRI="http://isa-tools.org/owl/ISA_10000218"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://isa-tools.org/owl/ISA_10000264"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000038"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://isa-tools.org/owl/ISA_10000265"/>
+        <Class IRI="http://purl.obolibrary.org/obo/OBI_0200000"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0000175"/>
@@ -6251,6 +6265,26 @@ hovPlot(y~G,data=mydata)</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://isa-tools.org/owl/ISA_10000263</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">presence of between group difference hypothesis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#STATO_alternative_term"/>
+        <IRI>http://isa-tools.org/owl/ISA_10000264</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">LD plot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#STATO_alternative_term"/>
+        <IRI>http://isa-tools.org/owl/ISA_10000264</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Linkage Disequilibrium plot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://isa-tools.org/owl/ISA_10000264</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">LD plot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://isa-tools.org/owl/ISA_10000265</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Cochran-Armitage test</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#STATO_alternative_term"/>
