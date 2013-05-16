@@ -323,6 +323,24 @@
         <Class IRI="http://isa-tools.org/owl/ISA_10000265"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://isa-tools.org/owl/ISA_10000266"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://isa-tools.org/owl/ISA_10000267"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://isa-tools.org/owl/ISA_10000268"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://isa-tools.org/owl/ISA_10000269"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://isa-tools.org/owl/ISA_10000270"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://isa-tools.org/owl/ISA_10000271"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#1_percent_false_positive_rate"/>
     </Declaration>
     <Declaration>
@@ -2237,6 +2255,30 @@
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0200000"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="http://isa-tools.org/owl/ISA_10000266"/>
+        <Class IRI="http://isa-tools.org/owl/ISA_10000254"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://isa-tools.org/owl/ISA_10000267"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000027"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://isa-tools.org/owl/ISA_10000268"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000027"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://isa-tools.org/owl/ISA_10000269"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000027"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://isa-tools.org/owl/ISA_10000270"/>
+        <Class IRI="http://isa-tools.org/owl/ISA_10000269"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://isa-tools.org/owl/ISA_10000271"/>
+        <Class IRI="http://isa-tools.org/owl/ISA_10000269"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0000175"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
@@ -2274,6 +2316,10 @@
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0000674"/>
         <Class IRI="http://isa-tools.org/isa/ISA_0000177"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/OBI_0000674"/>
+        <Class IRI="http://isa-tools.org/owl/ISA_10000269"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0000679"/>
@@ -3727,8 +3773,8 @@
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <InverseObjectProperties>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000605"/>
         <ObjectProperty IRI="http://isa-tools.org/isa/ISA0000014"/>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000605"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="http://isa-tools.org/isa/ISA0000017"/>
@@ -6209,7 +6255,7 @@ hovPlot(y~G,data=mydata)</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://isa-tools.org/owl/ISA_10000255</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">linear model</Literal>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">linear regression model</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -6282,9 +6328,49 @@ hovPlot(y~G,data=mydata)</Literal>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">LD plot</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://isa-tools.org/owl/ISA_10000265</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The Cochran-Armitage test is used in categorical data analysis when the aim is to assess for the presence of an association between a variable with two categories and a variable with k categories</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://isa-tools.org/owl/ISA_10000265</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">http://en.wikipedia.org/wiki/Cochran%E2%80%93Armitage_test_for_trend</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://isa-tools.org/owl/ISA_10000265</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Cochran-Armitage test</Literal>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Cochran-Armitage test for trend</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://isa-tools.org/owl/ISA_10000266</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">binomial logistic regression</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://isa-tools.org/owl/ISA_10000267</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">minimum value</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://isa-tools.org/owl/ISA_10000268</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">maximum value</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://isa-tools.org/owl/ISA_10000269</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">quartile</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://isa-tools.org/owl/ISA_10000270</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">first quartile</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://isa-tools.org/owl/ISA_10000271</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">third quartile</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#STATO_alternative_term"/>
@@ -6320,6 +6406,11 @@ hovPlot(y~G,data=mydata)</Literal>
         <AnnotationProperty IRI="#STATO_alternative_term"/>
         <IRI>http://purl.obolibrary.org/obo/OBI_0000673</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">statistical hypothesis testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#STATO_alternative_term"/>
+        <IRI>http://purl.obolibrary.org/obo/OBI_0000674</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">second quartile</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
@@ -7351,6 +7442,11 @@ http://stat.ethz.ch/R-manual/R-patched/library/stats/html/Binomial.html</Literal
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
         <IRI>#correlation_coefficient</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#STATO_alternative_term"/>
+        <IRI>#correlation_coefficient</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">r</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#STATO_alternative_term"/>
