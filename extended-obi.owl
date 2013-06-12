@@ -143,9 +143,6 @@
         <Class IRI="http://isa-tools.org/isa/ISA_0000129"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://isa-tools.org/isa/ISA_0000130"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://isa-tools.org/isa/ISA_0000131"/>
     </Declaration>
     <Declaration>
@@ -365,6 +362,12 @@
         <Class IRI="#1_percent_false_positive_rate"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#2_by_2_contingency_table"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#2_by_n_contingency_table"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#50_percent_confidence_interval"/>
     </Declaration>
     <Declaration>
@@ -440,6 +443,9 @@
         <Class IRI="#confidence_interval_calculation"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#contigency_table"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#correlation_coefficient"/>
     </Declaration>
     <Declaration>
@@ -509,6 +515,12 @@
         <Class IRI="#model_fitting"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#multinomial_probit_regression"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#multiple_login_regression_model"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#multiway_ANOVA"/>
     </Declaration>
     <Declaration>
@@ -524,7 +536,13 @@
         <Class IRI="#odds_ratio_homogeneity_hypothesis"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#odds_ratio_homogeneity_test"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#odds_ratio_homogeneity_test_objective"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ordinal_model"/>
     </Declaration>
     <Declaration>
         <Class IRI="#ordinal_variable_specification"/>
@@ -575,6 +593,9 @@
         <Class IRI="#sphericity_hypothesis"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#sphericity_test"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#sphericity_testing_objective"/>
     </Declaration>
     <Declaration>
@@ -597,6 +618,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#stratification_rule"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#stratum_population"/>
     </Declaration>
     <Declaration>
         <Class IRI="#studentized_range_distribution"/>
@@ -694,10 +718,13 @@
         </ObjectSomeValuesFrom>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="http://purl.obolibrary.org/obo/OBI_0000673"/>
+        <Class IRI="http://purl.obolibrary.org/obo/OBI_0200201"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000299"/>
-            <Class IRI="http://purl.obolibrary.org/obo/OBI_0000175"/>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000417"/>
+            <ObjectUnionOf>
+                <Class IRI="http://isa-tools.org/isa/ISA0000011"/>
+                <Class IRI="http://isa-tools.org/isa/ISA0000012"/>
+            </ObjectUnionOf>
         </ObjectSomeValuesFrom>
     </EquivalentClasses>
     <EquivalentClasses>
@@ -793,6 +820,20 @@
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000417"/>
             <Class IRI="#association_testing_objective"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#odds_ratio_homogeneity_test"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000417"/>
+            <Class IRI="#odds_ratio_homogeneity_test_objective"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#sphericity_test"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000417"/>
+            <Class IRI="#sphericity_testing_objective"/>
         </ObjectSomeValuesFrom>
     </EquivalentClasses>
     <EquivalentClasses>
@@ -1258,58 +1299,6 @@
         <Class IRI="http://isa-tools.org/isa/ISA_0000105"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://isa-tools.org/isa/ISA_0000130"/>
-        <Class IRI="http://purl.obolibrary.org/obo/OBI_0200200"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://isa-tools.org/isa/ISA_0000130"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
-            <Class IRI="http://isa-tools.org/isa/ISA0000015"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://isa-tools.org/isa/ISA_0000130"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
-            <Class IRI="http://isa-tools.org/isa/ISA_0000106"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://isa-tools.org/isa/ISA_0000130"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
-            <Class IRI="http://isa-tools.org/isa/ISA_0000108"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://isa-tools.org/isa/ISA_0000130"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
-            <Class IRI="http://isa-tools.org/isa/ISA_0000119"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://isa-tools.org/isa/ISA_0000130"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000299"/>
-            <ObjectIntersectionOf>
-                <Class IRI="http://purl.obolibrary.org/obo/OBI_0000175"/>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                    <Class IRI="http://isa-tools.org/isa/ISA_0000123"/>
-                </ObjectSomeValuesFrom>
-            </ObjectIntersectionOf>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://isa-tools.org/isa/ISA_0000130"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000417"/>
-            <Class IRI="http://isa-tools.org/isa/ISA_0000103"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="http://isa-tools.org/isa/ISA_0000131"/>
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0200200"/>
     </SubClassOf>
@@ -1345,7 +1334,10 @@
         <Class IRI="http://isa-tools.org/isa/ISA_0000131"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000417"/>
-            <Class IRI="#association_testing_objective"/>
+            <ObjectIntersectionOf>
+                <Class IRI="http://isa-tools.org/isa/ISA_0000103"/>
+                <Class IRI="#association_testing_objective"/>
+            </ObjectIntersectionOf>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -1577,6 +1569,13 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://isa-tools.org/isa/ISA_0000137"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
+            <Class IRI="#contigency_table"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000137"/>
         <ObjectExactCardinality cardinality="2">
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
             <Class IRI="http://isa-tools.org/isa/ISA0000015"/>
@@ -1657,6 +1656,39 @@
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000417"/>
             <Class IRI="#association_testing_objective"/>
         </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000138"/>
+        <ObjectMinCardinality cardinality="2">
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
+            <ObjectIntersectionOf>
+                <Class IRI="#contigency_table"/>
+                <ObjectExactCardinality cardinality="1">
+                    <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000219"/>
+                    <Class IRI="#stratum_population"/>
+                </ObjectExactCardinality>
+            </ObjectIntersectionOf>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000138"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
+            <ObjectIntersectionOf>
+                <Class IRI="http://isa-tools.org/isa/ISA0000015"/>
+                <ObjectMinCardinality cardinality="2">
+                    <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000219"/>
+                    <Class IRI="#stratum_population"/>
+                </ObjectMinCardinality>
+            </ObjectIntersectionOf>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000138"/>
+        <ObjectExactCardinality cardinality="2">
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
+            <Class IRI="http://isa-tools.org/isa/ISA0000015"/>
+        </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://isa-tools.org/isa/ISA_0000139"/>
@@ -1919,13 +1951,7 @@
         <Class IRI="http://isa-tools.org/isa/ISA_0000145"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000299"/>
-            <ObjectIntersectionOf>
-                <Class IRI="http://purl.obolibrary.org/obo/OBI_0000175"/>
-                <ObjectAllValuesFrom>
-                    <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000312"/>
-                    <Class IRI="#linkage_between_2_categorical_variable_test"/>
-                </ObjectAllValuesFrom>
-            </ObjectIntersectionOf>
+            <Class IRI="http://purl.obolibrary.org/obo/OBI_0000175"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -2303,7 +2329,17 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://isa-tools.org/owl/ISA_10000255"/>
-        <Class IRI="http://isa-tools.org/owl/ISA_10000254"/>
+        <Class IRI="http://isa-tools.org/owl/ISA_10000256"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://isa-tools.org/owl/ISA_10000255"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            <ObjectIntersectionOf>
+                <Class IRI="http://isa-tools.org/isa/ISA0000016"/>
+                <Class IRI="http://purl.obolibrary.org/obo/OBI_0000751"/>
+            </ObjectIntersectionOf>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://isa-tools.org/owl/ISA_10000256"/>
@@ -2311,7 +2347,17 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://isa-tools.org/owl/ISA_10000257"/>
-        <Class IRI="http://isa-tools.org/owl/ISA_10000254"/>
+        <Class IRI="http://isa-tools.org/owl/ISA_10000256"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://isa-tools.org/owl/ISA_10000257"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            <ObjectIntersectionOf>
+                <Class IRI="http://isa-tools.org/isa/ISA_0000147"/>
+                <Class IRI="http://purl.obolibrary.org/obo/OBI_0000751"/>
+            </ObjectIntersectionOf>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://isa-tools.org/owl/ISA_10000258"/>
@@ -2407,21 +2453,14 @@
     <SubClassOf>
         <Class IRI="http://isa-tools.org/owl/ISA_10000264"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
-            <Class IRI="http://isa-tools.org/isa/ISA_0000145"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://isa-tools.org/owl/ISA_10000264"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
             <Class IRI="http://purl.obolibrary.org/obo/IAO_0000578"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://isa-tools.org/owl/ISA_10000264"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
             <ObjectIntersectionOf>
                 <Class IRI="http://purl.obolibrary.org/obo/OBI_0000175"/>
                 <ObjectAllValuesFrom>
@@ -2429,6 +2468,13 @@
                     <Class IRI="#linkage_between_2_categorical_variable_test"/>
                 </ObjectAllValuesFrom>
             </ObjectIntersectionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://isa-tools.org/owl/ISA_10000264"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
+            <Class IRI="http://isa-tools.org/isa/ISA_0000145"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -2443,8 +2489,32 @@
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0200000"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="http://isa-tools.org/owl/ISA_10000265"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000417"/>
+            <Class IRI="#association_testing_objective"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://isa-tools.org/owl/ISA_10000265"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
+            <Class IRI="#2_by_n_contingency_table"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="http://isa-tools.org/owl/ISA_10000266"/>
-        <Class IRI="http://isa-tools.org/owl/ISA_10000254"/>
+        <Class IRI="http://isa-tools.org/owl/ISA_10000256"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://isa-tools.org/owl/ISA_10000266"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            <ObjectIntersectionOf>
+                <Class IRI="http://isa-tools.org/isa/ISA_0000147"/>
+                <Class IRI="http://purl.obolibrary.org/obo/OBI_0000751"/>
+            </ObjectIntersectionOf>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://isa-tools.org/owl/ISA_10000267"/>
@@ -2681,10 +2751,10 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0000861"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000417"/>
-            <Class IRI="#association_testing_objective"/>
-        </ObjectSomeValuesFrom>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
+            <Class IRI="#contigency_table"/>
+        </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0000861"/>
@@ -2841,23 +2911,6 @@
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000299"/>
             <Class IRI="http://purl.obolibrary.org/obo/OBI_0000175"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/OBI_0200201"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000417"/>
-            <Class IRI="http://purl.obolibrary.org/obo/OBI_0000675"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/OBI_0200201"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000417"/>
-            <ObjectUnionOf>
-                <Class IRI="http://isa-tools.org/isa/ISA0000011"/>
-                <Class IRI="http://isa-tools.org/isa/ISA0000012"/>
-            </ObjectUnionOf>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -3085,6 +3138,21 @@
         <Class IRI="http://isa-tools.org/isa/ISA_0000108"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#2_by_2_contingency_table"/>
+        <Class IRI="#2_by_n_contingency_table"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#2_by_2_contingency_table"/>
+        <ObjectExactCardinality cardinality="2">
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
+            <Class IRI="http://isa-tools.org/isa/ISA_0000147"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#2_by_n_contingency_table"/>
+        <Class IRI="#contigency_table"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#50_percent_confidence_interval"/>
         <Class IRI="#confidence_interval"/>
     </SubClassOf>
@@ -3133,7 +3201,7 @@
         <Class IRI="#Breslow-Day_test"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000417"/>
-            <Class IRI="http://purl.obolibrary.org/obo/OBI_0000675"/>
+            <Class IRI="#odds_ratio_homogeneity_test_objective"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -3317,7 +3385,7 @@
         <Class IRI="#Tarone_test_for_homogeneity_of_odds_ratio"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000417"/>
-            <Class IRI="http://purl.obolibrary.org/obo/OBI_0000675"/>
+            <Class IRI="#odds_ratio_homogeneity_test_objective"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -3477,6 +3545,17 @@
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000299"/>
             <Class IRI="#confidence_interval"/>
         </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#contigency_table"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#contigency_table"/>
+        <ObjectExactCardinality cardinality="2">
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
+            <Class IRI="http://isa-tools.org/isa/ISA0000015"/>
+        </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#correlation_coefficient"/>
@@ -3813,6 +3892,34 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#multinomial_probit_regression"/>
+        <Class IRI="http://isa-tools.org/owl/ISA_10000256"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#multinomial_probit_regression"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            <ObjectIntersectionOf>
+                <Class IRI="http://isa-tools.org/isa/ISA_0000148"/>
+                <Class IRI="http://purl.obolibrary.org/obo/OBI_0000751"/>
+            </ObjectIntersectionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#multiple_login_regression_model"/>
+        <Class IRI="http://isa-tools.org/owl/ISA_10000256"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#multiple_login_regression_model"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            <ObjectIntersectionOf>
+                <Class IRI="http://isa-tools.org/isa/ISA_0000147"/>
+                <Class IRI="http://purl.obolibrary.org/obo/OBI_0000751"/>
+            </ObjectIntersectionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#multiway_ANOVA"/>
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0200000"/>
     </SubClassOf>
@@ -3882,8 +3989,26 @@
         <Class IRI="http://isa-tools.org/isa/ISA_0000122"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#odds_ratio_homogeneity_test"/>
+        <Class IRI="http://purl.obolibrary.org/obo/OBI_0000673"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#odds_ratio_homogeneity_test_objective"/>
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0000675"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ordinal_model"/>
+        <Class IRI="http://isa-tools.org/owl/ISA_10000256"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ordinal_model"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            <ObjectIntersectionOf>
+                <Class IRI="http://purl.obolibrary.org/obo/OBI_0000751"/>
+                <Class IRI="#ordinal_variable_specification"/>
+            </ObjectIntersectionOf>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#ordinal_variable_specification"/>
@@ -3934,6 +4059,13 @@
     <SubClassOf>
         <Class IRI="#pedigree_chart"/>
         <Class IRI="http://purl.obolibrary.org/obo/IAO_0000038"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#pedigree_chart"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
+            <Class IRI="#family"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#power_statistical_test"/>
@@ -4028,30 +4160,27 @@
             <ObjectIntersectionOf>
                 <Class IRI="http://isa-tools.org/isa/ISA_0000159"/>
                 <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                    <ObjectIntersectionOf>
-                        <Class IRI="http://isa-tools.org/isa/ISA_0000160"/>
-                        <ObjectSomeValuesFrom>
-                            <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000219"/>
-                            <ObjectIntersectionOf>
-                                <Class IRI="http://isa-tools.org/isa/ISA_0000118"/>
-                                <ObjectSomeValuesFrom>
-                                    <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                                    <Class IRI="http://purl.obolibrary.org/obo/OBI_0100026"/>
-                                </ObjectSomeValuesFrom>
-                            </ObjectIntersectionOf>
-                        </ObjectSomeValuesFrom>
-                    </ObjectIntersectionOf>
-                </ObjectSomeValuesFrom>
-                <ObjectSomeValuesFrom>
                     <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000219"/>
                     <ObjectIntersectionOf>
                         <Class IRI="http://isa-tools.org/isa/ISA_0000118"/>
                         <ObjectSomeValuesFrom>
                             <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                            <Class IRI="http://isa-tools.org/isa/ISA_0000149"/>
+                            <Class IRI="http://purl.obolibrary.org/obo/OBI_0100026"/>
                         </ObjectSomeValuesFrom>
                     </ObjectIntersectionOf>
+                </ObjectSomeValuesFrom>
+            </ObjectIntersectionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#rarefaction_curve"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            <ObjectIntersectionOf>
+                <Class IRI="http://isa-tools.org/isa/ISA_0000160"/>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000219"/>
+                    <Class IRI="http://purl.obolibrary.org/obo/OBI_0100026"/>
                 </ObjectSomeValuesFrom>
             </ObjectIntersectionOf>
         </ObjectSomeValuesFrom>
@@ -4185,6 +4314,10 @@
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000050"/>
             <Class IRI="#sphericity_testing_objective"/>
         </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sphericity_test"/>
+        <Class IRI="http://purl.obolibrary.org/obo/OBI_0000673"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#sphericity_testing_objective"/>
@@ -4341,6 +4474,17 @@
     <SubClassOf>
         <Class IRI="#stratification_rule"/>
         <Class IRI="http://purl.obolibrary.org/obo/IAO_0000055"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#stratum_population"/>
+        <Class IRI="http://purl.obolibrary.org/obo/OBI_0000181"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#stratum_population"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000312"/>
+            <Class IRI="#stratification"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#studentized_range_distribution"/>
@@ -4581,8 +4725,8 @@
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <InverseObjectProperties>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000605"/>
         <ObjectProperty IRI="http://isa-tools.org/isa/ISA0000014"/>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000605"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="http://isa-tools.org/isa/ISA0000017"/>
@@ -4741,6 +4885,21 @@
         <Literal datatypeIRI="&rdf;PlainLiteral">A non-negative integer defining how many combination of factor levels (or treatments in the statistical sense) are to be used in a study.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://isa-tools.org/isa/ISA0000004</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://isa-tools.org/isa/ISA0000004</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://isa-tools.org/isa/ISA0000004</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">STATO</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="#STATO_alternative_term"/>
         <IRI>http://isa-tools.org/isa/ISA0000004</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
@@ -4856,6 +5015,11 @@
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">within subject comparison objective</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://isa-tools.org/isa/ISA0000013</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://isa-tools.org/isa/ISA0000013</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">a variable specification is a data item which</Literal>
@@ -4869,6 +5033,11 @@
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
         <IRI>http://isa-tools.org/isa/ISA0000013</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://isa-tools.org/isa/ISA0000013</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">STATO</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#STATO_alternative_term"/>
@@ -4906,6 +5075,11 @@ The &apos;variable spec&apos; is the &apos;data set&apos;, referring to the set 
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
         <IRI>http://isa-tools.org/isa/ISA0000015</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://isa-tools.org/isa/ISA0000015</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -4963,6 +5137,11 @@ The &apos;variable spec&apos; is the &apos;data set&apos;, referring to the set 
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">&quot;Time to solve an anagram problem&quot; is continuous since it could take 2 minutes, 2.13 minutes etc. to finish a problem</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://isa-tools.org/isa/ISA0000016</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://isa-tools.org/isa/ISA0000016</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A continuous variable is one for which, within the limits the variable ranges, any value is possible.</Literal>
@@ -5015,6 +5194,11 @@ The &apos;variable spec&apos; is the &apos;data set&apos;, referring to the set 
 Often in medical studies, the blocking factor used is the type of institution. This provides a very useful blocking factor, hopefully removing institutionally related factors such as size of the institution, types of populations served, hospitals versus clinics, etc., that would influence the overall results of the experiment.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://isa-tools.org/isa/ISA0000019</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://isa-tools.org/isa/ISA0000019</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">a blocking variable is a independent variable which is used in a blocking process part of an experiment with the purpose of maximizing the signal coming from the main variable.</Literal>
@@ -5057,7 +5241,7 @@ Often in medical studies, the blocking factor used is the type of institution. T
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
         <IRI>http://isa-tools.org/isa/ISA0000020</IRI>
-        <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -5123,6 +5307,11 @@ Often in medical studies, the blocking factor used is the type of institution. T
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
         <IRI>http://isa-tools.org/isa/ISA0000021</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">treatment combination</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://isa-tools.org/isa/ISA0000021</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">STATO</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#STATO_alternative_term"/>
@@ -5402,7 +5591,7 @@ http://mathworld.wolfram.com/NormalDistribution.html</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
         <IRI>http://isa-tools.org/isa/ISA_0000108</IRI>
-        <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -5636,6 +5825,11 @@ http://mathworld.wolfram.com/NormalDistribution.html</Literal>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">block design</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000118</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">a count of 4 resulting from counting limbs in humans</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
         <IRI>http://isa-tools.org/isa/ISA_0000118</IRI>
         <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
@@ -5654,6 +5848,11 @@ http://mathworld.wolfram.com/NormalDistribution.html</Literal>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
         <IRI>http://isa-tools.org/isa/ISA_0000118</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000118</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">STATO</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#STATO_alternative_term"/>
@@ -5740,7 +5939,7 @@ http://mathworld.wolfram.com/NormalDistribution.html</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
         <IRI>http://isa-tools.org/isa/ISA_0000120</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">AGB-PRS</Literal>
+        <Literal datatypeIRI="&rdf;PlainLiteral">AGB-PRS, STATO</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#STATO_alternative_term"/>
@@ -5755,7 +5954,7 @@ http://mathworld.wolfram.com/NormalDistribution.html</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
         <IRI>http://isa-tools.org/isa/ISA_0000121</IRI>
-        <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -6104,36 +6303,6 @@ http://stat.ethz.ch/R-manual/R-patched/library/stats/html/Hypergeometric.html</L
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
-        <IRI>http://isa-tools.org/isa/ISA_0000130</IRI>
-        <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>http://isa-tools.org/isa/ISA_0000130</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>http://isa-tools.org/isa/ISA_0000130</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
-        <IRI>http://isa-tools.org/isa/ISA_0000130</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">G test</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="#STATO_alternative_term"/>
-        <IRI>http://isa-tools.org/isa/ISA_0000130</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://isa-tools.org/isa/ISA_0000130</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Chi square test of goodness of fit</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
         <IRI>http://isa-tools.org/isa/ISA_0000131</IRI>
         <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
     </AnnotationAssertion>
@@ -6170,7 +6339,7 @@ http://stat.ethz.ch/R-manual/R-patched/library/stats/html/Hypergeometric.html</L
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://isa-tools.org/isa/ISA_0000131</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Pearson&apos;s Chi square test for independence</Literal>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Pearson&apos;s Chi square test</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
@@ -6413,12 +6582,14 @@ hovPlot(y~G,data=mydata)</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
         <IRI>http://isa-tools.org/isa/ISA_0000138</IRI>
-        <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://isa-tools.org/isa/ISA_0000138</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Cochran-Mantel-Haenzel test for repeated tests of independence is a statitiscal test which..</Literal>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Cochran-Mantel-Haenzel test for repeated tests of independence is a statitiscal test which allows the comparison of two groups on a dichotomous/categorical response. It is used when the effect of the explanatory variable on the response variable is influenced by covariates that can be controlled. It is often used in observational studies where random assignment of subjects to different treatments cannot be controlled, but influencing covariates can.
+The null hypothesis is that the two nominal variables that are tested within each repetition are independent of each other. So there are 3 variables to consider:
+two categorical variables to be tested for  independence of each other, and the third variable identifies the repeats. </Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -6438,7 +6609,7 @@ hovPlot(y~G,data=mydata)</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
         <IRI>http://isa-tools.org/isa/ISA_0000138</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">STATO adapted from </Literal>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">STATO adapted from wikipedia (http://en.wikipedia.org/wiki/Cochran–Mantel–Haenszel_statistics) and from the Handbook of Biological Statistics (http://udel.edu/~mcdonald/statcmh.html)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#R_command"/>
@@ -6696,6 +6867,11 @@ hovPlot(y~G,data=mydata)</Literal>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">case-control study design</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000147</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://isa-tools.org/isa/ISA_0000147</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">a dichotomous variable  is a categorical variable  which is defined to have only 2 categories or possible values</Literal>
@@ -6737,6 +6913,11 @@ hovPlot(y~G,data=mydata)</Literal>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">dichotomous variable</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000148</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://isa-tools.org/isa/ISA_0000148</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">a polychotomous variable  is a categorical variable  which is defined to have minimally 2 categories or possible values</Literal>
@@ -6750,6 +6931,11 @@ hovPlot(y~G,data=mydata)</Literal>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
         <IRI>http://isa-tools.org/isa/ISA_0000148</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000148</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">STATO</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
@@ -7117,6 +7303,16 @@ hovPlot(y~G,data=mydata)</Literal>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">one dimensional cartesian coordinate system</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000176</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000176</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">a confidence interval which covers 90% of the sampling distribution, meaning that there is a 90% risk of false positive (type I error)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
         <IRI>http://isa-tools.org/isa/ISA_0000176</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
@@ -7127,6 +7323,11 @@ hovPlot(y~G,data=mydata)</Literal>
         <Literal datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000176</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">STATO</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="#STATO_alternative_term"/>
         <IRI>http://isa-tools.org/isa/ISA_0000176</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral"></Literal>
@@ -7135,6 +7336,11 @@ hovPlot(y~G,data=mydata)</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://isa-tools.org/isa/ISA_0000176</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">90% confidence interval</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000177</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -7210,6 +7416,11 @@ hovPlot(y~G,data=mydata)</Literal>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
         <IRI>http://isa-tools.org/isa/ISA_0000179</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">http://www.sagepub.com/upm-data/47775_ch_3.pdf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#R_command"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000179</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#STATO_alternative_term"/>
@@ -7339,6 +7550,16 @@ http://stat.ethz.ch/R-manual/R-patched/library/base/html/range.html</Literal>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">assess statistical evidence</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://isa-tools.org/owl/ISA_10000254</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000428</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://isa-tools.org/owl/ISA_10000254</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">a statistical model is a model which...</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
         <IRI>http://isa-tools.org/owl/ISA_10000254</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
@@ -7354,14 +7575,25 @@ http://stat.ethz.ch/R-manual/R-patched/library/base/html/range.html</Literal>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">STATO</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://isa-tools.org/owl/ISA_10000254</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">STATO, adapted from:</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://isa-tools.org/owl/ISA_10000254</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">statistical model</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://isa-tools.org/owl/ISA_10000255</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000428</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://isa-tools.org/owl/ISA_10000255</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">TODO</Literal>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">linear regression model is a model which attempts to explain data distribution associated with response/dependent variable in terms of values assumed by the independent variable uses a linear function or linear combination of the regression parameters and the predictor/independent variable(s).
+linear regression modeling makes a number of assumptions, which includes homoskedasticity (constance of variance)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -7376,7 +7608,7 @@ http://stat.ethz.ch/R-manual/R-patched/library/base/html/range.html</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
         <IRI>http://isa-tools.org/owl/ISA_10000255</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">TO ADD</Literal>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">STATO, adapted from wikipedia (http://en.wikipedia.org/wiki/Linear_regression) polled in June 2013</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#STATO_alternative_term"/>
@@ -7387,6 +7619,11 @@ http://stat.ethz.ch/R-manual/R-patched/library/base/html/range.html</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://isa-tools.org/owl/ISA_10000255</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">linear regression model</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://isa-tools.org/owl/ISA_10000256</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000428</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -7414,9 +7651,14 @@ http://stat.ethz.ch/R-manual/R-patched/library/base/html/range.html</Literal>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">model</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://isa-tools.org/owl/ISA_10000257</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000428</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://isa-tools.org/owl/ISA_10000257</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">TODO</Literal>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">probit regression model is a model which attempts to explain data distribution associated with *dichotomous* response/dependent variable in terms of values assumed by the independent variable uses a function of predictor/independent variable(s): the function used in this instance of regression modeling is the probit function aka the quantile function, i.e., the inverse cumulative distribution function (CDF), associated with the standard normal distribution.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -7431,7 +7673,7 @@ http://stat.ethz.ch/R-manual/R-patched/library/base/html/range.html</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
         <IRI>http://isa-tools.org/owl/ISA_10000257</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">TO ADD</Literal>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">STATO, adapted from wikipedia (http://en.wikipedia.org/wiki/Probit_model) polled in June 2013</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#STATO_alternative_term"/>
@@ -7441,7 +7683,7 @@ http://stat.ethz.ch/R-manual/R-patched/library/base/html/range.html</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://isa-tools.org/owl/ISA_10000257</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">binary regression model</Literal>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">probit regression model</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -7576,7 +7818,9 @@ http://stat.ethz.ch/R-manual/R-patched/library/base/html/range.html</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://isa-tools.org/owl/ISA_10000265</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">The Cochran-Armitage test is used in categorical data analysis when the aim is to assess for the presence of an association between a variable with two categories and a variable with k categories</Literal>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">The Cochran-Armitage test is a statistical test used in categorical data analysis when the aim is to assess for the presence of an association between a dichotomous variable (variable with two categories) and a polychotomous variable  (a variable with k categories).
+
+For example, doses of a treatment can be ordered as &apos;low&apos;, &apos;medium&apos;, and &apos;high&apos;, and we may suspect that the treatment benefit cannot become smaller as the dose increases. The trend test is often used as a genotype-based test for case-control genetic association studies.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -7587,6 +7831,11 @@ http://stat.ethz.ch/R-manual/R-patched/library/base/html/range.html</Literal>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
         <IRI>http://isa-tools.org/owl/ISA_10000265</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
+        <IRI>http://isa-tools.org/owl/ISA_10000265</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">CATT</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
@@ -7609,9 +7858,14 @@ http://stat.ethz.ch/R-manual/R-patched/library/base/html/range.html</Literal>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Cochran-Armitage test for trend</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://isa-tools.org/owl/ISA_10000266</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000428</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://isa-tools.org/owl/ISA_10000266</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">TODO</Literal>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">binomial logistic regression model is a model which attempts to explain data distribution associated with *dichotomous* response/dependent variable in terms of values assumed by the independent variable uses a function of predictor/independent variable(s): the function used in this instance of regression modeling is logistic function.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -7626,7 +7880,7 @@ http://stat.ethz.ch/R-manual/R-patched/library/base/html/range.html</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
         <IRI>http://isa-tools.org/owl/ISA_10000266</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">TO ADD</Literal>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">STATO, adapted from wikipedia (http://en.wikipedia.org/wiki/Logistic_regression) polled in June 2013</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#STATO_alternative_term"/>
@@ -7649,9 +7903,14 @@ http://stat.ethz.ch/R-manual/R-patched/library/base/html/range.html</Literal>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">maximum value</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://isa-tools.org/owl/ISA_10000269</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://isa-tools.org/owl/ISA_10000269</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">TODO</Literal>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">a quartile is a quantile which splits data into sections accrued of 25% of data, so the first quartile delineates 25% of the data, the second quartile delineates 50% of the data and the third quartile, 75 % of the data</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -7664,6 +7923,11 @@ http://stat.ethz.ch/R-manual/R-patched/library/base/html/range.html</Literal>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://isa-tools.org/owl/ISA_10000269</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">STATO, adapted from wikipedia (http://en.wikipedia.org/wiki/Quartile)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="#STATO_alternative_term"/>
         <IRI>http://isa-tools.org/owl/ISA_10000269</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
@@ -7674,9 +7938,64 @@ http://stat.ethz.ch/R-manual/R-patched/library/base/html/range.html</Literal>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">quartile</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://isa-tools.org/owl/ISA_10000270</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://isa-tools.org/owl/ISA_10000270</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">the first quartile is a quartile which splits the lower 25 % of the data</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://isa-tools.org/owl/ISA_10000270</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://isa-tools.org/owl/ISA_10000270</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://isa-tools.org/owl/ISA_10000270</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">STATO</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://isa-tools.org/owl/ISA_10000270</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">first quartile</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://isa-tools.org/owl/ISA_10000271</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://isa-tools.org/owl/ISA_10000271</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">the first quartile is a quartile which splits the 75 % of the data</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://isa-tools.org/owl/ISA_10000271</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://isa-tools.org/owl/ISA_10000271</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://isa-tools.org/owl/ISA_10000271</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">STATO</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#STATO_alternative_term"/>
+        <IRI>http://isa-tools.org/owl/ISA_10000271</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -7928,11 +8247,6 @@ http://stat.ethz.ch/R-manual/R-patched/library/graphics/html/barplot.html</Liter
     <AnnotationAssertion>
         <AnnotationProperty IRI="#STATO_alternative_term"/>
         <IRI>http://purl.obolibrary.org/obo/OBI_0000750</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="#STATO_alternative_term"/>
-        <IRI>http://purl.obolibrary.org/obo/OBI_0000750</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">explanatory variable</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -8132,6 +8446,11 @@ AGB and PRS provide formal definition expressed the test in terms of output and 
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>#1_percent_false_positive_rate</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>#1_percent_false_positive_rate</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">a false positive rate whose value is 1 per cent</Literal>
@@ -8147,6 +8466,11 @@ AGB and PRS provide formal definition expressed the test in terms of output and 
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#1_percent_false_positive_rate</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">STATO</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="#STATO_alternative_term"/>
         <IRI>#1_percent_false_positive_rate</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">1 % false positive rate</Literal>
@@ -8155,6 +8479,99 @@ AGB and PRS provide formal definition expressed the test in terms of output and 
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#1_percent_false_positive_rate</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">1 % false positive rate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>#2_by_2_contingency_table</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#2_by_2_contingency_table</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">a 2x2 contingency table is a contingency table build for 2 dichotomous variables (i.e. 2 categorical variables, each with only 2 possible outcomes). It is the simplest of contingency tables</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>#2_by_2_contingency_table</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>#2_by_2_contingency_table</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#2_by_2_contingency_table</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">STATO</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#R_command"/>
+        <IRI>#2_by_2_contingency_table</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">xtabs(formula = ~., data = parent.frame(), subset, sparse = FALSE,
+      na.action, exclude = c(NA, NaN), drop.unused.levels = FALSE)
+
+http://stat.ethz.ch/R-manual/R-patched/library/stats/html/xtabs.html
+
+flat contingency tables:
+
+ftable(x, ...)
+
+http://stat.ethz.ch/R-manual/R-patched/library/stats/html/ftable.html</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#STATO_alternative_term"/>
+        <IRI>#2_by_2_contingency_table</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">2x2 contingency table</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#2_by_2_contingency_table</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">2 by 2 contingency table</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>#2_by_n_contingency_table</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#2_by_n_contingency_table</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">a 2 by n contingency table is a contingency table built for one dichotomous variable (a categorical variable with only 2 outcomes) and one polychotomous variable (a polychomotomous variable with at least 2 outcomes)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>#2_by_n_contingency_table</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#2_by_n_contingency_table</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">STATO</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#R_command"/>
+        <IRI>#2_by_n_contingency_table</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">xtabs(formula = ~., data = parent.frame(), subset, sparse = FALSE,
+      na.action, exclude = c(NA, NaN), drop.unused.levels = FALSE)
+
+http://stat.ethz.ch/R-manual/R-patched/library/stats/html/xtabs.html
+
+flat contingency tables:
+
+ftable(x, ...)
+
+http://stat.ethz.ch/R-manual/R-patched/library/stats/html/ftable.html</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#STATO_alternative_term"/>
+        <IRI>#2_by_n_contingency_table</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#2_by_n_contingency_table</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">2 by n contingency table</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
@@ -8182,6 +8599,16 @@ AGB and PRS provide formal definition expressed the test in terms of output and 
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
+        <IRI>#50_percent_confidence_interval</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">confidence interval at 10% of type I error rate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#50_percent_confidence_interval</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">STATO</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="#STATO_alternative_term"/>
         <IRI>#50_percent_confidence_interval</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
@@ -8190,6 +8617,11 @@ AGB and PRS provide formal definition expressed the test in terms of output and 
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#50_percent_confidence_interval</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">50% confidence interval</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>#5_percent_false_positive_rate</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -8205,6 +8637,11 @@ AGB and PRS provide formal definition expressed the test in terms of output and 
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
         <IRI>#5_percent_false_positive_rate</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#5_percent_false_positive_rate</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">STATO</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#STATO_alternative_term"/>
@@ -8247,6 +8684,11 @@ AGB and PRS provide formal definition expressed the test in terms of output and 
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">confidence interval at 5% of type I error rate</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#95_percent_confidence_interval</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">STATO</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="#STATO_alternative_term"/>
         <IRI>#95_percent_confidence_interval</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
@@ -8285,6 +8727,11 @@ AGB and PRS provide formal definition expressed the test in terms of output and 
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
         <IRI>#99_percent_confidence_interval</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">confidence interval at 1% of type I error rate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#99_percent_confidence_interval</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">STATO</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#STATO_alternative_term"/>
@@ -8688,6 +9135,11 @@ http://stat.ethz.ch/R-manual/R-patched/library/stats/html/Poisson.html</Literal>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">STATO alternative term</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>#Spearman_s_rank_correlation_coefficient</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>#Spearman_s_rank_correlation_coefficient</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Spearman&apos;s rank correlation coefficient is a nonparametric measure of statistical dependence between two ranked variables. It assesses how well the relationship between two variables can be described using a monotonic function. If there are no repeated data values, a perfect Spearman correlation of +1 or −1 occurs when each of the variables is a perfect monotone function of the other.
@@ -8736,7 +9188,7 @@ Spearman&apos;s coefficient, like any correlation calculation, is appropriate fo
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
         <IRI>#Strictly_standardized_mean_difference</IRI>
-        <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -8803,6 +9255,11 @@ http://a-little-book-of-r-for-biomedical-statistics.readthedocs.org/en/latest/sr
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Tarone_test_for_homogeneity_of_odds_ratio</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Tarone&apos;s test for homogeneity of odds ratio</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>#allele_frequency</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -8995,6 +9452,11 @@ http://stat.ethz.ch/R-manual/R-patched/library/graphics/html/boxplot.html</Liter
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">box and whisker plot</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>#channel1/channel2_fluorescence_intensity</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>#channel1/channel2_fluorescence_intensity</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">is a data item formed by dividing the fluorescence intensity obtained in one channel to that obtained in the other channel, typically the case when considering 2-color microarray data when imaging is done for Cy3 and Cy5 dyes.</Literal>
@@ -9010,14 +9472,14 @@ http://stat.ethz.ch/R-manual/R-patched/library/graphics/html/boxplot.html</Liter
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#channel1/channel2_fluorescence_intensity</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">STATO</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="#STATO_alternative_term"/>
         <IRI>#channel1/channel2_fluorescence_intensity</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">channel1/channel2 fluorescence intensity ratio</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#channel1/channel2_fluorescence_intensity</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -9178,6 +9640,64 @@ http://stat.ethz.ch/R-manual/R-patched/library/graphics/html/boxplot.html</Liter
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">confidence interval calculation</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>#contigency_table</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#contigency_table</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">a contigency table is a data item which displays the (multivariate) frequency distribution of the possible values of categorical variables.
+The first row of the table corresponds to categories of one categorical variable, the first column of the table corresponds to categories of the other categorical variable, the cells corresponding to each combination of categories is filled with the observed occurences in the sample being considered.
+The table also contains marginal total (marginal sums) and grand total of the occurences
+
+The term contingency table was first used by Karl Pearson in &quot;On the Theory of Contingency and Its Relation to Association and Normal Correlation&quot;, part of the Drapers&apos; Company Research Memoirs Biometric Series I published in 1904.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>#contigency_table</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>#contigency_table</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#contigency_table</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">STATO, adapted from wikipedia (http://en.wikipedia.org/wiki/Contingency_table)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#R_command"/>
+        <IRI>#contigency_table</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">xtabs(formula = ~., data = parent.frame(), subset, sparse = FALSE,
+      na.action, exclude = c(NA, NaN), drop.unused.levels = FALSE)
+
+http://stat.ethz.ch/R-manual/R-patched/library/stats/html/xtabs.html
+
+flat contingency tables:
+
+ftable(x, ...)
+
+http://stat.ethz.ch/R-manual/R-patched/library/stats/html/ftable.html</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#STATO_alternative_term"/>
+        <IRI>#contigency_table</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#contigency_table</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">contigency table</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>#correlation_coefficient</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>#correlation_coefficient</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">The correlation coefficient of two variables in a data sample is their covariance divided by the product of their individual standard deviations. It is a normalized measurement of how the two are linearly related.</Literal>
@@ -9191,6 +9711,11 @@ http://stat.ethz.ch/R-manual/R-patched/library/graphics/html/boxplot.html</Liter
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
         <IRI>#correlation_coefficient</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#correlation_coefficient</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">STATO</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#STATO_alternative_term"/>
@@ -9260,7 +9785,7 @@ http://stat.ethz.ch/R-manual/R-patched/library/graphics/html/boxplot.html</Liter
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
         <IRI>#effect_size</IRI>
-        <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -9295,7 +9820,7 @@ http://stat.ethz.ch/R-manual/R-patched/library/graphics/html/boxplot.html</Liter
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
         <IRI>#expected_value</IRI>
-        <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -9345,7 +9870,7 @@ http://stat.ethz.ch/R-manual/R-patched/library/graphics/html/boxplot.html</Liter
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
         <IRI>#false_negative_rate</IRI>
-        <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -9361,6 +9886,11 @@ http://stat.ethz.ch/R-manual/R-patched/library/graphics/html/boxplot.html</Liter
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
         <IRI>#false_negative_rate</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#false_negative_rate</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">STATO, adapted from</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#STATO_alternative_term"/>
@@ -9390,6 +9920,11 @@ http://www.ontobee.org/browser/rdf.php?o=PCO&amp;iri=http://purl.obolibrary.org/
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#family</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">family</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>#fixed_effect_model</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000428</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -9424,7 +9959,7 @@ http://www.ontobee.org/browser/rdf.php?o=PCO&amp;iri=http://purl.obolibrary.org/
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
         <IRI>#fold_change</IRI>
-        <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -9457,6 +9992,11 @@ http://www.ontobee.org/browser/rdf.php?o=PCO&amp;iri=http://purl.obolibrary.org/
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">fold change</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>#genomic_coordinate_datum</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>#genomic_coordinate_datum</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">a data item about a genomic position expressed using a genomic coordinate system</Literal>
@@ -9470,6 +10010,16 @@ http://www.ontobee.org/browser/rdf.php?o=PCO&amp;iri=http://purl.obolibrary.org/
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
         <IRI>#genomic_coordinate_datum</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#genomic_coordinate_datum</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">STATO</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#STATO_alternative_term"/>
+        <IRI>#genomic_coordinate_datum</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -9766,9 +10316,14 @@ http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2789971/</Literal>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">homoskedasticity test</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>#kendall_correlation_coefficient</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>#kendall_correlation_coefficient</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Kendall&apos;s correlation coefficient is a correlation coefficient between 2 ordinal variables (natively or following a ranking procedure)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -9779,6 +10334,21 @@ http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2789971/</Literal>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
         <IRI>#kendall_correlation_coefficient</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
+        <IRI>#kendall_correlation_coefficient</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Kendall rank correlation coefficient</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
+        <IRI>#kendall_correlation_coefficient</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Kendall&apos;s tau (τ) coefficient</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#kendall_correlation_coefficient</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">STATO, adapted from wikipedia (http://en.wikipedia.org/wiki/Kendall_tau_rank_correlation_coefficient), polled in  june 2013</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#R_command"/>
@@ -9851,6 +10421,11 @@ http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2789971/</Literal>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
+        <IRI>#linkage_between_2_categorical_variable_test</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">test of association</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
         <IRI>#linkage_between_2_categorical_variable_test</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">STATO</Literal>
@@ -9858,7 +10433,7 @@ http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2789971/</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#STATO_alternative_term"/>
         <IRI>#linkage_between_2_categorical_variable_test</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">test of independence between variables</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -9945,6 +10520,11 @@ http://www.tengfei.name/ggbio/docs/man/plotGrandLinear.html</Literal>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">matched pair of subjects</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>#mixed_model</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000428</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>#mixed_model</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">TODO</Literal>
@@ -9998,6 +10578,86 @@ http://www.tengfei.name/ggbio/docs/man/plotGrandLinear.html</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#model_fitting</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">model fitting</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>#multinomial_probit_regression</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000428</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#multinomial_probit_regression</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">multinomial logistic regression model is a model which attempts to explain data distribution associated with *polychotomous* response/dependent variable in terms of values assumed by the independent variable uses a function of predictor/independent variable(s): the function used in this instance of regression modeling is probit function.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>#multinomial_probit_regression</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>#multinomial_probit_regression</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#multinomial_probit_regression</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">STATO, adapted from wikipedia (http://en.wikipedia.org/wiki/Multinomial_probit) polled in June 2013</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#R_command"/>
+        <IRI>#multinomial_probit_regression</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://cran.r-project.org/web/packages/mlogit/vignettes/mlogit.pdf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#STATO_alternative_term"/>
+        <IRI>#multinomial_probit_regression</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#multinomial_probit_regression</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">multinomial probit regression</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>#multiple_login_regression_model</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000428</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#multiple_login_regression_model</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">multinomial logistic regression model is a model which attempts to explain data distribution associated with *polychotomous* response/dependent variable in terms of values assumed by the independent variable uses a function of predictor/independent variable(s): the function used in this instance of regression modeling is logistic function.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>#multiple_login_regression_model</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>#multiple_login_regression_model</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#multiple_login_regression_model</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">STATO, adapted from wikipedia (http://en.wikipedia.org/wiki/Multinomial_logistic_regression) polled in June 2013</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#R_command"/>
+        <IRI>#multiple_login_regression_model</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://cran.r-project.org/web/packages/mlogit/vignettes/mlogit.pdf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#STATO_alternative_term"/>
+        <IRI>#multiple_login_regression_model</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#multiple_login_regression_model</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">multinomial logistic regression</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
@@ -10122,7 +10782,7 @@ http://stat.ethz.ch/R-manual/R-patched/library/stats/html/NegBinomial.html</Lite
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
         <IRI>#odds_ratio</IRI>
-        <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -10192,6 +10852,41 @@ It represents the odds that an outcome will occur given a particular exposure, c
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>#odds_ratio_homogeneity_test</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#odds_ratio_homogeneity_test</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">odds ratio homogeneity test is a statistical test which aims to evaluate that null the hypothesis of consistency odds ratio accross different strata of population is true or not</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>#odds_ratio_homogeneity_test</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>#odds_ratio_homogeneity_test</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#odds_ratio_homogeneity_test</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">STATO</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#STATO_alternative_term"/>
+        <IRI>#odds_ratio_homogeneity_test</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#odds_ratio_homogeneity_test</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">odds ratio homogeneity test</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
         <IRI>#odds_ratio_homogeneity_test_objective</IRI>
         <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
     </AnnotationAssertion>
@@ -10224,6 +10919,51 @@ It represents the odds that an outcome will occur given a particular exposure, c
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#odds_ratio_homogeneity_test_objective</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">odds ratio homogeneity test objective</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>#ordinal_model</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000428</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#ordinal_model</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">probit regression model is a model which attempts to explain data distribution associated with *ordinal* response/dependent variable in terms of values assumed by the independent variable uses a function of predictor/independent variable(s): the function used in this instance of regression modeling is the ordered probit function.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>#ordinal_model</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>#ordinal_model</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#ordinal_model</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">STATO, adapted from wikipedia (http://en.wikipedia.org/wiki/Probit_model) polled in June 2013</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#R_command"/>
+        <IRI>#ordinal_model</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#STATO_alternative_term"/>
+        <IRI>#ordinal_model</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ordinal_model</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ordered probit regression model</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>#ordinal_variable_specification</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -10301,9 +11041,14 @@ It represents the odds that an outcome will occur given a particular exposure, c
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">pairing rule</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>#pearsons_correlation_coefficient</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>#pearsons_correlation_coefficient</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">The correlation coefficient of two variables in a data sample is their covariance divided by the product of their individual standard deviations. It is a normalized measurement of how the two are linearly related.</Literal>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">The Pearson&apos;s correlation coefficient is a correlation coefficient of two variables in a data sample which corresponds to their covariance divided by the product of their individual standard deviations. It is a normalized measurement of how the two are linearly related.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -10390,7 +11135,7 @@ http://hosho.ees.hokudai.ac.jp/~kubo/Rdoc/library/kinship/html/plot.pedigree.htm
     <AnnotationAssertion>
         <AnnotationProperty IRI="#STATO_alternative_term"/>
         <IRI>#pedigree_chart</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">family tree</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -10477,6 +11222,11 @@ http://stat.ethz.ch/R-manual/R-patched/library/stats/html/qqnorm.html</Literal>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">q-q plot</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>#random_effects_model</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000428</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>#random_effects_model</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">TODO</Literal>
@@ -10490,6 +11240,11 @@ http://stat.ethz.ch/R-manual/R-patched/library/stats/html/qqnorm.html</Literal>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
         <IRI>#random_effects_model</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
+        <IRI>#random_effects_model</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">variance components model</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#STATO_alternative_term"/>
@@ -10634,6 +11389,11 @@ http://rss.acs.unt.edu/Rdoc/library/epicalc/html/roc.html</Literal>
         <Literal datatypeIRI="&rdf;PlainLiteral">risk ratio</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#relative_risk</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="#STATO_alternative_term"/>
         <IRI>#relative_risk</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
@@ -10688,7 +11448,7 @@ Repeated measure ANOVA use in case of unbalanced design is discouraged as it lea
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
         <IRI>#sensitivity</IRI>
-        <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -10773,7 +11533,7 @@ http://hosho.ees.hokudai.ac.jp/~kubo/Rdoc/library/e1071/html/skewness.html</Lite
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
         <IRI>#specificity</IRI>
-        <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -10844,6 +11604,41 @@ http://hosho.ees.hokudai.ac.jp/~kubo/Rdoc/library/e1071/html/skewness.html</Lite
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#sphericity_hypothesis</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">sphericity hypothesis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>#sphericity_test</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#sphericity_test</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">a sphericity test is a null hypothesis statistical testing procedure which posits a null hypothesis of equality of the variances of the differences between levels of the repeated measures factor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>#sphericity_test</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>#sphericity_test</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#sphericity_test</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">STATO, adapted from wikipedia (http://en.wikipedia.org/wiki/Sphericity)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#STATO_alternative_term"/>
+        <IRI>#sphericity_test</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">test of data sphericity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#sphericity_test</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">sphericity test</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
@@ -11044,6 +11839,11 @@ It is used to provide an estimatation of the effect size between two treatments 
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
         <IRI>#standardized_mean_difference</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#standardized_mean_difference</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">adapted from &quot;Effect size, confidence interval and statistical significance: a practical guide for biologists&quot;  Nakagawa and Cuthill
 DOI: 10.1111/j.1469-185X.2007.00027.x</Literal>
     </AnnotationAssertion>
@@ -11121,6 +11921,11 @@ polled on June 7th,2013</Literal>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">stratifying population</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#stratification</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">population stratification prior to sampling</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
         <IRI>#stratification_rule</IRI>
         <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
@@ -11161,6 +11966,46 @@ polled on June 7th,2013</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#stratification_rule</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">stratification rule</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#stratum_population</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>#stratum_population</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>#stratum_population</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>#stratum_population</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#stratum_population</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">STATO</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#stratum_population</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">a stratum population is a population resulting from a population stratification prior to sampling process which aims to produce homogenous subpopulations from an heterogeneous population by applying one or more stratification criteria</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#STATO_alternative_term"/>
+        <IRI>#stratum_population</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#stratum_population</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">stratum population</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
@@ -11227,7 +12072,7 @@ http://www.oxfordreference.com/view/10.1093/acref/9780199541454.001.0001/acref-9
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
         <IRI>#subject_pairing</IRI>
-        <IRI>http://purl.obolibrary.org/obo/IAO_0000226</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -11497,5 +12342,5 @@ http://rss.acs.unt.edu/Rdoc/library/limma/html/volcanoplot.html</Literal>
 
 
 
-<!-- Generated by the OWL API (version 3.3.1957) http://owlapi.sourceforge.net -->
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
 
