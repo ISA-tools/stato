@@ -395,6 +395,12 @@
         <Class IRI="#Gamma_distribution"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Hardy-Weinberg_equilibrium_hypothesis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hardy-Weinberg_equilibrium_testing"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#MA_plot"/>
     </Declaration>
     <Declaration>
@@ -446,7 +452,13 @@
         <Class IRI="#contigency_table"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#continuous_probability_distribution"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#correlation_coefficient"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#discrete_probability_distribution"/>
     </Declaration>
     <Declaration>
         <Class IRI="#discretization"/>
@@ -525,6 +537,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#negative_binomial_probability_distribution"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#normal_distribution_hypothesis"/>
     </Declaration>
     <Declaration>
         <Class IRI="#odds"/>
@@ -1066,7 +1081,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://isa-tools.org/isa/ISA_0000106"/>
-        <Class IRI="http://isa-tools.org/isa/ISA_0000105"/>
+        <Class IRI="#continuous_probability_distribution"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://isa-tools.org/isa/ISA_0000106"/>
@@ -1077,7 +1092,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://isa-tools.org/isa/ISA_0000107"/>
-        <Class IRI="http://isa-tools.org/isa/ISA_0000105"/>
+        <Class IRI="#continuous_probability_distribution"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://isa-tools.org/isa/ISA_0000108"/>
@@ -1086,6 +1101,16 @@
     <SubClassOf>
         <Class IRI="http://isa-tools.org/isa/ISA_0000109"/>
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0200000"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000109"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#normal_distribution_hypothesis"/>
+            <DataHasValue>
+                <DataProperty IRI="http://isa-tools.org/isa/ISA_0000144"/>
+                <Literal datatypeIRI="&xsd;boolean">true</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://isa-tools.org/isa/ISA_0000109"/>
@@ -1225,6 +1250,13 @@
         <Class IRI="http://purl.obolibrary.org/obo/IAO_0000030"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000121"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="http://isa-tools.org/isa/ISA_0000144"/>
+            <Datatype abbreviatedIRI="xsd:boolean"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="http://isa-tools.org/isa/ISA_0000122"/>
         <Class IRI="http://isa-tools.org/isa/ISA_0000121"/>
     </SubClassOf>
@@ -1292,11 +1324,11 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://isa-tools.org/isa/ISA_0000128"/>
-        <Class IRI="http://isa-tools.org/isa/ISA_0000105"/>
+        <Class IRI="#continuous_probability_distribution"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://isa-tools.org/isa/ISA_0000129"/>
-        <Class IRI="http://isa-tools.org/isa/ISA_0000105"/>
+        <Class IRI="#discrete_probability_distribution"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://isa-tools.org/isa/ISA_0000131"/>
@@ -1355,14 +1387,14 @@
         <Class IRI="http://isa-tools.org/isa/ISA_0000132"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
-            <Class IRI="http://isa-tools.org/isa/ISA_0000105"/>
+            <Class IRI="http://isa-tools.org/isa/ISA_0000108"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://isa-tools.org/isa/ISA_0000132"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
-            <Class IRI="http://isa-tools.org/isa/ISA_0000108"/>
+            <Class IRI="#continuous_probability_distribution"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -1408,7 +1440,13 @@
         <Class IRI="http://isa-tools.org/isa/ISA_0000133"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000299"/>
-            <Class IRI="http://purl.obolibrary.org/obo/OBI_0000175"/>
+            <ObjectIntersectionOf>
+                <Class IRI="http://purl.obolibrary.org/obo/OBI_0000175"/>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                    <Class IRI="http://isa-tools.org/isa/ISA_0000123"/>
+                </ObjectSomeValuesFrom>
+            </ObjectIntersectionOf>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -1614,6 +1652,16 @@
     <SubClassOf>
         <Class IRI="http://isa-tools.org/isa/ISA_0000138"/>
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0200000"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000138"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#odds_ratio_homogeneity_hypothesis"/>
+            <DataHasValue>
+                <DataProperty IRI="http://isa-tools.org/isa/ISA_0000144"/>
+                <Literal datatypeIRI="&xsd;boolean">true</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://isa-tools.org/isa/ISA_0000138"/>
@@ -2870,6 +2918,26 @@
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0200201"/>
         <ObjectIntersectionOf>
+            <Class IRI="http://isa-tools.org/isa/ISA_0000124"/>
+            <DataHasValue>
+                <DataProperty IRI="http://isa-tools.org/isa/ISA_0000144"/>
+                <Literal datatypeIRI="&xsd;boolean">true</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/OBI_0200201"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#normal_distribution_hypothesis"/>
+            <DataHasValue>
+                <DataProperty IRI="http://isa-tools.org/isa/ISA_0000144"/>
+                <Literal datatypeIRI="&xsd;boolean">true</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/OBI_0200201"/>
+        <ObjectIntersectionOf>
             <ObjectMinCardinality cardinality="1">
                 <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
                 <Class IRI="http://isa-tools.org/isa/ISA0000015"/>
@@ -3213,7 +3281,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#F-distribution"/>
-        <Class IRI="http://isa-tools.org/isa/ISA_0000105"/>
+        <Class IRI="#continuous_probability_distribution"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Forest_plot"/>
@@ -3234,7 +3302,47 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Gamma_distribution"/>
-        <Class IRI="http://isa-tools.org/isa/ISA_0000105"/>
+        <Class IRI="#continuous_probability_distribution"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hardy-Weinberg_equilibrium_hypothesis"/>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000123"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hardy-Weinberg_equilibrium_testing"/>
+        <Class IRI="http://purl.obolibrary.org/obo/OBI_0200000"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hardy-Weinberg_equilibrium_testing"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            <ObjectUnionOf>
+                <Class IRI="http://isa-tools.org/isa/ISA_0000131"/>
+                <Class IRI="http://isa-tools.org/isa/ISA_0000137"/>
+                <Class IRI="http://purl.obolibrary.org/obo/OBI_0000861"/>
+            </ObjectUnionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hardy-Weinberg_equilibrium_testing"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
+            <Class IRI="http://isa-tools.org/isa/ISA_0000108"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hardy-Weinberg_equilibrium_testing"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000299"/>
+            <Class IRI="http://purl.obolibrary.org/obo/OBI_0000175"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hardy-Weinberg_equilibrium_testing"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000417"/>
+            <Class IRI="http://isa-tools.org/isa/ISA_0000103"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#MA_plot"/>
@@ -3305,7 +3413,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Poisson_distribution"/>
-        <Class IRI="http://isa-tools.org/isa/ISA_0000105"/>
+        <Class IRI="#discrete_probability_distribution"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Spearman_s_rank_correlation_coefficient"/>
@@ -3426,7 +3534,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#binomial_distribution"/>
-        <Class IRI="http://isa-tools.org/isa/ISA_0000105"/>
+        <Class IRI="#discrete_probability_distribution"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#boxplot"/>
@@ -3558,6 +3666,10 @@
         </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#continuous_probability_distribution"/>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000105"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#correlation_coefficient"/>
         <Class IRI="http://purl.obolibrary.org/obo/IAO_0000109"/>
     </SubClassOf>
@@ -3574,6 +3686,10 @@
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
             <Class IRI="http://isa-tools.org/isa/ISA0000013"/>
         </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#discrete_probability_distribution"/>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000105"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#discretization"/>
@@ -3939,7 +4055,11 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#negative_binomial_probability_distribution"/>
-        <Class IRI="http://isa-tools.org/isa/ISA_0000105"/>
+        <Class IRI="#discrete_probability_distribution"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#normal_distribution_hypothesis"/>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000123"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#odds"/>
@@ -4263,6 +4383,16 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#repeated_measure_ANOVA"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#sphericity_hypothesis"/>
+            <DataHasValue>
+                <DataProperty IRI="http://isa-tools.org/isa/ISA_0000144"/>
+                <Literal datatypeIRI="&xsd;boolean">true</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#repeated_measure_ANOVA"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000062"/>
             <Class IRI="#Mauchly&apos;s_test_for_sphericity"/>
@@ -4488,7 +4618,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#studentized_range_distribution"/>
-        <Class IRI="http://isa-tools.org/isa/ISA_0000105"/>
+        <Class IRI="#continuous_probability_distribution"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#subject_pairing"/>
@@ -4707,6 +4837,10 @@
     <DisjointClasses>
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0000750"/>
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0000751"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#continuous_probability_distribution"/>
+        <Class IRI="#discrete_probability_distribution"/>
     </DisjointClasses>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="http://isa-tools.org/isa/ISA0000018"/>
@@ -5555,7 +5689,7 @@ http://stat.ethz.ch/R-manual/R-patched/library/stats/html/Chisquare.html</Litera
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://isa-tools.org/isa/ISA_0000107</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">a normal distribution is a probability distribution described by a probability distribution function described here:
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">a normal distribution is a continuous probability distribution described by a probability distribution function described here:
 http://mathworld.wolfram.com/NormalDistribution.html</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -6225,7 +6359,7 @@ The hypothesis contrary to the null hypothesis, usually that the observations ar
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://isa-tools.org/isa/ISA_0000128</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral"></Literal>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">the Student&apos;s t distribution is a continuous probability distribution which  arises when estimating the mean of a normally distributed population in situations where the sample size is small and population standard deviation is unknown.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -6240,7 +6374,7 @@ The hypothesis contrary to the null hypothesis, usually that the observations ar
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
         <IRI>http://isa-tools.org/isa/ISA_0000128</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">TO ADD</Literal>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">STATO, adapted from wikipedia (http://en.wikipedia.org/wiki/Student&apos;s_t-distribution)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#R_command"/>
@@ -6252,7 +6386,7 @@ http://stat.ethz.ch/R-manual/R-patched/library/stats/html/TDist.html</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#STATO_alternative_term"/>
         <IRI>http://isa-tools.org/isa/ISA_0000128</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">t distribution</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -6344,7 +6478,12 @@ http://stat.ethz.ch/R-manual/R-patched/library/stats/html/Hypergeometric.html</L
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
         <IRI>http://isa-tools.org/isa/ISA_0000132</IRI>
-        <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000132</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Kolmogorov-Smirnov test is a goodness of fit test which evaluates the null hypothesis that a sample is drawn from a population following a specific continuous probability distribution</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -6361,6 +6500,11 @@ http://stat.ethz.ch/R-manual/R-patched/library/stats/html/Hypergeometric.html</L
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
         <IRI>http://isa-tools.org/isa/ISA_0000132</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">K-S test</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000132</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">STATO, adapted from wikipedia (https://en.wikipedia.org/wiki/Kolmogorov–Smirnov_test)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
@@ -6385,7 +6529,12 @@ http://stat.ethz.ch/R-manual/R-patched/library/stats/html/Hypergeometric.html</L
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
         <IRI>http://isa-tools.org/isa/ISA_0000133</IRI>
-        <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000133</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Shapiro-Wilk test is a goodness of fit test which evaluates the null hypothesis that the sample is drawn from a population following a normal distribution</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -6401,6 +6550,11 @@ http://stat.ethz.ch/R-manual/R-patched/library/stats/html/Hypergeometric.html</L
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
         <IRI>http://isa-tools.org/isa/ISA_0000133</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">S-W test</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000133</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">STATO, adapted from wikipedia (https://en.wikipedia.org/wiki/Shapiro–Wilk_test)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#R_command"/>
@@ -7696,6 +7850,11 @@ linear regression modeling makes a number of assumptions, which includes homoske
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">post hoc statistical test</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://isa-tools.org/owl/ISA_10000260</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://isa-tools.org/owl/ISA_10000260</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">the Scheffe test is a data transformation which evaluates all possible contrasts for significance and confidence intervals can be constructed for the corresponding linear. The test is conservative. It was developped by Scheffe in 1959.</Literal>
@@ -7711,9 +7870,19 @@ linear regression modeling makes a number of assumptions, which includes homoske
         <Literal datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://isa-tools.org/owl/ISA_10000260</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">STATO, adapted from wikipedia (http://en.wikipedia.org/wiki/Scheffé&apos;s_method)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="#R_command"/>
         <IRI>http://isa-tools.org/owl/ISA_10000260</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">http://www.inside-r.org/packages/cran/agricolae/docs/scheffe.test</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#STATO_alternative_term"/>
+        <IRI>http://isa-tools.org/owl/ISA_10000260</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -8829,12 +8998,7 @@ polled on June 8th,2013</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>#F-distribution</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>#F-distribution</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A continuous statistical distribution which arises in the testing of whether two observed samples have the same variance.</Literal>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">the F-distribution is a continuous probability distribution which arises in the testing of whether two observed samples have the same variance.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -8934,7 +9098,7 @@ http://rss.acs.unt.edu/Rdoc/library/rmeta/html/metaplot.html</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>#Gamma_distribution</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A gamma distribution is a general type of statistical distribution (related to the beta distribution) that arises naturally in processes for which the waiting times between Poisson distributed events are relevant. Gamma distributions have two free parameters shape k and scale denoted theta .</Literal>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A gamma distribution is a general type of continous statistical distribution (related to the beta distribution) that arises naturally in processes for which the waiting times between Poisson distributed events are relevant. Gamma distributions have two free parameters shape k and scale denoted theta .</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000116"/>
@@ -8967,6 +9131,81 @@ http://stat.ethz.ch/R-manual/R-patched/library/stats/html/GammaDist.html</Litera
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Gamma_distribution</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Gamma distribution</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#Hardy-Weinberg_equilibrium_hypothesis</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2581961/</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#Hardy-Weinberg_equilibrium_hypothesis</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Hardy-Weinberg equilibrium hypothesis is a good of fit hypothesis which states that allele and genotype frequencies in a population will remain constant from generation to generation in the absence of other evolutionary influences (non-random mating, mutation, selection, genetic drift, gene flow and meiotic drive).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>#Hardy-Weinberg_equilibrium_hypothesis</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>#Hardy-Weinberg_equilibrium_hypothesis</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#Hardy-Weinberg_equilibrium_hypothesis</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">STATO, adapted from wikipedia (http://en.wikipedia.org/wiki/Hardy–Weinberg_principle)
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#STATO_alternative_term"/>
+        <IRI>#Hardy-Weinberg_equilibrium_hypothesis</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Hardy-Weinberg_equilibrium_hypothesis</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Hardy-Weinberg equilibrium hypothesis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#Hardy-Weinberg_equilibrium_testing</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Hardy-Weinberg equilibrium test is a statistical test which aims to evaluate if a population&apos;s proportion of allele is stable or not. It is used as means of quality control to evaluate possibility of genotyping error or population structure.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>#Hardy-Weinberg_equilibrium_testing</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>#Hardy-Weinberg_equilibrium_testing</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#Hardy-Weinberg_equilibrium_testing</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">STATO: adapted from wikipedia (http://en.wikipedia.org/wiki/Hardy–Weinberg_principle)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#R_command"/>
+        <IRI>#Hardy-Weinberg_equilibrium_testing</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">&gt; library(HardyWeinberg)
+&gt; x &lt;- c(298,489,213)
+&gt; HW.test &lt;- HWChisq(x,verbose=TRUE)
+
+http://cran.r-project.org/web/packages/HardyWeinberg/index.html</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#STATO_alternative_term"/>
+        <IRI>#Hardy-Weinberg_equilibrium_testing</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Hardy-Weinberg_equilibrium_testing</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Hardy-Weinberg equilibrium testing</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
@@ -9693,6 +9932,11 @@ http://stat.ethz.ch/R-manual/R-patched/library/stats/html/ftable.html</Literal>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">contigency table</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#continuous_probability_distribution</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">continuous probability distribution</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
         <IRI>#correlation_coefficient</IRI>
         <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
@@ -9731,6 +9975,11 @@ http://stat.ethz.ch/R-manual/R-patched/library/stats/html/ftable.html</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#correlation_coefficient</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">correlation coefficient</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#discrete_probability_distribution</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">discrete probability distribution</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
@@ -10755,6 +11004,16 @@ http://stat.ethz.ch/R-manual/R-patched/library/stats/html/NegBinomial.html</Lite
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#normal_distribution_hypothesis</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"> normal distribution hypothesis is a goodness of fit hypothesis stating that the distribution computed from the sample population fits a normal distribution</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#normal_distribution_hypothesis</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">normal distribution hypothesis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>#odds</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral"> probability of the event occuring divided by the probability of an event not occurring.</Literal>
     </AnnotationAssertion>
@@ -11438,7 +11697,7 @@ Repeated measure ANOVA use in case of unbalanced design is discouraged as it lea
     <AnnotationAssertion>
         <AnnotationProperty IRI="#STATO_alternative_term"/>
         <IRI>#repeated_measure_ANOVA</IRI>
-        <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral"></Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
