@@ -3200,6 +3200,20 @@
         <Class IRI="#contigency_table"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#2_by_n_contingency_table"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
+            <Class IRI="http://isa-tools.org/isa/ISA_0000147"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#2_by_n_contingency_table"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
+            <Class IRI="http://isa-tools.org/isa/ISA_0000148"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#50_percent_confidence_interval"/>
         <Class IRI="#confidence_interval"/>
     </SubClassOf>
