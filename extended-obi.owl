@@ -9868,7 +9868,7 @@ http://stat.ethz.ch/R-manual/R-patched/library/stats/html/ftable.html</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#contigency_table</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">contigency table</Literal>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">contingency table</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
