@@ -359,6 +359,9 @@
         <Class IRI="http://isa-tools.org/owl/ISA_10000279"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#&apos;one_sample_Hotelling_T2_test&apos;"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#1_percent_false_positive_rate"/>
     </Declaration>
     <Declaration>
@@ -413,6 +416,12 @@
         <Class IRI="#Hardy-Weinberg_equilibrium_testing"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Hotelling_T2_distribution"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hotelling_T2_test"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#MA_plot"/>
     </Declaration>
     <Declaration>
@@ -429,6 +438,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#Tarone_test_for_homogeneity_of_odds_ratio"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Wilk&apos;s_distribution"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Woolf&apos;s_test"/>
@@ -456,6 +468,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#chromosome_coordinate_system"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#coefficient_of_variation"/>
     </Declaration>
     <Declaration>
         <Class IRI="#cohort"/>
@@ -617,6 +632,9 @@
         <Class IRI="#sensitivity"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#signal_to_noise_ratio"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#skewness"/>
     </Declaration>
     <Declaration>
@@ -768,17 +786,16 @@
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0200201"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
-            <Class IRI="#F-distribution"/>
-        </ObjectSomeValuesFrom>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="http://purl.obolibrary.org/obo/OBI_0200201"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000417"/>
-            <Class IRI="http://isa-tools.org/isa/ISA0000011"/>
-        </ObjectSomeValuesFrom>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <Class IRI="#F-test"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000417"/>
+                <Class IRI="http://isa-tools.org/isa/ISA0000011"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0500000"/>
@@ -834,13 +851,6 @@
                 <Class IRI="http://isa-tools.org/isa/ISA_0000147"/>
             </ObjectExactCardinality>
         </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#F-test"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
-            <Class IRI="#F-distribution"/>
-        </ObjectSomeValuesFrom>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#between_group_test"/>
@@ -1172,6 +1182,26 @@
     <SubClassOf>
         <Class IRI="http://isa-tools.org/isa/ISA_0000109"/>
         <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            <ObjectIntersectionOf>
+                <Class IRI="#normal_distribution_hypothesis"/>
+                <DataHasValue>
+                    <DataProperty IRI="http://isa-tools.org/isa/ISA_0000144"/>
+                    <Literal datatypeIRI="&xsd;boolean">true</Literal>
+                </DataHasValue>
+            </ObjectIntersectionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000109"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
+            <Class IRI="http://isa-tools.org/isa/ISA_0000108"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000109"/>
+        <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000299"/>
             <Class IRI="http://purl.obolibrary.org/obo/OBI_0000175"/>
         </ObjectSomeValuesFrom>
@@ -1235,16 +1265,63 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://isa-tools.org/isa/ISA_0000112"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <Class IRI="#F-test"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000417"/>
+                <Class IRI="http://isa-tools.org/isa/ISA0000011"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000112"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000417"/>
-            <Class IRI="http://isa-tools.org/isa/ISA0000011"/>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            <ObjectIntersectionOf>
+                <Class IRI="http://isa-tools.org/isa/ISA_0000124"/>
+                <DataHasValue>
+                    <DataProperty IRI="http://isa-tools.org/isa/ISA_0000144"/>
+                    <Literal datatypeIRI="&xsd;boolean">true</Literal>
+                </DataHasValue>
+            </ObjectIntersectionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000112"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            <ObjectIntersectionOf>
+                <Class IRI="#normal_distribution_hypothesis"/>
+                <DataHasValue>
+                    <DataProperty IRI="http://isa-tools.org/isa/ISA_0000144"/>
+                    <Literal datatypeIRI="&xsd;boolean">true</Literal>
+                </DataHasValue>
+            </ObjectIntersectionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000112"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000062"/>
+            <ObjectUnionOf>
+                <Class IRI="http://isa-tools.org/isa/ISA_0000132"/>
+                <Class IRI="http://isa-tools.org/isa/ISA_0000134"/>
+                <Class IRI="http://isa-tools.org/isa/ISA_0000135"/>
+                <Class IRI="http://isa-tools.org/isa/ISA_0000136"/>
+            </ObjectUnionOf>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://isa-tools.org/isa/ISA_0000112"/>
         <ObjectExactCardinality cardinality="1">
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
-            <Class IRI="http://isa-tools.org/isa/ISA0000015"/>
+            <ObjectIntersectionOf>
+                <Class IRI="http://isa-tools.org/isa/ISA0000015"/>
+                <Class IRI="http://purl.obolibrary.org/obo/OBI_0000750"/>
+            </ObjectIntersectionOf>
         </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
@@ -1253,16 +1330,63 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://isa-tools.org/isa/ISA_0000113"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <Class IRI="#F-test"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000417"/>
+                <Class IRI="http://isa-tools.org/isa/ISA0000011"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000113"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000417"/>
-            <Class IRI="http://isa-tools.org/isa/ISA0000011"/>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            <ObjectIntersectionOf>
+                <Class IRI="http://isa-tools.org/isa/ISA_0000124"/>
+                <DataHasValue>
+                    <DataProperty IRI="http://isa-tools.org/isa/ISA_0000144"/>
+                    <Literal datatypeIRI="&xsd;boolean">true</Literal>
+                </DataHasValue>
+            </ObjectIntersectionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000113"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            <ObjectIntersectionOf>
+                <Class IRI="#normal_distribution_hypothesis"/>
+                <DataHasValue>
+                    <DataProperty IRI="http://isa-tools.org/isa/ISA_0000144"/>
+                    <Literal datatypeIRI="&xsd;boolean">true</Literal>
+                </DataHasValue>
+            </ObjectIntersectionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000113"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000062"/>
+            <ObjectUnionOf>
+                <Class IRI="http://isa-tools.org/isa/ISA_0000132"/>
+                <Class IRI="http://isa-tools.org/isa/ISA_0000134"/>
+                <Class IRI="http://isa-tools.org/isa/ISA_0000135"/>
+                <Class IRI="http://isa-tools.org/isa/ISA_0000136"/>
+            </ObjectUnionOf>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://isa-tools.org/isa/ISA_0000113"/>
         <ObjectExactCardinality cardinality="2">
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
-            <Class IRI="http://isa-tools.org/isa/ISA0000015"/>
+            <ObjectIntersectionOf>
+                <Class IRI="http://isa-tools.org/isa/ISA0000015"/>
+                <Class IRI="http://purl.obolibrary.org/obo/OBI_0000750"/>
+            </ObjectIntersectionOf>
         </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
@@ -1810,11 +1934,17 @@
                 <Class IRI="#ranking"/>
                 <ObjectMinCardinality cardinality="1">
                     <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                    <Class IRI="http://isa-tools.org/isa/ISA0000015"/>
+                    <ObjectIntersectionOf>
+                        <Class IRI="http://isa-tools.org/isa/ISA0000015"/>
+                        <Class IRI="http://purl.obolibrary.org/obo/OBI_0000750"/>
+                    </ObjectIntersectionOf>
                 </ObjectMinCardinality>
                 <ObjectMinCardinality cardinality="1">
                     <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                    <Class IRI="http://isa-tools.org/isa/ISA0000016"/>
+                    <ObjectIntersectionOf>
+                        <Class IRI="http://isa-tools.org/isa/ISA0000016"/>
+                        <Class IRI="http://purl.obolibrary.org/obo/OBI_0000751"/>
+                    </ObjectIntersectionOf>
                 </ObjectMinCardinality>
             </ObjectIntersectionOf>
         </ObjectSomeValuesFrom>
@@ -1879,11 +2009,17 @@
                 <Class IRI="#ranking"/>
                 <ObjectMinCardinality cardinality="1">
                     <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                    <Class IRI="http://isa-tools.org/isa/ISA0000015"/>
+                    <ObjectIntersectionOf>
+                        <Class IRI="http://isa-tools.org/isa/ISA0000015"/>
+                        <Class IRI="http://purl.obolibrary.org/obo/OBI_0000750"/>
+                    </ObjectIntersectionOf>
                 </ObjectMinCardinality>
                 <ObjectMinCardinality cardinality="1">
                     <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                    <Class IRI="http://isa-tools.org/isa/ISA0000016"/>
+                    <ObjectIntersectionOf>
+                        <Class IRI="http://isa-tools.org/isa/ISA0000016"/>
+                        <Class IRI="http://purl.obolibrary.org/obo/OBI_0000751"/>
+                    </ObjectIntersectionOf>
                 </ObjectMinCardinality>
             </ObjectIntersectionOf>
         </ObjectSomeValuesFrom>
@@ -1945,13 +2081,32 @@
         <ObjectIntersectionOf>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <Class IRI="http://isa-tools.org/isa/ISA0000016"/>
+                <ObjectIntersectionOf>
+                    <Class IRI="http://isa-tools.org/isa/ISA0000016"/>
+                    <Class IRI="http://purl.obolibrary.org/obo/OBI_0000751"/>
+                </ObjectIntersectionOf>
             </ObjectSomeValuesFrom>
-            <ObjectMinCardinality cardinality="1">
+            <ObjectExactCardinality cardinality="1">
                 <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <Class IRI="http://isa-tools.org/isa/ISA_0000147"/>
-            </ObjectMinCardinality>
+                <ObjectIntersectionOf>
+                    <Class IRI="http://isa-tools.org/isa/ISA_0000147"/>
+                    <Class IRI="http://purl.obolibrary.org/obo/OBI_0000750"/>
+                </ObjectIntersectionOf>
+            </ObjectExactCardinality>
         </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000141"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            <ObjectIntersectionOf>
+                <Class IRI="#normal_distribution_hypothesis"/>
+                <DataHasValue>
+                    <DataProperty IRI="http://isa-tools.org/isa/ISA_0000144"/>
+                    <Literal datatypeIRI="&xsd;boolean">true</Literal>
+                </DataHasValue>
+            </ObjectIntersectionOf>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://isa-tools.org/isa/ISA_0000141"/>
@@ -2000,12 +2155,18 @@
                 <Class IRI="#ranking"/>
                 <ObjectMinCardinality cardinality="1">
                     <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                    <Class IRI="http://isa-tools.org/isa/ISA0000015"/>
+                    <ObjectIntersectionOf>
+                        <Class IRI="http://isa-tools.org/isa/ISA0000016"/>
+                        <Class IRI="http://purl.obolibrary.org/obo/OBI_0000751"/>
+                    </ObjectIntersectionOf>
                 </ObjectMinCardinality>
-                <ObjectMinCardinality cardinality="1">
+                <ObjectExactCardinality cardinality="2">
                     <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                    <Class IRI="http://isa-tools.org/isa/ISA0000016"/>
-                </ObjectMinCardinality>
+                    <ObjectIntersectionOf>
+                        <Class IRI="http://isa-tools.org/isa/ISA0000015"/>
+                        <Class IRI="http://purl.obolibrary.org/obo/OBI_0000750"/>
+                    </ObjectIntersectionOf>
+                </ObjectExactCardinality>
             </ObjectIntersectionOf>
         </ObjectSomeValuesFrom>
     </SubClassOf>
@@ -2520,6 +2681,13 @@
     <SubClassOf>
         <Class IRI="http://isa-tools.org/owl/ISA_10000261"/>
         <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000299"/>
+            <Class IRI="http://purl.obolibrary.org/obo/OBI_0000175"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://isa-tools.org/owl/ISA_10000261"/>
+        <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000417"/>
             <Class IRI="http://isa-tools.org/isa/ISA0000011"/>
         </ObjectSomeValuesFrom>
@@ -2817,6 +2985,19 @@
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0000739"/>
         <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            <ObjectIntersectionOf>
+                <Class IRI="#normal_distribution_hypothesis"/>
+                <DataHasValue>
+                    <DataProperty IRI="http://isa-tools.org/isa/ISA_0000144"/>
+                    <Literal datatypeIRI="&xsd;boolean">true</Literal>
+                </DataHasValue>
+            </ObjectIntersectionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/OBI_0000739"/>
+        <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
             <Class IRI="http://isa-tools.org/isa/ISA_0000108"/>
         </ObjectSomeValuesFrom>
@@ -2848,6 +3029,36 @@
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000417"/>
             <Class IRI="http://isa-tools.org/isa/ISA0000011"/>
         </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/OBI_0000739"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
+            <ObjectIntersectionOf>
+                <Class IRI="http://isa-tools.org/isa/ISA0000016"/>
+                <Class IRI="http://purl.obolibrary.org/obo/OBI_0000751"/>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="http://urigen_local_uri/c4ea3563-9aec-4114-a204-a010f58a243f#ISA00000"/>
+                    <ObjectIntersectionOf>
+                        <Class IRI="#normal_distribution_hypothesis"/>
+                        <DataHasValue>
+                            <DataProperty IRI="http://isa-tools.org/isa/ISA_0000144"/>
+                            <Literal datatypeIRI="&xsd;boolean">true</Literal>
+                        </DataHasValue>
+                    </ObjectIntersectionOf>
+                </ObjectSomeValuesFrom>
+            </ObjectIntersectionOf>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/OBI_0000739"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
+            <ObjectIntersectionOf>
+                <Class IRI="http://isa-tools.org/isa/ISA_0000147"/>
+                <Class IRI="http://purl.obolibrary.org/obo/OBI_0000750"/>
+            </ObjectIntersectionOf>
+        </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0000739"/>
@@ -3021,11 +3232,17 @@
         <ObjectIntersectionOf>
             <ObjectMinCardinality cardinality="1">
                 <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <Class IRI="http://isa-tools.org/isa/ISA0000015"/>
+                <ObjectIntersectionOf>
+                    <Class IRI="http://isa-tools.org/isa/ISA0000015"/>
+                    <Class IRI="http://purl.obolibrary.org/obo/OBI_0000750"/>
+                </ObjectIntersectionOf>
             </ObjectMinCardinality>
             <ObjectMinCardinality cardinality="1">
                 <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <Class IRI="http://isa-tools.org/isa/ISA0000016"/>
+                <ObjectIntersectionOf>
+                    <Class IRI="http://isa-tools.org/isa/ISA0000016"/>
+                    <Class IRI="http://purl.obolibrary.org/obo/OBI_0000751"/>
+                </ObjectIntersectionOf>
             </ObjectMinCardinality>
         </ObjectIntersectionOf>
     </SubClassOf>
@@ -3333,6 +3550,55 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#&apos;one_sample_Hotelling_T2_test&apos;"/>
+        <Class IRI="http://purl.obolibrary.org/obo/OBI_0200000"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#&apos;one_sample_Hotelling_T2_test&apos;"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
+            <Class IRI="http://isa-tools.org/isa/ISA_0000108"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#&apos;one_sample_Hotelling_T2_test&apos;"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
+            <Class IRI="#Hotelling_T2_distribution"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#&apos;one_sample_Hotelling_T2_test&apos;"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000299"/>
+            <Class IRI="http://purl.obolibrary.org/obo/OBI_0000175"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#&apos;one_sample_Hotelling_T2_test&apos;"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000417"/>
+            <Class IRI="http://isa-tools.org/isa/ISA_0000103"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#&apos;one_sample_Hotelling_T2_test&apos;"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
+            <ObjectIntersectionOf>
+                <Class IRI="http://purl.obolibrary.org/obo/IAO_0000100"/>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                    <Class IRI="http://purl.obolibrary.org/obo/OBI_0000181"/>
+                </ObjectSomeValuesFrom>
+                <ObjectMinCardinality cardinality="2">
+                    <ObjectProperty IRI="http://urigen_local_uri/c4ea3563-9aec-4114-a204-a010f58a243f#ISA00000"/>
+                    <Class IRI="http://purl.obolibrary.org/obo/OBI_0000751"/>
+                </ObjectMinCardinality>
+            </ObjectIntersectionOf>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#1_percent_false_positive_rate"/>
         <Class IRI="http://isa-tools.org/isa/ISA_0000108"/>
     </SubClassOf>
@@ -3555,6 +3821,59 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Hotelling_T2_distribution"/>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000105"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hotelling_T2_test"/>
+        <Class IRI="http://purl.obolibrary.org/obo/OBI_0200000"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hotelling_T2_test"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
+            <Class IRI="http://isa-tools.org/isa/ISA_0000108"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hotelling_T2_test"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
+            <Class IRI="#Hotelling_T2_distribution"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hotelling_T2_test"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000299"/>
+            <Class IRI="http://purl.obolibrary.org/obo/OBI_0000175"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hotelling_T2_test"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000417"/>
+            <Class IRI="http://isa-tools.org/isa/ISA0000011"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hotelling_T2_test"/>
+        <ObjectMinCardinality cardinality="2">
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
+            <ObjectIntersectionOf>
+                <Class IRI="http://purl.obolibrary.org/obo/IAO_0000100"/>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                    <Class IRI="http://purl.obolibrary.org/obo/OBI_0000181"/>
+                </ObjectSomeValuesFrom>
+                <ObjectMinCardinality cardinality="2">
+                    <ObjectProperty IRI="http://urigen_local_uri/c4ea3563-9aec-4114-a204-a010f58a243f#ISA00000"/>
+                    <Class IRI="http://purl.obolibrary.org/obo/OBI_0000751"/>
+                </ObjectMinCardinality>
+            </ObjectIntersectionOf>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#MA_plot"/>
         <Class IRI="http://purl.obolibrary.org/obo/IAO_0000184"/>
     </SubClassOf>
@@ -3692,6 +4011,10 @@
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
             <Class IRI="#odds_ratio"/>
         </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Wilk&apos;s_distribution"/>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000105"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Woolf&apos;s_test"/>
@@ -3881,6 +4204,10 @@
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
             <Class IRI="http://purl.obolibrary.org/obo/IAO_0000129"/>
         </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#coefficient_of_variation"/>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000178"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#cohort"/>
@@ -4333,16 +4660,63 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#multiway_ANOVA"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <Class IRI="#F-test"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000417"/>
+                <Class IRI="http://isa-tools.org/isa/ISA0000011"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#multiway_ANOVA"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000417"/>
-            <Class IRI="http://isa-tools.org/isa/ISA0000011"/>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            <ObjectIntersectionOf>
+                <Class IRI="http://isa-tools.org/isa/ISA_0000124"/>
+                <DataHasValue>
+                    <DataProperty IRI="http://isa-tools.org/isa/ISA_0000144"/>
+                    <Literal datatypeIRI="&xsd;boolean">true</Literal>
+                </DataHasValue>
+            </ObjectIntersectionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#multiway_ANOVA"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            <ObjectIntersectionOf>
+                <Class IRI="#normal_distribution_hypothesis"/>
+                <DataHasValue>
+                    <DataProperty IRI="http://isa-tools.org/isa/ISA_0000144"/>
+                    <Literal datatypeIRI="&xsd;boolean">true</Literal>
+                </DataHasValue>
+            </ObjectIntersectionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#multiway_ANOVA"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000062"/>
+            <ObjectUnionOf>
+                <Class IRI="http://isa-tools.org/isa/ISA_0000132"/>
+                <Class IRI="http://isa-tools.org/isa/ISA_0000134"/>
+                <Class IRI="http://isa-tools.org/isa/ISA_0000135"/>
+                <Class IRI="http://isa-tools.org/isa/ISA_0000136"/>
+            </ObjectUnionOf>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#multiway_ANOVA"/>
         <ObjectMinCardinality cardinality="3">
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
-            <Class IRI="http://isa-tools.org/isa/ISA0000015"/>
+            <ObjectIntersectionOf>
+                <Class IRI="http://isa-tools.org/isa/ISA0000015"/>
+                <Class IRI="http://purl.obolibrary.org/obo/OBI_0000750"/>
+            </ObjectIntersectionOf>
         </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
@@ -4665,6 +5039,19 @@
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
             <ObjectIntersectionOf>
+                <Class IRI="#normal_distribution_hypothesis"/>
+                <DataHasValue>
+                    <DataProperty IRI="http://isa-tools.org/isa/ISA_0000144"/>
+                    <Literal datatypeIRI="&xsd;boolean">true</Literal>
+                </DataHasValue>
+            </ObjectIntersectionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#repeated_measure_ANOVA"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            <ObjectIntersectionOf>
                 <Class IRI="#sphericity_hypothesis"/>
                 <DataHasValue>
                     <DataProperty IRI="http://isa-tools.org/isa/ISA_0000144"/>
@@ -4703,6 +5090,20 @@
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
             <Class IRI="http://purl.obolibrary.org/obo/OBI_0000673"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#signal_to_noise_ratio"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000109"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#signal_to_noise_ratio"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
+            <ObjectUnionOf>
+                <Class IRI="http://isa-tools.org/isa/ISA_0000105"/>
+                <Class IRI="http://purl.obolibrary.org/obo/IAO_0000100"/>
+            </ObjectUnionOf>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -5206,8 +5607,8 @@
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <InverseObjectProperties>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000605"/>
         <ObjectProperty IRI="http://isa-tools.org/isa/ISA0000014"/>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000605"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="http://isa-tools.org/isa/ISA0000017"/>
@@ -7225,7 +7626,7 @@ two categorical variables to be tested for  independence of each other, and the 
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://isa-tools.org/isa/ISA_0000141</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">paired t-test is a statistical test which is specifically designed to analysis differences between paired observation in the case of studies realizing repeated measures design with only 2 repeated measurements per subject (before and after treatment for example)</Literal>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">paired t-test is a statistical test which is specifically designed to analysis differences between paired observations in the case of studies realizing repeated measures design with only 2 repeated measurements per subject (before and after treatment for example)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -7266,6 +7667,12 @@ two categorical variables to be tested for  independence of each other, and the 
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
         <IRI>http://isa-tools.org/isa/ISA_0000142</IRI>
         <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000142</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">The Wilcoxon signed ranked test is a statistical test which tests the null hypothesis that the median difference between pairs of observations is zero. This is the non-parametric analogue to the paired t-test, and should be used if the distribution of differences between pairs may be non-normally distributed.
+The procedure involves a ranking hence the name. The absolute value of the differences between observations are ranked from smallest to largest, with the smallest difference getting a rank of 1, then next larger difference getting a rank of 2, etc. Ties are given average ranks. The ranks of all differences in one direction are summed, and the ranks of all differences in the other direction are summed. The smaller of these two sums is the test statistic, W (sometimes symbolized Ts). Unlike most test statistics, smaller values of W are less likely under the null hypothesis.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -7912,6 +8319,11 @@ http://www.drcath.net/toolkit/casecontrol.html</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#STATO_alternative_term"/>
         <IRI>http://isa-tools.org/isa/ISA_0000178</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">measure of dispersion</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#STATO_alternative_term"/>
+        <IRI>http://isa-tools.org/isa/ISA_0000178</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">measure of variation</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -8225,7 +8637,7 @@ linear regression modeling makes a number of assumptions, which includes homoske
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://isa-tools.org/owl/ISA_10000260</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">the Scheffe test is a data transformation which evaluates all possible contrasts for significance and confidence intervals can be constructed for the corresponding linear. The test is conservative. It was developped by Scheffe in 1959.</Literal>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">the Scheffe test is a data transformation which evaluates all possible contrasts and adjusting the levels significance by accounting for multiple comparison. The test is therefore conservative. Confidence intervals can be constructed for the corresponding linear regression.  It was developped by  American statistician Henry  Scheffe in 1959.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -9038,6 +9450,46 @@ AGB and PRS provide formal definition expressed the test in terms of output and 
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#&apos;one_sample_Hotelling_T2_test&apos;</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://arxiv.org/pdf/1007.1094.pdf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#&apos;one_sample_Hotelling_T2_test&apos;</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Hotelling&apos;s T2 test is a statistical test which is a generalization of Student&apos;s T-test to a assess if the means of a set of variables remains unchanged when studying 2 populations. It is a type of multivariate analysis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>#&apos;one_sample_Hotelling_T2_test&apos;</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>#&apos;one_sample_Hotelling_T2_test&apos;</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#&apos;one_sample_Hotelling_T2_test&apos;</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">STATO</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#R_command"/>
+        <IRI>#&apos;one_sample_Hotelling_T2_test&apos;</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://svitsrv25.epfl.ch/R-doc/library/rrcov/html/T2.test.html</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#STATO_alternative_term"/>
+        <IRI>#&apos;one_sample_Hotelling_T2_test&apos;</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#&apos;one_sample_Hotelling_T2_test&apos;</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">one sample Hotelling T2 test</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
         <IRI>#1_percent_false_positive_rate</IRI>
         <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
@@ -9746,6 +10198,77 @@ http://cran.r-project.org/web/packages/HardyWeinberg/index.html</Literal>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Hardy-Weinberg equilibrium testing</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#Hotelling_T2_distribution</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Hotelling T squared distribution is a probability distribution used in multivariate hypothesis testing, which is a univariate distribution proportional to the F-distribution and arises importantly as the distribution of a set of statistics which are natural generalizations of the statistics underlying Student&apos;s t-distribution.
+In particular, the distribution arises in multivariate statistics in undertaking tests of the differences between the (multivariate) means of different populations, where tests for univariate problems would make use of a t-test.
+The distribution is named for Harold Hotelling, who developed it[1] as a generalization of Student&apos;s t-distribution.
+This distribution is commonly used to describe the sample Mahalanobis distance between two populations.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>#Hotelling_T2_distribution</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>#Hotelling_T2_distribution</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#Hotelling_T2_distribution</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">adapted from Wikipedia
+&quot;http://en.wikipedia.org/wiki/Hotelling&apos;s_T-squared_distribution&quot;
+
+last polled: 2013-11-09</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Hotelling_T2_distribution</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Hotelling T2 distribution</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#Hotelling_T2_test</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://arxiv.org/pdf/1007.1094.pdf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#Hotelling_T2_test</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Hotelling&apos;s T2 test is a statistical test which is a generalization of Student&apos;s T-test to a assess if the means of a set of variables remains unchanged when studying 2 populations. It is a type of multivariate analysis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>#Hotelling_T2_test</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>#Hotelling_T2_test</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#Hotelling_T2_test</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">STATO</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#R_command"/>
+        <IRI>#Hotelling_T2_test</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://svitsrv25.epfl.ch/R-doc/library/rrcov/html/T2.test.html</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#STATO_alternative_term"/>
+        <IRI>#Hotelling_T2_test</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Hotelling_T2_test</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">two samples Hotelling T2 test</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
         <IRI>#MA_plot</IRI>
         <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
@@ -10037,6 +10560,23 @@ http://a-little-book-of-r-for-biomedical-statistics.readthedocs.org/en/latest/sr
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Tarone_test_for_homogeneity_of_odds_ratio</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Tarone&apos;s test for homogeneity of odds ratio</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#Wilk&apos;s_distribution</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Wilks&apos; lambda distribution (named for Samuel S. Wilks), is a probability distribution used in multivariate hypothesis testing, especially with regard to the likelihood-ratio test and Multivariate analysis of variance. It is a multivariate generalization of the univariate F-distribution, and generalizes the F-distribution in the same way that the Hotelling&apos;s T-squared distribution generalizes Student&apos;s t-distribution.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#Wilk&apos;s_distribution</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">wikipedia:
+last accessed: 2013-09-11
+http://en.wikipedia.org/wiki/Wilks%27_lambda_distribution</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Wilk&apos;s_distribution</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Wilk&apos;s lambda distribution</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
@@ -10384,6 +10924,32 @@ http://stat.ethz.ch/R-manual/R-patched/library/graphics/html/boxplot.html</Liter
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#chromosome_coordinate_system</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">chromosome coordinate system</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#coefficient_of_variation</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">the coefficient of variation is a normalized measure fo dispersion of a probability distribution of frequency distribution.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>#coefficient_of_variation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>#coefficient_of_variation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#coefficient_of_variation</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://en.wikipedia.org/wiki/Coefficient_of_variation
+last accessed: 2013-10-18</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#coefficient_of_variation</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">coefficient of variation</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
@@ -12384,6 +12950,43 @@ http://mathworld.wolfram.com/Sensitivity.html</Literal>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">true positive rate</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#signal_to_noise_ratio</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">signal to noise ratio is a measurement datum comparing the amount of meaningful, useful or interesting data (the signal) to the amount of irrelevant or false data (the noise). Depending on the field and domain of application, different variables will be used to determinate a &apos;signal to noise ratio&apos;. In statistics, the definition of signal to noise ratio is the ratio of the mean of a measurement to its standard deviation. It thus corresponds to the inverse of the coefficient of variation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>#signal_to_noise_ratio</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>#signal_to_noise_ratio</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
+        <IRI>#signal_to_noise_ratio</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">S/N</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
+        <IRI>#signal_to_noise_ratio</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">SNR</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#signal_to_noise_ratio</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">adapted from Wikipedia:
+http://en.wikipedia.org/wiki/Signal-to-noise_ratio#Alternative_definition
+last accessed: 2013-10-18</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#signal_to_noise_ratio</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">signal to noise ratio</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
         <IRI>#skewness</IRI>
         <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
@@ -12523,7 +13126,7 @@ http://hosho.ees.hokudai.ac.jp/~kubo/Rdoc/library/e1071/html/skewness.html</Lite
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
         <IRI>#sphericity_test</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">STATO, adapted from wikipedia (http://en.wikipedia.org/wiki/Sphericity)</Literal>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">STATO, adapted from wikipedia (http://en.wikipedia.org/wiki/Sphericity#Sphericity_in_statistics)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#STATO_alternative_term"/>
@@ -12578,7 +13181,7 @@ http://hosho.ees.hokudai.ac.jp/~kubo/Rdoc/library/e1071/html/skewness.html</Lite
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>#standard_deviation</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">The standard deviation of a random variable, statistical population, data set, or probability distribution is a measure of variation which correspond to the square root of its variance</Literal>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">The standard deviation of a random variable, statistical population, data set, or probability distribution is a measure of variation which correspond to the average distance from the mean of the data set to any given point of that dataset. It also corresponds to the square root of its variance. </Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
