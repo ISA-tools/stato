@@ -1292,19 +1292,6 @@
     <SubClassOf>
         <Class IRI="http://isa-tools.org/isa/ISA_0000112"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
-            <ObjectIntersectionOf>
-                <Class IRI="#normal_distribution_hypothesis"/>
-                <DataHasValue>
-                    <DataProperty IRI="http://isa-tools.org/isa/ISA_0000144"/>
-                    <Literal datatypeIRI="&xsd;boolean">true</Literal>
-                </DataHasValue>
-            </ObjectIntersectionOf>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://isa-tools.org/isa/ISA_0000112"/>
-        <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000062"/>
             <ObjectUnionOf>
                 <Class IRI="http://isa-tools.org/isa/ISA_0000132"/>
@@ -1313,6 +1300,26 @@
                 <Class IRI="http://isa-tools.org/isa/ISA_0000136"/>
             </ObjectUnionOf>
         </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000112"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
+            <ObjectIntersectionOf>
+                <Class IRI="http://isa-tools.org/isa/ISA0000016"/>
+                <Class IRI="http://purl.obolibrary.org/obo/OBI_0000751"/>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="http://urigen_local_uri/c4ea3563-9aec-4114-a204-a010f58a243f#ISA00000"/>
+                    <ObjectIntersectionOf>
+                        <Class IRI="#normal_distribution_hypothesis"/>
+                        <DataHasValue>
+                            <DataProperty IRI="http://isa-tools.org/isa/ISA_0000144"/>
+                            <Literal datatypeIRI="&xsd;boolean">true</Literal>
+                        </DataHasValue>
+                    </ObjectIntersectionOf>
+                </ObjectSomeValuesFrom>
+            </ObjectIntersectionOf>
+        </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://isa-tools.org/isa/ISA_0000112"/>
@@ -1357,19 +1364,6 @@
     <SubClassOf>
         <Class IRI="http://isa-tools.org/isa/ISA_0000113"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
-            <ObjectIntersectionOf>
-                <Class IRI="#normal_distribution_hypothesis"/>
-                <DataHasValue>
-                    <DataProperty IRI="http://isa-tools.org/isa/ISA_0000144"/>
-                    <Literal datatypeIRI="&xsd;boolean">true</Literal>
-                </DataHasValue>
-            </ObjectIntersectionOf>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://isa-tools.org/isa/ISA_0000113"/>
-        <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000062"/>
             <ObjectUnionOf>
                 <Class IRI="http://isa-tools.org/isa/ISA_0000132"/>
@@ -1378,6 +1372,26 @@
                 <Class IRI="http://isa-tools.org/isa/ISA_0000136"/>
             </ObjectUnionOf>
         </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000113"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
+            <ObjectIntersectionOf>
+                <Class IRI="http://isa-tools.org/isa/ISA0000016"/>
+                <Class IRI="http://purl.obolibrary.org/obo/OBI_0000751"/>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="http://urigen_local_uri/c4ea3563-9aec-4114-a204-a010f58a243f#ISA00000"/>
+                    <ObjectIntersectionOf>
+                        <Class IRI="#normal_distribution_hypothesis"/>
+                        <DataHasValue>
+                            <DataProperty IRI="http://isa-tools.org/isa/ISA_0000144"/>
+                            <Literal datatypeIRI="&xsd;boolean">true</Literal>
+                        </DataHasValue>
+                    </ObjectIntersectionOf>
+                </ObjectSomeValuesFrom>
+            </ObjectIntersectionOf>
+        </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://isa-tools.org/isa/ISA_0000113"/>
@@ -2078,25 +2092,6 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://isa-tools.org/isa/ISA_0000141"/>
-        <ObjectIntersectionOf>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <ObjectIntersectionOf>
-                    <Class IRI="http://isa-tools.org/isa/ISA0000016"/>
-                    <Class IRI="http://purl.obolibrary.org/obo/OBI_0000751"/>
-                </ObjectIntersectionOf>
-            </ObjectSomeValuesFrom>
-            <ObjectExactCardinality cardinality="1">
-                <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <ObjectIntersectionOf>
-                    <Class IRI="http://isa-tools.org/isa/ISA_0000147"/>
-                    <Class IRI="http://purl.obolibrary.org/obo/OBI_0000750"/>
-                </ObjectIntersectionOf>
-            </ObjectExactCardinality>
-        </ObjectIntersectionOf>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://isa-tools.org/isa/ISA_0000141"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
             <ObjectIntersectionOf>
@@ -2142,6 +2137,36 @@
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000417"/>
             <Class IRI="http://purl.obolibrary.org/obo/OBI_0000675"/>
         </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000141"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
+            <ObjectIntersectionOf>
+                <Class IRI="http://isa-tools.org/isa/ISA0000016"/>
+                <Class IRI="http://purl.obolibrary.org/obo/OBI_0000751"/>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="http://urigen_local_uri/c4ea3563-9aec-4114-a204-a010f58a243f#ISA00000"/>
+                    <ObjectIntersectionOf>
+                        <Class IRI="#normal_distribution_hypothesis"/>
+                        <DataHasValue>
+                            <DataProperty IRI="http://isa-tools.org/isa/ISA_0000144"/>
+                            <Literal datatypeIRI="&xsd;boolean">true</Literal>
+                        </DataHasValue>
+                    </ObjectIntersectionOf>
+                </ObjectSomeValuesFrom>
+            </ObjectIntersectionOf>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://isa-tools.org/isa/ISA_0000141"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
+            <ObjectIntersectionOf>
+                <Class IRI="http://isa-tools.org/isa/ISA_0000147"/>
+                <Class IRI="http://purl.obolibrary.org/obo/OBI_0000750"/>
+            </ObjectIntersectionOf>
+        </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://isa-tools.org/isa/ISA_0000142"/>
@@ -4687,19 +4712,6 @@
     <SubClassOf>
         <Class IRI="#multiway_ANOVA"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
-            <ObjectIntersectionOf>
-                <Class IRI="#normal_distribution_hypothesis"/>
-                <DataHasValue>
-                    <DataProperty IRI="http://isa-tools.org/isa/ISA_0000144"/>
-                    <Literal datatypeIRI="&xsd;boolean">true</Literal>
-                </DataHasValue>
-            </ObjectIntersectionOf>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#multiway_ANOVA"/>
-        <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000062"/>
             <ObjectUnionOf>
                 <Class IRI="http://isa-tools.org/isa/ISA_0000132"/>
@@ -4708,6 +4720,26 @@
                 <Class IRI="http://isa-tools.org/isa/ISA_0000136"/>
             </ObjectUnionOf>
         </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#multiway_ANOVA"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
+            <ObjectIntersectionOf>
+                <Class IRI="http://isa-tools.org/isa/ISA0000016"/>
+                <Class IRI="http://purl.obolibrary.org/obo/OBI_0000751"/>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="http://urigen_local_uri/c4ea3563-9aec-4114-a204-a010f58a243f#ISA00000"/>
+                    <ObjectIntersectionOf>
+                        <Class IRI="#normal_distribution_hypothesis"/>
+                        <DataHasValue>
+                            <DataProperty IRI="http://isa-tools.org/isa/ISA_0000144"/>
+                            <Literal datatypeIRI="&xsd;boolean">true</Literal>
+                        </DataHasValue>
+                    </ObjectIntersectionOf>
+                </ObjectSomeValuesFrom>
+            </ObjectIntersectionOf>
+        </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#multiway_ANOVA"/>
