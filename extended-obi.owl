@@ -383,6 +383,9 @@
         <Class IRI="#99_percent_confidence_interval"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#ANCOVA"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Bayes_factor"/>
     </Declaration>
     <Declaration>
@@ -558,6 +561,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#matched_pair_of_subject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#metaanalysis"/>
     </Declaration>
     <Declaration>
         <Class IRI="#mixed_model"/>
@@ -2766,7 +2772,10 @@
         <Class IRI="http://isa-tools.org/owl/ISA_10000264"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000312"/>
-            <Class IRI="http://purl.obolibrary.org/obo/OBI_0200111"/>
+            <ObjectIntersectionOf>
+                <Class IRI="http://isa-tools.org/isa/ISA_0000145"/>
+                <Class IRI="http://purl.obolibrary.org/obo/OBI_0200111"/>
+            </ObjectIntersectionOf>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -3177,6 +3186,16 @@
                     <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000219"/>
                     <Class IRI="http://purl.obolibrary.org/obo/OBI_0000789"/>
                 </ObjectSomeValuesFrom>
+            </ObjectIntersectionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/OBI_0000889"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000312"/>
+            <ObjectIntersectionOf>
+                <Class IRI="http://purl.obolibrary.org/obo/OBI_0200111"/>
+                <Class IRI="http://purl.obolibrary.org/obo/OBI_0200194"/>
             </ObjectIntersectionOf>
         </ObjectSomeValuesFrom>
     </SubClassOf>
@@ -3677,6 +3696,36 @@
         <Class IRI="#confidence_interval"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#ANCOVA"/>
+        <Class IRI="http://purl.obolibrary.org/obo/OBI_0200000"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ANCOVA"/>
+        <ObjectIntersectionOf>
+            <ObjectMinCardinality cardinality="1">
+                <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <ObjectIntersectionOf>
+                    <Class IRI="http://isa-tools.org/isa/ISA0000015"/>
+                    <Class IRI="http://purl.obolibrary.org/obo/OBI_0000750"/>
+                </ObjectIntersectionOf>
+            </ObjectMinCardinality>
+            <ObjectMinCardinality cardinality="1">
+                <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <ObjectIntersectionOf>
+                    <Class IRI="http://isa-tools.org/isa/ISA0000016"/>
+                    <Class IRI="http://purl.obolibrary.org/obo/OBI_0000751"/>
+                </ObjectIntersectionOf>
+            </ObjectMinCardinality>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ANCOVA"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
+            <Class IRI="http://purl.obolibrary.org/obo/OBI_0000750"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Bayes_factor"/>
         <Class IRI="http://purl.obolibrary.org/obo/IAO_0000109"/>
     </SubClassOf>
@@ -3851,6 +3900,16 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Forest_plot"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000312"/>
+            <ObjectIntersectionOf>
+                <Class IRI="http://purl.obolibrary.org/obo/OBI_0200111"/>
+                <Class IRI="#metaanalysis"/>
+            </ObjectIntersectionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Gamma_distribution"/>
         <Class IRI="#continuous_probability_distribution"/>
     </SubClassOf>
@@ -3985,6 +4044,19 @@
                             <Class IRI="http://purl.obolibrary.org/obo/OBI_0200094"/>
                         </ObjectSomeValuesFrom>
                     </ObjectIntersectionOf>
+                </ObjectSomeValuesFrom>
+            </ObjectIntersectionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MA_plot"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000312"/>
+            <ObjectIntersectionOf>
+                <Class IRI="http://purl.obolibrary.org/obo/OBI_0200191"/>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000062"/>
+                    <Class IRI="http://purl.obolibrary.org/obo/OBI_0000650"/>
                 </ObjectSomeValuesFrom>
             </ObjectIntersectionOf>
         </ObjectSomeValuesFrom>
@@ -4665,12 +4737,32 @@
         <Class IRI="#manhattan_plot"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000312"/>
-            <Class IRI="http://purl.obolibrary.org/obo/OBI_0200111"/>
+            <ObjectIntersectionOf>
+                <Class IRI="http://isa-tools.org/isa/ISA_0000145"/>
+                <Class IRI="http://purl.obolibrary.org/obo/OBI_0200111"/>
+            </ObjectIntersectionOf>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#matched_pair_of_subject"/>
         <Class IRI="http://purl.obolibrary.org/obo/BFO_0000040"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#metaanalysis"/>
+        <Class IRI="http://purl.obolibrary.org/obo/OBI_0200000"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#metaanalysis"/>
+        <ObjectMinCardinality cardinality="2">
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
+            <ObjectIntersectionOf>
+                <Class IRI="http://purl.obolibrary.org/obo/IAO_0000100"/>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                    <Class IRI="http://purl.obolibrary.org/obo/OBI_0000066"/>
+                </ObjectSomeValuesFrom>
+            </ObjectIntersectionOf>
+        </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#mixed_model"/>
@@ -9873,6 +9965,32 @@ http://stat.ethz.ch/R-manual/R-patched/library/stats/html/ftable.html</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#ANCOVA</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">ANCOVA or analysis of covariance is a data transformation which evaluates if population means of a dependent variable are equal across levels of a categorical independent variables while controlling for the effects of other continuous variable s, known as covariates. Therefore, when performing ANCOVA, we are adjusting the dependent variable means to what they would be if all groups were equal on the covariates.
+It augments the ANOVA model with one or more additional quantitative variables, called covariates, which are related to the response variable. The covariates are included to reduce the variance in the error terms and provide more precise measurement of the treatment effects. ANCOVA is used to test the main and interaction effects of the factors, while controlling for the effects of the covariate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>#ANCOVA</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>#ANCOVA</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#ANCOVA</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">adapted from wikipedia</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#R_command"/>
+        <IRI>#ANCOVA</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>#Bayes_factor</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Bayes factor is a ratio between 2 probabilities of observing data according 2 distinct models. It is used in Bayes model selection to evaluate which model best explains the data. if K&lt;0, the model used in the denominator term is supported, if K&gt;1, the model used in the numerator term is supported.
 The Bayes factor is about the plausibility of 2 different models</Literal>
@@ -12111,6 +12229,35 @@ http://www.tengfei.name/ggbio/docs/man/plotGrandLinear.html</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#matched_pair_of_subject</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">matched pair of subjects</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#metaanalysis</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">meta-analysis is a data transformation which uses the effect size estimates from several independent quantitative scientific studies addressing the same question in order to assess finding consistency. </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>#metaanalysis</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>#metaanalysis</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#metaanalysis</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">adapted from wikipedia:
+
+http://en.wikipedia.org/wiki/Metaanalysis
+
+last accessed: 2013-11-15</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#metaanalysis</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">meta analysis</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
