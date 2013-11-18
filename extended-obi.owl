@@ -284,9 +284,6 @@
         <Class IRI="http://isa-tools.org/owl/ISA_10000220"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://isa-tools.org/owl/ISA_10000254"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://isa-tools.org/owl/ISA_10000255"/>
     </Declaration>
     <Declaration>
@@ -2601,24 +2598,13 @@
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0000011"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://isa-tools.org/owl/ISA_10000254"/>
-        <Class IRI="http://isa-tools.org/owl/ISA_10000256"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://isa-tools.org/owl/ISA_10000254"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
-            <Class IRI="http://isa-tools.org/isa/ISA0000013"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="http://isa-tools.org/owl/ISA_10000255"/>
         <Class IRI="http://isa-tools.org/owl/ISA_10000256"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://isa-tools.org/owl/ISA_10000255"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
             <ObjectIntersectionOf>
                 <Class IRI="http://isa-tools.org/isa/ISA0000016"/>
                 <Class IRI="http://purl.obolibrary.org/obo/OBI_0000751"/>
@@ -2630,13 +2616,20 @@
         <Class IRI="http://purl.obolibrary.org/obo/IAO_0000030"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="http://isa-tools.org/owl/ISA_10000256"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000295"/>
+            <Class IRI="#model_fitting"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="http://isa-tools.org/owl/ISA_10000257"/>
         <Class IRI="http://isa-tools.org/owl/ISA_10000256"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://isa-tools.org/owl/ISA_10000257"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
             <ObjectIntersectionOf>
                 <Class IRI="http://isa-tools.org/isa/ISA_0000147"/>
                 <Class IRI="http://purl.obolibrary.org/obo/OBI_0000751"/>
@@ -2837,7 +2830,7 @@
     <SubClassOf>
         <Class IRI="http://isa-tools.org/owl/ISA_10000266"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
             <ObjectIntersectionOf>
                 <Class IRI="http://isa-tools.org/isa/ISA_0000147"/>
                 <Class IRI="http://purl.obolibrary.org/obo/OBI_0000751"/>
@@ -3223,6 +3216,13 @@
                     <Class IRI="http://purl.obolibrary.org/obo/OBI_0000751"/>
                 </ObjectSomeValuesFrom>
             </ObjectIntersectionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/OBI_0001172"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000312"/>
+            <Class IRI="http://purl.obolibrary.org/obo/OBI_0200111"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -4529,7 +4529,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#fixed_effect_model"/>
-        <Class IRI="http://isa-tools.org/owl/ISA_10000254"/>
+        <Class IRI="http://isa-tools.org/owl/ISA_10000256"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#fold_change"/>
@@ -4766,7 +4766,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#mixed_model"/>
-        <Class IRI="http://isa-tools.org/owl/ISA_10000254"/>
+        <Class IRI="http://isa-tools.org/owl/ISA_10000256"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#model_fitting"/>
@@ -4788,7 +4788,7 @@
     <SubClassOf>
         <Class IRI="#model_fitting"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000063"/>
             <ObjectUnionOf>
                 <Class IRI="#Bayesian_model_selection"/>
                 <Class IRI="#goodness_of_fit_statistical_test"/>
@@ -4802,7 +4802,7 @@
     <SubClassOf>
         <Class IRI="#multinomial_probit_regression"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
             <ObjectIntersectionOf>
                 <Class IRI="http://isa-tools.org/isa/ISA_0000148"/>
                 <Class IRI="http://purl.obolibrary.org/obo/OBI_0000751"/>
@@ -4816,7 +4816,7 @@
     <SubClassOf>
         <Class IRI="#multiple_login_regression_model"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
             <ObjectIntersectionOf>
                 <Class IRI="http://isa-tools.org/isa/ISA_0000147"/>
                 <Class IRI="http://purl.obolibrary.org/obo/OBI_0000751"/>
@@ -4972,7 +4972,7 @@
     <SubClassOf>
         <Class IRI="#ordinal_model"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
             <ObjectIntersectionOf>
                 <Class IRI="http://purl.obolibrary.org/obo/OBI_0000751"/>
                 <Class IRI="#ordinal_variable_specification"/>
@@ -5073,19 +5073,18 @@
         <Class IRI="#q-q_plot"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000312"/>
-            <Class IRI="http://purl.obolibrary.org/obo/OBI_0200111"/>
+            <ObjectIntersectionOf>
+                <Class IRI="http://purl.obolibrary.org/obo/OBI_0200111"/>
+                <ObjectMinCardinality cardinality="2">
+                    <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                    <Class IRI="http://isa-tools.org/isa/ISA_0000105"/>
+                </ObjectMinCardinality>
+            </ObjectIntersectionOf>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#q-q_plot"/>
-        <ObjectMinCardinality cardinality="2">
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
-            <Class IRI="http://isa-tools.org/isa/ISA_0000105"/>
-        </ObjectMinCardinality>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#random_effects_model"/>
-        <Class IRI="http://isa-tools.org/owl/ISA_10000254"/>
+        <Class IRI="http://isa-tools.org/owl/ISA_10000256"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#ranking"/>
@@ -5132,6 +5131,13 @@
                     <Class IRI="http://purl.obolibrary.org/obo/OBI_0100026"/>
                 </ObjectSomeValuesFrom>
             </ObjectIntersectionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#rarefaction_curve"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000312"/>
+            <Class IRI="http://purl.obolibrary.org/obo/OBI_0200111"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -5256,6 +5262,20 @@
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
             <Class IRI="http://isa-tools.org/isa/ISA_0000152"/>
         </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#repeated_measure_ANOVA"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
+            <ObjectIntersectionOf>
+                <Class IRI="http://isa-tools.org/isa/ISA0000015"/>
+                <Class IRI="http://purl.obolibrary.org/obo/OBI_0000750"/>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000219"/>
+                    <Class IRI="http://purl.obolibrary.org/obo/IAO_0000584"/>
+                </ObjectSomeValuesFrom>
+            </ObjectIntersectionOf>
+        </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#sensitivity"/>
@@ -5783,8 +5803,8 @@
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <InverseObjectProperties>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000605"/>
         <ObjectProperty IRI="http://isa-tools.org/isa/ISA0000014"/>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000605"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="http://isa-tools.org/isa/ISA0000017"/>
@@ -8658,41 +8678,6 @@ http://stat.ethz.ch/R-manual/R-patched/library/base/html/range.html</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://isa-tools.org/owl/ISA_10000220</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">assess statistical evidence</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
-        <IRI>http://isa-tools.org/owl/ISA_10000254</IRI>
-        <IRI>http://purl.obolibrary.org/obo/IAO_0000428</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>http://isa-tools.org/owl/ISA_10000254</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">a statistical model is a model which...</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>http://isa-tools.org/owl/ISA_10000254</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>http://isa-tools.org/owl/ISA_10000254</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
-        <IRI>http://isa-tools.org/owl/ISA_10000254</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">STATO</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
-        <IRI>http://isa-tools.org/owl/ISA_10000254</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">STATO, adapted from:</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://isa-tools.org/owl/ISA_10000254</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">statistical model</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
@@ -13182,6 +13167,11 @@ Repeated measure ANOVA use in case of unbalanced design is discouraged as it lea
         <Literal datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
+        <IRI>#repeated_measure_ANOVA</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">ANOVA for correlated samples</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
         <IRI>#repeated_measure_ANOVA</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">adapted from wikipedia and https://statistics.laerd.com/statistical-guides/repeated-measures-anova-statistical-guide-3.php</Literal>
@@ -13189,12 +13179,12 @@ Repeated measure ANOVA use in case of unbalanced design is discouraged as it lea
     <AnnotationAssertion>
         <AnnotationProperty IRI="#R_command"/>
         <IRI>#repeated_measure_ANOVA</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral"></Literal>
+        <Literal datatypeIRI="&rdf;PlainLiteral">http://cran.r-project.org/doc/contrib/Lemon-kickstart/kr_repms.html</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#STATO_alternative_term"/>
         <IRI>#repeated_measure_ANOVA</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral"></Literal>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ANOVA for correlated samples</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
