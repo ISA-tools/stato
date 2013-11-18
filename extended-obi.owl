@@ -587,6 +587,9 @@
         <Class IRI="#negative_binomial_probability_distribution"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#nk-test"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#normal_distribution_hypothesis"/>
     </Declaration>
     <Declaration>
@@ -621,6 +624,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#pedigree_chart"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#post-hoc_analysis"/>
     </Declaration>
     <Declaration>
         <Class IRI="#power_statistical_test"/>
@@ -934,6 +940,13 @@
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000417"/>
             <Class IRI="#odds_ratio_homogeneity_test_objective"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#post-hoc_analysis"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000062"/>
+            <Class IRI="http://purl.obolibrary.org/obo/OBI_0200201"/>
         </ObjectSomeValuesFrom>
     </EquivalentClasses>
     <EquivalentClasses>
@@ -4976,6 +4989,58 @@
         <Class IRI="#discrete_probability_distribution"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#nk-test"/>
+        <Class IRI="http://purl.obolibrary.org/obo/OBI_0200000"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#nk-test"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000062"/>
+            <Class IRI="http://purl.obolibrary.org/obo/OBI_0200201"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#nk-test"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
+            <Class IRI="http://isa-tools.org/isa/ISA_0000108"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#nk-test"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
+            <Class IRI="#studentized_range_distribution"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#nk-test"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000299"/>
+            <Class IRI="http://purl.obolibrary.org/obo/OBI_0000175"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#nk-test"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000417"/>
+            <Class IRI="http://isa-tools.org/isa/ISA0000011"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#nk-test"/>
+        <ObjectMinCardinality cardinality="2">
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
+            <ObjectIntersectionOf>
+                <Class IRI="#expected_value"/>
+                <ObjectExactCardinality cardinality="1">
+                    <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                    <Class IRI="http://isa-tools.org/isa/ISA0000002"/>
+                </ObjectExactCardinality>
+            </ObjectIntersectionOf>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#normal_distribution_hypothesis"/>
         <Class IRI="http://isa-tools.org/isa/ISA_0000123"/>
     </SubClassOf>
@@ -5114,6 +5179,10 @@
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
             <Class IRI="#family"/>
         </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#post-hoc_analysis"/>
+        <Class IRI="#between_group_test"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#power_statistical_test"/>
@@ -12627,6 +12696,32 @@ http://stat.ethz.ch/R-manual/R-patched/library/stats/html/NegBinomial.html</Lite
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#nk-test</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">The Newman–Keuls or Student–Newman–Keuls (SNK) method is a stepwise multiple comparisons procedure used to identify sample means that are significantly different from each other. It was named after Student (1927), D. Newman, and M. Keuls. This procedure is often used as a post-hoc test whenever a significant difference between three or more sample means has been revealed by an analysis of variance (ANOVA). The Newman–Keuls method is similar to Tukey&apos;s range test as both procedures use Studentized range statistics.Compared to Tukey&apos;s range test, the Newman–Keuls method is more powerful but less conservative.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>#nk-test</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>#nk-test</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#nk-test</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">adapted from wikipedia:
+last accessed: 2013-11-15</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#nk-test</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Newman-Keuls test post-hoc analysis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>#normal_distribution_hypothesis</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"> normal distribution hypothesis is a goodness of fit hypothesis stating that the distribution computed from the sample population fits a normal distribution</Literal>
     </AnnotationAssertion>
@@ -13054,6 +13149,11 @@ http://hosho.ees.hokudai.ac.jp/~kubo/Rdoc/library/kinship/html/plot.pedigree.htm
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#pedigree_chart</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">pedigree chart</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#post-hoc_analysis</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">post-hoc analysis</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
