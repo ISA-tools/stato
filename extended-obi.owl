@@ -569,6 +569,12 @@
         <Class IRI="#model_fitting"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#model_parameter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#model_parameter_estimation"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#multinomial_probit_regression"/>
     </Declaration>
     <Declaration>
@@ -606,6 +612,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#pairing_rule"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#parameter_estimate"/>
     </Declaration>
     <Declaration>
         <Class IRI="#pearsons_correlation_coefficient"/>
@@ -2599,15 +2608,21 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://isa-tools.org/owl/ISA_10000255"/>
-        <Class IRI="http://isa-tools.org/owl/ISA_10000256"/>
+        <Class IRI="http://purl.obolibrary.org/obo/OBI_0200102"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://isa-tools.org/owl/ISA_10000255"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
             <ObjectIntersectionOf>
-                <Class IRI="http://isa-tools.org/isa/ISA0000016"/>
-                <Class IRI="http://purl.obolibrary.org/obo/OBI_0000751"/>
+                <Class IRI="http://isa-tools.org/owl/ISA_10000256"/>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                    <ObjectIntersectionOf>
+                        <Class IRI="http://isa-tools.org/isa/ISA0000016"/>
+                        <Class IRI="http://purl.obolibrary.org/obo/OBI_0000751"/>
+                    </ObjectIntersectionOf>
+                </ObjectSomeValuesFrom>
             </ObjectIntersectionOf>
         </ObjectSomeValuesFrom>
     </SubClassOf>
@@ -2618,21 +2633,34 @@
     <SubClassOf>
         <Class IRI="http://isa-tools.org/owl/ISA_10000256"/>
         <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            <Class IRI="#model_parameter"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://isa-tools.org/owl/ISA_10000256"/>
+        <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000295"/>
             <Class IRI="#model_fitting"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://isa-tools.org/owl/ISA_10000257"/>
-        <Class IRI="http://isa-tools.org/owl/ISA_10000256"/>
+        <Class IRI="http://purl.obolibrary.org/obo/OBI_0200102"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://isa-tools.org/owl/ISA_10000257"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
             <ObjectIntersectionOf>
-                <Class IRI="http://isa-tools.org/isa/ISA_0000147"/>
-                <Class IRI="http://purl.obolibrary.org/obo/OBI_0000751"/>
+                <Class IRI="http://isa-tools.org/owl/ISA_10000256"/>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                    <ObjectIntersectionOf>
+                        <Class IRI="http://isa-tools.org/isa/ISA_0000148"/>
+                        <Class IRI="http://purl.obolibrary.org/obo/OBI_0000751"/>
+                    </ObjectIntersectionOf>
+                </ObjectSomeValuesFrom>
             </ObjectIntersectionOf>
         </ObjectSomeValuesFrom>
     </SubClassOf>
@@ -2825,15 +2853,21 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://isa-tools.org/owl/ISA_10000266"/>
-        <Class IRI="http://isa-tools.org/owl/ISA_10000256"/>
+        <Class IRI="http://purl.obolibrary.org/obo/OBI_0200102"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://isa-tools.org/owl/ISA_10000266"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
             <ObjectIntersectionOf>
-                <Class IRI="http://isa-tools.org/isa/ISA_0000147"/>
-                <Class IRI="http://purl.obolibrary.org/obo/OBI_0000751"/>
+                <Class IRI="http://isa-tools.org/owl/ISA_10000256"/>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                    <ObjectIntersectionOf>
+                        <Class IRI="http://isa-tools.org/isa/ISA_0000147"/>
+                        <Class IRI="http://purl.obolibrary.org/obo/OBI_0000751"/>
+                    </ObjectIntersectionOf>
+                </ObjectSomeValuesFrom>
             </ObjectIntersectionOf>
         </ObjectSomeValuesFrom>
     </SubClassOf>
@@ -3269,6 +3303,28 @@
                 </ObjectSomeValuesFrom>
             </ObjectIntersectionOf>
         </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/OBI_0200102"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <ObjectIntersectionOf>
+                    <Class IRI="#model_fitting"/>
+                    <Class IRI="#model_parameter_estimation"/>
+                </ObjectIntersectionOf>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <ObjectIntersectionOf>
+                    <Class IRI="http://isa-tools.org/owl/ISA_10000256"/>
+                    <ObjectSomeValuesFrom>
+                        <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                        <Class IRI="http://purl.obolibrary.org/obo/OBI_0000751"/>
+                    </ObjectSomeValuesFrom>
+                </ObjectIntersectionOf>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0200117"/>
@@ -4796,30 +4852,50 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#model_parameter"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000027"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#model_parameter_estimation"/>
+        <Class IRI="http://purl.obolibrary.org/obo/OBI_0200000"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#multinomial_probit_regression"/>
-        <Class IRI="http://isa-tools.org/owl/ISA_10000256"/>
+        <Class IRI="http://purl.obolibrary.org/obo/OBI_0200102"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#multinomial_probit_regression"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
             <ObjectIntersectionOf>
-                <Class IRI="http://isa-tools.org/isa/ISA_0000148"/>
-                <Class IRI="http://purl.obolibrary.org/obo/OBI_0000751"/>
+                <Class IRI="http://isa-tools.org/owl/ISA_10000256"/>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                    <ObjectIntersectionOf>
+                        <Class IRI="http://isa-tools.org/isa/ISA_0000148"/>
+                        <Class IRI="http://purl.obolibrary.org/obo/OBI_0000751"/>
+                    </ObjectIntersectionOf>
+                </ObjectSomeValuesFrom>
             </ObjectIntersectionOf>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#multiple_login_regression_model"/>
-        <Class IRI="http://isa-tools.org/owl/ISA_10000256"/>
+        <Class IRI="http://purl.obolibrary.org/obo/OBI_0200102"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#multiple_login_regression_model"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
             <ObjectIntersectionOf>
-                <Class IRI="http://isa-tools.org/isa/ISA_0000147"/>
-                <Class IRI="http://purl.obolibrary.org/obo/OBI_0000751"/>
+                <Class IRI="http://isa-tools.org/owl/ISA_10000256"/>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                    <ObjectIntersectionOf>
+                        <Class IRI="http://isa-tools.org/isa/ISA_0000147"/>
+                        <Class IRI="http://purl.obolibrary.org/obo/OBI_0000751"/>
+                    </ObjectIntersectionOf>
+                </ObjectSomeValuesFrom>
             </ObjectIntersectionOf>
         </ObjectSomeValuesFrom>
     </SubClassOf>
@@ -4967,15 +5043,21 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#ordinal_model"/>
-        <Class IRI="http://isa-tools.org/owl/ISA_10000256"/>
+        <Class IRI="http://purl.obolibrary.org/obo/OBI_0200102"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#ordinal_model"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
             <ObjectIntersectionOf>
-                <Class IRI="http://purl.obolibrary.org/obo/OBI_0000751"/>
-                <Class IRI="#ordinal_variable_specification"/>
+                <Class IRI="http://isa-tools.org/owl/ISA_10000256"/>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                    <ObjectIntersectionOf>
+                        <Class IRI="http://purl.obolibrary.org/obo/OBI_0000751"/>
+                        <Class IRI="#ordinal_variable_specification"/>
+                    </ObjectIntersectionOf>
+                </ObjectSomeValuesFrom>
             </ObjectIntersectionOf>
         </ObjectSomeValuesFrom>
     </SubClassOf>
@@ -4993,6 +5075,23 @@
     <SubClassOf>
         <Class IRI="#pairing_rule"/>
         <Class IRI="http://purl.obolibrary.org/obo/IAO_0000055"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#parameter_estimate"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000027"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#parameter_estimate"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <Class IRI="#model_parameter"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                <Class IRI="#model_parameter_estimation"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#pearsons_correlation_coefficient"/>
@@ -8713,7 +8812,7 @@ linear regression modeling makes a number of assumptions, which includes homoske
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://isa-tools.org/owl/ISA_10000255</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">linear regression model</Literal>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">linear regression for analysis of continuous dependent variable</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
@@ -8778,7 +8877,7 @@ linear regression modeling makes a number of assumptions, which includes homoske
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://isa-tools.org/owl/ISA_10000257</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">probit regression model</Literal>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">probit regression for analysis of polychotomous dependent variable</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -9005,7 +9104,7 @@ For example, doses of a treatment can be ordered as &apos;low&apos;, &apos;mediu
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://isa-tools.org/owl/ISA_10000266</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">binomial logistic regression model</Literal>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">binomial logistic regression for analysis of dichotomous dependent variable</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
@@ -9509,6 +9608,24 @@ AGB and PRS provide formal definition expressed the test in terms of output and 
         <AnnotationProperty IRI="#STATO_alternative_term"/>
         <IRI>http://purl.obolibrary.org/obo/OBI_0200066</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Bonferroni adjustment method</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000116"/>
+        <IRI>http://purl.obolibrary.org/obo/OBI_0200102</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Date:2013-11-15
+Person: AGB,PRS
+Adding restrictions, specifying model + parameter estimation process
+change of label from &apos;regression analysis method&apos; to &apos;regression analysis&apos;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/OBI_0200102</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/OBI_0200102</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
@@ -12305,6 +12422,36 @@ last accessed: 2013-11-15</Literal>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">model fitting</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#model_parameter</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">model parameter</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#model_parameter_estimation</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">model parameter estimation is a data transformation part of a regression analysis which applies specific mathematical transformation in order produced estimates on the parameter specified by the model based on the data used as input.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>#model_parameter_estimation</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>#model_parameter_estimation</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#model_parameter_estimation</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#model_parameter_estimation</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">model parameter estimation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
         <IRI>#multinomial_probit_regression</IRI>
         <IRI>http://purl.obolibrary.org/obo/IAO_0000428</IRI>
@@ -12342,7 +12489,7 @@ last accessed: 2013-11-15</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#multinomial_probit_regression</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">multinomial probit regression model</Literal>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">multinomial probit regression for analysis of polychotomous dependent variable</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
@@ -12382,7 +12529,7 @@ last accessed: 2013-11-15</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#multiple_login_regression_model</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">multinomial logistic regression model</Literal>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">multinomial logistic regression for analysis of dichotomous dependent variable</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
@@ -12694,7 +12841,7 @@ For example, do people of different countries have the same proportion of smoker
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#ordinal_model</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">ordered probit regression model</Literal>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">ordered probit regression for analysis of ordinal dependent variable</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
@@ -12775,6 +12922,31 @@ For example, do people of different countries have the same proportion of smoker
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#pairing_rule</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">pairing rule</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#parameter_estimate</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">a model parameter estimate is a data item which results from a model parameter estimation process performed during a regression analysis which attempts to express the response variable in terms of function of predictor variable and model parameters.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>#parameter_estimate</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>#parameter_estimate</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#parameter_estimate</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">model parameter estimate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#parameter_estimate</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">model parameter estimate</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
