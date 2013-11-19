@@ -590,6 +590,9 @@
         <Class IRI="#nk-test"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#non-parametric_test"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#normal_distribution_hypothesis"/>
     </Declaration>
     <Declaration>
@@ -653,6 +656,9 @@
         <Class IRI="#repeated_measure_ANOVA"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#residual"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#sensitivity"/>
     </Declaration>
     <Declaration>
@@ -687,6 +693,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#statistic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#statistical_error"/>
     </Declaration>
     <Declaration>
         <Class IRI="#statistical_test_power_analysis"/>
@@ -934,6 +943,21 @@
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000417"/>
             <Class IRI="#association_testing_objective"/>
         </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#non-parametric_test"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <ObjectComplementOf>
+                    <Class IRI="http://isa-tools.org/isa/ISA_0000105"/>
+                </ObjectComplementOf>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000417"/>
+                <Class IRI="http://isa-tools.org/isa/ISA0000011"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#odds_ratio_homogeneity_test"/>
@@ -3394,11 +3418,17 @@
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
             <ObjectIntersectionOf>
-                <Class IRI="#normal_distribution_hypothesis"/>
-                <DataHasValue>
-                    <DataProperty IRI="http://isa-tools.org/isa/ISA_0000144"/>
-                    <Literal datatypeIRI="&xsd;boolean">true</Literal>
-                </DataHasValue>
+                <ObjectIntersectionOf>
+                    <Class IRI="#normal_distribution_hypothesis"/>
+                    <DataHasValue>
+                        <DataProperty IRI="http://isa-tools.org/isa/ISA_0000144"/>
+                        <Literal datatypeIRI="&xsd;boolean">true</Literal>
+                    </DataHasValue>
+                </ObjectIntersectionOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                    <Class IRI="#residual"/>
+                </ObjectSomeValuesFrom>
             </ObjectIntersectionOf>
         </ObjectSomeValuesFrom>
     </SubClassOf>
@@ -3432,7 +3462,13 @@
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0200201"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000299"/>
-            <Class IRI="http://purl.obolibrary.org/obo/OBI_0000175"/>
+            <ObjectIntersectionOf>
+                <Class IRI="http://purl.obolibrary.org/obo/OBI_0000175"/>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                    <Class IRI="http://isa-tools.org/isa/ISA_0000126"/>
+                </ObjectSomeValuesFrom>
+            </ObjectIntersectionOf>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -4182,6 +4218,13 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Spearman_s_rank_correlation_coefficient"/>
+        <ObjectExactCardinality cardinality="2">
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
+            <Class IRI="#ordinal_variable_specification"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Strictly_standardized_mean_difference"/>
         <Class IRI="#standardized_mean_difference"/>
     </SubClassOf>
@@ -4753,6 +4796,13 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#kendall_correlation_coefficient"/>
+        <ObjectExactCardinality cardinality="2">
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
+            <Class IRI="#ordinal_variable_specification"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#kurtosis_excess"/>
         <Class IRI="http://purl.obolibrary.org/obo/IAO_0000027"/>
     </SubClassOf>
@@ -5052,6 +5102,10 @@
         </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#non-parametric_test"/>
+        <Class IRI="http://purl.obolibrary.org/obo/OBI_0000673"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#normal_distribution_hypothesis"/>
         <Class IRI="http://isa-tools.org/isa/ISA_0000123"/>
     </SubClassOf>
@@ -5179,6 +5233,25 @@
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
             <Class IRI="#effect_size"/>
         </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#pearsons_correlation_coefficient"/>
+        <ObjectExactCardinality cardinality="2">
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
+            <ObjectIntersectionOf>
+                <Class IRI="http://isa-tools.org/isa/ISA0000016"/>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="http://urigen_local_uri/c4ea3563-9aec-4114-a204-a010f58a243f#ISA00000"/>
+                    <ObjectIntersectionOf>
+                        <Class IRI="#normal_distribution_hypothesis"/>
+                        <DataHasValue>
+                            <DataProperty IRI="http://isa-tools.org/isa/ISA_0000144"/>
+                            <Literal datatypeIRI="&xsd;boolean">true</Literal>
+                        </DataHasValue>
+                    </ObjectIntersectionOf>
+                </ObjectSomeValuesFrom>
+            </ObjectIntersectionOf>
+        </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#pedigree_chart"/>
@@ -5457,6 +5530,17 @@
         </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#residual"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000027"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#residual"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
+            <Class IRI="#statistical_error"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#sensitivity"/>
         <Class IRI="http://purl.obolibrary.org/obo/IAO_0000109"/>
     </SubClassOf>
@@ -5605,6 +5689,10 @@
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
             <Class IRI="http://purl.obolibrary.org/obo/IAO_0000100"/>
         </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#statistical_error"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000027"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#statistical_test_power_analysis"/>
@@ -5982,8 +6070,8 @@
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <InverseObjectProperties>
-        <ObjectProperty IRI="http://isa-tools.org/isa/ISA0000014"/>
         <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000605"/>
+        <ObjectProperty IRI="http://isa-tools.org/isa/ISA0000014"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="http://isa-tools.org/isa/ISA0000017"/>
@@ -12777,6 +12865,11 @@ http://artax.karlin.mff.cuni.cz/r-help/library/agricolae/html/SNK.test.html</Lit
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Newman-Keuls test post-hoc analysis</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#non-parametric_test</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">non-parametric test</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>#normal_distribution_hypothesis</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"> normal distribution hypothesis is a goodness of fit hypothesis stating that the distribution computed from the sample population fits a normal distribution</Literal>
@@ -13547,6 +13640,26 @@ Repeated measure ANOVA use in case of unbalanced design is discouraged as it lea
         <Literal datatypeIRI="&rdf;PlainLiteral">repeated measure ANOVA</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#residual</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">a residual is a data item which is the output of an error estimate or model fitting process and which is an observable estimate of the unobservable error</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>#residual</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>#residual</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#residual</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">residual</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
         <IRI>#sensitivity</IRI>
         <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
@@ -14040,6 +14153,39 @@ DOI: 10.1111/j.1469-185X.2007.00027.x</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#statistic</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">statistic</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#statistical_error</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">statistical error is an data item denoting the amount by which an observation differs from the expected value, being based on the whole statistical population from which the statistical unit was chosen randomly</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>#statistical_error</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>#statistical_error</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#statistical_error</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">adapted from wikipedia:
+http://en.wikipedia.org/wiki/Errors_and_residuals_in_statistics
+
+last accessed: 18-11-2013</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#STATO_alternative_term"/>
+        <IRI>#statistical_error</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">disturbance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#statistical_error</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">statistical error</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
