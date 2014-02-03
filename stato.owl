@@ -788,10 +788,16 @@
         <Class IRI="/Altman_box_and_whisker_plot"/>
     </Declaration>
     <Declaration>
+        <Class IRI="/Cleveland_dot_plot"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="/Spear_box_and_whisker_plot"/>
     </Declaration>
     <Declaration>
         <Class IRI="/Tukey_box_and_whisker_plot"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Wilkinson_dot_plot"/>
     </Declaration>
     <Declaration>
         <Class IRI="/bean_plot"/>
@@ -6504,12 +6510,20 @@
         <Class IRI="http://purl.obolibrary.org/obo/extended-obi.owl#boxplot"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="/Cleveland_dot_plot"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000037"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="/Spear_box_and_whisker_plot"/>
         <Class IRI="http://purl.obolibrary.org/obo/extended-obi.owl#boxplot"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Tukey_box_and_whisker_plot"/>
         <Class IRI="http://purl.obolibrary.org/obo/extended-obi.owl#boxplot"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Wilkinson_dot_plot"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000037"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/bean_plot"/>
@@ -15822,6 +15836,11 @@ http://rss.acs.unt.edu/Rdoc/library/limma/html/volcanoplot.html</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/Cleveland_dot_plot</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Cleveland dot plot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/Spear_box_and_whisker_plot</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Spear box and whisker plot</Literal>
     </AnnotationAssertion>
@@ -15829,6 +15848,11 @@ http://rss.acs.unt.edu/Rdoc/library/limma/html/volcanoplot.html</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/Tukey_box_and_whisker_plot</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Tukey box and whisker plot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/Wilkinson_dot_plot</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Wilkinson dot plot</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
