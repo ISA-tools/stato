@@ -823,6 +823,12 @@
         <Class IRI="http://purl.org/stato/beta_distribution"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://purl.org/stato/multinomial_distribution"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.org/stato/ratio"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="http://isa-tools.org/isa/ISA0000001"/>
     </Declaration>
     <Declaration>
@@ -839,6 +845,12 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="http://isa-tools.org/isa/ISA_0000115"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://purl.org/stato/has_denominator"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://purl.org/stato/has_numerator"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="http://urigen_local_uri/c4ea3563-9aec-4114-a204-a010f58a243f#ISA00000"/>
@@ -1074,6 +1086,19 @@
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000417"/>
             <Class IRI="http://isa-tools.org/isa/ISA0000012"/>
         </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://purl.org/stato/ratio"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://purl.org/stato/has_denominator"/>
+                <Class IRI="http://purl.obolibrary.org/obo/IAO_0000027"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://purl.org/stato/has_numerator"/>
+                <Class IRI="http://purl.obolibrary.org/obo/IAO_0000027"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
     </EquivalentClasses>
     <SubClassOf>
         <Class IRI="http://isa-tools.org/isa/ISA0000002"/>
@@ -6556,6 +6581,14 @@
         <Class IRI="http://purl.org/stato/beta_distribution"/>
         <Class IRI="http://purl.obolibrary.org/obo/extended-obi.owl#continuous_probability_distribution"/>
     </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/stato/multinomial_distribution"/>
+        <Class IRI="http://purl.obolibrary.org/obo/extended-obi.owl#discrete_probability_distribution"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/stato/ratio"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000027"/>
+    </SubClassOf>
     <DisjointClasses>
         <Class IRI="http://isa-tools.org/isa/ISA0000015"/>
         <Class IRI="http://isa-tools.org/isa/ISA0000016"/>
@@ -6622,8 +6655,8 @@
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <InverseObjectProperties>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000605"/>
         <ObjectProperty IRI="http://isa-tools.org/isa/ISA0000014"/>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000605"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="http://isa-tools.org/isa/ISA0000017"/>
@@ -15948,6 +15981,16 @@ http://rss.acs.unt.edu/Rdoc/library/limma/html/volcanoplot.html</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.org/stato/beta_distribution</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">beta distribution</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/stato/has_denominator</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">has denominator</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/stato/has_numerator</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">has numerator</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
