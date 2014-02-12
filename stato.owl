@@ -30,6 +30,10 @@
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
         <Literal datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
     </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Orlaith Burke</Literal>
+    </Annotation>    
     <Declaration>
         <Class IRI="http://isa-tools.org/isa/ISA0000002"/>
     </Declaration>
