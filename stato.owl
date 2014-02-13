@@ -16233,6 +16233,26 @@ http://en.wikipedia.org/wiki/Random_variable</Literal>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">tetrachoric correlation coefficient</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>/Altman_box_and_whisker_plot</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Altman Box and Whisker plot is a variation of Tukey Box and Whisker plot which use the criteria of Altman to create the &apos;whisker&apos; of the plot.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>/Altman_box_and_whisker_plot</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>/Altman_box_and_whisker_plot</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>/Altman_box_and_whisker_plot</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Altman, D.G. Practical Statistics for Medical Research (Chapman and Hall, 1991).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/Altman_box_and_whisker_plot</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Altman box and whisker plot</Literal>
@@ -16267,6 +16287,26 @@ dotchart(x, labels = NULL, groups = NULL, gdata = NULL,
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/Cleveland_dot_plot</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Cleveland dot plot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>/Spear_box_and_whisker_plot</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Spear Box and Whisker plot is a variation of Tukey Box and Whisker plot which use the criteria of Spear to create the &apos;whisker&apos; of the plot.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>/Spear_box_and_whisker_plot</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>/Spear_box_and_whisker_plot</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>/Spear_box_and_whisker_plot</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Spear, M.E. Charting Statistics (McGraw-Hill, 1952)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -16306,6 +16346,19 @@ Wilkinson, Leland (1999). &quot;Dot plots&quot;. The American Statistician (Amer
         <Literal datatypeIRI="&rdf;PlainLiteral">Wilkinson dot plot</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>/bean_plot</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://www.r-bloggers.com/boxplots-beyond-iv-beanplots/</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>/bean_plot</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">beanplot is a plot in which (one or) multiple batches (&quot;beans&quot;) are shown. Each bean consists of a density trace, which is mirrored to
+form a polygon shape. Next to that, a one-dimensional scatter plot shows all the individual measurements, like in a stripchart.
+
+The name beanplot stems from green beans. The density shape can be seen as the pod of a green bean, while the scatter plot shows the seeds inside the pod.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
         <IRI>/bean_plot</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
@@ -16319,6 +16372,12 @@ Wilkinson, Leland (1999). &quot;Dot plots&quot;. The American Statistician (Amer
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
         <IRI>/bean_plot</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">http://www.jstatsoft.org/v28/c01/paper</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/extended-obi.owl#R_command"/>
+        <IRI>/bean_plot</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://cran.r-project.org/web/packages/beanplot/index.html
+</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
