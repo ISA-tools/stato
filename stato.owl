@@ -824,9 +824,6 @@
         <Class IRI="/Spear_box_and_whisker_plot"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/Tukey_box_and_whisker_plot"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="/Wilkinson_dot_plot"/>
     </Declaration>
     <Declaration>
@@ -4840,6 +4837,13 @@
         <Class IRI="http://purl.obolibrary.org/obo/extended-obi.owl#boxplot"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
+            <Class IRI="http://isa-tools.org/owl/ISA_10000276"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/extended-obi.owl#boxplot"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
             <Class IRI="http://purl.obolibrary.org/obo/OBI_0000674"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
@@ -6702,10 +6706,6 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Spear_box_and_whisker_plot"/>
-        <Class IRI="http://purl.obolibrary.org/obo/extended-obi.owl#boxplot"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/Tukey_box_and_whisker_plot"/>
         <Class IRI="http://purl.obolibrary.org/obo/extended-obi.owl#boxplot"/>
     </SubClassOf>
     <SubClassOf>
@@ -12443,7 +12443,17 @@ http://stat.ethz.ch/R-manual/R-patched/library/stats/html/Binomial.html</Literal
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
         <IRI>http://purl.obolibrary.org/obo/extended-obi.owl#boxplot</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Tukey box and whisker plot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
+        <IRI>http://purl.obolibrary.org/obo/extended-obi.owl#boxplot</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">box plot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://purl.obolibrary.org/obo/extended-obi.owl#boxplot</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Tukey, J. W. &quot;Box-and-Whisker Plots.&quot; §2C in Exploratory Data Analysis. Reading, MA: Addison-Wesley, pp. 39-43, 1977.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/extended-obi.owl#R_command"/>
@@ -16262,11 +16272,6 @@ dotchart(x, labels = NULL, groups = NULL, gdata = NULL,
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>/Spear_box_and_whisker_plot</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Spear box and whisker plot</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>/Tukey_box_and_whisker_plot</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Tukey box and whisker plot</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
