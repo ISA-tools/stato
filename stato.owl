@@ -7197,12 +7197,22 @@ change of label from &#39;regression analysis method&#39; to &#39;regression ana
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000001</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000001</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Philippe Rocca-Serra</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000001</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">declares</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000002</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Alejandra Gonzalez-Beltran</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -7247,12 +7257,22 @@ change of label from &#39;regression analysis method&#39; to &#39;regression ana
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000004</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000004</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Philippe Rocca-Serra</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000004</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">is declared by</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000005</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Alejandra Gonzalez-Beltran</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -7272,6 +7292,11 @@ change of label from &#39;regression analysis method&#39; to &#39;regression ana
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000006</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000006</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Philippe Rocca-Serra</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -7282,12 +7307,22 @@ change of label from &#39;regression analysis method&#39; to &#39;regression ana
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000007</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000007</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Philippe Rocca-Serra</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000007</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">axis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000008</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Alejandra Gonzalez-Beltran</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -7372,12 +7407,22 @@ change of label from &#39;regression analysis method&#39; to &#39;regression ana
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000011</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000011</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Philippe Rocca-Serra</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000011</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">cartesian coordinate axis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000012</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Alejandra Gonzalez-Beltran</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -7507,6 +7552,11 @@ change of label from &#39;regression analysis method&#39; to &#39;regression ana
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000017</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000017</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Philippe Rocca-Serra</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -7529,6 +7579,11 @@ http://en.wikipedia.org/wiki/Wilks%27_lambda_distribution</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000018</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000018</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Philippe Rocca-Serra</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -7544,6 +7599,11 @@ http://en.wikipedia.org/wiki/Wilks%27_lambda_distribution</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000019</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000019</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Philippe Rocca-Serra</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -7555,6 +7615,11 @@ http://en.wikipedia.org/wiki/Wilks%27_lambda_distribution</Literal>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000020</IRI>
         <IRI>http://purl.obolibrary.org/obo/IAO_0000428</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000020</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Alejandra Gonzalez-Beltran</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -7726,6 +7791,11 @@ http://www.oxfordreference.com/view/10.1093/acref/9780199541454.001.0001/acref-9
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000025</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000025</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Philippe Rocca-Serra</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -7742,6 +7812,11 @@ http://www.oxfordreference.com/view/10.1093/acref/9780199541454.001.0001/acref-9
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000116"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000026</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">placeholder, more work needed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000026</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Alejandra Gonzalez-Beltran</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -7906,6 +7981,11 @@ http://www.oxfordreference.com/view/10.1093/acref/9780199541454.001.0001/acref-9
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000031</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000031</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Philippe Rocca-Serra</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -7980,6 +8060,11 @@ last accessed: 2013-11-21</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000033</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">mode</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000034</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Alejandra Gonzalez-Beltran</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -8237,6 +8322,11 @@ It is calculated by dividing the sample standard deviation (i.e., the sample-bas
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000041</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000041</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Philippe Rocca-Serra</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -8413,6 +8503,11 @@ It is calculated by dividing the sample standard deviation (i.e., the sample-bas
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000046</IRI>
         <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000046</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Alejandra Gonzalez-Beltran</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -9181,6 +9276,11 @@ http://stat.ethz.ch/R-manual/R-patched/library/stats/html/Hypergeometric.html</L
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000066</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Cleveland dot plot is a dot plot which plots points that each belong to one of several categories. They are an alternative to bar charts or pie charts, and look somewhat like a horizontal bar chart where the bars are replaced by a dots at the values associated with each category. Compared to (vertical) bar charts and pie charts, Cleveland argues that dot plots allow more accurate interpretation of the graph by readers by making the labels easier to read, reducing non-data ink (or graph clutter) and supporting table look-up.which</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000066</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Alejandra Gonzalez-Beltran</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -10247,6 +10347,11 @@ The procedure involves a ranking hence the name. The absolute value of the diffe
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000093</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000093</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Philippe Rocca-Serra</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -10350,6 +10455,11 @@ http://stat.ethz.ch/R-manual/R-patched/library/stats/html/kruskal.test.html</Lit
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000096</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">stratification is a planned process which executes a stratification rule using as input a population and assign it member to mutually exclusive subpopulation based on the values defined by the stratification rule</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000096</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Alejandra Gonzalez-Beltran</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -10539,12 +10649,22 @@ DOI: 10.1111/j.1469-185X.2007.00027.x</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000101</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000101</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Philippe Rocca-Serra</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000101</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has numerator</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000102</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Alejandra Gonzalez-Beltran</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -10574,12 +10694,22 @@ DOI: 10.1111/j.1469-185X.2007.00027.x</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000104</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000104</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Philippe Rocca-Serra</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000104</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">post hoc statistical test</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000105</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Alejandra Gonzalez-Beltran</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -10748,6 +10878,11 @@ linear regression modeling makes a number of assumptions, which includes homoske
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000110</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000110</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Philippe Rocca-Serra</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -10759,6 +10894,11 @@ linear regression modeling makes a number of assumptions, which includes homoske
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000111</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">a sequence read is a DNA sequence data which is generated by a DNA sequencer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000111</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Alejandra Gonzalez-Beltran</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -10820,6 +10960,11 @@ http://en.wikipedia.org/wiki/Funnel_plot
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000113</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000113</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Philippe Rocca-Serra</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -10847,6 +10992,11 @@ http://stat.ethz.ch/R-manual/R-patched/library/stats/html/cor.html</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000114</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000114</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Philippe Rocca-Serra</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -10857,12 +11007,22 @@ http://stat.ethz.ch/R-manual/R-patched/library/stats/html/cor.html</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000115</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000115</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Philippe Rocca-Serra</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000115</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has member</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000116</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Alejandra Gonzalez-Beltran</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -11296,6 +11456,11 @@ http://rss.acs.unt.edu/Rdoc/library/limma/html/volcanoplot.html</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000128</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Altman box and whisker plot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000129</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Alejandra Gonzalez-Beltran</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -11849,6 +12014,11 @@ http://stat.ethz.ch/R-manual/R-patched/library/stats/html/ftable.html</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000144</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000144</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Philippe Rocca-Serra</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -11921,6 +12091,11 @@ http://stat.ethz.ch/R-manual/R-patched/library/stats/html/Geometric.html</Litera
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000145</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">geometric distribution</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000146</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Alejandra Gonzalez-Beltran</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -12348,6 +12523,11 @@ last accessed: 2013-11-15</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000158</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000158</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Philippe Rocca-Serra</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -12444,12 +12624,22 @@ rexp(n, rate = 1)</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000162</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000162</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Philippe Rocca-Serra</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000162</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">experimental unit role</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000163</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Alejandra Gonzalez-Beltran</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -13167,6 +13357,11 @@ It represents the odds that an outcome will occur given a particular exposure, c
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000184</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000184</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Philippe Rocca-Serra</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -13371,6 +13566,11 @@ The procedure is conservative, meaning that if sample sizes (the sizes of differ
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000190</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Threshold cycle (or Ct or Cq) is a count which is defined as the fractional PCR cycle number at which the reporter fluorescence is greater than the threshold in the context of the RT-qPCR assay. The Ct is a basic principle of real time PCR and is an essential component in producing accurate and reproducible data.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000190</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Alejandra Gonzalez-Beltran</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -13650,6 +13850,11 @@ The procedure is conservative, meaning that if sample sizes (the sizes of differ
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000198</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000198</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Philippe Rocca-Serra</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -13912,6 +14117,11 @@ http://stat.ethz.ch/R-manual/R-patched/library/stats/html/Fdist.html
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000205</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000205</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Philippe Rocca-Serra</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -13938,6 +14148,11 @@ The metric has been enhanced and replaced by FPKM to better take into account sp
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000206</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000206</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Philippe Rocca-Serra</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -13954,6 +14169,11 @@ The metric has been enhanced and replaced by FPKM to better take into account sp
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000206</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">reads per kilobase of transcript per million fragments mapped</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000207</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Alejandra Gonzalez-Beltran</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -14485,6 +14705,11 @@ http://en.wikipedia.org/wiki/Random_variable</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000222</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000222</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Philippe Rocca-Serra</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -14496,6 +14721,11 @@ http://en.wikipedia.org/wiki/Random_variable</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000222</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">graeco-latin square design</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000223</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Alejandra Gonzalez-Beltran</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -14669,6 +14899,11 @@ http://mathworld.wolfram.com/NormalDistribution.html</Literal>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000228</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Alejandra Gonzalez-Beltan</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000228</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Alejandra Gonzalez-Beltran</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -14931,6 +15166,11 @@ http://mathworld.wolfram.com/Sensitivity.html</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000234</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">residual</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000235</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Alejandra Gonzalez-Beltran</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -15479,12 +15719,22 @@ Often in medical studies, the blocking factor used is the type of institution. T
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000249</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000249</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Philippe Rocca-Serra</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000249</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">DNA microarray hybridization</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000250</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Alejandra Gonzalez-Beltran</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -15762,6 +16012,11 @@ http://www.ontobee.org/browser/rdf.php?o=PCO&amp;iri=http://purl.obolibrary.org/
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000257</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000257</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Philippe Rocca-Serra</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -15815,6 +16070,11 @@ The &#39;variable spec&#39; is the &#39;data set&#39;, referring to the set of v
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000258</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">variable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000259</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Alejandra Gonzalez-Beltran</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -16164,6 +16424,11 @@ last accessed 2013-11-13</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000268</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000268</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Philippe Rocca-Serra</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -16329,6 +16594,11 @@ last accessed: 22-11-2013</Literal>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000116"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000273</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">possibly submit to &#39;Population and Community Ontology&#39;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000273</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Alejandra Gonzalez-Beltran</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
