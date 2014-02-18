@@ -366,6 +366,22 @@ Full-Width Styles
   background: #212121;
 }
 
+.footer_outer{
+    width: 980px;
+    border: 1px solid;
+}
+
+.footer_inner_left{
+    width: 49%;
+    Float: left;
+    display:inline;
+}
+
+.footer_inner_right{
+    width: 30%;
+    Float: right;
+    display:inline;
+}
 
 
 /*******************************************************************************
