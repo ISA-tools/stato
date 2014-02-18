@@ -383,6 +383,11 @@ Full-Width Styles
     display:inline;
 }
 
+.small {
+    margin: 10px 0 15px 0;
+    font-size: 10px;
+}
+
 
 /*******************************************************************************
 Small Device Styles
