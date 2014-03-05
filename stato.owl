@@ -10063,6 +10063,11 @@ http://stat.ethz.ch/R-manual/R-patched/library/stats/html/chisq.test.html</Liter
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Fisher&apos;s exact test is a statistical test used to determine if there are nonrandom associations between two categorical variables.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000116"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000073</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">duplicate with OBI_0200176. so either MIREOT and add metadata and axioms or move from OBI</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000073</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
