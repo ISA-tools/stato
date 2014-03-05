@@ -7085,6 +7085,11 @@ change of label from &apos;regression analysis method&apos; to &apos;regression 
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000116"/>
+        <IRI>http://purl.obolibrary.org/obo/OBI_0200200</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">negociation with OBI hence definition and definition source are missing from this class</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
         <IRI>http://purl.obolibrary.org/obo/OBI_0200201</IRI>
         <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
@@ -11383,6 +11388,16 @@ DOI: 10.1111/j.1469-185X.2007.00027.x</Literal>
         <Literal datatypeIRI="&rdf;PlainLiteral">executes</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000103</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000103</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">the multinomial distribution is a probability distribution which gives the probability of any particular combination of numbers of successes for various categories defined in the context of  n independent trials each of which leads to a success for exactly one of k categories, with each category having a given fixed success probability.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000103</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
@@ -11396,6 +11411,21 @@ DOI: 10.1111/j.1469-185X.2007.00027.x</Literal>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000103</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000103</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">adapted from 
+http://mathworld.wolfram.com/MultinomialDistribution.html
+and
+http://en.wikipedia.org/wiki/Multinomial_distribution</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000103</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">dmultinom(x, size = NULL, prob, log = FALSE)
+
+http://stat.ethz.ch/R-manual/R-patched/library/stats/html/Multinom.html</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -16291,6 +16321,11 @@ http://en.wikipedia.org/wiki/Random_variable</Literal>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">graeco-latin square design</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000223</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000428</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000223</IRI>
         <Literal datatypeIRI="&xsd;string">Alejandra Gonzalez-Beltran</Literal>
@@ -16304,6 +16339,11 @@ http://en.wikipedia.org/wiki/Random_variable</Literal>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000223</IRI>
         <Literal datatypeIRI="&xsd;string">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000223</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">STATO</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -17460,6 +17500,11 @@ Often in medical studies, the blocking factor used is the type of institution. T
         <IRI>http://purl.obolibrary.org/obo/IAO_0000123</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000250</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">group comparison objective is a data transformation objective which aims to determine if 2 or more study group differ with respect to the signal of a response variable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000250</IRI>
         <Literal datatypeIRI="&xsd;string">Alejandra Gonzalez-Beltran</Literal>
@@ -17473,6 +17518,11 @@ Often in medical studies, the blocking factor used is the type of institution. T
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000250</IRI>
         <Literal datatypeIRI="&xsd;string">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000250</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">STATO</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
