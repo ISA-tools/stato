@@ -23,12 +23,12 @@
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Import>http://purl.obolibrary.org/obo/obi.owl</Import>
     <Annotation>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/rights"/>
-        <Literal datatypeIRI="&rdf;PlainLiteral">This Ontology is distributed under a Creative Commons Attribution License - http://creativecommons.org/licenses/by/3.0/</Literal>
-    </Annotation>
-    <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
         <Literal datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/rights"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">This Ontology is distributed under a Creative Commons Attribution License - http://creativecommons.org/licenses/by/3.0/</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
@@ -8944,11 +8944,6 @@ It is calculated by dividing the sample standard deviation (i.e., the sample-bas
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000048</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">a kind of ANOVA with more that 2 factors</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>http://purl.obolibrary.org/obo/STATO_0000048</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">multi-way anova is an analysis of variance where the difference groups being compared are associated the factor levels of more than 2 independent variables</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -9364,11 +9359,6 @@ http://www.inside-r.org/packages/cran/UsingR/docs/simple.z.test</Literal>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000057</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A null hypothesis is a statistical hypothesis that is tested for possible rejection under the assumption that it is true (usually that observations are the result of chance). The concept was introduced by R. A. Fisher.
 The hypothesis contrary to the null hypothesis, usually that the observations are the result of a real effect, is known as the alternative hypothesis.[wolfram alpha]</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>http://purl.obolibrary.org/obo/STATO_0000057</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">alternative hypothesis is </Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -10808,7 +10798,7 @@ hovPlot(y~G,data=mydata)</Literal>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000032"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000088</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">statistical sample size</Literal>
     </AnnotationAssertion>
@@ -18233,12 +18223,6 @@ plot_RadialPlot(data, na.exclude = TRUE, negatives = &quot;remove&quot;,
 The Bayes factor is about the plausibility of 2 different models</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>http://purl.obolibrary.org/obo/STATO_0000266</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Bayes factor is a ratio between 2 probabilities of observing data according 2 distinct models. It is used in Bayes model selection to evaluate which model best explains the data. if K&lt;1, the model used in the denominator term is supported, if K&gt;1, the model used in the numerator term is supported.
-The Bayes factor is about the plausibility of 2 different models</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000266</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
@@ -18530,14 +18514,14 @@ http://en.wikipedia.org/wiki/Michaelis–Menten_constant
 last accessed: 22-11-2013</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000032"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000272</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Michaelis-Menten constant</Literal>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">half maximal reaction rate substrate concentration (Km)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000272</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">half maximal reaction rate substrate concentration (Km)</Literal>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Michaelis-Menten constant</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000116"/>
@@ -18572,11 +18556,6 @@ last accessed: 22-11-2013</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000274</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://en.wikipedia.org/wiki/Receiver_operating_characteristic</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>http://purl.obolibrary.org/obo/STATO_0000274</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">receiver operational characteristics curve is a graphical plot which illustrates the performance of a binary classifier system as its discrimination threshold (aka cut-off point) is varied by plotting  sensitivity vs (1 − specificity)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -18593,6 +18572,11 @@ last accessed: 22-11-2013</Literal>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000274</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000274</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://en.wikipedia.org/wiki/Receiver_operating_characteristic</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
