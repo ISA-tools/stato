@@ -56,7 +56,6 @@ http://purl.obolibrary.org/obo/IAO_0000573 #line graph
 http://purl.obolibrary.org/obo/IAO_0000578 #CRID
 http://purl.obolibrary.org/obo/IAO_0000582 #time stamped measurement datum
 http://purl.obolibrary.org/obo/IAO_0000584 #time sampled measurement data set
-http://purl.obolibrary.org/obo/IAO_0000605 #specifies value of
 
 #OBI terms
 http://purl.obolibrary.org/obo/OBI_0000010 #fluorescent reporter intensity
@@ -112,6 +111,7 @@ http://purl.obolibrary.org/obo/OBI_0001554 #rate measurement datum
 http://purl.obolibrary.org/obo/OBI_0001573 #DNA sequence data
 http://purl.obolibrary.org/obo/OBI_0001755 #selection criterion
 http://purl.obolibrary.org/obo/OBI_0001834 #drawing a conclusion
+http://purl.obolibrary.org/obo/OBI_0001927 #specifies value of
 http://purl.obolibrary.org/obo/OBI_0100026 #organism
 http://purl.obolibrary.org/obo/OBI_0200000 #data transformation
 http://purl.obolibrary.org/obo/OBI_0200191 #gene list visualization
