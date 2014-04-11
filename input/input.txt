@@ -1,5 +1,5 @@
 [URI of the OWL(RDF/XML) output file]
-http://purl.obolibrary.org/obo/STATO_OBI_import.owl
+http://purl.obolibrary.org/obo/stato/stato_obi_import.owl
 
 [Source ontology]
 #comment here
@@ -119,6 +119,7 @@ http://purl.obolibrary.org/obo/OBI_0200102 #regression analysis method
 http://purl.obolibrary.org/obo/OBI_0200166 #data transformation objective
 http://purl.obolibrary.org/obo/OBI_0200066 #Holm-Bonferroni family-wise error rate correction method
 http://purl.obolibrary.org/obo/OBI_0200169 #normalization data transformation
+http://purl.obolibrary.org/obo/OBI_0200176 #Fisher's exact test
 http://purl.obolibrary.org/obo/OBI_0200119 #median calculation
 http://purl.obolibrary.org/obo/OBI_0200117 #mode calculation
 http://purl.obolibrary.org/obo/OBI_0200200 #chi square test
@@ -173,8 +174,19 @@ includeAllIntermediates
 [Branch extractions from source term URIs and target direct superclass URIs]
 
 [Source annotation URIs]
+#includeAllAxiomsRecursively
 http://www.w3.org/2000/01/rdf-schema#label
-copyTo http://purl.obolibrary.org/obo/IAO_0000111
-http://www.geneontology.org/formats/oboInOwl#hasExactSynonym
-mapTo http://purl.obolibrary.org/obo/IAO_0000118 #iao:alternative term
-http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym
+http://purl.org/dc/elements/1.1/description
+http://purl.org/dc/elements/1.1/source
+copyTo http://purl.obolibrary.org/obo/IAO_0000111 #editor preferred term
+http://purl.obolibrary.org/obo/IAO_0000115 #definition
+http://purl.obolibrary.org/obo/IAO_0000119 #definition source
+http://purl.obolibrary.org/obo/IAO_0000118 #alternative term 
+http://purl.obolibrary.org/obo/IAO_0000232 #curator note 
+http://purl.obolibrary.org/obo/IAO_0000116 #editor note
+http://purl.obolibrary.org/obo/IAO_0000112 #example of usage
+http://purl.obolibrary.org/obo/IAO_0000114 #has curation status
+http://purl.obolibrary.org/obo/IAO_0000412 #imported from
+http://purl.obolibrary.org/obo/IAO_0000117 #term editor
+
+
