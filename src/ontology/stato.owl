@@ -21,7 +21,7 @@
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
-    <Import>http://purl.obolibrary.org/obo/obi.owl</Import>
+    <Import>http://purl.obolibrary.org/obo/stato/obi_import.owl</Import>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
         <Literal datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
@@ -987,7 +987,7 @@
         <ObjectIntersectionOf>
             <Class IRI="http://purl.obolibrary.org/obo/STATO_0000252"/>
             <ObjectMinCardinality cardinality="2">
-                <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000605"/>
+                <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0001927"/>
                 <Class IRI="http://purl.obolibrary.org/obo/IAO_0000027"/>
             </ObjectMinCardinality>
         </ObjectIntersectionOf>
@@ -1041,7 +1041,7 @@
                 <ObjectIntersectionOf>
                     <Class IRI="http://purl.obolibrary.org/obo/STATO_0000087"/>
                     <ObjectMinCardinality cardinality="2">
-                        <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000605"/>
+                        <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0001927"/>
                         <Class IRI="http://purl.obolibrary.org/obo/IAO_0000027"/>
                     </ObjectMinCardinality>
                 </ObjectIntersectionOf>
@@ -1124,7 +1124,7 @@
     <EquivalentClasses>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000270"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000605"/>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0001927"/>
             <ObjectIntersectionOf>
                 <Class IRI="http://purl.obolibrary.org/obo/STATO_0000195"/>
                 <ObjectSomeValuesFrom>
@@ -1785,7 +1785,7 @@
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0500014"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000605"/>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0001927"/>
             <Class IRI="http://purl.obolibrary.org/obo/STATO_0000195"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
@@ -1810,7 +1810,7 @@
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0500015"/>
         <ObjectExactCardinality cardinality="4">
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000605"/>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0001927"/>
             <ObjectIntersectionOf>
                 <Class IRI="http://purl.obolibrary.org/obo/STATO_0000264"/>
                 <ObjectExactCardinality cardinality="1">
@@ -3432,7 +3432,7 @@
         <ObjectIntersectionOf>
             <Class IRI="http://purl.obolibrary.org/obo/STATO_0000252"/>
             <ObjectExactCardinality cardinality="2">
-                <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000605"/>
+                <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0001927"/>
                 <Class IRI="http://purl.obolibrary.org/obo/IAO_0000027"/>
             </ObjectExactCardinality>
         </ObjectIntersectionOf>
@@ -4323,7 +4323,7 @@
                 <ObjectIntersectionOf>
                     <Class IRI="http://purl.obolibrary.org/obo/STATO_0000252"/>
                     <ObjectExactCardinality cardinality="2">
-                        <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000605"/>
+                        <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0001927"/>
                         <Class IRI="http://purl.obolibrary.org/obo/IAO_0000027"/>
                     </ObjectExactCardinality>
                 </ObjectIntersectionOf>
@@ -6542,7 +6542,7 @@
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000270"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000605"/>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0001927"/>
             <ObjectIntersectionOf>
                 <Class IRI="http://purl.obolibrary.org/obo/STATO_0000195"/>
                 <ObjectSomeValuesFrom>
@@ -6555,7 +6555,7 @@
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000270"/>
         <ObjectMinCardinality cardinality="1">
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000605"/>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0001927"/>
             <Class IRI="http://purl.obolibrary.org/obo/OBI_0000750"/>
         </ObjectMinCardinality>
     </SubClassOf>
@@ -6877,7 +6877,7 @@
         <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000219"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000605"/>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0001927"/>
         <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000110"/>
     </InverseObjectProperties>
     <InverseObjectProperties>

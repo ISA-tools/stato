@@ -1,0 +1,179 @@
+[URI of the OWL(RDF/XML) output file]
+http://purl.obolibrary.org/obo/stato/obi_import.owl
+
+[Source ontology]
+#comment here
+#List of ontologies: OBI, NCBITaxon, MP, PATO, GO, DOID, IDO, CHEBI, SO, PRO, CL, ENVO
+OBI
+
+[Low level source term URIs]
+#BFO terms
+http://purl.obolibrary.org/obo/BFO_0000006 #spatial region
+http://purl.obolibrary.org/obo/BFO_0000009 #two-dimensional spatial region
+http://purl.obolibrary.org/obo/BFO_0000016 #disposition
+http://purl.obolibrary.org/obo/BFO_0000019 #quality
+http://purl.obolibrary.org/obo/BFO_0000023 #role
+http://purl.obolibrary.org/obo/BFO_0000026 #one-dimensional spatial region
+http://purl.obolibrary.org/obo/BFO_0000028 #three-dimensional spatial region
+http://purl.obolibrary.org/obo/BFO_0000040 #material entity
+http://purl.obolibrary.org/obo/BFO_0000050 #is part of
+http://purl.obolibrary.org/obo/BFO_0000051 #has part
+http://purl.obolibrary.org/obo/BFO_0000054 #reliazed in
+http://purl.obolibrary.org/obo/BFO_0000055 #realizes
+http://purl.obolibrary.org/obo/BFO_0000059 #concretizes at some time
+http://purl.obolibrary.org/obo/BFO_0000062 #preceded by
+http://purl.obolibrary.org/obo/BFO_0000063 #precedes
+http://purl.obolibrary.org/obo/BFO_0000086 #has quality at some time
+http://purl.obolibrary.org/obo/BFO_0000087 #has role at some time
+
+#IAO terms
+http://purl.obolibrary.org/obo/IAO_0000027 #data item
+http://purl.obolibrary.org/obo/IAO_0000030 #information content entity
+http://purl.obolibrary.org/obo/IAO_0000032 #scalar measurement datum
+http://purl.obolibrary.org/obo/IAO_0000037 #dot plot
+http://purl.obolibrary.org/obo/IAO_0000038 #graph
+http://purl.obolibrary.org/obo/IAO_0000055 #rule
+http://purl.obolibrary.org/obo/IAO_0000104 #plan specification
+http://purl.obolibrary.org/obo/IAO_0000109 #measurement datum
+http://purl.obolibrary.org/obo/IAO_0000100 #data set
+http://purl.obolibrary.org/obo/IAO_0000112 #example of usage
+http://purl.obolibrary.org/obo/IAO_0000114 #has curation status
+http://purl.obolibrary.org/obo/IAO_0000115 #definition
+http://purl.obolibrary.org/obo/IAO_0000116 #editor note
+http://purl.obolibrary.org/obo/IAO_0000117 #term editor
+http://purl.obolibrary.org/obo/IAO_0000118 #alternative term
+http://purl.obolibrary.org/obo/IAO_0000119 #definition source
+http://purl.obolibrary.org/obo/IAO_0000129 #version number
+http://purl.obolibrary.org/obo/IAO_0000136 #is about
+http://purl.obolibrary.org/obo/IAO_0000184 #scatter plot
+http://purl.obolibrary.org/obo/IAO_0000219 #denotes
+http://purl.obolibrary.org/obo/IAO_0000400 #cartesian spatial coordinate datum
+http://purl.obolibrary.org/obo/IAO_0000401 #one dimensional cartesian spatial coordinate datum
+http://purl.obolibrary.org/obo/IAO_0000402 #two dimensional cartesian spatial coordinate datum
+http://purl.obolibrary.org/obo/IAO_0000414 #mass measurement datum
+http://purl.obolibrary.org/obo/IAO_0000416 #time measurement datum
+http://purl.obolibrary.org/obo/IAO_0000573 #line graph
+http://purl.obolibrary.org/obo/IAO_0000578 #CRID
+http://purl.obolibrary.org/obo/IAO_0000582 #time stamped measurement datum
+http://purl.obolibrary.org/obo/IAO_0000584 #time sampled measurement data set
+
+#OBI terms
+http://purl.obolibrary.org/obo/OBI_0000010 #fluorescent reporter intensity
+http://purl.obolibrary.org/obo/OBI_0000011 #planned process
+http://purl.obolibrary.org/obo/OBI_0000066 #investigation
+http://purl.obolibrary.org/obo/OBI_0000070 #assay
+http://purl.obolibrary.org/obo/OBI_0000094 #material processing
+http://purl.obolibrary.org/obo/OBI_0000097 #participant under investigation role
+http://purl.obolibrary.org/obo/OBI_0000115 #intervention design
+http://purl.obolibrary.org/obo/OBI_0000164 #cDNA library
+http://purl.obolibrary.org/obo/OBI_0000175 #p-value
+http://purl.obolibrary.org/obo/OBI_0000181 #population
+http://purl.obolibrary.org/obo/OBI_0000185 #imaging assay
+http://purl.obolibrary.org/obo/OBI_0000250 #dye role
+http://purl.obolibrary.org/obo/OBI_0000272 #protocol
+http://purl.obolibrary.org/obo/OBI_0000295 #is_specified_input_of
+http://purl.obolibrary.org/obo/OBI_0000312 #is_specified_output_of
+http://purl.obolibrary.org/obo/OBI_0000314 #is_proxy_for
+http://purl.obolibrary.org/obo/OBI_0000427 #enzyme
+http://purl.obolibrary.org/obo/OBI_0000417 #achieves_planned_objective
+http://purl.obolibrary.org/obo/OBI_0000443 #analyte assay
+http://purl.obolibrary.org/obo/OBI_0000626 #DNA sequencing
+http://purl.obolibrary.org/obo/OBI_0000673 #statistical hypothesis test
+http://purl.obolibrary.org/obo/OBI_0000674 #center value
+http://purl.obolibrary.org/obo/OBI_0000679 #average value
+http://purl.obolibrary.org/obo/OBI_0000650 #differential expression analysis data transformation
+http://purl.obolibrary.org/obo/OBI_0000675 #statistical hypothesis test objective
+http://purl.obolibrary.org/obo/OBI_0000722 #paired-end library
+http://purl.obolibrary.org/obo/OBI_0000736 #single fragment library
+http://purl.obolibrary.org/obo/OBI_0000739 #Student's t-test
+http://purl.obolibrary.org/obo/OBI_0000744 #material sampling process
+http://purl.obolibrary.org/obo/OBI_0000750 #study design independent variable
+http://purl.obolibrary.org/obo/OBI_0000751 #study design dependent variable
+http://purl.obolibrary.org/obo/OBI_0000789 #survival rate
+http://purl.obolibrary.org/obo/OBI_0000811 #primary structure of DNA macromolecule
+http://purl.obolibrary.org/obo/OBI_0000861 #Likelihood-ratio test
+http://purl.obolibrary.org/obo/OBI_0000889 #survival curve
+http://purl.obolibrary.org/obo/OBI_0000916 #flow cytometry assay
+http://purl.obolibrary.org/obo/OBI_0000938 #categorical measurement datum
+http://purl.obolibrary.org/obo/OBI_0000963 #categorical label
+http://purl.obolibrary.org/obo/OBI_0000964 #in live cell assay
+http://purl.obolibrary.org/obo/OBI_0000984 #dose
+http://purl.obolibrary.org/obo/OBI_0001143 #labeled nucleic acid extract
+http://purl.obolibrary.org/obo/OBI_0001172 #dose response curve
+http://purl.obolibrary.org/obo/OBI_0001265 #FWER adjusted p-value
+http://purl.obolibrary.org/obo/OBI_0001271 #RNA-seq assay
+http://purl.obolibrary.org/obo/OBI_0001305 #genotype information
+http://purl.obolibrary.org/obo/OBI_0001352 #allele information
+http://purl.obolibrary.org/obo/OBI_0001404 #genetic characteristics information
+http://purl.obolibrary.org/obo/OBI_0001442 #q-value
+http://purl.obolibrary.org/obo/OBI_0001444 #genotyping design
+http://purl.obolibrary.org/obo/OBI_0001554 #rate measurement datum
+http://purl.obolibrary.org/obo/OBI_0001573 #DNA sequence data
+http://purl.obolibrary.org/obo/OBI_0001755 #selection criterion
+http://purl.obolibrary.org/obo/OBI_0001834 #drawing a conclusion
+http://purl.obolibrary.org/obo/OBI_0001927 #specifies value of
+http://purl.obolibrary.org/obo/OBI_0100026 #organism
+http://purl.obolibrary.org/obo/OBI_0200000 #data transformation
+http://purl.obolibrary.org/obo/OBI_0200191 #gene list visualization
+http://purl.obolibrary.org/obo/OBI_0200102 #regression analysis method
+http://purl.obolibrary.org/obo/OBI_0200166 #data transformation objective
+http://purl.obolibrary.org/obo/OBI_0200066 #Holm-Bonferroni family-wise error rate correction method
+http://purl.obolibrary.org/obo/OBI_0200169 #normalization data transformation
+http://purl.obolibrary.org/obo/OBI_0200176 #Fisher's exact test
+http://purl.obolibrary.org/obo/OBI_0200119 #median calculation
+http://purl.obolibrary.org/obo/OBI_0200117 #mode calculation
+http://purl.obolibrary.org/obo/OBI_0200200 #chi square test
+http://purl.obolibrary.org/obo/OBI_0200111 #data visualization
+http://purl.obolibrary.org/obo/OBI_0300311 #observation design
+http://purl.obolibrary.org/obo/OBI_0500020 #time series design
+http://purl.obolibrary.org/obo/OBI_0200201 #ANOVA
+http://purl.obolibrary.org/obo/OBI_0500003 #cross over design
+http://purl.obolibrary.org/obo/OBI_0500002 #repeated measure design
+http://purl.obolibrary.org/obo/OBI_0500000 #study design
+http://purl.obolibrary.org/obo/OBI_0500007 #randomized complete block design
+http://purl.obolibrary.org/obo/OBI_0500011 #latin square design
+http://purl.obolibrary.org/obo/OBI_0500016 #fractional factorial design
+http://purl.obolibrary.org/obo/OBI_0500017 #dye swap design
+http://purl.obolibrary.org/obo/OBI_1000029 #phage display library
+http://purl.obolibrary.org/obo/OBI_0400148 #DNA microarray
+http://purl.obolibrary.org/obo/OBI_0100064 #screening library
+http://purl.obolibrary.org/obo/OBI_0302900 #group randomization
+http://purl.obolibrary.org/obo/OBI_0000293 #has_specified_input
+http://purl.obolibrary.org/obo/OBI_0000846 #is member of organization
+http://purl.obolibrary.org/obo/OBI_0000299 #has_specified_output
+http://purl.obolibrary.org/obo/OBI_0600015 #group assignment
+http://purl.obolibrary.org/obo/OBI_0200036 #Benjamini and Hochberg false discovery rate correction method
+http://purl.obolibrary.org/obo/OBI_0200049 #Benjamini and Yekutieli false discovery rate correction method
+http://purl.obolibrary.org/obo/OBI_0200094 #logarithmic transformation
+http://purl.obolibrary.org/obo/OBI_0200194 #survival analysis data transformation
+http://purl.obolibrary.org/obo/OBI_0302903 #nucleic acid hybridization
+http://purl.obolibrary.org/obo/OBI_0500005 #matched pairs design
+http://purl.obolibrary.org/obo/OBI_0500006 #parallel group design
+http://purl.obolibrary.org/obo/OBI_0500012 #graeco latin square design
+http://purl.obolibrary.org/obo/OBI_0500013 #hyper graeco latin square design
+http://purl.obolibrary.org/obo/OBI_0500014 #factorial design
+http://purl.obolibrary.org/obo/OBI_0500015 #2x2 factorial design
+
+#ChEBI terms
+http://purl.obolibrary.org/obo/CHEBI_23367 #molecular entity
+http://purl.obolibrary.org/obo/CHEBI_33696 #nucleic acid
+
+#OGMS terms
+http://purl.obolibrary.org/obo/OGMS_0000023 #phenotype
+
+#GO terms
+http://purl.obolibrary.org/obo/GO_0010467 #gene expression
+http://purl.obolibrary.org/obo/GO_0003824 #catalytic activity
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/BFO_0000001 #entity
+
+[Source term retrieval setting]
+includeAllIntermediates
+
+[Branch extractions from source term URIs and target direct superclass URIs]
+
+[Source annotation URIs]
+includeAllAxiomsRecursively
+
+
