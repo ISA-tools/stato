@@ -2,15 +2,11 @@ package org.isatools.owlbuild;
 
 import org.semanticweb.HermiT.Reasoner;
 import org.semanticweb.owlapi.apibinding.OWLManager;
-import org.semanticweb.owlapi.io.StringDocumentTarget;
 import org.semanticweb.owlapi.model.*;
 import org.semanticweb.owlapi.reasoner.InferenceType;
 import org.semanticweb.owlapi.reasoner.OWLReasoner;
 import org.semanticweb.owlapi.reasoner.OWLReasonerFactory;
-import org.semanticweb.owlapi.util.InferredAxiomGenerator;
-import org.semanticweb.owlapi.util.InferredClassAssertionAxiomGenerator;
-import org.semanticweb.owlapi.util.InferredOntologyGenerator;
-import org.semanticweb.owlapi.util.InferredSubClassAxiomGenerator;
+import org.semanticweb.owlapi.util.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -29,10 +25,11 @@ public class OWLClassifier {
 
     }
 
-    public void classify(OWLOntology onto) {
+    public void classify(OWLOntology onto, IRI iri) {
         ontology = onto;
-        manager = onto.getOWLOntologyManager();
-
+        //manager = onto.getOWLOntologyManager();
+        //creating new manager to be able to re-use original IRI
+        manager = OWLManager.createOWLOntologyManager();
 
         System.out.println("Ontology has " + ontology.getAxioms().size() + " axioms.");
         System.out.println("Starting reasoning...");
@@ -46,12 +43,12 @@ public class OWLClassifier {
         reasoner=new Reasoner.ReasonerFactory().createReasoner(ontology);
 
 
-//        System.out.println("Checking consistency...");
-//        if(!reasoner.isConsistent()) {
-//            System.out.println("Ontology is not consistent!");
-//            return;
-//        }
-//        System.out.println("End of checking consistency...");
+        System.out.println("Checking consistency...");
+        if(!reasoner.isConsistent()) {
+            System.out.println("Ontology is not consistent!");
+            return;
+        }
+        System.out.println("End of checking consistency...");
 
         reasoner.precomputeInferences(InferenceType.CLASS_HIERARCHY);
 
@@ -76,6 +73,17 @@ public class OWLClassifier {
         gens.add(new InferredSubClassAxiomGenerator());
         gens.add(new InferredClassAssertionAxiomGenerator());
 
+//        gens.add(new InferredDataPropertyCharacteristicAxiomGenerator());
+//        gens.add(new InferredDisjointClassesAxiomGenerator());
+//        gens.add(new InferredEquivalentClassAxiomGenerator());
+//        gens.add(new InferredEquivalentDataPropertiesAxiomGenerator());
+//        gens.add(new InferredEquivalentObjectPropertyAxiomGenerator());
+//        gens.add(new InferredInverseObjectPropertiesAxiomGenerator());
+//        gens.add(new InferredObjectPropertyCharacteristicAxiomGenerator());
+//        gens.add(new InferredPropertyAssertionGenerator());
+//        gens.add(new InferredSubClassAxiomGenerator());
+//        gens.add(new InferredSubDataPropertyAxiomGenerator());
+//        gens.add(new InferredSubObjectPropertyAxiomGenerator());
 
 
         // Now get the inferred ontology generator to generate some inferred
@@ -100,10 +108,10 @@ public class OWLClassifier {
         System.out.println("Reasoning took " + seconds + " seconds.");
 
 
-
-        // Put the inferred axioms into a fresh empty ontology - note that there
-        // is nothing stopping us stuffing them back into the original asserted
-        // ontology if we wanted to do this.
+        //change IRI
+        OWLOntologyURIChanger uriChanger = new OWLOntologyURIChanger(manager);
+        List<OWLOntologyChange> list = uriChanger.getChanges(ontology, iri);
+        manager.applyChanges(list);
         classifiedOntology = ontology;
 
     }
