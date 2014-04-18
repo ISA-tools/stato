@@ -23,12 +23,12 @@
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Import>http://purl.obolibrary.org/obo/stato/obi_import.owl</Import>
     <Annotation>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/rights"/>
-        <Literal datatypeIRI="&rdf;PlainLiteral">This Ontology is distributed under a Creative Commons Attribution License - http://creativecommons.org/licenses/by/3.0/</Literal>
-    </Annotation>
-    <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
         <Literal datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/rights"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">This Ontology is distributed under a Creative Commons Attribution License - http://creativecommons.org/licenses/by/3.0/</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
@@ -868,6 +868,15 @@
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000285"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#decile"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#percentile"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#quantile"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000001"/>
@@ -4612,7 +4621,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000152"/>
-        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <Class IRI="#quantile"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000152"/>
@@ -5931,7 +5940,7 @@
                 <ObjectSomeValuesFrom>
                     <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000219"/>
                     <ObjectIntersectionOf>
-                        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000027"/>
+                        <Class IRI="#quantile"/>
                         <ObjectSomeValuesFrom>
                             <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
                             <Class IRI="http://purl.obolibrary.org/obo/STATO_0000225"/>
@@ -5950,7 +5959,7 @@
                 <ObjectSomeValuesFrom>
                     <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000219"/>
                     <ObjectIntersectionOf>
-                        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000027"/>
+                        <Class IRI="#quantile"/>
                         <ObjectSomeValuesFrom>
                             <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
                             <Class IRI="http://purl.obolibrary.org/obo/STATO_0000225"/>
@@ -6807,6 +6816,18 @@
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000417"/>
             <Class IRI="http://purl.obolibrary.org/obo/STATO_0000224"/>
         </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#decile"/>
+        <Class IRI="#quantile"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#percentile"/>
+        <Class IRI="#quantile"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#quantile"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000027"/>
     </SubClassOf>
     <DisjointClasses>
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0000115"/>
@@ -10306,16 +10327,16 @@ http://hosho.ees.hokudai.ac.jp/~kubo/Rdoc/library/vegan/html/vegan-package.html
         <Literal datatypeIRI="&rdf;PlainLiteral">Wilcoxon rank-sum test</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000076</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">rank-sum test for the comparison of two samples</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000076</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">adapted from http://udel.edu/~mcdonald/statkruskalwallis.html
 and from http://en.wikipedia.org/wiki/Mann%E2%80%93Whitney_U
 last accessed [2014-03-04]</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000032"/>
-        <IRI>http://purl.obolibrary.org/obo/STATO_0000076</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
@@ -11100,7 +11121,9 @@ The procedure involves a ranking hence the name. The absolute value of the diffe
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000094</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">The Kruskal–Wallis test is most commonly used when there is one nominal variable and one measurement variable, and the measurement variable does not meet the normality assumption of an anova. </Literal>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">The Kruskal–Wallis test is a null hypothesis statistical testing objective which  allows multiple (n&gt;=2) groups or conditions or treatments to be compared without making the assumption that values are normally distributed. The  Kruskal–Wallis test is the non-parametric equivalent of the independent samples ANOVA
+
+The Kruskal–Wallis test is most commonly used when there is one nominal variable and one measurement variable, and the measurement variable does not meet the normality assumption of an anova. </Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -11121,6 +11144,11 @@ The procedure involves a ranking hence the name. The absolute value of the diffe
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000094</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">H test</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000094</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">rank-sum test for the comparison of multiple (more than 2) samples</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
@@ -19302,6 +19330,122 @@ http://stat.ethz.ch/R-manual/R-patched/library/stats/html/Hypergeometric.html</L
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000285</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">hypergeometric test</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#decile</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#decile</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">a decile is a quantile where n=10  and which splits data into sections accrued of 10% of data, so the first decile delineates 10% of the data, the second decile delineates 20% of the data and the nineth decile, 90 % of the data</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>#decile</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>#decile</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Orlaith Burke</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>#decile</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#decile</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">STATO</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#decile</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">decile</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#percentile</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#percentile</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">a percentile is a quantile which splits data into sections accrued of 1% of data, so the first percentile delineates 1% of the data, the second quartile delineates 2% of the data and the 99th percentile, 99 % of the data</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>#percentile</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>#percentile</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Orlaith Burke</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>#percentile</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#percentile</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">STATO</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#percentile</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">percentile</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>#quantile</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>#quantile</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#quantile</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">a quantile is a data item which corresponds to specific elements x in the range of a variate X.
+the k-th n-tile P_k is that value of x, say x_k, which corresponds to a cumulative frequency of Nk/n (Kenney and Keeping 1962). If n=4, the quantity is called a quartile, and if n=100, it is called a percentile.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>#quantile</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>#quantile</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Orlaith Burke</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>#quantile</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#quantile</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Evans, M.; Hastings, N.; and Peacock, B. Statistical Distributions, 3rd ed. New York: Wiley, 2000.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#quantile</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://mathworld.wolfram.com/Quantile.html</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#quantile</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">quantile</Literal>
     </AnnotationAssertion>
     <SubAnnotationPropertyOf>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000032"/>
