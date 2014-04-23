@@ -23,12 +23,12 @@
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Import>http://purl.obolibrary.org/obo/stato/obi_import.owl</Import>
     <Annotation>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/rights"/>
-        <Literal datatypeIRI="&rdf;PlainLiteral">This Ontology is distributed under a Creative Commons Attribution License - http://creativecommons.org/licenses/by/3.0/</Literal>
-    </Annotation>
-    <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
         <Literal datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/rights"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">This Ontology is distributed under a Creative Commons Attribution License - http://creativecommons.org/licenses/by/3.0/</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
@@ -900,6 +900,15 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000295"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#STATO_0000296"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#STATO_0000297"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#STATO_0000298"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000001"/>
     </Declaration>
     <Declaration>
@@ -1177,13 +1186,16 @@
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000417"/>
             <ObjectIntersectionOf>
                 <Class IRI="http://purl.obolibrary.org/obo/OBI_0000675"/>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                    <ObjectIntersectionOf>
+                <ObjectIntersectionOf>
+                    <ObjectSomeValuesFrom>
+                        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
                         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000294"/>
+                    </ObjectSomeValuesFrom>
+                    <ObjectSomeValuesFrom>
+                        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
                         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000295"/>
-                    </ObjectIntersectionOf>
-                </ObjectSomeValuesFrom>
+                    </ObjectSomeValuesFrom>
+                </ObjectIntersectionOf>
             </ObjectIntersectionOf>
         </ObjectSomeValuesFrom>
     </EquivalentClasses>
@@ -1233,6 +1245,13 @@
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0000674"/>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000152"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/OBI_0000675"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000288"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0000679"/>
@@ -6900,6 +6919,23 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000285"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000417"/>
+            <ObjectIntersectionOf>
+                <Class IRI="http://purl.obolibrary.org/obo/OBI_0000675"/>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                    <Class IRI="#STATO_0000296"/>
+                </ObjectSomeValuesFrom>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                    <Class IRI="#STATO_0000297"/>
+                </ObjectSomeValuesFrom>
+            </ObjectIntersectionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000286"/>
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0200000"/>
     </SubClassOf>
@@ -6936,12 +6972,6 @@
             <ObjectIntersectionOf>
                 <Class IRI="http://purl.obolibrary.org/obo/OBI_0000675"/>
                 <ObjectIntersectionOf>
-                    <ObjectComplementOf>
-                        <ObjectIntersectionOf>
-                            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000294"/>
-                            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000295"/>
-                        </ObjectIntersectionOf>
-                    </ObjectComplementOf>
                     <ObjectSomeValuesFrom>
                         <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
                         <ObjectUnionOf>
@@ -6949,7 +6979,45 @@
                             <Class IRI="http://purl.obolibrary.org/obo/STATO_0000295"/>
                         </ObjectUnionOf>
                     </ObjectSomeValuesFrom>
+                    <ObjectSomeValuesFrom>
+                        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                        <ObjectComplementOf>
+                            <ObjectIntersectionOf>
+                                <Class IRI="http://purl.obolibrary.org/obo/STATO_0000294"/>
+                                <Class IRI="http://purl.obolibrary.org/obo/STATO_0000295"/>
+                            </ObjectIntersectionOf>
+                        </ObjectComplementOf>
+                    </ObjectSomeValuesFrom>
                 </ObjectIntersectionOf>
+            </ObjectIntersectionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000286"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000417"/>
+            <ObjectIntersectionOf>
+                <Class IRI="http://purl.obolibrary.org/obo/OBI_0000675"/>
+                <ObjectUnionOf>
+                    <ObjectSomeValuesFrom>
+                        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                        <ObjectIntersectionOf>
+                            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000294"/>
+                            <ObjectComplementOf>
+                                <Class IRI="http://purl.obolibrary.org/obo/STATO_0000295"/>
+                            </ObjectComplementOf>
+                        </ObjectIntersectionOf>
+                    </ObjectSomeValuesFrom>
+                    <ObjectSomeValuesFrom>
+                        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                        <ObjectIntersectionOf>
+                            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000295"/>
+                            <ObjectComplementOf>
+                                <Class IRI="http://purl.obolibrary.org/obo/STATO_0000294"/>
+                            </ObjectComplementOf>
+                        </ObjectIntersectionOf>
+                    </ObjectSomeValuesFrom>
+                </ObjectUnionOf>
             </ObjectIntersectionOf>
         </ObjectSomeValuesFrom>
     </SubClassOf>
@@ -6985,16 +7053,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000288"/>
-        <ObjectIntersectionOf>
-            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000065"/>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <ObjectIntersectionOf>
-                    <Class IRI="http://purl.obolibrary.org/obo/STATO_0000294"/>
-                    <Class IRI="http://purl.obolibrary.org/obo/STATO_0000295"/>
-                </ObjectIntersectionOf>
-            </ObjectSomeValuesFrom>
-        </ObjectIntersectionOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000065"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000289"/>
@@ -7092,6 +7151,39 @@
             <Class IRI="http://purl.obolibrary.org/obo/STATO_0000255"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#STATO_0000296"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000295"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#STATO_0000297"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000294"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#STATO_0000298"/>
+        <Class IRI="http://purl.obolibrary.org/obo/OBI_0200000"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#STATO_0000298"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
+            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000053"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#STATO_0000298"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000299"/>
+            <Class IRI="http://purl.obolibrary.org/obo/OBI_0000175"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#STATO_0000298"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000417"/>
+            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000224"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
     <DisjointClasses>
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0000115"/>
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0300311"/>
@@ -7115,6 +7207,10 @@
     <DisjointClasses>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000251"/>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000252"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000294"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000295"/>
     </DisjointClasses>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000846"/>
@@ -17563,7 +17659,7 @@ http://stamash.org/kendalls-tau-correlation/</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000241</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">q-q plot or quantile-quantile plot is the output of a graphical method for comparing two probability distributions by plotting their quantiles against each other</Literal>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Q-Q plot or quantile-quantile plot is the output of a graphical method for comparing two probability distributions by plotting their quantiles against each other</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000116"/>
@@ -17606,7 +17702,7 @@ http://stat.ethz.ch/R-manual/R-patched/library/stats/html/qqnorm.html</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000241</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">q-q plot</Literal>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Q-Q plot</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
@@ -19575,6 +19671,12 @@ Rivals I1, Personnaz L, Taing L, Potier MC.
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">hypergeometric test is a null hypothesis test which evaluates if a random variable follows a hypergeometric distribution. It is a test of goodness of fit to that distribution. The test is suited for situation aimed at assessing cases of sampling from a finite set without replacements. For instance, testing for enrichment or depletion of elements (e.g GO categories, genes)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000116"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000285</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Added following a term request by Chris Mungall:
+https://github.com/ISA-tools/stato/issues/6</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000285</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
@@ -19620,6 +19722,12 @@ http://stat.ethz.ch/R-manual/R-patched/library/stats/html/Hypergeometric.html</L
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">a one-tailed test is a statistical test which, assuming an unskewed probability distribution, allocates all of the significance level to evaluate only one hypothesis to explain a difference.
 The one-tailed test provides more power to detect an effect in one direction by not testing the effect in the other direction.
 one-tailed test should be preceded by two-tailed test in order to avoid missing out on detecting alternate effect explaining an observed difference. </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000116"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000286</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Added following a term request by Chris Mungall:
+https://github.com/ISA-tools/stato/issues/6</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -19671,6 +19779,12 @@ http://www.ats.ucla.edu/stat/mult_pkg/faq/general/tail_tests.htm</Literal>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000287</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">a two tailed test is a statistical test which assess the null hypothesis of absence of difference assuming a symmetric (not skewed) underlying probability distribution by allocating half of the significance level selected to each of the direction of change which could explain a difference (for example, a difference can be an excess or a loss).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000116"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000287</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Added following a term request by Chris Mungall:
+https://github.com/ISA-tools/stato/issues/6</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -19928,14 +20042,213 @@ the k-th n-tile P_k is that value of x, say x_k, which corresponds to a cumulati
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">percentile</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000294</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000123</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000294</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">absence of negative difference hypothesis is a hypothesis which assumes that a difference  significantly less than a threshold does not exist.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000294</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000294</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Orlaith Burke</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000294</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000294</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">STATO</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000294</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">absence of negative difference hypothesis</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000295</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000123</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000295</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">absence of negative difference hypothesis is a hypothesis which assumes that a difference significantly greater than a threshold does not exist.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000295</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000295</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Orlaith Burke</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000295</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000295</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">STATO</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000295</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">absence of positive difference hypothesis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>#STATO_0000296</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000123</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#STATO_0000296</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">absence of depletion difference hypothesis is a hypothesis which assumes that the representation of an element significantly greater than a threshold does not exist.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>#STATO_0000296</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>#STATO_0000296</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Orlaith Burke</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>#STATO_0000296</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
+        <IRI>#STATO_0000296</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">absence of over representation hypothesis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#STATO_0000296</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">STATO</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#STATO_0000296</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">absence of enrichment hypothesis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>#STATO_0000297</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000123</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#STATO_0000297</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">absence of depletion difference hypothesis is a hypothesis which assumes that the representation of an element significantly less than a threshold does not exist.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>#STATO_0000297</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>#STATO_0000297</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Orlaith Burke</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>#STATO_0000297</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
+        <IRI>#STATO_0000297</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">absence of under representation hypothesis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#STATO_0000297</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">STATO</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#STATO_0000297</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">absence of depletion hypothesis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>#STATO_0000298</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#STATO_0000298</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">a binomial test is a statistical hypothesis test which evaluates if the observations made about a Bernoulli experiment , that is an experiment which tests the statistical significance of deviations from a theoretically expected distribution (the binomial distribution) of observations into 2 categories. It is a goodness of fit test.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000116"/>
+        <IRI>#STATO_0000298</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Added following a term request by Chris Mungall:
+https://github.com/ISA-tools/stato/issues/6</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>#STATO_0000298</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>#STATO_0000298</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Orlaith Burke</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>#STATO_0000298</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#STATO_0000298</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">adapted from:
+
+http://en.wikipedia.org/wiki/Binomial_test
+ and
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000032"/>
+        <IRI>#STATO_0000298</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">binomial test</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
+        <IRI>#STATO_0000298</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">binom.test(x, n, p = 0.5,
+           alternative = c(&quot;two.sided&quot;, &quot;less&quot;, &quot;greater&quot;),
+           conf.level = 0.95)
+
+http://stat.ethz.ch/R-manual/R-patched/library/stats/html/binom.test.html</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#STATO_0000298</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">exact binomial test</Literal>
     </AnnotationAssertion>
     <SubAnnotationPropertyOf>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000032"/>
