@@ -23,12 +23,12 @@
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Import>http://purl.obolibrary.org/obo/stato/obi_import.owl</Import>
     <Annotation>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
-    </Annotation>
-    <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/rights"/>
         <Literal datatypeIRI="&rdf;PlainLiteral">This Ontology is distributed under a Creative Commons Attribution License - http://creativecommons.org/licenses/by/3.0/</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
@@ -19835,6 +19835,12 @@ http://www.ats.ucla.edu/stat/mult_pkg/faq/general/tail_tests.htm</Literal>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">absence of difference hypothesis</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000289</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">let&apos;s consider an experiment evaluating 2 compounds (aspirin &amp; ibuprofen)  at 3 distinct dose levels (low, medium, high) and 4 time points post exposure (0h, 6h, 12h, 24h). Assuming the treatments are applied only once (no replication), the number of observation in a full factorial design is 2 x 3 x 4 = 24 so the design matrix would have 24 rows and 3 columns (1 per factor (independent variable).
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000289</IRI>
         <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
@@ -19842,7 +19848,9 @@ http://www.ats.ucla.edu/stat/mult_pkg/faq/general/tail_tests.htm</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000289</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">a design matrix is an information content entity which denotes a study design, is part of a model and is used as input to statistical modeling.
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">a design matrix is an information content entity which denotes a study design. The design matrix is a n by m matrix where n the number of rows, corresponds to the number of observations (4 rows if quadruplicates) and where m, the number of columns corresponds to the number of independent variables. Each element in the matrix correspond to a discretized value representing one of the factor levels for a given factor.
+A design matrix can be used as input to statistical modeling or statistical analysis.
+
 The design matrix contains data on the independent variables (also called explanatory variables) in statistical models which attempt to explain observed data on a response variable (often called a dependent variable) in terms of the explanatory variables. The theory relating to such models makes substantial use of matrix manipulations involving the design matrix: see for example linear regression. A notable feature of the concept of a design matrix is that it is able to represent a number of different experimental designs and statistical models, e.g., ANOVA, ANCOVA, and linear regression</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -19874,7 +19882,13 @@ The design matrix contains data on the independent variables (also called explan
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000289</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">adapted from:
-http://en.wikipedia.org/wiki/Design_matrix</Literal>
+
+Design of Experiments: Principles and Applications
+ edited by Lennart Eriksson, 1999-2008 Umetrics. ISBN-13:978-91-973730-4-3
+
+and 
+http://en.wikipedia.org/wiki/Design_matrix
+[last accessed: 22-05-2014]</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
@@ -19893,12 +19907,17 @@ http://stat.ethz.ch/R-manual/R-patched/library/stats/html/model.matrix.html
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000290</IRI>
-        <IRI>http://purl.obolibrary.org/obo/IAO_0000428</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000290</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A contrast is a data item which is the output of a linear combination of 2 or more factor level means with coefficients that sum to zero.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000116"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000290</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Term request by Nolan Nichols via https://github.com/ISA-tools/stato/issues/9</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
