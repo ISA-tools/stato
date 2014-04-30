@@ -4504,10 +4504,18 @@
     <owl:Class rdf:about="&obo;OBI_0000673">
         <rdfs:label xml:lang="en">statistical hypothesis test</rdfs:label>
         <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000417"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBI_0000675"/>
-            </owl:Restriction>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                        <owl:someValuesFrom rdf:resource="&obo;OBI_0000175"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;OBI_0000417"/>
+                        <owl:someValuesFrom rdf:resource="&obo;OBI_0000675"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;OBI_0200000"/>
         <obo:IAO_0000117 rdf:datatype="&xsd;string">James Malone</obo:IAO_0000117>

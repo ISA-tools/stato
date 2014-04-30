@@ -7443,6 +7443,11 @@
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000032"/>
         <IRI>http://purl.obolibrary.org/obo/OBI_0000673</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Null Hypothesis Statistical Testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000032"/>
+        <IRI>http://purl.obolibrary.org/obo/OBI_0000673</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">statistical hypothesis testing</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
