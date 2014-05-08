@@ -23,12 +23,12 @@
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Import>http://purl.obolibrary.org/obo/stato/obi_import.owl</Import>
     <Annotation>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/rights"/>
-        <Literal datatypeIRI="&rdf;PlainLiteral">This Ontology is distributed under a Creative Commons Attribution License - http://creativecommons.org/licenses/by/3.0/</Literal>
-    </Annotation>
-    <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
         <Literal datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/rights"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">This Ontology is distributed under a Creative Commons Attribution License - http://creativecommons.org/licenses/by/3.0/</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
@@ -12727,7 +12727,13 @@ last accessed:
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000119</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">model parameter estimation is a data transformation part of a regression analysis which applies specific mathematical transformation in order produced estimates on the parameter specified by the model based on the data used as input.</Literal>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">model parameter estimation is a data transformation that finds parameter values (the model parameter estimates) most compatible with the data as judged by the model.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000116"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000119</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">textual definition modified following contributiong by Thomas Nichols:
+https://github.com/ISA-tools/stato/issues/18</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -13787,6 +13793,11 @@ http://stat.ethz.ch/R-manual/R-patched/library/stats/html/ftable.html</Literal>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Bayesian model selection</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000144</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">for example , model parameter estimates could be  produced using  regression analysis  (used in a model estimation process) , which attempts to express the response variable in terms of function of predictor variable and model parameters.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000144</IRI>
         <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
@@ -13794,7 +13805,13 @@ http://stat.ethz.ch/R-manual/R-patched/library/stats/html/ftable.html</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000144</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">a model parameter estimate is a data item which results from a model parameter estimation process performed during a regression analysis which attempts to express the response variable in terms of function of predictor variable and model parameters.</Literal>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">a model parameter estimate is a data item which results from a model parameter estimation process.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000116"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000144</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">textual definition modified following contributiong by Thomas Nichols:
+https://github.com/ISA-tools/stato/issues/18</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
