@@ -20133,7 +20133,7 @@ http://www.ats.ucla.edu/stat/mult_pkg/faq/general/tail_tests.htm</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000289</IRI>
-        <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -20197,7 +20197,7 @@ http://stat.ethz.ch/R-manual/R-patched/library/stats/html/model.matrix.html
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000290</IRI>
-        <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -20679,6 +20679,11 @@ last accessed: 2014-05-06</Literal>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">t-test for independent means assuming unequal variance</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>#covariance</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>#covariance</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">The covariance is a measurement data item about the strength of correlation between a set (2 or more) of random variables.
@@ -20721,6 +20726,14 @@ http://mathworld.wolfram.com/Covariance.html</Literal>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000032"/>
         <IRI>#covariance</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">covariance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
+        <IRI>#covariance</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">cov(x, y = NULL, use = &quot;everything&quot;, method = c(&quot;pearson&quot;, &quot;kendall&quot;, &quot;spearman&quot;))
+
+from:
+http://stat.ethz.ch/R-manual/R-patched/library/stats/html/cor.html</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
