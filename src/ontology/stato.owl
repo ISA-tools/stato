@@ -23,12 +23,12 @@
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Import>http://purl.obolibrary.org/obo/stato/obi_import.owl</Import>
     <Annotation>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
-    </Annotation>
-    <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/rights"/>
         <Literal datatypeIRI="&rdf;PlainLiteral">This Ontology is distributed under a Creative Commons Attribution License - http://creativecommons.org/licenses/by/3.0/</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
@@ -20011,7 +20011,7 @@ http://stat.ethz.ch/R-manual/R-patched/library/stats/html/Hypergeometric.html</L
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000286</IRI>
-        <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -20070,7 +20070,7 @@ http://www.ats.ucla.edu/stat/mult_pkg/faq/general/tail_tests.htm</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000287</IRI>
-        <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -20430,17 +20430,26 @@ the k-th n-tile P_k is that value of x, say x_k, which corresponds to a cumulati
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000299</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Evaluation of statistical inference on empirical resting state fMRI.
+IEEE Trans Biomed Eng. 2014 Apr;61(4):1091-9. doi: 10.1109/TBME.2013.2294013.
+
+http://www.ncbi.nlm.nih.gov/pubmed/24658234</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000299</IRI>
-        <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000299</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">statistical inference is a process of drawing conclusions following data analysis using statistical methods (statistical tests) and evaluating whether to reject or accept null hypothesis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000116"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000299</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Added following a term request by Nolan Nichols:
+https://github.com/ISA-tools/stato/issues/12</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
