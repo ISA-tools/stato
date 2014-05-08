@@ -906,6 +906,9 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000300"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000301"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#STATO_0000296"/>
     </Declaration>
     <Declaration>
@@ -916,9 +919,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="#Welch_t-test"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#covariance"/>
     </Declaration>
     <Declaration>
         <Class IRI="#t-test-independent-means"/>
@@ -4508,7 +4508,7 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000142"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000101"/>
-            <Class IRI="#covariance"/>
+            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000301"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -7263,6 +7263,24 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000184"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000301"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000109"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000301"/>
+        <ObjectMinCardinality cardinality="2">
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
+            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000230"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000301"/>
+        <ObjectExactCardinality cardinality="2">
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
+            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000258"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#STATO_0000296"/>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000295"/>
     </SubClassOf>
@@ -7365,24 +7383,6 @@
                     <Class IRI="http://purl.obolibrary.org/obo/STATO_0000193"/>
                 </ObjectSomeValuesFrom>
             </ObjectIntersectionOf>
-        </ObjectExactCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#covariance"/>
-        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000109"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#covariance"/>
-        <ObjectMinCardinality cardinality="2">
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
-            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000230"/>
-        </ObjectMinCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#covariance"/>
-        <ObjectExactCardinality cardinality="2">
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
-            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000258"/>
         </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
@@ -20146,7 +20146,7 @@ The design matrix contains data on the independent variables (also called explan
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000116"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000289</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Term request by Nolan Nichols via https://github.com/ISA-tools/stato/issues/9</Literal>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Added following a term request by Nolan Nichols: https://github.com/ISA-tools/stato/issues/9</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -20488,6 +20488,68 @@ https://github.com/ISA-tools/stato/issues/12</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000301</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000301</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">The covariance is a measurement data item about the strength of correlation between a set (2 or more) of random variables.
+The covariance is obtained by forming:
+cov(X,Y)=E([X-E(X)][Y-E(Y)] where E(X), E(Y) is the expected value (mean) of variable X and Y respectively.
+
+covariance is symmetric so cov(X,Y)=cov(Y,X).
+
+The covariance is usefull when looking at the variance of the sum of the 2 random variables since:
+var(X+Y) = var(X) +var(Y) +2cov(X,Y)
+
+The covariance cov(x,y) is used to obtain the coefficient of correlation cor(x,y) by normalizing (dividing) cov(x,y) but the product of the standard deviations of x and y.
+
+
+
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000301</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000301</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Orlaith Burke</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000301</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000301</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">adapted from:
+http://mathworld.wolfram.com/Covariance.html</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000032"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000301</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">covariance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000301</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">cov(x, y = NULL, use = &quot;everything&quot;, method = c(&quot;pearson&quot;, &quot;kendall&quot;, &quot;spearman&quot;))
+
+from:
+http://stat.ethz.ch/R-manual/R-patched/library/stats/html/cor.html</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000301</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">covariance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
         <IRI>#STATO_0000296</IRI>
         <IRI>http://purl.obolibrary.org/obo/IAO_0000123</IRI>
     </AnnotationAssertion>
@@ -20677,68 +20739,6 @@ last accessed: 2014-05-06</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Welch_t-test</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">t-test for independent means assuming unequal variance</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
-        <IRI>#covariance</IRI>
-        <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>#covariance</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">The covariance is a measurement data item about the strength of correlation between a set (2 or more) of random variables.
-The covariance is obtained by forming:
-cov(X,Y)=E([X-E(X)][Y-E(Y)] where E(X), E(Y) is the expected value (mean) of variable X and Y respectively.
-
-covariance is symmetric so cov(X,Y)=cov(Y,X).
-
-The covariance is usefull when looking at the variance of the sum of the 2 random variables since:
-var(X+Y) = var(X) +var(Y) +2cov(X,Y)
-
-The covariance cov(x,y) is used to obtain the coefficient of correlation cor(x,y) by normalizing (dividing) cov(x,y) but the product of the standard deviations of x and y.
-
-
-
-</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#covariance</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#covariance</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Orlaith Burke</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#covariance</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
-        <IRI>#covariance</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">adapted from:
-http://mathworld.wolfram.com/Covariance.html</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000032"/>
-        <IRI>#covariance</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">covariance</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
-        <IRI>#covariance</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">cov(x, y = NULL, use = &quot;everything&quot;, method = c(&quot;pearson&quot;, &quot;kendall&quot;, &quot;spearman&quot;))
-
-from:
-http://stat.ethz.ch/R-manual/R-patched/library/stats/html/cor.html</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#covariance</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">covariance</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
