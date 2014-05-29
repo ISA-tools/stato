@@ -23,12 +23,20 @@
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Import>http://purl.obolibrary.org/obo/stato/obi_import.owl</Import>
     <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/rights"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">This Ontology is distributed under a Creative Commons Attribution License - http://creativecommons.org/licenses/by/3.0/</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://usefulinc.com/ns/doap#bug-database"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">https://github.com/ISA-tools/stato/issues</Literal>
+    </Annotation>
+    <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
         <Literal datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
     </Annotation>
     <Annotation>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/rights"/>
-        <Literal datatypeIRI="&rdf;PlainLiteral">This Ontology is distributed under a Creative Commons Attribution License - http://creativecommons.org/licenses/by/3.0/</Literal>
+        <AnnotationProperty IRI="http://usefulinc.com/ns/doap#mailing-list"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">stat-ontology@googlegroups.com</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
@@ -49,6 +57,10 @@
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
         <Literal datatypeIRI="&rdf;PlainLiteral">STATO is the statistical methods ontology. It contains concepts and properties related to statistical methods, probability distributions and other concepts related to statistical analysis, including relationships to study designs and plots.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://usefulinc.com/ns/doap#homepage"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">http://isa-tools.github.io/stato/</Literal>
     </Annotation>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000002"/>
@@ -903,6 +915,27 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000301"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000302"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000303"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000304"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000305"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000306"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000307"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000308"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#STATO_0000296"/>
     </Declaration>
     <Declaration>
@@ -910,12 +943,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="#STATO_0000298"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Welch_t-test"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#t-test-independent-means"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000001"/>
@@ -959,6 +986,20 @@
     <Declaration>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
     </Declaration>
+    <EquivalentClasses>
+        <Class IRI="http://purl.obolibrary.org/obo/OBI_0000739"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
+            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000059"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://purl.obolibrary.org/obo/OBI_0000739"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
+            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000176"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0200201"/>
         <ObjectIntersectionOf>
@@ -1340,13 +1381,6 @@
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000299"/>
             <Class IRI="http://purl.obolibrary.org/obo/OBI_0000175"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/OBI_0000739"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000417"/>
-            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000255"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -3751,7 +3785,14 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000095"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
-            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000227"/>
+            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000059"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000095"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
+            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000176"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -3773,6 +3814,13 @@
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000417"/>
             <Class IRI="http://purl.obolibrary.org/obo/STATO_0000253"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000095"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000102"/>
+            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000278"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -7034,6 +7082,13 @@
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000286"/>
         <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000299"/>
+            <Class IRI="http://purl.obolibrary.org/obo/OBI_0000175"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000286"/>
+        <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000417"/>
             <ObjectIntersectionOf>
                 <Class IRI="http://purl.obolibrary.org/obo/OBI_0000675"/>
@@ -7118,6 +7173,13 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000287"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000299"/>
+            <Class IRI="http://purl.obolibrary.org/obo/OBI_0000175"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000288"/>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000065"/>
     </SubClassOf>
@@ -7169,7 +7231,7 @@
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000290"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000219"/>
             <ObjectIntersectionOf>
                 <Class IRI="http://purl.obolibrary.org/obo/OBI_0000679"/>
                 <ObjectSomeValuesFrom>
@@ -7273,6 +7335,191 @@
         </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000302"/>
+        <Class IRI="http://purl.obolibrary.org/obo/OBI_0200000"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000302"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
+            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000059"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000302"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
+            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000176"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000302"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000299"/>
+            <Class IRI="http://purl.obolibrary.org/obo/OBI_0000175"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000303"/>
+        <Class IRI="http://purl.obolibrary.org/obo/OBI_0200000"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000303"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
+            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000053"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000303"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
+            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000059"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000303"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
+            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000176"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000303"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000299"/>
+            <Class IRI="http://purl.obolibrary.org/obo/OBI_0000175"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000303"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000417"/>
+            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000255"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000303"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
+            <ObjectIntersectionOf>
+                <Class IRI="http://purl.obolibrary.org/obo/OBI_0000751"/>
+                <Class IRI="http://purl.obolibrary.org/obo/STATO_0000251"/>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000205"/>
+                    <ObjectIntersectionOf>
+                        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000019"/>
+                        <DataHasValue>
+                            <DataProperty IRI="http://purl.obolibrary.org/obo/STATO_0000129"/>
+                            <Literal datatypeIRI="&xsd;boolean">true</Literal>
+                        </DataHasValue>
+                    </ObjectIntersectionOf>
+                </ObjectSomeValuesFrom>
+            </ObjectIntersectionOf>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000303"/>
+        <ObjectExactCardinality cardinality="2">
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
+            <ObjectIntersectionOf>
+                <Class IRI="http://purl.obolibrary.org/obo/OBI_0000679"/>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                    <Class IRI="http://purl.obolibrary.org/obo/STATO_0000193"/>
+                </ObjectSomeValuesFrom>
+            </ObjectIntersectionOf>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000304"/>
+        <Class IRI="http://purl.obolibrary.org/obo/OBI_0200000"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000304"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
+            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000053"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000304"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
+            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000059"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000304"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
+            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000176"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000304"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000299"/>
+            <Class IRI="http://purl.obolibrary.org/obo/OBI_0000175"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000304"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000417"/>
+            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000255"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000304"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
+            <ObjectIntersectionOf>
+                <Class IRI="http://purl.obolibrary.org/obo/OBI_0000751"/>
+                <Class IRI="http://purl.obolibrary.org/obo/STATO_0000251"/>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000205"/>
+                    <ObjectIntersectionOf>
+                        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000019"/>
+                        <DataHasValue>
+                            <DataProperty IRI="http://purl.obolibrary.org/obo/STATO_0000129"/>
+                            <Literal datatypeIRI="&xsd;boolean">true</Literal>
+                        </DataHasValue>
+                    </ObjectIntersectionOf>
+                </ObjectSomeValuesFrom>
+            </ObjectIntersectionOf>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000304"/>
+        <ObjectExactCardinality cardinality="2">
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
+            <ObjectIntersectionOf>
+                <Class IRI="http://purl.obolibrary.org/obo/OBI_0000679"/>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                    <Class IRI="http://purl.obolibrary.org/obo/STATO_0000193"/>
+                </ObjectSomeValuesFrom>
+            </ObjectIntersectionOf>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000305"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000290"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000306"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000290"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000307"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000290"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000308"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000290"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#STATO_0000296"/>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000295"/>
     </SubClassOf>
@@ -7311,136 +7558,6 @@
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000417"/>
             <Class IRI="http://purl.obolibrary.org/obo/STATO_0000224"/>
         </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Welch_t-test"/>
-        <Class IRI="http://purl.obolibrary.org/obo/OBI_0200000"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Welch_t-test"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
-            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000053"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Welch_t-test"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
-            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000059"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Welch_t-test"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000299"/>
-            <Class IRI="http://purl.obolibrary.org/obo/OBI_0000175"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Welch_t-test"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000417"/>
-            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000255"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Welch_t-test"/>
-        <ObjectMinCardinality cardinality="1">
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
-            <ObjectIntersectionOf>
-                <Class IRI="http://purl.obolibrary.org/obo/OBI_0000751"/>
-                <Class IRI="http://purl.obolibrary.org/obo/STATO_0000251"/>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000205"/>
-                    <ObjectIntersectionOf>
-                        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000019"/>
-                        <DataHasValue>
-                            <DataProperty IRI="http://purl.obolibrary.org/obo/STATO_0000129"/>
-                            <Literal datatypeIRI="&xsd;boolean">true</Literal>
-                        </DataHasValue>
-                    </ObjectIntersectionOf>
-                </ObjectSomeValuesFrom>
-            </ObjectIntersectionOf>
-        </ObjectMinCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Welch_t-test"/>
-        <ObjectExactCardinality cardinality="2">
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
-            <ObjectIntersectionOf>
-                <Class IRI="http://purl.obolibrary.org/obo/OBI_0000679"/>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                    <Class IRI="http://purl.obolibrary.org/obo/STATO_0000193"/>
-                </ObjectSomeValuesFrom>
-            </ObjectIntersectionOf>
-        </ObjectExactCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#t-test-independent-means"/>
-        <Class IRI="http://purl.obolibrary.org/obo/OBI_0200000"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#t-test-independent-means"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
-            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000053"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#t-test-independent-means"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
-            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000059"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#t-test-independent-means"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000299"/>
-            <Class IRI="http://purl.obolibrary.org/obo/OBI_0000175"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#t-test-independent-means"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000417"/>
-            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000255"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#t-test-independent-means"/>
-        <ObjectMinCardinality cardinality="1">
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
-            <ObjectIntersectionOf>
-                <Class IRI="http://purl.obolibrary.org/obo/OBI_0000751"/>
-                <Class IRI="http://purl.obolibrary.org/obo/STATO_0000251"/>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000205"/>
-                    <ObjectIntersectionOf>
-                        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000019"/>
-                        <DataHasValue>
-                            <DataProperty IRI="http://purl.obolibrary.org/obo/STATO_0000129"/>
-                            <Literal datatypeIRI="&xsd;boolean">true</Literal>
-                        </DataHasValue>
-                    </ObjectIntersectionOf>
-                </ObjectSomeValuesFrom>
-            </ObjectIntersectionOf>
-        </ObjectMinCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#t-test-independent-means"/>
-        <ObjectExactCardinality cardinality="2">
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
-            <ObjectIntersectionOf>
-                <Class IRI="http://purl.obolibrary.org/obo/OBI_0000679"/>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                    <Class IRI="http://purl.obolibrary.org/obo/STATO_0000193"/>
-                </ObjectSomeValuesFrom>
-            </ObjectIntersectionOf>
-        </ObjectExactCardinality>
     </SubClassOf>
     <DisjointClasses>
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0000115"/>
@@ -11793,6 +11910,11 @@ http://stat.ethz.ch/R-manual/R-patched/library/stats/html/kruskal.test.html</Lit
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000032"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000095</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">t-test for dependent means</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000032"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000095</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">t-test for repeated measures</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
@@ -20099,12 +20221,17 @@ http://stat.ethz.ch/R-manual/R-patched/library/stats/html/model.matrix.html
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000290</IRI>
-        <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000428</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000290</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A contrast is a data item which is the output of a linear combination of 2 or more factor level means with coefficients that sum to zero.</Literal>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">a contrast is used to define a comparison between 2 or more means. 
+it is the set of coefficients used to specify a comparison.
+when the sum of these coefficients is null, the contrast is said to be orthogonal.
+
+old definition now deprecated:
+A contrast is a data item which is the output of a linear combination of 2 or more factor level means with coefficients that sum to zero.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000116"/>
@@ -20452,6 +20579,328 @@ http://stat.ethz.ch/R-manual/R-patched/library/stats/html/cor.html</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000302</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">one sample t-test is a kind of Student&apos;s t-test which evaluates if a given sample can be reasonably assumed to be taken from the population.
+The test compares the sample statistic (m) to the population parameter (M).
+
+The one sample t-test is the small sample analog of the z test, which is suitable for large samples.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000302</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000302</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Orlaith Burke</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000302</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000302</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">adapted from various sources, including:
+
+Practical Statistics for Medical Research by D.Altman.
+ISBN: 0-412-27630-5
+
+http://www.psychology.emory.edu/clinical/bliwise/Tutorials/TOM/meanstests/tone.htm</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000032"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000302</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">one sample t-test</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000302</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000302</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">one sample t-test</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000303</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000303</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">two sample t-test is a null hypothesis statistical test which is used to reject or accept the hypothesis of absence of difference between the means over 2 randomly sampled populations.
+It uses a t-distribution for the test and assumes that the variables in the population are normally distributed and with equal variances.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000303</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000303</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Orlaith Burke</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000303</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000303</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">two sample t-test</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000303</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">adapted from:
+http://en.wikipedia.org/wiki/Student&apos;s_t-test#Independent_.28unpaired.29_samples
+
+and from:
+http://www.psychology.emory.edu/clinical/bliwise/Tutorials/TOM/meanstests/tind.htm
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000032"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000303</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">t-test for independent means assuming equal variance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000303</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">two sample t-test with equal variance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000304</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000304</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Welch t-test is a two sample t-test used when the variances of the 2 populations/samples are thought to be unequal (homoskedasticity hypothesis not verified). In this version of the two-sample t-test, the denominator used to form the t-statistics, does not rely on a &apos;pooled variance&apos; estimate.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000304</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000304</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Orlaith Burke</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000304</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000304</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Welsh t-test</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000304</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Welch, B. L. (1947). &quot;The generalization of &quot;Student&apos;s&quot; problem when several different population variances are involved&quot;. Biometrika 34 (1–2): 28–35. doi:10.1093/biomet/34.1-2.28</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000304</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">adapted from wikipedia:
+http://en.wikipedia.org/wiki/Welch&apos;s_t_test
+
+last accessed: 2014-05-06</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000032"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000304</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">t-test for independent means assuming unequal variance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000304</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">two sample t-test with unequal variance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000305</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000428</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000305</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">a helmert contrast is a contrast in which the coefficients for the Helmert regressors compare each level with the average of the “preceding” ones</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000305</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000305</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Orlaith Burke</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000305</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000305</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://www.clayford.net/statistics/tag/helmert-contrasts/
+
+An R and S-Plus Companion to Applied Regression. John Fox
+ISBN-13: 978-0761922803</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000305</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">contr.helmert(n, contrasts = TRUE, sparse = FALSE)
+
+http://stat.ethz.ch/R-manual/R-patched/library/stats/html/contrast.html</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000305</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">helmert contrast</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000306</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000428</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000306</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000306</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Orlaith Burke</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000306</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000306</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">contr.poly(n, scores = 1:n, contrasts = TRUE, sparse = FALSE)
+from:
+http://stat.ethz.ch/R-manual/R-patched/library/stats/html/contrast.html</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000306</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">polynomial contrast</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000307</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000428</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000307</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">treatment contrast is a contrast which allows to test how linear model coefficients of categorical variables are interpreted in case where  the “first” level (aka, the baseline) is included into the intercept and all subsequent levels have a coefficient that represents their difference from the baseline.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000307</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000307</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Orlaith Burke</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000307</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000307</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">adapted from multiple sources:
+
+http://pic.dhe.ibm.com/infocenter/spssstat/v20r0m0/index.jsp?topic=%2Fcom.ibm.spss.statistics.help%2Fidh_idd_genlin_emmeans.htm
+
+http://www.clayford.net/statistics/tag/helmert-contrasts/
+
+http://www.aliquote.org/articles/tech/contrasts.html</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000307</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">contr.treatment(n, base = 1, contrasts = TRUE, sparse = FALSE)
+
+http://stat.ethz.ch/R-manual/R-patched/library/stats/html/contrast.html</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000307</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">treatment contrast</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000308</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000428</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000308</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">the sum contrast is a contrast in which each coefficient compares the corresponding level of the factor to the average of the other levels</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000308</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000308</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Orlaith Burke</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000308</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000308</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://www.clayford.net/statistics/tag/helmert-contrasts/
+
+An R and S-Plus Companion to Applied Regression. John Fox
+ISBN-13: 978-0761922803</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000308</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">contr.sum(n, contrasts = TRUE, sparse = FALSE)
+
+http://stat.ethz.ch/R-manual/R-patched/library/stats/html/contrast.html</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000308</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">sum contrast</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>#STATO_0000043</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">a false positive rate whose value is 5 per cent</Literal>
     </AnnotationAssertion>
@@ -20658,110 +21107,6 @@ http://stat.ethz.ch/R-manual/R-patched/library/stats/html/binom.test.html</Liter
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#STATO_0000298</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">exact binomial test</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
-        <IRI>#Welch_t-test</IRI>
-        <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>#Welch_t-test</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Welch t-test is a two sample t-test used when the variances of the 2 populations/samples are thought to be unequal (homoskedasticity hypothesis not verified). In this version of the two-sample t-test, the denominator used to form the t-statistics, does not rely on a &apos;pooled variance&apos; estimate.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#Welch_t-test</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#Welch_t-test</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Orlaith Burke</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#Welch_t-test</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
-        <IRI>#Welch_t-test</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Welsh t-test</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
-        <IRI>#Welch_t-test</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Welch, B. L. (1947). &quot;The generalization of &quot;Student&apos;s&quot; problem when several different population variances are involved&quot;. Biometrika 34 (1–2): 28–35. doi:10.1093/biomet/34.1-2.28</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
-        <IRI>#Welch_t-test</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">adapted from wikipedia:
-http://en.wikipedia.org/wiki/Welch&apos;s_t_test
-
-last accessed: 2014-05-06</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000032"/>
-        <IRI>#Welch_t-test</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">t-test for independent means assuming unequal variance</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#Welch_t-test</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">t-test for independent means assuming unequal variance</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
-        <IRI>#t-test-independent-means</IRI>
-        <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>#t-test-independent-means</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">two sample t-test is a null hypothesis statistical test which is used to reject or accept the hypothesis of absence of difference between the means over 2 randomly sampled populations.
-It uses a t-distribution for the test and assumes that the variables in the population are normally distributed and with equal variances.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#t-test-independent-means</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#t-test-independent-means</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Orlaith Burke</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#t-test-independent-means</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
-        <IRI>#t-test-independent-means</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">two sample t-test</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
-        <IRI>#t-test-independent-means</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">adapted from:
-http://en.wikipedia.org/wiki/Student&apos;s_t-test#Independent_.28unpaired.29_samples
-
-and from:
-http://www.psychology.emory.edu/clinical/bliwise/Tutorials/TOM/meanstests/tind.htm
-</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000032"/>
-        <IRI>#t-test-independent-means</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">t-test for independent means assuming equal variance</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#t-test-independent-means</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">t-test for independent means assuming equal variance</Literal>
     </AnnotationAssertion>
     <SubAnnotationPropertyOf>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000032"/>
