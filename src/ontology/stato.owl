@@ -11364,7 +11364,12 @@ hovPlot(y~G,data=mydata)</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000082</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">TODO</Literal>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">a fixed effect model is a statistical model which represents the observed quantities in terms of explanatory variables that are treated as if the quantities were non-random.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000116"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000082</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">PRS: this is a stub and more work is needed to reconcile conflicting definitions</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -11384,7 +11389,8 @@ hovPlot(y~G,data=mydata)</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000082</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">TO ADD</Literal>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">adapted from wikipedia:
+http://en.wikipedia.org/wiki/Fixed_effects_model</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000032"/>
@@ -12147,7 +12153,12 @@ polled on June 7th,2013</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000099</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">TODO</Literal>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">a random effect(s) model, also called a variance components model, is a kind of hierarchical linear model. It assumes that the dataset being analysed consists of a hierarchy of different populations whose differences relate to that hierarchy.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000116"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000099</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">PRS: this is a stub and more work is needed to reconcile conflicting definitions</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -12168,6 +12179,12 @@ polled on June 7th,2013</Literal>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000099</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">variance components model</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000099</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">adapted from wikipedia:
+http://en.wikipedia.org/wiki/Random_effects_model#Qualitative_description</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000032"/>
@@ -15920,7 +15937,12 @@ last accessed: 2014-03-13
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000189</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">TODO</Literal>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A mixed model is a statistical model containing both fixed effects and random effects</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000116"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000189</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">PRS: this is a stub and more work is needed to reconcile conflicting definitions</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -15940,7 +15962,7 @@ last accessed: 2014-03-13
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000189</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">TO ADD</Literal>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">adapted from wikipedia</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000032"/>
