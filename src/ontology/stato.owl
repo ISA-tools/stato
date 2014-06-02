@@ -8085,9 +8085,19 @@ change of label from &apos;regression analysis method&apos; to &apos;regression 
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">declares</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000002</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">digital images may be stored as electronic file in TIFF format on mass memory storage devices</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000002</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000002</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">an electronic file is an information content entity which conforms to a specification or format and which is meant to hold data and information in digital form, accessible to software agents</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -8112,7 +8122,7 @@ change of label from &apos;regression analysis method&apos; to &apos;regression 
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000002</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">file</Literal>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">electronic file</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -18871,7 +18881,7 @@ http://www.ontobee.org/browser/rdf.php?o=PCO&amp;iri=http://purl.obolibrary.org/
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000258</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">a variable specification is a data item which</Literal>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">a variable is a data item which can assume any of a set of values, either as determined by an agent or as randomly occuring through observation.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -18894,21 +18904,17 @@ http://www.ontobee.org/browser/rdf.php?o=PCO&amp;iri=http://purl.obolibrary.org/
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">STATO</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000258</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">adapted from wolfram-alpha (http://www.wolframalpha.com/input/?i=variable) definition 2.
+
+and from Oxford English Dictionary:
+http://www.oed.com/view/Entry/221514?redirectedFrom=variable#eid, definition B,1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000032"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000258</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://purl.obolibrary.org/obo/STATO_0000258</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">The type of the variable is given by the &apos;is about&apos; relationship pointing to the entity.
-
-E.g. the &apos;variable spec&apos; compound &apos;is about&apos; &apos;chemical compound&apos; (or corresponding class, eg, from CheBI).
-
-The &apos;variable spec&apos; is the &apos;data set&apos;, referring to the set of values that the variable can assume.
-
-
-</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
