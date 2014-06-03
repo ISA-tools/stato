@@ -11317,6 +11317,11 @@ hovPlot(y~G,data=mydata)</Literal>
         <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000081</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Pearson&apos;s Chi-Squared test is a statistical null hypothesis test which is used to either evaluate goodness of fit of dataset to a Chi-Squared distribution or used to test independence  of 2 categorical variables (ie absence of association between those variables).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000081</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
@@ -11337,6 +11342,16 @@ hovPlot(y~G,data=mydata)</Literal>
         <Literal datatypeIRI="&rdf;PlainLiteral">Chi2 test</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000081</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">adapted from: 
+
+http://stat.ethz.ch/R-manual/R-patched/library/stats/html/chisq.test.html
+
+and 
+http://en.wikipedia.org/wiki/Pearson&apos;s_chi-squared_test</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000032"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000081</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
@@ -11344,12 +11359,18 @@ hovPlot(y~G,data=mydata)</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000081</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">chisq.test(contingency table)</Literal>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://stat.ethz.ch/R-manual/R-patched/library/stats/html/chisq.test.html
+
+chisq.test(x, y = NULL, correct = TRUE,
+           p = rep(1/length(x), length(x)), rescale.p = FALSE,
+           simulate.p.value = FALSE, B = 2000)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000081</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">pearson.test(x)  function, where x is a numeric vector</Literal>
+        <Literal datatypeIRI="&rdf;PlainLiteral">http://www.inside-r.org/packages/cran/nortest/docs/pearson.test
+
+pearson.test(x)  function, where x is a numeric vector</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
