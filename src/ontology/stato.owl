@@ -23,16 +23,16 @@
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Import>http://purl.obolibrary.org/obo/stato/obi_import.owl</Import>
     <Annotation>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/rights"/>
-        <Literal datatypeIRI="&rdf;PlainLiteral">This Ontology is distributed under a Creative Commons Attribution License - http://creativecommons.org/licenses/by/3.0/</Literal>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://usefulinc.com/ns/doap#bug-database"/>
         <Literal datatypeIRI="&rdf;PlainLiteral">https://github.com/ISA-tools/stato/issues</Literal>
     </Annotation>
     <Annotation>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/rights"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">This Ontology is distributed under a Creative Commons Attribution License - http://creativecommons.org/licenses/by/3.0/</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://usefulinc.com/ns/doap#mailing-list"/>
@@ -8122,7 +8122,7 @@ change of label from &apos;regression analysis method&apos; to &apos;regression 
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000002</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">electronic file</Literal>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">digital file</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
