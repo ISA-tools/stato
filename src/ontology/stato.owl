@@ -11257,7 +11257,8 @@ http://hosho.ees.hokudai.ac.jp/~kubo/Rdoc/library/vegan/html/vegan-package.html
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000076</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">The Mann-Whitney U-test is a null hypothesis statistical testing procedure which allows two groups (or conditions or treatments) to be compared without making the assumption that values are normally distributed. The The Mann-Whitney test is the non-parametric equivalent of the t-test for independent samples</Literal>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">The Mann-Whitney U-test is a null hypothesis statistical testing procedure which allows two groups (or conditions or treatments) to be compared without making the assumption that values are normally distributed. 
+The Mann-Whitney test is the non-parametric equivalent of the t-test for independent samples</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -11295,6 +11296,11 @@ http://hosho.ees.hokudai.ac.jp/~kubo/Rdoc/library/vegan/html/vegan-package.html
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">adapted from http://udel.edu/~mcdonald/statkruskalwallis.html
 and from http://en.wikipedia.org/wiki/Mann%E2%80%93Whitney_U
 last accessed [2014-03-04]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000032"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000076</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Wilcoxon Rank-Sum test</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
