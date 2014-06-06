@@ -23,16 +23,16 @@
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Import>http://purl.obolibrary.org/obo/stato/obi_import.owl</Import>
     <Annotation>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/rights"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">This Ontology is distributed under a Creative Commons Attribution License - http://creativecommons.org/licenses/by/3.0/</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://usefulinc.com/ns/doap#bug-database"/>
         <Literal datatypeIRI="&rdf;PlainLiteral">https://github.com/ISA-tools/stato/issues</Literal>
     </Annotation>
     <Annotation>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/rights"/>
-        <Literal datatypeIRI="&rdf;PlainLiteral">This Ontology is distributed under a Creative Commons Attribution License - http://creativecommons.org/licenses/by/3.0/</Literal>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://usefulinc.com/ns/doap#mailing-list"/>
@@ -1738,6 +1738,13 @@
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0200201"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
+            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000069"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/OBI_0200201"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
             <Class IRI="http://purl.obolibrary.org/obo/STATO_0000204"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
@@ -2457,6 +2464,13 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000044"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
+            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000069"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000044"/>
         <ObjectMinCardinality cardinality="1">
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
             <ObjectIntersectionOf>
@@ -2534,6 +2548,13 @@
                 <Class IRI="http://purl.obolibrary.org/obo/STATO_0000080"/>
                 <Class IRI="http://purl.obolibrary.org/obo/STATO_0000083"/>
             </ObjectUnionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000045"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
+            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000069"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -2630,6 +2651,13 @@
                 <Class IRI="http://purl.obolibrary.org/obo/STATO_0000080"/>
                 <Class IRI="http://purl.obolibrary.org/obo/STATO_0000083"/>
             </ObjectUnionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000048"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
+            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000069"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -6574,6 +6602,13 @@
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000260"/>
         <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
+            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000069"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000260"/>
+        <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000417"/>
             <ObjectIntersectionOf>
                 <Class IRI="http://purl.obolibrary.org/obo/STATO_0000253"/>
@@ -9655,7 +9690,7 @@ It is calculated by dividing the sample standard deviation (i.e., the sample-bas
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000040</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">a scatter plot of log intensity ratios M = log_2(R/G) versus average log intensities A = log_2(R*G)/2, where R and G represent the fluorescence intensities in the red and green channels respectively.</Literal>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">an MA plot is a scatter plot of the log intensity ratios M = log_2(T/R) versus the average log intensities A = log_2(T*T)/2, where T and R represent the signal intensities in the test and reference channels respectively.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -9775,7 +9810,7 @@ It is calculated by dividing the sample standard deviation (i.e., the sample-bas
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000044</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">one-way anova is an analysis of variance where the difference groups being compared are associated the factor levels of only one independent variable</Literal>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">one-way anova is an analysis of variance where the different groups being compared are associated with the factor levels of only one independent variable. The null hypothesis is an absence of difference between the means calculated for each of the groups. The test assumes normality and equivariance of the data.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -9825,7 +9860,7 @@ It is calculated by dividing the sample standard deviation (i.e., the sample-bas
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000045</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">one-way anova is an analysis of variance where the difference groups being compared are associated the factor levels of exalty 2 independent variables</Literal>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">two-way anova is an analysis of variance where the different groups being compared are associated the factor levels of exatly 2 independent variables. The null hypothesis is an absence of difference between the means calculated for each of the groups. The test assumes normality and equivariance of the data.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -9960,7 +9995,7 @@ It is calculated by dividing the sample standard deviation (i.e., the sample-bas
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000048</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">multi-way anova is an analysis of variance where the difference groups being compared are associated the factor levels of more than 2 independent variables</Literal>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Multi-way anova is an analysis of variance where the difference groups being compared are associated to the factor levels of more than 2 independent variables. The null hypothesis is an absence of difference between the means calculated for each of the groups. The test assumes normality and equivariance of the data.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -11222,7 +11257,7 @@ http://hosho.ees.hokudai.ac.jp/~kubo/Rdoc/library/vegan/html/vegan-package.html
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000076</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">the Mann-Whitney U-test is a null hypothesis statistical testing objective which  allows two groups or conditions or treatments to be compared without making the assumption that values are normally distributed. The The Mann-Whitney test is the non-parametric equivalent of the independent samples t-test</Literal>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">The Mann-Whitney U-test is a null hypothesis statistical testing procedure which allows two groups (or conditions or treatments) to be compared without making the assumption that values are normally distributed. The The Mann-Whitney test is the non-parametric equivalent of the t-test for independent samples</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -12830,11 +12865,8 @@ linear regression modeling makes a number of assumptions, which includes homoske
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000112</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">a Funnel plot is a scatter plot of treatment effect versus a measure of study size and aims to provide a visual aid to detecting bias or systematic heterogeneity. 
-A symmetric inverted funnel shape arises from a ‘well-behaved’ data set, in which publication bias is unlikely. An asymmetric funnel indicates a relationship between treatment effect and study size.
-Known caveats:
-If high precision studies really are different from low precision studies with respect to effect size (e.g., due to different populations examined) a funnel plot may give a wrong impression of publication bias.[4] The appearance of the funnel plot can change quite dramatically depending on the scale on the y-axis — whether it is the inverse square error or the trial size.
-
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">a Funnel plot is a scatter plot of treatment effect versus a measure of study size and aims to provide a visual aid to detecting bias or systematic heterogeneity. A symmetric inverted funnel shape arises from a ‘well-behaved’ data set, in which publication bias is unlikely. An asymmetric funnel indicates a relationship between treatment effect and study size. 
+Known caveats: If high precision studies really are different from low precision studies with respect to effect size (e.g., due to different populations examined) a funnel plot may give a wrong impression of publication bias. The appearance of the funnel plot can change quite dramatically depending on the scale on the y-axis — whether it is the inverse square error or the trial size.
 Funnel plot was introduced by Light and Palmer in 1984.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -13380,8 +13412,8 @@ Wilkinson, Leland (1999). &quot;Dot plots&quot;. The American Statistician (Amer
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000126</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">volcano plot is a kind of scatter plot which graph the negative log of the p-value (significance) on the y-axis versus log2 of fold-change between 2 conditions on the  x-axis. 
-It is a popular method for visualizing differential occurence of variables between 2 conditions</Literal>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">volcano plot is a kind of scatter plot which graphs the negative log of the p-value (significance) on the y-axis versus log2 of fold-change between 2 conditions on the  x-axis. 
+It is a popular method for visualizing differential occurence of variables between 2 conditions.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -19007,7 +19039,7 @@ Often in medical studies, the blocking factor used is the type of institution. T
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000256</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">a manhattan plot for gwas is a kind of scatter plot used to facilitate presentation of GWAS data. Genomic coordinates are displayed along the X-axis, with the negative logarithm of the association P-value for each single nucleotide polymorphism displayed on the Y-axis.</Literal>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">a manhattan plot for gwas is a kind of scatter plot used to facilitate presentation of genome-wide association study (GWAS) data. Genomic coordinates are displayed along the X-axis, with the negative logarithm of the association P-value for each single nucleotide polymorphism displayed on the Y-axis.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -19294,7 +19326,9 @@ The variance is p*q</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000263</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Galbraith plot is a graph which display  estimates of the same quantity having differing standard errors</Literal>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Galbraith (Radial) plot is a scatter plot which can be used in the meta-analytic context to examine the data for heterogeneity. For a fixed-effects model, the plot shows the inverse of the standard errors on the horizontal axis against the individual observed effect sizes or outcomes standardized by their corresponding standard errors on the vertical axis.
+Radial plots were introduced by Rex Galbraith (1988a, 1988b, 1994).
+</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
