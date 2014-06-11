@@ -23,14 +23,6 @@
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Import>http://purl.obolibrary.org/obo/stato/obi_import.owl</Import>
     <Annotation>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/rights"/>
-        <Literal datatypeIRI="&rdf;PlainLiteral">This Ontology is distributed under a Creative Commons Attribution License - http://creativecommons.org/licenses/by/3.0/</Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty IRI="http://usefulinc.com/ns/doap#bug-database"/>
-        <Literal datatypeIRI="&rdf;PlainLiteral">https://github.com/ISA-tools/stato/issues</Literal>
-    </Annotation>
-    <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
         <Literal datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
     </Annotation>
@@ -43,16 +35,8 @@
         <Literal datatypeIRI="&rdf;PlainLiteral">Orlaith Burke</Literal>
     </Annotation>
     <Annotation>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
-        <Literal datatypeIRI="&rdf;PlainLiteral">RC1</Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/title"/>
-        <Literal datatypeIRI="&rdf;PlainLiteral">STATO: the statistical methods ontology</Literal>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/license"/>
+        <Literal datatypeIRI="&xsd;anyURI">http://creativecommons.org/licenses/by/3.0/</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
@@ -65,6 +49,26 @@
     <Annotation>
         <AnnotationProperty IRI="http://usefulinc.com/ns/doap#homepage"/>
         <Literal datatypeIRI="&rdf;PlainLiteral">http://isa-tools.github.io/stato/</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://usefulinc.com/ns/doap#bug-database"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">https://github.com/ISA-tools/stato/issues</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">RC1</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/rights"/>
+        <Literal datatypeIRI="&xsd;anyURI">This Ontology is distributed under a Creative Commons Attribution License </Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/title"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">STATO: the statistical methods ontology</Literal>
     </Annotation>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000002"/>
