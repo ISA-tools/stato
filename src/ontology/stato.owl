@@ -23,20 +23,8 @@
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Import>http://purl.obolibrary.org/obo/stato/obi_import.owl</Import>
     <Annotation>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
-    </Annotation>
-    <Annotation>
         <AnnotationProperty IRI="http://usefulinc.com/ns/doap#mailing-list"/>
         <Literal datatypeIRI="&rdf;PlainLiteral">stat-ontology@googlegroups.com</Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/contributor"/>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Chris Mungal</Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/contributor"/>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Thomas Nichols</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
@@ -59,28 +47,40 @@
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Statistical Method, Design of Experiment, Plots, Statistical Model</Literal>
     </Annotation>
     <Annotation>
-        <AnnotationProperty IRI="http://usefulinc.com/ns/doap#homepage"/>
-        <Literal datatypeIRI="&rdf;PlainLiteral">http://isa-tools.github.io/stato/</Literal>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran (http://orcid.org/0000-0003-3499-8262)</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://usefulinc.com/ns/doap#bug-database"/>
         <Literal datatypeIRI="&rdf;PlainLiteral">https://github.com/ISA-tools/stato/issues</Literal>
     </Annotation>
     <Annotation>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
-    </Annotation>
-    <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/contributor"/>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Nolan Nichols</Literal>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Thomas Nichols (http://orcid.org/0000-0002-4516-5103)</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/rights"/>
         <Literal datatypeIRI="&xsd;anyURI">This Ontology is distributed under a Creative Commons Attribution License </Literal>
     </Annotation>
     <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra (http://orcid.org/0000-0001-9853-5668)</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/contributor"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Nolan Nichols (http://orcid.org/0000-0003-1099-3328)</Literal>
+    </Annotation>
+    <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/title"/>
         <Literal datatypeIRI="&rdf;PlainLiteral">STATO: the statistical methods ontology</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/contributor"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Chris Mungall (http://orcid.org/0000-0002-6601-2165)</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://usefulinc.com/ns/doap#homepage"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">http://stato-ontology.org/</Literal>
     </Annotation>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000002"/>
