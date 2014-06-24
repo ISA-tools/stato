@@ -17145,7 +17145,7 @@ The metric has been enhanced and replaced by FPKM to better take into account sp
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000208</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">alternative hypothesis is an hyopthesis defined in a statistical which is the opposite of the null hypothesis</Literal>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">An alternative hypothesis is an hypothesis defined in a statistical test that is the opposite of the null hypothesis.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -17175,7 +17175,7 @@ The metric has been enhanced and replaced by FPKM to better take into account sp
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000208</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">alternate hypothesis</Literal>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">alternative hypothesis</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
