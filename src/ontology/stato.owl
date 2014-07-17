@@ -11346,8 +11346,7 @@ http://stat.ethz.ch/R-manual/R-patched/library/stats/html/chisq.test.html</Liter
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000074</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Cochran-Mantel-Haenzel test for repeated tests of independence is a statitiscal test which allows the comparison of two groups on a dichotomous/categorical response. It is used when the effect of the explanatory variable on the response variable is influenced by covariates that can be controlled. It is often used in observational studies where random assignment of subjects to different treatments cannot be controlled, but influencing covariates can.
-The null hypothesis is that the two nominal variables that are tested within each repetition are independent of each other. So there are 3 variables to consider:
-two categorical variables to be tested for  independence of each other, and the third variable identifies the repeats. </Literal>
+The null hypothesis is that the two nominal variables that are tested within each repetition are independent of each other. So there are 3 variables to consider: two categorical variables to be tested for independence of each other, and the third variable identifies the repeats. </Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -11365,11 +11364,6 @@ two categorical variables to be tested for  independence of each other, and the 
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
-        <IRI>http://purl.obolibrary.org/obo/STATO_0000074</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">CHM test</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000074</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">STATO adapted from wikipedia (http://en.wikipedia.org/wiki/Cochran–Mantel–Haenszel_statistics) and from the Handbook of Biological Statistics (http://udel.edu/~mcdonald/statcmh.html)</Literal>
@@ -11377,7 +11371,12 @@ two categorical variables to be tested for  independence of each other, and the 
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000032"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000074</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CHM test</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000032"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000074</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Mantel–Haenszel test</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
