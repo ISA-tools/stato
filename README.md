@@ -4,3 +4,5 @@
 
 Browse STATO in BioPortal at: http://bioportal.bioontology.org/ontologies/STATO
 
+See issues at: https://waffle.io/isa-tools/stato
+
