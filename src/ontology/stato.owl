@@ -19605,8 +19605,13 @@ http://www.oed.com/view/Entry/221514?redirectedFrom=variable#eid, definition B,1
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000260</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">repeated measure ANOVA is a kind of ANOVA specifically developed for non-independent observations as found when repeated measurements on the sample experimental unit. 
-repeated measure ANOVA is sensitive to departure of normality (evaluation using Bartlett&apos;s test), departure of sphericity (evaluation  using Mauchly&apos;test) and unbalanced groups (i.e. different sizes of sample populations).
-Repeated measure ANOVA use in case of unbalanced design is discouraged as it leads to violation of conditions of applicability</Literal>
+repeated measure ANOVA is sensitive to departure from normality (evaluation using Bartlett&apos;s test), more so in the case of unbalanced groups (i.e. different sizes of sample populations).
+Departure from sphericity (evaluation  using Mauchly&apos;test)  used to be an issue which is now handled robustly by modern tools such as R&apos;s lme4 or nlme, which accommodate dependence assumptions other than sphericity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000116"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000260</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">discussion in https://github.com/ISA-tools/stato/issues/28</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -19622,6 +19627,11 @@ Repeated measure ANOVA use in case of unbalanced design is discouraged as it lea
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000260</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000260</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Thomas Nichols</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
