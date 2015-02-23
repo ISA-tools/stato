@@ -1100,16 +1100,16 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000369"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#&apos;feasible_generalized_least_squares_estimation&apos;"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000371"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#&apos;generalized_least_squares_estimation&apos;"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000372"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#&apos;iteratively_reweighted_least_squares_estimation&apos;"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000373"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#&apos;weighted_least_squares_estimation&apos;"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000374"/>
     </Declaration>
     <Declaration>
         <Class IRI="#STATO_0000296"/>
@@ -4501,6 +4501,13 @@
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000119"/>
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0200000"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000119"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000299"/>
+            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000144"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000120"/>
@@ -8331,20 +8338,48 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#&apos;feasible_generalized_least_squares_estimation&apos;"/>
-        <Class IRI="#&apos;generalized_least_squares_estimation&apos;"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#&apos;generalized_least_squares_estimation&apos;"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000371"/>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000119"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#&apos;iteratively_reweighted_least_squares_estimation&apos;"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000371"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000050"/>
+            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000108"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000372"/>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000119"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#&apos;weighted_least_squares_estimation&apos;"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000372"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000050"/>
+            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000108"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000373"/>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000119"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000373"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000050"/>
+            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000108"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000374"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000372"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000374"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000050"/>
+            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000108"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#STATO_0000296"/>
@@ -8422,6 +8457,13 @@
     <SubClassOf>
         <Class IRI="#ordinary_least_squares_estimation"/>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000119"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ordinary_least_squares_estimation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000050"/>
+            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000108"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#regression_model"/>
@@ -24389,153 +24431,193 @@ the smaller Cp is, the better the model fit is.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
-        <IRI>#&apos;feasible_generalized_least_squares_estimation&apos;</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000371</IRI>
         <IRI>http://purl.obolibrary.org/obo/IAO_0000120</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000371</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">the weighted least squares estimation is a model parameter estimation for a linear regression model with errors that independent but have heterogeneous variance. Difficult to use use in practice, as weights must be set based on the variance which is usually unknown. If true variance is known, it is the Best Linear Unbiased Estimation (BLUE) method under these assumptions, Uniformly Minimum-Variance Unbiased Estimator (UMVUE) with addition of a Gaussian assumption.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#&apos;feasible_generalized_least_squares_estimation&apos;</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000371</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#&apos;feasible_generalized_least_squares_estimation&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Orlaith Burke</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#&apos;feasible_generalized_least_squares_estimation&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#&apos;feasible_generalized_least_squares_estimation&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Tom Nichols</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#&apos;feasible_generalized_least_squares_estimation&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">feasible generalized least squares estimation</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
-        <IRI>#&apos;generalized_least_squares_estimation&apos;</IRI>
-        <IRI>http://purl.obolibrary.org/obo/IAO_0000120</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>#&apos;generalized_least_squares_estimation&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#&apos;generalized_least_squares_estimation&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#&apos;generalized_least_squares_estimation&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Tom Nichols</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
-        <IRI>#&apos;generalized_least_squares_estimation&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://en.wikipedia.org/wiki/Generalized_least_squares</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
-        <IRI>#&apos;generalized_least_squares_estimation&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://stat.ethz.ch/R-manual/R-devel/library/nlme/html/gls.html</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#&apos;generalized_least_squares_estimation&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">generalized least squares estimation</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
-        <IRI>#&apos;iteratively_reweighted_least_squares_estimation&apos;</IRI>
-        <IRI>http://purl.obolibrary.org/obo/IAO_0000120</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>#&apos;iteratively_reweighted_least_squares_estimation&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#&apos;iteratively_reweighted_least_squares_estimation&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#&apos;iteratively_reweighted_least_squares_estimation&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Tom Nichols</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
-        <IRI>#&apos;iteratively_reweighted_least_squares_estimation&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
-        <IRI>#&apos;iteratively_reweighted_least_squares_estimation&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#&apos;iteratively_reweighted_least_squares_estimation&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">iteratively reweighted least squares estimation</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
-        <IRI>#&apos;weighted_least_squares_estimation&apos;</IRI>
-        <IRI>http://purl.obolibrary.org/obo/IAO_0000120</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>#&apos;weighted_least_squares_estimation&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#&apos;weighted_least_squares_estimation&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#&apos;weighted_least_squares_estimation&apos;</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000371</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Camille Maumet</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#&apos;weighted_least_squares_estimation&apos;</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000371</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Orlaith Burke</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#&apos;weighted_least_squares_estimation&apos;</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000371</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#&apos;weighted_least_squares_estimation&apos;</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000371</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Tom Nichols</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
-        <IRI>#&apos;weighted_least_squares_estimation&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://en.wikipedia.org/wiki/Least_squares#Weighted_least_squares</Literal>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000371</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://en.wikipedia.org/wiki/Least_squares#Weighted_least_squares and Tom Nichols</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000032"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000371</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">WLS estimation</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
-        <IRI>#&apos;weighted_least_squares_estimation&apos;</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000371</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">https://stat.ethz.ch/R-manual/R-patched/library/stats/html/lm.html</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#&apos;weighted_least_squares_estimation&apos;</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000371</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">weighted least squares estimation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000372</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000120</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000372</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">the generalized least squares estimation is a model parameter estimation for a linear regression model with errors that are dependent and (possibly) have heterogeneous variance. Difficult to use use in practice, as covariance matrix of the errors must known to &quot;whiten&quot; data and model. If true covariance is known, it is the Best Linear Unbiased Estimation (BLUE) method under these assumptions, Uniformly Minimum-Variance Unbiased Estimator (UMVUE) with addition of a Gaussian assumption.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000372</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000372</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Tom Nichols</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000372</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://en.wikipedia.org/wiki/Generalized_least_squares and Tom Nichols</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000032"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000372</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">GLS estimation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000372</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://stat.ethz.ch/R-manual/R-devel/library/nlme/html/gls.html</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000372</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">generalized least squares estimation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000373</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000120</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000373</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">the iteratively reweighted least squares estimation is a model parameter estimation which is a practical implementation of Weighted Least Squares, where the heterogeneous variances of the errors are estimated from the residuals of the regression model, providing an estimate for the weights. Each successive estimate of the weights improves the estimation of the regression parameters, which in turn are used to compute residuals and update the weights</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000373</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000373</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Camille Maumet</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000373</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Orlaith Burke</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000373</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000373</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Tom Nichols</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000373</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Tom Nichols</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000373</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000373</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">iteratively reweighted least squares estimation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000374</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000120</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000374</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">the feasible generalized least squares estimation is a model parameter estimation which is a practical implementation of Generalised Least Squares, where the covariance of the errors is estimated from the residuals of the regression model, providing the information needed to whiten the data and model. Each successive estimate of the whitening matrix improves the estimation of the regression parameters, which in turn are used to compute residuals and update the whitening matrix.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000374</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000374</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Camille Maumet</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000374</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Orlaith Burke</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000374</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000374</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Tom Nichols</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000374</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Tom Nichols</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000374</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">feasible generalized least squares estimation</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -24895,7 +24977,7 @@ http://en.wikipedia.org/wiki/Contrast_%28statistics%29</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>#ordinary_least_squares_estimation</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">the ordinary least squares estimation is a model parameter estimation for a linear regression model when the errors are uncorrelated and equal in variance. Is the Best Linear Unbiased Estimation (BLUE) method under these assumptions, Uniformly Minimum-Variance Unbiased Estimator (UMVUE) with addition of a Gaussian assumption.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -24920,12 +25002,22 @@ http://en.wikipedia.org/wiki/Contrast_%28statistics%29</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
         <IRI>#ordinary_least_squares_estimation</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://en.wikipedia.org/wiki/Ordinary_least_squares</Literal>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://en.wikipedia.org/wiki/Ordinary_least_squares and Tom Nichols</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000032"/>
+        <IRI>#ordinary_least_squares_estimation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">OLS estimation</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
         <IRI>#ordinary_least_squares_estimation</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
+        <IRI>#ordinary_least_squares_estimation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">https://stat.ethz.ch/R-manual/R-patched/library/stats/html/lm.html</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
