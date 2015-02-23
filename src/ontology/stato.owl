@@ -1028,73 +1028,88 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000335"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#&apos;Factor_Analytic_covariance_structure&apos;"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000346"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#&apos;Huynh-Feldt_covariance_structure&apos;"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000347"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#&apos;Toeplitz_covariance_structure&apos;"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000348"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#&apos;autoregressive_covariance_structure&apos;"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000349"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#&apos;banded_Toeplitz_covariance_structure&apos;"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000350"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#&apos;banded_heterogeneous_Toeplitz_covariance_structure&apos;"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000351"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#&apos;equal_diagonal_Factor_Analytic_covariance_structure&apos;"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000352"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000353"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000354"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000355"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000356"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000357"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000358"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000359"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000360"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000361"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000362"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000363"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000364"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000365"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000366"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000367"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000368"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000369"/>
     </Declaration>
     <Declaration>
         <Class IRI="#&apos;feasible_generalized_least_squares_estimation&apos;"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#&apos;first-order_autoregressive_moving_average_covariance_structure&apos;"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#&apos;generalized_least_squares_estimation&apos;"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#&apos;heterogeneous_Toeplitz_covariance_structure&apos;"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#&apos;heterogeneous_autoregressive_covariance_structure&apos;"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#&apos;heterogeneous_compound_symmetry_covariance_structure&apos;"/>
     </Declaration>
     <Declaration>
         <Class IRI="#&apos;iteratively_reweighted_least_squares_estimation&apos;"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#&apos;no_diagonal_Factor_Analytic_covariance_structure&apos;"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#&apos;rational_quadratic_geometric_anisotropic_covariance_structure&apos;"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#&apos;spatial_exponential_anisotropic_covariance_structure&apos;"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#&apos;spatial_exponential_geometric_anisotropic_covariance_structure&apos;"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#&apos;spatial_gaussian_geometric_anisotropic_covariance_structure&apos;"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#&apos;spatial_linear_geometric_anisotropic_covariance_structure&apos;"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#&apos;spatial_spherical_geometric_anisotropic_covariance_structure&apos;"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#&apos;weighted_least_squares_estimation&apos;"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Ante-dependence_covariance_structure"/>
     </Declaration>
     <Declaration>
         <Class IRI="#STATO_0000296"/>
@@ -1106,12 +1121,6 @@
         <Class IRI="#STATO_0000298"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#compound_symmetry_covariance_structure"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#covariance_structure"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#http://purl.obolibrary.org/obo/STATO_0000322"/>
     </Declaration>
     <Declaration>
@@ -1119,9 +1128,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="#http://purl.obolibrary.org/obo/STATO_0000324"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#matern_function_anisotropic_covariance_structure&apos;"/>
     </Declaration>
     <Declaration>
         <Class IRI="#ordinary_least_squares_estimation"/>
@@ -8188,96 +8194,157 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000330"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#&apos;Factor_Analytic_covariance_structure&apos;"/>
-        <Class IRI="#covariance_structure"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000346"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000027"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#&apos;Huynh-Feldt_covariance_structure&apos;"/>
-        <Class IRI="#covariance_structure"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000346"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000050"/>
+            <Class IRI="#regression_model"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#&apos;Toeplitz_covariance_structure&apos;"/>
-        <Class IRI="#covariance_structure"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000346"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
+            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000301"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#&apos;autoregressive_covariance_structure&apos;"/>
-        <Class IRI="#covariance_structure"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000347"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000346"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#&apos;banded_Toeplitz_covariance_structure&apos;"/>
-        <Class IRI="#covariance_structure"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000348"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000346"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#&apos;banded_heterogeneous_Toeplitz_covariance_structure&apos;"/>
-        <Class IRI="#covariance_structure"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000349"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000346"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#&apos;equal_diagonal_Factor_Analytic_covariance_structure&apos;"/>
-        <Class IRI="#covariance_structure"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000350"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000346"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000351"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000346"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000352"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000346"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000353"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000346"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000354"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000346"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000355"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000346"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000356"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000346"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000357"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000346"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000358"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000346"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000359"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000346"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000360"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000346"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000361"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000346"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000362"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000346"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000363"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000362"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000364"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000346"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000365"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000346"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000366"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000365"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000367"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000346"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000368"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000109"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000368"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
+            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000107"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000368"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000295"/>
+            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000328"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000369"/>
+        <Class IRI="http://purl.obolibrary.org/obo/OBI_0200000"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000369"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
+            <ObjectIntersectionOf>
+                <Class IRI="http://purl.obolibrary.org/obo/STATO_0000107"/>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                    <Class IRI="http://purl.obolibrary.org/obo/STATO_0000346"/>
+                </ObjectSomeValuesFrom>
+            </ObjectIntersectionOf>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#&apos;feasible_generalized_least_squares_estimation&apos;"/>
         <Class IRI="#&apos;generalized_least_squares_estimation&apos;"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#&apos;first-order_autoregressive_moving_average_covariance_structure&apos;"/>
-        <Class IRI="#covariance_structure"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#&apos;generalized_least_squares_estimation&apos;"/>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000119"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#&apos;heterogeneous_Toeplitz_covariance_structure&apos;"/>
-        <Class IRI="#covariance_structure"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#&apos;heterogeneous_autoregressive_covariance_structure&apos;"/>
-        <Class IRI="#&apos;autoregressive_covariance_structure&apos;"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#&apos;heterogeneous_compound_symmetry_covariance_structure&apos;"/>
-        <Class IRI="#compound_symmetry_covariance_structure"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#&apos;iteratively_reweighted_least_squares_estimation&apos;"/>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000119"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#&apos;no_diagonal_Factor_Analytic_covariance_structure&apos;"/>
-        <Class IRI="#covariance_structure"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#&apos;rational_quadratic_geometric_anisotropic_covariance_structure&apos;"/>
-        <Class IRI="#covariance_structure"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#&apos;spatial_exponential_anisotropic_covariance_structure&apos;"/>
-        <Class IRI="#covariance_structure"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#&apos;spatial_exponential_geometric_anisotropic_covariance_structure&apos;"/>
-        <Class IRI="#covariance_structure"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#&apos;spatial_gaussian_geometric_anisotropic_covariance_structure&apos;"/>
-        <Class IRI="#covariance_structure"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#&apos;spatial_linear_geometric_anisotropic_covariance_structure&apos;"/>
-        <Class IRI="#covariance_structure"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#&apos;spatial_spherical_geometric_anisotropic_covariance_structure&apos;"/>
-        <Class IRI="#covariance_structure"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#&apos;weighted_least_squares_estimation&apos;"/>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000119"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Ante-dependence_covariance_structure"/>
-        <Class IRI="#covariance_structure"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#STATO_0000296"/>
@@ -8320,28 +8387,6 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#compound_symmetry_covariance_structure"/>
-        <Class IRI="#covariance_structure"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#covariance_structure"/>
-        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000027"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#covariance_structure"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000050"/>
-            <Class IRI="#regression_model"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#covariance_structure"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
-            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000301"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#http://purl.obolibrary.org/obo/STATO_0000322"/>
         <Class IRI="http://purl.obolibrary.org/obo/IAO_0000027"/>
     </SubClassOf>
@@ -8373,10 +8418,6 @@
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
             <Class IRI="#http://purl.obolibrary.org/obo/STATO_0000322"/>
         </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#matern_function_anisotropic_covariance_structure&apos;"/>
-        <Class IRI="#covariance_structure"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#ordinary_least_squares_estimation"/>
@@ -22653,6 +22694,11 @@ https://stat.ethz.ch/R-manual/R-devel/library/stats/html/AIC.html</Literal>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">CAIC</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000326</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000326</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">corrected Akaike information criterion</Literal>
@@ -23052,42 +23098,866 @@ http://reference.wolfram.com/language/ref/SmoothKernelDistribution.html</Literal
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
-        <IRI>#&apos;Factor_Analytic_covariance_structure&apos;</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000346</IRI>
         <IRI>http://purl.obolibrary.org/obo/IAO_0000120</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>#&apos;Factor_Analytic_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">factor-analytic structure is a covariance structure which is specified for q factors </Literal>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000346</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">a covariance structure is a data item which is part of a regression model and which indicates a pattern in the covariance matrix. The nature of covariance structure is specified before the regression analysis and various covariance structure may be tested and evaluated using information criteria to help choose the most suiteable model</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#&apos;Factor_Analytic_covariance_structure&apos;</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000346</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000346</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Camille Maumet</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000346</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Orlaith Burke</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000346</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000346</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Tom Nichols</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000346</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">http://www3.nd.edu/~kyuan/courses/sem/readpapers/benter.pdf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000346</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">covariance structure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000347</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000120</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000347</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000347</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#&apos;Factor_Analytic_covariance_structure&apos;</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000347</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Camille Maumet</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#&apos;Factor_Analytic_covariance_structure&apos;</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000347</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Orlaith Burke</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000347</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#&apos;Factor_Analytic_covariance_structure&apos;</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000347</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Tom Nichols</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
-        <IRI>#&apos;Factor_Analytic_covariance_structure&apos;</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000347</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000347</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://support.sas.com/documentation/cdl/en/statug/63033/HTML/default/viewer.htm#statug_mixed_sect019.htm</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000347</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000347</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Matern function anisotropic covariance structure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000348</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000120</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000348</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000348</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000348</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Camille Maumet</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000348</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Orlaith Burke</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000348</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000348</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Tom Nichols</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000348</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000348</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://support.sas.com/documentation/cdl/en/statug/63033/HTML/default/viewer.htm#statug_mixed_sect019.htm</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000348</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://stat.ethz.ch/R-manual/R-devel/library/nlme/html/corRatio.html</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000348</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">rational quadratic anisotropic covariance structure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000349</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000120</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000349</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000349</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000349</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Camille Maumet</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000349</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Orlaith Burke</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000349</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000349</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Tom Nichols</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000349</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">SP(LINGA)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000349</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://support.sas.com/documentation/cdl/en/statug/63033/HTML/default/viewer.htm#statug_mixed_sect019.htm</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000349</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://stat.ethz.ch/R-manual/R-devel/library/nlme/html/corLin.html</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000349</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">spatial linear geometric anisotropic covariance structure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000350</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000120</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000350</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000350</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000350</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Camille Maumet</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000350</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Orlaith Burke</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000350</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000350</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Tom Nichols</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000350</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">SP(SPHGA)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000350</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://support.sas.com/documentation/cdl/en/statug/63033/HTML/default/viewer.htm#statug_mixed_sect019.htm</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000350</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://stat.ethz.ch/R-manual/R-devel/library/nlme/html/corSpher.html</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000350</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">spatial spherical geometric anisotropic covariance structure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000351</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000120</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000351</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000351</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000351</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Camille Maumet</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000351</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Orlaith Burke</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000351</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000351</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Tom Nichols</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000351</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">SP(GAUGA)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000351</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://support.sas.com/documentation/cdl/en/statug/63033/HTML/default/viewer.htm#statug_mixed_sect019.htm</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000351</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://stat.ethz.ch/R-manual/R-devel/library/nlme/html/corGaus.html</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000351</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">spatial gaussian geometric anisotropic covariance structure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000352</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000120</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000352</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000352</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000352</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Camille Maumet</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000352</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Orlaith Burke</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000352</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000352</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Tom Nichols</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000352</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">SP(EXPGA)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000352</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://support.sas.com/documentation/cdl/en/statug/63033/HTML/default/viewer.htm#statug_mixed_sect019.htm</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000352</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000352</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">spatial exponential geometric anisotropic covariance structure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000353</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000120</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000353</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000353</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000353</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Camille Maumet</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000353</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Orlaith Burke</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000353</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000353</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Tom Nichols</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000353</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">SP(EXPA)(c-list)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000353</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://support.sas.com/documentation/cdl/en/statug/63033/HTML/default/viewer.htm#statug_mixed_sect019.htm
+
+Sacks et al. (1989)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000353</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://stat.ethz.ch/R-manual/R-devel/library/nlme/html/corExp.html</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000353</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">spatial exponential anisotropic covariance structure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000354</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000120</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000354</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000354</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000354</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Camille Maumet</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000354</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Orlaith Burke</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000354</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000354</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Tom Nichols</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000354</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">TOEPH(q)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000354</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://support.sas.com/documentation/cdl/en/statug/63033/HTML/default/viewer.htm#statug_mixed_sect019.htm</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000354</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000354</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">banded heterogeneous Toeplitz covariance structure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000355</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000120</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000355</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000355</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000355</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Camille Maumet</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000355</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Orlaith Burke</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000355</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000355</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Tom Nichols</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000355</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">TOEPH</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000355</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://support.sas.com/documentation/cdl/en/statug/63033/HTML/default/viewer.htm#statug_mixed_sect019.htm</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000355</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000355</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">heterogeneous Toeplitz covariance structure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000356</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000120</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000356</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000356</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000356</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Camille Maumet</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000356</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Orlaith Burke</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000356</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000356</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Tom Nichols</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000356</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">TOEP(q)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000356</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://support.sas.com/documentation/cdl/en/statug/63033/HTML/default/viewer.htm#statug_mixed_sect019.htm</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000356</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000356</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">banded Toeplitz covariance structure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000357</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000120</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000357</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000357</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000357</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Camille Maumet</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000357</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Orlaith Burke</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000357</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000357</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Tom Nichols</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000357</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">TOEP</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000357</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://support.sas.com/documentation/cdl/en/statug/63033/HTML/default/viewer.htm#statug_mixed_sect019.htm</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000357</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000357</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Toeplitz covariance structure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000358</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000120</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000358</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000358</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000358</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Camille Maumet</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000358</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Orlaith Burke</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000358</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000358</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Tom Nichols</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000358</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">HF</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000358</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://support.sas.com/documentation/cdl/en/statug/63033/HTML/default/viewer.htm#statug_mixed_sect019.htm
+
+Huynh and Feldt 1970</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000358</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000358</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Huynh-Feldt covariance structure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000359</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000120</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000359</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">factor-analytic structure is a covariance structure which is specified for q factors </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000359</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000359</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Camille Maumet</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000359</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Orlaith Burke</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000359</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000359</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Tom Nichols</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000359</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">FA1(q)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000359</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://support.sas.com/documentation/cdl/en/statug/63033/HTML/default/viewer.htm#statug_mixed_sect019.htm</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000359</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000359</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">equal diagonal Factor Analytic covariance structure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000360</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000120</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000360</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">factor-analytic structure is a covariance structure which is specified for q factors </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000360</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000360</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Camille Maumet</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000360</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Orlaith Burke</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000360</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000360</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Tom Nichols</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000360</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">FA0(q)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000360</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://support.sas.com/documentation/cdl/en/statug/63033/HTML/default/viewer.htm#statug_mixed_sect019.htm</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000360</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000360</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">no diagonal Factor Analytic covariance structure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000361</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000120</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000361</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">factor-analytic structure is a covariance structure which is specified for q factors </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000361</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000361</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Camille Maumet</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000361</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Orlaith Burke</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000361</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000361</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Tom Nichols</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000361</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">FA(q)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
-        <IRI>#&apos;Factor_Analytic_covariance_structure&apos;</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000361</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://support.sas.com/documentation/cdl/en/statug/63033/HTML/default/viewer.htm#statug_mixed_sect019.htm
 
 Jennrich and Schluchter 1986
@@ -23096,315 +23966,426 @@ Jennrich and Schluchter 1986
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
-        <IRI>#&apos;Factor_Analytic_covariance_structure&apos;</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000361</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#&apos;Factor_Analytic_covariance_structure&apos;</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000361</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Factor Analytic covariance structure</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
-        <IRI>#&apos;Huynh-Feldt_covariance_structure&apos;</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000362</IRI>
         <IRI>http://purl.obolibrary.org/obo/IAO_0000120</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>#&apos;Huynh-Feldt_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000362</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">compound symmetry covariance structure is a covariance structure which means that all the variances are equal and all the covariances are equal.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#&apos;Huynh-Feldt_covariance_structure&apos;</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000362</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#&apos;Huynh-Feldt_covariance_structure&apos;</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000362</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Camille Maumet</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#&apos;Huynh-Feldt_covariance_structure&apos;</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000362</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Orlaith Burke</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000362</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#&apos;Huynh-Feldt_covariance_structure&apos;</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000362</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Tom Nichols</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
-        <IRI>#&apos;Huynh-Feldt_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">HF</Literal>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000362</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">CS</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
-        <IRI>#&apos;Huynh-Feldt_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://support.sas.com/documentation/cdl/en/statug/63033/HTML/default/viewer.htm#statug_mixed_sect019.htm
-
-Huynh and Feldt 1970</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
-        <IRI>#&apos;Huynh-Feldt_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#&apos;Huynh-Feldt_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Huynh-Feldt covariance structure</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
-        <IRI>#&apos;Toeplitz_covariance_structure&apos;</IRI>
-        <IRI>http://purl.obolibrary.org/obo/IAO_0000120</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>#&apos;Toeplitz_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#&apos;Toeplitz_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#&apos;Toeplitz_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Camille Maumet</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#&apos;Toeplitz_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#&apos;Toeplitz_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Tom Nichols</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
-        <IRI>#&apos;Toeplitz_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">TOEP</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
-        <IRI>#&apos;Toeplitz_covariance_structure&apos;</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000362</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://support.sas.com/documentation/cdl/en/statug/63033/HTML/default/viewer.htm#statug_mixed_sect019.htm</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
-        <IRI>#&apos;Toeplitz_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000362</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://stat.ethz.ch/R-manual/R-devel/library/nlme/html/corCompSymm.html</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#&apos;Toeplitz_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Toeplitz covariance structure</Literal>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000362</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">compound symmetry covariance structure</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
-        <IRI>#&apos;autoregressive_covariance_structure&apos;</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000363</IRI>
         <IRI>http://purl.obolibrary.org/obo/IAO_0000120</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>#&apos;autoregressive_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">first order autoregressive covariance structure is a covariance structure which ...</Literal>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000363</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">heterogenous compound symmetry structure is a compound symmetry covariance structure which has a different variance parameter for each diagonal element, and it uses the square roots of these parameters in the off-diagonal entries.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#&apos;autoregressive_covariance_structure&apos;</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000363</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#&apos;autoregressive_covariance_structure&apos;</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000363</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Camille Maumet</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#&apos;autoregressive_covariance_structure&apos;</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000363</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Orlaith Burke</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000363</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#&apos;autoregressive_covariance_structure&apos;</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000363</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Tom Nichols</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
-        <IRI>#&apos;autoregressive_covariance_structure&apos;</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000363</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">CSH</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000363</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://support.sas.com/documentation/cdl/en/statug/63033/HTML/default/viewer.htm#statug_mixed_sect019.htm</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000363</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000363</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">heterogeneous compound symmetry covariance structure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000364</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000120</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000364</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000364</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000364</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Camille Maumet</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000364</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Orlaith Burke</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000364</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000364</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Tom Nichols</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000364</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">ARMA(1,1)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000364</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://support.sas.com/documentation/cdl/en/statug/63033/HTML/default/viewer.htm#statug_mixed_sect019.htm</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000364</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://stat.ethz.ch/R-manual/R-devel/library/nlme/html/corARMA.html</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000364</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">first order autoregressive moving average covariance structure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000365</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000120</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000365</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">first order autoregressive covariance structure is a covariance structure where correlations among errors decline exponentially with distance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000365</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000365</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Camille Maumet</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000365</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Orlaith Burke</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000365</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000365</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Tom Nichols</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000365</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">AR(1)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
-        <IRI>#&apos;autoregressive_covariance_structure&apos;</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000365</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://support.sas.com/documentation/cdl/en/statug/63033/HTML/default/viewer.htm#statug_mixed_sect019.htm</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
-        <IRI>#&apos;autoregressive_covariance_structure&apos;</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000365</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://stat.ethz.ch/R-manual/R-devel/library/nlme/html/corAR1.html</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#&apos;autoregressive_covariance_structure&apos;</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000365</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">first order autoregressive covariance structure</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
-        <IRI>#&apos;banded_Toeplitz_covariance_structure&apos;</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000366</IRI>
         <IRI>http://purl.obolibrary.org/obo/IAO_0000120</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>#&apos;banded_Toeplitz_covariance_structure&apos;</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000366</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#&apos;banded_Toeplitz_covariance_structure&apos;</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000366</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#&apos;banded_Toeplitz_covariance_structure&apos;</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000366</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Camille Maumet</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#&apos;banded_Toeplitz_covariance_structure&apos;</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000366</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Orlaith Burke</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000366</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#&apos;banded_Toeplitz_covariance_structure&apos;</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000366</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Tom Nichols</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
-        <IRI>#&apos;banded_Toeplitz_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">TOEP(q)</Literal>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000366</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">ARH(1)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
-        <IRI>#&apos;banded_Toeplitz_covariance_structure&apos;</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000366</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://support.sas.com/documentation/cdl/en/statug/63033/HTML/default/viewer.htm#statug_mixed_sect019.htm</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
-        <IRI>#&apos;banded_Toeplitz_covariance_structure&apos;</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000366</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#&apos;banded_Toeplitz_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">banded Toeplitz covariance structure</Literal>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000366</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">heterogeneous first-order autoregressive covariance structure</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
-        <IRI>#&apos;banded_heterogeneous_Toeplitz_covariance_structure&apos;</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000367</IRI>
         <IRI>http://purl.obolibrary.org/obo/IAO_0000120</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>#&apos;banded_heterogeneous_Toeplitz_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000367</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Ante-dependence covariance structure is a covariance structure which specifies that the covariance between two time points is a function of the product of variances at both points (hence allowing hetrogenity of error variance across measures to affect the correlation) and the product of the correlations at the distances up to the one chosen.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#&apos;banded_heterogeneous_Toeplitz_covariance_structure&apos;</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000367</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#&apos;banded_heterogeneous_Toeplitz_covariance_structure&apos;</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000367</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Camille Maumet</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#&apos;banded_heterogeneous_Toeplitz_covariance_structure&apos;</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000367</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Orlaith Burke</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000367</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#&apos;banded_heterogeneous_Toeplitz_covariance_structure&apos;</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000367</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Tom Nichols</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
-        <IRI>#&apos;banded_heterogeneous_Toeplitz_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">TOEPH(q)</Literal>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000367</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">ANTE(1)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
-        <IRI>#&apos;banded_heterogeneous_Toeplitz_covariance_structure&apos;</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000367</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://support.sas.com/documentation/cdl/en/statug/63033/HTML/default/viewer.htm#statug_mixed_sect019.htm</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
-        <IRI>#&apos;banded_heterogeneous_Toeplitz_covariance_structure&apos;</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000367</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#&apos;banded_heterogeneous_Toeplitz_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">banded heterogeneous Toeplitz covariance structure</Literal>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000367</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Ante-dependence covariance structure</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
-        <IRI>#&apos;equal_diagonal_Factor_Analytic_covariance_structure&apos;</IRI>
-        <IRI>http://purl.obolibrary.org/obo/IAO_0000120</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000368</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>#&apos;equal_diagonal_Factor_Analytic_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">factor-analytic structure is a covariance structure which is specified for q factors </Literal>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000368</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Mallows&apos; Cp is a data item which compares the precision and bias of the full model to models with a subset of the predictors thus helping to choose between multiple regression models.
+
+the mallows cp is a function of the number of parameter used in the model relying on the residuals sum of squares to compute a score.
+the smaller Cp is, the better the model fit is.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#&apos;equal_diagonal_Factor_Analytic_covariance_structure&apos;</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000368</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000368</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Orlaith Burke</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000368</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000368</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">http://support.minitab.com/en-us/minitab/17/topic-library/modeling-statistics/regression-and-correlation/goodness-of-fit-statistics/what-is-mallows-cp/</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000368</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">http://ugrad.stat.ubc.ca/R/library/locfit/html/cp.html</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000368</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Mallows&apos; Cp</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000369</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000369</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">repeated measure analysis is a kind of data transformation which deals with signals measured in the same experimental units at different times and, possibly, under different conditions over a period of time. Data produced by longitudinal studies qualify for such analysis. Since measurements are made on the same experimental units a number of times, they are likely to be correlated. Repeated measure analysis usually takes into consideration the possibility of correlation with time. It does so by specifying covariance structure in the analysis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000369</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#&apos;equal_diagonal_Factor_Analytic_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Camille Maumet</Literal>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000369</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Orlaith Burke</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#&apos;equal_diagonal_Factor_Analytic_covariance_structure&apos;</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000369</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#&apos;equal_diagonal_Factor_Analytic_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Tom Nichols</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
-        <IRI>#&apos;equal_diagonal_Factor_Analytic_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">FA1(q)</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
-        <IRI>#&apos;equal_diagonal_Factor_Analytic_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://support.sas.com/documentation/cdl/en/statug/63033/HTML/default/viewer.htm#statug_mixed_sect019.htm</Literal>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000369</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">adapted from https://ciser.cornell.edu/sasdoc/saspdf/analyst/chap16.pdf</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
-        <IRI>#&apos;equal_diagonal_Factor_Analytic_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000032"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000369</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">repeated measure analysis</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#&apos;equal_diagonal_Factor_Analytic_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">equal diagonal Factor Analytic covariance structure</Literal>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000369</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">repeated measure analysis</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
@@ -23435,56 +24416,6 @@ Huynh and Feldt 1970</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#&apos;feasible_generalized_least_squares_estimation&apos;</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">feasible generalized least squares estimation</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
-        <IRI>#&apos;first-order_autoregressive_moving_average_covariance_structure&apos;</IRI>
-        <IRI>http://purl.obolibrary.org/obo/IAO_0000120</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>#&apos;first-order_autoregressive_moving_average_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#&apos;first-order_autoregressive_moving_average_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#&apos;first-order_autoregressive_moving_average_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Camille Maumet</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#&apos;first-order_autoregressive_moving_average_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#&apos;first-order_autoregressive_moving_average_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Tom Nichols</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
-        <IRI>#&apos;first-order_autoregressive_moving_average_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">ARMA(1,1)</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
-        <IRI>#&apos;first-order_autoregressive_moving_average_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://support.sas.com/documentation/cdl/en/statug/63033/HTML/default/viewer.htm#statug_mixed_sect019.htm</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
-        <IRI>#&apos;first-order_autoregressive_moving_average_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://stat.ethz.ch/R-manual/R-devel/library/nlme/html/corARMA.html</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#&apos;first-order_autoregressive_moving_average_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">first order autoregressive moving average covariance structure</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
@@ -23523,156 +24454,6 @@ Huynh and Feldt 1970</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
-        <IRI>#&apos;heterogeneous_Toeplitz_covariance_structure&apos;</IRI>
-        <IRI>http://purl.obolibrary.org/obo/IAO_0000120</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>#&apos;heterogeneous_Toeplitz_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#&apos;heterogeneous_Toeplitz_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#&apos;heterogeneous_Toeplitz_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Camille Maumet</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#&apos;heterogeneous_Toeplitz_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#&apos;heterogeneous_Toeplitz_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Tom Nichols</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
-        <IRI>#&apos;heterogeneous_Toeplitz_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">TOEPH</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
-        <IRI>#&apos;heterogeneous_Toeplitz_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://support.sas.com/documentation/cdl/en/statug/63033/HTML/default/viewer.htm#statug_mixed_sect019.htm</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
-        <IRI>#&apos;heterogeneous_Toeplitz_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#&apos;heterogeneous_Toeplitz_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">heterogeneous Toeplitz covariance structure</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
-        <IRI>#&apos;heterogeneous_autoregressive_covariance_structure&apos;</IRI>
-        <IRI>http://purl.obolibrary.org/obo/IAO_0000120</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>#&apos;heterogeneous_autoregressive_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#&apos;heterogeneous_autoregressive_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#&apos;heterogeneous_autoregressive_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Camille Maumet</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#&apos;heterogeneous_autoregressive_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#&apos;heterogeneous_autoregressive_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Tom Nichols</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
-        <IRI>#&apos;heterogeneous_autoregressive_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">ARH(1)</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
-        <IRI>#&apos;heterogeneous_autoregressive_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://support.sas.com/documentation/cdl/en/statug/63033/HTML/default/viewer.htm#statug_mixed_sect019.htm</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
-        <IRI>#&apos;heterogeneous_autoregressive_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#&apos;heterogeneous_autoregressive_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">heterogeneous first-order autoregressive covariance structure</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
-        <IRI>#&apos;heterogeneous_compound_symmetry_covariance_structure&apos;</IRI>
-        <IRI>http://purl.obolibrary.org/obo/IAO_0000120</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>#&apos;heterogeneous_compound_symmetry_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">heterogenous compound symmetry structure is a compound symmetry covariance structure which has a different variance parameter for each diagonal element, and it uses the square roots of these parameters in the off-diagonal entries.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#&apos;heterogeneous_compound_symmetry_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#&apos;heterogeneous_compound_symmetry_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Camille Maumet</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#&apos;heterogeneous_compound_symmetry_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#&apos;heterogeneous_compound_symmetry_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Tom Nichols</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
-        <IRI>#&apos;heterogeneous_compound_symmetry_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">CSH</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
-        <IRI>#&apos;heterogeneous_compound_symmetry_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://support.sas.com/documentation/cdl/en/statug/63033/HTML/default/viewer.htm#statug_mixed_sect019.htm</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
-        <IRI>#&apos;heterogeneous_compound_symmetry_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#&apos;heterogeneous_compound_symmetry_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">heterogeneous compound symmetry covariance structure</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
         <IRI>#&apos;iteratively_reweighted_least_squares_estimation&apos;</IRI>
         <IRI>http://purl.obolibrary.org/obo/IAO_0000120</IRI>
     </AnnotationAssertion>
@@ -23705,358 +24486,6 @@ Huynh and Feldt 1970</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#&apos;iteratively_reweighted_least_squares_estimation&apos;</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">iteratively reweighted least squares estimation</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
-        <IRI>#&apos;no_diagonal_Factor_Analytic_covariance_structure&apos;</IRI>
-        <IRI>http://purl.obolibrary.org/obo/IAO_0000120</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>#&apos;no_diagonal_Factor_Analytic_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">factor-analytic structure is a covariance structure which is specified for q factors </Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#&apos;no_diagonal_Factor_Analytic_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#&apos;no_diagonal_Factor_Analytic_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Camille Maumet</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#&apos;no_diagonal_Factor_Analytic_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#&apos;no_diagonal_Factor_Analytic_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Tom Nichols</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
-        <IRI>#&apos;no_diagonal_Factor_Analytic_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">FA0(q)</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
-        <IRI>#&apos;no_diagonal_Factor_Analytic_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://support.sas.com/documentation/cdl/en/statug/63033/HTML/default/viewer.htm#statug_mixed_sect019.htm</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
-        <IRI>#&apos;no_diagonal_Factor_Analytic_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#&apos;no_diagonal_Factor_Analytic_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">no diagonal Factor Analytic covariance structure</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
-        <IRI>#&apos;rational_quadratic_geometric_anisotropic_covariance_structure&apos;</IRI>
-        <IRI>http://purl.obolibrary.org/obo/IAO_0000120</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>#&apos;rational_quadratic_geometric_anisotropic_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#&apos;rational_quadratic_geometric_anisotropic_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#&apos;rational_quadratic_geometric_anisotropic_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Camille Maumet</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#&apos;rational_quadratic_geometric_anisotropic_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#&apos;rational_quadratic_geometric_anisotropic_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Tom Nichols</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
-        <IRI>#&apos;rational_quadratic_geometric_anisotropic_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
-        <IRI>#&apos;rational_quadratic_geometric_anisotropic_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://support.sas.com/documentation/cdl/en/statug/63033/HTML/default/viewer.htm#statug_mixed_sect019.htm</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
-        <IRI>#&apos;rational_quadratic_geometric_anisotropic_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://stat.ethz.ch/R-manual/R-devel/library/nlme/html/corRatio.html</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#&apos;rational_quadratic_geometric_anisotropic_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">rational quadratic anisotropic covariance structure</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
-        <IRI>#&apos;spatial_exponential_anisotropic_covariance_structure&apos;</IRI>
-        <IRI>http://purl.obolibrary.org/obo/IAO_0000120</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>#&apos;spatial_exponential_anisotropic_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#&apos;spatial_exponential_anisotropic_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#&apos;spatial_exponential_anisotropic_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Camille Maumet</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#&apos;spatial_exponential_anisotropic_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#&apos;spatial_exponential_anisotropic_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Tom Nichols</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
-        <IRI>#&apos;spatial_exponential_anisotropic_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">SP(EXPA)(c-list)</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
-        <IRI>#&apos;spatial_exponential_anisotropic_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://support.sas.com/documentation/cdl/en/statug/63033/HTML/default/viewer.htm#statug_mixed_sect019.htm
-
-Sacks et al. (1989)</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
-        <IRI>#&apos;spatial_exponential_anisotropic_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://stat.ethz.ch/R-manual/R-devel/library/nlme/html/corExp.html</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#&apos;spatial_exponential_anisotropic_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">spatial exponential anisotropic covariance structure</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
-        <IRI>#&apos;spatial_exponential_geometric_anisotropic_covariance_structure&apos;</IRI>
-        <IRI>http://purl.obolibrary.org/obo/IAO_0000120</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>#&apos;spatial_exponential_geometric_anisotropic_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#&apos;spatial_exponential_geometric_anisotropic_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#&apos;spatial_exponential_geometric_anisotropic_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Camille Maumet</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#&apos;spatial_exponential_geometric_anisotropic_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#&apos;spatial_exponential_geometric_anisotropic_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Tom Nichols</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
-        <IRI>#&apos;spatial_exponential_geometric_anisotropic_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">SP(EXPGA)</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
-        <IRI>#&apos;spatial_exponential_geometric_anisotropic_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://support.sas.com/documentation/cdl/en/statug/63033/HTML/default/viewer.htm#statug_mixed_sect019.htm</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
-        <IRI>#&apos;spatial_exponential_geometric_anisotropic_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#&apos;spatial_exponential_geometric_anisotropic_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">spatial exponential geometric anisotropic covariance structure</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
-        <IRI>#&apos;spatial_gaussian_geometric_anisotropic_covariance_structure&apos;</IRI>
-        <IRI>http://purl.obolibrary.org/obo/IAO_0000120</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>#&apos;spatial_gaussian_geometric_anisotropic_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#&apos;spatial_gaussian_geometric_anisotropic_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#&apos;spatial_gaussian_geometric_anisotropic_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Camille Maumet</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#&apos;spatial_gaussian_geometric_anisotropic_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#&apos;spatial_gaussian_geometric_anisotropic_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Tom Nichols</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
-        <IRI>#&apos;spatial_gaussian_geometric_anisotropic_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">SP(GAUGA)</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
-        <IRI>#&apos;spatial_gaussian_geometric_anisotropic_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://support.sas.com/documentation/cdl/en/statug/63033/HTML/default/viewer.htm#statug_mixed_sect019.htm</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
-        <IRI>#&apos;spatial_gaussian_geometric_anisotropic_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://stat.ethz.ch/R-manual/R-devel/library/nlme/html/corGaus.html</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#&apos;spatial_gaussian_geometric_anisotropic_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">spatial gaussian geometric anisotropic covariance structure</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
-        <IRI>#&apos;spatial_linear_geometric_anisotropic_covariance_structure&apos;</IRI>
-        <IRI>http://purl.obolibrary.org/obo/IAO_0000120</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>#&apos;spatial_linear_geometric_anisotropic_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#&apos;spatial_linear_geometric_anisotropic_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#&apos;spatial_linear_geometric_anisotropic_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Camille Maumet</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#&apos;spatial_linear_geometric_anisotropic_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#&apos;spatial_linear_geometric_anisotropic_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Tom Nichols</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
-        <IRI>#&apos;spatial_linear_geometric_anisotropic_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">SP(LINGA)</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
-        <IRI>#&apos;spatial_linear_geometric_anisotropic_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://support.sas.com/documentation/cdl/en/statug/63033/HTML/default/viewer.htm#statug_mixed_sect019.htm</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
-        <IRI>#&apos;spatial_linear_geometric_anisotropic_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://stat.ethz.ch/R-manual/R-devel/library/nlme/html/corLin.html</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#&apos;spatial_linear_geometric_anisotropic_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">spatial linear geometric anisotropic covariance structure</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
-        <IRI>#&apos;spatial_spherical_geometric_anisotropic_covariance_structure&apos;</IRI>
-        <IRI>http://purl.obolibrary.org/obo/IAO_0000120</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>#&apos;spatial_spherical_geometric_anisotropic_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#&apos;spatial_spherical_geometric_anisotropic_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#&apos;spatial_spherical_geometric_anisotropic_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Camille Maumet</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#&apos;spatial_spherical_geometric_anisotropic_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#&apos;spatial_spherical_geometric_anisotropic_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Tom Nichols</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
-        <IRI>#&apos;spatial_spherical_geometric_anisotropic_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">SP(SPHGA)</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
-        <IRI>#&apos;spatial_spherical_geometric_anisotropic_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://support.sas.com/documentation/cdl/en/statug/63033/HTML/default/viewer.htm#statug_mixed_sect019.htm</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
-        <IRI>#&apos;spatial_spherical_geometric_anisotropic_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://stat.ethz.ch/R-manual/R-devel/library/nlme/html/corSpher.html</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#&apos;spatial_spherical_geometric_anisotropic_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">spatial spherical geometric anisotropic covariance structure</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
@@ -24107,56 +24536,6 @@ Sacks et al. (1989)</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#&apos;weighted_least_squares_estimation&apos;</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">weighted least squares estimation</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
-        <IRI>#Ante-dependence_covariance_structure</IRI>
-        <IRI>http://purl.obolibrary.org/obo/IAO_0000120</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>#Ante-dependence_covariance_structure</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#Ante-dependence_covariance_structure</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#Ante-dependence_covariance_structure</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Camille Maumet</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#Ante-dependence_covariance_structure</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#Ante-dependence_covariance_structure</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Tom Nichols</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
-        <IRI>#Ante-dependence_covariance_structure</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">ANTE(1)</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
-        <IRI>#Ante-dependence_covariance_structure</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://support.sas.com/documentation/cdl/en/statug/63033/HTML/default/viewer.htm#statug_mixed_sect019.htm</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
-        <IRI>#Ante-dependence_covariance_structure</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#Ante-dependence_covariance_structure</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Ante-dependence covariance structure</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -24368,91 +24747,6 @@ http://stat.ethz.ch/R-manual/R-patched/library/stats/html/binom.test.html</Liter
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">exact binomial test</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
-        <IRI>#compound_symmetry_covariance_structure</IRI>
-        <IRI>http://purl.obolibrary.org/obo/IAO_0000120</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>#compound_symmetry_covariance_structure</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#compound_symmetry_covariance_structure</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#compound_symmetry_covariance_structure</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Camille Maumet</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#compound_symmetry_covariance_structure</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#compound_symmetry_covariance_structure</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Tom Nichols</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
-        <IRI>#compound_symmetry_covariance_structure</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">CS</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
-        <IRI>#compound_symmetry_covariance_structure</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://support.sas.com/documentation/cdl/en/statug/63033/HTML/default/viewer.htm#statug_mixed_sect019.htm</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
-        <IRI>#compound_symmetry_covariance_structure</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://stat.ethz.ch/R-manual/R-devel/library/nlme/html/corCompSymm.html</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#compound_symmetry_covariance_structure</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">compound symmetry covariance structure</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
-        <IRI>#covariance_structure</IRI>
-        <IRI>http://purl.obolibrary.org/obo/IAO_0000120</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>#covariance_structure</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">a covariance structure is a data item which is part of a regression model and which ...</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#covariance_structure</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#covariance_structure</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Orlaith Burke</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#covariance_structure</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#covariance_structure</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Tom Nichols</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#covariance_structure</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">covariance structure</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
         <IRI>#http://purl.obolibrary.org/obo/STATO_0000322</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://artax.karlin.mff.cuni.cz/r-help/library/nparcomp/html/weight.matrix.html</Literal>
@@ -24592,56 +24886,6 @@ http://en.wikipedia.org/wiki/Contrast_%28statistics%29</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#http://purl.obolibrary.org/obo/STATO_0000324</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">contrast weight estimate</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
-        <IRI>#matern_function_anisotropic_covariance_structure&apos;</IRI>
-        <IRI>http://purl.obolibrary.org/obo/IAO_0000120</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>#matern_function_anisotropic_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#matern_function_anisotropic_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#matern_function_anisotropic_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Camille Maumet</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#matern_function_anisotropic_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#matern_function_anisotropic_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Tom Nichols</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
-        <IRI>#matern_function_anisotropic_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
-        <IRI>#matern_function_anisotropic_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://support.sas.com/documentation/cdl/en/statug/63033/HTML/default/viewer.htm#statug_mixed_sect019.htm</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
-        <IRI>#matern_function_anisotropic_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#matern_function_anisotropic_covariance_structure&apos;</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">matern function anisotropic covariance structure</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
