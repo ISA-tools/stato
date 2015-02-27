@@ -59,6 +59,10 @@
         <Literal datatypeIRI="&rdf;PlainLiteral">Thomas Nichols (http://orcid.org/0000-0002-4516-5103)</Literal>
     </Annotation>
     <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra (http://orcid.org/0000-0001-9853-5668)</Literal>
+    </Annotation>
+    <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/contributor"/>
         <Literal datatypeIRI="&rdf;PlainLiteral">Nolan Nichols (http://orcid.org/0000-0003-1099-3328)</Literal>
     </Annotation>
@@ -69,10 +73,6 @@
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/rights"/>
         <Literal datatypeIRI="&xsd;anyURI">This Ontology is distributed under a Creative Commons Attribution License </Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra (http://orcid.org/0000-0001-9853-5668)</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/contributor"/>
@@ -1136,7 +1136,7 @@
         <Class IRI="#http://purl.obolibrary.org/obo/STATO_0000324"/>
     </Declaration>
     <Declaration>
-        <Class IRI="obo:STATO_YYYY"/>
+        <Class IRI="obo:http://purl.obolibrary.org/obo/http://purl.obolibrary.org/obo/STATO_0000321"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000001"/>
@@ -8470,11 +8470,11 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="obo:STATO_YYYY"/>
+        <Class IRI="obo:http://purl.obolibrary.org/obo/http://purl.obolibrary.org/obo/STATO_0000321"/>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000225"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="obo:STATO_YYYY"/>
+        <Class IRI="obo:http://purl.obolibrary.org/obo/http://purl.obolibrary.org/obo/STATO_0000321"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000205"/>
             <ObjectIntersectionOf>
@@ -25031,38 +25031,38 @@ http://en.wikipedia.org/wiki/Contrast_%28statistics%29</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
-        <IRI>obo:STATO_YYYY</IRI>
+        <IRI>obo:http://purl.obolibrary.org/obo/http://purl.obolibrary.org/obo/STATO_0000321</IRI>
         <IRI>http://purl.obolibrary.org/obo/IAO_0000123</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>obo:STATO_YYYY</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Probability distribution estimated empirically on the data assuming only symmetry of the probability distribution.</Literal>
+        <IRI>obo:http://purl.obolibrary.org/obo/http://purl.obolibrary.org/obo/STATO_0000321</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Probability distribution estimated empirically on the data without assumptions on the shape of the probability distribution.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>obo:STATO_YYYY</IRI>
+        <IRI>obo:http://purl.obolibrary.org/obo/http://purl.obolibrary.org/obo/STATO_0000321</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Camille Maumet</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>obo:STATO_YYYY</IRI>
+        <IRI>obo:http://purl.obolibrary.org/obo/http://purl.obolibrary.org/obo/STATO_0000321</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Karl Helmer</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>obo:STATO_YYYY</IRI>
+        <IRI>obo:http://purl.obolibrary.org/obo/http://purl.obolibrary.org/obo/STATO_0000321</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Thomas Nichols</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>obo:STATO_YYYY</IRI>
+        <IRI>obo:http://purl.obolibrary.org/obo/http://purl.obolibrary.org/obo/STATO_0000321</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Initially discussed at https://github.com/incf-nidash/nidm/pull/191</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>obo:STATO_YYYY</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">non-parametric symmetric distribution</Literal>
+        <IRI>obo:http://purl.obolibrary.org/obo/http://purl.obolibrary.org/obo/STATO_0000321</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">non-parametric distribution</Literal>
     </AnnotationAssertion>
     <SubAnnotationPropertyOf>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000032"/>
