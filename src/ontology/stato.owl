@@ -24989,7 +24989,7 @@ http://stat.ethz.ch/R-manual/R-patched/library/stats/html/binom.test.html</Liter
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>#z-statistic</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">z-statistic is a statistic computed from observations and used to produce a p-value in statistical test when compared to a Standard Normal Distribution.</Literal>
+        <Literal datatypeIRI="&rdf;PlainLiteral">z-statistic is a statistic computed from observations and used to produce a p-value when compared to a Standard Normal Distribution in a statistical test called the z-test.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
