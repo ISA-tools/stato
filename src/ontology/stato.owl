@@ -21155,11 +21155,6 @@ http://www.inside-r.org/packages/cran/car/docs/ncvTest
 last accessed [2014-03-15]</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000032"/>
-        <IRI>http://purl.obolibrary.org/obo/STATO_0000284</IRI>
-        <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000284</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://hosho.ees.hokudai.ac.jp/~kubo/Rdoc/library/lmtest/html/bptest.html
@@ -23309,6 +23304,11 @@ Given any two estimated models, the model with the lower value of BIC is the one
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000330</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000330</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Camille Maumet</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -23330,11 +23330,6 @@ Given any two estimated models, the model with the lower value of BIC is the one
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000330</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://reference.wolfram.com/language/ref/EmpiricalDistribution.html</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000032"/>
-        <IRI>http://purl.obolibrary.org/obo/STATO_0000330</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
