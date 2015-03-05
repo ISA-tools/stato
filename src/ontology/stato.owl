@@ -23099,6 +23099,11 @@ http://reference.wolfram.com/language/ref/SmoothKernelDistribution.html</Literal
         <IRI>http://purl.obolibrary.org/obo/IAO_0000123</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000334</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Mixture distribution is the probability distribution of a random variable that is derived from a collection of other random variables as follows: first, a random variable is selected by chance from the collection according to given probabilities of selection, and then the value of the selected random variable is realized.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000334</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
@@ -23122,6 +23127,11 @@ http://reference.wolfram.com/language/ref/SmoothKernelDistribution.html</Literal
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000334</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Thomas Nichols</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000334</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">http://en.wikipedia.org/wiki/Mixture_distribution</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
