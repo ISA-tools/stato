@@ -6,6 +6,7 @@ import owltools.io.CatalogXmlIRIMapper;
 
 import java.io.File;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
@@ -61,7 +62,7 @@ public class OntologyReporter {
         }
     }
 
-    private List<String> getClassAnnotation(OWLClass clazz, String annotationString){
+    private List<String> getClassAnnotation(OWLEntity clazz, String annotationString){
         Set<OWLAnnotation> annotationSet = clazz.getAnnotations(devOntology, dataFactory.getOWLAnnotationProperty(IRI.create(annotationString)));
         List<String> labels = new ArrayList<String>();
         for(OWLAnnotation annotation : annotationSet){
@@ -80,24 +81,30 @@ public class OntologyReporter {
             return;
         }
 
-        Set<OWLClass> classes = devOntology.getClassesInSignature();
+        Set<OWLEntity> entities = new HashSet<OWLEntity>();
+        entities.addAll(devOntology.getClassesInSignature());
+        entities.addAll(devOntology.getDataPropertiesInSignature());
+        entities.addAll(devOntology.getObjectPropertiesInSignature());
+        entities.addAll(devOntology.getAnnotationPropertiesInSignature());
+        entities.addAll(devOntology.getIndividualsInSignature());
 
-        System.out.println("There are "+classes.size()+" classes in the ontology signature");
+        System.out.println(devOntology.getIndividualsInSignature());
+
+        entities.addAll(devOntology.getDatatypesInSignature());
+
+        System.out.println("There are " + entities.size() + " classes in the ontology signature");
 
         int count = 0;
-        for(OWLClass clazz : classes){
+        for(OWLEntity entity : entities){
 
-           if (clazz.getIRI().toString().startsWith(iriPrefix)){
-//                System.out.println(clazz+"\t"+ getClassAnnotation(clazz, LABEL)+"\t"
-//                        + getClassAnnotation(clazz, alternative_term)
-//                        + "\t"+ getClassAnnotation(clazz, STATO_alternative_term) );
+           if (entity.getIRI().toString().startsWith(iriPrefix)){
 
-
+               //System.out.println(entity.getIRI());
                String label = null;
-               List<String> labels = getClassAnnotation(clazz, LABEL);
+               List<String> labels = getClassAnnotation(entity, LABEL);
 
                if (labels.size()==0) {
-                   System.err.println("No label for term "+clazz.getIRI().toString());
+                   System.err.println("No label for term " + entity.getIRI().toString());
                    label = "";
 
                }else if (labels.size() > 1){
@@ -108,13 +115,13 @@ public class OntologyReporter {
                }
 
 
-               List<String> definitions = getClassAnnotation(clazz, definition);
+               List<String> definitions = getClassAnnotation(entity, definition);
 
 
                String definition = null;
                if (definitions.size()==0) {
 
-                   System.err.println("No definition for term "+clazz.getIRI().toString()+" "+label);
+                   System.err.println("No definition for term "+entity.getIRI().toString()+" "+label);
                    definition = "";
 
                }else if (definitions.size() > 1){
@@ -127,17 +134,17 @@ public class OntologyReporter {
 
                //synonyms
                List<String> synonyms = new ArrayList<String>();
-               List<String> toAdd = getClassAnnotation(clazz, alternative_term);
+               List<String> toAdd = getClassAnnotation(entity, alternative_term);
                if (toAdd!=null)
                 synonyms.addAll(toAdd);
 
-               toAdd = getClassAnnotation(clazz, STATO_alternative_term);
+               toAdd = getClassAnnotation(entity, STATO_alternative_term);
                if (toAdd!=null)
                 synonyms.addAll(toAdd);
 
 
                ontologyReport.addClass(label,
-                                       clazz.getIRI().toString(),
+                                       entity.getIRI().toString(),
                                        definition,
                                        synonyms
                                        );
@@ -145,7 +152,7 @@ public class OntologyReporter {
            }
         }
 
-        System.out.println("There are "+classes.size()+" classes in the ontology signature with the IRI prefix "+iriPrefix);
+        System.out.println("There are "+entities.size()+" classes in the ontology signature with the IRI prefix "+iriPrefix);
         ontologyReport.saveReport(outDir, outFile);
     }
 
