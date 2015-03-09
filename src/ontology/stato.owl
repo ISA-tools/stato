@@ -59,6 +59,10 @@
         <Literal datatypeIRI="&rdf;PlainLiteral">Thomas Nichols (http://orcid.org/0000-0002-4516-5103)</Literal>
     </Annotation>
     <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/contributor"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Nolan Nichols (http://orcid.org/0000-0003-1099-3328)</Literal>
+    </Annotation>
+    <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/title"/>
         <Literal datatypeIRI="&rdf;PlainLiteral">STATO: the statistical methods ontology</Literal>
     </Annotation>
@@ -69,10 +73,6 @@
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
         <Literal datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra (http://orcid.org/0000-0001-9853-5668)</Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/contributor"/>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Nolan Nichols (http://orcid.org/0000-0003-1099-3328)</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/contributor"/>
@@ -10257,7 +10257,7 @@ http://stat.ethz.ch/R-manual/R-patched/library/base/html/range.html</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000036</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral"> Outliers are deviant scores that have been legitimately gathered and are not due to equipment failures.</Literal>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Outliers are deviant scores that have been legitimately gathered and are not due to equipment failures.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -11366,7 +11366,7 @@ http://stat.ethz.ch/R-manual/R-patched/library/stats/html/Hypergeometric.html</L
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000061</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">is a null hypothesis stating that there are no differences observed between group of subjects</Literal>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">It is a null hypothesis stating that there are no differences observed between group of subjects.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -12201,7 +12201,8 @@ https://stat.ethz.ch/R-manual/R-devel/library/stats/html/shapiro.test.html</Lite
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000079</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"> Bartlett&apos;s test (see Snedecor and Cochran, 1989) is used to test if k samples are from populations with equal variances. Equal variances across samples is called homoscedasticity or homogeneity of variances. Some statistical tests, for example the analysis of variance, assume that variances are equal across groups or samples. The Bartlett test can be used to verify that assumption.
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Bartlett&apos;s test (see Snedecor and Cochran, 1989) is used to test if k samples are from populations with equal variances. Equal variances across samples is called homoscedasticity or homogeneity of variances. Some statistical tests, for example the analysis of variance, assume that variances are equal across groups or samples. The Bartlett test can be used to verify that assumption.
+
 Bartlett&apos;s test is sensitive to departures from normality. That is, if the samples come from non-normal distributions, then Bartlett&apos;s test may simply be testing for non-normality. Levene&apos;s test and the Brown–Forsythe test are alternatives to the Bartlett test that are less sensitive to departures from normality.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -12825,7 +12826,8 @@ http://www.drcath.net/toolkit/casecontrol.html</Literal>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000092</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">The Wilcoxon signed rank test is a statistical test which tests the null hypothesis that the median difference between pairs of observations is zero. This is the non-parametric analogue to the paired t-test, and should be used if the distribution of differences between pairs may be non-normally distributed.
-The procedure involves a ranking hence the name. The absolute value of the differences between observations are ranked from smallest to largest, with the smallest difference getting a rank of 1, then next larger difference getting a rank of 2, etc. Ties are given average ranks. The ranks of all differences in one direction are summed, and the ranks of all differences in the other direction are summed. The smaller of these two sums is the test statistic, W (sometimes symbolized Ts). Unlike most test statistics, smaller values of W are less likely under the null hypothesis.</Literal>
+
+The procedure involves a ranking, hence the name. The absolute value of the differences between observations are ranked from smallest to largest, with the smallest difference getting a rank of 1, then next larger difference getting a rank of 2, etc. Ties are given average ranks. The ranks of all differences in one direction are summed, and the ranks of all differences in the other direction are summed. The smaller of these two sums is the test statistic, W (sometimes symbolized Ts). Unlike most test statistics, smaller values of W are less likely under the null hypothesis.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -14322,6 +14324,11 @@ http://rss.acs.unt.edu/Rdoc/library/limma/html/volcanoplot.html</Literal>
         <Literal datatypeIRI="&rdf;PlainLiteral">Altman box and whisker plot</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000129</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A relationship (data property) between an entity and its value.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000129</IRI>
         <Literal datatypeIRI="&xsd;string">Alejandra Gonzalez-Beltran</Literal>
@@ -14482,7 +14489,7 @@ last polled: 2013-11-09</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000133</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">a post-hoc analysis is a statistical test carried out following an analysis of variance which ruled out the null hypothesis of absence of difference between group which allows identifying which groups differ.</Literal>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A post-hoc analysis is a statistical test carried out following an analysis of variance which ruled out the null hypothesis of absence of difference between group which allows identifying which groups differ.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -21345,7 +21352,7 @@ http://www.ats.ucla.edu/stat/mult_pkg/faq/general/tail_tests.htm</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000288</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">a null hypothesis which states that no difference exists between 2 or more groups being considered</Literal>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A null hypothesis which states that no difference exists between 2 or more groups being considered.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -21450,7 +21457,7 @@ http://stat.ethz.ch/R-manual/R-patched/library/stats/html/model.matrix.html
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000290</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">a contrast is is the weighted sum of group means, the cj coefficients represent the assigned weights of the means (these must sum to 0 for orthogonal contrasts)</Literal>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A contrast is the weighted sum of group means, the c_j coefficients represent the assigned weights of the means (these must sum to 0 for orthogonal contrasts)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000116"/>
