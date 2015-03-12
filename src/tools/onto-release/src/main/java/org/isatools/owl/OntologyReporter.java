@@ -97,19 +97,19 @@ public class OntologyReporter {
         int count = 0;
         for(OWLEntity entity : entities){
 
-            if (entity.getIRI().toString().startsWith(iriPrefix)){
+            if (entity.getIRI().toString().startsWith(iriPrefix)) {
 
                 String label = null;
                 List<String> labels = getClassAnnotation(entity, LABEL);
 
-                if (labels.size()==0) {
+                if (labels.size() == 0) {
                     System.err.println("No label for term " + entity.getIRI().toString());
                     label = "";
 
-                }else if (labels.size() > 1){
-                    System.err.println("There are more than one label assigned "+labels);
+                } else if (labels.size() > 1) {
+                    System.err.println("There are more than one label assigned " + labels);
                     label = labels.get(0);
-                }else {
+                } else {
                     label = labels.get(0);
                 }
 
@@ -118,24 +118,22 @@ public class OntologyReporter {
 
 
                 String definition = null;
-                if (definitions.size()==0) {
-
-                    System.err.println("No definition for term "+entity.getIRI().toString()+" "+label);
-                    definition = "";
+                if (definitions.size() == 0) {
+                    System.out.println("No definition for term " + entity.getIRI().toString() + " " + label);
                     count++;
 
-                }else if (definitions.size() > 1){
-                    System.err.println("There are more than one definition assigned "+definitions);
+                } else if (definitions.size() > 1) {
+                    System.out.println("There are more than one definition assigned " + definitions);
                     definition = definitions.get(0);
-                }else {
+                } else {
                     definition = definitions.get(0);
                 }
 
-                if (definition.isEmpty()) {
-                    System.err.println("No definition for term "+entity.getIRI().toString()+" "+label);
-                    count++;
+                if (definition ==null || (definition != null && definition.isEmpty()) ){
+                        System.out.println("No definition for term " + entity.getIRI().toString() + " " + label);
+                        count++;
+                        definition = "";
                 }
-
 
                 //synonyms
                 List<String> synonyms = new ArrayList<String>();
