@@ -23,52 +23,20 @@
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Import>http://purl.obolibrary.org/obo/stato/obi_import.owl</Import>
     <Annotation>
-        <AnnotationProperty IRI="http://usefulinc.com/ns/doap#mailing-list"/>
-        <Literal datatypeIRI="&rdf;PlainLiteral">stat-ontology@googlegroups.com</Literal>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">RC1.2</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
         <Literal datatypeIRI="&rdf;PlainLiteral">Orlaith Burke</Literal>
     </Annotation>
     <Annotation>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/license"/>
-        <Literal datatypeIRI="&xsd;anyURI">http://creativecommons.org/licenses/by/3.0/</Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
-        <Literal datatypeIRI="&rdf;PlainLiteral">RC1.2</Literal>
-    </Annotation>
-    <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/subject"/>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Statistical Method, Design of Experiment, Plots, Statistical Model</Literal>
     </Annotation>
     <Annotation>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
-        <Literal datatypeIRI="&rdf;PlainLiteral">STATO is the statistical methods ontology. It contains concepts and properties related to statistical methods, probability distributions and other concepts related to statistical analysis, including relationships to study designs and plots.</Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran (http://orcid.org/0000-0003-3499-8262)</Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty IRI="http://usefulinc.com/ns/doap#bug-database"/>
-        <Literal datatypeIRI="&rdf;PlainLiteral">https://github.com/ISA-tools/stato/issues</Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/contributor"/>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Thomas Nichols (http://orcid.org/0000-0002-4516-5103)</Literal>
-    </Annotation>
-    <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/rights"/>
         <Literal datatypeIRI="&xsd;anyURI">This Ontology is distributed under a Creative Commons Attribution License </Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra (http://orcid.org/0000-0001-9853-5668)</Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/contributor"/>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Nolan Nichols (http://orcid.org/0000-0003-1099-3328)</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/title"/>
@@ -79,8 +47,40 @@
         <Literal datatypeIRI="&rdf;PlainLiteral">Chris Mungall (http://orcid.org/0000-0002-6601-2165)</Literal>
     </Annotation>
     <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran (http://orcid.org/0000-0003-3499-8262)</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/contributor"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Thomas Nichols (http://orcid.org/0000-0002-4516-5103)</Literal>
+    </Annotation>
+    <Annotation>
         <AnnotationProperty IRI="http://usefulinc.com/ns/doap#homepage"/>
         <Literal datatypeIRI="&rdf;PlainLiteral">http://stato-ontology.org/</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://usefulinc.com/ns/doap#bug-database"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">https://github.com/ISA-tools/stato/issues</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">STATO is the statistical methods ontology. It contains concepts and properties related to statistical methods, probability distributions and other concepts related to statistical analysis, including relationships to study designs and plots.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra (http://orcid.org/0000-0001-9853-5668)</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://usefulinc.com/ns/doap#mailing-list"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">stat-ontology@googlegroups.com</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/contributor"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Nolan Nichols (http://orcid.org/0000-0003-1099-3328)</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/license"/>
+        <Literal datatypeIRI="&xsd;anyURI">http://creativecommons.org/licenses/by/3.0/</Literal>
     </Annotation>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000002"/>
@@ -1158,6 +1158,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#regression_model"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#scree_plot"/>
     </Declaration>
     <Declaration>
         <Class IRI="obo:http://purl.obolibrary.org/obo/http://purl.obolibrary.org/obo/STATO_0000321"/>
@@ -8623,6 +8626,10 @@
     <SubClassOf>
         <Class IRI="#regression_model"/>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000107"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#scree_plot"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000038"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="obo:http://purl.obolibrary.org/obo/http://purl.obolibrary.org/obo/STATO_0000321"/>
@@ -25568,6 +25575,41 @@ Spiegelhalter, D. J., N. G. Best, B. P. Carlin, and A. van der Linde, 2002. Baye
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">regression model</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#scree_plot</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A scree plot is a graphical display of the variance of each component in the dataset which is used to determine how many components should be retained in order to explain a high percentage of the variation in the data</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>#scree_plot</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>#scree_plot</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Orlaith Burke</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>#scree_plot</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#scree_plot</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://www.stats.gla.ac.uk/glossary/?q=node/451</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000032"/>
+        <IRI>#scree_plot</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Cattell scree test plot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#scree_plot</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">scree plot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
         <IRI>obo:http://purl.obolibrary.org/obo/http://purl.obolibrary.org/obo/STATO_0000321</IRI>
         <IRI>http://purl.obolibrary.org/obo/IAO_0000123</IRI>
@@ -25614,5 +25656,5 @@ Spiegelhalter, D. J., N. G. Best, B. P. Carlin, and A. van der Linde, 2002. Baye
 
 
 
-<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
 
