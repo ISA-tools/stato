@@ -59,20 +59,20 @@
         <Literal datatypeIRI="&rdf;PlainLiteral">http://stato-ontology.org/</Literal>
     </Annotation>
     <Annotation>
-        <AnnotationProperty IRI="http://usefulinc.com/ns/doap#bug-database"/>
-        <Literal datatypeIRI="&rdf;PlainLiteral">https://github.com/ISA-tools/stato/issues</Literal>
-    </Annotation>
-    <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
         <Literal datatypeIRI="&rdf;PlainLiteral">STATO is the statistical methods ontology. It contains concepts and properties related to statistical methods, probability distributions and other concepts related to statistical analysis, including relationships to study designs and plots.</Literal>
     </Annotation>
     <Annotation>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra (http://orcid.org/0000-0001-9853-5668)</Literal>
+        <AnnotationProperty IRI="http://usefulinc.com/ns/doap#bug-database"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">https://github.com/ISA-tools/stato/issues</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://usefulinc.com/ns/doap#mailing-list"/>
         <Literal datatypeIRI="&rdf;PlainLiteral">stat-ontology@googlegroups.com</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra (http://orcid.org/0000-0001-9853-5668)</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/contributor"/>
@@ -1155,6 +1155,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000385"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000387"/>
     </Declaration>
     <Declaration>
         <Class IRI="#regression_model"/>
@@ -8622,6 +8625,17 @@
                 <Class IRI="http://purl.obolibrary.org/obo/STATO_0000383"/>
             </ObjectSomeValuesFrom>
         </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000387"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000038"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000387"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            <Class IRI="http://purl.obolibrary.org/obo/IAO_0000184"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#regression_model"/>
@@ -25568,6 +25582,31 @@ Spiegelhalter, D. J., N. G. Best, B. P. Carlin, and A. van der Linde, 2002. Baye
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000385</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">standard error of a contrast estimate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000387</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A scatterplot matrix contains all the pairwise scatter plots of a set of variables on a single page in a matrix format.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000387</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000387</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000387</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Adapted from http://itl.nist.gov/div898/handbook/eda/section3/eda33qb.htm</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000387</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">scatterplot matrix</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
