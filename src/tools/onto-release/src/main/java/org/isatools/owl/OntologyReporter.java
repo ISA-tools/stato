@@ -92,72 +92,77 @@ public class OntologyReporter {
 
         entities.addAll(devOntology.getDatatypesInSignature());
 
-        System.out.println("There are " + entities.size() + " classes in the ontology signature");
+        System.out.println("There are " + entities.size() + " entities in the ontology signature");
 
         int count = 0;
         for(OWLEntity entity : entities){
 
-           if (entity.getIRI().toString().startsWith(iriPrefix)){
+            if (entity.getIRI().toString().startsWith(iriPrefix)) {
 
-               //System.out.println(entity.getIRI());
-               String label = null;
-               List<String> labels = getClassAnnotation(entity, LABEL);
+                String label = null;
+                List<String> labels = getClassAnnotation(entity, LABEL);
 
-               if (labels.size()==0) {
-                   System.err.println("No label for term " + entity.getIRI().toString());
-                   label = "";
+                if (labels.size() == 0) {
+                    System.err.println("No label for term " + entity.getIRI().toString());
+                    label = "";
 
-               }else if (labels.size() > 1){
-                   System.err.println("There are more than one label assigned "+labels);
-                   label = labels.get(0);
-               }else {
-                   label = labels.get(0);
-               }
-
-
-               List<String> definitions = getClassAnnotation(entity, definition);
+                } else if (labels.size() > 1) {
+                    System.err.println("There are more than one label assigned " + labels);
+                    label = labels.get(0);
+                } else {
+                    label = labels.get(0);
+                }
 
 
-               String definition = null;
-               if (definitions.size()==0) {
-
-                   System.err.println("No definition for term "+entity.getIRI().toString()+" "+label);
-                   definition = "";
-
-               }else if (definitions.size() > 1){
-                   System.err.println("There are more than one definition assigned "+definitions);
-                   definition = definitions.get(0);
-               }else {
-                   definition = definitions.get(0);
-               }
+                List<String> definitions = getClassAnnotation(entity, definition);
 
 
-               //synonyms
-               List<String> synonyms = new ArrayList<String>();
-               List<String> toAdd = getClassAnnotation(entity, alternative_term);
-               if (toAdd!=null)
-                synonyms.addAll(toAdd);
+                String definition = null;
+                if (definitions.size() == 0) {
+                    System.out.println("No definition for term " + entity.getIRI().toString() + " " + label);
+                    count++;
 
-               toAdd = getClassAnnotation(entity, STATO_alternative_term);
-               if (toAdd!=null)
-                synonyms.addAll(toAdd);
+                } else if (definitions.size() > 1) {
+                    System.out.println("There are more than one definition assigned " + definitions);
+                    definition = definitions.get(0);
+                } else {
+                    definition = definitions.get(0);
+                }
+
+                if (definition ==null || (definition != null && definition.isEmpty()) ){
+                        System.out.println("No definition for term " + entity.getIRI().toString() + " " + label);
+                        count++;
+                        definition = "";
+                }
+
+                //synonyms
+                List<String> synonyms = new ArrayList<String>();
+                List<String> toAdd = getClassAnnotation(entity, alternative_term);
+                if (toAdd!=null)
+                    synonyms.addAll(toAdd);
+
+                toAdd = getClassAnnotation(entity, STATO_alternative_term);
+                if (toAdd!=null)
+                    synonyms.addAll(toAdd);
 
 
-               ontologyReport.addClass(label,
-                                       entity.getIRI().toString(),
-                                       definition,
-                                       synonyms
-                                       );
-                count++;
-           }
+                ontologyReport.addClass(label,
+                        entity.getIRI().toString(),
+                        definition,
+                        synonyms
+                );
+
+            }
         }
 
-        System.out.println("There are "+entities.size()+" classes in the ontology signature with the IRI prefix "+iriPrefix);
+        System.out.println("There are "+entities.size()+" entities in the ontology signature with the IRI prefix "+iriPrefix);
+        System.out.println("There are "+count+" entities with no definition");
         ontologyReport.saveReport(outDir, outFile);
     }
 
 
     public static void main( String[] args ) throws Exception {
+
         OntologyReporter ontologyReporter = new OntologyReporter();
         String devPath = "/Users/agbeltran/work-dev/stato/src/ontology/stato.owl";
         //String outDir = "/Users/agbeltran/work-dev/stato/report/";

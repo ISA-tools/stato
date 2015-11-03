@@ -23,52 +23,20 @@
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Import>http://purl.obolibrary.org/obo/stato/obi_import.owl</Import>
     <Annotation>
-        <AnnotationProperty IRI="http://usefulinc.com/ns/doap#mailing-list"/>
-        <Literal datatypeIRI="&rdf;PlainLiteral">stat-ontology@googlegroups.com</Literal>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">RC1.2</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
         <Literal datatypeIRI="&rdf;PlainLiteral">Orlaith Burke</Literal>
     </Annotation>
     <Annotation>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/license"/>
-        <Literal datatypeIRI="&xsd;anyURI">http://creativecommons.org/licenses/by/3.0/</Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
-        <Literal datatypeIRI="&rdf;PlainLiteral">RC1.2</Literal>
-    </Annotation>
-    <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/subject"/>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Statistical Method, Design of Experiment, Plots, Statistical Model</Literal>
     </Annotation>
     <Annotation>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
-        <Literal datatypeIRI="&rdf;PlainLiteral">STATO is the statistical methods ontology. It contains concepts and properties related to statistical methods, probability distributions and other concepts related to statistical analysis, including relationships to study designs and plots.</Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran (http://orcid.org/0000-0003-3499-8262)</Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty IRI="http://usefulinc.com/ns/doap#bug-database"/>
-        <Literal datatypeIRI="&rdf;PlainLiteral">https://github.com/ISA-tools/stato/issues</Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/contributor"/>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Thomas Nichols (http://orcid.org/0000-0002-4516-5103)</Literal>
-    </Annotation>
-    <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/rights"/>
         <Literal datatypeIRI="&xsd;anyURI">This Ontology is distributed under a Creative Commons Attribution License </Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra (http://orcid.org/0000-0001-9853-5668)</Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/contributor"/>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Nolan Nichols (http://orcid.org/0000-0003-1099-3328)</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/title"/>
@@ -79,8 +47,40 @@
         <Literal datatypeIRI="&rdf;PlainLiteral">Chris Mungall (http://orcid.org/0000-0002-6601-2165)</Literal>
     </Annotation>
     <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran (http://orcid.org/0000-0003-3499-8262)</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/contributor"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Thomas Nichols (http://orcid.org/0000-0002-4516-5103)</Literal>
+    </Annotation>
+    <Annotation>
         <AnnotationProperty IRI="http://usefulinc.com/ns/doap#homepage"/>
         <Literal datatypeIRI="&rdf;PlainLiteral">http://stato-ontology.org/</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">STATO is the statistical methods ontology. It contains concepts and properties related to statistical methods, probability distributions and other concepts related to statistical analysis, including relationships to study designs and plots.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://usefulinc.com/ns/doap#bug-database"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">https://github.com/ISA-tools/stato/issues</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://usefulinc.com/ns/doap#mailing-list"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">stat-ontology@googlegroups.com</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra (http://orcid.org/0000-0001-9853-5668)</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/contributor"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Nolan Nichols (http://orcid.org/0000-0003-1099-3328)</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/license"/>
+        <Literal datatypeIRI="&xsd;anyURI">http://creativecommons.org/licenses/by/3.0/</Literal>
     </Annotation>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000002"/>
@@ -1157,13 +1157,19 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000385"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#SIRMS0000002"/>
+        <Class IRI="#powerlawDistribution"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#SIRMS0000003"/>
+        <Class IRI="#alphaDistribution"/>
+        </Declaration>
+    <Declaration>    
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000387"/>
     </Declaration>
     <Declaration>
         <Class IRI="#regression_model"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#scree_plot"/>
     </Declaration>
     <Declaration>
         <Class IRI="obo:http://purl.obolibrary.org/obo/http://purl.obolibrary.org/obo/STATO_0000321"/>
@@ -1211,7 +1217,7 @@
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty IRI="#SIRMS0000001"/>
+        <AnnotationProperty IRI="#python_command"/>
     </Declaration>
     <EquivalentClasses>
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0000739"/>
@@ -8630,16 +8636,28 @@
         </ObjectIntersectionOf>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#SIRMS0000002"/>
+        <Class IRI="#powerlawDistribution"/>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000067"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#SIRMS0000003"/>
+        <Class IRI="#alphaDistribution"/>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000067"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000387"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000038"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            <Class IRI="http://purl.obolibrary.org/obo/IAO_0000184"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#regression_model"/>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000107"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#scree_plot"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000038"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="obo:http://purl.obolibrary.org/obo/http://purl.obolibrary.org/obo/STATO_0000321"/>
@@ -10300,7 +10318,7 @@ last accessed: 2013-11-21</Literal>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">mode</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="#SIRMS0000001"/>
+        <AnnotationProperty IRI="#python_command"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000033</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">scipy.stats.mode(a, axis=0)
 
@@ -10478,7 +10496,7 @@ It is calculated by dividing the sample standard deviation (i.e., the sample-bas
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="#SIRMS0000001"/>
+        <AnnotationProperty IRI="#python_command"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000037</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">scipy.stats.sem(a, axis=0, ddof=1)
 
@@ -10698,7 +10716,7 @@ https://github.com/scipy/scipy/blob/v0.15.1/scipy/stats/stats.py#L1928</Literal>
         <Literal datatypeIRI="&rdf;PlainLiteral">ad.test(x) function, where x is a numeric vector</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="#SIRMS0000001"/>
+        <AnnotationProperty IRI="#python_command"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000042</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">scipy.stats.anderson(x, dist=&apos;norm&apos;)
 
@@ -10793,7 +10811,7 @@ https://github.com/scipy/scipy/blob/v0.15.1/scipy/stats/morestats.py#L1017</Lite
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://statland.org/R/R/R1way.htm</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="#SIRMS0000001"/>
+        <AnnotationProperty IRI="#python_command"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000044</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.f_oneway.html#scipy.stats.f_oneway</Literal>
     </AnnotationAssertion>
@@ -11066,7 +11084,7 @@ last accessed: 2013-10-18</Literal>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">SNR</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="#SIRMS0000001"/>
+        <AnnotationProperty IRI="#python_command"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000050</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.signaltonoise.html#scipy.stats.signaltonoise</Literal>
     </AnnotationAssertion>
@@ -11114,7 +11132,7 @@ The expected value of a Poisson-distributed random variable is equal to λ and s
 http://stat.ethz.ch/R-manual/R-patched/library/stats/html/Poisson.html</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="#SIRMS0000001"/>
+        <AnnotationProperty IRI="#python_command"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000051</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.poisson.html#scipy.stats.poisson</Literal>
     </AnnotationAssertion>
@@ -11484,7 +11502,7 @@ The hypothesis contrary to the null hypothesis, usually that the observations ar
 http://stat.ethz.ch/R-manual/R-patched/library/stats/html/TDist.html</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="#SIRMS0000001"/>
+        <AnnotationProperty IRI="#python_command"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000059</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.t.html#scipy.stats.t</Literal>
     </AnnotationAssertion>
@@ -11536,7 +11554,7 @@ http://stat.ethz.ch/R-manual/R-patched/library/stats/html/TDist.html</Literal>
 http://stat.ethz.ch/R-manual/R-patched/library/stats/html/Hypergeometric.html</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="#SIRMS0000001"/>
+        <AnnotationProperty IRI="#python_command"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000060</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.hypergeom.html#scipy.stats.hypergeom</Literal>
     </AnnotationAssertion>
@@ -11894,7 +11912,7 @@ last accessed:
 http://hosho.ees.hokudai.ac.jp/~kubo/Rdoc/library/e1071/html/skewness.html</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="#SIRMS0000001"/>
+        <AnnotationProperty IRI="#python_command"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000068</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.skew.html#scipy.stats.skew</Literal>
     </AnnotationAssertion>
@@ -12119,7 +12137,7 @@ http://stat.ethz.ch/R-manual/R-patched/library/stats/html/chisq.test.html</Liter
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">fisher.test(x) function, where x is a matrix</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="#SIRMS0000001"/>
+        <AnnotationProperty IRI="#python_command"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000073</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">scipy.stats.fisher_exact(table, alternative=&apos;two-sided&apos;)
 
@@ -12294,7 +12312,7 @@ last accessed [2014-03-04]</Literal>
 http://stat.ethz.ch/R-manual/R-patched/library/stats/html/wilcox.test.html</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="#SIRMS0000001"/>
+        <AnnotationProperty IRI="#python_command"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000076</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">scipy.stats.mannwhitneyu(x, y, use_continuity=True)
 
@@ -12304,7 +12322,7 @@ source:
 https://github.com/scipy/scipy/blob/v0.15.1/scipy/stats/stats.py#L4049</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="#SIRMS0000001"/>
+        <AnnotationProperty IRI="#python_command"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000076</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">scipy.stats.ranksums(x, y)
 
@@ -12366,7 +12384,7 @@ https://github.com/scipy/scipy/blob/v0.15.1/scipy/stats/stats.py#L4103</Literal>
 https://stat.ethz.ch/R-manual/R-devel/library/stats/html/shapiro.test.html</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="#SIRMS0000001"/>
+        <AnnotationProperty IRI="#python_command"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000077</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">scipy.stats.shapiro(x, a=None, reta=False)
 
@@ -12421,7 +12439,7 @@ https://github.com/scipy/scipy/blob/v0.15.1/scipy/stats/morestats.py#L944</Liter
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">levene.test(x) function, where x is a numeric vector</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="#SIRMS0000001"/>
+        <AnnotationProperty IRI="#python_command"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000078</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">scipy.stats.levene(*args, **kwds)
 
@@ -12478,7 +12496,7 @@ Bartlett&apos;s test is sensitive to departures from normality. That is, if the 
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">bartlett.test(x) function, where x is a numeric vector</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="#SIRMS0000001"/>
+        <AnnotationProperty IRI="#python_command"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000079</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">scipy.stats.bartlett(*args)
 
@@ -12606,7 +12624,7 @@ chisq.test(x, y = NULL, correct = TRUE,
 pearson.test(x)  function, where x is a numeric vector</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="#SIRMS0000001"/>
+        <AnnotationProperty IRI="#python_command"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000081</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.chi2_contingency.html#scipy.stats.chi2_contingency</Literal>
     </AnnotationAssertion>
@@ -12713,7 +12731,7 @@ http://en.wikipedia.org/wiki/Fixed_effects_model</Literal>
         <Literal datatypeIRI="&rdf;PlainLiteral">ks.test(dataset, distribution)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="#SIRMS0000001"/>
+        <AnnotationProperty IRI="#python_command"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000083</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">scipy.stats.kstwobign = &lt;scipy.stats._continuous_distns.kstwobign_gen object at 0x7f6169f842d0&gt;
 
@@ -12723,7 +12741,7 @@ source:
 https://github.com/scipy/scipy/blob/v0.15.1/scipy/stats/_continuous_distns.py</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="#SIRMS0000001"/>
+        <AnnotationProperty IRI="#python_command"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000083</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">scipy.stats.mstats.ks_twosamp(data1, data2,alternative=&apos;two-sided&apos;)
 
@@ -13137,7 +13155,7 @@ The procedure involves a ranking, hence the name. The absolute value of the diff
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">signrank()</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="#SIRMS0000001"/>
+        <AnnotationProperty IRI="#python_command"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000092</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">scipy.stats.wilcoxon(x, y=None, zero_method=&apos;wilcox&apos;, correction=False)
 
@@ -13241,7 +13259,7 @@ The Kruskal–Wallis test is most commonly used when there is one nominal variab
 http://stat.ethz.ch/R-manual/R-patched/library/stats/html/kruskal.test.html</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="#SIRMS0000001"/>
+        <AnnotationProperty IRI="#python_command"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000094</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">scipy.stats.mstats.kruskalwallis(*args)
 
@@ -13310,7 +13328,7 @@ t.test(dependent variable ~ independant variable, data = dataset, var.equal = FA
 </Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="#SIRMS0000001"/>
+        <AnnotationProperty IRI="#python_command"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000095</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">scipy.stats.ttest_rel(a, b, axis=0)
 
@@ -13686,7 +13704,7 @@ http://stat.ethz.ch/R-manual/R-patched/library/stats/html/Multinom.html</Literal
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">standard score</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="#SIRMS0000001"/>
+        <AnnotationProperty IRI="#python_command"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000104</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">scipy.stats.zscore(a, axis=0, ddof=0)
 
@@ -15398,7 +15416,7 @@ The quantile is defined as the smallest value x such that F(x) ≥ p, where F is
 http://stat.ethz.ch/R-manual/R-patched/library/stats/html/Geometric.html</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="#SIRMS0000001"/>
+        <AnnotationProperty IRI="#python_command"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000145</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.geom.html#scipy.stats.geom</Literal>
     </AnnotationAssertion>
@@ -16050,7 +16068,7 @@ qexp(p, rate = 1, lower.tail = TRUE, log.p = FALSE)
 rexp(n, rate = 1)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="#SIRMS0000001"/>
+        <AnnotationProperty IRI="#python_command"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000160</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.expon.html#scipy.stats.expon</Literal>
     </AnnotationAssertion>
@@ -16172,7 +16190,7 @@ http://en.wikipedia.org/wiki/Truncated_mean</Literal>
         <Literal datatypeIRI="&rdf;PlainLiteral">truncated mean</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="#SIRMS0000001"/>
+        <AnnotationProperty IRI="#python_command"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000163</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">scipy.stats.tmean(a, limits=None, inclusive=(True, True))
 
@@ -16782,7 +16800,7 @@ qbeta(p, shape1, shape2, ncp = 0, lower.tail = TRUE, log.p = FALSE)
 rbeta(n, shape1, shape2, ncp = 0)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="#SIRMS0000001"/>
+        <AnnotationProperty IRI="#python_command"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000177</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.beta.html#scipy.stats.beta</Literal>
     </AnnotationAssertion>
@@ -16827,7 +16845,7 @@ rbeta(n, shape1, shape2, ncp = 0)</Literal>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="#SIRMS0000001"/>
+        <AnnotationProperty IRI="#python_command"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000178</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.kurtosis.html#scipy.stats.kurtosis</Literal>
     </AnnotationAssertion>
@@ -17832,7 +17850,7 @@ Spearman&apos;s coefficient may be used when the conditions for computing Pearso
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">cor(x, y = NULL, use = &quot;everything&quot;,method = c(&quot;spearman&quot;))</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="#SIRMS0000001"/>
+        <AnnotationProperty IRI="#python_command"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000201</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">scipy.stats.spearmanr(a, b=None, axis=0)
 
@@ -17990,7 +18008,7 @@ http://stat.ethz.ch/R-manual/R-patched/library/stats/html/Fdist.html
 </Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="#SIRMS0000001"/>
+        <AnnotationProperty IRI="#python_command"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000204</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.f.html#scipy.stats.f</Literal>
     </AnnotationAssertion>
@@ -18937,7 +18955,7 @@ http://mathworld.wolfram.com/NormalDistribution.html</Literal>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="#SIRMS0000001"/>
+        <AnnotationProperty IRI="#python_command"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000227</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.norm.html#scipy.stats.norm</Literal>
     </AnnotationAssertion>
@@ -19034,7 +19052,7 @@ http://mathworld.wolfram.com/NormalDistribution.html</Literal>
 http://stat.ethz.ch/R-manual/R-patched/library/stats/html/Chisquare.html</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="#SIRMS0000001"/>
+        <AnnotationProperty IRI="#python_command"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000229</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.chi2.html#scipy.stats.chi2</Literal>
     </AnnotationAssertion>
@@ -19335,7 +19353,7 @@ http://mathworld.wolfram.com/Sensitivity.html</Literal>
 last accessed: 2013-10-18</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="#SIRMS0000001"/>
+        <AnnotationProperty IRI="#python_command"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000236</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">scipy.stats.variation(a, axis=0)
 
@@ -19541,7 +19559,7 @@ http://stamash.org/kendalls-tau-correlation/</Literal>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">cor(x, y = NULL, use = &quot;everything&quot;,method = c(&quot;kendall&quot;))</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="#SIRMS0000001"/>
+        <AnnotationProperty IRI="#python_command"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000240</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">scipy.stats.kendalltau(x, y, initial_lexsort=True)
 
@@ -20825,7 +20843,7 @@ http://stat.ethz.ch/R-manual/R-patched/library/graphics/html/barplot.html</Liter
 http://stat.ethz.ch/R-manual/R-patched/library/stats/html/GammaDist.html</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="#SIRMS0000001"/>
+        <AnnotationProperty IRI="#python_command"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000268</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.gamma.html#scipy.stats.gamma</Literal>
     </AnnotationAssertion>
@@ -21190,7 +21208,7 @@ The variance is N*p*q</Literal>
 http://stat.ethz.ch/R-manual/R-patched/library/stats/html/Binomial.html</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="#SIRMS0000001"/>
+        <AnnotationProperty IRI="#python_command"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000276</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.binom.html#scipy.stats.binom</Literal>
     </AnnotationAssertion>
@@ -21397,7 +21415,7 @@ http://stamash.org/kendalls-tau-correlation/</Literal>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://stat.ethz.ch/R-manual/R-patched/library/stats/html/cor.html</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="#SIRMS0000001"/>
+        <AnnotationProperty IRI="#python_command"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000280</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">scipy.stats.pearsonr(x, y)
 
@@ -21536,7 +21554,7 @@ The negative binomial distribution, also known as the Pascal distribution or Pó
 http://stat.ethz.ch/R-manual/R-patched/library/stats/html/NegBinomial.html</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="#SIRMS0000001"/>
+        <AnnotationProperty IRI="#python_command"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000283</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.nbinom.html#scipy.stats.nbinom</Literal>
     </AnnotationAssertion>
@@ -22457,7 +22475,7 @@ http://www.psychology.emory.edu/clinical/bliwise/Tutorials/TOM/meanstests/tone.h
 http://stat.ethz.ch/R-manual/R-patched/library/stats/html/t.test.html</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="#SIRMS0000001"/>
+        <AnnotationProperty IRI="#python_command"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000302</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">scipy.stats.ttest_1samp(a, popmean, axis=0)
 
@@ -22528,7 +22546,7 @@ http://www.psychology.emory.edu/clinical/bliwise/Tutorials/TOM/meanstests/tind.h
 http://stat.ethz.ch/R-manual/R-patched/library/stats/html/t.test.html</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="#SIRMS0000001"/>
+        <AnnotationProperty IRI="#python_command"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000303</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">scipy.stats.ttest_ind(a, b, axis=0, equal_var=True)
 
@@ -22601,7 +22619,7 @@ last accessed: 2014-05-06</Literal>
 http://stat.ethz.ch/R-manual/R-patched/library/stats/html/t.test.html</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="#SIRMS0000001"/>
+        <AnnotationProperty IRI="#python_command"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000304</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">scipy.stats.ttest_ind(a, b, axis=0, equal_var=False)
 
@@ -25903,34 +25921,94 @@ Spiegelhalter, D. J., N. G. Best, B. P. Carlin, and A. van der Linde, 2002. Baye
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">standard error of a contrast estimate</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000387</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A scatterplot matrix contains all the pairwise scatter plots of a set of variables on a single page in a matrix format.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000387</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000387</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000387</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Adapted from http://itl.nist.gov/div898/handbook/eda/section3/eda33qb.htm</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#SIRMS0000001</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000387</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">scatterplot matrix</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#python_command</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Python command</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="#SIRMS0000001"/>
-        <IRI>#SIRMS0000002</IRI>
+        <AnnotationProperty IRI="#python_command"/>
+        <IRI>##powerlawDistribution</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.powerlaw.html#scipy.stats.powerlaw</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#SIRMS0000002</IRI>
+        <IRI>##powerlawDistribution</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">power law distribution</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="#SIRMS0000001"/>
-        <IRI>#SIRMS0000003</IRI>
+        <AnnotationProperty IRI="#python_command"/>
+        <IRI>##alphaDistribution</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.alpha.html#scipy.stats.alpha</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#SIRMS0000003</IRI>
+        <IRI>##alphaDistribution</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">alpha distribution</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#regression_model</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">regression model</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#scree_plot</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A scree plot is a graphical display of the variance of each component in the dataset which is used to determine how many components should be retained in order to explain a high percentage of the variation in the data</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>#scree_plot</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>#scree_plot</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Orlaith Burke</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>#scree_plot</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>#scree_plot</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://www.stats.gla.ac.uk/glossary/?q=node/451</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000032"/>
+        <IRI>#scree_plot</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Cattell scree test plot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#scree_plot</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">scree plot</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
@@ -25976,12 +26054,12 @@ Spiegelhalter, D. J., N. G. Best, B. P. Carlin, and A. van der Linde, 2002. Baye
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
     </SubAnnotationPropertyOf>
     <SubAnnotationPropertyOf>
-        <AnnotationProperty IRI="#SIRMS0000001"/>
+        <AnnotationProperty IRI="#python_command"/>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
     </SubAnnotationPropertyOf>
 </Ontology>
 
 
 
-<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
 
