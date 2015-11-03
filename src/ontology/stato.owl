@@ -1157,6 +1157,12 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000385"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#SIRMS0000002"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SIRMS0000003"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#regression_model"/>
     </Declaration>
     <Declaration>
@@ -1203,6 +1209,9 @@
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#SIRMS0000001"/>
     </Declaration>
     <EquivalentClasses>
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0000739"/>
@@ -8621,6 +8630,14 @@
         </ObjectIntersectionOf>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#SIRMS0000002"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000067"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SIRMS0000003"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000067"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#regression_model"/>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000107"/>
     </SubClassOf>
@@ -10248,6 +10265,11 @@ last accessed: 2013-11-21</Literal>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">STATO alternative term</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000033</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000033</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">The mode is a data item which corresponds to the most frequently occurring number in a set of numbers.</Literal>
@@ -10278,9 +10300,14 @@ last accessed: 2013-11-21</Literal>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">mode</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
+        <AnnotationProperty IRI="#SIRMS0000001"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000033</IRI>
-        <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">scipy.stats.mode(a, axis=0)
+
+http://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.mode.html#scipy.stats.mode
+
+source:
+https://github.com/scipy/scipy/blob/v0.15.1/scipy/stats/stats.py#L586</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -10443,17 +10470,22 @@ It is calculated by dividing the sample standard deviation (i.e., the sample-bas
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000037</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
-        <IRI>http://purl.obolibrary.org/obo/STATO_0000037</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">adapted from wikipedia (https://en.wikipedia.org/wiki/Standard_error)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000032"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000037</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#SIRMS0000001"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000037</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">scipy.stats.sem(a, axis=0, ddof=1)
+
+http://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.sem.html#scipy.stats.sem
+
+source:
+https://github.com/scipy/scipy/blob/v0.15.1/scipy/stats/stats.py#L1928</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -10666,6 +10698,16 @@ It is calculated by dividing the sample standard deviation (i.e., the sample-bas
         <Literal datatypeIRI="&rdf;PlainLiteral">ad.test(x) function, where x is a numeric vector</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="#SIRMS0000001"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000042</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">scipy.stats.anderson(x, dist=&apos;norm&apos;)
+
+http://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.anderson.html#scipy.stats.anderson
+
+source:
+https://github.com/scipy/scipy/blob/v0.15.1/scipy/stats/morestats.py#L1017</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000042</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Anderson-Darling test</Literal>
@@ -10749,6 +10791,11 @@ It is calculated by dividing the sample standard deviation (i.e., the sample-bas
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000044</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://statland.org/R/R/R1way.htm</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#SIRMS0000001"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000044</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.f_oneway.html#scipy.stats.f_oneway</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -11019,6 +11066,11 @@ last accessed: 2013-10-18</Literal>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">SNR</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="#SIRMS0000001"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000050</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.signaltonoise.html#scipy.stats.signaltonoise</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000050</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">signal to noise ratio</Literal>
@@ -11060,6 +11112,11 @@ The expected value of a Poisson-distributed random variable is equal to λ and s
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">dpois(x, lambda, log = FALSE)
 
 http://stat.ethz.ch/R-manual/R-patched/library/stats/html/Poisson.html</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#SIRMS0000001"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000051</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.poisson.html#scipy.stats.poisson</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/source"/>
@@ -11427,6 +11484,11 @@ The hypothesis contrary to the null hypothesis, usually that the observations ar
 http://stat.ethz.ch/R-manual/R-patched/library/stats/html/TDist.html</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="#SIRMS0000001"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000059</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.t.html#scipy.stats.t</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000059</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Student&apos;s t distribution</Literal>
@@ -11472,6 +11534,11 @@ http://stat.ethz.ch/R-manual/R-patched/library/stats/html/TDist.html</Literal>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">dhyper(x, m, n, k, log = FALSE)
 
 http://stat.ethz.ch/R-manual/R-patched/library/stats/html/Hypergeometric.html</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#SIRMS0000001"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000060</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.hypergeom.html#scipy.stats.hypergeom</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -11827,6 +11894,11 @@ last accessed:
 http://hosho.ees.hokudai.ac.jp/~kubo/Rdoc/library/e1071/html/skewness.html</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="#SIRMS0000001"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000068</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.skew.html#scipy.stats.skew</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000068</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">skewness</Literal>
@@ -12047,6 +12119,16 @@ http://stat.ethz.ch/R-manual/R-patched/library/stats/html/chisq.test.html</Liter
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">fisher.test(x) function, where x is a matrix</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="#SIRMS0000001"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000073</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">scipy.stats.fisher_exact(table, alternative=&apos;two-sided&apos;)
+
+http://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.fisher_exact.html#scipy.stats.fisher_exact
+
+source:
+https://github.com/scipy/scipy/blob/v0.15.1/scipy/stats/stats.py#L2485</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000073</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Fisher&apos;s exact test</Literal>
@@ -12212,6 +12294,26 @@ last accessed [2014-03-04]</Literal>
 http://stat.ethz.ch/R-manual/R-patched/library/stats/html/wilcox.test.html</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="#SIRMS0000001"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000076</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">scipy.stats.mannwhitneyu(x, y, use_continuity=True)
+
+http://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.mannwhitneyu.html#scipy.stats.mannwhitneyu
+
+source:
+https://github.com/scipy/scipy/blob/v0.15.1/scipy/stats/stats.py#L4049</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#SIRMS0000001"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000076</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">scipy.stats.ranksums(x, y)
+
+http://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.ranksums.html#scipy.stats.ranksums
+
+source:
+https://github.com/scipy/scipy/blob/v0.15.1/scipy/stats/stats.py#L4103</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000076</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Mann-Whitney U-test</Literal>
@@ -12264,6 +12366,16 @@ http://stat.ethz.ch/R-manual/R-patched/library/stats/html/wilcox.test.html</Lite
 https://stat.ethz.ch/R-manual/R-devel/library/stats/html/shapiro.test.html</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="#SIRMS0000001"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000077</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">scipy.stats.shapiro(x, a=None, reta=False)
+
+http://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.shapiro.html#scipy.stats.shapiro
+
+source:
+https://github.com/scipy/scipy/blob/v0.15.1/scipy/stats/morestats.py#L944</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000077</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Shapiro-Wilk test</Literal>
@@ -12307,6 +12419,16 @@ https://stat.ethz.ch/R-manual/R-devel/library/stats/html/shapiro.test.html</Lite
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000078</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">levene.test(x) function, where x is a numeric vector</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#SIRMS0000001"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000078</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">scipy.stats.levene(*args, **kwds)
+
+http://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.levene.html#scipy.stats.levene
+
+source:
+https://github.com/scipy/scipy/blob/v0.15.1/scipy/stats/morestats.py#L1496</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -12354,6 +12476,16 @@ Bartlett&apos;s test is sensitive to departures from normality. That is, if the 
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000079</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">bartlett.test(x) function, where x is a numeric vector</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#SIRMS0000001"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000079</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">scipy.stats.bartlett(*args)
+
+http://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.bartlett.html#scipy.stats.bartlett
+
+source:
+https://github.com/scipy/scipy/blob/v0.15.1/scipy/stats/morestats.py#L1450</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -12474,6 +12606,11 @@ chisq.test(x, y = NULL, correct = TRUE,
 pearson.test(x)  function, where x is a numeric vector</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="#SIRMS0000001"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000081</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.chi2_contingency.html#scipy.stats.chi2_contingency</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000081</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Pearson&apos;s Chi square test of independence between categorical variables</Literal>
@@ -12574,6 +12711,26 @@ http://en.wikipedia.org/wiki/Fixed_effects_model</Literal>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000083</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">ks.test(dataset, distribution)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#SIRMS0000001"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000083</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">scipy.stats.kstwobign = &lt;scipy.stats._continuous_distns.kstwobign_gen object at 0x7f6169f842d0&gt;
+
+http://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.kstwobign.html#scipy.stats.kstwobign
+
+source:
+https://github.com/scipy/scipy/blob/v0.15.1/scipy/stats/_continuous_distns.py</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#SIRMS0000001"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000083</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">scipy.stats.mstats.ks_twosamp(data1, data2,alternative=&apos;two-sided&apos;)
+
+http://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.mstats.ks_twosamp.html
+
+source code:
+https://github.com/scipy/scipy/blob/v0.15.1/scipy/stats/mstats_basic.py#L821</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -12980,6 +13137,16 @@ The procedure involves a ranking, hence the name. The absolute value of the diff
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">signrank()</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="#SIRMS0000001"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000092</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">scipy.stats.wilcoxon(x, y=None, zero_method=&apos;wilcox&apos;, correction=False)
+
+http://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.wilcoxon.html#scipy.stats.wilcoxon
+
+source:
+https://github.com/scipy/scipy/blob/v0.15.1/scipy/stats/stats.py#L4103</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000092</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Wilcoxon signed rank test</Literal>
@@ -13074,6 +13241,17 @@ The Kruskal–Wallis test is most commonly used when there is one nominal variab
 http://stat.ethz.ch/R-manual/R-patched/library/stats/html/kruskal.test.html</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="#SIRMS0000001"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000094</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">scipy.stats.mstats.kruskalwallis(*args)
+
+http://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.mstats.kruskalwallis.html
+
+
+source code:
+https://github.com/scipy/scipy/blob/v0.15.1/scipy/stats/mstats_basic.py#L800</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000094</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Kruskal Wallis test</Literal>
@@ -13130,6 +13308,16 @@ http://stat.ethz.ch/R-manual/R-patched/library/stats/html/kruskal.test.html</Lit
 
 t.test(dependent variable ~ independant variable, data = dataset, var.equal = FALSE, paired= TRUE)
 </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#SIRMS0000001"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000095</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">scipy.stats.ttest_rel(a, b, axis=0)
+
+http://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.ttest_rel.html#scipy.stats.ttest_rel
+
+source:
+https://github.com/scipy/scipy/blob/v0.15.1/scipy/stats/stats.py#L3389</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -13496,6 +13684,16 @@ http://stat.ethz.ch/R-manual/R-patched/library/stats/html/Multinom.html</Literal
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000032"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000104</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">standard score</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#SIRMS0000001"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000104</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">scipy.stats.zscore(a, axis=0, ddof=0)
+
+http://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.zscore.html#scipy.stats.zscore
+
+source:
+https://github.com/scipy/scipy/blob/v0.15.1/scipy/stats/stats.py#L1977</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -15200,6 +15398,11 @@ The quantile is defined as the smallest value x such that F(x) ≥ p, where F is
 http://stat.ethz.ch/R-manual/R-patched/library/stats/html/Geometric.html</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="#SIRMS0000001"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000145</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.geom.html#scipy.stats.geom</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000145</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">geometric distribution</Literal>
@@ -15847,6 +16050,11 @@ qexp(p, rate = 1, lower.tail = TRUE, log.p = FALSE)
 rexp(n, rate = 1)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="#SIRMS0000001"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000160</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.expon.html#scipy.stats.expon</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000160</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">exponential distribution</Literal>
@@ -15962,6 +16170,16 @@ http://en.wikipedia.org/wiki/Truncated_mean</Literal>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000032"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000163</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">truncated mean</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#SIRMS0000001"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000163</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">scipy.stats.tmean(a, limits=None, inclusive=(True, True))
+
+http://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.tmean.html#scipy.stats.tmean
+
+source:
+https://github.com/scipy/scipy/blob/v0.15.1/scipy/stats/stats.py#L684</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -16564,6 +16782,11 @@ qbeta(p, shape1, shape2, ncp = 0, lower.tail = TRUE, log.p = FALSE)
 rbeta(n, shape1, shape2, ncp = 0)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="#SIRMS0000001"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000177</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.beta.html#scipy.stats.beta</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000177</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">beta distribution</Literal>
@@ -16602,6 +16825,11 @@ rbeta(n, shape1, shape2, ncp = 0)</Literal>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000032"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000178</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#SIRMS0000001"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000178</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.kurtosis.html#scipy.stats.kurtosis</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -17604,6 +17832,16 @@ Spearman&apos;s coefficient may be used when the conditions for computing Pearso
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">cor(x, y = NULL, use = &quot;everything&quot;,method = c(&quot;spearman&quot;))</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="#SIRMS0000001"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000201</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">scipy.stats.spearmanr(a, b=None, axis=0)
+
+http://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.spearmanr.html#scipy.stats.spearmanr
+
+source:
+https://github.com/scipy/scipy/blob/v0.15.1/scipy/stats/stats.py#L2643</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000201</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Spearman&apos;s rank correlation coefficient</Literal>
@@ -17750,6 +17988,11 @@ Spearman&apos;s coefficient may be used when the conditions for computing Pearso
 
 http://stat.ethz.ch/R-manual/R-patched/library/stats/html/Fdist.html
 </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#SIRMS0000001"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000204</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.f.html#scipy.stats.f</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -18581,9 +18824,11 @@ http://en.wikipedia.org/wiki/Random_variable</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000225</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">A probability distribution is a information content entity specifies the probability of the value of a random variable.
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A probability distribution is a information content entity that specifies the probability of the value of a random variable.
 
-For a discrete random variable, a mathematical formula that gives the probability of each value of the variable. For a continuous random variable, a curve described by a mathematical formula which specifies, by way of areas under the curve, the probability that the variable falls within a particular interval.</Literal>
+For a discrete random variable, a mathematical formula that gives the probability of each value of the variable.
+
+For a continuous random variable, a curve described by a mathematical formula which specifies, by way of areas under the curve, the probability that the variable falls within a particular interval.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -18692,6 +18937,11 @@ http://mathworld.wolfram.com/NormalDistribution.html</Literal>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="#SIRMS0000001"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000227</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.norm.html#scipy.stats.norm</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000227</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">normal distribution</Literal>
@@ -18782,6 +19032,11 @@ http://mathworld.wolfram.com/NormalDistribution.html</Literal>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">dchisq(x, df, ncp = 0, log = FALSE)
 
 http://stat.ethz.ch/R-manual/R-patched/library/stats/html/Chisquare.html</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#SIRMS0000001"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000229</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.chi2.html#scipy.stats.chi2</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -19080,6 +19335,16 @@ http://mathworld.wolfram.com/Sensitivity.html</Literal>
 last accessed: 2013-10-18</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="#SIRMS0000001"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000236</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">scipy.stats.variation(a, axis=0)
+
+http://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.variation.html#scipy.stats.variation
+
+source:
+https://github.com/scipy/scipy/blob/v0.15.1/scipy/stats/stats.py#L951</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000236</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">coefficient of variation</Literal>
@@ -19274,6 +19539,16 @@ http://stamash.org/kendalls-tau-correlation/</Literal>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000240</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">cor(x, y = NULL, use = &quot;everything&quot;,method = c(&quot;kendall&quot;))</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#SIRMS0000001"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000240</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">scipy.stats.kendalltau(x, y, initial_lexsort=True)
+
+http://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.kendalltau.html#scipy.stats.kendalltau
+
+source:
+https://github.com/scipy/scipy/blob/v0.15.1/scipy/stats/stats.py#L2827</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -20550,6 +20825,11 @@ http://stat.ethz.ch/R-manual/R-patched/library/graphics/html/barplot.html</Liter
 http://stat.ethz.ch/R-manual/R-patched/library/stats/html/GammaDist.html</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="#SIRMS0000001"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000268</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.gamma.html#scipy.stats.gamma</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000268</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Gamma distribution</Literal>
@@ -20910,6 +21190,11 @@ The variance is N*p*q</Literal>
 http://stat.ethz.ch/R-manual/R-patched/library/stats/html/Binomial.html</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="#SIRMS0000001"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000276</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.binom.html#scipy.stats.binom</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000276</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">binomial distribution</Literal>
@@ -21112,6 +21397,16 @@ http://stamash.org/kendalls-tau-correlation/</Literal>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://stat.ethz.ch/R-manual/R-patched/library/stats/html/cor.html</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="#SIRMS0000001"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000280</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">scipy.stats.pearsonr(x, y)
+
+http://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.pearsonr.html#scipy.stats.pearsonr
+
+source:
+https://github.com/scipy/scipy/blob/v0.15.1/scipy/stats/stats.py#L2427</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000280</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Pearson&apos;s correlation coefficient</Literal>
@@ -21239,6 +21534,11 @@ The negative binomial distribution, also known as the Pascal distribution or Pó
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">dnbinom(x, size, prob, mu, log = FALSE)
 
 http://stat.ethz.ch/R-manual/R-patched/library/stats/html/NegBinomial.html</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#SIRMS0000001"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000283</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.nbinom.html#scipy.stats.nbinom</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -21947,6 +22247,16 @@ http://en.wikipedia.org/wiki/Binomial_test
 http://stat.ethz.ch/R-manual/R-patched/library/stats/html/binom.test.html</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000298</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">scipy.stats.binom_test(x, n=None, p=0.5)
+
+http://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.binom_test.html#scipy.stats.binom_test
+
+source:
+https://github.com/scipy/scipy/blob/v0.15.1/scipy/stats/morestats.py#L1605</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000298</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">exact binomial test</Literal>
@@ -22147,6 +22457,16 @@ http://www.psychology.emory.edu/clinical/bliwise/Tutorials/TOM/meanstests/tone.h
 http://stat.ethz.ch/R-manual/R-patched/library/stats/html/t.test.html</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="#SIRMS0000001"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000302</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">scipy.stats.ttest_1samp(a, popmean, axis=0)
+
+http://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.ttest_1samp.html#scipy.stats.ttest_1samp
+
+source:
+https://github.com/scipy/scipy/blob/v0.15.1/scipy/stats/stats.py#L3194</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000302</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">one sample t-test</Literal>
@@ -22206,6 +22526,16 @@ http://www.psychology.emory.edu/clinical/bliwise/Tutorials/TOM/meanstests/tind.h
        conf.level = 0.95, ...)
 
 http://stat.ethz.ch/R-manual/R-patched/library/stats/html/t.test.html</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#SIRMS0000001"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000303</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">scipy.stats.ttest_ind(a, b, axis=0, equal_var=True)
+
+http://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.ttest_ind.html#scipy.stats.ttest_ind
+
+source:
+https://github.com/scipy/scipy/blob/v0.15.1/scipy/stats/stats.py#L3271</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -22269,6 +22599,16 @@ last accessed: 2014-05-06</Literal>
        conf.level = 0.95, ...)
 
 http://stat.ethz.ch/R-manual/R-patched/library/stats/html/t.test.html</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#SIRMS0000001"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000304</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">scipy.stats.ttest_ind(a, b, axis=0, equal_var=False)
+
+http://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.ttest_ind.html#scipy.stats.ttest_ind
+
+source:
+https://github.com/scipy/scipy/blob/v0.15.1/scipy/stats/stats.py#L3271</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -25564,6 +25904,31 @@ Spiegelhalter, D. J., N. G. Best, B. P. Carlin, and A. van der Linde, 2002. Baye
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SIRMS0000001</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Python command</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#SIRMS0000001"/>
+        <IRI>#SIRMS0000002</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.powerlaw.html#scipy.stats.powerlaw</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SIRMS0000002</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">power law distribution</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#SIRMS0000001"/>
+        <IRI>#SIRMS0000003</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.alpha.html#scipy.stats.alpha</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SIRMS0000003</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">alpha distribution</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#regression_model</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">regression model</Literal>
     </AnnotationAssertion>
@@ -25608,6 +25973,10 @@ Spiegelhalter, D. J., N. G. Best, B. P. Carlin, and A. van der Linde, 2002. Baye
     </SubAnnotationPropertyOf>
     <SubAnnotationPropertyOf>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+    </SubAnnotationPropertyOf>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty IRI="#SIRMS0000001"/>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
     </SubAnnotationPropertyOf>
 </Ontology>
