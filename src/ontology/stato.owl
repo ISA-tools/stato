@@ -25952,22 +25952,22 @@ Spiegelhalter, D. J., N. G. Best, B. P. Carlin, and A. van der Linde, 2002. Baye
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#python_command"/>
-        <IRI>##powerlawDistribution</IRI>
+        <IRI>#powerlawDistribution</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.powerlaw.html#scipy.stats.powerlaw</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>##powerlawDistribution</IRI>
+        <IRI>#powerlawDistribution</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">power law distribution</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#python_command"/>
-        <IRI>##alphaDistribution</IRI>
+        <IRI>#alphaDistribution</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.alpha.html#scipy.stats.alpha</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>##alphaDistribution</IRI>
+        <IRI>#alphaDistribution</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">alpha distribution</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
