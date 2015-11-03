@@ -26241,7 +26241,19 @@ dpareto(x, shape, scale, log = FALSE)</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000395</IRI>
-        <IRI>http://purl.obolibrary.org/obo/IAO_0000123</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000120</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000395</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">The Pareto(IV) distribution, which is used in actuarial science, economics, finance and telecommunications, has a cumulative distribution function that can be written:
+F(y) = 1 − [1 + ((y − a)/b)1/g]−s
+for y &gt; a, b &gt; 0, g &gt; 0 and s &gt; 0. 
+
+a is the location parameter, 
+b is the scale parameter, 
+g is the inequality parameter
+s isthe shape parameter</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -26257,6 +26269,19 @@ dpareto(x, shape, scale, log = FALSE)</Literal>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000395</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000395</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">https://cran.r-project.org/web/packages/VGAM/VGAM.pdf
+page 517</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000395</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">dparetoIV(x, location = 0, scale = 1, inequality = 1, shape = 1, log = FALSE)
+
+https://cran.r-project.org/web/packages/VGAM/VGAM.pdf</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
