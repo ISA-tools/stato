@@ -8686,19 +8686,19 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000392"/>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000225"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000067"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000393"/>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000225"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000067"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000394"/>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000225"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000067"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000395"/>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000225"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000067"/>
     </SubClassOf>
     <DisjointClasses>
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0000115"/>
@@ -26139,7 +26139,18 @@ last accessed: 2015-11-03</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000392</IRI>
-        <IRI>http://purl.obolibrary.org/obo/IAO_0000123</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000392</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">The Pareto distribution is a continuous probability distribution, which is defined by the follwoing probability density (1) function and distribution function (2)
+
+(1): P(x)=(ab^a)/(x^(a+1))	
+
+(2): D(x)=1-(b/x)^a	
+
+defined over the interval x&gt;=b.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -26157,6 +26168,46 @@ last accessed: 2015-11-03</Literal>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000392</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">adapter from:
+http://mathworld.wolfram.com/ParetoDistribution.html
+
+last accessed: 2015-11-04</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000392</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://artax.karlin.mff.cuni.cz/r-help/library/LaplacesDemon/html/dist.Pareto.html
+
+last accessed: 2015-11-04
+
+Usage
+
+&gt;dpareto(x, alpha, log=FALSE)
+&gt;ppareto(q, alpha)
+&gt;qpareto(p, alpha)
+&gt;rpareto(n, alpha)
+
+
+Arguments
+
+x,q	
+These are each a vector of quantiles.
+
+p	
+This is a vector of probabilities.
+
+n	
+This is the number of observations, which must be a positive integer that has length 1.
+
+alpha	
+This is the shape parameter alpha, which must be positive.
+
+log	
+Logical. If log=TRUE, then the logarithm of the density or result is returned.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000392</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Pareto type-I probability distribution</Literal>
@@ -26164,7 +26215,7 @@ last accessed: 2015-11-03</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000393</IRI>
-        <IRI>http://purl.obolibrary.org/obo/IAO_0000123</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -26216,7 +26267,22 @@ dpareto(x, shape, scale, log = FALSE)</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000394</IRI>
-        <IRI>http://purl.obolibrary.org/obo/IAO_0000123</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000394</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">The Pareto(III) distribution is a continous probability distribution which is described with a cumulative distribution function of the following form:
+
+F(x) = 1 − [1 + ((x − mu)/sigma)1/gamma]−1
+for x &gt; mu, sigma &gt; 0, gamma &gt; 0 and s =1. 
+
+a is the location parameter, 
+b is the scale parameter, 
+g is the inequality parameter
+s is the shape parameter of value 1
+
+The Pareto III distribution corresponds to a Pareto Type IV distribution where the shape parameter has a value of 1.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -26234,6 +26300,14 @@ dpareto(x, shape, scale, log = FALSE)</Literal>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000394</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">adapted from wikipedia:
+https://en.wikipedia.org/wiki/Pareto_distribution#Pareto_types_I.E2.80.93IV
+
+last accessed: 2015-11-04</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000394</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Pareto type-III probability distribution</Literal>
@@ -26241,19 +26315,22 @@ dpareto(x, shape, scale, log = FALSE)</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000395</IRI>
-        <IRI>http://purl.obolibrary.org/obo/IAO_0000120</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000395</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">The Pareto(IV) distribution, which is used in actuarial science, economics, finance and telecommunications, has a cumulative distribution function that can be written:
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">The Pareto(IV) distribution is a continous probability distribution which is described with a cumulative distribution function of the following form:
+
 F(y) = 1 − [1 + ((y − a)/b)1/g]−s
 for y &gt; a, b &gt; 0, g &gt; 0 and s &gt; 0. 
 
 a is the location parameter, 
 b is the scale parameter, 
 g is the inequality parameter
-s isthe shape parameter</Literal>
+s is the shape parameter
+
+The distribution is used in actuarial science, economics, finance and telecommunications, but not restricted to those fields.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
