@@ -8875,6 +8875,12 @@
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">statistical hypothesis testing</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/OBI_0000674</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">[STATO Definition]
+The median is measure of central tendency of data. It is obtained by arranging the observations in order from smallest to largest value. If there is an odd number of observations, the median is the middle value. If there is an even number of observations, the median is the average of the two middle values.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000116"/>
         <IRI>http://purl.obolibrary.org/obo/OBI_0000674</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">PRS and AGB added restriction about &apos;measure of central tendency&apos; and quartile, june 2013</Literal>
@@ -8898,6 +8904,17 @@
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000032"/>
         <IRI>http://purl.obolibrary.org/obo/OBI_0000674</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">second quartile</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/OBI_0000679</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">[STATO definition]:
+The arithmetic mean is defined as the sum of the numerical values of each and every observation divided by the total number of observations. S The arithmetic mean A is defined by the formula
+
+A=sum[Ai] / n where i ranges from 1 to n and Ai represents the value of individual observations.
+
+
+The arithmetic mean is significantly affected by extreme values and outliers. A better measure of central tendency is the median (http://purl.obolibrary.org/obo/OBI_0000674).</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000116"/>
