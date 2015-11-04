@@ -6,5 +6,5 @@ Browse STATO in BioPortal at: http://bioportal.bioontology.org/ontologies/STATO
 
 Access STATO throught the PURL: http://purl.obolibrary.org/obo/stato.owl
 
-See issues at: https://waffle.io/isa-tools/stato
+See issues at: https://github.com/ISA-tools/stato/issues
 
