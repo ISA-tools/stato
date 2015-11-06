@@ -1232,7 +1232,7 @@
         <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000259"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#estimator_of"/>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000403"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="http://purl.obolibrary.org/obo/STATO_0000129"/>
@@ -5041,7 +5041,7 @@
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000144"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#estimator_of"/>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000403"/>
             <Class IRI="http://purl.obolibrary.org/obo/STATO_0000034"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
@@ -8758,7 +8758,7 @@
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000401"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#estimator_of"/>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000403"/>
             <Class IRI="http://purl.obolibrary.org/obo/STATO_0000402"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
@@ -8811,7 +8811,7 @@
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#estimator_of"/>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000403"/>
         <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
     </SubObjectPropertyOf>
     <InverseObjectProperties>
@@ -26812,7 +26812,7 @@ last accessed: 2015-11-05</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://www.co-ode.org/ontologies/ont.owl#estimator_of</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000403</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">estimator of</Literal>
     </AnnotationAssertion>
     <SubAnnotationPropertyOf>
