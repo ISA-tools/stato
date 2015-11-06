@@ -1232,6 +1232,9 @@
         <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000259"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#estimator_of"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="http://purl.obolibrary.org/obo/STATO_0000129"/>
     </Declaration>
     <Declaration>
@@ -4872,7 +4875,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000139"/>
-        <Class IRI="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <Class IRI="http://purl.obolibrary.org/obo/OBI_0600015"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000139"/>
@@ -5034,6 +5037,13 @@
                 <Class IRI="http://purl.obolibrary.org/obo/STATO_0000119"/>
             </ObjectSomeValuesFrom>
         </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000144"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#estimator_of"/>
+            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000034"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000145"/>
@@ -8746,6 +8756,13 @@
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0000679"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000401"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#estimator_of"/>
+            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000402"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000402"/>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000029"/>
     </SubClassOf>
@@ -8792,6 +8809,10 @@
     <SubObjectPropertyOf>
         <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000205"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.co-ode.org/ontologies/ont.owl#estimator_of"/>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
     </SubObjectPropertyOf>
     <InverseObjectProperties>
         <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000205"/>
@@ -10569,7 +10590,7 @@ http://stat.ethz.ch/R-manual/R-patched/library/base/html/range.html</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000037</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">The standard error of the mean (SEM) is data item denoting the the standard deviation of the sample-mean&apos;s estimate of a population mean.
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">The standard error of the mean (SEM) is data item denoting the standard deviation of the sample-mean&apos;s estimate of a population mean.
 It is calculated by dividing the sample standard deviation (i.e., the sample-based estimate of the standard deviation of the population) by the square root of n , the size (number of observations) of the sample.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -19876,7 +19897,7 @@ http://stat.ethz.ch/R-manual/R-patched/library/graphics/html/boxplot.html</Liter
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000245</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Relative risk is a measurement datum which denotes the risk of an &apos;event&apos; relative to an &apos;exposure&apos;. Relative risk is calculated by forming the ratio of the probability of the event occurring in the exposed group versus a the probability of this event occurring in the non-exposed group.</Literal>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Relative risk is a measurement datum which denotes the risk of an &apos;event&apos; relative to an &apos;exposure&apos;. Relative risk is calculated by forming the ratio of the probability of the event occurring in the exposed group versus the probability of this event occurring in the non-exposed group.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -23381,7 +23402,7 @@ http://en.wikipedia.org/wiki/Effect_size#Omega-squared.2C_.CF.892</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000319</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Hedges&apos;s g is an estimator of effect size which is similar to Cohen&apos;s d and is a measure based on a standardized difference however the denominator , corresponding to a pooled standard deviation, is computed differently from Cohen&apos;s d coefficient, by applying a correction factor (which involves a Gamma function)</Literal>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Hedges&apos;s g is an estimator of effect size, which is similar to Cohen&apos;s d and is a measure based on a standardized difference. However, the denominator, corresponding to a pooled standard deviation, is computed differently from Cohen&apos;s d coefficient, by applying a correction factor (which involves a Gamma function).</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -26621,7 +26642,7 @@ The weighted arithmetic mean is often used if one wants to combine average value
         <IRI>http://purl.obolibrary.org/obo/STATO_0000399</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">The interquartile mean (IQM) (or midmean) is a statistical measure of central tendency based on the truncated mean of the interquartile range. 
 
-In calculation of the IQM, only the data in the second and third quartiles is used (as in the interquartile range), and the lowest 25% and the highest 25% of the scores are discarded. These points are called the first and third quartiles, hence the name of the IQM.</Literal>
+In the calculation of the IQM, only the data in the second and third quartiles is used (as in the interquartile range), and the lowest 25% and the highest 25% of the scores are discarded. These points are called the first and third quartiles, hence the name of the IQM.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -26788,6 +26809,11 @@ last accessed: 2015-11-05</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000402</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">population mean</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.co-ode.org/ontologies/ont.owl#estimator_of</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">estimator of</Literal>
     </AnnotationAssertion>
     <SubAnnotationPropertyOf>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000032"/>
