@@ -5,10 +5,7 @@ import org.semanticweb.owlapi.model.*;
 import owltools.io.CatalogXmlIRIMapper;
 
 import java.io.File;
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 /**
  * Created by agbeltran on 27/02/2015.
@@ -28,11 +25,13 @@ public class OntologyReporter {
     private OWLDataFactory dataFactory = null;
     private OWLOntology devOntology, devImportsOntology, classifiedOntology = null;
     private OntologyReport ontologyReport = null;
+    private Set<OWLEntity> entities = null;
 
     public OntologyReporter(){
         manager = OWLManager.createOWLOntologyManager();
         dataFactory = manager.getOWLDataFactory();
         ontologyReport = new OntologyReport();
+        entities = new HashSet<OWLEntity>();
     }
 
 
@@ -72,7 +71,7 @@ public class OntologyReporter {
     }
 
 
-    public void report(String devPath, boolean catalogFileExists, String iriPrefix, String outDir, String outFile) throws Exception {
+    public void buildReport(String devPath, boolean catalogFileExists, String iriPrefix) {
 
         //load development ontology from local file
         loadOntology(devPath, catalogFileExists);
@@ -81,14 +80,13 @@ public class OntologyReporter {
             return;
         }
 
-        Set<OWLEntity> entities = new HashSet<OWLEntity>();
         entities.addAll(devOntology.getClassesInSignature());
         entities.addAll(devOntology.getDataPropertiesInSignature());
         entities.addAll(devOntology.getObjectPropertiesInSignature());
         entities.addAll(devOntology.getAnnotationPropertiesInSignature());
         entities.addAll(devOntology.getIndividualsInSignature());
 
-        System.out.println(devOntology.getIndividualsInSignature());
+        //System.out.println(devOntology.getIndividualsInSignature());
 
         entities.addAll(devOntology.getDatatypesInSignature());
 
@@ -116,18 +114,20 @@ public class OntologyReporter {
 
                 List<String> definitions = getClassAnnotation(entity, definition);
 
+                boolean no_definition = false;
 
                 String definition = null;
                 if (definitions.size() == 0) {
                     System.out.println("No definition for term " + entity.getIRI().toString() + " " + label);
                     count++;
-
                 } else if (definitions.size() > 1) {
                     System.out.println("There are more than one definition assigned " + definitions);
                     definition = definitions.get(0);
-                } else {
+                } else if (definitions.size() == 1){
                     definition = definitions.get(0);
                 }
+
+
 
                 if (definition ==null || (definition != null && definition.isEmpty()) ){
                         System.out.println("No definition for term " + entity.getIRI().toString() + " " + label);
@@ -146,7 +146,7 @@ public class OntologyReporter {
                     synonyms.addAll(toAdd);
 
 
-                ontologyReport.addClass(label,
+                ontologyReport.addEntity(label,
                         entity.getIRI().toString(),
                         definition,
                         synonyms
@@ -156,21 +156,60 @@ public class OntologyReporter {
         }
 
         System.out.println("There are "+entities.size()+" entities in the ontology signature with the IRI prefix "+iriPrefix);
-        System.out.println("There are "+count+" entities with no definition");
+        System.out.println("There are " + count + " entities with no definition");
+
+    }
+
+    public int getEntitiesSize(){
+        return entities.size();
+
+    }
+
+    public Map<String, List<EntityReport>> getDuplicates(){
+        return ontologyReport.getDuplicates();
+    }
+
+    public void saveReport(String outDir, String outFile) throws Exception{
         ontologyReport.saveReport(outDir, outFile);
     }
 
 
     public static void main( String[] args ) throws Exception {
 
+
         OntologyReporter ontologyReporter = new OntologyReporter();
         String devPath = "/Users/agbeltran/work-dev/stato/src/ontology/stato.owl";
-        //String outDir = "/Users/agbeltran/work-dev/stato/report/";
+        //String outDir = "/Users/agbeltran/work-dev/stato/buildReport/";
         String outDir = "/Users/agbeltran/Desktop/";
-        String outFile = "stato-report.txt";
+        String outFile = "stato-buildReport.txt";
         String releaseIRI = "http://purl.obolibrary.org/obo/stato.owl";
         String iriPrefix = "http://purl.obolibrary.org/obo/STATO_";
 
-        ontologyReporter.report(devPath, true, iriPrefix, outDir, outFile);
+        ontologyReporter.buildReport(devPath, true, iriPrefix);
+        ontologyReporter.saveReport(outDir, outFile);
+
+
+        /**
+         OntologyReporter ontologyReporter = new OntologyReporter();
+         String devPath = "/Users/agbeltran/workspace/obi-code/src/ontology/branches/obi.owl";
+         //String outDir = "/Users/agbeltran/work-dev/stato/buildReport/";
+         String outDir = "/Users/agbeltran/Desktop/";
+         String outFile = "obi-buildReport.txt";
+         String iriPrefix = "http://purl.obolibrary.org/obo/OBI_";
+
+         ontologyReporter.buildReport(devPath, true, iriPrefix, outDir, outFile);
+         */
+
+        /*
+        OntologyReporter ontologyReporter = new OntologyReporter();
+        String devPath = "/Users/agbeltran/workspace/nmrML/ontologies/nmrCV.owl";
+        //String outDir = "/Users/agbeltran/work-dev/stato/buildReport/";
+        String outDir = "/Users/agbeltran/Desktop/";
+        String outFile = "nmrcv-buildReport.xls";
+        String iriPrefix = "http://nmrML.org/nmrCV#";
+
+        ontologyReporter.buildReport(devPath, true, iriPrefix, outDir, outFile);
+        */
+
     }
 }
