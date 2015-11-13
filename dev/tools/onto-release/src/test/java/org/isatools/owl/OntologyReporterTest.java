@@ -1,8 +1,10 @@
 package org.isatools.owl;
 
-import org.junit.Before;
+import org.junit.BeforeClass;
 import org.junit.Test;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.List;
 import java.util.Map;
 
@@ -11,24 +13,30 @@ import java.util.Map;
  */
 public class OntologyReporterTest {
 
-    OntologyReporter ontologyReporter = null;
-    String devPath=null, outDir, outFile, releaseIRI, iriPrefix;
+    static OntologyReporter ontologyReporter = null;
+    static String devPath=null, outDir, outFile, releaseIRI, iriPrefix;
 
-    @Before
-    public void setUp() {
+    @BeforeClass
+    public static void setUp() {
+        String baseDir = System.getProperty("basedir");
+
+        if (baseDir == null) {
+            try {
+                baseDir = new File(".").getCanonicalPath();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+
+        System.out.println("baseDir --> "+baseDir);
+
         ontologyReporter = new OntologyReporter();
-        devPath = "/Users/agbeltran/work-dev/stato/src/ontology/stato.owl";
-        //String outDir = "/Users/agbeltran/work-dev/stato/buildReport/";
-        outDir = "/Users/agbeltran/Desktop/";
+        devPath = baseDir + "/dev/ontology/stato.owl";
+        outDir = baseDir + "/dev/tools/onto-release/src/test/resources/";
         outFile = "stato-buildReport.txt";
         releaseIRI = "http://purl.obolibrary.org/obo/stato.owl";
         iriPrefix = "http://purl.obolibrary.org/obo/STATO_";
 
-
-    }
-
-    @Test
-    public void buildReport(){
         ontologyReporter.buildReport(devPath, true, iriPrefix);
     }
 

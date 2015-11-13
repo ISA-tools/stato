@@ -1,6 +1,5 @@
 package org.isatools.owlbuild;
 
-import com.sun.tools.javac.resources.version;
 import org.semanticweb.owlapi.apibinding.OWLManager;
 import org.semanticweb.owlapi.model.*;
 import org.semanticweb.owlapi.util.OWLOntologyMerger;
@@ -19,11 +18,11 @@ public class OWLReleaser
     private OWLDataFactory dataFactory = null;
     private OWLOntology devOntology, devImportsOntology, classifiedOntology = null;
     private OWLClassifier classifier = null;
-    private IRI temporaryIRI = IRI.create("http://temporary.org");
+    private org.semanticweb.owlapi.model.IRI temporaryIRI = IRI.create("http://temporary.org");
     private Set<OWLAnnotation> annotationSet = null;
 
     private static String CATALOG_FILE =  "catalog-v001.xml";
-    private static IRI VERSION_INFO_IRI = IRI.create("http://www.w3.org/2002/07/owl#versionInfo");
+    private static IRI VERSION_INFO_IRI = org.semanticweb.owlapi.model.IRI.create("http://www.w3.org/2002/07/owl#versionInfo");
 
     public OWLReleaser(){
         manager = OWLManager.createOWLOntologyManager();
@@ -48,7 +47,7 @@ public class OWLReleaser
         }
 
         //classify ontology
-        classifyDevImportsOntology(IRI.create(releaseIRI),version);
+        classifyDevImportsOntology(org.semanticweb.owlapi.model.IRI.create(releaseIRI),version);
         if (classifiedOntology==null){
             System.err.println("The ontology "+devPath+" couldn't be classified!");
             return;
@@ -96,7 +95,7 @@ public class OWLReleaser
         }
     }
 
-    private void classifyDevImportsOntology(IRI iri, String version){
+    private void classifyDevImportsOntology(org.semanticweb.owlapi.model.IRI iri, String version){
         classifier.classify(devImportsOntology, iri);
         classifiedOntology = classifier.getClassifiedOntology();
 

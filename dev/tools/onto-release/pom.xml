@@ -24,20 +24,20 @@
     </properties>
 
     <build>
-        <directory>target</directory>
-        <outputDirectory>target/classes</outputDirectory>
+        <directory>${project.basedir}/target/</directory>
+        <outputDirectory>${project.basedir}/target/classes/</outputDirectory>
         <finalName>${artifactId}-${version}</finalName>
-        <testOutputDirectory>target/test-classes</testOutputDirectory>
-        <sourceDirectory>/src/main/java</sourceDirectory>
-        <testSourceDirectory>/src/test/java</testSourceDirectory>
+        <testOutputDirectory>${project.basedir}/target/test-classes/</testOutputDirectory>
+        <sourceDirectory>${project.basedir}/src/main/java</sourceDirectory>
+        <testSourceDirectory>${project.basedir}/src/test/java</testSourceDirectory>
         <resources>
             <resource>
-                <directory>src/tools/onto-release/src/main/resources</directory>
+                <directory>${project.basedir}/src/main/resources</directory>
             </resource>
         </resources>
         <testResources>
             <testResource>
-                <directory>src/tools/onto-release/src/test/resources</directory>
+                <directory>${project.basedir}/src/test/resources</directory>
             </testResource>
         </testResources>
     </build>

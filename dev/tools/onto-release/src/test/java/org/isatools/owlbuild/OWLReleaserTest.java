@@ -1,6 +1,5 @@
-package org.isatools.owl;
+package org.isatools.owlbuild;
 
-import org.isatools.owlbuild.OWLReleaser;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
