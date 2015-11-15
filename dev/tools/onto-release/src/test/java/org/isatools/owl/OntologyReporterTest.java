@@ -28,8 +28,6 @@ public class OntologyReporterTest {
             }
         }
 
-        System.out.println("baseDir --> "+baseDir);
-
         ontologyReporter = new OntologyReporter();
         devPath = baseDir + "/dev/ontology/stato.owl";
         outDir = baseDir + "/dev/tools/onto-release/src/test/resources/";

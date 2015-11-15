@@ -1,0 +1,4 @@
+language: java
+env:
+  - TEST_DIR=dev/tools/onto-release
+script: cd $TEST_DIR && mvn test
