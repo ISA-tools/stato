@@ -1,23 +1,41 @@
 package org.isatools.owlbuild;
 
 import org.junit.After;
-import org.junit.Before;
+import org.junit.BeforeClass;
 import org.junit.Test;
+
+import java.io.File;
+import java.io.IOException;
 
 /**
  * Created by agbeltran on 03/11/15.
  */
 public class OWLReleaserTest {
 
-    String devPath, version, outDir, outFile, releaseIRI;
-    OWLReleaser releaseBuilder;
+    static String devPath, version, outDir, outFile, releaseIRI;
+    static OWLReleaser releaseBuilder;
 
-    @Before
-    public void setUp() {
+    @BeforeClass
+    public static void setUp() {
+        String baseDir = System.getProperty("basedir");
+
+        if (baseDir == null) {
+            try {
+                baseDir = new File(".").getCanonicalPath();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+        System.out.println(" baseDir --> " + baseDir);
+
         releaseBuilder = new OWLReleaser();
-        devPath = "/Users/agbeltran/workspace/stato-agb/src/ontology/stato.owl";
+        if (baseDir.endsWith("onto-release"))
+            devPath = baseDir + "/../../ontology/stato.owl";
+        else
+            devPath = baseDir + "/dev/ontology/stato.owl";
+
         version = "1.3";
-        outDir = "/Users/agbeltran/workspace/stato-agb/releases/";
+        outDir = baseDir + "/releases/";
         outFile = "stato.owl";
         releaseIRI = "http://purl.obolibrary.org/obo/stato.owl";
     }
