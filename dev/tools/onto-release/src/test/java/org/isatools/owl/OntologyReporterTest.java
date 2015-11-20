@@ -28,9 +28,17 @@ public class OntologyReporterTest {
             }
         }
 
+        System.out.println(" baseDir --> " + baseDir);
+        if (baseDir.endsWith("onto-release")) {
+            devPath = baseDir + "/../../ontology/stato.owl";
+            outDir = baseDir + "/src/test/resources/";
+        } else {
+            devPath = baseDir + "/dev/ontology/stato.owl";
+            outDir = baseDir + "/dev/tools/onto-release/src/test/resources/";
+        }
+
         ontologyReporter = new OntologyReporter();
-        devPath = baseDir + "/dev/ontology/stato.owl";
-        outDir = baseDir + "/dev/tools/onto-release/src/test/resources/";
+
         outFile = "stato-buildReport.txt";
         releaseIRI = "http://purl.obolibrary.org/obo/stato.owl";
         iriPrefix = "http://purl.obolibrary.org/obo/STATO_";
