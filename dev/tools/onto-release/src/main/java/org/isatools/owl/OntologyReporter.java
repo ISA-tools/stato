@@ -174,6 +174,7 @@ public class OntologyReporter {
     }
 
 
+    /*
     public static void main( String[] args ) throws Exception {
 
 
@@ -198,7 +199,7 @@ public class OntologyReporter {
          String iriPrefix = "http://purl.obolibrary.org/obo/OBI_";
 
          ontologyReporter.buildReport(devPath, true, iriPrefix, outDir, outFile);
-         */
+
 
         /*
         OntologyReporter ontologyReporter = new OntologyReporter();
@@ -209,7 +210,8 @@ public class OntologyReporter {
         String iriPrefix = "http://nmrML.org/nmrCV#";
 
         ontologyReporter.buildReport(devPath, true, iriPrefix, outDir, outFile);
-        */
+
 
     }
+    */
 }
