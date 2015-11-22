@@ -59,6 +59,10 @@
         <Literal datatypeIRI="&rdf;PlainLiteral">Thomas Nichols (http://orcid.org/0000-0002-4516-5103)</Literal>
     </Annotation>
     <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/rights"/>
+        <Literal datatypeIRI="&xsd;anyURI">This Ontology is distributed under a Creative Commons Attribution License </Literal>
+    </Annotation>
+    <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/title"/>
         <Literal datatypeIRI="&rdf;PlainLiteral">STATO: the statistical methods ontology</Literal>
     </Annotation>
@@ -69,10 +73,6 @@
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/contributor"/>
         <Literal datatypeIRI="&rdf;PlainLiteral">Nolan Nichols (http://orcid.org/0000-0003-1099-3328)</Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/rights"/>
-        <Literal datatypeIRI="&xsd;anyURI">This Ontology is distributed under a Creative Commons Attribution License </Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/contributor"/>
@@ -1251,6 +1251,9 @@
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000391"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000404"/>
     </Declaration>
     <EquivalentClasses>
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0000739"/>
@@ -8910,6 +8913,11 @@
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000404"/>
+        <IRI>http://purl.obolibrary.org/obo/OBI_0000175</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">p</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/OBI_0000673</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">&quot;A statistical test provides a mechanism for making quantitative decisions about a process or processes&quot;.</Literal>
@@ -9137,6 +9145,11 @@ http://hosho.ees.hokudai.ac.jp/~kubo/Rdoc/library/lmtest/html/lrtest.html</Liter
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000116"/>
         <IRI>http://purl.obolibrary.org/obo/OBI_0001442</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Addition of restriction &apos;output of null hypothesis testing&apos; by AGB and PRS while working on STATO</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000404"/>
+        <IRI>http://purl.obolibrary.org/obo/OBI_0001442</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">q</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000032"/>
@@ -16931,6 +16944,11 @@ http://rss.acs.unt.edu/Rdoc/library/rmeta/html/metaplot.html</Literal>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000404"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000176</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">T</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000176</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">t-statistic</Literal>
@@ -21671,6 +21689,11 @@ https://github.com/scipy/scipy/blob/v0.15.1/scipy/stats/stats.py#L2427</Literal>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000282</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">STATO</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000404"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000282</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">F</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -26864,6 +26887,11 @@ last accessed: 2015-11-05</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000403</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">estimator of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000404</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">preferred mathematical notation</Literal>
     </AnnotationAssertion>
     <SubAnnotationPropertyOf>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000032"/>
