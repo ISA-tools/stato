@@ -20,6 +20,10 @@ public class EntityReport {
         synonyms = new ArrayList<String>(s);
     }
 
+    public String getLabel(){
+        return label;
+    }
+
     private void addToLine(StringBuffer line, String toAdd) {
         if (toAdd == null) {
             toAdd = "";

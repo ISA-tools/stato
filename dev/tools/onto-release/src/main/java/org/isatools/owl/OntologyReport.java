@@ -33,12 +33,19 @@ public class OntologyReport {
      */
     public void addEntity(String label, String iri, String definition, List<String> synonyms){
         EntityReport entityReport = new EntityReport(label, iri, definition, synonyms);
-        iriClassReportMap.put(iri, entityReport);
 
-        List<EntityReport> duplicateList = iriDuplicates.get(iri);
-        if (duplicateList==null)
-            duplicateList = new ArrayList<EntityReport>();
-        duplicateList.add(entityReport);
+        //if it already exists, add to duplicates
+        EntityReport existingEntityReport = iriClassReportMap.get(iri);
+
+        if (existingEntityReport!=null) {
+            List<EntityReport> duplicateList = iriDuplicates.get(iri);
+            if (duplicateList == null)
+                duplicateList = new ArrayList<EntityReport>();
+            duplicateList.add(entityReport);
+            iriDuplicates.put(iri, duplicateList);
+        }
+
+        iriClassReportMap.put(iri, entityReport);
     }
 
     public void addNoDefinitionEntity(String label, String iri, List<String> synonyms){
@@ -77,6 +84,15 @@ public class OntologyReport {
         buffer.append("ENTITIES WITHOUT COMPLETE METADATA"+"\n");
         for(String iri : getMetadataIncomplete().keySet()){
             buffer.append(getMetadataIncomplete().get(iri).toString()+"\n");
+        }
+
+        buffer.append("DUPLICATES"+"\n");
+        for(String iri: iriDuplicates.keySet()){
+            buffer.append(iri+"\t");
+            for(EntityReport entityReport: iriDuplicates.get(iri)){
+                buffer.append(entityReport.getLabel()+"\t");
+            }
+            buffer.append("\n");
         }
         return buffer.toString();
     }

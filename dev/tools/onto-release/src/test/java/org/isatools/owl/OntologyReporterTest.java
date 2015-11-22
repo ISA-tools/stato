@@ -47,6 +47,11 @@ public class OntologyReporterTest {
     }
 
     @Test
+    public void saveReport() throws Exception {
+        ontologyReporter.saveReport(outDir, outFile);
+    }
+
+    @Test
     public void checkEntities(){
         assert(ontologyReporter.getEntitiesSize()>0);
     }
@@ -57,8 +62,4 @@ public class OntologyReporterTest {
         assert(duplicates.isEmpty());
     }
 
-    @Test
-    public void saveReport() throws Exception {
-        ontologyReporter.saveReport(outDir, outFile);
-    }
 }
