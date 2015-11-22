@@ -36,7 +36,8 @@ public class EntityReport {
         StringBuffer buffer = new StringBuffer();
         addToLine(buffer, iri);
         addToLine(buffer, label);
-        addToLine(buffer, definition.replaceAll("\n", ""));
+        if (definition!=null)
+            addToLine(buffer, definition.replaceAll("\n", ""));
 //            for(String synonym : synonyms){
 //                addToLine(buffer, synonym);
 //            }

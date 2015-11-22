@@ -15,10 +15,12 @@ public class OntologyReporter {
     private static String CATALOG_FILE =  "catalog-v001.xml";
 
     private static String LABEL = "http://www.w3.org/2000/01/rdf-schema#label";
-    private static String alternative_term = "http://purl.obolibrary.org/obo/IAO_0000118";
-    private static String STATO_alternative_term = "http://purl.obolibrary.org/obo/STATO_0000032";
-    private static String definition = "http://purl.obolibrary.org/obo/IAO_0000115";
-    private static String example_of_usage = "http://purl.obolibrary.org/obo/IAO_0000117";
+    private static String ALTERNATIVE_TERM = "http://purl.obolibrary.org/obo/IAO_0000118";
+    private static String STATO_ALTERNATIVE_TERM = "http://purl.obolibrary.org/obo/STATO_0000032";
+    private static String DEFINITION = "http://purl.obolibrary.org/obo/IAO_0000115";
+    private static String EXAMPLE_OF_USAGE = "http://purl.obolibrary.org/obo/IAO_0000117";
+    private static String HAS_CURATION_STATUS = "http://purl.obolibrary.org/obo/IAO_0000114";
+    private static String CURATION_STATUS_METADATA_INCOMPLETE = "http://purl.obolibrary.org/obo/IAO_0000123";
 
 
     private OWLOntologyManager manager = null;
@@ -111,37 +113,34 @@ public class OntologyReporter {
                     label = labels.get(0);
                 }
 
+                List<String> definitions = getClassAnnotation(entity, DEFINITION);
 
-                List<String> definitions = getClassAnnotation(entity, definition);
-
-                boolean no_definition = false;
-
+                boolean noDefinition = false;
                 String definition = null;
                 if (definitions.size() == 0) {
-                    System.out.println("No definition for term " + entity.getIRI().toString() + " " + label);
+                    System.out.println("No DEFINITION for term " + entity.getIRI().toString() + " " + label);
+                    noDefinition = true;
                     count++;
                 } else if (definitions.size() > 1) {
-                    System.out.println("There are more than one definition assigned " + definitions);
+                    System.out.println("There are more than one DEFINITION assigned " + definitions);
                     definition = definitions.get(0);
                 } else if (definitions.size() == 1){
                     definition = definitions.get(0);
                 }
 
-
-
-                if (definition ==null || (definition != null && definition.isEmpty()) ){
-                        System.out.println("No definition for term " + entity.getIRI().toString() + " " + label);
-                        count++;
-                        definition = "";
-                }
+//                if (definition ==null || (definition != null && definition.isEmpty()) ){
+//                        System.out.println("No DEFINITION for term " + entity.getIRI().toString() + " " + label);
+//                        count++;
+//                        definition = "";
+//                }
 
                 //synonyms
                 List<String> synonyms = new ArrayList<String>();
-                List<String> toAdd = getClassAnnotation(entity, alternative_term);
+                List<String> toAdd = getClassAnnotation(entity, ALTERNATIVE_TERM);
                 if (toAdd!=null)
                     synonyms.addAll(toAdd);
 
-                toAdd = getClassAnnotation(entity, STATO_alternative_term);
+                toAdd = getClassAnnotation(entity, STATO_ALTERNATIVE_TERM);
                 if (toAdd!=null)
                     synonyms.addAll(toAdd);
 
@@ -152,11 +151,26 @@ public class OntologyReporter {
                         synonyms
                 );
 
+                if (noDefinition)
+                    ontologyReport.addNoDefinitionEntity(label,
+                            entity.getIRI().toString(),
+                            synonyms);
+
+                List<String> curationStatusList = getClassAnnotation(entity, HAS_CURATION_STATUS);
+                for(String value: curationStatusList){
+                    if (value.equals(CURATION_STATUS_METADATA_INCOMPLETE))
+                        ontologyReport.addIncompleteMetadataEntity(label,
+                                entity.getIRI().toString(),
+                                definition,
+                                synonyms);
+                }
+
+
             }
         }
 
         System.out.println("There are "+entities.size()+" entities in the ontology signature with the IRI prefix "+iriPrefix);
-        System.out.println("There are " + count + " entities with no definition");
+        System.out.println("There are " + count + " entities with no DEFINITION");
 
     }
 
