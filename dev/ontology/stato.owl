@@ -26926,6 +26926,11 @@ last accessed: 2015-11-05</Literal>
         <Literal datatypeIRI="&rdf;PlainLiteral">Thomas Nichols</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000405</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">http://support.sas.com/documentation/cdl/en/statug/63033/HTML/default/viewer.htm#statug_mixed_sect019.htm#statug.mixed.mixedcovstruct</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000405</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">unstructured covariance structure</Literal>
