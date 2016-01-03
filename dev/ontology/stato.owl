@@ -14148,6 +14148,11 @@ linear regression modeling makes a number of assumptions, which includes homoske
         <Literal datatypeIRI="&rdf;PlainLiteral">This is the inverse of &apos;specifies value of&apos; and it is intended to say things such as &apos;compound&apos; &apos;assumes values specified by&apos; &apos;independent variable specification&apos;</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000110</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A relation between an entity and a value specification, where the value specification is about the entity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000110</IRI>
         <Literal datatypeIRI="&xsd;string">Alejandra Gonzalez-Beltran</Literal>
@@ -14161,6 +14166,11 @@ linear regression modeling makes a number of assumptions, which includes homoske
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000110</IRI>
         <Literal datatypeIRI="&xsd;string">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000110</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">AGB</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -14284,6 +14294,11 @@ http://stat.ethz.ch/R-manual/R-patched/library/stats/html/cor.html</Literal>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">variance</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000114</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">relationship between an element and a set it belongs to</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000114</IRI>
         <Literal datatypeIRI="&xsd;string">Alejandra Gonzalez-Beltran</Literal>
@@ -14297,6 +14312,11 @@ http://stat.ethz.ch/R-manual/R-patched/library/stats/html/cor.html</Literal>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000114</IRI>
         <Literal datatypeIRI="&xsd;string">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000114</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">AGB</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -14304,6 +14324,11 @@ http://stat.ethz.ch/R-manual/R-patched/library/stats/html/cor.html</Literal>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">is member of</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000115</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">relationship between a set and one of its elements</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000115</IRI>
         <Literal datatypeIRI="&xsd;string">Alejandra Gonzalez-Beltran</Literal>
@@ -14317,6 +14342,11 @@ http://stat.ethz.ch/R-manual/R-patched/library/stats/html/cor.html</Literal>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000115</IRI>
         <Literal datatypeIRI="&xsd;string">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000115</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">AGB</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
