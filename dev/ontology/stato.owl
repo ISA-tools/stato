@@ -13807,6 +13807,11 @@ DOI: 10.1111/j.1469-185X.2007.00027.x</Literal>
         <Literal datatypeIRI="&rdf;PlainLiteral">has numerator</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000102</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">relationship between a planned process and the plan specification that it carries out; it is defined as equivalent to the composed relationship (realizes o concretizes)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000102</IRI>
         <Literal datatypeIRI="&xsd;string">Alejandra Gonzalez-Beltran</Literal>
@@ -13820,6 +13825,11 @@ DOI: 10.1111/j.1469-185X.2007.00027.x</Literal>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000102</IRI>
         <Literal datatypeIRI="&xsd;string">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000102</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">AGB</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -14359,6 +14369,11 @@ http://stat.ethz.ch/R-manual/R-patched/library/stats/html/cor.html</Literal>
         <IRI>http://purl.obolibrary.org/obo/IAO_0000428</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000116</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">the process of using statistical analysis for interpreting and communicating &quot;what the data say&quot;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000116</IRI>
         <Literal datatypeIRI="&xsd;string">Alejandra Gonzalez-Beltran</Literal>
@@ -14372,6 +14387,12 @@ http://stat.ethz.ch/R-manual/R-patched/library/stats/html/cor.html</Literal>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000116</IRI>
         <Literal datatypeIRI="&xsd;string">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000116</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">From &quot;The strenght of statistical evidence&quot; by Richard Royall. 
+https://www.stat.fi/isi99/proceedings/arkisto/varasto/roya0578.pdf</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000032"/>
@@ -20538,6 +20559,11 @@ http://www.tengfei.name/ggbio/docs/man/plotGrandLinear.html</Literal>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">manhattan plot for gwas</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000257</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A domestic group, or a number of domestic groups linked through descent (demonstrated or stipulated) from a common ancestor, marriage, or adoption.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000116"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000257</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">import from Population and Community Ontology:
@@ -20560,6 +20586,11 @@ http://www.ontobee.org/browser/rdf.php?o=PCO&amp;iri=http://purl.obolibrary.org/
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000257</IRI>
         <Literal datatypeIRI="&xsd;string">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000257</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://purl.obolibrary.org/obo/PCO_0000020</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
