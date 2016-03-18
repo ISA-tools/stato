@@ -30,7 +30,12 @@ public class OWLReleaser
         classifier = new OWLClassifier();
     }
 
-    public void createReleaseOntology(String devPath, boolean catalogFileExists, String outDir, String version, String outFile, String releaseIRI){
+    public void createReleaseOntology(String devPath,
+                                      boolean catalogFileExists,
+                                      String outDir,
+                                      String version,
+                                      String outFile,
+                                      String releaseIRI){
 
         //load development ontology from local file
         loadOntology(devPath, catalogFileExists);
@@ -55,6 +60,7 @@ public class OWLReleaser
 
         //save release ontology
         saveReleaseOnto(outDir+"/"+version+"/"+outFile);
+        saveReleaseOnto(outDir+"/latest_release/"+outFile);
     }
 
     /**
