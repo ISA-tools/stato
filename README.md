@@ -12,3 +12,5 @@ Access STATO throught the PURL: http://purl.obolibrary.org/obo/stato.owl
 
 See and submit issues at: https://github.com/ISA-tools/stato/issues
 
+The STATO ontology has license [CC BY 3.0](http://creativecommons.org/licenses/by/3.0/).
+
