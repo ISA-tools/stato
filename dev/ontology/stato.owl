@@ -1264,6 +1264,12 @@
         <Class IRI="http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000422"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000423"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000424"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://www.co-ode.org/ontologies/ont.owl#morbidity"/>
     </Declaration>
     <Declaration>
@@ -9048,6 +9054,53 @@
     <SubClassOf>
         <Class IRI="http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000422"/>
         <Class IRI="http://purl.obolibrary.org/obo/IAO_0000038"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000422"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            <ObjectIntersectionOf>
+                <Class IRI="http://purl.obolibrary.org/obo/STATO_0000006"/>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000219"/>
+                    <Class IRI="http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000423"/>
+                </ObjectSomeValuesFrom>
+            </ObjectIntersectionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000422"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            <ObjectIntersectionOf>
+                <Class IRI="http://purl.obolibrary.org/obo/STATO_0000008"/>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000219"/>
+                    <Class IRI="http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000423"/>
+                </ObjectSomeValuesFrom>
+            </ObjectIntersectionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000422"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000312"/>
+            <ObjectIntersectionOf>
+                <Class IRI="http://purl.obolibrary.org/obo/OBI_0200111"/>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000062"/>
+                    <Class IRI="http://purl.obolibrary.org/obo/STATO_0000155"/>
+                </ObjectSomeValuesFrom>
+            </ObjectIntersectionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000423"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000027"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000424"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000027"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.co-ode.org/ontologies/ont.owl#morbidity"/>
@@ -27763,7 +27816,11 @@ http://www.statsdirect.com/help/default.htm#meta_analysis/heterogeneity.htm</Lit
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000422</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">a plot for meta-analysis with binary outcomes</Literal>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">The L’Abbé plot was introduced in 1987 in the context of meta-analyses of clinical trials with dichotomous (binary) outcomes, as a plot of observed risks in the treatment group against observed risks in the control group.
+Another formulation is that it plots the event rate in the experimental (intervention) group against the event rate in the control group, as an aid to exploring the heterogeneity of effect estimates within a meta-analysis.
+It is diagram used in meta-analysis that compares the risks observed in the experimental and control arms of clinical trials. Each trial is located in the space of a diagram where the sizes of the circles indicate the sizes of the trials. Trials in which the experimental treatment had a higher risk than the control will be in the upper left of the plot. If risk in the both groups is the same the circle will fall on the line of equality. If the control treatment has a higher risk than the experimental treatment then the point will be in the lower right of the plot. It is often used as an indicator of heterogeneity and hence as an indicator of the likelihood that results from different trials can be validly combined. Named after Kristin L&apos;Abbé.
+
+</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -27773,7 +27830,18 @@ http://www.statsdirect.com/help/default.htm#meta_analysis/heterogeneity.htm</Lit
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
         <IRI>http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000422</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://www.ncbi.nlm.nih.gov/pubmed/3300460</Literal>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">10.1002/jrsm.6
+
+Graphical displays for meta-analysis: An overview with suggestions for practice</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000422</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://www.ncbi.nlm.nih.gov/pubmed/3300460
+
+and 
+
+http://www.dictionarycentral.com/definition/l-abb-plot.html</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
@@ -27784,6 +27852,59 @@ http://www.statsdirect.com/help/default.htm#meta_analysis/heterogeneity.htm</Lit
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000422</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">L&apos;Abbe plot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000423</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000423</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">the proportion of individuals in a population with the outcome of interest</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000423</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000423</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">adapted from:
+http://handbook.cochrane.org/chapter_9/9_2_2_4_measure_of_absolute_effect_the_risk_difference.htm
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000423</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">observed risk</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000424</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000424</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">The risk difference is the difference between the observed risks (proportions of individuals with the outcome of interest) in the two groups.
+The risk difference is straightforward to interpret: it describes the actual difference in the observed risk of events between experimental and control interventions.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000424</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000424</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://handbook.cochrane.org/chapter_9/9_2_2_4_measure_of_absolute_effect_the_risk_difference.htm</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000424</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">risk difference</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
