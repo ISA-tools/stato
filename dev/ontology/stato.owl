@@ -1222,55 +1222,73 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000408"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000409"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000409"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000410"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000410"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000411"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000411"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000412"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000412"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000413"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000413"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000414"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000414"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000415"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000415"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000416"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000416"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000417"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000417"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000418"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000418"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000419"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000419"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000420"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000420"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000421"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000421"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000422"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000422"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000425"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000426"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000427"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000428"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000429"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000430"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000431"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000423"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000424"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#morbidity"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000001"/>
@@ -8925,7 +8943,7 @@
                 <Class IRI="http://purl.obolibrary.org/obo/STATO_0000007"/>
                 <ObjectSomeValuesFrom>
                     <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000219"/>
-                    <Class IRI="http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000409"/>
+                    <Class IRI="http://purl.obolibrary.org/obo/STATO_0000409"/>
                 </ObjectSomeValuesFrom>
             </ObjectIntersectionOf>
         </ObjectSomeValuesFrom>
@@ -8938,7 +8956,7 @@
                 <Class IRI="http://purl.obolibrary.org/obo/STATO_0000007"/>
                 <ObjectSomeValuesFrom>
                     <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000219"/>
-                    <Class IRI="http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000417"/>
+                    <Class IRI="http://purl.obolibrary.org/obo/STATO_0000417"/>
                 </ObjectSomeValuesFrom>
             </ObjectIntersectionOf>
         </ObjectSomeValuesFrom>
@@ -8981,7 +8999,7 @@
                 <Class IRI="http://purl.obolibrary.org/obo/STATO_0000007"/>
                 <ObjectSomeValuesFrom>
                     <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000219"/>
-                    <Class IRI="http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000409"/>
+                    <Class IRI="http://purl.obolibrary.org/obo/STATO_0000409"/>
                 </ObjectSomeValuesFrom>
             </ObjectIntersectionOf>
         </ObjectSomeValuesFrom>
@@ -8994,69 +9012,69 @@
                 <Class IRI="http://purl.obolibrary.org/obo/STATO_0000007"/>
                 <ObjectSomeValuesFrom>
                     <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000219"/>
-                    <Class IRI="http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000417"/>
+                    <Class IRI="http://purl.obolibrary.org/obo/STATO_0000417"/>
                 </ObjectSomeValuesFrom>
             </ObjectIntersectionOf>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000409"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000409"/>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000184"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000410"/>
-        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000409"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000410"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000409"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000411"/>
-        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000409"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000411"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000409"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000412"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000412"/>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000184"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000413"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000413"/>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000184"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000414"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000414"/>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000184"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000415"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000415"/>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000184"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000416"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000416"/>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000184"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000417"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000417"/>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000184"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000418"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000418"/>
         <Class IRI="http://purl.obolibrary.org/obo/IAO_0000109"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000419"/>
-        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000418"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000419"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000418"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000420"/>
-        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000418"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000420"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000418"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000421"/>
-        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000418"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000421"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000418"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000422"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000422"/>
         <Class IRI="http://purl.obolibrary.org/obo/IAO_0000038"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000422"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000422"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
             <ObjectIntersectionOf>
@@ -9069,7 +9087,7 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000422"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000422"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
             <ObjectIntersectionOf>
@@ -9082,7 +9100,7 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000422"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000422"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000312"/>
             <ObjectIntersectionOf>
@@ -9095,16 +9113,75 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000425"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000109"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000425"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000403"/>
+            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000421"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000426"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000109"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000426"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000403"/>
+            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000421"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000427"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000109"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000428"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000109"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000429"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000109"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000429"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000403"/>
+            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000421"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000430"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000155"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000430"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
+            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000425"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000431"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000155"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000431"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
+            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000429"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000423"/>
         <Class IRI="http://purl.obolibrary.org/obo/IAO_0000027"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000424"/>
         <Class IRI="http://purl.obolibrary.org/obo/IAO_0000027"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#morbidity"/>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000184"/>
     </SubClassOf>
     <DisjointClasses>
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0000115"/>
@@ -27466,42 +27543,42 @@ DOI: 10.1056/NEJM197507312930513</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000409</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000409</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">the likelihood ratio is a ratio which is formed by dividing the post-test odds with the pre-test odds in the context of a Bayesian formulation</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000409</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000409</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
-        <IRI>http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000409</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000409</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000409</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000409</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">likelihood ratio</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000410</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000410</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">the likelihood ratio of negative results is a ratio which is formed  by dividing the difference between 1 and sensitivity of the test by the specificity value of a test.. This can be expressed also as dividing the probability of a person who has the disease testing negative by the probability of a person who does not have the disease testing negative.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000410</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000410</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
-        <IRI>http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000410</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000410</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">likelihood ratio for negative results</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
-        <IRI>http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000410</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000410</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">adapted from Wikipedia:
 https://en.wikipedia.org/wiki/Likelihood_ratios_in_diagnostic_testing
 
@@ -27509,27 +27586,27 @@ last accessed: May 2016</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000410</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000410</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">negative likelihood ratio</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000411</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000411</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">the likelihood ratio of positive results is a ratio which is form by dividing the sensitivity value of a test by the difference between 1 and specificity of the test. This can be expressed also as dividing the probability of the test giving a positive result when testing an affected subject versus the probability of the test giving a positive result when a subject is not affected.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000411</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000411</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
-        <IRI>http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000411</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000411</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">likelihood ratio for positive results</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
-        <IRI>http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000411</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000411</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">adapted from Wikipedia:
 https://en.wikipedia.org/wiki/Likelihood_ratios_in_diagnostic_testing
 
@@ -27537,94 +27614,94 @@ last accessed: May 2016</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000411</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000411</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">positive likelihood ratio</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000412</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000412</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">prevalence is a ratio formed by the number of subjects diagnosed with a disease divided by the total population size.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000412</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000412</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
-        <IRI>http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000412</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000412</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">adapted from: https://www.health.ny.gov/diseases/chronic/basicstat.htm</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000412</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000412</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">prevalence</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000413</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000413</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Incidence is the ratio of the number of new cases of a disease divided by the number of persons at risk for the disease.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000413</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000413</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
-        <IRI>http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000413</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000413</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">adapted from: https://www.health.ny.gov/diseases/chronic/basicstat.htm</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000413</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000413</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">incidence</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000414</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000414</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">mortality is a ratio  formed by the number of deaths due to a disease divided by the total population size.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000414</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000414</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
-        <IRI>http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000414</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000414</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">adapted from: https://www.health.ny.gov/diseases/chronic/basicstat.htm</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000414</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000414</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">mortality</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000415</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000415</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">in the context of binary classification, accuracy is defined as the proportion of true results (both true positives and true negatives) to the total number of cases examined (the sum of true positive, true negative, false positive and false negative).
 
 It can be understood as a measure of the proximity of measurement results to the true value.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000415</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000415</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
-        <IRI>http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000415</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000415</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Rand accuracy</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
-        <IRI>http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000415</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000415</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Rand index</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
-        <IRI>http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000415</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000415</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">adapted from wikipedia:
 https://en.wikipedia.org/wiki/Accuracy_and_precision#In_binary_classification
 
@@ -27632,27 +27709,27 @@ last accessed: May 2016</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000415</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000415</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">accuracy</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000416</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000416</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">precision or positive predictive value is defined as the proportion of the true positives against all the positive results (both true positives and false positives)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000416</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000416</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
-        <IRI>http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000416</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000416</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">positive predictive value</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
-        <IRI>http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000416</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000416</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">adapted from wikipedia:
 https://en.wikipedia.org/wiki/Accuracy_and_precision#In_binary_classification
 
@@ -27660,113 +27737,113 @@ last accessed: May 2016</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000416</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000416</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">precision</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000417</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000417</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">The probability of a patient having the target disorder before a diagnostic test result is known</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000417</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000417</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
-        <IRI>http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000417</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000417</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://www.cebm.net/pre-test-probability/</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000417</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000417</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">pretest probability</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000418</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000418</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">a measure of heterogeneity in meta-analysis  is a data item which aims to describe the variation in study outcomes between studies.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000418</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000418</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
-        <IRI>http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000418</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000418</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">adapted from http://www.statsdirect.com/help/default.htm#meta_analysis/heterogeneity.htm
 
 last accessed: May 2016</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000418</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000418</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">measure of heterogeneity</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
-        <IRI>http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000419</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000419</IRI>
         <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000419</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000419</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">The Cochran&apos;s Q  statistic is a measure of heterogeneity accros study computed by summing the squared deviations of each study&apos;s estimate from the overall meta-analytic estimate, weighting each study&apos;s contribution in the same manner as in the meta-analysis.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000419</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000419</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
-        <IRI>http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000419</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000419</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"> Cochran WG. The combination of estimates from different experiments. Biometrics 1954;10: 101-29.
 
 10.2307/3001666</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
-        <IRI>http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000419</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000419</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://www.inside-r.org/packages/cran/RVAideMemoire/docs/cochran.qtest</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000419</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000419</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Cochran&apos;s Q statistic</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
-        <IRI>http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000420</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000420</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
-        <IRI>http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000420</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000420</IRI>
         <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000420</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000420</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">The quantity called I2, describes the percentage of total variation across studies that is due to heterogeneity rather than chance. I2 can be readily calculated from basic results obtained from a typical meta-analysis as I2 = 100%×(Q - df)/Q, where Q is Cochran&apos;s heterogeneity statistic and df the degrees of freedom. Negative values of I2 are put equal to zero so that I2 lies between 0% and 100%. A value of 0% indicates no observed heterogeneity, and larger values show increasing heterogeneity.
 
 Unlike Cochran&apos;s Q, it does not inherently depend upon the number of studies considered. A confidence interval for I² is constructed using either i) the iterative non-central chi-squared distribution method of Hedges and Piggott (2001); or ii) the test-based method of Higgins and Thompson (2002). The non-central chi-square method is currently the method of choice (Higgins, personal communication, 2006) – it is computed if the &apos;exact&apos; option is selected.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000420</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000420</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
-        <IRI>http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000420</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000420</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">I2</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
-        <IRI>http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000420</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000420</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://www.ncbi.nlm.nih.gov/pmc/articles/PMC192859/
 
 and 
@@ -27775,47 +27852,47 @@ http://www.statsdirect.com/help/default.htm#meta_analysis/heterogeneity.htm</Lit
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
-        <IRI>http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000420</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000420</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000420</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000420</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">I-squared</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
-        <IRI>http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000421</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000421</IRI>
         <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000421</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000421</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"> Tau-squared is an estimate of the between-study variance in a random-effects meta-analysis. The square root of this number (i.e. tau) is the estimated standard deviation of underlying effects across studies.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000421</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000421</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
-        <IRI>http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000421</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000421</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://handbook.cochrane.org/chapter_9/9_5_4_incorporating_heterogeneity_into_random_effects_models.htm</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
-        <IRI>http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000421</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000421</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://www.inside-r.org/packages/cran/meta/docs/metacor</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000421</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000421</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Tau squared</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000422</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000422</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">The L’Abbé plot was introduced in 1987 in the context of meta-analyses of clinical trials with dichotomous (binary) outcomes, as a plot of observed risks in the treatment group against observed risks in the control group.
 Another formulation is that it plots the event rate in the experimental (intervention) group against the event rate in the control group, as an aid to exploring the heterogeneity of effect estimates within a meta-analysis.
 It is diagram used in meta-analysis that compares the risks observed in the experimental and control arms of clinical trials. Each trial is located in the space of a diagram where the sizes of the circles indicate the sizes of the trials. Trials in which the experimental treatment had a higher risk than the control will be in the upper left of the plot. If risk in the both groups is the same the circle will fall on the line of equality. If the control treatment has a higher risk than the experimental treatment then the point will be in the lower right of the plot. It is often used as an indicator of heterogeneity and hence as an indicator of the likelihood that results from different trials can be validly combined. Named after Kristin L&apos;Abbé.
@@ -27824,19 +27901,19 @@ It is diagram used in meta-analysis that compares the risks observed in the expe
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000422</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000422</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
-        <IRI>http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000422</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000422</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">10.1002/jrsm.6
 
 Graphical displays for meta-analysis: An overview with suggestions for practice</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
-        <IRI>http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000422</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000422</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://www.ncbi.nlm.nih.gov/pubmed/3300460
 
 and 
@@ -27845,13 +27922,191 @@ http://www.dictionarycentral.com/definition/l-abb-plot.html</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
-        <IRI>http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000422</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000422</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://www.inside-r.org/packages/cran/meta/docs/labbe.metabin</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000422</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000422</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">L&apos;Abbe plot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000425</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Sidik-Jonkman estimator is a data item computed to estimate heterogeneity parameter (estimate of between-study variance) in a random effect model for meta analysis.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000425</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000425</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://www.ncbi.nlm.nih.gov/pubmed/16955539</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000425</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://www.inside-r.org/packages/cran/meta/docs/metacor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000425</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Sidik-Jonkman estimator</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000426</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Hunter-Schmidt estimator is a data item computed to estimate heterogeneity parameter (estimate of between-study variance) in a random effect model for meta analysis.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000426</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000426</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Methods of Meta-Analysis: Correcting Error and Bias in Research Findings. by John E. Hunter, Frank L. Schmidt
+
+doi:10.2307/2289738</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000426</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Hunter-Schmidt estimator</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000427</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000427</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000427</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000427</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">restricted maximum likelihood estimator</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000428</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000428</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000428</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000428</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">maximum likelihood estimator</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000429</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">DerSimonian-Laird estimator s a data item computed to estimate heterogeneity parameter (estimate of between-study variance) in a random effect model for meta analysis.  The estimator is used in simple noniterative procedure for characterizing the distribution of treatment effects in a series of studies</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000429</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000429</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">doi:10.1016/j.cct.2006.04.004</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000429</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://www.ncbi.nlm.nih.gov/pubmed/3802833
+doi:10.1016/0197-2456(86)90046-2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000429</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">DerSimonian-Laird estimator</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000430</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000123</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000430</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">a random effect meta analysis procedure defined by Hartung and Knapp  and by Sidik and Jonkman which performs better than DerSimonian and Laird approach, especially when there is heterogeneity and the number of studies in the meta-analysis is small</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000430</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000430</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">HKSJ method</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000430</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000430</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://www.inside-r.org/packages/cran/meta/docs/metacor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000430</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">meta analysis by Hartung-Knapp-Sidik-Jonkman method</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000431</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000123</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000431</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000431</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000431</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000431</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://www.inside-r.org/packages/cran/meta/docs/metacor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000431</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">meta analysis by DerSimonian and Leard method</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
@@ -27905,26 +28160,6 @@ The risk difference is straightforward to interpret: it describes the actual dif
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000424</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">risk difference</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>http://www.co-ode.org/ontologies/ont.owl#morbidity</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">morbidity is a ratio  formed by the number of subjects diagnosed with a disease divided by the total population size.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>http://www.co-ode.org/ontologies/ont.owl#morbidity</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
-        <IRI>http://www.co-ode.org/ontologies/ont.owl#morbidity</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://www.co-ode.org/ontologies/ont.owl#morbidity</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">morbidity</Literal>
     </AnnotationAssertion>
     <SubAnnotationPropertyOf>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000032"/>
