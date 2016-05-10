@@ -64,20 +64,20 @@
         <Literal datatypeIRI="&rdf;PlainLiteral">Thomas Nichols (http://orcid.org/0000-0002-4516-5103)</Literal>
     </Annotation>
     <Annotation>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/rights"/>
-        <Literal datatypeIRI="&xsd;anyURI">This Ontology is distributed under a Creative Commons Attribution License </Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra (http://orcid.org/0000-0001-9853-5668)</Literal>
-    </Annotation>
-    <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/contributor"/>
         <Literal datatypeIRI="&rdf;PlainLiteral">Nolan Nichols (http://orcid.org/0000-0003-1099-3328)</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/title"/>
         <Literal datatypeIRI="&rdf;PlainLiteral">STATO: the statistical methods ontology</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/rights"/>
+        <Literal datatypeIRI="&xsd;anyURI">This Ontology is distributed under a Creative Commons Attribution License </Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra (http://orcid.org/0000-0001-9853-5668)</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/contributor"/>
@@ -1285,6 +1285,15 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000431"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000432"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000433"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000434"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000423"/>
     </Declaration>
     <Declaration>
@@ -2041,6 +2050,13 @@
                     <Class IRI="http://purl.obolibrary.org/obo/OBI_0001305"/>
                 </ObjectSomeValuesFrom>
             </ObjectIntersectionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/OBI_0200000"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
+            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000229"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -9161,6 +9177,13 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000430"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
+            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000099"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000430"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
             <Class IRI="http://purl.obolibrary.org/obo/STATO_0000425"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
@@ -9172,7 +9195,96 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000431"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
+            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000099"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000431"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
             <Class IRI="http://purl.obolibrary.org/obo/STATO_0000429"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000432"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000155"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000432"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
+            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000099"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000432"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
+            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000426"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000433"/>
+        <Class IRI="http://purl.obolibrary.org/obo/OBI_0200000"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000433"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
+            <Class IRI="http://purl.obolibrary.org/obo/OBI_0500005"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000433"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
+            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000053"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000433"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000299"/>
+            <Class IRI="http://purl.obolibrary.org/obo/OBI_0000175"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000434"/>
+        <Class IRI="http://purl.obolibrary.org/obo/OBI_0200000"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000434"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
+            <Class IRI="http://purl.obolibrary.org/obo/OBI_0500007"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000434"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
+            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000053"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000434"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
+            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000229"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000434"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
+            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000419"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000434"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000299"/>
+            <Class IRI="http://purl.obolibrary.org/obo/OBI_0000175"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -27931,6 +28043,11 @@ http://www.dictionarycentral.com/definition/l-abb-plot.html</Literal>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">L&apos;Abbe plot</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000425</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000425</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Sidik-Jonkman estimator is a data item computed to estimate heterogeneity parameter (estimate of between-study variance) in a random effect model for meta analysis.</Literal>
@@ -27948,12 +28065,33 @@ http://www.dictionarycentral.com/definition/l-abb-plot.html</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000425</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://www.inside-r.org/packages/cran/meta/docs/metacor</Literal>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://www.inside-r.org/packages/cran/meta/docs/metacor
+
+metacor(cor, n, studlab,
+        data=NULL, subset=NULL,
+        sm=.settings$smcor,
+        level=.settings$level, level.comb=.settings$level.comb,
+        comb.fixed=.settings$comb.fixed, comb.random=.settings$comb.random,
+        hakn=&quot;FALSE&quot;,
+        method.tau=&quot;SJ&quot;,
+        tau.common=.settings$tau.common,
+        prediction=.settings$prediction, level.predict=.settings$level.predict,
+        method.bias=.settings$method.bias,
+        backtransf=.settings$backtransf,
+        title=.settings$title, complab=.settings$complab, outclab=&quot;&quot;,
+        byvar, bylab, print.byvar=.settings$print.byvar,
+        keepdata=.settings$keepdata
+        )</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000425</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Sidik-Jonkman estimator</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000426</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -27971,6 +28109,27 @@ http://www.dictionarycentral.com/definition/l-abb-plot.html</Literal>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Methods of Meta-Analysis: Correcting Error and Bias in Research Findings. by John E. Hunter, Frank L. Schmidt
 
 doi:10.2307/2289738</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000426</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">http://www.inside-r.org/packages/cran/meta/docs/metacor
+
+metacor(cor, n, studlab,
+        data=NULL, subset=NULL,
+        sm=.settings$smcor,
+        level=.settings$level, level.comb=.settings$level.comb,
+        comb.fixed=.settings$comb.fixed, comb.random=.settings$comb.random,
+        hakn=&quot;FALSE&quot;,
+        method.tau=&quot;HS&quot;,
+        tau.common=.settings$tau.common,
+        prediction=.settings$prediction, level.predict=.settings$level.predict,
+        method.bias=.settings$method.bias,
+        backtransf=.settings$backtransf,
+        title=.settings$title, complab=.settings$complab, outclab=&quot;&quot;,
+        byvar, bylab, print.byvar=.settings$print.byvar,
+        keepdata=.settings$keepdata
+        )</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -28018,6 +28177,11 @@ doi:10.2307/2289738</Literal>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">maximum likelihood estimator</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000429</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000429</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">DerSimonian-Laird estimator s a data item computed to estimate heterogeneity parameter (estimate of between-study variance) in a random effect model for meta analysis.  The estimator is used in simple noniterative procedure for characterizing the distribution of treatment effects in a series of studies</Literal>
@@ -28039,6 +28203,27 @@ doi:10.2307/2289738</Literal>
 doi:10.1016/0197-2456(86)90046-2</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000429</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">http://www.inside-r.org/packages/cran/meta/docs/metacor
+
+metacor(cor, n, studlab,
+        data=NULL, subset=NULL,
+        sm=.settings$smcor,
+        level=.settings$level, level.comb=.settings$level.comb,
+        comb.fixed=.settings$comb.fixed, comb.random=.settings$comb.random,
+        hakn=&quot;FALSE&quot;,
+        method.tau=&quot;DL&quot;,
+        tau.common=.settings$tau.common,
+        prediction=.settings$prediction, level.predict=.settings$level.predict,
+        method.bias=.settings$method.bias,
+        backtransf=.settings$backtransf,
+        title=.settings$title, complab=.settings$complab, outclab=&quot;&quot;,
+        byvar, bylab, print.byvar=.settings$print.byvar,
+        keepdata=.settings$keepdata
+        )</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000429</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">DerSimonian-Laird estimator</Literal>
@@ -28051,7 +28236,7 @@ doi:10.1016/0197-2456(86)90046-2</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000430</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">a random effect meta analysis procedure defined by Hartung and Knapp  and by Sidik and Jonkman which performs better than DerSimonian and Laird approach, especially when there is heterogeneity and the number of studies in the meta-analysis is small</Literal>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">a random effect meta analysis procedure defined by Hartung and Knapp and by Sidik and Jonkman which performs better than DerSimonian and Laird approach, especially when there is heterogeneity and the number of studies in the meta-analysis is small.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -28066,12 +28251,28 @@ doi:10.1016/0197-2456(86)90046-2</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000430</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">doi:10.1186/1471-2288-14-25</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000430</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://www.inside-r.org/packages/cran/meta/docs/metacor</Literal>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://www.inside-r.org/packages/cran/meta/docs/metacor
+
+metacor(cor, n, studlab,
+        data=NULL, subset=NULL,
+        sm=.settings$smcor,
+        level=.settings$level, level.comb=.settings$level.comb,
+        comb.fixed=.settings$comb.fixed, comb.random=.settings$comb.random,
+        hakn=&quot;TRUE&quot;,
+        method.tau=&quot;HS&quot;,
+        tau.common=.settings$tau.common,
+        prediction=.settings$prediction, level.predict=.settings$level.predict,
+        method.bias=.settings$method.bias,
+        backtransf=.settings$backtransf,
+        title=.settings$title, complab=.settings$complab, outclab=&quot;&quot;,
+        byvar, bylab, print.byvar=.settings$print.byvar,
+        keepdata=.settings$keepdata
+        )</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -28086,7 +28287,7 @@ doi:10.1016/0197-2456(86)90046-2</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000431</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral"></Literal>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">a meta analysis which relies on the computation of the DerSimonian and Leard estimator as a measure of heterogeneity over a set of studies.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -28101,12 +28302,173 @@ doi:10.1016/0197-2456(86)90046-2</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000431</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://www.inside-r.org/packages/cran/meta/docs/metacor</Literal>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://www.inside-r.org/packages/cran/meta/docs/metacor
+
+metacor(cor, n, studlab,
+        data=NULL, subset=NULL,
+        sm=.settings$smcor,
+        level=.settings$level, level.comb=.settings$level.comb,
+        comb.fixed=.settings$comb.fixed, comb.random=.settings$comb.random,
+        hakn=&quot;FALSE&quot;,
+        method.tau=&quot;DL&quot;,
+        tau.common=.settings$tau.common,
+        prediction=.settings$prediction, level.predict=.settings$level.predict,
+        method.bias=.settings$method.bias,
+        backtransf=.settings$backtransf,
+        title=.settings$title, complab=.settings$complab, outclab=&quot;&quot;,
+        byvar, bylab, print.byvar=.settings$print.byvar,
+        keepdata=.settings$keepdata
+        )</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000431</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">meta analysis by DerSimonian and Leard method</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000432</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000123</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000432</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">a meta analysis which relies on the computation of the Hunter and Schmidt estimator as a measure of heterogeneity over a set of studies by considering the weighted mean of the raw correlation coefficient. Hunter and Schmidt developed what is commonly termed validity generalization procedures (Schmidt and Hunter, 1977). These involve correcting the effect sizes in the meta-analysis for sampling, and measurement error
+and range restriction.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000432</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000432</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Hunter JE, Schmidt FL. Methods of Meta-analysis: correcting error and bias in research findings. Newbury Park, CA: Sage 1990.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000432</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://www.inside-r.org/packages/cran/meta/docs/metacor
+
+metacor(cor, n, studlab,
+        data=NULL, subset=NULL,
+        sm=.settings$smcor,
+        level=.settings$level, level.comb=.settings$level.comb,
+        comb.fixed=.settings$comb.fixed, comb.random=.settings$comb.random,
+        hakn=&quot;FALSE&quot;,
+        method.tau=&quot;HS&quot;,
+        tau.common=.settings$tau.common,
+        prediction=.settings$prediction, level.predict=.settings$level.predict,
+        method.bias=.settings$method.bias,
+        backtransf=.settings$backtransf,
+        title=.settings$title, complab=.settings$complab, outclab=&quot;&quot;,
+        byvar, bylab, print.byvar=.settings$print.byvar,
+        keepdata=.settings$keepdata
+        )</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000432</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">meta analysis by Hunter-Schmidt method</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000433</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000433</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">McNemar&apos;s test is a statistical test used on paired nominal data. It is applied to 2 × 2 contingency tables with a dichotomous trait, with matched pairs of subjects, to determine whether the row and column marginal frequencies are equal (that is, whether there is &quot;marginal homogeneity&quot;). It is named after Quinn McNemar, who introduced it in 1947.
+An application of the test in genetics is the transmission disequilibrium test for detecting linkage disequilibrium</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000433</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000433</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">McNemar&apos;s Chi-squared Test for Count Data</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000433</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">test of the marginal homogeneity of a contingency table</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000433</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">within-subjects chi-squared test</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000433</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">adapted from Wikipedia:
+https://en.wikipedia.org/wiki/McNemar%27s_test
+
+last accessed: May 2016</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000433</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">https://www.ncbi.nlm.nih.gov/pubmed/20254758</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000433</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">mcnemar.test(x, y = NULL, correct = TRUE)
+
+from:
+
+https://stat.ethz.ch/R-manual/R-devel/library/stats/html/mcnemar.test.html</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000433</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">McNemar test</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000434</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000434</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Cochran&apos;s Q test is a statistical test used for unreplicated randomized block design experiments with a binary response variable and paired data.
+In the analysis of two-way randomized block designs where the response variable can take only two possible outcomes (coded as 0 and 1), Cochran&apos;s Q test is a non-parametric statistical test to verify whether k treatments have identical effects.
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000434</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000434</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">adapted from:
+http://www.inside-r.org/packages/cran/CVST/docs/cochranq.test
+and
+https://en.wikipedia.org/wiki/Cochran%27s_Q_test
+
+last accessed: May 2016</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000434</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">cochran.qtest(formula, data, alpha = 0.05, p.method = &quot;fdr&quot;)
+
+from: 
+http://www.inside-r.org/packages/cran/RVAideMemoire/docs/cochran.qtest</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000434</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Cochran&apos;s q test for heterogeneity</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
