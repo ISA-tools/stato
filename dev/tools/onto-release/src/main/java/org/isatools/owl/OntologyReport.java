@@ -31,8 +31,8 @@ public class OntologyReport {
      * @param definition
      * @param synonyms
      */
-    public void addEntity(String label, String iri, String definition, List<String> synonyms){
-        EntityReport entityReport = new EntityReport(label, iri, definition, synonyms);
+    public void addEntity(String label, String iri, String definition, List<String> synonyms, String curationStatusIRI){
+        EntityReport entityReport = new EntityReport(label, iri, definition, synonyms, curationStatusIRI);
 
         //if it already exists, add to duplicates
         EntityReport existingEntityReport = iriClassReportMap.get(iri);
@@ -48,13 +48,20 @@ public class OntologyReport {
         iriClassReportMap.put(iri, entityReport);
     }
 
-    public void addNoDefinitionEntity(String label, String iri, List<String> synonyms){
-        EntityReport entityReport = new EntityReport(label, iri, "", synonyms);
+    public void addNoDefinitionEntity(String label,
+                                      String iri,
+                                      List<String> synonyms,
+                                      String curationStatusIRI){
+        EntityReport entityReport = new EntityReport(label, iri, "", synonyms, curationStatusIRI);
         iriNoDefinitions.put(iri, entityReport);
     }
 
-    public void addIncompleteMetadataEntity(String label, String iri, String definition, List<String> synonyms){
-        EntityReport entityReport = new EntityReport(label, iri, definition, synonyms);
+    public void addIncompleteMetadataEntity(String label,
+                                            String iri,
+                                            String definition,
+                                            List<String> synonyms,
+                                            String curationStatusIRI){
+        EntityReport entityReport = new EntityReport(label, iri, definition, synonyms, curationStatusIRI);
         iriMetadataIncomplete.put(iri, entityReport);
     }
 

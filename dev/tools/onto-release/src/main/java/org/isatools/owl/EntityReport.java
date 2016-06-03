@@ -12,12 +12,14 @@ public class EntityReport {
     protected String iri;
     protected String definition;
     protected List<String> synonyms;
+    protected String curationStatusIRI;
 
-    public EntityReport(String l, String i, String d, List<String> s){
+    public EntityReport(String l, String i, String d, List<String> s, String cs){
         label = l;
         iri = i;
         definition = d;
         synonyms = new ArrayList<String>(s);
+        curationStatusIRI = cs;
     }
 
     public String getLabel(){
@@ -31,7 +33,6 @@ public class EntityReport {
 
         if (!toAdd.equals("")) {
             toAdd = toAdd.trim();
-
             line.append("\"").append(toAdd).append("\"\t");
         }
     }
@@ -46,6 +47,7 @@ public class EntityReport {
 //                addToLine(buffer, synonym);
 //            }
         addToLine(buffer, synonyms.toString());
+        addToLine(buffer, curationStatusIRI);
         return buffer.toString();
     }
 }

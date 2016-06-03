@@ -87,9 +87,6 @@ public class OntologyReporter {
         entities.addAll(devOntology.getObjectPropertiesInSignature());
         entities.addAll(devOntology.getAnnotationPropertiesInSignature());
         entities.addAll(devOntology.getIndividualsInSignature());
-
-        //System.out.println(devOntology.getIndividualsInSignature());
-
         entities.addAll(devOntology.getDatatypesInSignature());
 
         System.out.println("There are " + entities.size() + " entities in the ontology signature");
@@ -128,12 +125,6 @@ public class OntologyReporter {
                     definition = definitions.get(0);
                 }
 
-//                if (definition ==null || (definition != null && definition.isEmpty()) ){
-//                        System.out.println("No DEFINITION for term " + entity.getIRI().toString() + " " + label);
-//                        count++;
-//                        definition = "";
-//                }
-
                 //synonyms
                 List<String> synonyms = new ArrayList<String>();
                 List<String> toAdd = getClassAnnotation(entity, ALTERNATIVE_TERM);
@@ -145,24 +136,35 @@ public class OntologyReporter {
                     synonyms.addAll(toAdd);
 
 
+                List<String> curationStatusList = getClassAnnotation(entity, HAS_CURATION_STATUS);
+
+                String curationStatus = null;
+                if (!curationStatusList.isEmpty())
+                    curationStatus =  curationStatusList.get(0);
+                else
+                    curationStatus = "";
+
                 ontologyReport.addEntity(label,
                         entity.getIRI().toString(),
                         definition,
-                        synonyms
+                        synonyms,
+                        curationStatus
                 );
 
                 if (noDefinition)
                     ontologyReport.addNoDefinitionEntity(label,
                             entity.getIRI().toString(),
-                            synonyms);
+                            synonyms,
+                            curationStatus);
 
-                List<String> curationStatusList = getClassAnnotation(entity, HAS_CURATION_STATUS);
+
                 for(String value: curationStatusList){
                     if (value.equals(CURATION_STATUS_METADATA_INCOMPLETE))
                         ontologyReport.addIncompleteMetadataEntity(label,
                                 entity.getIRI().toString(),
                                 definition,
-                                synonyms);
+                                synonyms,
+                                curationStatus);
                 }
 
 
