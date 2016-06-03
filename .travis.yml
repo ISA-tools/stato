@@ -2,4 +2,5 @@ sudo: false
 language: java
 env:
   - TEST_DIR=dev/tools/onto-release
-script: cd $TEST_DIR && mvn test
+script: cd $TEST_DIR && mvn test -Dtest=org.isatools.owl.OntologyReporterTest
+#script: cd $TEST_DIR && mvn test
