@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://github.com/ISA-tools/stato/blob/dev/images/stato-logo-1.png" align="center" alt="STATO"/>
+<img src="https://github.com/ISA-tools/stato/blob/dev/images/stato.png" align="center" alt="STATO"/>
 </p>
 
 [![Build Status](https://travis-ci.org/ISA-tools/stato.svg)](https://travis-ci.org/ISA-tools/stato)
