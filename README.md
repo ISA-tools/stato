@@ -8,7 +8,9 @@ See dedicated webiste at: http://stato-ontology.org/
 
 Browse STATO in BioPortal at: http://bioportal.bioontology.org/ontologies/STATO
 
-Access STATO throught the PURL: http://purl.obolibrary.org/obo/stato.owl
+Access STATO through the PURL: http://purl.obolibrary.org/obo/stato.owl
+
+Access STATO in BioSharing: https://biosharing.org/bsg-s000548
 
 See and submit issues at: https://github.com/ISA-tools/stato/issues
 
