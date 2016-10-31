@@ -3,7 +3,7 @@ http://purl.obolibrary.org/obo/stato/obi_import.owl
 
 [Source ontology]
 #comment here
-#List of ontologies: OBI, NCBITaxon, MP, PATO, GO, DOID, IDO, CHEBI, SO, PRO, CL, ENVO
+#List of ontologies: OBI, NCBITaxon, MP, PATO, GO, DOID, IDO, CHEBI, SO, PRO, CL, ENVO, RO
 OBI
 
 [Low level source term URIs]
@@ -20,13 +20,21 @@ http://purl.obolibrary.org/obo/BFO_0000050 #is part of
 http://purl.obolibrary.org/obo/BFO_0000051 #has part
 http://purl.obolibrary.org/obo/BFO_0000054 #reliazed in
 http://purl.obolibrary.org/obo/BFO_0000055 #realizes
-http://purl.obolibrary.org/obo/BFO_0000059 #concretizes at some time
 http://purl.obolibrary.org/obo/BFO_0000062 #preceded by
 http://purl.obolibrary.org/obo/BFO_0000063 #precedes
-http://purl.obolibrary.org/obo/BFO_0000086 #has quality at some time
-http://purl.obolibrary.org/obo/BFO_0000087 #has role at some time
+#http://purl.obolibrary.org/obo/BFO_0000059 #concretizes at some time
+#http://purl.obolibrary.org/obo/BFO_0000086 #has quality at some time
+#http://purl.obolibrary.org/obo/BFO_0000087 #has role at some time
+
+#RO terms
+http://purl.obolibrary.org/obo/RO_0000059 #concretizes
+http://purl.obolibrary.org/obo/RO_0000086 #has quality
+http://purl.obolibrary.org/obo/RO_0000087 #has role
+#http://purl.obolibrary.org/obo/RO_0002327 #executes (enables)
+
 
 #IAO terms
+http://purl.obolibrary.org/obo/IAO_0000015 #information carrier
 http://purl.obolibrary.org/obo/IAO_0000027 #data item
 http://purl.obolibrary.org/obo/IAO_0000030 #information content entity
 http://purl.obolibrary.org/obo/IAO_0000032 #scalar measurement datum
