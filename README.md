@@ -6,7 +6,7 @@
 
 See dedicated webiste at: http://stato-ontology.org/
 
-Browse STATO in BioPortal at: http://bioportal.bioontology.org/ontologies/STATO
+Access STATO in BioPortal at: http://bioportal.bioontology.org/ontologies/STATO
 
 Access STATO through the PURL: http://purl.obolibrary.org/obo/stato.owl
 
