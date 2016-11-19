@@ -9934,7 +9934,13 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000441"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000299"/>
-            <Class IRI="http://purl.obolibrary.org/obo/OBI_0000175"/>
+            <ObjectIntersectionOf>
+                <Class IRI="http://purl.obolibrary.org/obo/OBI_0000175"/>
+                <ObjectExactCardinality cardinality="1">
+                    <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                    <Class IRI="http://purl.obolibrary.org/obo/STATO_0000036"/>
+                </ObjectExactCardinality>
+            </ObjectIntersectionOf>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -9975,6 +9981,19 @@
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000442"/>
         <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
+            <ObjectIntersectionOf>
+                <Class IRI="http://purl.obolibrary.org/obo/STATO_0000047"/>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                    <Class IRI="http://purl.obolibrary.org/obo/STATO_0000036"/>
+                </ObjectSomeValuesFrom>
+            </ObjectIntersectionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000442"/>
+        <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000299"/>
             <Class IRI="http://purl.obolibrary.org/obo/OBI_0000175"/>
         </ObjectSomeValuesFrom>
@@ -9989,6 +10008,48 @@
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000443"/>
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0200000"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000443"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            <Class IRI="http://purl.obolibrary.org/obo/OBI_0200089"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000443"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
+            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000053"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000443"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
+            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000227"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000443"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
+            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000314"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000443"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000299"/>
+            <Class IRI="http://purl.obolibrary.org/obo/OBI_0000175"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000443"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000417"/>
+            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000439"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000423"/>
@@ -29466,7 +29527,7 @@ http://finzi.psych.upenn.edu/library/referenceIntervals/html/dixon.outliers.html
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000441</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Grubb&apos;s test is a statistical test used to detect one outlier in a univariate data set assumed to come from a normally distributed population.</Literal>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Grubbs&apos; test is a statistical test used to detect one outlier in a univariate data set assumed to come from a normally distributed population.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -29477,11 +29538,6 @@ http://finzi.psych.upenn.edu/library/referenceIntervals/html/dixon.outliers.html
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000441</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
-        <IRI>http://purl.obolibrary.org/obo/STATO_0000441</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">extreme studentized deviate test</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
@@ -29508,7 +29564,7 @@ http://finzi.psych.upenn.edu/library/OutlierDM/html/rgrubbs.test.html
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000441</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Grubb&apos;s test</Literal>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Grubbs&apos; test</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -29572,6 +29628,17 @@ https://rdrr.io/rforge/climtrends/man/findOutliers.Tietjen.Moore.test.html
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000443</IRI>
+        <Literal xml:lang="fr" datatypeIRI="&rdf;PlainLiteral">Le test généralisé de déviation extrême Studentisée est un test statistique destiné à détecter les abérrations dans un jeu de données associées à une variable aléatoire univariée dont la distribution sous-jacente est supposée normale.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000443</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">The Extreme Studentized Deviate Test  is a statistical test used to detect outliers in a univariate data set assumed to come from a normally distributed population.
+The ESD Test differs from the Grubbs&apos; test and the Tietjen-Moore test in the sense that it contains built-in correction for multiple testing.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000443</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">a statistical test used to evaluate and test one or more outlier observations in a dataset.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -29580,9 +29647,41 @@ https://rdrr.io/rforge/climtrends/man/findOutliers.Tietjen.Moore.test.html
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000443</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">ESD test for outliers</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000443</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Rosner, Bernard (May 1983), Percentage Points for a Generalized ESD Many-Outlier Procedure,Technometrics, 25(2), pp. 165-172.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000443</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">STATO</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000443</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">adapted from NIST:
+http://www.itl.nist.gov/div898/handbook/eda/section3/eda35h3.htm
+last accessed: 2016-11-19</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000443</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">rgrubbs.test(x, alpha = 0.05)
+
+from:
+http://finzi.psych.upenn.edu/library/OutlierDM/html/rgrubbs.test.html
+
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000443</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">extreme studentized deviate test</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
