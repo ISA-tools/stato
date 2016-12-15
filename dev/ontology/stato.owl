@@ -1687,6 +1687,15 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000446"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000447"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000448"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000449"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000423"/>
     </Declaration>
     <Declaration>
@@ -2160,6 +2169,16 @@
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000417"/>
             <Class IRI="http://purl.obolibrary.org/obo/STATO_0000439"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000444"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000001"/>
+            <ObjectIntersectionOf>
+                <Class IRI="http://purl.obolibrary.org/obo/STATO_0000447"/>
+                <Class IRI="http://purl.obolibrary.org/obo/STATO_0000448"/>
+            </ObjectIntersectionOf>
         </ObjectSomeValuesFrom>
     </EquivalentClasses>
     <SubClassOf>
@@ -10079,6 +10098,16 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000444"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000001"/>
+            <ObjectIntersectionOf>
+                <Class IRI="http://purl.obolibrary.org/obo/STATO_0000447"/>
+                <Class IRI="http://purl.obolibrary.org/obo/STATO_0000448"/>
+            </ObjectIntersectionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000444"/>
         <ObjectMinCardinality cardinality="2">
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000001"/>
             <Class IRI="http://purl.obolibrary.org/obo/OBI_0000750"/>
@@ -10103,6 +10132,17 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000445-split"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000001"/>
+            <ObjectIntersectionOf>
+                <Class IRI="http://purl.obolibrary.org/obo/STATO_0000447"/>
+                <Class IRI="http://purl.obolibrary.org/obo/STATO_0000448"/>
+                <Class IRI="http://purl.obolibrary.org/obo/STATO_0000449"/>
+            </ObjectIntersectionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000445-split"/>
         <ObjectMinCardinality cardinality="3">
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000001"/>
             <Class IRI="http://purl.obolibrary.org/obo/OBI_0000750"/>
@@ -10111,6 +10151,18 @@
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000446"/>
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0600015"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000447"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000027"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000448"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000027"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000449"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000027"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000423"/>
@@ -29876,6 +29928,126 @@ last accessed: 2016/12/15
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000446</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">restricted randomization</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000447</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000447</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">a &apos;whole plot number&apos; is a data item used to count and identify the actual piece of land (in the case of real field based trials) used in a split plot design experiment and receiving treatments corresponding to the levels of a factor whose randomization is restricted (these factors are known as &apos;hard to change&apos; factors).
+In the case of non-field based trials, the &apos;whole plot&apos; is a metaphor.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000447</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000447</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Orlaith Burke</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000447</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000447</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">STATO
+adapted from http://people.stat.sfu.ca/~cschwarz/Stat-650/Notes/PDFbigbook-R/R-part012.pdf
+last accessed: 2016/12/15</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000447</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">whole plot number</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000448</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000448</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">a &apos;sub plot number&apos; is a data item used to count and identify the actual piece of land located within a &apos;whole plot&apos;, in the case of real field based trials using a split-plot design, and received  completely randomized treatments corresponding to the factor levels combinations of the remainder factors declared in the experiment.
+
+in the case of &apos;split-split plot design&apos;,  sub-plots also receive treatments corresponding to a factor whose randomization is restriction. In such configuration, each &apos;sub-plot&apos; is itself divided into &apos;sub sub-plot&apos;, which then received the remainder of the treatments in completely randomized fashion.
+ 
+In the case of non-field based trials, the notion &apos;sub-plot&apos; is a metaphor.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000448</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000448</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Orlaith Burke</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000448</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000448</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">STATO
+adapted from http://people.stat.sfu.ca/~cschwarz/Stat-650/Notes/PDFbigbook-R/R-part012.pdf
+last accessed: 2016/12/15</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000448</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">sub-plot number</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000449</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000125</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000449</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">a &apos;sub sub-plot number&apos; is a data item used to count and identify the actual piece of land located within a &apos;sub plot&apos;, in the case of real field based trials using a split-split-plot design, and received  completely randomized treatments corresponding to the factor levels combinations of the remainder factors declared in the experiment.
+
+in the case of &apos;split-split plot design&apos;,  sub-plots also receive treatments corresponding to a factor whose randomization is restriction. In such configuration, each &apos;sub-plot&apos; is itself divided into &apos;sub sub-plot&apos;, which then received the remainder of the treatments in completely randomized fashion.
+ 
+In the case of non-field based trials, the notion &apos;sub sub-plot&apos; is a metaphor.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000449</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000449</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Orlaith Burke</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000449</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000449</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">STATO
+adapted from http://people.stat.sfu.ca/~cschwarz/Stat-650/Notes/PDFbigbook-R/R-part012.pdf
+last accessed: 2016/12/15</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000449</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">sub sub-plot number</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
