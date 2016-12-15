@@ -64,6 +64,10 @@
         <Literal datatypeIRI="&rdf;PlainLiteral">Thomas Nichols (http://orcid.org/0000-0002-4516-5103)</Literal>
     </Annotation>
     <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/rights"/>
+        <Literal datatypeIRI="&xsd;anyURI">This Ontology is distributed under a Creative Commons Attribution License </Literal>
+    </Annotation>
+    <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
         <Literal datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra (http://orcid.org/0000-0001-9853-5668)</Literal>
     </Annotation>
@@ -74,10 +78,6 @@
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/title"/>
         <Literal datatypeIRI="&rdf;PlainLiteral">STATO: the statistical methods ontology</Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/rights"/>
-        <Literal datatypeIRI="&xsd;anyURI">This Ontology is distributed under a Creative Commons Attribution License </Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/contributor"/>
@@ -1676,6 +1676,15 @@
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000443"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000444"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000445-split"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000446"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000423"/>
@@ -10050,6 +10059,58 @@
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000417"/>
             <Class IRI="http://purl.obolibrary.org/obo/STATO_0000439"/>
         </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000444"/>
+        <Class IRI="http://purl.obolibrary.org/obo/OBI_0500000"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000444"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            <ObjectIntersectionOf>
+                <Class IRI="http://purl.obolibrary.org/obo/STATO_0000446"/>
+                <ObjectExactCardinality cardinality="1">
+                    <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                    <Class IRI="http://purl.obolibrary.org/obo/OBI_0000750"/>
+                </ObjectExactCardinality>
+            </ObjectIntersectionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000444"/>
+        <ObjectMinCardinality cardinality="2">
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000001"/>
+            <Class IRI="http://purl.obolibrary.org/obo/OBI_0000750"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000445-split"/>
+        <Class IRI="http://purl.obolibrary.org/obo/OBI_0500000"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000445-split"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            <ObjectIntersectionOf>
+                <Class IRI="http://purl.obolibrary.org/obo/STATO_0000446"/>
+                <ObjectExactCardinality cardinality="2">
+                    <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                    <Class IRI="http://purl.obolibrary.org/obo/OBI_0000750"/>
+                </ObjectExactCardinality>
+            </ObjectIntersectionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000445-split"/>
+        <ObjectMinCardinality cardinality="3">
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000001"/>
+            <Class IRI="http://purl.obolibrary.org/obo/OBI_0000750"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000446"/>
+        <Class IRI="http://purl.obolibrary.org/obo/OBI_0600015"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000423"/>
@@ -29687,6 +29748,134 @@ http://finzi.psych.upenn.edu/library/OutlierDM/html/rgrubbs.test.html
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000443</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">outlier detection test</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000444</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000120</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000444</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">a split-plot design is kind of factorial design  which is used when running a full factorial completely randomized design is inpractical, either for cost or practicalities (e.g. equipment, fields), in other words, when a restricted randomization has to be applied. A split-plot design is used whenever practioners fix the level of &apos;hard to change factor&apos; and run all the combinations of the other factors. The hard to change factor is also refered to as the &apos;whole plot&apos; factor, while the remainders of the factors are refered to as &apos;split plot factor&apos;.
+Performing a split-plot design therefore means fixing one factor level, and then applying the treatments formed by the cartesian products of the levels for the other factors. A mininum of 2 factors are required and one being applied before the other(s).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000444</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000444</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Orlaith Burke</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000444</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000444</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">adapted from:
+http://www.minitab.com/uploadedFiles/Content/News/Published_Articles/recognize_split_plot_experiment.pdf
+
+adapted from wikipedia:
+https://en.wikipedia.org/wiki/Restricted_randomization
+
+last accessed: 14.12.2016</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000444</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">https://pdfs.semanticscholar.org/bb4b/d979610388c76bb81568f14a886304ce4662.pdf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000444</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">split-plot design</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000445-split</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000120</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000445-split</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">a split split plot design is a study design where restricted randomization affect 2 study factors (and not 1 as in split-plot design). Such design is only possible if at least 3 independent variables are present.
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000445-split</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000445-split</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Orlaith Burke</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000445-split</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000445-split</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">adapted from https://onlinecourses.science.psu.edu/stat503/node/72
+last accessed 2016/12/15
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000445-split</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">split split plot design</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000446</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000120</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000446</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Restricted randomization is a kind of randomization which is used or occured when hard to change factors exist in a study design. In other words, when complete randomization is not possible, a case of restricted randomization exists, for instance in the case of split-plot design.
+
+Restricted randomization allows intuitively poor allocations of treatments to experimental units to be avoided, while retaining the theoretical benefits of randomization.
+
+Restricted randomization can also result from an unplanned event and is then something that should be avoided. RandomizeR R package can be used to detect such events and assess the quality of randomization process.
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000446</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000446</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Orlaith Burke</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000446</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000446</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Adapted from Wikipedia:
+https://en.wikipedia.org/wiki/Restricted_randomization
+last accessed: 2016/12/15
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000446</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">restricted randomization</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
