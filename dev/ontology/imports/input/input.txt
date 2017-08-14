@@ -92,6 +92,7 @@ http://purl.obolibrary.org/obo/OBI_0000679 #average value
 http://purl.obolibrary.org/obo/OBI_0000650 #differential expression analysis data transformation
 http://purl.obolibrary.org/obo/OBI_0000675 #statistical hypothesis test objective
 http://purl.obolibrary.org/obo/OBI_0000722 #paired-end library
+http://purl.obolibrary.org/obo/OBI_0000727 #k-nearest neighbors
 http://purl.obolibrary.org/obo/OBI_0000736 #single fragment library
 http://purl.obolibrary.org/obo/OBI_0000739 #Student's t-test
 http://purl.obolibrary.org/obo/OBI_0000744 #material sampling process
@@ -122,6 +123,7 @@ http://purl.obolibrary.org/obo/OBI_0001834 #drawing a conclusion
 http://purl.obolibrary.org/obo/OBI_0001927 #specifies value of
 http://purl.obolibrary.org/obo/OBI_0100026 #organism
 http://purl.obolibrary.org/obo/OBI_0200000 #data transformation
+http://purl.obolibrary.org/obo/OBI_0200041 #k-means clustering
 http://purl.obolibrary.org/obo/OBI_0200191 #gene list visualization
 http://purl.obolibrary.org/obo/OBI_0200102 #regression analysis method
 http://purl.obolibrary.org/obo/OBI_0200166 #data transformation objective
@@ -151,8 +153,12 @@ http://purl.obolibrary.org/obo/OBI_0000846 #is member of organization
 http://purl.obolibrary.org/obo/OBI_0000299 #has_specified_output
 http://purl.obolibrary.org/obo/OBI_0600015 #group assignment
 http://purl.obolibrary.org/obo/OBI_0200036 #Benjamini and Hochberg false discovery rate correction method
+http://purl.obolibrary.org/obo/OBI_0200042 #hierarchical clustering
+includeAllChildren
 http://purl.obolibrary.org/obo/OBI_0200049 #Benjamini and Yekutieli false discovery rate correction method
+http://purl.obolibrary.org/obo/OBI_0200051 #principal component analysis dimensionality reduction
 http://purl.obolibrary.org/obo/OBI_0200094 #logarithmic transformation
+http://purl.obolibrary.org/obo/OBI_0200104 #principal component regression
 http://purl.obolibrary.org/obo/OBI_0200194 #survival analysis data transformation
 http://purl.obolibrary.org/obo/OBI_0302903 #nucleic acid hybridization
 http://purl.obolibrary.org/obo/OBI_0500005 #matched pairs design
@@ -161,6 +167,7 @@ http://purl.obolibrary.org/obo/OBI_0500012 #graeco latin square design
 http://purl.obolibrary.org/obo/OBI_0500013 #hyper graeco latin square design
 http://purl.obolibrary.org/obo/OBI_0500014 #factorial design
 http://purl.obolibrary.org/obo/OBI_0500015 #2x2 factorial design
+
 
 #ChEBI terms
 http://purl.obolibrary.org/obo/CHEBI_23367 #molecular entity
