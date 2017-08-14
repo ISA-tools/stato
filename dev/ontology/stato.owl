@@ -16,7 +16,7 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      ontologyIRI="http://purl.obolibrary.org/obo/stato.owl">
-    <Prefix name="" IRI="http://purl.obolibrary.org/obo/stato.owl"/>
+    <Prefix name="" IRI="http://purl.obolibrary.org/obo/stato.owl#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
@@ -64,6 +64,10 @@
         <Literal datatypeIRI="&rdf;PlainLiteral">Thomas Nichols (http://orcid.org/0000-0002-4516-5103)</Literal>
     </Annotation>
     <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra (http://orcid.org/0000-0001-9853-5668)</Literal>
+    </Annotation>
+    <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/contributor"/>
         <Literal datatypeIRI="&rdf;PlainLiteral">Nolan Nichols (http://orcid.org/0000-0003-1099-3328)</Literal>
     </Annotation>
@@ -74,10 +78,6 @@
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/rights"/>
         <Literal datatypeIRI="&xsd;anyURI">This Ontology is distributed under a Creative Commons Attribution License </Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Philippe Rocca-Serra (http://orcid.org/0000-0001-9853-5668)</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/contributor"/>
@@ -1697,6 +1697,30 @@
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000449"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000450"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000451"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000452"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000453"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000454"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000457"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#95pc_credible_interval"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#credible_interval"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000423"/>
@@ -10174,6 +10198,38 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000449"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000027"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000450"/>
+        <Class IRI="http://purl.obolibrary.org/obo/OBI_0200000"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000451"/>
+        <Class IRI="http://purl.obolibrary.org/obo/OBI_0200000"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000452"/>
+        <Class IRI="http://purl.obolibrary.org/obo/OBI_0200000"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000453"/>
+        <Class IRI="http://purl.obolibrary.org/obo/OBI_0200000"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000454"/>
+        <Class IRI="http://purl.obolibrary.org/obo/OBI_0200000"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000457"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000109"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#95pc_credible_interval"/>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#credible_interval"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#credible_interval"/>
         <Class IRI="http://purl.obolibrary.org/obo/IAO_0000027"/>
     </SubClassOf>
     <SubClassOf>
@@ -30060,6 +30116,76 @@ last accessed: 2016/12/15</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000449</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">sub sub-plot number</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000450</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://www.blackwellpublishing.com/specialarticles/jcn_9_381.pdf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000450</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Wilk&apos;s Lambda test</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000451</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">10.1002/0470011815.b2a13067</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000451</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Pillai&apos;s trace test</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000452</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://onlinelibrary.wiley.com/doi/10.1002/0470011815.b2a13035/abstract</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000452</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Hotelling-Lawley Trace test</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000453</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">https://onlinecourses.science.psu.edu/stat505/node/163</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000453</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Roy’s Maximum Root test</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000032"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000454</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">MANOVA</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000454</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">https://stat.ethz.ch/R-manual/R-devel/library/stats/html/manova.html</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000454</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">multivariate analysis of variance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000457</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">mean difference</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.co-ode.org/ontologies/ont.owl#95pc_credible_interval</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">95% credible interval</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.co-ode.org/ontologies/ont.owl#credible_interval</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">credible interval</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
