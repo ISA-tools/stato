@@ -714,9 +714,6 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000272"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000445-split"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000199"/>
     </Declaration>
     <Declaration>
@@ -1438,6 +1435,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000300"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000445"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000215"/>
@@ -10140,11 +10140,11 @@
         </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000445-split"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000445"/>
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0500000"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000445-split"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000445"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
             <ObjectIntersectionOf>
@@ -10157,7 +10157,7 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000445-split"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000445"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000001"/>
             <ObjectIntersectionOf>
@@ -10168,7 +10168,7 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000445-split"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000445"/>
         <ObjectMinCardinality cardinality="3">
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000001"/>
             <Class IRI="http://purl.obolibrary.org/obo/OBI_0000750"/>
@@ -29953,40 +29953,40 @@ last accessed: 14.12.2016</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
-        <IRI>http://purl.obolibrary.org/obo/STATO_0000445-split</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000445</IRI>
         <IRI>http://purl.obolibrary.org/obo/IAO_0000120</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>http://purl.obolibrary.org/obo/STATO_0000445-split</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000445</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">a split split plot design is a study design where restricted randomization affect 2 study factors (and not 1 as in split-plot design). Such design is only possible if at least 3 independent variables are present.
 </Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>http://purl.obolibrary.org/obo/STATO_0000445-split</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000445</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>http://purl.obolibrary.org/obo/STATO_0000445-split</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000445</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Orlaith Burke</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>http://purl.obolibrary.org/obo/STATO_0000445-split</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000445</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Philippe Rocca-Serra</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
-        <IRI>http://purl.obolibrary.org/obo/STATO_0000445-split</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000445</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">adapted from https://onlinecourses.science.psu.edu/stat503/node/72
 last accessed 2016/12/15
 </Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://purl.obolibrary.org/obo/STATO_0000445-split</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000445</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">split split plot design</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -30215,7 +30215,7 @@ last accessed: 2016/12/15</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000455</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">In Bayesian statistics context, a credible interval is an interval in the domain of a posterior probability distribution or predictive distribution used for interval estimation.
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">In Bayesian statistics context, a credible interval is an interval of a posterior distribution which is such that the density at any point inside the interval is greater than the density at any point outside and that the area under the curve for that interval is equal to a prespecified probability level. For any probability level there is generally only one such interval, which is also often known as the highest posterior density region. Unlike the usual confidence interval associated with frequentist inference, here the intervals specify the range within which parameters lie with a certain probability.
 
 The Bayesian counterparts of the confidence interval used in Frequentists Statistics.</Literal>
     </AnnotationAssertion>
@@ -30237,9 +30237,10 @@ The Bayesian counterparts of the confidence interval used in Frequentists Statis
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000455</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Wikipedia:
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Adapted from Wikipedia:
 https://en.wikipedia.org/wiki/Credible_interval
 
+and from the Cambridge Dictionary of Statistics, fourth edition, ISBN-13 978-0-511-78827-7
 last accessed: 2017-07-01</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
