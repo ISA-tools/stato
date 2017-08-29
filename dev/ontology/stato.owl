@@ -1209,9 +1209,6 @@
         <Class IRI="http://purl.obolibrary.org/obo/BFO_0000009"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#95pc_credible_interval"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0001444"/>
     </Declaration>
     <Declaration>
@@ -1683,9 +1680,6 @@
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0302903"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#credible_interval"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000029"/>
     </Declaration>
     <Declaration>
@@ -1797,6 +1791,9 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000116"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000455"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000237"/>
     </Declaration>
     <Declaration>
@@ -1858,6 +1855,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000347"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000456"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000335"/>
@@ -10211,16 +10211,33 @@
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0200000"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000457"/>
-        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000109"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#credible_interval"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000455"/>
         <Class IRI="http://purl.obolibrary.org/obo/IAO_0000027"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#95pc_credible_interval"/>
-        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#credible_interval"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000455"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            <ObjectIntersectionOf>
+                <Class IRI="http://purl.obolibrary.org/obo/STATO_0000314"/>
+                <Class IRI="http://purl.obolibrary.org/obo/STATO_0000315"/>
+            </ObjectIntersectionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000455"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
+            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000144"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000456"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000455"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000457"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000109"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000423"/>
@@ -28279,6 +28296,13 @@ The weighted arithmetic mean is often used if one wants to combine average value
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000391"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000398</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">https://docs.scipy.org/doc/numpy/reference/generated/numpy.average.html
+
+np.average(range(1,11), weights=range(10,0,-1))</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://usefulinc.com/ns/doap#bug-database"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000398</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">https://github.com/ISA-tools/stato/issues/59</Literal>
@@ -30184,19 +30208,117 @@ last accessed: 2016/12/15</Literal>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">multivariate analysis of variance</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://purl.obolibrary.org/obo/STATO_0000457</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">mean difference</Literal>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000455</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000455</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">In Bayesian statistics context, a credible interval is an interval in the domain of a posterior probability distribution or predictive distribution used for interval estimation.
+
+The Bayesian counterparts of the confidence interval used in Frequentists Statistics.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000455</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000455</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Bayesian credibility interval</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000455</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">CR</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000455</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Wikipedia:
+https://en.wikipedia.org/wiki/Credible_interval
+
+last accessed: 2017-07-01</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000032"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000455</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">HPD</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000032"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000455</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">region of highest posterior density</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000455</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000391"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000455</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://www.co-ode.org/ontologies/ont.owl#credible_interval</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000455</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">credible interval</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000456</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000456</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">In Bayesian statistics context, a 95% credible interval is a credible interval which,given the data, includes the true parameter  with probability of 95%.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000456</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000456</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Bayesian credibility interval</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000456</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">CR</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000456</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Wikipedia:
+https://en.wikipedia.org/wiki/Credible_interval
+
+last accessed: 2017-07-01</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000456</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000391"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000456</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://www.co-ode.org/ontologies/ont.owl#95pc_credible_interval</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000456</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">95% credible interval</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000457</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">mean difference</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
