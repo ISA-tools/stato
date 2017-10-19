@@ -34,7 +34,7 @@ public class OWLReleaserTest {
         else
             devPath = baseDir + "/dev/ontology/stato.owl";
 
-        version = "1.3";
+        version = "1.4";
         outDir = baseDir + "/releases/";
         outFile = "stato.owl";
         releaseIRI = "http://purl.obolibrary.org/obo/stato.owl";

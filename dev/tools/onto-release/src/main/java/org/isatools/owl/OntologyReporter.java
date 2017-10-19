@@ -2,10 +2,13 @@ package org.isatools.owl;
 
 import org.semanticweb.owlapi.apibinding.OWLManager;
 import org.semanticweb.owlapi.model.*;
+import org.semanticweb.owlapi.search.EntitySearcher;
 import owltools.io.CatalogXmlIRIMapper;
 
 import java.io.File;
 import java.util.*;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 /**
  * Created by agbeltran on 27/02/2015.
@@ -64,11 +67,11 @@ public class OntologyReporter {
     }
 
     private List<String> getClassAnnotation(OWLEntity clazz, String annotationString){
-        Set<OWLAnnotation> annotationSet = clazz.getAnnotations(devOntology, dataFactory.getOWLAnnotationProperty(IRI.create(annotationString)));
+        Stream<OWLAnnotation> annotationStream = EntitySearcher.getAnnotations(clazz, devOntology, dataFactory.getOWLAnnotationProperty(IRI.create(annotationString)));
         List<String> labels = new ArrayList<String>();
-        for(OWLAnnotation annotation : annotationSet){
-            labels.add(annotation.getValue().toString());
-        }
+        annotationStream.forEach(
+            annotation -> labels.add(annotation.getValue().toString())
+        );
         return labels;
     }
 
@@ -82,12 +85,12 @@ public class OntologyReporter {
             return;
         }
 
-        entities.addAll(devOntology.getClassesInSignature());
-        entities.addAll(devOntology.getDataPropertiesInSignature());
-        entities.addAll(devOntology.getObjectPropertiesInSignature());
-        entities.addAll(devOntology.getAnnotationPropertiesInSignature());
-        entities.addAll(devOntology.getIndividualsInSignature());
-        entities.addAll(devOntology.getDatatypesInSignature());
+        entities.addAll(devOntology.classesInSignature().collect(Collectors.toSet()));
+        entities.addAll(devOntology.dataPropertiesInSignature().collect(Collectors.toSet()));
+        entities.addAll(devOntology.objectPropertiesInSignature().collect(Collectors.toSet()));
+        entities.addAll(devOntology.annotationPropertiesInSignature().collect(Collectors.toSet()));
+        entities.addAll(devOntology.individualsInSignature().collect(Collectors.toSet()));
+        entities.addAll(devOntology.datatypesInSignature().collect(Collectors.toSet()));
 
         System.out.println("There are " + entities.size() + " entities in the ontology signature");
 
@@ -190,7 +193,7 @@ public class OntologyReporter {
     }
 
 
-    /*
+
     public static void main( String[] args ) throws Exception {
 
 
@@ -217,7 +220,6 @@ public class OntologyReporter {
          ontologyReporter.buildReport(devPath, true, iriPrefix, outDir, outFile);
 
 
-        /*
         OntologyReporter ontologyReporter = new OntologyReporter();
         String devPath = "/Users/agbeltran/workspace/nmrML/ontologies/nmrCV.owl";
         //String outDir = "/Users/agbeltran/work-dev/stato/buildReport/";
@@ -226,8 +228,8 @@ public class OntologyReporter {
         String iriPrefix = "http://nmrML.org/nmrCV#";
 
         ontologyReporter.buildReport(devPath, true, iriPrefix, outDir, outFile);
-
+         **/
 
     }
-    */
+
 }

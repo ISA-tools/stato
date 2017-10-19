@@ -1,6 +1,7 @@
 package org.isatools.owlbuild;
 
-import org.semanticweb.HermiT.Reasoner;
+
+import org.semanticweb.HermiT.ReasonerFactory;
 import org.semanticweb.owlapi.apibinding.OWLManager;
 import org.semanticweb.owlapi.model.*;
 import org.semanticweb.owlapi.reasoner.InferenceType;
@@ -40,8 +41,7 @@ public class OWLClassifier {
 
         // Create the reasoner and classify the ontology
         //reasoner = reasonerFactory.createNonBufferingReasoner(ontology);
-        reasoner=new Reasoner.ReasonerFactory().createReasoner(ontology);
-
+        reasoner=new ReasonerFactory().createReasoner(ontology);
 
         System.out.println("Checking consistency...");
         if(!reasoner.isConsistent()) {
@@ -101,7 +101,7 @@ public class OWLClassifier {
         startTime = System.currentTimeMillis();
 
 
-        iog.fillOntology(manager, ontology);
+        iog.fillOntology(manager.getOWLDataFactory(), ontology);
 
         elapsedTime = System.currentTimeMillis() - startTime;
         seconds = (int) Math.ceil(elapsedTime / 1000);
@@ -109,7 +109,7 @@ public class OWLClassifier {
 
 
         //change IRI
-        OWLOntologyURIChanger uriChanger = new OWLOntologyURIChanger(manager);
+        OWLOntologyIRIChanger uriChanger = new OWLOntologyIRIChanger(manager);
         List<OWLOntologyChange> list = uriChanger.getChanges(ontology, iri);
         manager.applyChanges(list);
         classifiedOntology = ontology;
