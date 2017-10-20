@@ -17,7 +17,7 @@ public class OntologyReporterTest {
     static String devPath=null, outDir, outFile, releaseIRI, iriPrefix;
 
     @BeforeClass
-    public static void setUp() {
+    public static void setUp() throws Exception {
         String baseDir = System.getProperty("basedir");
 
         if (baseDir == null) {
@@ -44,12 +44,9 @@ public class OntologyReporterTest {
         iriPrefix = "http://purl.obolibrary.org/obo/STATO_";
 
         ontologyReporter.buildReport(devPath, true, iriPrefix);
-    }
-
-    @Test
-    public void saveReport() throws Exception {
         ontologyReporter.saveReport(outDir, outFile);
     }
+
 
     @Test
     public void checkEntities(){
