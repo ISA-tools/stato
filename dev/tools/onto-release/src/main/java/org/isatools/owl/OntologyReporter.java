@@ -70,7 +70,18 @@ public class OntologyReporter {
         Stream<OWLAnnotation> annotationStream = EntitySearcher.getAnnotations(clazz, devOntology, dataFactory.getOWLAnnotationProperty(IRI.create(annotationString)));
         List<String> labels = new ArrayList<String>();
         annotationStream.forEach(
-            annotation -> labels.add(annotation.getValue().toString())
+                annotation -> labels.add(annotation.getValue().toString())
+        );
+        return labels;
+    }
+
+    private Map<String, String> getClassAnnotationAndLanguageTag(OWLEntity clazz, String annotationString){
+        Stream<OWLAnnotation> annotationStream = EntitySearcher.getAnnotations(clazz, devOntology, dataFactory.getOWLAnnotationProperty(IRI.create(annotationString)));
+        // <language tag, label>
+        Map<String, String> labels = new TreeMap<String, String>();
+
+        annotationStream.forEach(
+                annotation -> labels.put(((OWLLiteral)annotation.getValue()).getLang(), annotation.getValue().toString())
         );
         return labels;
     }
@@ -99,44 +110,41 @@ public class OntologyReporter {
 
             if (entity.getIRI().toString().startsWith(iriPrefix)) {
 
-                String label = null;
-                List<String> labels = getClassAnnotation(entity, LABEL);
+                Map<String, String> labels = getClassAnnotationAndLanguageTag(entity, LABEL);
 
-                if (labels.size() == 0) {
+                if (labels.isEmpty()) {
                     System.err.println("No label for term " + entity.getIRI().toString());
-                    label = "";
 
-                } else if (labels.size() > 1) {
-                    System.err.println("There are more than one label assigned " + labels);
-                    label = labels.get(0);
                 } else {
-                    label = labels.get(0);
+                    for(String key: labels.keySet())
+                        if (labels.get(key).length() > 1)
+                            System.err.println("There are more than one label assigned for language " + key +" -> "+ labels.get(key));
                 }
 
-                List<String> definitions = getClassAnnotation(entity, DEFINITION);
+                Map<String, String> definitions = getClassAnnotationAndLanguageTag(entity, DEFINITION);
 
                 boolean noDefinition = false;
                 String definition = null;
-                if (definitions.size() == 0) {
-                    System.out.println("No DEFINITION for term " + entity.getIRI().toString() + " " + label);
+                if (definitions.isEmpty()) {
+                    System.out.println("No DEFINITION for term " + entity.getIRI().toString() + " " + labels.get("en"));
                     noDefinition = true;
                     count++;
-                } else if (definitions.size() > 1) {
-                    System.out.println("There are more than one DEFINITION assigned " + definitions);
-                    definition = definitions.get(0);
-                } else if (definitions.size() == 1){
-                    definition = definitions.get(0);
+                } else {
+                    for(String key: definitions.keySet())
+                    if (definitions.get(key).length() > 1) {
+                        System.out.println("There are more than one DEFINITION assigned for language tag " +key +" -> "+ definitions.get(key));
+                    }
                 }
 
-                //synonyms
-                List<String> synonyms = new ArrayList<String>();
-                List<String> toAdd = getClassAnnotation(entity, ALTERNATIVE_TERM);
+                //synonyms pero language
+                Map<String, String> synonyms = new HashMap<String, String>();
+                Map<String, String> toAdd = getClassAnnotationAndLanguageTag(entity, ALTERNATIVE_TERM);
                 if (toAdd!=null)
-                    synonyms.addAll(toAdd);
+                    synonyms.putAll(toAdd);
 
-                toAdd = getClassAnnotation(entity, STATO_ALTERNATIVE_TERM);
+                toAdd = getClassAnnotationAndLanguageTag(entity, STATO_ALTERNATIVE_TERM);
                 if (toAdd!=null)
-                    synonyms.addAll(toAdd);
+                    synonyms.putAll(toAdd);
 
 
                 List<String> curationStatusList = getClassAnnotation(entity, HAS_CURATION_STATUS);
@@ -147,15 +155,15 @@ public class OntologyReporter {
                 else
                     curationStatus = "";
 
-                ontologyReport.addEntity(label,
+                ontologyReport.addEntity(labels,
                         entity.getIRI().toString(),
-                        definition,
+                        definitions,
                         synonyms,
                         curationStatus
                 );
 
                 if (noDefinition)
-                    ontologyReport.addNoDefinitionEntity(label,
+                    ontologyReport.addNoDefinitionEntity(labels,
                             entity.getIRI().toString(),
                             synonyms,
                             curationStatus);
@@ -163,9 +171,9 @@ public class OntologyReporter {
 
                 for(String value: curationStatusList){
                     if (value.equals(CURATION_STATUS_METADATA_INCOMPLETE))
-                        ontologyReport.addIncompleteMetadataEntity(label,
+                        ontologyReport.addIncompleteMetadataEntity(labels,
                                 entity.getIRI().toString(),
-                                definition,
+                                definitions,
                                 synonyms,
                                 curationStatus);
                 }
