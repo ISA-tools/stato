@@ -8,9 +8,13 @@ See dedicated webiste at: http://stato-ontology.org/
 
 Access STATO in BioPortal at: http://bioportal.bioontology.org/ontologies/STATO
 
-Access STATO through the PURL: http://purl.obolibrary.org/obo/stato.owl
+Access STATO in the [EBI Ontology Lookup Service (OLS)](https://www.ebi.ac.uk/ols/): https://www.ebi.ac.uk/ols/ontologies/stato
 
-Access STATO in BioSharing: https://biosharing.org/bsg-s000548
+Access STATO in OntoBee: http://www.ontobee.org/ontology/STATO
+
+Access STATO through its persistent URL (PURL): http://purl.obolibrary.org/obo/stato.owl
+
+Access STATO in [FAIRsharing](http://fairsharing.org/): https://fairsharing.org/bsg-s000548
 
 Access STATO in the [OBO Foundry](http://obofoundry.org) registry: http://obofoundry.org/ontology/stato.html
 
