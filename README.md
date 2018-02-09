@@ -6,6 +6,8 @@
 
 See dedicated webiste at: http://stato-ontology.org/
 
+The source for this website is available at https://github.com/agbeltran/stato-app
+
 Access STATO:
   - in BioPortal at: http://bioportal.bioontology.org/ontologies/STATO
   - in the [EBI Ontology Lookup Service (OLS)](https://www.ebi.ac.uk/ols/): https://www.ebi.ac.uk/ols/ontologies/stato
