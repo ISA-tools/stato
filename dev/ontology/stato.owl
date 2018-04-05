@@ -4057,6 +4057,13 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000059"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000205"/>
+            <Class IRI="#http://purl.obolibrary.org/obo/STATO_0000500"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000059"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000205"/>
             <ObjectIntersectionOf>
                 <Class IRI="http://purl.obolibrary.org/obo/STATO_0000068"/>
                 <DataHasValue>
@@ -10328,6 +10335,13 @@
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000205"/>
             <Class IRI="http://purl.obolibrary.org/obo/STATO_0000435"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000438"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000205"/>
+            <Class IRI="#http://purl.obolibrary.org/obo/STATO_0000500"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -32993,7 +33007,8 @@ ftp://tech.obihiro.ac.jp/suzuki/Henderson.pdf</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
         <IRI>#http://purl.obolibrary.org/obo/STATO_0000500</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">adapted from:
+https://docs.scipy.org/doc/scipy/reference/tutorial/stats.html#shifting-and-scaling</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000032"/>
@@ -33004,6 +33019,11 @@ ftp://tech.obihiro.ac.jp/suzuki/Henderson.pdf</Literal>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
         <IRI>#http://purl.obolibrary.org/obo/STATO_0000500</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000391"/>
+        <IRI>#http://purl.obolibrary.org/obo/STATO_0000500</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">norm.stats(loc=3, scale=4, moments=&quot;mv&quot;), where loc is the location parameter indicated how much shift is given</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -33049,6 +33069,22 @@ http://www.engineeredsoftware.com/nasa/weibull.htm</Literal>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000032"/>
         <IRI>#http://purl.obolibrary.org/obo/STATO_0000501</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Weibull probability distribution</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
+        <IRI>#http://purl.obolibrary.org/obo/STATO_0000501</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">pweibull(q, shape, scale = 1, lower.tail = TRUE, log.p = FALSE)
+
+from:
+https://stat.ethz.ch/R-manual/R-devel/library/stats/html/Weibull.html</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000391"/>
+        <IRI>#http://purl.obolibrary.org/obo/STATO_0000501</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">scipy.stats.weibull_min
+
+from:
+https://docs.scipy.org/doc/scipy-0.14.0/reference/generated/scipy.stats.weibull_min.html#scipy.stats.weibull_min</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
