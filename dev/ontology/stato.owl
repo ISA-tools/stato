@@ -837,6 +837,9 @@
         <Class IRI="http://purl.obolibrary.org/obo/GO_0003824"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#restricted_randomized_design"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0200049"/>
     </Declaration>
     <Declaration>
@@ -2463,6 +2466,19 @@
                 </ObjectSomeValuesFrom>
             </ObjectIntersectionOf>
         </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#restricted_randomized_design"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <Class IRI="http://purl.obolibrary.org/obo/STATO_0000446"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000001"/>
+                <Class IRI="http://purl.obolibrary.org/obo/STATO_0000248"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
     </EquivalentClasses>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/IAO_0000015"/>
@@ -10604,6 +10620,13 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000444"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000001"/>
+            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000248"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000444"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000001"/>
             <ObjectIntersectionOf>
                 <Class IRI="http://purl.obolibrary.org/obo/STATO_0000447"/>
                 <Class IRI="http://purl.obolibrary.org/obo/STATO_0000448"/>
@@ -10638,6 +10661,13 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000445"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000001"/>
+            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000248"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000445"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000001"/>
             <ObjectIntersectionOf>
                 <Class IRI="http://purl.obolibrary.org/obo/STATO_0000447"/>
                 <Class IRI="http://purl.obolibrary.org/obo/STATO_0000448"/>
@@ -10654,7 +10684,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000446"/>
-        <Class IRI="http://purl.obolibrary.org/obo/OBI_0600015"/>
+        <Class IRI="http://purl.obolibrary.org/obo/OBI_0302900"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000447"/>
@@ -11518,6 +11548,10 @@
     <SubClassOf>
         <Class IRI="#response_variable_explained_by_random_effect_hypothesis"/>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000065"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#restricted_randomized_design"/>
+        <Class IRI="http://purl.obolibrary.org/obo/OBI_0500000"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#statistical_sampling"/>
@@ -33618,6 +33652,31 @@ ftp://tech.obihiro.ac.jp/suzuki/Henderson.pdf</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#response_variable_explained_by_random_effect_hypothesis</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">response variable explained by random effect of predictor variable hypothesis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>#restricted_randomized_design</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>#restricted_randomized_design</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">a restricted randomized design is a kind of study design which uses randomization to allocate observation unit to treatment but where intuitively poor allocations of treatments to experimental units are avoided, while retaining the theoretical benefits of randomization. This is often the case when so-called &apos;hard to change&apos; factors are used in an experimental design.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>#restricted_randomized_design</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
+        <IRI>#restricted_randomized_design</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">restricted randomized design</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#restricted_randomized_design</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">restricted randomized design</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
