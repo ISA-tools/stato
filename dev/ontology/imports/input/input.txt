@@ -129,7 +129,7 @@ http://purl.obolibrary.org/obo/OBI_0200102 #regression analysis method
 http://purl.obolibrary.org/obo/OBI_0200166 #data transformation objective
 http://purl.obolibrary.org/obo/OBI_0200066 #Holm-Bonferroni family-wise error rate correction method
 http://purl.obolibrary.org/obo/OBI_0200169 #normalization data transformation
-http://purl.obolibrary.org/obo/OBI_0200176 #Fisher's exact test
+# http://purl.obolibrary.org/obo/OBI_0200176 #Fisher's exact test
 http://purl.obolibrary.org/obo/OBI_0200119 #median calculation
 http://purl.obolibrary.org/obo/OBI_0200117 #mode calculation
 http://purl.obolibrary.org/obo/OBI_0200200 #chi square test
@@ -163,7 +163,7 @@ http://purl.obolibrary.org/obo/OBI_0200194 #survival analysis data transformatio
 http://purl.obolibrary.org/obo/OBI_0302903 #nucleic acid hybridization
 http://purl.obolibrary.org/obo/OBI_0500005 #matched pairs design
 http://purl.obolibrary.org/obo/OBI_0500006 #parallel group design
-http://purl.obolibrary.org/obo/OBI_0500012 #graeco latin square design
+#http://purl.obolibrary.org/obo/OBI_0500012 #graeco latin square design
 http://purl.obolibrary.org/obo/OBI_0500013 #hyper graeco latin square design
 http://purl.obolibrary.org/obo/OBI_0500014 #factorial design
 http://purl.obolibrary.org/obo/OBI_0500015 #2x2 factorial design
