@@ -14459,7 +14459,13 @@ http://www.inside-r.org/packages/cran/UsingR/docs/simple.z.test</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000054</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">homoskedasticity is a null hypothesis stating that all variances under consideration are homogenous</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">homoskedasticity states that all variances under consideration are homogenous.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000116"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000054</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">definition edited according to the discussion documented in:
+https://github.com/ISA-tools/stato/issues/39</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
