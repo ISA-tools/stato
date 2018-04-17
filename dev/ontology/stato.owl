@@ -90,16 +90,22 @@
         <Class IRI="http://purl.obolibrary.org/obo/IAO_0000129"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000231"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000461"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000122"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000231"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000352"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000461"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000122"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/OBI_0001834"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000473"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000013"/>
@@ -108,25 +114,19 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000134"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000473"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/OBI_0001834"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000485"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000255"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000485"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000376"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000243"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000497"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000497"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000243"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000364"/>
@@ -144,10 +144,10 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000388"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000146"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000025"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000025"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000146"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000037"/>
@@ -162,31 +162,31 @@
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0000963"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000450"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000220"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000111"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000450"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000462"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000462"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000002"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000123"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000002"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000365"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000474"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000244"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000365"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000232"/>
@@ -198,10 +198,10 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000038"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000268"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000159"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000159"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000268"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000498"/>
@@ -222,10 +222,10 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000135"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000147"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000026"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000026"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000147"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000403"/>
@@ -237,79 +237,79 @@
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0000964"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000330"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0000094"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000100"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000330"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000451"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000112"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000451"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000463"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000233"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/OBI_0000070"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000463"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000354"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000221"/>
+        <Class IRI="http://purl.obolibrary.org/obo/OBI_0000070"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000475"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000257"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000221"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000487"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000378"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000027"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000257"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000148"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000027"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000039"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000378"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000245"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000366"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000039"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000499"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000366"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000003"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000124"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000003"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000269"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000136"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000015"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000269"/>
     </Declaration>
     <Declaration>
         <Class IRI="#genomic_selection_objective"/>
@@ -327,13 +327,10 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000440"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000222"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000452"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000210"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000222"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000464"/>
@@ -342,25 +339,25 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000331"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000016"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000246"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000137"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000210"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000367"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000149"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000246"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000355"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000016"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000137"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000488"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000355"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000028"/>
@@ -369,19 +366,22 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000234"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000149"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000113"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000258"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000125"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0001172"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000379"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000125"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000258"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/GO_0010467"/>
@@ -405,25 +405,28 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000130"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000251"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000481"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/OGMS_0000023"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000481"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000251"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000372"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000360"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000493"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000360"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000166"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000045"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000396"/>
@@ -432,37 +435,34 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000275"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000045"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000384"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000057"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000178"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000263"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000299"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000057"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000384"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000142"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000299"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000021"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000033"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000154"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000287"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000154"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000033"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000069"/>
@@ -474,61 +474,61 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000361"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000240"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000470"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000470"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000240"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000482"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#has_effect_on"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000034"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000264"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000155"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_effect_on"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000494"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000385"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000264"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000252"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000034"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000385"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000167"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000373"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000252"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000046"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000010"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000373"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000131"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000288"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000131"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000010"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000143"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000276"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000397"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000143"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000022"/>
@@ -549,10 +549,10 @@
         <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000205"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/OBI_0000427"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000402"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000402"/>
+        <Class IRI="http://purl.obolibrary.org/obo/OBI_0000427"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/IAO_0000414"/>
@@ -573,6 +573,9 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000471"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000374"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000253"/>
     </Declaration>
     <Declaration>
@@ -582,16 +585,10 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000483"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000374"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000023"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000362"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000035"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000241"/>
@@ -603,25 +600,28 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000495"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000277"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000035"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000120"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000277"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000398"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000386"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000265"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000132"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000011"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000386"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000132"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
@@ -648,19 +648,25 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000460"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000472"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000012"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000242"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000363"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000133"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000363"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000472"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000024"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000351"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000230"/>
@@ -670,12 +676,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000484"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000351"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000024"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000266"/>
@@ -690,10 +690,10 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000254"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000121"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000375"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000375"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000121"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000278"/>
@@ -702,16 +702,16 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000399"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000157"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000036"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000169"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000157"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000048"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000169"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/rights"/>
@@ -726,10 +726,10 @@
         <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000162"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000392"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000392"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000162"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000271"/>
@@ -744,10 +744,10 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000295"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000283"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000150"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000150"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000283"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000089"/>
@@ -759,10 +759,10 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000065"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000077"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000198"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000198"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000077"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0200111"/>
@@ -771,16 +771,16 @@
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0001305"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000030"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000151"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000490"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000260"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000151"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000490"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000030"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000163"/>
@@ -795,28 +795,28 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000284"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000393"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000016"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000272"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000016"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000078"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000393"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000199"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000078"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000296"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000054"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000175"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000175"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000054"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000187"/>
@@ -858,13 +858,13 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000370"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000152"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000491"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000031"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000152"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000273"/>
@@ -876,34 +876,34 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000261"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000297"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000188"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000188"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000297"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000067"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000079"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000285"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000285"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000079"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000164"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000055"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000176"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/OBI_0001755"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000055"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0001404"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/OBI_0001755"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0200000"/>
@@ -915,16 +915,13 @@
         <Class IRI="http://purl.obolibrary.org/obo/BFO_0000026"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000141"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000480"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000020"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000383"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000141"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000262"/>
@@ -933,43 +930,46 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000492"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000383"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000250"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000371"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000056"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000177"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000286"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000177"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000274"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000056"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000189"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000395"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000274"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000068"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000153"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000395"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000044"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000153"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000165"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000298"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000044"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000506"/>
@@ -984,10 +984,10 @@
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0200201"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#breeding_value_estimation_using_phenotypic_data"/>
+        <Class IRI="http://purl.obolibrary.org/obo/OBI_1000029"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/OBI_1000029"/>
+        <Class IRI="#breeding_value_estimation_using_phenotypic_data"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
@@ -1011,25 +1011,25 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000097"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000182"/>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000004"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000004"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000182"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000061"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000073"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000194"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000101"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000073"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0600015"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000101"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/BFO_0000023"/>
@@ -1044,10 +1044,10 @@
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0200117"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/OBI_0000115"/>
+        <Class IRI="http://purl.obolibrary.org/obo/OBI_0500011"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/OBI_0500011"/>
+        <Class IRI="http://purl.obolibrary.org/obo/OBI_0000115"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000170"/>
@@ -1056,10 +1056,10 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000291"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000074"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000195"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000195"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000074"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000292"/>
@@ -1068,13 +1068,13 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000086"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000050"/>
-    </Declaration>
-    <Declaration>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000171"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000050"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000183"/>
@@ -1092,16 +1092,16 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000508"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000423"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0200102"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/title"/>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000423"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000059"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/title"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0500000"/>
@@ -1119,22 +1119,22 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000280"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000293"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000184"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000063"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000293"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000196"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000115"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000075"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000196"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000160"/>
@@ -1179,19 +1179,16 @@
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0000674"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000052"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000173"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000282"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000173"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000052"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000185"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000259"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000270"/>
@@ -1200,13 +1197,16 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000064"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000259"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000114"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000102"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000161"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000161"/>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000102"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000294"/>
@@ -1215,10 +1215,10 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000040"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000076"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000197"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000197"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000076"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0400148"/>
@@ -1266,34 +1266,34 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000514"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000405"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000526"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000054"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000405"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0001442"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000417"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000538"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000418"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000417"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000539"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000309"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000418"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000424"/>
@@ -1314,10 +1314,10 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000190"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#group_sequential_design"/>
+        <Class IRI="http://purl.obolibrary.org/obo/OBI_0500016"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/OBI_0500016"/>
+        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#group_sequential_design"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000094"/>
@@ -1329,25 +1329,25 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000515"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000406"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000527"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000407"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000406"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000528"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000407"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000419"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000070"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000191"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000191"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000070"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000082"/>
@@ -1377,19 +1377,19 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000516"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000063"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000517"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000408"/>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000063"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/CHEBI_23367"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000529"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/CHEBI_23367"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000408"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
@@ -1398,13 +1398,13 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000180"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000071"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000192"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#has_interaction_effect_on"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000071"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000096"/>
@@ -1413,10 +1413,10 @@
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0500006"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000072"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000193"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000193"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000072"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000084"/>
@@ -1455,10 +1455,10 @@
         <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000062"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000032"/>
+        <Class IRI="http://purl.obolibrary.org/obo/OBI_0000938"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/OBI_0000938"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000032"/>
     </Declaration>
     <Declaration>
         <Class IRI="#best_linear_unbiased_predictor"/>
@@ -1473,16 +1473,16 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000510"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000401"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000522"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000413"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000401"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000534"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000413"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000546"/>
@@ -1500,19 +1500,22 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000437"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000219"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000449"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000207"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000219"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000328"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000207"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0200169"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#computed_from"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0200036"/>
@@ -1530,13 +1533,16 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000511"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000523"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/IAO_0000030"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000402"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000523"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000535"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000305"/>
@@ -1545,22 +1551,19 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000414"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000535"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000547"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000426"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000329"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000438"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000208"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000329"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000317"/>
@@ -1596,16 +1599,13 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000524"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000415"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000536"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000318"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000415"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000427"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000318"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000548"/>
@@ -1614,10 +1614,13 @@
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0001573"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000306"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000427"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000439"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000306"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#has_random_effect_on"/>
@@ -1653,13 +1656,13 @@
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0200166"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000416"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000537"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000307"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000416"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000549"/>
@@ -1689,10 +1692,10 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000433"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000554"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000300"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000300"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000554"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000215"/>
@@ -1701,22 +1704,22 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000445"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000324"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000203"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0200094"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000324"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000457"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000239"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000469"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000469"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000239"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000009"/>
@@ -1749,10 +1752,10 @@
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0000066"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000301"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000531"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000531"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000301"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000410"/>
@@ -1785,10 +1788,10 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000228"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000119"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000349"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000349"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000119"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000216"/>
@@ -1842,31 +1845,31 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000544"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000556"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000302"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000435"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000556"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000447"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000108"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000217"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000108"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000447"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000326"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000229"/>
+        <Class IRI="http://purl.obolibrary.org/obo/OBI_0001143"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/OBI_0001143"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000229"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/IAO_0000037"/>
@@ -1893,34 +1896,34 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000400"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000303"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000533"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000412"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000303"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000545"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000436"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000206"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000327"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000206"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000436"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000315"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000448"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000109"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000109"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000448"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000218"/>
@@ -1941,25 +1944,28 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000550"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000211"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000441"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000332"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000320"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000211"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000453"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000235"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000320"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000465"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000005"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000235"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000356"/>
@@ -1968,22 +1974,22 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000126"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000005"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000017"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000138"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000017"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000223"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000223"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000489"/>
     </Declaration>
     <Declaration>
         <Class IRI="#genotyping_data_set"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000489"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000247"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0302903"/>
@@ -1992,16 +1998,13 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000368"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000247"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000029"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000015"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000584"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000584"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000015"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/IAO_0000027"/>
@@ -2019,13 +2022,13 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000551"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000430"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000321"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000200"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000430"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000442"/>
@@ -2037,37 +2040,37 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000224"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000212"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000006"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000466"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000212"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000333"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000006"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000127"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000248"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000466"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000369"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000236"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000248"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000103"/>
+        <Class IRI="http://purl.obolibrary.org/obo/OBI_0001271"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000236"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000357"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/OBI_0001271"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000103"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000018"/>
@@ -2085,10 +2088,10 @@
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/source"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000310"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000540"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000540"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000310"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000552"/>
@@ -2112,22 +2115,22 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000322"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000455"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000201"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000116"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000201"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000455"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000237"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#response_variable_explained_by_interaction_effect_of_response_variable_hypothesis"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000358"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000358"/>
+        <Class IRI="#response_variable_explained_by_interaction_effect_of_response_variable_hypothesis"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000467"/>
@@ -2166,10 +2169,10 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000420"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000323"/>
+        <Class IRI="http://purl.obolibrary.org/obo/OBI_0200194"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/OBI_0200194"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000323"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0302900"/>
@@ -2181,13 +2184,13 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000432"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000105"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000311"/>
     </Declaration>
     <Declaration>
         <Class IRI="#genetic_variance_estimate"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000311"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000105"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000444"/>
@@ -2196,16 +2199,16 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000347"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000456"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000226"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000214"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000456"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000335"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000214"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000468"/>
@@ -11442,7 +11445,7 @@
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000494"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0001000"/>
+            <ObjectProperty IRI="#computed_from"/>
             <Class IRI="http://purl.obolibrary.org/obo/STATO_0000493"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
@@ -11453,7 +11456,7 @@
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000495"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0001000"/>
+            <ObjectProperty IRI="#computed_from"/>
             <Class IRI="http://purl.obolibrary.org/obo/STATO_0000494"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
@@ -11464,7 +11467,7 @@
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000496"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0001000"/>
+            <ObjectProperty IRI="#computed_from"/>
             <Class IRI="http://purl.obolibrary.org/obo/STATO_0000494"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
@@ -12163,6 +12166,10 @@
         <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
+        <ObjectProperty IRI="#computed_from"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
         <ObjectProperty IRI="#has_effect_on"/>
         <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
     </SubObjectPropertyOf>
@@ -12210,6 +12217,10 @@
         <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000101"/>
     </AsymmetricObjectProperty>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#computed_from"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000027"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#has_effect_on"/>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000258"/>
     </ObjectPropertyDomain>
@@ -12242,6 +12253,10 @@
         <ObjectProperty IRI="#is_modeled_by"/>
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0000751"/>
     </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#computed_from"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000027"/>
+    </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#has_effect_on"/>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000258"/>
@@ -33655,7 +33670,7 @@ d) Differences among new and check treatments combined.</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000499</IRI>
-        <Literal xml:lang="api/deki/files/1107/=on_augmented_designs.pdf" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Federer, W.T. 1956. Augmented (or hoonuiaku) designs. Hawaiian Planters’ Record LV(2): 191–208)
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Federer, W.T. 1956. Augmented (or hoonuiaku) designs. Hawaiian Planters’ Record LV(2): 191–208)
 
 http://rna.genomics.purdue.edu/</Literal>
     </AnnotationAssertion>
@@ -35663,6 +35678,11 @@ ftp://tech.obihiro.ac.jp/suzuki/Henderson.pdf</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#breeding_value_estimation</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">breeding value estimation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#computed_from</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">computed from</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
