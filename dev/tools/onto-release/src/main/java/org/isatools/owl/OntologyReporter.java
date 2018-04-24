@@ -7,7 +7,6 @@ import owltools.io.CatalogXmlIRIMapper;
 
 import java.io.File;
 import java.util.*;
-import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 /**
@@ -75,17 +74,6 @@ public class OntologyReporter {
         return labels;
     }
 
-    private Map<String, String> getClassAnnotationAndLanguageTag(OWLEntity clazz, String annotationString){
-        Stream<OWLAnnotation> annotationStream = EntitySearcher.getAnnotations(clazz, devOntology, dataFactory.getOWLAnnotationProperty(IRI.create(annotationString)));
-        // <language tag, label>
-        Map<String, String> labels = new TreeMap<String, String>();
-
-        annotationStream.forEach(
-                annotation -> labels.put(((OWLLiteral)annotation.getValue()).getLang(), annotation.getValue().toString())
-        );
-        return labels;
-    }
-
 
     public void buildReport(String devPath, boolean catalogFileExists, String iriPrefix) {
 
@@ -96,12 +84,12 @@ public class OntologyReporter {
             return;
         }
 
-        entities.addAll(devOntology.classesInSignature().collect(Collectors.toSet()));
-        entities.addAll(devOntology.dataPropertiesInSignature().collect(Collectors.toSet()));
-        entities.addAll(devOntology.objectPropertiesInSignature().collect(Collectors.toSet()));
-        entities.addAll(devOntology.annotationPropertiesInSignature().collect(Collectors.toSet()));
-        entities.addAll(devOntology.individualsInSignature().collect(Collectors.toSet()));
-        entities.addAll(devOntology.datatypesInSignature().collect(Collectors.toSet()));
+        entities.addAll(devOntology.getClassesInSignature());
+        entities.addAll(devOntology.getDataPropertiesInSignature());
+        entities.addAll(devOntology.getObjectPropertiesInSignature());
+        entities.addAll(devOntology.getAnnotationPropertiesInSignature());
+        entities.addAll(devOntology.getIndividualsInSignature());
+        entities.addAll(devOntology.getDatatypesInSignature());
 
         System.out.println("There are " + entities.size() + " entities in the ontology signature");
 
@@ -110,41 +98,44 @@ public class OntologyReporter {
 
             if (entity.getIRI().toString().startsWith(iriPrefix)) {
 
-                Map<String, String> labels = getClassAnnotationAndLanguageTag(entity, LABEL);
+                String label = null;
+                List<String> labels = getClassAnnotation(entity, LABEL);
 
-                if (labels.isEmpty()) {
+                if (labels.size() == 0) {
                     System.err.println("No label for term " + entity.getIRI().toString());
+                    label = "";
 
+                } else if (labels.size() > 1) {
+                    System.err.println("There are more than one label assigned " + labels);
+                    label = labels.get(0);
                 } else {
-                    for(String key: labels.keySet())
-                        if (labels.get(key).length() > 1)
-                            System.err.println("There are more than one label assigned for language " + key +" -> "+ labels.get(key));
+                    label = labels.get(0);
                 }
 
-                Map<String, String> definitions = getClassAnnotationAndLanguageTag(entity, DEFINITION);
+                List<String> definitions = getClassAnnotation(entity, DEFINITION);
 
                 boolean noDefinition = false;
                 String definition = null;
-                if (definitions.isEmpty()) {
-                    System.out.println("No DEFINITION for term " + entity.getIRI().toString() + " " + labels.get("en"));
+                if (definitions.size() == 0) {
+                    System.out.println("No DEFINITION for term " + entity.getIRI().toString() + " " + label);
                     noDefinition = true;
                     count++;
-                } else {
-                    for(String key: definitions.keySet())
-                    if (definitions.get(key).length() > 1) {
-                        System.out.println("There are more than one DEFINITION assigned for language tag " +key +" -> "+ definitions.get(key));
-                    }
+                } else if (definitions.size() > 1) {
+                    System.out.println("There are more than one DEFINITION assigned " + definitions);
+                    definition = definitions.get(0);
+                } else if (definitions.size() == 1){
+                    definition = definitions.get(0);
                 }
 
-                //synonyms pero language
-                Map<String, String> synonyms = new HashMap<String, String>();
-                Map<String, String> toAdd = getClassAnnotationAndLanguageTag(entity, ALTERNATIVE_TERM);
+                //synonyms
+                List<String> synonyms = new ArrayList<String>();
+                List<String> toAdd = getClassAnnotation(entity, ALTERNATIVE_TERM);
                 if (toAdd!=null)
-                    synonyms.putAll(toAdd);
+                    synonyms.addAll(toAdd);
 
-                toAdd = getClassAnnotationAndLanguageTag(entity, STATO_ALTERNATIVE_TERM);
+                toAdd = getClassAnnotation(entity, STATO_ALTERNATIVE_TERM);
                 if (toAdd!=null)
-                    synonyms.putAll(toAdd);
+                    synonyms.addAll(toAdd);
 
 
                 List<String> curationStatusList = getClassAnnotation(entity, HAS_CURATION_STATUS);
@@ -155,15 +146,15 @@ public class OntologyReporter {
                 else
                     curationStatus = "";
 
-                ontologyReport.addEntity(labels,
+                ontologyReport.addEntity(label,
                         entity.getIRI().toString(),
-                        definitions,
+                        definition,
                         synonyms,
                         curationStatus
                 );
 
                 if (noDefinition)
-                    ontologyReport.addNoDefinitionEntity(labels,
+                    ontologyReport.addNoDefinitionEntity(label,
                             entity.getIRI().toString(),
                             synonyms,
                             curationStatus);
@@ -171,9 +162,9 @@ public class OntologyReporter {
 
                 for(String value: curationStatusList){
                     if (value.equals(CURATION_STATUS_METADATA_INCOMPLETE))
-                        ontologyReport.addIncompleteMetadataEntity(labels,
+                        ontologyReport.addIncompleteMetadataEntity(label,
                                 entity.getIRI().toString(),
-                                definitions,
+                                definition,
                                 synonyms,
                                 curationStatus);
                 }
@@ -201,10 +192,8 @@ public class OntologyReporter {
     }
 
 
-
+    /*
     public static void main( String[] args ) throws Exception {
-
-
         OntologyReporter ontologyReporter = new OntologyReporter();
         String devPath = "/Users/agbeltran/work-dev/stato/src/ontology/stato.owl";
         //String outDir = "/Users/agbeltran/work-dev/stato/buildReport/";
@@ -212,11 +201,8 @@ public class OntologyReporter {
         String outFile = "stato-buildReport.txt";
         String releaseIRI = "http://purl.obolibrary.org/obo/stato.owl";
         String iriPrefix = "http://purl.obolibrary.org/obo/STATO_";
-
         ontologyReporter.buildReport(devPath, true, iriPrefix);
         ontologyReporter.saveReport(outDir, outFile);
-
-
         /**
          OntologyReporter ontologyReporter = new OntologyReporter();
          String devPath = "/Users/agbeltran/workspace/obi-code/src/ontology/branches/obi.owl";
@@ -224,20 +210,15 @@ public class OntologyReporter {
          String outDir = "/Users/agbeltran/Desktop/";
          String outFile = "obi-buildReport.txt";
          String iriPrefix = "http://purl.obolibrary.org/obo/OBI_";
-
          ontologyReporter.buildReport(devPath, true, iriPrefix, outDir, outFile);
-
-
+        /*
         OntologyReporter ontologyReporter = new OntologyReporter();
         String devPath = "/Users/agbeltran/workspace/nmrML/ontologies/nmrCV.owl";
         //String outDir = "/Users/agbeltran/work-dev/stato/buildReport/";
         String outDir = "/Users/agbeltran/Desktop/";
         String outFile = "nmrcv-buildReport.xls";
         String iriPrefix = "http://nmrML.org/nmrCV#";
-
         ontologyReporter.buildReport(devPath, true, iriPrefix, outDir, outFile);
-         **/
-
     }
-
+    */
 }

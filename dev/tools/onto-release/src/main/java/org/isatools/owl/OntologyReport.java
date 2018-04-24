@@ -25,13 +25,13 @@ public class OntologyReport {
 
     /**
      * Adds an entity to the maps for entities and for duplicates
-     *
-     * @param label
+     *  @param label
      * @param iri
      * @param definition
      * @param synonyms
+     * @param curationStatus
      */
-    public void addEntity(String label, String iri, String definition, List<String> synonyms){
+    public void addEntity(String label, String iri, String definition, List<String> synonyms, String curationStatus){
         EntityReport entityReport = new EntityReport(label, iri, definition, synonyms);
         iriClassReportMap.put(iri, entityReport);
 
@@ -41,12 +41,12 @@ public class OntologyReport {
         duplicateList.add(entityReport);
     }
 
-    public void addNoDefinitionEntity(String label, String iri, List<String> synonyms){
+    public void addNoDefinitionEntity(String label, String iri, List<String> synonyms, String curationStatus){
         EntityReport entityReport = new EntityReport(label, iri, "", synonyms);
         iriNoDefinitions.put(iri, entityReport);
     }
 
-    public void addIncompleteMetadataEntity(String label, String iri, String definition, List<String> synonyms){
+    public void addIncompleteMetadataEntity(String label, String iri, String definition, List<String> synonyms, String curationStatus){
         EntityReport entityReport = new EntityReport(label, iri, definition, synonyms);
         iriMetadataIncomplete.put(iri, entityReport);
     }
