@@ -87,8 +87,8 @@ http://purl.obolibrary.org/obo/OBI_0000417 #achieves_planned_objective
 http://purl.obolibrary.org/obo/OBI_0000443 #analyte assay
 http://purl.obolibrary.org/obo/OBI_0000626 #DNA sequencing
 http://purl.obolibrary.org/obo/OBI_0000673 #statistical hypothesis test
-#http://purl.obolibrary.org/obo/OBI_0000674 #center value [replaced by STATO terms owing to added restrictions]
-#http://purl.obolibrary.org/obo/OBI_0000679 #average value [replaced by STATO terms owing to added restrictions]
+http://purl.obolibrary.org/obo/OBI_0000674 #center value
+http://purl.obolibrary.org/obo/OBI_0000679 #average value
 http://purl.obolibrary.org/obo/OBI_0000650 #differential expression analysis data transformation
 http://purl.obolibrary.org/obo/OBI_0000675 #statistical hypothesis test objective
 http://purl.obolibrary.org/obo/OBI_0000722 #paired-end library
