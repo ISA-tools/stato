@@ -93,6 +93,9 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000570"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000582"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000461"/>
     </Declaration>
     <Declaration>
@@ -1180,9 +1183,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000099"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#best_linear_unbiaised_estimator"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0200200"/>
@@ -11242,7 +11242,7 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000468"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000295"/>
-            <Class IRI="#best_linear_unbiaised_estimator"/>
+            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000582"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -12366,22 +12366,18 @@
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0200000"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="marker-derived-relationship_matrix"/>
-        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000030"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#best_linear_unbiaised_estimator"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000582"/>
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0200000"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#best_linear_unbiaised_estimator"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000582"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
             <Class IRI="http://purl.obolibrary.org/obo/STATO_0000534"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#best_linear_unbiaised_estimator"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000582"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
             <ObjectIntersectionOf>
@@ -12394,25 +12390,29 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#best_linear_unbiaised_estimator"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000582"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000299"/>
             <Class IRI="http://purl.obolibrary.org/obo/OBI_0000175"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#best_linear_unbiaised_estimator"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000582"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000299"/>
             <Class IRI="http://purl.obolibrary.org/obo/STATO_0000144"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#best_linear_unbiaised_estimator"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000582"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000299"/>
             <Class IRI="http://purl.obolibrary.org/obo/STATO_0000485"/>
         </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="marker-derived-relationship_matrix"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000030"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#best_linear_unbiased_predictor"/>
@@ -12469,7 +12469,7 @@
                 <Class IRI="http://purl.obolibrary.org/obo/STATO_0000533"/>
                 <Class IRI="http://purl.obolibrary.org/obo/STATO_0000540"/>
                 <Class IRI="http://purl.obolibrary.org/obo/STATO_0000546"/>
-                <Class IRI="#best_linear_unbiaised_estimator"/>
+                <Class IRI="http://purl.obolibrary.org/obo/STATO_0000582"/>
                 <Class IRI="#best_linear_unbiased_predictor"/>
             </ObjectUnionOf>
         </ObjectSomeValuesFrom>
@@ -12506,7 +12506,7 @@
         <Class IRI="#breeding_value_estimation_using_genotype_data"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
-            <Class IRI="#best_linear_unbiaised_estimator"/>
+            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000582"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -37310,6 +37310,43 @@ https://docs.scipy.org/doc/numpy-1.14.0/reference/generated/numpy.linalg.svd.htm
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000582</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">best linear unbiased estimator</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000582</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000582</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Henderson C. R., 1984 Applications of Linear Models in Animal Breeding. University of Guelph, Guelph, Ontario, Canada.
+
+ftp://tech.obihiro.ac.jp/suzuki/Henderson.pdf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000032"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000582</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">BLUE</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000032"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000582</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">best linear unbiaised estimator of the fixed effect</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000582</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000582</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">best linear unbiased estimator</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>marker-derived-relationship_matrix</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
     </AnnotationAssertion>
@@ -37337,43 +37374,6 @@ https://docs.scipy.org/doc/numpy-1.14.0/reference/generated/numpy.linalg.svd.htm
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>marker-derived-relationship_matrix</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">marker-derived relationship matrix</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>#best_linear_unbiaised_estimator</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">best linear unbiased estimator</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#best_linear_unbiaised_estimator</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Philippe Rocca-Serra</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
-        <IRI>#best_linear_unbiaised_estimator</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Henderson C. R., 1984 Applications of Linear Models in Animal Breeding. University of Guelph, Guelph, Ontario, Canada.
-
-ftp://tech.obihiro.ac.jp/suzuki/Henderson.pdf</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000032"/>
-        <IRI>#best_linear_unbiaised_estimator</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">BLUE</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000032"/>
-        <IRI>#best_linear_unbiaised_estimator</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">best linear unbiaised estimator of the fixed effect</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
-        <IRI>#best_linear_unbiaised_estimator</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#best_linear_unbiaised_estimator</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">best linear unbiased estimator</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
