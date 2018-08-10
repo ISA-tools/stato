@@ -93,6 +93,9 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000570"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000582"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000461"/>
     </Declaration>
     <Declaration>
@@ -115,6 +118,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000134"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000340"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000485"/>
@@ -175,6 +181,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000571"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000341"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000462"/>
@@ -285,6 +294,9 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000221"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000342"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000487"/>
     </Declaration>
     <Declaration>
@@ -327,9 +339,6 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000015"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#genomic_selection_objective"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/IAO_0000578"/>
     </Declaration>
     <Declaration>
@@ -352,6 +361,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000452"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000343"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000222"/>
@@ -514,9 +526,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000155"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#has_effect_on"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000494"/>
@@ -870,9 +879,6 @@
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0200049"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#breeding_value_estimation_using_pedigree_data"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0001927"/>
     </Declaration>
     <Declaration>
@@ -1020,9 +1026,6 @@
         <Class IRI="http://purl.obolibrary.org/obo/OBI_1000029"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#breeding_value_estimation_using_phenotypic_data"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
     </Declaration>
     <Declaration>
@@ -1128,9 +1131,6 @@
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0200102"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000423"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000059"/>
     </Declaration>
     <Declaration>
@@ -1173,6 +1173,9 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000160"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000345"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000051"/>
     </Declaration>
     <Declaration>
@@ -1186,9 +1189,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000099"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#best_linear_unbiaised_estimator"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0200200"/>
@@ -1228,6 +1228,9 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000259"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000344"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000114"/>
@@ -1284,9 +1287,6 @@
         <Class IRI="http://purl.obolibrary.org/obo/IAO_0000184"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#has_fixed_effect_on"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000502"/>
     </Declaration>
     <Declaration>
@@ -1324,9 +1324,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000418"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000424"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000081"/>
@@ -1431,9 +1428,6 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000192"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#has_interaction_effect_on"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000071"/>
     </Declaration>
     <Declaration>
@@ -1491,7 +1485,7 @@
         <Class IRI="http://purl.obolibrary.org/obo/IAO_0000032"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#best_linear_unbiased_predictor"/>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000382"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0500007"/>
@@ -1555,6 +1549,9 @@
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000381"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000314"/>
@@ -1656,9 +1653,6 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000306"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#has_random_effect_on"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000319"/>
     </Declaration>
     <Declaration>
@@ -1675,9 +1669,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/BFO_0000006"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#genomic_estimated_breeding_value"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000513"/>
@@ -1735,6 +1726,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000566"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000336"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000445"/>
@@ -1842,6 +1836,9 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000216"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000337"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000107"/>
     </Declaration>
     <Declaration>
@@ -1857,7 +1854,7 @@
         <AnnotationProperty IRI="http://usefulinc.com/ns/doap#mailing-list"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#has_order"/>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000380"/>
     </Declaration>
     <Declaration>
         <Class IRI="#variance_component_estimate"/>
@@ -1872,9 +1869,6 @@
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0000272"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#breeding_value_estimation"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000520"/>
     </Declaration>
     <Declaration>
@@ -1882,6 +1876,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000411"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000423"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000314"/>
@@ -1897,6 +1894,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000435"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000338"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000108"/>
@@ -1956,6 +1956,9 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000545"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000424"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000327"/>
     </Declaration>
     <Declaration>
@@ -1975,6 +1978,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000448"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000339"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000218"/>
@@ -2041,9 +2047,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000489"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#genotyping_data_set"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000247"/>
@@ -2214,9 +2217,6 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000249"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#breeding_value_estimation_using_genotype_data"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000128"/>
     </Declaration>
     <Declaration>
@@ -2257,9 +2257,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000311"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#genetic_variance_estimate"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000105"/>
@@ -2655,6 +2652,13 @@
         </ObjectSomeValuesFrom>
     </EquivalentClasses>
     <EquivalentClasses>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000337"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000299"/>
+            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000485"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000443"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000417"/>
@@ -2679,20 +2683,13 @@
         </ObjectSomeValuesFrom>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="#breeding_value_estimation"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000299"/>
-            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000485"/>
-        </ObjectSomeValuesFrom>
-    </EquivalentClasses>
-    <EquivalentClasses>
         <Class IRI="#response_variable_explained_by_fixed_effect_hypothesis"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
             <ObjectIntersectionOf>
                 <Class IRI="http://purl.obolibrary.org/obo/OBI_0000750"/>
                 <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#has_effect_on"/>
+                    <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000344"/>
                     <Class IRI="http://purl.obolibrary.org/obo/OBI_0000751"/>
                 </ObjectSomeValuesFrom>
             </ObjectIntersectionOf>
@@ -5108,7 +5105,7 @@
                 <ObjectIntersectionOf>
                     <Class IRI="http://purl.obolibrary.org/obo/OBI_0000750"/>
                     <ObjectSomeValuesFrom>
-                        <ObjectProperty IRI="#has_fixed_effect_on"/>
+                        <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000345"/>
                         <Class IRI="http://purl.obolibrary.org/obo/OBI_0000751"/>
                     </ObjectSomeValuesFrom>
                 </ObjectIntersectionOf>
@@ -5712,7 +5709,7 @@
                 <ObjectIntersectionOf>
                     <Class IRI="http://purl.obolibrary.org/obo/OBI_0000750"/>
                     <ObjectSomeValuesFrom>
-                        <ObjectProperty IRI="#has_random_effect_on"/>
+                        <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000381"/>
                         <Class IRI="http://purl.obolibrary.org/obo/OBI_0000751"/>
                     </ObjectSomeValuesFrom>
                 </ObjectIntersectionOf>
@@ -7607,7 +7604,7 @@
                     <ObjectIntersectionOf>
                         <Class IRI="http://purl.obolibrary.org/obo/OBI_0000750"/>
                         <ObjectSomeValuesFrom>
-                            <ObjectProperty IRI="#has_effect_on"/>
+                            <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000344"/>
                             <Class IRI="http://purl.obolibrary.org/obo/OBI_0000751"/>
                         </ObjectSomeValuesFrom>
                     </ObjectIntersectionOf>
@@ -9838,6 +9835,167 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000330"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000336"/>
+        <Class IRI="http://purl.obolibrary.org/obo/OBI_0200000"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000336"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000299"/>
+            <Class IRI="http://purl.obolibrary.org/obo/OBI_0000175"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000336"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000299"/>
+            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000144"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000336"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000299"/>
+            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000485"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000336"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000417"/>
+            <ObjectIntersectionOf>
+                <Class IRI="http://purl.obolibrary.org/obo/STATO_0000342"/>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                    <Class IRI="#response_variable_explained_by_random_effect_hypothesis"/>
+                </ObjectSomeValuesFrom>
+            </ObjectIntersectionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000337"/>
+        <Class IRI="http://purl.obolibrary.org/obo/OBI_0200000"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000337"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            <ObjectUnionOf>
+                <Class IRI="http://purl.obolibrary.org/obo/STATO_0000336"/>
+                <Class IRI="http://purl.obolibrary.org/obo/STATO_0000480"/>
+                <Class IRI="http://purl.obolibrary.org/obo/STATO_0000482"/>
+                <Class IRI="http://purl.obolibrary.org/obo/STATO_0000483"/>
+                <Class IRI="http://purl.obolibrary.org/obo/STATO_0000484"/>
+                <Class IRI="http://purl.obolibrary.org/obo/STATO_0000492"/>
+                <Class IRI="http://purl.obolibrary.org/obo/STATO_0000533"/>
+                <Class IRI="http://purl.obolibrary.org/obo/STATO_0000540"/>
+                <Class IRI="http://purl.obolibrary.org/obo/STATO_0000546"/>
+                <Class IRI="http://purl.obolibrary.org/obo/STATO_0000582"/>
+            </ObjectUnionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000337"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
+            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000107"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000337"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
+            <ObjectUnionOf>
+                <Class IRI="http://purl.obolibrary.org/obo/STATO_0000343"/>
+                <Class IRI="#pedigree_data_set"/>
+            </ObjectUnionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000337"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000299"/>
+            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000485"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000338"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000337"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000338"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000582"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000338"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
+            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000343"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000338"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
+            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000534"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000338"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000299"/>
+            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000485"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000339"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000337"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000339"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
+            <Class IRI="#pedigree_data_set"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000340"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000337"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000340"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
+            <Class IRI="http://purl.obolibrary.org/obo/IAO_0000100"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000341"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000485"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000341"/>
+        <Class IRI="#variance_component_estimate"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000342"/>
+        <Class IRI="http://purl.obolibrary.org/obo/OBI_0200166"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000343"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000100"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000343"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            <Class IRI="http://purl.obolibrary.org/obo/OBI_0001305"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000346"/>
         <Class IRI="http://purl.obolibrary.org/obo/IAO_0000027"/>
     </SubClassOf>
@@ -10458,7 +10616,7 @@
                 <Class IRI="http://purl.obolibrary.org/obo/STATO_0000006"/>
                 <ObjectSomeValuesFrom>
                     <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000219"/>
-                    <Class IRI="http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000423"/>
+                    <Class IRI="http://purl.obolibrary.org/obo/STATO_0000423"/>
                 </ObjectSomeValuesFrom>
             </ObjectIntersectionOf>
         </ObjectSomeValuesFrom>
@@ -10471,7 +10629,7 @@
                 <Class IRI="http://purl.obolibrary.org/obo/STATO_0000008"/>
                 <ObjectSomeValuesFrom>
                     <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000219"/>
-                    <Class IRI="http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000423"/>
+                    <Class IRI="http://purl.obolibrary.org/obo/STATO_0000423"/>
                 </ObjectSomeValuesFrom>
             </ObjectIntersectionOf>
         </ObjectSomeValuesFrom>
@@ -10488,6 +10646,14 @@
                 </ObjectSomeValuesFrom>
             </ObjectIntersectionOf>
         </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000423"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000027"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000424"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000027"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000425"/>
@@ -11221,8 +11387,8 @@
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000295"/>
             <ObjectUnionOf>
+                <Class IRI="http://purl.obolibrary.org/obo/STATO_0000336"/>
                 <Class IRI="http://purl.obolibrary.org/obo/STATO_0000427"/>
-                <Class IRI="#best_linear_unbiased_predictor"/>
             </ObjectUnionOf>
         </ObjectSomeValuesFrom>
     </SubClassOf>
@@ -11239,7 +11405,7 @@
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000467"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#has_order"/>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000382"/>
             <Class IRI="http://purl.obolibrary.org/obo/STATO_0000047"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
@@ -11258,7 +11424,7 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000468"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000295"/>
-            <Class IRI="#best_linear_unbiaised_estimator"/>
+            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000582"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -11274,7 +11440,7 @@
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000468"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#has_order"/>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000382"/>
             <Class IRI="http://purl.obolibrary.org/obo/STATO_0000047"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
@@ -11295,7 +11461,7 @@
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000469"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#has_order"/>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000382"/>
             <Class IRI="http://purl.obolibrary.org/obo/STATO_0000047"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
@@ -11313,7 +11479,7 @@
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000470"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#has_order"/>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000382"/>
             <Class IRI="http://purl.obolibrary.org/obo/STATO_0000047"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
@@ -11381,7 +11547,7 @@
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000417"/>
             <ObjectIntersectionOf>
-                <Class IRI="#genomic_selection_objective"/>
+                <Class IRI="http://purl.obolibrary.org/obo/STATO_0000342"/>
                 <ObjectSomeValuesFrom>
                     <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
                     <Class IRI="#response_variable_explained_by_random_effect_hypothesis"/>
@@ -11419,7 +11585,7 @@
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000417"/>
             <ObjectIntersectionOf>
-                <Class IRI="#genomic_selection_objective"/>
+                <Class IRI="http://purl.obolibrary.org/obo/STATO_0000342"/>
                 <ObjectSomeValuesFrom>
                     <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
                     <Class IRI="#response_variable_explained_by_random_effect_hypothesis"/>
@@ -11457,7 +11623,7 @@
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000417"/>
             <ObjectIntersectionOf>
-                <Class IRI="#genomic_selection_objective"/>
+                <Class IRI="http://purl.obolibrary.org/obo/STATO_0000342"/>
                 <ObjectSomeValuesFrom>
                     <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
                     <Class IRI="#response_variable_explained_by_random_effect_hypothesis"/>
@@ -11502,7 +11668,7 @@
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000417"/>
             <ObjectIntersectionOf>
-                <Class IRI="#genomic_selection_objective"/>
+                <Class IRI="http://purl.obolibrary.org/obo/STATO_0000342"/>
                 <ObjectSomeValuesFrom>
                     <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
                     <Class IRI="#response_variable_explained_by_random_effect_hypothesis"/>
@@ -11547,7 +11713,7 @@
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000417"/>
             <ObjectIntersectionOf>
-                <Class IRI="#genomic_selection_objective"/>
+                <Class IRI="http://purl.obolibrary.org/obo/STATO_0000342"/>
                 <ObjectSomeValuesFrom>
                     <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
                     <Class IRI="#response_variable_explained_by_random_effect_hypothesis"/>
@@ -11563,7 +11729,7 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000485"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000312"/>
-            <Class IRI="#breeding_value_estimation"/>
+            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000337"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -12039,7 +12205,7 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000546"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000299"/>
-            <Class IRI="#genomic_estimated_breeding_value"/>
+            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000341"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -12047,7 +12213,7 @@
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000417"/>
             <ObjectIntersectionOf>
-                <Class IRI="#genomic_selection_objective"/>
+                <Class IRI="http://purl.obolibrary.org/obo/STATO_0000342"/>
                 <ObjectSomeValuesFrom>
                     <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
                     <Class IRI="#response_variable_explained_by_random_effect_hypothesis"/>
@@ -12382,6 +12548,7 @@
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0200000"/>
     </SubClassOf>
     <SubClassOf>
+
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000584"/>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000039"/>
     </SubClassOf>
@@ -12415,18 +12582,18 @@
         <Class IRI="http://purl.obolibrary.org/obo/IAO_0000030"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#best_linear_unbiaised_estimator"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000582"/>
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0200000"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#best_linear_unbiaised_estimator"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000582"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
             <Class IRI="http://purl.obolibrary.org/obo/STATO_0000534"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#best_linear_unbiaised_estimator"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000582"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
             <ObjectIntersectionOf>
@@ -12439,186 +12606,29 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#best_linear_unbiaised_estimator"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000582"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000299"/>
             <Class IRI="http://purl.obolibrary.org/obo/OBI_0000175"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#best_linear_unbiaised_estimator"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000582"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000299"/>
             <Class IRI="http://purl.obolibrary.org/obo/STATO_0000144"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#best_linear_unbiaised_estimator"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000582"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000299"/>
             <Class IRI="http://purl.obolibrary.org/obo/STATO_0000485"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#best_linear_unbiased_predictor"/>
-        <Class IRI="http://purl.obolibrary.org/obo/OBI_0200000"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#best_linear_unbiased_predictor"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000299"/>
-            <Class IRI="http://purl.obolibrary.org/obo/OBI_0000175"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#best_linear_unbiased_predictor"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000299"/>
-            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000144"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#best_linear_unbiased_predictor"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000299"/>
-            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000485"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#best_linear_unbiased_predictor"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000417"/>
-            <ObjectIntersectionOf>
-                <Class IRI="#genomic_selection_objective"/>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                    <Class IRI="#response_variable_explained_by_random_effect_hypothesis"/>
-                </ObjectSomeValuesFrom>
-            </ObjectIntersectionOf>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#breeding_value_estimation"/>
-        <Class IRI="http://purl.obolibrary.org/obo/OBI_0200000"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#breeding_value_estimation"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
-            <ObjectUnionOf>
-                <Class IRI="http://purl.obolibrary.org/obo/STATO_0000480"/>
-                <Class IRI="http://purl.obolibrary.org/obo/STATO_0000482"/>
-                <Class IRI="http://purl.obolibrary.org/obo/STATO_0000483"/>
-                <Class IRI="http://purl.obolibrary.org/obo/STATO_0000484"/>
-                <Class IRI="http://purl.obolibrary.org/obo/STATO_0000492"/>
-                <Class IRI="http://purl.obolibrary.org/obo/STATO_0000533"/>
-                <Class IRI="http://purl.obolibrary.org/obo/STATO_0000540"/>
-                <Class IRI="http://purl.obolibrary.org/obo/STATO_0000546"/>
-                <Class IRI="#best_linear_unbiaised_estimator"/>
-                <Class IRI="#best_linear_unbiased_predictor"/>
-            </ObjectUnionOf>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#breeding_value_estimation"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
-            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000107"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#breeding_value_estimation"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
-            <ObjectUnionOf>
-                <Class IRI="#genotyping_data_set"/>
-                <Class IRI="#pedigree_data_set"/>
-            </ObjectUnionOf>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#breeding_value_estimation"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000299"/>
-            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000485"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#breeding_value_estimation_using_genotype_data"/>
-        <Class IRI="#breeding_value_estimation"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#breeding_value_estimation_using_genotype_data"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
-            <Class IRI="#best_linear_unbiaised_estimator"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#breeding_value_estimation_using_genotype_data"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
-            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000534"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#breeding_value_estimation_using_genotype_data"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
-            <Class IRI="#genotyping_data_set"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#breeding_value_estimation_using_genotype_data"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000299"/>
-            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000485"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#breeding_value_estimation_using_pedigree_data"/>
-        <Class IRI="#breeding_value_estimation"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#breeding_value_estimation_using_pedigree_data"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
-            <Class IRI="#pedigree_data_set"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#breeding_value_estimation_using_phenotypic_data"/>
-        <Class IRI="#breeding_value_estimation"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#breeding_value_estimation_using_phenotypic_data"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
-            <Class IRI="http://purl.obolibrary.org/obo/IAO_0000100"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#genetic_variance_estimate"/>
-        <Class IRI="#variance_component_estimate"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#genomic_estimated_breeding_value"/>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000485"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#genomic_selection_objective"/>
-        <Class IRI="http://purl.obolibrary.org/obo/OBI_0200166"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#genotyping_data_set"/>
-        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000100"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#genotyping_data_set"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
-            <Class IRI="http://purl.obolibrary.org/obo/OBI_0001305"/>
-        </ObjectSomeValuesFrom>
+        <Class IRI="marker-derived-relationship_matrix"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000030"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#partial_least_squares_weight"/>
@@ -12642,7 +12652,7 @@
     <SubClassOf>
         <Class IRI="#response_variable_explained_by_fixed_effect_hypothesis"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#has_effect_on"/>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000344"/>
             <Class IRI="http://purl.obolibrary.org/obo/OBI_0000751"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
@@ -12706,14 +12716,6 @@
         <Class IRI="http://www.co-ode.org/ontologies/ont.owl#group_sequential_design"/>
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0500000"/>
     </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000423"/>
-        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000027"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000424"/>
-        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000027"/>
-    </SubClassOf>
     <DisjointClasses>
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0000115"/>
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0300311"/>
@@ -12767,32 +12769,32 @@
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000344"/>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000345"/>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000344"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000380"/>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000344"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000381"/>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000344"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000382"/>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
         <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000403"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000557"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#has_effect_on"/>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#has_fixed_effect_on"/>
-        <ObjectProperty IRI="#has_effect_on"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#has_interaction_effect_on"/>
-        <ObjectProperty IRI="#has_effect_on"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#has_order"/>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#has_random_effect_on"/>
-        <ObjectProperty IRI="#has_effect_on"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#is_modeled_by"/>
@@ -12822,23 +12824,23 @@
         <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000101"/>
     </AsymmetricObjectProperty>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000557"/>
-        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000030"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#has_effect_on"/>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000344"/>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000258"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#has_fixed_effect_on"/>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000345"/>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000258"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#has_interaction_effect_on"/>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000380"/>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000258"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#has_order"/>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000381"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000258"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000382"/>
         <ObjectUnionOf>
             <Class IRI="http://purl.obolibrary.org/obo/STATO_0000467"/>
             <Class IRI="http://purl.obolibrary.org/obo/STATO_0000468"/>
@@ -12847,8 +12849,8 @@
         </ObjectUnionOf>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#has_random_effect_on"/>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000258"/>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000557"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000030"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#is_model_for"/>
@@ -12859,28 +12861,28 @@
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0000751"/>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000557"/>
-        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000030"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#has_effect_on"/>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000344"/>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000258"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#has_fixed_effect_on"/>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000345"/>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000258"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#has_interaction_effect_on"/>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000380"/>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000258"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#has_order"/>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000381"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000258"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000382"/>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000047"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#has_random_effect_on"/>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000258"/>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000557"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000030"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#is_model_for"/>
@@ -28334,6 +28336,159 @@ http://reference.wolfram.com/language/ref/SmoothKernelDistribution.html</Literal
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">survival distribution</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000336</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">best linear unbiased prediction is a data transformation which predicts &lt;TDB&gt; under the assumption that the variable(s) under consideration have a random effect</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000336</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000336</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Henderson C. R., 1984 Applications of Linear Models in Animal Breeding. University of Guelph, Guelph, Ontario, Canada.
+
+ftp://tech.obihiro.ac.jp/suzuki/Henderson.pdf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000032"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000336</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">BLUP</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000032"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000336</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">best linear unbiased predictor of the random effect</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000032"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000336</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">conditional mode of the random effect</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000336</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000336</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">best linear unbiased predictor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000337</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000337</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000337</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">breeding value estimation is a data transformation process aiming at computing breeding value estimates of an organism given a set of genomic (SNP) observations, pedigree information and/or phenotypic observations.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000337</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000337</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000032"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000337</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000337</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">breeding value estimation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000338</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">breeding value estimation using genotype data</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000339</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">breeding value estimation using pedigree data</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000340</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">breeding value estimation using phenotypic data</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000341</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000341</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">genomic estimated breeding value (GEBV) is an estimated breeding value derived from information in an organism DNA (genotype). GEBV is calculated differently to conventional Estimated Breeding Values using advanced modeling technique to deal with high dimensionality data.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000341</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000341</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000341</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">adapted from:
+https://businesswales.gov.wales/farmingconnect/posts/genomic-breeding-values</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000032"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000341</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">GEBV</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000341</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">genomic estimated breeding value</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000342</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000342</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">genomic selection objective</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000343</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">genotype data set</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000344</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has effect on</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000345</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has fixed effect on</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000346</IRI>
         <IRI>http://purl.obolibrary.org/obo/IAO_0000120</IRI>
@@ -30091,6 +30246,21 @@ Spiegelhalter, D. J., N. G. Best, B. P. Carlin, and A. van der Linde, 2002. Baye
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">focused information criterion</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000380</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has interaction effect on</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000381</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has random effect on</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000382</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has order in sequence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000383</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">a data transformation that finds a contrast value (the contrast estimate) by computing the weighted sum of model parameter estimates using a set of contrast weights.</Literal>
@@ -31522,6 +31692,64 @@ http://www.dictionarycentral.com/definition/l-abb-plot.html</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000422</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">L&apos;Abbe plot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000423</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000423</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">the proportion of individuals in a population with the outcome of interest</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000423</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000423</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">adapted from:
+http://handbook.cochrane.org/chapter_9/9_2_2_4_measure_of_absolute_effect_the_risk_difference.htm
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000423</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">observed risk</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000424</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000424</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The risk difference is the difference between the observed risks (proportions of individuals with the outcome of interest) in the two groups.
+The risk difference is straightforward to interpret: it describes the actual difference in the observed risk of events between experimental and control interventions.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000424</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000424</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000424</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://handbook.cochrane.org/chapter_9/9_2_2_4_measure_of_absolute_effect_the_risk_difference.htm</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000424</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">risk difference</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
@@ -37421,6 +37649,43 @@ https://github.com/ISA-tools/stato/issues/68</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000582</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">best linear unbiased estimator</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000582</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000582</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Henderson C. R., 1984 Applications of Linear Models in Animal Breeding. University of Guelph, Guelph, Ontario, Canada.
+
+ftp://tech.obihiro.ac.jp/suzuki/Henderson.pdf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000032"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000582</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">BLUE</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000032"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000582</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">best linear unbiaised estimator of the fixed effect</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000582</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000582</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">best linear unbiased estimator</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>marker-derived-relationship_matrix</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
     </AnnotationAssertion>
@@ -37448,196 +37713,6 @@ https://github.com/ISA-tools/stato/issues/68</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>marker-derived-relationship_matrix</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">marker-derived relationship matrix</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>#best_linear_unbiaised_estimator</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">best linear unbiased estimator</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#best_linear_unbiaised_estimator</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Philippe Rocca-Serra</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
-        <IRI>#best_linear_unbiaised_estimator</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Henderson C. R., 1984 Applications of Linear Models in Animal Breeding. University of Guelph, Guelph, Ontario, Canada.
-
-ftp://tech.obihiro.ac.jp/suzuki/Henderson.pdf</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000032"/>
-        <IRI>#best_linear_unbiaised_estimator</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">BLUE</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000032"/>
-        <IRI>#best_linear_unbiaised_estimator</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">best linear unbiaised estimator of the fixed effect</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
-        <IRI>#best_linear_unbiaised_estimator</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#best_linear_unbiaised_estimator</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">best linear unbiased estimator</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>#best_linear_unbiased_predictor</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">best linear unbiased prediction is a data transformation which predicts &lt;TDB&gt; under the assumption that the variable(s) under consideration have a random effect</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#best_linear_unbiased_predictor</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Philippe Rocca-Serra</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
-        <IRI>#best_linear_unbiased_predictor</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Henderson C. R., 1984 Applications of Linear Models in Animal Breeding. University of Guelph, Guelph, Ontario, Canada.
-
-ftp://tech.obihiro.ac.jp/suzuki/Henderson.pdf</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000032"/>
-        <IRI>#best_linear_unbiased_predictor</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">BLUP</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000032"/>
-        <IRI>#best_linear_unbiased_predictor</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">best linear unbiased predictor of the random effect</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000032"/>
-        <IRI>#best_linear_unbiased_predictor</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">conditional mode of the random effect</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
-        <IRI>#best_linear_unbiased_predictor</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#best_linear_unbiased_predictor</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">best linear unbiased predictor</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
-        <IRI>#breeding_value_estimation</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
-        <IRI>#breeding_value_estimation</IRI>
-        <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>#breeding_value_estimation</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">breeding value estimation is a data transformation process aiming at computing breeding value estimates of an organism given a set of genomic (SNP) observations, pedigree information and/or phenotypic observations.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#breeding_value_estimation</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Philippe Rocca-Serra</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
-        <IRI>#breeding_value_estimation</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000032"/>
-        <IRI>#breeding_value_estimation</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#breeding_value_estimation</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">breeding value estimation</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#genetic_variance_estimate</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">genetic variance estimate</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
-        <IRI>#genomic_estimated_breeding_value</IRI>
-        <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>#genomic_estimated_breeding_value</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">genomic estimated breeding value (GEBV) is an estimated breeding value derived from information in an organism DNA (genotype). GEBV is calculated differently to conventional Estimated Breeding Values using advanced modeling technique to deal with high dimensionality data.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#genomic_estimated_breeding_value</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Philippe Rocca-Serra</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
-        <IRI>#genomic_estimated_breeding_value</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">adapted from:
-https://businesswales.gov.wales/farmingconnect/posts/genomic-breeding-values</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000032"/>
-        <IRI>#genomic_estimated_breeding_value</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">GEBV</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#genomic_estimated_breeding_value</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">genomic estimated breeding value</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#genomic_selection_objective</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Philippe Rocca-Serra</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#genomic_selection_objective</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">genomic selection objective</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#genotyping_data_set</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">genotype data set</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#has_effect_on</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has effect on</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#has_fixed_effect_on</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has fixed effect on</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#has_interaction_effect_on</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has interaction effect on</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#has_order</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has order in sequence</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#has_random_effect_on</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has random effect on</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -37902,59 +37977,6 @@ https://docs.scipy.org/doc/scipy-0.14.0/reference/generated/scipy.stats.weibull_
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://www.co-ode.org/ontologies/ont.owl#group_sequential_design</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">group sequential design</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
-        <IRI>http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000423</IRI>
-        <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000423</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">the proportion of individuals in a population with the outcome of interest</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000423</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Philippe Rocca-Serra</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
-        <IRI>http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000423</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">adapted from:
-http://handbook.cochrane.org/chapter_9/9_2_2_4_measure_of_absolute_effect_the_risk_difference.htm
-</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000423</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">observed risk</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
-        <IRI>http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000424</IRI>
-        <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000424</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The risk difference is the difference between the observed risks (proportions of individuals with the outcome of interest) in the two groups.
-The risk difference is straightforward to interpret: it describes the actual difference in the observed risk of events between experimental and control interventions.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000424</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Philippe Rocca-Serra</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
-        <IRI>http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000424</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://handbook.cochrane.org/chapter_9/9_2_2_4_measure_of_absolute_effect_the_risk_difference.htm</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://www.co-ode.org/ontologies/ont.owl#http://purl.obolibrary.org/obo/STATO_0000424</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">risk difference</Literal>
     </AnnotationAssertion>
     <SubAnnotationPropertyOf>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000032"/>
