@@ -189,10 +189,10 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000462"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000583"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000002"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000002"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000583"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000123"/>
@@ -349,9 +349,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0000626"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#variable_importance_in_projection"/>
     </Declaration>
     <Declaration>
         <Class IRI="#partial_least_squares_weight"/>
@@ -609,6 +606,9 @@
         <ObjectProperty IRI="#is_model_for"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000580"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000350"/>
     </Declaration>
     <Declaration>
@@ -679,9 +679,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000059"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="marker-derived-relationship_matrix"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/IAO_0000401"/>
@@ -874,9 +871,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/GO_0003824"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#restricted_randomized_design"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0200049"/>
@@ -1347,9 +1341,6 @@
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0500016"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#group_sequential_design"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000094"/>
     </Declaration>
     <Declaration>
@@ -1620,10 +1611,10 @@
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0000010"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#http://purl.obolibrary.org/obo/STATO_0000500"/>
+        <ObjectProperty IRI="#is_modeled_by"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#is_modeled_by"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000500"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000512"/>
@@ -1668,10 +1659,10 @@
         <Class IRI="#pedigree_data_set"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#http://purl.obolibrary.org/obo/STATO_0000501"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000006"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000006"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000501"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000513"/>
@@ -1914,6 +1905,9 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000447"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000459"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000326"/>
     </Declaration>
     <Declaration>
@@ -2038,6 +2032,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000356"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000586"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000138"/>
@@ -2692,6 +2689,19 @@
         </ObjectSomeValuesFrom>
     </EquivalentClasses>
     <EquivalentClasses>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000586"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <Class IRI="http://purl.obolibrary.org/obo/STATO_0000446"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000001"/>
+                <Class IRI="http://purl.obolibrary.org/obo/STATO_0000248"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
         <Class IRI="#response_variable_explained_by_fixed_effect_hypothesis"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
@@ -2703,19 +2713,6 @@
                 </ObjectSomeValuesFrom>
             </ObjectIntersectionOf>
         </ObjectSomeValuesFrom>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#restricted_randomized_design"/>
-        <ObjectIntersectionOf>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <Class IRI="http://purl.obolibrary.org/obo/STATO_0000446"/>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000001"/>
-                <Class IRI="http://purl.obolibrary.org/obo/STATO_0000248"/>
-            </ObjectSomeValuesFrom>
-        </ObjectIntersectionOf>
     </EquivalentClasses>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/IAO_0000015"/>
@@ -4396,7 +4393,7 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000059"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000205"/>
-            <Class IRI="#http://purl.obolibrary.org/obo/STATO_0000500"/>
+            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000500"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -5223,10 +5220,6 @@
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
             <Class IRI="http://purl.obolibrary.org/obo/STATO_0000193"/>
         </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000089"/>
-        <Class IRI="http://purl.obolibrary.org/obo/OBI_0500000"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000089"/>
@@ -7290,6 +7283,13 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000196"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000561"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000196"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
             <ObjectIntersectionOf>
                 <Class IRI="http://purl.obolibrary.org/obo/STATO_0000314"/>
                 <Class IRI="http://purl.obolibrary.org/obo/STATO_0000315"/>
@@ -7762,7 +7762,7 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000225"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000205"/>
-            <Class IRI="#http://purl.obolibrary.org/obo/STATO_0000500"/>
+            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000500"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -10914,7 +10914,7 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000438"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000205"/>
-            <Class IRI="#http://purl.obolibrary.org/obo/STATO_0000500"/>
+            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000500"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -11253,6 +11253,10 @@
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000458"/>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000455"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000459"/>
+        <Class IRI="http://purl.obolibrary.org/obo/OBI_0500000"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000460"/>
@@ -11915,6 +11919,42 @@
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0500000"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000500"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000027"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000500"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000219"/>
+            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000225"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000501"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000067"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000501"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000205"/>
+            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000435"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000501"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000205"/>
+            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000436"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000501"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000205"/>
+            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000500"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000502"/>
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0000011"/>
     </SubClassOf>
@@ -12454,14 +12494,14 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000571"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000299"/>
-            <Class IRI="#partial_least_squares_weight"/>
+            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000580"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000571"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000299"/>
-            <Class IRI="#variable_importance_in_projection"/>
+            <Class IRI="#partial_least_squares_weight"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -12544,6 +12584,10 @@
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000579"/>
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0200000"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000580"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000027"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000581"/>
@@ -12635,8 +12679,8 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="marker-derived-relationship_matrix"/>
-        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000586"/>
+        <Class IRI="http://purl.obolibrary.org/obo/OBI_0500000"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#partial_least_squares_weight"/>
@@ -12673,56 +12717,8 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000065"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#restricted_randomized_design"/>
-        <Class IRI="http://purl.obolibrary.org/obo/OBI_0500000"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#variable_importance_in_projection"/>
-        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000027"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#variance_component_estimate"/>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000144"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#http://purl.obolibrary.org/obo/STATO_0000500"/>
-        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000027"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#http://purl.obolibrary.org/obo/STATO_0000500"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000219"/>
-            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000225"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#http://purl.obolibrary.org/obo/STATO_0000501"/>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000067"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#http://purl.obolibrary.org/obo/STATO_0000501"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000205"/>
-            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000435"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#http://purl.obolibrary.org/obo/STATO_0000501"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000205"/>
-            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000436"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#http://purl.obolibrary.org/obo/STATO_0000501"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000205"/>
-            <Class IRI="#http://purl.obolibrary.org/obo/STATO_0000500"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.co-ode.org/ontologies/ont.owl#group_sequential_design"/>
-        <Class IRI="http://purl.obolibrary.org/obo/OBI_0500000"/>
     </SubClassOf>
     <DisjointClasses>
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0000115"/>
@@ -12857,6 +12853,10 @@
         </ObjectUnionOf>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000403"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000039"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000557"/>
         <Class IRI="http://purl.obolibrary.org/obo/IAO_0000030"/>
     </ObjectPropertyDomain>
@@ -12887,6 +12887,10 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000382"/>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000047"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000403"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000034"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000557"/>
@@ -28664,7 +28668,7 @@ https://businesswales.gov.wales/farmingconnect/posts/genomic-breeding-values</Li
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000349</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">spatial linear geometric anisotropic covariance structure is a type of covariance structure characterized by its anisotropy, i.e., the variation of properties can be different in directions x and y, which is this case give linear features.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -28719,7 +28723,7 @@ https://businesswales.gov.wales/farmingconnect/posts/genomic-breeding-values</Li
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000350</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">It is an anisotropic covariance structures, i.e., the variation properties can be different in directions x and y.</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">spatial spherical geometric anisotropic covariance structure is a type of covariance structure characterized by its anisotropy, i.e., the variation of properties can be different in directions x and y, which is this case give spherical features.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -28774,7 +28778,7 @@ https://businesswales.gov.wales/farmingconnect/posts/genomic-breeding-values</Li
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000351</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">spatial gaussian geometric anisotropic covariance structure is a type of covariance structure characterized by its anisotropy, i.e., the variation of properties can be different in directions x and y, which is this case give gaussian features.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -28829,7 +28833,7 @@ https://businesswales.gov.wales/farmingconnect/posts/genomic-breeding-values</Li
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000352</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">spatial exponential geometric anisotropic covariance structure is a type of covariance structure characterized by its anisotropy, i.e., the variation of properties can be different in directions x and y, which is this case give exponential features.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -28884,7 +28888,7 @@ https://businesswales.gov.wales/farmingconnect/posts/genomic-breeding-values</Li
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000353</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">spatial exponential anisotropic covariance structure is a type of covariance structure characterized by its anisotropy, i.e., the variation of properties can be different in directions x and y, which is this case give exponential features.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -31172,7 +31176,7 @@ last accessed: 2015-11-05</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000403</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">estimator of</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">estimate of</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -32547,11 +32551,6 @@ http://finzi.psych.upenn.edu/library/OutlierDM/html/rgrubbs.test.html
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Grubbs&apos; test</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://purl.obolibrary.org/obo/STATO_0000441</IRI>
-        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">test de Grubb</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000442</IRI>
         <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
@@ -33101,11 +33100,6 @@ The Bayesian counterparts of the confidence interval used in Frequentists Statis
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Bayesian credibility interval</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
-        <IRI>http://purl.obolibrary.org/obo/STATO_0000455</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">CR</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000455</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Adapted from Wikipedia:
@@ -33158,11 +33152,6 @@ last accessed: 2017-07-01</Literal>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000456</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Bayesian credibility interval at 95%</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
-        <IRI>http://purl.obolibrary.org/obo/STATO_0000456</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">CR</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
@@ -33269,6 +33258,36 @@ last accessed: 2017-07-01</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000458</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">99% credible interval</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000459</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000459</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">group sequential design is a study design used in clinical trial settings in which interim analyses of the data are conducted after groups of patients are recruited. After each interim analysis, the trial may stop early if the evidence so far shows the new treatment is particularly effective or ineffective. Such designs are ethical and cost-effective, and so are of great interest in practice.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000459</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000459</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">adapted from https://www.jstatsoft.org/article/view/v066i02/v66i02.pdf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000459</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">https://cran.r-project.org/web/packages/gsDesign/index.html</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000459</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">group sequential design</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
@@ -33707,7 +33726,7 @@ https://en.wikipedia.org/wiki/Mixed_model</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000471</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">a statistic estimator is a data item which is computed from a dataset to provide an approximated value (an estimator) for a statistical characteristic of a real population.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">a statistic estimator is a data item which is computed from a dataset to provide an approximated value (an estimator) for a statistical characteristic (a &apos;parameter&apos; of the true underlying distribution) of a real population.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -33857,7 +33876,7 @@ get_Lb_ddf(fm1, lme4::fixef(fm1))</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000475</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">a data transformation to determine the number of degree of freedom</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -34617,6 +34636,113 @@ https://www.rdocumentation.org/packages/sommer/versions/3.2/topics/augment</Lite
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000499</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">augmented experimental design</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000500</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000500</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">a probability distribution location parameter is a data item which is set by the operator when selecting a parametric probability distribution and which dictates the way the location but not the profile or size of the distribution plot looks like.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000116"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000500</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">https://github.com/ISA-tools/stato/issues/50</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000500</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000500</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">adapted from:
+https://docs.scipy.org/doc/scipy/reference/tutorial/stats.html#shifting-and-scaling</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000032"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000500</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000500</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000391"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000500</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">norm.stats(loc=3, scale=4, moments=&quot;mv&quot;), where loc is the location parameter indicated how much shift is given</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000500</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">probability distribution location parameter</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000501</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000501</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">the Weibull probability distribution is continuous probabibility distribution which is used to model time to fail, time to repair and material strength in material science. In biomedicine, the Weibull probability is used to in determining &apos;hazard functions&apos;. 
+
+The &apos;location parameter&apos; of the Weibull probability distribution can be used to define a failure-free zone.
+
+If the quantity X is a &quot;time-to-failure&quot;, the Weibull distribution gives a distribution for which the failure rate is proportional to a power of time. The shape parameter, k, is that power plus one, and so this parameter can be interpreted directly as follows:
+A value of {\displaystyle k&lt;1\,} {\displaystyle k&lt;1\,} indicates that the failure rate decreases over time. This happens if there is significant &quot;infant mortality&quot;, or defective items failing early and the failure rate decreasing over time as the defective items are weeded out of the population. In the context of the diffusion of innovations, this means negative word of mouth: the hazard function is a monotonically decreasing function of the proportion of adopters;
+A value of {\displaystyle k=1\,} {\displaystyle k=1\,} indicates that the failure rate is constant over time. This might suggest random external events are causing mortality, or failure. The Weibull distribution reduces to an exponential distribution;
+A value of {\displaystyle k&gt;1\,} {\displaystyle k&gt;1\,} indicates that the failure rate increases with time. This happens if there is an &quot;aging&quot; process, or parts that are more likely to fail as time goes on. In the context of the diffusion of innovations, this means positive word of mouth: the hazard function is a monotonically increasing function of the proportion of adopters. The function is first concave, then convex with an inflexion point at {\displaystyle (e^{1/k}-1)/e^{1/k},k&gt;1\,} {\displaystyle (e^{1/k}-1)/e^{1/k},k&gt;1\,}.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000501</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000501</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Weibull distribution</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000501</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">adapted from :
+https://en.wikipedia.org/wiki/Weibull_distribution
+and from
+http://www.engineeredsoftware.com/nasa/weibull.htm</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000032"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000501</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Weibull probability distribution</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000501</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">pweibull(q, shape, scale = 1, lower.tail = TRUE, log.p = FALSE)
+
+from:
+https://stat.ethz.ch/R-manual/R-devel/library/stats/html/Weibull.html</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000391"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000501</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">scipy.stats.weibull_min
+
+from:
+https://docs.scipy.org/doc/scipy-0.14.0/reference/generated/scipy.stats.weibull_min.html#scipy.stats.weibull_min</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000501</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Weibull probability distribution</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
@@ -37543,6 +37669,53 @@ https://www.rdocumentation.org/packages/pls/versions/2.6-0/topics/kernelpls.fit<
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000580</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000580</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">variable importance in projection is a measure computed as part of a partial least square regression  to accumulate the importance of each variable j being reflected by w from each component.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000116"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000580</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">term request from Ralf Weber and Gavin Lloyd, University of Birmingham</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000580</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000580</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">VIP</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000580</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">https://doi.org/10.1016/j.chemolab.2012.07.010
+
+and 
+
+S. Wold, E. Johansson, M. Cocchi
+PLS: Partial Least Squares Projections to Latent Structures, 3D QSAR in drug design, 1 (1993), pp. 523-550</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000580</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">vip(object)
+
+https://www.rdocumentation.org/packages/mixOmics/versions/6.3.2/topics/vip</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000580</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">variable importance in projection</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000581</IRI>
         <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
     </AnnotationAssertion>
@@ -37645,6 +37818,11 @@ ftp://tech.obihiro.ac.jp/suzuki/Henderson.pdf</Literal>
 Completely randomized designs differ from randomized complete block design and should not be confused as in the latter, a blocking variable is first use to assign experimental units to blocks. Then only, the members of each block are then randomly assigned to different treatment groups</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000116"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000583</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">term request by Hanna Cwiek, https://github.com/ISA-tools/stato/issues/61</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000583</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Philippe Rocca-Serra</Literal>
@@ -37735,34 +37913,34 @@ https://github.com/ISA-tools/stato/issues/68</Literal>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">degree of freedom calculation</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000586</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000586</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>marker-derived-relationship_matrix</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000586</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">a restricted randomized design is a kind of study design which uses randomization to allocate observation unit to treatment but where intuitively poor allocations of treatments to experimental units are avoided, while retaining the theoretical benefits of randomization. This is often the case when so-called &apos;hard to change&apos; factors are used in an experimental design.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>marker-derived-relationship_matrix</IRI>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000586</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Philippe Rocca-Serra</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
-        <IRI>marker-derived-relationship_matrix</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000032"/>
-        <IRI>marker-derived-relationship_matrix</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
-        <IRI>marker-derived-relationship_matrix</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000586</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">adapted from wikipedia</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>marker-derived-relationship_matrix</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">marker-derived relationship matrix</Literal>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000586</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">restricted randomized design</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -37815,218 +37993,9 @@ https://github.com/ISA-tools/stato/issues/68</Literal>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">response variable explained by random effect of predictor variable hypothesis</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
-        <IRI>#restricted_randomized_design</IRI>
-        <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>#restricted_randomized_design</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">a restricted randomized design is a kind of study design which uses randomization to allocate observation unit to treatment but where intuitively poor allocations of treatments to experimental units are avoided, while retaining the theoretical benefits of randomization. This is often the case when so-called &apos;hard to change&apos; factors are used in an experimental design.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#restricted_randomized_design</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Philippe Rocca-Serra</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
-        <IRI>#restricted_randomized_design</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">restricted randomized design</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#restricted_randomized_design</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">restricted randomized design</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
-        <IRI>#variable_importance_in_projection</IRI>
-        <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>#variable_importance_in_projection</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">variable importance in projection is a measure computed as part of a partial least square regression  to accumulate the importance of each variable j being reflected by w from each component.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000116"/>
-        <IRI>#variable_importance_in_projection</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">term request from Ralf Weber and Gavin Lloyd, University of Birmingham</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#variable_importance_in_projection</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Philippe Rocca-Serra</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
-        <IRI>#variable_importance_in_projection</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">VIP</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
-        <IRI>#variable_importance_in_projection</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">https://doi.org/10.1016/j.chemolab.2012.07.010
-
-and 
-
-S. Wold, E. Johansson, M. Cocchi
-PLS: Partial Least Squares Projections to Latent Structures, 3D QSAR in drug design, 1 (1993), pp. 523-550</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
-        <IRI>#variable_importance_in_projection</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">vip(object)
-
-https://www.rdocumentation.org/packages/mixOmics/versions/6.3.2/topics/vip</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#variable_importance_in_projection</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">variable importance in projection</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#variance_component_estimate</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">variance component estimate</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
-        <IRI>#http://purl.obolibrary.org/obo/STATO_0000500</IRI>
-        <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>#http://purl.obolibrary.org/obo/STATO_0000500</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">a probability distribution location parameter is a data item which is set by the operator when selecting a parametric probability distribution and which dictates the way the location but not the profile or size of the distribution plot looks like.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000116"/>
-        <IRI>#http://purl.obolibrary.org/obo/STATO_0000500</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">https://github.com/ISA-tools/stato/issues/50</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#http://purl.obolibrary.org/obo/STATO_0000500</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Philippe Rocca-Serra</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
-        <IRI>#http://purl.obolibrary.org/obo/STATO_0000500</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">adapted from:
-https://docs.scipy.org/doc/scipy/reference/tutorial/stats.html#shifting-and-scaling</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000032"/>
-        <IRI>#http://purl.obolibrary.org/obo/STATO_0000500</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
-        <IRI>#http://purl.obolibrary.org/obo/STATO_0000500</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000391"/>
-        <IRI>#http://purl.obolibrary.org/obo/STATO_0000500</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">norm.stats(loc=3, scale=4, moments=&quot;mv&quot;), where loc is the location parameter indicated how much shift is given</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#http://purl.obolibrary.org/obo/STATO_0000500</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">probability distribution location parameter</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
-        <IRI>#http://purl.obolibrary.org/obo/STATO_0000501</IRI>
-        <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>#http://purl.obolibrary.org/obo/STATO_0000501</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">the Weibull probability distribution is continuous probabibility distribution which is used to model time to fail, time to repair and material strength in material science. In biomedicine, the Weibull probability is used to in determining &apos;hazard functions&apos;. 
-
-The &apos;location parameter&apos; of the Weibull probability distribution can be used to define a failure-free zone.
-
-If the quantity X is a &quot;time-to-failure&quot;, the Weibull distribution gives a distribution for which the failure rate is proportional to a power of time. The shape parameter, k, is that power plus one, and so this parameter can be interpreted directly as follows:
-A value of {\displaystyle k&lt;1\,} {\displaystyle k&lt;1\,} indicates that the failure rate decreases over time. This happens if there is significant &quot;infant mortality&quot;, or defective items failing early and the failure rate decreasing over time as the defective items are weeded out of the population. In the context of the diffusion of innovations, this means negative word of mouth: the hazard function is a monotonically decreasing function of the proportion of adopters;
-A value of {\displaystyle k=1\,} {\displaystyle k=1\,} indicates that the failure rate is constant over time. This might suggest random external events are causing mortality, or failure. The Weibull distribution reduces to an exponential distribution;
-A value of {\displaystyle k&gt;1\,} {\displaystyle k&gt;1\,} indicates that the failure rate increases with time. This happens if there is an &quot;aging&quot; process, or parts that are more likely to fail as time goes on. In the context of the diffusion of innovations, this means positive word of mouth: the hazard function is a monotonically increasing function of the proportion of adopters. The function is first concave, then convex with an inflexion point at {\displaystyle (e^{1/k}-1)/e^{1/k},k&gt;1\,} {\displaystyle (e^{1/k}-1)/e^{1/k},k&gt;1\,}.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#http://purl.obolibrary.org/obo/STATO_0000501</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Philippe Rocca-Serra</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
-        <IRI>#http://purl.obolibrary.org/obo/STATO_0000501</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Weibull distribution</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
-        <IRI>#http://purl.obolibrary.org/obo/STATO_0000501</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">adapted from :
-https://en.wikipedia.org/wiki/Weibull_distribution
-and from
-http://www.engineeredsoftware.com/nasa/weibull.htm</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000032"/>
-        <IRI>#http://purl.obolibrary.org/obo/STATO_0000501</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Weibull probability distribution</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
-        <IRI>#http://purl.obolibrary.org/obo/STATO_0000501</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">pweibull(q, shape, scale = 1, lower.tail = TRUE, log.p = FALSE)
-
-from:
-https://stat.ethz.ch/R-manual/R-devel/library/stats/html/Weibull.html</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000391"/>
-        <IRI>#http://purl.obolibrary.org/obo/STATO_0000501</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">scipy.stats.weibull_min
-
-from:
-https://docs.scipy.org/doc/scipy-0.14.0/reference/generated/scipy.stats.weibull_min.html#scipy.stats.weibull_min</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#http://purl.obolibrary.org/obo/STATO_0000501</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Weibull probability distribution</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
-        <IRI>http://www.co-ode.org/ontologies/ont.owl#group_sequential_design</IRI>
-        <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>http://www.co-ode.org/ontologies/ont.owl#group_sequential_design</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">group sequential design is a study design used in clinical trial settings in which interim analyses of the data are conducted after groups of patients are recruited. After each interim analysis, the trial may stop early if the evidence so far shows the new treatment is particularly effective or ineffective. Such designs are ethical and cost-effective, and so are of great interest in practice. </Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>http://www.co-ode.org/ontologies/ont.owl#group_sequential_design</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Philippe Rocca-Serra</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
-        <IRI>http://www.co-ode.org/ontologies/ont.owl#group_sequential_design</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">adapted from https://www.jstatsoft.org/article/view/v066i02/v66i02.pdf</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
-        <IRI>http://www.co-ode.org/ontologies/ont.owl#group_sequential_design</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">https://cran.r-project.org/web/packages/gsDesign/index.html</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://www.co-ode.org/ontologies/ont.owl#group_sequential_design</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">group sequential design</Literal>
     </AnnotationAssertion>
     <SubAnnotationPropertyOf>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000032"/>
