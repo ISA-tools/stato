@@ -13750,7 +13750,7 @@ https://www.wolframalpha.com/input/?i=cartesian+coordinates&amp;lk=4&amp;num=6&a
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000013</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"> a 2 dimensional cartesian coordinate system is a cartesian coordinate system which defines 2 orthogonal one dimensional axes and which may be used to describe a 2 dimensional spatial region</Literal>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">a 2 dimensional cartesian coordinate system is a cartesian coordinate system which defines 2 orthogonal one dimensional axes and which may be used to describe a 2 dimensional spatial region.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -13972,7 +13972,7 @@ http://en.wikipedia.org/wiki/Wilks%27_lambda_distribution</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000019</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"> normal distribution hypothesis is a goodness of fit hypothesis stating that the distribution computed from the sample population fits a normal distribution</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">normal distribution hypothesis is a goodness of fit hypothesis stating that the distribution computed from the sample population fits a normal distribution.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -14174,7 +14174,7 @@ http://www.oxfordreference.com/view/10.1093/acref/9780199541454.001.0001/acref-9
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000024</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"> a three dimensional cartesian coordinate system is a cartesian coordinate system which defines 3 orthogonal one dimensional axes and which may be used to describe a 3 dimensional spatial region</Literal>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">a three dimensional cartesian coordinate system is a cartesian coordinate system which defines 3 orthogonal one dimensional axes and which may be used to describe a 3 dimensional spatial region.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -15517,8 +15517,7 @@ https://github.com/ISA-tools/stato/issues/39</Literal>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000055</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://www.ncbi.nlm.nih.gov/assembly/model/
 
-
- chrX:35,000,000-36,000,000. </Literal>
+ chrX:35,000,000-36,000,000.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
@@ -15528,7 +15527,7 @@ https://github.com/ISA-tools/stato/issues/39</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000055</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">chromosome coordinate system is a genomic coordinate which uses chromosome of a particular assembly build process to define start and end positions. This coordinate system is unstable and will change with each new genome sequence assembly build. </Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">chromosome coordinate system is a genomic coordinate which uses chromosome of a particular assembly build process to define start and end positions. This coordinate system is unstable and will change with each new genome sequence assembly build.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -16382,7 +16381,7 @@ https://github.com/scipy/scipy/blob/v0.15.1/scipy/stats/stats.py#L2485</Literal>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000074</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Cochran-Mantel-Haenzel test for repeated tests of independence is a statitiscal test which allows the comparison of two groups on a dichotomous/categorical response. It is used when the effect of the explanatory variable on the response variable is influenced by covariates that can be controlled. It is often used in observational studies where random assignment of subjects to different treatments cannot be controlled, but influencing covariates can.
-The null hypothesis is that the two nominal variables that are tested within each repetition are independent of each other. So there are 3 variables to consider: two categorical variables to be tested for independence of each other, and the third variable identifies the repeats. </Literal>
+The null hypothesis is that the two nominal variables that are tested within each repetition are independent of each other. So there are 3 variables to consider: two categorical variables to be tested for independence of each other, and the third variable identifies the repeats.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -17434,9 +17433,8 @@ https://github.com/scipy/scipy/blob/v0.15.1/scipy/stats/stats.py#L4103</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000094</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The Kruskal–Wallis test is a null hypothesis statistical testing objective which  allows multiple (n&gt;=2) groups (or conditions or treatments) to be compared, without making the assumption that values are normally distributed. The Kruskal–Wallis test is the non-parametric equivalent of the independent samples ANOVA
-
-The Kruskal–Wallis test is most commonly used when there is one nominal variable and one measurement variable, and the measurement variable does not meet the normality assumption of an anova. </Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The Kruskal–Wallis test is a null hypothesis statistical testing objective which  allows multiple (n&gt;=2) groups (or conditions or treatments) to be compared, without making the assumption that values are normally distributed. The Kruskal–Wallis test is the non-parametric equivalent of the independent samples ANOVA.
+The Kruskal–Wallis test is most commonly used when there is one nominal variable and one measurement variable, and the measurement variable does not meet the normality assumption of an anova.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -17461,7 +17459,7 @@ The Kruskal–Wallis test is most commonly used when there is one nominal variab
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000094</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">rank-sum test for the comparison of multiple (more than 2) samples</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">rank-sum test for the comparison of multiple (more than 2) samples.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
@@ -20122,7 +20120,7 @@ vioplot( x, ..., range=1.5, h, ylim, names, horizontal=FALSE,
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000155</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">meta-analysis is a data transformation which uses the effect size estimates from several independent quantitative scientific studies addressing the same question in order to assess finding consistency. </Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">meta-analysis is a data transformation which uses the effect size estimates from several independent quantitative scientific studies addressing the same question in order to assess finding consistency.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -20286,7 +20284,7 @@ last accessed: 2013-11-15</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000159</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Stacked bar chart is a bar which is used to compare overall quantities across items while showing the contribution of category to the total amount. Stacked bar chart can be used  for highlighting the total as they visually aggregate all of the categories in a group while indicating a part to whole relationship. The downside is that it becomes harder to compare the sizes of the individual categories. </Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Stacked bar chart is a bar which is used to compare overall quantities across items while showing the contribution of category to the total amount. Stacked bar chart can be used  for highlighting the total as they visually aggregate all of the categories in a group while indicating a part to whole relationship. The downside is that it becomes harder to compare the sizes of the individual categories.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -20334,7 +20332,7 @@ http://stat.ethz.ch/R-manual/R-patched/library/graphics/html/barplot.html</Liter
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000160</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The exponential distribution (a.k.a. negative exponential distribution) is the probability distribution that describes the time between events in a Poisson process, i.e. a process in which events occur continuously and independently at a constant average rate. It is the continuous analogue of the geometric distribution, and it has the key property of being memoryless. </Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The exponential distribution (a.k.a. negative exponential distribution) is the probability distribution that describes the time between events in a Poisson process, i.e. a process in which events occur continuously and independently at a constant average rate. It is the continuous analogue of the geometric distribution, and it has the key property of being memoryless.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -21300,7 +21298,7 @@ http://cran.r-project.org/web/packages/HardyWeinberg/index.html</Literal>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000182</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Odds ratio is a ratio that measures effect size, that is the strength of association between 2 dichotomous variables, one describing an exposure and one describing an outcome.
-It represents the odds that an outcome will occur given a particular exposure, compared to the odds of the outcome occurring in the absence of that exposure ( the probability of the event occuring divided by the probability of an event not occurring). The odds ratio is a ratio of describing the strength of association or non-independence between two binary data values by forming the ratio of the odds for the first group and the odds for the second group. Odds ratio are used when one wants to compare the odds of something occurring to two different groups. </Literal>
+It represents the odds that an outcome will occur given a particular exposure, compared to the odds of the outcome occurring in the absence of that exposure ( the probability of the event occuring divided by the probability of an event not occurring). The odds ratio is a ratio of describing the strength of association or non-independence between two binary data values by forming the ratio of the odds for the first group and the odds for the second group. Odds ratio are used when one wants to compare the odds of something occurring to two different groups.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -22070,8 +22068,7 @@ http://stat.ethz.ch/R-manual/R-patched/library/stats/html/mauchly.test.html</Lit
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000200</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">the statistical test power is data item which is about a statistical test and is obtained by subtracting the false negative rate (type II error rate) to 1.
-The power of a statistical test is the probability that it will correctly lead to the rejection of a false null hypothesis (Greene 2000). The statistical power is the ability of a test to detect an effect, if the effect actually exists (High 2000). </Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">the statistical test power is data item which is about a statistical test and is obtained by subtracting the false negative rate (type II error rate) to 1. The power of a statistical test is the probability that it will correctly lead to the rejection of a false null hypothesis (Greene 2000). The statistical power is the ability of a test to detect an effect, if the effect actually exists (High 2000).</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -23181,7 +23178,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000226</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">It is a testing objective to ensure the variances of the different groups used in a statistical test are similar (i.e. not too different). </Literal>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">It is a testing objective to ensure the variances of the different groups used in a statistical test are similar (i.e. not too different).</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -23675,7 +23672,7 @@ https://github.com/scipy/scipy/blob/v0.15.1/scipy/stats/stats.py#L951</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000237</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The standard deviation of a random variable, statistical population, data set, or probability distribution is a measure of variation which correspond to the average distance from the mean of the data set to any given point of that dataset. It also corresponds to the square root of its variance. </Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The standard deviation of a random variable, statistical population, data set, or probability distribution is a measure of variation which correspond to the average distance from the mean of the data set to any given point of that dataset. It also corresponds to the square root of its variance.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -23982,7 +23979,7 @@ last accessed: 18-11-2013</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000243</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">a box plot is a graph which plots datasets relying on their quartiles and the interquartile range to create the box and the whiskers </Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">a box plot is a graph which plots datasets relying on their quartiles and the interquartile range to create the box and the whiskers.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -25832,9 +25829,7 @@ https://github.com/scipy/scipy/blob/v0.15.1/scipy/stats/stats.py#L2427</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000283</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">negative binomial probability distribution is a discrete probability distribution of the number of successes in a sequence of Bernoulli trials before a specified (non-random) number of failures (denoted r) occur.
-
-The negative binomial distribution, also known as the Pascal distribution or Pólya distribution, gives the probability of  r-1 successes and x  failures in x+r-1 trials, and success on the (x+r)th trial. </Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">negative binomial probability distribution is a discrete probability distribution of the number of successes in a sequence of Bernoulli trials before a specified (non-random) number of failures (denoted r) occur. The negative binomial distribution, also known as the Pascal distribution or Pólya distribution, gives the probability of  r-1 successes and x  failures in x+r-1 trials, and success on the (x+r)th trial.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -26006,7 +26001,7 @@ http://stat.ethz.ch/R-manual/R-patched/library/stats/html/Hypergeometric.html</L
         <IRI>http://purl.obolibrary.org/obo/STATO_0000286</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">a one-tailed test is a statistical test which, assuming an unskewed probability distribution, allocates all of the significance level to evaluate only one hypothesis to explain a difference.
 The one-tailed test provides more power to detect an effect in one direction by not testing the effect in the other direction.
-one-tailed test should be preceded by two-tailed test in order to avoid missing out on detecting alternate effect explaining an observed difference. </Literal>
+one-tailed test should be preceded by two-tailed test in order to avoid missing out on detecting alternate effect explaining an observed difference.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000116"/>
@@ -27729,7 +27724,7 @@ http://blog.stata.com/tag/cohens-d/
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000322</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">a contrast weight is a coefficient which multiplies a group mean, part of a linear combinaison defining a constrast as a weighted sum of group means, giving a &apos;weight&apos; to a specific group mean hence the name. </Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">a contrast weight is a coefficient which multiplies a group mean, part of a linear combinaison defining a constrast as a weighted sum of group means, giving a &apos;weight&apos; to a specific group mean hence the name.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -27933,7 +27928,7 @@ https://stat.ethz.ch/R-manual/R-devel/library/stats/html/AIC.html</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000326</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">corrected Akaike information criteria is a modified version of the Akaike information criterion </Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">corrected Akaike information criteria is a modified version of the Akaike information criterion.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -27979,7 +27974,7 @@ https://stat.ethz.ch/R-manual/R-devel/library/stats/html/AIC.html</Literal>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000327</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Bayesian information criterion or Schwartz&apos;s Bayesian information criterion is a criterion for model selection among a finite set of models. It is based, in part, on the likelihood function and it is closely related to the Akaike information criterion (AIC).
-Given any two estimated models, the model with the lower value of BIC is the one to be preferred. The BIC is an increasing function of sigma_e^2 and an increasing function of k. That is, unexplained variation in the dependent variable and the number of explanatory variables increase the value of BIC. Hence, lower BIC implies either fewer explanatory variables, better fit, or both. </Literal>
+Given any two estimated models, the model with the lower value of BIC is the one to be preferred. The BIC is an increasing function of sigma_e^2 and an increasing function of k. That is, unexplained variation in the dependent variable and the number of explanatory variables increase the value of BIC. Hence, lower BIC implies either fewer explanatory variables, better fit, or both.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -30236,7 +30231,7 @@ Spiegelhalter, D. J., N. G. Best, B. P. Carlin, and A. van der Linde, 2002. Baye
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000379</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The focused information criterion is a measurement data item which aims at facilitating model selection. It was published in 2003 by Claeskens, G. and Hjort, N.L. (2003). &quot;The focused information criterion&quot;. Journal of the American Statistical Association, volume 98, pp. 879–899. doi:10.1198/016214503000000819</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The focused information criterion is a measurement data item which aims at facilitating model selection. It was published in 2003 by Claeskens, G. and Hjort, N.L. (2003). &quot;The focused information criterion&quot;.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -30256,7 +30251,7 @@ Spiegelhalter, D. J., N. G. Best, B. P. Carlin, and A. van der Linde, 2002. Baye
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000379</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"> Journal of the American Statistical Association, volume 98, pp. 879–899. doi:10.1198/016214503000000819</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Journal of the American Statistical Association, volume 98, pp. 879–899. doi:10.1198/016214503000000819</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000032"/>
@@ -30822,7 +30817,7 @@ https://cran.r-project.org/web/packages/VGAM/VGAM.pdf</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000112"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000396</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The geometric mean of two numbers, say 2 and 8, is just the square root of their product; that is sqrt(2 x 8)=4</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The geometric mean of two numbers, say 2 and 8, is just the square root of their product; that is sqrt(2 x 8)=4.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
@@ -30832,7 +30827,7 @@ https://cran.r-project.org/web/packages/VGAM/VGAM.pdf</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000396</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"> The geometric mean is defined as the nth root of the product of n numbers, i.e., for a set of numbers \{x_i\}_{i=1}^N, the geometric mean is defined as \left(\prod_{i=1}^N x_i\right)^{1/N}.</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The geometric mean is defined as the nth root of the product of n numbers, i.e., for a set of numbers \{x_i\}_{i=1}^N, the geometric mean is defined as \left(\prod_{i=1}^N x_i\right)^{1/N}.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -30852,9 +30847,8 @@ https://cran.r-project.org/web/packages/VGAM/VGAM.pdf</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000396</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">https://en.wikipedia.org/wiki/Mean#Geometric_mean_.28GM.29
-
-
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">adapted from:
+https://en.wikipedia.org/wiki/Mean#Geometric_mean_.28GM.29
 https://en.wikipedia.org/wiki/Geometric_mean</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -31586,9 +31580,9 @@ last accessed: May 2016</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000419</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"> Cochran WG. The combination of estimates from different experiments. Biometrics 1954;10: 101-29.
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Cochran WG. The combination of estimates from different experiments. Biometrics 1954;10: 101-29.
 
-10.2307/3001666</Literal>
+https://doi.org/10.2307/3001666</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
@@ -31654,7 +31648,7 @@ http://www.statsdirect.com/help/default.htm#meta_analysis/heterogeneity.htm</Lit
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000421</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"> Tau-squared is an estimate of the between-study variance in a random-effects meta-analysis. The square root of this number (i.e. tau) is the estimated standard deviation of underlying effects across studies.</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Tau-squared is an estimate of the between-study variance in a random-effects meta-analysis. The square root of this number (i.e. tau) is the estimated standard deviation of underlying effects across studies.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -32490,7 +32484,7 @@ https://stat.ethz.ch/R-manual/R-devel/library/stats/html/Lognormal.html</Literal
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000440</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Robert B. Dean and Wilfrid J. Dixon (1951) &quot;Simplified Statistics for Small Numbers of Observations&quot;. Anal. Chem., 1951, 23 (4), 636–638. </Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Robert B. Dean and Wilfrid J. Dixon (1951) &quot;Simplified Statistics for Small Numbers of Observations&quot;. Anal. Chem., 1951, 23 (4), 636–638.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
@@ -32552,9 +32546,7 @@ last accessed: 2016-11-19</Literal>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">rgrubbs.test(x, alpha = 0.05)
 
 from:
-http://finzi.psych.upenn.edu/library/OutlierDM/html/rgrubbs.test.html
-
-</Literal>
+http://finzi.psych.upenn.edu/library/OutlierDM/html/rgrubbs.test.html</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -33235,7 +33227,7 @@ last accessed: 2017-07-01</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000458</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">In Bayesian statistics context, a 99% credible interval is a credible interval which,given the data, includes the true parameter  with probability of 99%.</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">In Bayesian statistics context, a 99% credible interval is a credible interval which, given the data, includes the true parameter  with probability of 99%.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -33245,7 +33237,7 @@ last accessed: 2017-07-01</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000458</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"> Bayesian credible interval at 99%</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Bayesian credible interval at 99%</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
@@ -33254,16 +33246,6 @@ last accessed: 2017-07-01</Literal>
 https://en.wikipedia.org/wiki/Credible_interval
 
 last accessed: 2017-07-01</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
-        <IRI>http://purl.obolibrary.org/obo/STATO_0000458</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000391"/>
-        <IRI>http://purl.obolibrary.org/obo/STATO_0000458</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -34301,12 +34283,9 @@ http://www.rforge.net/doc/packages/FSA/dunnTest.html</Literal>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000491</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Conover-Iman test for stochastic dominance is a stastical test for multiple group comparisons and reports the results among multiple pairwise comparisons after a Kruskal-Wallis test for stochastic dominance among k groups (Kruskal and Wallis, 1952). The interpretation of stochastic dominance requires an assumption that the CDF of one group does not cross the CDF of the other. 
-
 The null hypothesis for each pairwise comparison is that the probability of observing a randomly selected value from the first group that is larger than a randomly selected value from the second group equals one half; this null hypothesis corresponds to that of the Wilcoxon-Mann-Whitney rank-sum test.
-
 Like the rank-sum test, if the data can be assumed to be continuous, and the distributions are assumed identical except for a difference in location, Conover-Iman test may be understood as a test for median difference. conover.test accounts for tied ranks.
-
-The Conover-Iman test is strictly valid if and only if the corresponding Kruskal-Wallis null hypothesis is rejected</Literal>
+The Conover-Iman test is strictly valid if and only if the corresponding Kruskal-Wallis null hypothesis is rejected.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -34316,8 +34295,7 @@ The Conover-Iman test is strictly valid if and only if the corresponding Kruskal
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000491</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Conover, W. J. and Iman, R. L. (1979). On multiple-comparisons procedures. Technical Report LA-7677-MS, Los Alamos Scientific Laboratory.
-        </Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Conover, W. J. and Iman, R. L. (1979). On multiple-comparisons procedures. Technical Report LA-7677-MS, Los Alamos Scientific Laboratory.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
