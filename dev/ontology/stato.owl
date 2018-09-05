@@ -177,9 +177,6 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000220"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000341"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000111"/>
     </Declaration>
     <Declaration>
@@ -1699,6 +1696,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000530"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000542"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000312"/>
@@ -3601,10 +3601,6 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000020"/>
-        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000402"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000020"/>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000026"/>
     </SubClassOf>
     <SubClassOf>
@@ -3664,10 +3660,6 @@
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
             <Class IRI="http://purl.obolibrary.org/obo/BFO_0000028"/>
         </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000025"/>
-        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000401"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000025"/>
@@ -9956,14 +9948,6 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000341"/>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000485"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000341"/>
-        <Class IRI="#variance_component_estimate"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000342"/>
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0200166"/>
     </SubClassOf>
@@ -10053,11 +10037,11 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000359"/>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000346"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000361"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000360"/>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000346"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000361"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000361"/>
@@ -12192,6 +12176,10 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000107"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000542"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000485"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000544"/>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000184"/>
     </SubClassOf>
@@ -12278,7 +12266,7 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000546"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000299"/>
-            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000341"/>
+            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000542"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -20035,7 +20023,7 @@ For example, doses of a treatment can be ordered as &apos;low&apos;, &apos;mediu
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000153</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Hotelling&apos;s T2 test is a statistical test which is a generalization of Student&apos;s T-test to a assess if the means of a set of variables remains unchanged when studying 2 populations. It is a type of multivariate analysis</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The one-sample Hotelling’s T2 is the multivariate extension of the common one-sample or paired Student’s t-test. In a one-sample t-test, the mean response is compared against a specific value. Hotelling’s one-sample T2 is used when the number of response variables is two or more, although it can be used when there is only one response variable. T2 makes the usual assumption that the data are approximately multivariate normal. Randomization tests are provided that do not rely on this assumption. These randomization tests should be used whenever you want exact results that do not rely on several assumptions.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -20055,7 +20043,9 @@ For example, doses of a treatment can be ordered as &apos;low&apos;, &apos;mediu
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000153</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">STATO</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">adapted from:
+
+https://ncss-wpengine.netdna-ssl.com/wp-content/themes/ncss/pdf/Procedures/NCSS/Hotellings_One-Sample_T2.pdf</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000032"/>
@@ -21127,7 +21117,7 @@ rbeta(n, shape1, shape2, ncp = 0)</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000178</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Kurtosis is a data item which denotes the degree of peakedness of a distribution. It is defined as a normalized form of the fourth central moment of a distribution. </Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Kurtosis is a data item which denotes the degree of peakedness of a distribution. It is defined as a normalized form of the fourth central moment of a distribution.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -22562,7 +22552,7 @@ The metric has been enhanced and replaced by FPKM to better take into account sp
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000211</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">odds ratio homogeneity hypothesis is a null hypothesis stating that all odds ratio are homogenous, that is remain within the same range </Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">odds ratio homogeneity hypothesis is a null hypothesis stating that all odds ratio are homogenous, that is remain within the same range.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -28486,42 +28476,6 @@ ftp://tech.obihiro.ac.jp/suzuki/Henderson.pdf</Literal>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">breeding value estimation using phenotypic data</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
-        <IRI>http://purl.obolibrary.org/obo/STATO_0000341</IRI>
-        <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>http://purl.obolibrary.org/obo/STATO_0000341</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">genomic estimated breeding value (GEBV) is an estimated breeding value derived from information in an organism DNA (genotype). GEBV is calculated differently to conventional Estimated Breeding Values using advanced modeling technique to deal with high dimensionality data.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>http://purl.obolibrary.org/obo/STATO_0000341</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>http://purl.obolibrary.org/obo/STATO_0000341</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Philippe Rocca-Serra</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
-        <IRI>http://purl.obolibrary.org/obo/STATO_0000341</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">adapted from:
-https://businesswales.gov.wales/farmingconnect/posts/genomic-breeding-values</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000032"/>
-        <IRI>http://purl.obolibrary.org/obo/STATO_0000341</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">GEBV</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://purl.obolibrary.org/obo/STATO_0000341</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">genomic estimated breeding value</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000342</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Philippe Rocca-Serra</Literal>
@@ -29262,7 +29216,8 @@ Huynh and Feldt 1970</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000359</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">factor-analytic structure is a covariance structure which is specified for q factors </Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">factor-analytic structure is a covariance structure which is specified for q factors 
+equal diagonal factor-analytic covariance structure is a type of factor analytic covariance structure specified for q factors, which includes a diagonal component for repeated measures.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -29312,7 +29267,7 @@ Huynh and Feldt 1970</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000360</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">factor-analytic structure is a covariance structure which is specified for q factors </Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">no diagonal factor-analytic covariance structure is a type of factor analytic covariance structure specified for q factors, which does not include a diagonal component for repeated measures.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -29367,7 +29322,7 @@ Huynh and Feldt 1970</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000361</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">factor-analytic structure is a covariance structure which is specified for q factors </Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">factor-analytic structure is a type of heterogeneous covariance structure which is specified for q factors</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -29397,11 +29352,17 @@ Huynh and Feldt 1970</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000361</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://support.sas.com/documentation/cdl/en/statug/63033/HTML/default/viewer.htm#statug_mixed_sect019.htm
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">adapted from:
+Heterogeneous Variance: Covariance Structures for Repeated Measures
+Russell D. Wolfinger. Journal of Agricultural, Biological, and Environmental Statistics
+Vol. 1, No. 2 (Jun., 1996), pp. 205-230.
+https://doi.org/10.2307/1400366
 
-Jennrich and Schluchter 1986
+and 
 
-</Literal>
+http://support.sas.com/documentation/cdl/en/statug/63033/HTML/default/viewer.htm#statug_mixed_sect019.htm
+
+Jennrich and Schluchter 1986</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000032"/>
@@ -29536,7 +29497,7 @@ Jennrich and Schluchter 1986
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000364</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">first order autoregressive moving average covariance structure is a type of covariance structure which is used in the context of time series analysis</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -33881,7 +33842,7 @@ get_Lb_ddf(fm1, lme4::fixef(fm1))</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000474</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Satterthwaite degree of freedom approximation is a type of degree of freedom approximation which is used to estimate an “effective degrees of freedom” for a probability distribution formed from several independent normal distributions where only estimates of the variance are known. It was originally developed by statistician Franklin E. Satterthwaite.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -33906,7 +33867,7 @@ get_Lb_ddf(fm1, lme4::fixef(fm1))</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000474</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Satterthwaite, F. E. (1946), &quot;An Approximate Distribution of Estimates of Variance Components.&quot;, Biometrics Bulletin, 2: 110–114, doi:10.2307/3002019</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000032"/>
@@ -36173,7 +36134,7 @@ Hastings, W.K. (1970). &quot;Monte Carlo Sampling Methods Using Markov Chains an
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000539</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">a continuous multivariate probability distribution is a continuous probability distribution which describes the possible values, and corresponding probabilities, of two or more (usually three or more) associated random variables.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">a discrete multivariate probability distribution is a discrete probability distribution which describes the possible values, and corresponding probabilities, of two or more (usually three or more) associated random variables.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -36269,6 +36230,42 @@ Hastings, W.K. (1970). &quot;Monte Carlo Sampling Methods Using Markov Chains an
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000541</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">state space model</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000542</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000542</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">genomic estimated breeding value (GEBV) is an estimated breeding value derived from information in an organism DNA (genotype). GEBV is calculated differently to conventional Estimated Breeding Values using advanced modeling technique to deal with high dimensionality data.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000542</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000542</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000542</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">adapted from:
+https://businesswales.gov.wales/farmingconnect/posts/genomic-breeding-values</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000032"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000542</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">GEBV</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000542</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">genomic estimated breeding value</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
