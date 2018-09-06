@@ -74,6 +74,10 @@
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Nolan Nichols (http://orcid.org/0000-0003-1099-3328)</Literal>
     </Annotation>
     <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/contributor"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Hanna Cwiek (https://orcid.org/0000-0001-9113-567X)</Literal>
+    </Annotation>
+    <Annotation>
         <AnnotationProperty IRI="http://usefulinc.com/ns/doap#bug-database"/>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">https://github.com/ISA-tools/stato/issues</Literal>
     </Annotation>
@@ -3608,6 +3612,19 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000196"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000021"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            <ObjectIntersectionOf>
+                <Class IRI="http://purl.obolibrary.org/obo/STATO_0000561"/>
+                <DataHasValue>
+                    <DataProperty IRI="http://purl.obolibrary.org/obo/OBI_0002135"/>
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">90</Literal>
+                </DataHasValue>
+            </ObjectIntersectionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000022"/>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000009"/>
     </SubClassOf>
@@ -6034,6 +6051,19 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000196"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000127"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            <ObjectIntersectionOf>
+                <Class IRI="http://purl.obolibrary.org/obo/STATO_0000561"/>
+                <DataHasValue>
+                    <DataProperty IRI="http://purl.obolibrary.org/obo/OBI_0002135"/>
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">99</Literal>
+                </DataHasValue>
+            </ObjectIntersectionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000128"/>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000243"/>
     </SubClassOf>
@@ -7479,6 +7509,19 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000196"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000214"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            <ObjectIntersectionOf>
+                <Class IRI="http://purl.obolibrary.org/obo/STATO_0000561"/>
+                <DataHasValue>
+                    <DataProperty IRI="http://purl.obolibrary.org/obo/OBI_0002135"/>
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">50</Literal>
+                </DataHasValue>
+            </ObjectIntersectionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000215"/>
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0200102"/>
     </SubClassOf>
@@ -7802,6 +7845,19 @@
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000231"/>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000196"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000231"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            <ObjectIntersectionOf>
+                <Class IRI="http://purl.obolibrary.org/obo/STATO_0000561"/>
+                <DataHasValue>
+                    <DataProperty IRI="http://purl.obolibrary.org/obo/OBI_0002135"/>
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">95</Literal>
+                </DataHasValue>
+            </ObjectIntersectionOf>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000232"/>
@@ -33731,9 +33787,24 @@ https://en.wikipedia.org/wiki/Mixed_model</Literal>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">model error term</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000471</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000471</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">a statistic estimator is a data item which is computed from a dataset to provide an approximated value (an estimator) for a statistical characteristic (a &apos;parameter&apos; of the true underlying distribution) of a real population.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">a statistic estimator is a data item which is computed from a dataset to provide an approximated value (an estimator) for a &apos;statistical parameter&apos;  (a &apos;characteristics/parameter&apos; of the true underlying distribution) of a real population.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000116"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000471</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Hanna Cwiek</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000116"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000471</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Tom Nichols</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -33743,7 +33814,7 @@ https://en.wikipedia.org/wiki/Mixed_model</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000471</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">STATO</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
