@@ -20,8 +20,10 @@
         <dc:title>STATO: the statistical methods ontology</dc:title>
         <dc:contributor>Camille Maumet (http://orcid.org/0000-0002-6290-553X)</dc:contributor>
         <dc:description>STATO is the statistical methods ontology. It contains concepts and properties related to statistical methods, probability distributions and other concepts related to statistical analysis, including relationships to study designs and plots.</dc:description>
+        <dc:contributor>Gavin Lloyd</dc:contributor>
         <doap:mailing-list>stat-ontology@googlegroups.com</doap:mailing-list>
         <dc:rights rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">This Ontology is distributed under a Creative Commons Attribution License </dc:rights>
+        <dc:contributor>Guillaume Bauchet</dc:contributor>
         <owl:versionInfo>RC1.4</owl:versionInfo>
         <terms:license rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://creativecommons.org/licenses/by/3.0/</terms:license>
         <dc:creator>Philippe Rocca-Serra (http://orcid.org/0000-0001-9853-5668)</dc:creator>
@@ -32,6 +34,7 @@
         <dc:contributor>Nolan Nichols (http://orcid.org/0000-0003-1099-3328)</dc:contributor>
         <dc:contributor>Hanna Cwiek (https://orcid.org/0000-0001-9113-567X)</dc:contributor>
         <doap:bug-database>https://github.com/ISA-tools/stato/issues</doap:bug-database>
+        <dc:contributor>Ralf Weber</dc:contributor>
     </owl:Ontology>
     
 

@@ -34,12 +34,20 @@
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">STATO is the statistical methods ontology. It contains concepts and properties related to statistical methods, probability distributions and other concepts related to statistical analysis, including relationships to study designs and plots.</Literal>
     </Annotation>
     <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/contributor"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Gavin Lloyd</Literal>
+    </Annotation>
+    <Annotation>
         <AnnotationProperty IRI="http://usefulinc.com/ns/doap#mailing-list"/>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">stat-ontology@googlegroups.com</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/rights"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">This Ontology is distributed under a Creative Commons Attribution License </Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/contributor"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Guillaume Bauchet</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
@@ -80,6 +88,10 @@
     <Annotation>
         <AnnotationProperty IRI="http://usefulinc.com/ns/doap#bug-database"/>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">https://github.com/ISA-tools/stato/issues</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/contributor"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Ralf Weber</Literal>
     </Annotation>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0000889"/>
