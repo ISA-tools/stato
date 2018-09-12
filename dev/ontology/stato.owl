@@ -364,9 +364,6 @@
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0000626"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#partial_least_squares_weight"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000440"/>
     </Declaration>
     <Declaration>
@@ -614,9 +611,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0000984"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#is_model_for"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000580"/>
@@ -1054,6 +1048,9 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000085"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000476"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000097"/>
     </Declaration>
     <Declaration>
@@ -1399,6 +1396,9 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000095"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000341"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/BFO_0000009"/>
     </Declaration>
     <Declaration>
@@ -1624,9 +1624,6 @@
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0000010"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#is_modeled_by"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000500"/>
     </Declaration>
     <Declaration>
@@ -1667,9 +1664,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000091"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#pedigree_data_set"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/BFO_0000006"/>
@@ -2053,6 +2047,9 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000586"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000477"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000138"/>
     </Declaration>
     <Declaration>
@@ -2138,6 +2135,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000127"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000478"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000369"/>
@@ -5100,7 +5100,7 @@
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000082"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#is_model_for"/>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000341"/>
             <ObjectUnionOf>
                 <Class IRI="http://purl.obolibrary.org/obo/OBI_0000751"/>
                 <ObjectIntersectionOf>
@@ -5700,7 +5700,7 @@
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000099"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#is_model_for"/>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000341"/>
             <ObjectUnionOf>
                 <Class IRI="http://purl.obolibrary.org/obo/OBI_0000751"/>
                 <ObjectIntersectionOf>
@@ -5815,7 +5815,7 @@
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000107"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#is_model_for"/>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000341"/>
             <Class IRI="http://purl.obolibrary.org/obo/OBI_0000751"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
@@ -9950,7 +9950,7 @@
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
             <ObjectUnionOf>
                 <Class IRI="http://purl.obolibrary.org/obo/STATO_0000343"/>
-                <Class IRI="#pedigree_data_set"/>
+                <Class IRI="http://purl.obolibrary.org/obo/STATO_0000478"/>
             </ObjectUnionOf>
         </ObjectSomeValuesFrom>
     </SubClassOf>
@@ -10001,7 +10001,7 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000339"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
-            <Class IRI="#pedigree_data_set"/>
+            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000478"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -10051,7 +10051,7 @@
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000346"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#is_model_for"/>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000341"/>
             <Class IRI="http://purl.obolibrary.org/obo/STATO_0000301"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
@@ -11451,7 +11451,7 @@
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000467"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#is_modeled_by"/>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000476"/>
             <Class IRI="http://purl.obolibrary.org/obo/STATO_0000346"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
@@ -11525,7 +11525,7 @@
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000470"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#is_modeled_by"/>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000476"/>
             <Class IRI="http://purl.obolibrary.org/obo/STATO_0000346"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
@@ -11555,6 +11555,28 @@
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000475"/>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000472"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000477"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000027"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000477"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000295"/>
+            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000572"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000478"/>
+        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000100"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000478"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
+            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000257"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000480"/>
@@ -12567,6 +12589,13 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000571"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000299"/>
+            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000477"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000571"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000299"/>
             <Class IRI="http://purl.obolibrary.org/obo/STATO_0000565"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
@@ -12596,13 +12625,6 @@
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000299"/>
             <Class IRI="http://purl.obolibrary.org/obo/STATO_0000580"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000571"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000299"/>
-            <Class IRI="#partial_least_squares_weight"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -12799,28 +12821,6 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000346"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#partial_least_squares_weight"/>
-        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000027"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#partial_least_squares_weight"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000295"/>
-            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000572"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#pedigree_data_set"/>
-        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000100"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#pedigree_data_set"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
-            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000257"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#response_variable_explained_by_fixed_effect_hypothesis"/>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000065"/>
     </SubClassOf>
@@ -12920,12 +12920,12 @@
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000557"/>
-        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000476"/>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="#is_modeled_by"/>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000557"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <InverseObjectProperties>
         <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000219"/>
@@ -12944,12 +12944,16 @@
         <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000115"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="#is_model_for"/>
-        <ObjectProperty IRI="#is_modeled_by"/>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000341"/>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000476"/>
     </InverseObjectProperties>
     <AsymmetricObjectProperty>
         <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000101"/>
     </AsymmetricObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000341"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000107"/>
+    </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000344"/>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000258"/>
@@ -12980,17 +12984,17 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000039"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000476"/>
+        <Class IRI="http://purl.obolibrary.org/obo/OBI_0000751"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000557"/>
         <Class IRI="http://purl.obolibrary.org/obo/IAO_0000030"/>
     </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#is_model_for"/>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000107"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#is_modeled_by"/>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000341"/>
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0000751"/>
-    </ObjectPropertyDomain>
+    </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000344"/>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000258"/>
@@ -13016,16 +13020,12 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000034"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000476"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000107"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000557"/>
         <Class IRI="http://purl.obolibrary.org/obo/IAO_0000030"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#is_model_for"/>
-        <Class IRI="http://purl.obolibrary.org/obo/OBI_0000751"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#is_modeled_by"/>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000107"/>
     </ObjectPropertyRange>
     <SubObjectPropertyOf>
         <ObjectPropertyChain>
@@ -28660,6 +28660,21 @@ ftp://tech.obihiro.ac.jp/suzuki/Henderson.pdf</Literal>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">breeding value estimation using phenotypic data</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000341</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000341</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000341</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">is model for</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000342</IRI>
         <IRI>http://purl.obolibrary.org/obo/IAO_0000123</IRI>
@@ -34286,6 +34301,76 @@ get_Lb_ddf(fm1, lme4::fixef(fm1))</Literal>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">between-within denominator degrees of freedom approximation</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000476</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000476</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000476</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">is modeled by</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000477</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000477</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">PLS weight (or Partial Least Square weight) is a information content entity which is generated when performing a Partial Least Square analysis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000116"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000477</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">term request from Ralf Weber and Gavin Lloyd, University of Birmingham</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000477</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000477</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000477</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">PLS weight</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000478</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000123</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000478</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">a dataset which is made up of pedigree information, that is presenting ancestry or lineage information in a set of individuals of an organism.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000478</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000478</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000478</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">pedigree data set</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000480</IRI>
         <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
@@ -38524,61 +38609,6 @@ https://stats.stackexchange.com/questions/31908/what-is-percentage-of-variance-i
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">scaled identity covariance structure</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#is_model_for</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">is model for</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#is_modeled_by</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">is modeled by</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
-        <IRI>#partial_least_squares_weight</IRI>
-        <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>#partial_least_squares_weight</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">PLS weight is a information content entity which is generated when performing a Partial Least Square analysis</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000116"/>
-        <IRI>#partial_least_squares_weight</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">term request from Ralf Weber and Gavin Lloyd, University of Birmingham</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#partial_least_squares_weight</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Philippe Rocca-Serra</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#partial_least_squares_weight</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">PLS weight</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
-        <IRI>#pedigree_data_set</IRI>
-        <IRI>http://purl.obolibrary.org/obo/IAO_0000123</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>#pedigree_data_set</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">a dataset which is made up of pedigree information, that is presenting ancestry or lineage information in a set of individuals of an organism.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
-        <IRI>#pedigree_data_set</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Philippe Rocca-Serra</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#pedigree_data_set</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">pedigree data set</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
         <IRI>#response_variable_explained_by_fixed_effect_hypothesis</IRI>
         <IRI>http://purl.obolibrary.org/obo/IAO_0000123</IRI>
@@ -38679,5 +38709,5 @@ https://stats.stackexchange.com/questions/31908/what-is-percentage-of-variance-i
 
 
 
-<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
 
