@@ -23,6 +23,9 @@
         <Class IRI="#response_variable_explained_by_fixed_effect_hypothesis"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#variance_component_estimate"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#response_variable_explained_by_random_effect_hypothesis"/>
     </Declaration>
     <Declaration>
@@ -151,6 +154,10 @@
         <Class IRI="#response_variable_explained_by_random_effect_hypothesis"/>
         <Class abbreviatedIRI="obo:STATO_0000065"/>
     </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#variance_component_estimate"/>
+        <Class abbreviatedIRI="obo:STATO_0000144"/>
+    </SubClassOf>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000114"/>
         <IRI>#response_variable_explained_by_fixed_effect_hypothesis</IRI>
@@ -225,6 +232,16 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#response_variable_explained_by_random_effect_hypothesis</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">response variable explained by random effect of predictor variable hypothesis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000114"/>
+        <IRI>#variance_component_estimate</IRI>
+        <AbbreviatedIRI>obo:IAO_0000123</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#variance_component_estimate</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">variance component estimate</Literal>
     </AnnotationAssertion>
 </Ontology>
 
