@@ -13544,11 +13544,6 @@ change of label from &apos;regression analysis method&apos; to &apos;regression 
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://en.wikipedia.org/wiki/Cartesian_coordinate_system</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000032"/>
-        <IRI>http://purl.obolibrary.org/obo/STATO_0000009</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000009</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">cartesian coordinate system</Literal>
@@ -13582,11 +13577,6 @@ change of label from &apos;regression analysis method&apos; to &apos;regression 
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000010</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://en.wikipedia.org/wiki/Coordinate_system</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000032"/>
-        <IRI>http://purl.obolibrary.org/obo/STATO_0000010</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -13736,11 +13726,6 @@ https://www.wolframalpha.com/input/?i=cartesian+coordinates&amp;lk=4&amp;num=6&a
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">https://en.wikipedia.org/wiki/Spherical_coordinate_system</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000032"/>
-        <IRI>http://purl.obolibrary.org/obo/STATO_0000014</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000014</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">spherical coordinate system</Literal>
@@ -13776,11 +13761,6 @@ https://www.wolframalpha.com/input/?i=cartesian+coordinates&amp;lk=4&amp;num=6&a
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">https://en.wikipedia.org/wiki/Cylindrical_coordinate_system</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000032"/>
-        <IRI>http://purl.obolibrary.org/obo/STATO_0000015</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000015</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">cylindrical coordinate system</Literal>
@@ -13814,11 +13794,6 @@ https://www.wolframalpha.com/input/?i=cartesian+coordinates&amp;lk=4&amp;num=6&a
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000016</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://en.wikipedia.org/wiki/Polar_coordinate_system</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000032"/>
-        <IRI>http://purl.obolibrary.org/obo/STATO_0000016</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -15471,11 +15446,6 @@ https://github.com/ISA-tools/stato/issues/39</Literal>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000055</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Philippe Rocca-Serra</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000032"/>
-        <IRI>http://purl.obolibrary.org/obo/STATO_0000055</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -19388,11 +19358,6 @@ The term contingency table was first used by Karl Pearson in &quot;On the Theory
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">STATO, adapted from wikipedia (http://en.wikipedia.org/wiki/Contingency_table)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000032"/>
-        <IRI>http://purl.obolibrary.org/obo/STATO_0000140</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000140</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">xtabs(formula = ~., data = parent.frame(), subset, sparse = FALSE,
@@ -21890,11 +21855,6 @@ last accessed: 2014-03-13
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000197</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ensembl, ucsc</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000032"/>
-        <IRI>http://purl.obolibrary.org/obo/STATO_0000197</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -31189,7 +31149,7 @@ na.rm, na.rm=TRUE remove NA values before processing
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000398</IRI>
-        <IRI>http://purl.obolibrary.org/obo/IAO_0000123</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -31226,14 +31186,23 @@ The weighted arithmetic mean is often used if one wants to combine average value
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">https://en.wikipedia.org/wiki/Weighted_arithmetic_mean</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000032"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000398</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">weighted average</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000398</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"></Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">weighted.mean(x, w, ...)
+
+https://stat.ethz.ch/R-manual/R-devel/library/stats/html/weighted.mean.html</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000391"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000398</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">https://docs.scipy.org/doc/numpy/reference/generated/numpy.average.html
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">From numpy
+
+https://docs.scipy.org/doc/numpy/reference/generated/numpy.average.html
 
 np.average(range(1,11), weights=range(10,0,-1))</Literal>
     </AnnotationAssertion>
@@ -37592,6 +37561,11 @@ http://www.r-tutor.com/elementary-statistics/simple-linear-regression/coefficien
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000566</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000566</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Philippe Rocca-Serra</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -37608,6 +37582,17 @@ last accessed: 04/07/2018</Literal>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">eigen(x, symmetric, only.values = FALSE, EISPACK = FALSE)
 
 https://stat.ethz.ch/R-manual/R-devel/library/base/html/eigen.html</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000391"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000566</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">In Python numpy linear algebra package (numpy.linalg)
+https://docs.scipy.org/doc/numpy-1.13.0/reference/routines.linalg.html
+
+linalg.eig(a)	Compute the eigenvalues and right eigenvectors of a square array.
+linalg.eigh(a[, UPLO])	Return the eigenvalues and eigenvectors of a Hermitian or symmetric matrix.
+linalg.eigvals(a)	Compute the eigenvalues of a general matrix.
+linalg.eigvalsh(a[, UPLO])	Compute the eigenvalues of a Hermitian or real symmetric matrix.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -38089,14 +38074,19 @@ https://www.rdocumentation.org/packages/mixOmics/versions/6.3.2/topics/nipals</L
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000576</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A novel algorithm for partial least squares (PLS) regression, SIMPLS, is proposed which calculates the PLS factors directly as linear combinations of the original variables. The PLS factors are determined such as to maximize a covariance criterion, while obeying certain orthogonality and normalization restrictions. This approach follows that of other traditional multivariate methods. The construction of deflated data matrices as in the nonlinear iterative partial least squares (NIPALS)-PLS algorithm is avoided. For univariate y SIMPLS is equivalent to PLS1 and closely related to existing bidiagonalization algorithms. This follows from an analysis of PLS1 regression in terms of Krylov sequences. For multivariate Y there is a slight difference between the SIMPLS approach and NIPALS-PLS2. In practice the SIMPLS algorithm appears to be fast and easy to interpret as it does not involve a breakdown of the data sets.
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A novel algorithm for partial least squares (PLS) regression, SIMPLS, is proposed which calculates the PLS factors directly as linear combinations of the original variables. The PLS factors are determined such as to maximize a covariance criterion, while obeying certain orthogonality and normalization restrictions. This approach follows that of other traditional multivariate methods. The construction of deflated data matrices as in the nonlinear iterative partial least squares (NIPALS)-PLS algorithm is avoided. For univariate y SIMPLS is equivalent to PLS1 and closely related to existing bidiagonalization algorithms. This follows from an analysis of PLS1 regression in terms of Krylov sequences. For multivariate Y there is a slight difference between the SIMPLS approach and NIPALS-PLS2. In practice the SIMPLS algorithm appears to be fast and easy to interpret as it does not involve a breakdown of the data sets.
 
 The acronym SIMPLS comes from &apos;straightforward implementation of a statistically inspired modification of the PLS method&apos;</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000116"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000576</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">term request from Ralf Weber and Gavin Lloyd, University of Birmingham</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">term request from Ralf Weber and Gavin Lloyd, University of Birmingham</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000576</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Alejandra Gonzalez-Beltran</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -38106,10 +38096,15 @@ The acronym SIMPLS comes from &apos;straightforward implementation of a statisti
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000576</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">SIMPLS: An alternative approach to partial least squares regression
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">SIMPLS: An alternative approach to partial least squares regression
 Sijmen de Jong
 
 https://doi.org/10.1016/0169-7439(93)85002-X</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000032"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000576</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">straightforward implementation of a statistically inspired modification of the PLS method</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
