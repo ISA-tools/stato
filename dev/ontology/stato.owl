@@ -5,13 +5,15 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="http://purl.obolibrary.org/obo/stato.owl">
+     ontologyIRI="http://purl.obolibrary.org/obo/stato.owl"
+     versionIRI="http://purl.obolibrary.org/obo/stato.owl/1.5">
     <Prefix name="" IRI="http://purl.obolibrary.org/obo/stato.owl"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="stato" IRI="http://purl.obolibrary.org/obo/stato.owl"/>
     <Import>http://purl.obolibrary.org/obo/stato/obi_import.owl</Import>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/contributor"/>
@@ -63,7 +65,7 @@
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/rights"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">This Ontology is distributed under a Creative Commons Attribution License </Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">This Ontology is distributed under a Creative Commons Attribution License</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/subject"/>
@@ -87,11 +89,11 @@
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://usefulinc.com/ns/doap#mailing-list"/>
-        <Literal xml:lang="googlegroups.com">stat-ontology</Literal>
+        <Literal xml:lang="en">stat-ontology@googlegroups.com</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
-        <Literal>RC1.4</Literal>
+        <Literal>2019-11-30</Literal>
     </Annotation>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/BFO_0000006"/>
@@ -2161,6 +2163,24 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000600"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000601"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000602"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000603"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000604"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000605"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000606"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000050"/>
     </Declaration>
     <Declaration>
@@ -2452,17 +2472,16 @@
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000046"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
-            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000223"/>
-        </ObjectSomeValuesFrom>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000046"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000001"/>
-            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000248"/>
-        </ObjectSomeValuesFrom>
+        <ObjectUnionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <Class IRI="http://purl.obolibrary.org/obo/STATO_0000223"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000001"/>
+                <Class IRI="http://purl.obolibrary.org/obo/STATO_0000248"/>
+            </ObjectSomeValuesFrom>
+        </ObjectUnionOf>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000085"/>
@@ -2508,13 +2527,6 @@
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000417"/>
             <Class IRI="http://purl.obolibrary.org/obo/STATO_0000226"/>
         </ObjectSomeValuesFrom>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000137"/>
-        <ObjectMinCardinality cardinality="2">
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
-            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000113"/>
-        </ObjectMinCardinality>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000185"/>
@@ -2595,11 +2607,6 @@
         <ObjectUnionOf>
             <Class IRI="http://purl.obolibrary.org/obo/OBI_0000750"/>
             <Class IRI="http://purl.obolibrary.org/obo/OBI_0000751"/>
-        </ObjectUnionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000258"/>
-        <ObjectUnionOf>
             <Class IRI="http://purl.obolibrary.org/obo/STATO_0000251"/>
             <Class IRI="http://purl.obolibrary.org/obo/STATO_0000252"/>
         </ObjectUnionOf>
@@ -6219,6 +6226,13 @@
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000137"/>
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0000673"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000137"/>
+        <ObjectMinCardinality cardinality="2">
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/OBI_0000293"/>
+            <Class IRI="http://purl.obolibrary.org/obo/STATO_0000113"/>
+        </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000138"/>
@@ -12807,6 +12821,30 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000600"/>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000471"/>
     </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000601"/>
+        <Class IRI="http://purl.obolibrary.org/obo/OBI_0200089"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000602"/>
+        <Class IRI="http://purl.obolibrary.org/obo/OBI_0200089"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000603"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000602"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000604"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000602"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000605"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000602"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000606"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000039"/>
+    </SubClassOf>
     <DisjointClasses>
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0000115"/>
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0300311"/>
@@ -12919,6 +12957,10 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000107"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000344"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000258"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000382"/>
         <ObjectUnionOf>
             <Class IRI="http://purl.obolibrary.org/obo/STATO_0000467"/>
@@ -12942,6 +12984,10 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000341"/>
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0000751"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000344"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000258"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="http://purl.obolibrary.org/obo/STATO_0000382"/>
@@ -38121,6 +38167,11 @@ The arithmetic mean is significantly affected by extreme values and outliers. A 
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000573</IRI>
+        <Literal>average value (http://purl.obolibrary.org/obo/OBI_0000679)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000573</IRI>
         <Literal>http://purl.obolibrary.org/obo/OBI_0000679</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -38181,6 +38232,11 @@ Wolfram Alpha</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000574</IRI>
         <Literal>center value</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000574</IRI>
+        <Literal>center value (http://purl.obolibrary.org/obo/OBI_0000674)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
@@ -39230,7 +39286,7 @@ https://www.rdocumentation.org/packages/caret/versions/3.45/topics/confusionMatr
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000599</IRI>
-        <Literal xml:lang="en">a point estimate is a data item which provide a particular value evaluating a population parameter</Literal>
+        <Literal xml:lang="en">a point estimate is a data item which provides a particular value evaluating a population parameter</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -39301,6 +39357,130 @@ https://www.rdocumentation.org/packages/caret/versions/3.45/topics/confusionMatr
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000600</IRI>
         <Literal xml:lang="en">interval estimate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000601</IRI>
+        <Literal>simultaneous multiple testing method is a multiple testing correction method which...</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000601</IRI>
+        <Literal></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000601</IRI>
+        <Literal>simultaneous multiple testing correction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000602</IRI>
+        <Literal>sequential multiple testing method is a multiple testing correction method which...</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000602</IRI>
+        <Literal></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000602</IRI>
+        <Literal>sequential multiple testing correction method</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000603</IRI>
+        <Literal>a sequential multiple correction procedure which does not maintain a constant false positive rate but allows it to grow controllably.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000603</IRI>
+        <Literal>Thompson et al 2019.
+
+doi: http://dx.doi.org/10.1101/801696
+
+https://www.biorxiv.org/content/biorxiv/early/2019/10/22/801696.full.pdf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000603</IRI>
+        <Literal>alpha debt</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000604</IRI>
+        <Literal>a type of sequential multiple testing correction method</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000604</IRI>
+        <Literal>Aharoni, Ehud, and Saharon Rosset. 2014. “Generalized α -investing: definitions, optimality results and application to public databases.” Journal of the Royal Statistical Society: Series B (Statistical Methodology) 76 (4): 771–94. https: //doi.org/10.1111/rssb.12048.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000604</IRI>
+        <Literal>Foster, Dean P, and Robert A Stine. 2008. “α-Investing: A procedure for sequential control of expected false discoveries.” Journal of the Royal Statistical Society. Series B: Statistical Methodology 70 (2): 429–44. https://doi.org/10. 1111/j.1467-9868.2007.00643.x.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000604</IRI>
+        <Literal>alpha investing procedure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000605</IRI>
+        <Literal>a type of sequential multiple testing correction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000605</IRI>
+        <Literal>Aharoni, Ehud, and Saharon Rosset. 2014. “Generalized α -investing: definitions, optimality results and application to public databases.” Journal of the Royal Statistical Society: Series B (Statistical Methodology) 76 (4): 771–94. https: //doi.org/10.1111/rssb.12048.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000605</IRI>
+        <Literal>alpha spending procedure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000606</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000120</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000606</IRI>
+        <Literal>q is the basic statistic for the studentized range distribution, which is used for multiple comparison procedures, such as the single step procedure Tukey&apos;s range test, the Newman–Keuls method, and the Duncan&apos;s step down procedure, and establishing confidence intervals that are still valid after data snooping has occurred</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000606</IRI>
+        <Literal>Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000606</IRI>
+        <Literal>Student (1927). &quot;Errors of routine analysis&quot;. Biometrika. 19 (1/2): 151–164. doi:10.2307/2332181</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000606</IRI>
+        <Literal>https://en.wikipedia.org/wiki/Studentized_range</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000032"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000606</IRI>
+        <Literal>studentized range</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000606</IRI>
+        <Literal></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000606</IRI>
+        <Literal>q-statistic</Literal>
     </AnnotationAssertion>
     <SubAnnotationPropertyOf>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000032"/>

@@ -25,7 +25,7 @@
         <dc:rights rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">This Ontology is distributed under a Creative Commons Attribution License </dc:rights>
         <dc:contributor>Guillaume Bauchet</dc:contributor>
         <owl:versionInfo>RC1.4</owl:versionInfo>
-        <terms:license rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://creativecommons.org/licenses/by/3.0/</terms:license>
+        <!-- <terms:license rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://creativecommons.org/licenses/by/3.0/</terms:license> -->
         <dc:creator>Philippe Rocca-Serra (http://orcid.org/0000-0001-9853-5668)</dc:creator>
         <dc:contributor>Thomas Nichols (http://orcid.org/0000-0002-4516-5103)</dc:contributor>
         <dc:contributor>Chris Mungall (http://orcid.org/0000-0002-6601-2165)</dc:contributor>
