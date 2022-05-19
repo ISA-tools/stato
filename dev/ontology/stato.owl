@@ -12850,7 +12850,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0001000"/>
-        <Class IRI="http://purl.obolibrary.org/obo/IAO_0000109"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000282"/>
     </SubClassOf>
     <DisjointClasses>
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0000115"/>
@@ -39492,7 +39492,7 @@ https://www.biorxiv.org/content/biorxiv/early/2019/10/22/801696.full.pdf</Litera
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0001000</IRI>
-        <Literal>A numeric measurement of classificatio accuracy calculated as the weighted geometric mean of precision and recall.</Literal>
+        <Literal>A numeric measurement of classification accuracy calculated as the weighted geometric mean of precision and recall.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
@@ -39503,6 +39503,13 @@ https://www.biorxiv.org/content/biorxiv/early/2019/10/22/801696.full.pdf</Litera
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0001000</IRI>
         <Literal>PMID:34088715</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000041"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0001000</IRI>
+        <Literal>https://scikit-learn.org/stable/modules/generated/sklearn.metrics.fbeta_score.html
+
+from sklearn.metrics import fbeta_score</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
