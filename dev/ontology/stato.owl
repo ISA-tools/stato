@@ -5091,19 +5091,9 @@
         <ObjectIntersectionOf>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <ObjectIntersectionOf>
-                    <Class IRI="http://purl.obolibrary.org/obo/STATO_0000469"/>
-                    <ObjectExactCardinality cardinality="2">
-                        <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                        <Class IRI="http://purl.obolibrary.org/obo/OBI_0000750"/>
-                    </ObjectExactCardinality>
-                </ObjectIntersectionOf>
-            </ObjectSomeValuesFrom>
-            <ObjectMinCardinality cardinality="1">
-                <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
                 <Class IRI="http://purl.obolibrary.org/obo/STATO_0000470"/>
-            </ObjectMinCardinality>
-            <ObjectMinCardinality cardinality="1">
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
                 <ObjectIntersectionOf>
                     <Class IRI="http://purl.obolibrary.org/obo/STATO_0000468"/>
@@ -5112,7 +5102,17 @@
                         <Class IRI="http://purl.obolibrary.org/obo/OBI_0000750"/>
                     </ObjectSomeValuesFrom>
                 </ObjectIntersectionOf>
-            </ObjectMinCardinality>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <ObjectIntersectionOf>
+                    <Class IRI="http://purl.obolibrary.org/obo/STATO_0000469"/>
+                    <ObjectExactCardinality cardinality="2">
+                        <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                        <Class IRI="http://purl.obolibrary.org/obo/OBI_0000750"/>
+                    </ObjectExactCardinality>
+                </ObjectIntersectionOf>
+            </ObjectSomeValuesFrom>
         </ObjectIntersectionOf>
     </SubClassOf>
     <SubClassOf>
@@ -5681,11 +5681,11 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000099"/>
         <ObjectIntersectionOf>
             <ObjectIntersectionOf>
-                <ObjectMinCardinality cardinality="1">
+                <ObjectSomeValuesFrom>
                     <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
                     <Class IRI="http://purl.obolibrary.org/obo/STATO_0000470"/>
-                </ObjectMinCardinality>
-                <ObjectMinCardinality cardinality="1">
+                </ObjectSomeValuesFrom>
+                <ObjectSomeValuesFrom>
                     <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
                     <ObjectIntersectionOf>
                         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000467"/>
@@ -5694,7 +5694,7 @@
                             <Class IRI="http://purl.obolibrary.org/obo/OBI_0000750"/>
                         </ObjectSomeValuesFrom>
                     </ObjectIntersectionOf>
-                </ObjectMinCardinality>
+                </ObjectSomeValuesFrom>
             </ObjectIntersectionOf>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
@@ -7276,13 +7276,13 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000189"/>
-        <ObjectMinCardinality cardinality="1">
+        <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
             <ObjectIntersectionOf>
                 <Class IRI="http://purl.obolibrary.org/obo/STATO_0000082"/>
                 <Class IRI="http://purl.obolibrary.org/obo/STATO_0000099"/>
             </ObjectIntersectionOf>
-        </ObjectMinCardinality>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000190"/>
