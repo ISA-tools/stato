@@ -12846,6 +12846,10 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000039"/>
     </SubClassOf>
     <DisjointClasses>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000002"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000003"/>
+    </DisjointClasses>
+    <DisjointClasses>
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0000115"/>
         <Class IRI="http://purl.obolibrary.org/obo/OBI_0300311"/>
     </DisjointClasses>
