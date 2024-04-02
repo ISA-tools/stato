@@ -9,13 +9,18 @@
 <http://purl.obolibrary.org/obo/stato.owl> rdf:type owl:Ontology ;
                                             owl:versionIRI <http://purl.obolibrary.org/obo/stato.owl/1.5> ;
                                             owl:imports <http://purl.obolibrary.org/obo/stato/obi_import.owl> ;
-                                            <http://purl.org/dc/elements/1.1/contributor> "Camille Maumet (http://orcid.org/0000-0002-6290-553X)" ,
+                                            <http://purl.org/dc/elements/1.1/contributor> "Brian Alper (https://orcid.org/000-0003-4300-4928)" ,
+                                                                                          "Camille Maumet (http://orcid.org/0000-0002-6290-553X)" ,
                                                                                           "Chris Mungall (http://orcid.org/0000-0002-6601-2165)" ,
                                                                                           "Gavin Lloyd" ,
                                                                                           "Guillaume Bauchet" ,
                                                                                           "Hanna Cwiek (https://orcid.org/0000-0001-9113-567X)" ,
+                                                                                          "Harold Lehmann (https://orcid.org/0000-0002-7698-219X)" ,
+                                                                                          "Joanne Dehnbostel (https://orcid.org/0000-0002-9896-9842)" ,
+                                                                                          "Kenneth Wilkins (kenneth.wilkins"@nih.gov) ,
+                                                                                          "Khalid Shahin (https://orcid.org/0000-0002-3526-7667)" ,
                                                                                           "Nolan Nichols (http://orcid.org/0000-0003-1099-3328)" ,
-                                                                                          "Ralf Weber" ,
+                                                                                          "Ralf Weber (https://orcid.org/0000-0002-8796-4771)" ,
                                                                                           "Thomas Nichols (http://orcid.org/0000-0002-4516-5103)" ;
                                             <http://purl.org/dc/elements/1.1/creator> "Alejandra Gonzalez-Beltran (http://orcid.org/0000-0003-3499-8262)" ,
                                                                                       "Orlaith Burke" ,
@@ -601,7 +606,15 @@ Not extracting to separate ontology (stato-experimental.owl) due to IDs already 
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0000573
-<http://purl.obolibrary.org/obo/IAO_0000573> rdf:type owl:Class .
+<http://purl.obolibrary.org/obo/IAO_0000573> rdf:type owl:Class ;
+                                             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                               owl:onProperty <http://purl.obolibrary.org/obo/STATO_0000205> ;
+                                                               owl:someValuesFrom <http://purl.obolibrary.org/obo/STATO_0000656>
+                                                             ] ,
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty <http://purl.obolibrary.org/obo/STATO_0000205> ;
+                                                               owl:someValuesFrom <http://purl.obolibrary.org/obo/STATO_0000657>
+                                                             ] .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0000578
@@ -2249,20 +2262,24 @@ http://stat.ethz.ch/R-manual/R-patched/library/base/html/range.html"""@en ;
                                                <http://purl.obolibrary.org/obo/IAO_0000112> "http://stats.stackexchange.com/questions/50623/r-calculating-mean-and-standard-error-of-mean-for-factors-with-lm-vs-direct"@en ;
                                                <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000122> ;
                                                <http://purl.obolibrary.org/obo/IAO_0000115> """The standard error of the mean (SEM) is data item denoting the standard deviation of the sample-mean's estimate of a population mean.
-It is calculated by dividing the sample standard deviation (i.e., the sample-based estimate of the standard deviation of the population) by the square root of n , the size (number of observations) of the sample."""@en ;
+It is calculated by dividing the sample standard deviation (i.e., the sample-based estimate of the standard deviation of the population) by the square root of n , the size (number of observations) of the sample.
+
+A measure of dispersion applied to means across hypothetical repeated random samples."""@en ;
                                                <http://purl.obolibrary.org/obo/IAO_0000117> "Alejandra Gonzalez-Beltran"@en ,
+                                                                                            "Brian S. Alper, Harold Lehmann, Muhammad Afzal, Xing Song, Kenneth Wilkins, Joanne Dehnbostel" ,
                                                                                             "Orlaith Burke" ,
                                                                                             "Philippe Rocca-Serra"@en ;
                                                <http://purl.obolibrary.org/obo/IAO_0000118> "SEM"@en ;
                                                <http://purl.obolibrary.org/obo/IAO_0000119> "adapted from wikipedia (https://en.wikipedia.org/wiki/Standard_error)"@en ;
-                                               <http://purl.obolibrary.org/obo/STATO_0000032> ""@en ;
+                                               <http://purl.obolibrary.org/obo/STATO_0000032> "SEM"@en ;
                                                <http://purl.obolibrary.org/obo/STATO_0000391> """scipy.stats.sem(a, axis=0, ddof=1)
 
 http://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.sem.html#scipy.stats.sem
 
 source:
 https://github.com/scipy/scipy/blob/v0.15.1/scipy/stats/stats.py#L1928"""@en ;
-                                               rdfs:label "standard error of the mean"@en .
+                                               rdfs:label "standard error of the mean"@en ;
+                                               rdfs:seeAlso "https://fevir.net/resources/CodeSystem/27270#STATO:0000037" .
 
 
 ###  http://purl.obolibrary.org/obo/STATO_0000038
@@ -3232,7 +3249,7 @@ http://stat.ethz.ch/R-manual/R-patched/library/stats/html/chisq.test.html""" ;
 
 ###  http://purl.obolibrary.org/obo/STATO_0000071
 <http://purl.obolibrary.org/obo/STATO_0000071> rdf:type owl:Class ;
-                                               rdfs:subClassOf :rate ;
+                                               rdfs:subClassOf <http://purl.obolibrary.org/obo/STATO_0000645> ;
                                                <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000122> ;
                                                <http://purl.obolibrary.org/obo/IAO_0000115> "reaction rate is a measurement datum which represents the speed of a chemical reaction turning reactive species into product species of event (i.e the number of such conversions)s occuring over a time interval"@en ;
                                                <http://purl.obolibrary.org/obo/IAO_0000117> "Alejandra Gonzalez-Beltran"@en ,
@@ -4169,12 +4186,15 @@ http://www.drcath.net/toolkit/casecontrol.html"""@en ;
                                                                [ rdf:type owl:Restriction ;
                                                                  owl:onProperty <http://purl.obolibrary.org/obo/OBI_0000417> ;
                                                                  owl:someValuesFrom <http://purl.obolibrary.org/obo/STATO_0000253>
+                                                               ] ,
+                                                               [ rdf:type owl:Restriction ;
+                                                                 owl:onProperty <http://purl.obolibrary.org/obo/OBI_0000417> ;
+                                                                 owl:someValuesFrom <http://purl.obolibrary.org/obo/STATO_0000654>
                                                                ] ;
                                                <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000122> ;
                                                <http://purl.obolibrary.org/obo/IAO_0000115> """The Wilcoxon signed rank test is a statistical test which tests the null hypothesis that the median difference between pairs of observations is zero. This is the non-parametric analogue to the paired t-test, and should be used if the distribution of differences between pairs may be non-normally distributed.
 
 The procedure involves a ranking, hence the name. The absolute value of the differences between observations are ranked from smallest to largest, with the smallest difference getting a rank of 1, then next larger difference getting a rank of 2, etc. Ties are given average ranks. The ranks of all differences in one direction are summed, and the ranks of all differences in the other direction are summed. The smaller of these two sums is the test statistic, W (sometimes symbolized Ts). Unlike most test statistics, smaller values of W are less likely under the null hypothesis."""@en ;
-                                               <http://purl.obolibrary.org/obo/IAO_0000116> "TODO: add the notion of 'paired observation testing objective'" ;
                                                <http://purl.obolibrary.org/obo/IAO_0000117> "Alejandra Gonzalez-Beltran"@en ,
                                                                                             "Orlaith Burke" ,
                                                                                             "Philippe Rocca-Serra"@en ;
@@ -6616,6 +6636,17 @@ http://cran.r-project.org/web/packages/HardyWeinberg/index.html"""@en ;
 ###  http://purl.obolibrary.org/obo/STATO_0000182
 <http://purl.obolibrary.org/obo/STATO_0000182> rdf:type owl:Class ;
                                                rdfs:subClassOf <http://purl.obolibrary.org/obo/STATO_0000300> ,
+                                                               [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                                        owl:onProperty <http://purl.obolibrary.org/obo/STATO_0000101> ;
+                                                                                        owl:allValuesFrom <http://purl.obolibrary.org/obo/STATO_0000627>
+                                                                                      ]
+                                                                                      [ rdf:type owl:Restriction ;
+                                                                                        owl:onProperty <http://purl.obolibrary.org/obo/STATO_0000259> ;
+                                                                                        owl:allValuesFrom <http://purl.obolibrary.org/obo/STATO_0000627>
+                                                                                      ]
+                                                                                    ) ;
+                                                                 rdf:type owl:Class
+                                                               ] ,
                                                                [ rdf:type owl:Restriction ;
                                                                  owl:onProperty <http://purl.obolibrary.org/obo/IAO_0000136> ;
                                                                  owl:someValuesFrom <http://purl.obolibrary.org/obo/BFO_0000016>
@@ -6627,6 +6658,10 @@ http://cran.r-project.org/web/packages/HardyWeinberg/index.html"""@en ;
                                                                [ rdf:type owl:Restriction ;
                                                                  owl:onProperty <http://purl.obolibrary.org/obo/OBI_0000295> ;
                                                                  owl:someValuesFrom <http://purl.obolibrary.org/obo/STATO_0000175>
+                                                               ] ,
+                                                               [ rdf:type owl:Restriction ;
+                                                                 owl:onProperty <http://purl.obolibrary.org/obo/OBI_0000314> ;
+                                                                 owl:someValuesFrom <http://purl.obolibrary.org/obo/STATO_0000610>
                                                                ] ,
                                                                [ rdf:type owl:Restriction ;
                                                                  owl:onProperty <http://purl.obolibrary.org/obo/IAO_0000136> ;
@@ -6669,6 +6704,17 @@ http://www.stats.org/stories/2008/odds_ratios_april4_2008.html""" ;
 
 ###  http://purl.obolibrary.org/obo/STATO_0000184
 <http://purl.obolibrary.org/obo/STATO_0000184> rdf:type owl:Class ;
+                                               owl:equivalentClass [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                                            owl:onProperty <http://purl.obolibrary.org/obo/STATO_0000101> ;
+                                                                                            owl:someValuesFrom <http://purl.obolibrary.org/obo/IAO_0000027>
+                                                                                          ]
+                                                                                          [ rdf:type owl:Restriction ;
+                                                                                            owl:onProperty <http://purl.obolibrary.org/obo/STATO_0000259> ;
+                                                                                            owl:someValuesFrom <http://purl.obolibrary.org/obo/IAO_0000027>
+                                                                                          ]
+                                                                                        ) ;
+                                                                     rdf:type owl:Class
+                                                                   ] ;
                                                rdfs:subClassOf <http://purl.obolibrary.org/obo/STATO_0000039> ;
                                                <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000125> ;
                                                <http://purl.obolibrary.org/obo/IAO_0000115> """A ratio is a data item which is formed with two numbers r and s is written r/s, where r is the numerator and s is the denominator. The ratio of r to s is equivalent to the quotient r/s. 
@@ -9123,7 +9169,6 @@ http://rss.acs.unt.edu/Rdoc/library/epicalc/html/roc.html"""@en ;
                                                                ] ;
                                                <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000125> ;
                                                <http://purl.obolibrary.org/obo/IAO_0000115> "The transmission disequilibrium test is a statistical test for genetic linkage between genetic marker and a trait in families. The test is robust to population structure."@en ;
-                                               <http://purl.obolibrary.org/obo/IAO_0000116> "TODO: need to modify restrictions to include family and trio"@en ;
                                                <http://purl.obolibrary.org/obo/IAO_0000117> "Alejandra Gonzalez-Beltran"@en ,
                                                                                             "Orlaith Burke" ,
                                                                                             "Philippe Rocca-Serra"@en ;
@@ -9207,9 +9252,9 @@ http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2789971/"""@en ;
 ###  http://purl.obolibrary.org/obo/STATO_0000278
 <http://purl.obolibrary.org/obo/STATO_0000278> rdf:type owl:Class ;
                                                rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000055> ;
-                                               <http://purl.obolibrary.org/obo/IAO_0000112> "TODO"@en ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000112> "age-matched participants"@en ;
                                                <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000122> ;
-                                               <http://purl.obolibrary.org/obo/IAO_0000115> "pairing rule is a rule which is specifies the criteria for deciding on how to associated any 2 entities."@en ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000115> "pairing rule is a rule which specifies the criteria for deciding on how to associated any 2 entities."@en ;
                                                <http://purl.obolibrary.org/obo/IAO_0000117> "Alejandra Gonzalez-Beltran"@en ,
                                                                                             "Orlaith Burke" ,
                                                                                             "Philippe Rocca-Serra"@en ;
@@ -12055,6 +12100,10 @@ last accessed: 2015-11-04"""@en ;
 <http://purl.obolibrary.org/obo/STATO_0000401> rdf:type owl:Class ;
                                                rdfs:subClassOf <http://purl.obolibrary.org/obo/STATO_0000573> ,
                                                                [ rdf:type owl:Restriction ;
+                                                                 owl:onProperty <http://purl.obolibrary.org/obo/IAO_0000219> ;
+                                                                 owl:someValuesFrom <http://purl.obolibrary.org/obo/STATO_0000651>
+                                                               ] ,
+                                                               [ rdf:type owl:Restriction ;
                                                                  owl:onProperty <http://purl.obolibrary.org/obo/STATO_0000403> ;
                                                                  owl:someValuesFrom <http://purl.obolibrary.org/obo/STATO_0000402>
                                                                ] ;
@@ -12087,6 +12136,7 @@ A population mean can be estimated by computing a sample mean"""@en ;
                                                <http://purl.obolibrary.org/obo/IAO_0000117> "Alejandra Gonzalez-Beltran"@en ,
                                                                                             "Orlaith Burke"@en ,
                                                                                             "Philippe Rocca-Serra"@en ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000118> "distribution mean" ;
                                                <http://purl.obolibrary.org/obo/IAO_0000119> """adapted from:
 http://mathworld.wolfram.com/PopulationMean.html
 
@@ -12236,7 +12286,11 @@ DOI: 10.1056/NEJM197507312930513"""@en ;
 
 ###  http://purl.obolibrary.org/obo/STATO_0000409
 <http://purl.obolibrary.org/obo/STATO_0000409> rdf:type owl:Class ;
-                                               rdfs:subClassOf <http://purl.obolibrary.org/obo/STATO_0000184> ;
+                                               rdfs:subClassOf <http://purl.obolibrary.org/obo/STATO_0000184> ,
+                                                               [ rdf:type owl:Restriction ;
+                                                                 owl:onProperty <http://purl.obolibrary.org/obo/OBI_0000314> ;
+                                                                 owl:someValuesFrom <http://purl.obolibrary.org/obo/STATO_0000610>
+                                                               ] ;
                                                <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000122> ;
                                                <http://purl.obolibrary.org/obo/IAO_0000115> "the likelihood ratio is a ratio which is formed by dividing the post-test odds with the pre-test odds in the context of a Bayesian formulation"@en ;
                                                <http://purl.obolibrary.org/obo/IAO_0000117> "Philippe Rocca-Serra"@en ;
@@ -12248,7 +12302,7 @@ DOI: 10.1056/NEJM197507312930513"""@en ;
 <http://purl.obolibrary.org/obo/STATO_0000410> rdf:type owl:Class ;
                                                rdfs:subClassOf <http://purl.obolibrary.org/obo/STATO_0000409> ;
                                                <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000122> ;
-                                               <http://purl.obolibrary.org/obo/IAO_0000115> "the likelihood ratio of negative results is a ratio which is formed  by dividing the difference between 1 and sensitivity of the test by the specificity value of a test.. This can be expressed also as dividing the probability of a person who has the disease testing negative by the probability of a person who does not have the disease testing negative."@en ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000115> "the likelihood ratio of negative results is a ratio which is formed  by dividing the difference between 1 and sensitivity of the test by the specificity value of a test. This can be expressed also as dividing the probability of a person who has the disease testing negative by the probability of a person who does not have the disease testing negative."@en ;
                                                <http://purl.obolibrary.org/obo/IAO_0000117> "Philippe Rocca-Serra"@en ;
                                                <http://purl.obolibrary.org/obo/IAO_0000118> "likelihood ratio for negative results"@en ;
                                                <http://purl.obolibrary.org/obo/IAO_0000119> """adapted from Wikipedia:
@@ -14436,6 +14490,10 @@ https://docs.scipy.org/doc/scipy-0.14.0/reference/generated/scipy.stats.weibull_
                                                                [ rdf:type owl:Restriction ;
                                                                  owl:onProperty <http://purl.obolibrary.org/obo/OBI_0000299> ;
                                                                  owl:someValuesFrom <http://purl.obolibrary.org/obo/STATO_0000193>
+                                                               ] ,
+                                                               [ rdf:type owl:Restriction ;
+                                                                 owl:onProperty <http://purl.obolibrary.org/obo/OBI_0000299> ;
+                                                                 owl:someValuesFrom <http://purl.obolibrary.org/obo/STATO_0000651>
                                                                ] ;
                                                <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000122> ;
                                                <http://purl.obolibrary.org/obo/IAO_0000115> "statistical sampling is a planned process which aims at assembling a population of observation units (samples) in as an unbiaised manner as possible in order to obtain or infer information about the actual population these samples have been drawn." ;
@@ -14766,7 +14824,37 @@ http://r-statistics.co/Missing-Value-Treatment-With-R.html""" ;
 
 ###  http://purl.obolibrary.org/obo/STATO_0000524
 <http://purl.obolibrary.org/obo/STATO_0000524> rdf:type owl:Class ;
-                                               rdfs:subClassOf <http://purl.obolibrary.org/obo/STATO_0000142> ;
+                                               rdfs:subClassOf <http://purl.obolibrary.org/obo/STATO_0000142> ,
+                                                               [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                                        owl:onProperty <http://purl.obolibrary.org/obo/STATO_0000101> ;
+                                                                                        owl:someValuesFrom <http://purl.obolibrary.org/obo/STATO_0000301>
+                                                                                      ]
+                                                                                      [ rdf:type owl:Restriction ;
+                                                                                        owl:onProperty <http://purl.obolibrary.org/obo/STATO_0000259> ;
+                                                                                        owl:someValuesFrom <http://purl.obolibrary.org/obo/STATO_0000237>
+                                                                                      ]
+                                                                                    ) ;
+                                                                 rdf:type owl:Class
+                                                               ] ,
+                                                               [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                                        owl:onProperty <http://purl.obolibrary.org/obo/STATO_0000101> ;
+                                                                                        owl:someValuesFrom <http://purl.obolibrary.org/obo/STATO_0000301>
+                                                                                      ]
+                                                                                      [ rdf:type owl:Restriction ;
+                                                                                        owl:onProperty <http://purl.obolibrary.org/obo/STATO_0000259> ;
+                                                                                        owl:someValuesFrom [ rdf:type owl:Restriction ;
+                                                                                                             owl:onProperty <http://purl.obolibrary.org/obo/IAO_0000136> ;
+                                                                                                             owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+                                                                                                             owl:onClass <http://purl.obolibrary.org/obo/STATO_0000237>
+                                                                                                           ]
+                                                                                      ]
+                                                                                    ) ;
+                                                                 rdf:type owl:Class
+                                                               ] ,
+                                                               [ rdf:type owl:Restriction ;
+                                                                 owl:onProperty <http://purl.obolibrary.org/obo/OBI_0000314> ;
+                                                                 owl:someValuesFrom <http://purl.obolibrary.org/obo/STATO_0000610>
+                                                               ] ;
                                                <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000122> ;
                                                <http://purl.obolibrary.org/obo/IAO_0000115> "Matthews Correlation Coefficient (or MCC) is a correlation coefficient which is a measure of the quality of binary (two-class) classifications, introduced by biochemist Brian W. Matthews in 1975." ;
                                                <http://purl.obolibrary.org/obo/IAO_0000117> "Philippe Rocca-Serra" ;
@@ -15464,7 +15552,8 @@ It measures the uncertainty associated with the estimate. Compared with the stan
 http://methods.sagepub.com/reference/encyc-of-research-design/n435.xml""" ;
                                                <http://purl.obolibrary.org/obo/STATO_0000032> "standard error of the estimate" ;
                                                <http://purl.obolibrary.org/obo/STATO_0000041> "" ;
-                                               rdfs:label "standard error of estimate" .
+                                               rdfs:label "standard error of estimate" ;
+                                               rdfs:seeAlso "https://fevir.net/resources/CodeSystem/27270#STATO:0000562" .
 
 
 ###  http://purl.obolibrary.org/obo/STATO_0000563
@@ -16537,6 +16626,24 @@ Other 'definitions' found include synonymous use with sensitivity, and 'diagnost
 
 ###  http://purl.obolibrary.org/obo/STATO_0000622
 <http://purl.obolibrary.org/obo/STATO_0000622> rdf:type owl:Class ;
+                                               owl:equivalentClass [ owl:intersectionOf ( [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                                                                   owl:onProperty <http://purl.obolibrary.org/obo/STATO_0000101> ;
+                                                                                                                   owl:someValuesFrom <http://purl.obolibrary.org/obo/IAO_0000027>
+                                                                                                                 ]
+                                                                                                                 [ rdf:type owl:Restriction ;
+                                                                                                                   owl:onProperty <http://purl.obolibrary.org/obo/STATO_0000259> ;
+                                                                                                                   owl:someValuesFrom <http://purl.obolibrary.org/obo/IAO_0000027>
+                                                                                                                 ]
+                                                                                                               ) ;
+                                                                                            rdf:type owl:Class
+                                                                                          ]
+                                                                                          [ rdf:type owl:Restriction ;
+                                                                                            owl:onProperty <http://purl.obolibrary.org/obo/OBI_0000314> ;
+                                                                                            owl:someValuesFrom <http://purl.obolibrary.org/obo/STATO_0000610>
+                                                                                          ]
+                                                                                        ) ;
+                                                                     rdf:type owl:Class
+                                                                   ] ;
                                                rdfs:subClassOf <http://purl.obolibrary.org/obo/STATO_0000610> ;
                                                <http://purl.obolibrary.org/obo/IAO_0000115> "ratio-based measure of association is a measure of association which relies on a quotient of 2 quantities to indicate the strength of the association."@en ;
                                                <http://purl.obolibrary.org/obo/IAO_0000119> "COKA group"@en ;
@@ -16880,7 +16987,11 @@ https://en.wikipedia.org/wiki/Matrix_(mathematics)""" ;
 
 ###  http://purl.obolibrary.org/obo/STATO_0000643
 <http://purl.obolibrary.org/obo/STATO_0000643> rdf:type owl:Class ;
-                                               rdfs:subClassOf <http://purl.obolibrary.org/obo/STATO_0000113> ;
+                                               rdfs:subClassOf <http://purl.obolibrary.org/obo/STATO_0000113> ,
+                                                               [ rdf:type owl:Restriction ;
+                                                                 owl:onProperty <http://purl.obolibrary.org/obo/IAO_0000219> ;
+                                                                 owl:someValuesFrom <http://purl.obolibrary.org/obo/STATO_0000651>
+                                                               ] ;
                                                <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000122> ;
                                                <http://purl.obolibrary.org/obo/IAO_0000115> "the sample variance is a variance computed over the actual observations made, which correspond to a sample drawn from a population in an experiment. the sample variance can be used to estimate the true variance of the underlying population/distribution." ;
                                                <http://purl.obolibrary.org/obo/IAO_0000116> "Expert Working Group Agreement: 2023-11-20 vote 5-0 by Brian S. Alper, Jesus Lopez-Alcalde, Harold Lehmann, Muhammad Afzal, Eric Harvey" ;
@@ -16905,7 +17016,7 @@ https://guilhermejacob.github.io/2020/06/variance-sampling/""" ;
                                                                ] ,
                                                                [ rdf:type owl:Restriction ;
                                                                  owl:onProperty <http://purl.obolibrary.org/obo/OBI_0000417> ;
-                                                                 owl:someValuesFrom <http://purl.obolibrary.org/obo/STATO_0000253>
+                                                                 owl:someValuesFrom <http://purl.obolibrary.org/obo/STATO_0000654>
                                                                ] ;
                                                <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000122> ;
                                                <http://purl.obolibrary.org/obo/IAO_0000115> """The sign test is a non-parametric hypothesis test used to assess whether the median of a single population is equal to a specified value, typically referred to as the null hypothesis. The sign test is particularly useful when the data are not normally distributed or when the assumptions required for parametric tests are not met.
@@ -16914,7 +17025,6 @@ Note that the 'sign test' is related but different from the \"Wilcoxon signed ra
 
 Sign test: It does not assume any specific distribution for the data. It only requires paired data and makes no assumptions about the shape of the underlying distribution.
 Wilcoxon signed-rank test: It assumes that the differences between paired observations come from a symmetric distribution. It's also more powerful than the sign test when the distribution is continuous and symmetric.""" ;
-                                               <http://purl.obolibrary.org/obo/IAO_0000116> "TODO: add the notion of 'paired observation testing objective'" ;
                                                <http://purl.obolibrary.org/obo/IAO_0000117> "Philippe Rocca-Serra" ;
                                                <http://purl.obolibrary.org/obo/IAO_0000119> """adapted from wikipedia
 and
@@ -16923,72 +17033,230 @@ adapted from ChatGPT3.5""" ;
                                                rdfs:label "sign test" .
 
 
-###  http://purl.obolibrary.org/obo/stato.owl#rate
-:rate rdf:type owl:Class ;
-      rdfs:subClassOf <http://purl.obolibrary.org/obo/STATO_0000184> ;
-      <http://purl.obolibrary.org/obo/IAO_0000115> ""@en ;
-      <http://purl.obolibrary.org/obo/IAO_0000119> ""@en ;
-      rdfs:label "rate"@en .
+###  http://purl.obolibrary.org/obo/STATO_0000645
+<http://purl.obolibrary.org/obo/STATO_0000645> rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://purl.obolibrary.org/obo/STATO_0000184> ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000122> ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000115> "A ratio in which the numerator represents any quantity and the denominator represents an interval of time."@en ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000117> "Brian S. Alper, Harold Lehmann, Joanne Dehnbostel, Kenneth Wilkins, Muhammad Afzal" ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000119> "COKA/SEVCO Group"@en ;
+                                               rdfs:label "rate"@en ;
+                                               rdfs:seeAlso "https://fevir.net/resources/CodeSystem/27270#STATO:0000645" .
 
 
-###  http://purl.obolibrary.org/obo/stato.owl#ratio-based_measure_of_agreement
-:ratio-based_measure_of_agreement rdf:type owl:Class ;
-                                  rdfs:subClassOf <http://purl.obolibrary.org/obo/STATO_0000622> ;
-                                  <http://purl.obolibrary.org/obo/IAO_0000115> ""@en ;
-                                  <http://purl.obolibrary.org/obo/IAO_0000119> "COKA group"@en ;
-                                  rdfs:label "ratio-based measure of agreement"@en .
-
-
-###  http://purl.obolibrary.org/obo/stato.owl#sampling_variance
-:sampling_variance rdf:type owl:Class ;
-                   rdfs:subClassOf <http://purl.obolibrary.org/obo/STATO_0000113> ;
-                   <http://purl.obolibrary.org/obo/IAO_0000115> "sampling variance is a variance of the sampling distribution of a random variable and estimates the dispersion of sample estimates about their expected value in hypothetical repetitions of the sample." ;
-                   <http://purl.obolibrary.org/obo/IAO_0000119> """STATO and COKA group.
-adapted from:  https://dx.doi.org/10.4135/9781412963947.n515""" ;
-                   rdfs:label "sampling variance" .
-
-
-###  http://purl.obolibrary.org/obo/stato.owl#standard_error_of_the_difference_between_means
-:standard_error_of_the_difference_between_means rdf:type owl:Class ;
-                                                rdfs:subClassOf <http://purl.obolibrary.org/obo/STATO_0000562> ;
-                                                <http://purl.obolibrary.org/obo/IAO_0000115> ""@en ;
-                                                <http://purl.obolibrary.org/obo/IAO_0000119> "COKA group"@en ;
-                                                rdfs:label "standard error of the difference between independent means"@en .
-
-
-###  http://purl.obolibrary.org/obo/stato.owl#standard_error_of_the_median
-:standard_error_of_the_median rdf:type owl:Class ;
-                              rdfs:subClassOf <http://purl.obolibrary.org/obo/STATO_0000562> ;
-                              <http://purl.obolibrary.org/obo/IAO_0000115> ""@en ;
-                              <http://purl.obolibrary.org/obo/IAO_0000119> "COKA group"@en ;
-                              rdfs:label "standard error of the median"@en .
-
-
-###  http://purl.obolibrary.org/obo/stato.owl#standard_error_of_the_proportion
-:standard_error_of_the_proportion rdf:type owl:Class ;
-                                  rdfs:subClassOf <http://purl.obolibrary.org/obo/STATO_0000562> ;
-                                  <http://purl.obolibrary.org/obo/IAO_0000115> ""@en ;
-                                  <http://purl.obolibrary.org/obo/IAO_0000119> "COKA group"@en ;
-                                  rdfs:label "standard error of the proportion"@en .
-
-
-###  http://purl.obolibrary.org/obo/stato.owl#'population_variance'
-<http://purl.obolibrary.org/obo/stato.owl#'population_variance'> rdf:type owl:Class ;
-                                                                 rdfs:subClassOf <http://purl.obolibrary.org/obo/STATO_0000113> ;
-                                                                 <http://purl.obolibrary.org/obo/IAO_0000115> """the population variance is a variance of the true population from which a sample is derived. 
+###  http://purl.obolibrary.org/obo/STATO_0000646
+<http://purl.obolibrary.org/obo/STATO_0000646> rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://purl.obolibrary.org/obo/STATO_0000113> ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000115> """the population variance is a variance of the true population from which a sample is derived. 
 the population variance describes the variability of a characteristic in the population.""" ;
-                                                                 <http://purl.obolibrary.org/obo/IAO_0000119> """STATO and COKA group
+                                               <http://purl.obolibrary.org/obo/IAO_0000117> "Philippe Rocca-Serra" ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000118> "distribution variance" ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000119> """STATO and COKA group
 adapted from :
 https://guilhermejacob.github.io/2020/06/variance-sampling/""" ;
-                                                                 rdfs:label "population variance" .
+                                               rdfs:label "population variance" .
 
 
-###  http://purl.obolibrary.org/obo/stato.owl#'standard_error_of_the_difference_between_proportions'
-<http://purl.obolibrary.org/obo/stato.owl#'standard_error_of_the_difference_between_proportions'> rdf:type owl:Class ;
-                                                                                                  rdfs:subClassOf <http://purl.obolibrary.org/obo/STATO_0000562> ;
-                                                                                                  <http://purl.obolibrary.org/obo/IAO_0000115> ""@en ;
-                                                                                                  <http://purl.obolibrary.org/obo/IAO_0000119> "COKA group"@en ;
-                                                                                                  rdfs:label "standard error of the difference between independent proportions"@en .
+###  http://purl.obolibrary.org/obo/STATO_0000647
+<http://purl.obolibrary.org/obo/STATO_0000647> rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://purl.obolibrary.org/obo/STATO_0000562> ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000122> ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000115> """A measure of dispersion applied to proportions across hypothetical repeated random samples.
+
+A standard error is used to quantify the uncertainty around a statistical estimate due to random sampling error."""@en ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000116> "Expert Working Group Agreement: 2024-01-22 vote 5-0 by Homa Keshavarz, Eric Harvey, Brian S. Alper, Harold Lehmann, Yasser Sami Amer" ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000117> "Brian S. Alper, Kenneth Wilkins, Xing Song, Harold Lehmann, Joanne Dehnbostel, Muhammad Afzal" ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000119> "COKA/SEVCO group"@en ;
+                                               rdfs:label "standard error of the proportion"@en ;
+                                               rdfs:seeAlso "https://fevir.net/resources/CodeSystem/27270#STATO:0000647" .
+
+
+###  http://purl.obolibrary.org/obo/STATO_0000648
+<http://purl.obolibrary.org/obo/STATO_0000648> rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://purl.obolibrary.org/obo/STATO_0000562> ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000122> ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000115> """A measure of dispersion applied to differences between means of independent groups across hypothetical repeated random samples.
+
+A standard error is used to quantify the uncertainty around a statistical estimate due to random sampling error."""@en ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000116> "Expert Working Group Agreement: 2024-02-12 vote 5-0 by Lenny Vasanthan, Xing Song, Eric Harvey, Harold Lehmann, Homa Keshavarz" ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000117> "Harold Lehmann, Kenneth Wilkins, Brian S. Alper" ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000119> "COKA/SEVCO group"@en ;
+                                               rdfs:label "standard error of the difference between independent means"@en ;
+                                               rdfs:seeAlso "https://fevir.net/resources/CodeSystem/27270#STATO:0000648" .
+
+
+###  http://purl.obolibrary.org/obo/STATO_0000649
+<http://purl.obolibrary.org/obo/STATO_0000649> rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://purl.obolibrary.org/obo/STATO_0000562> ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000122> ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000115> """A measure of dispersion applied to differences between proportions arising from independent groups across hypothetical repeated random samples.
+
+A standard error is used to quantify the uncertainty around a statistical estimate due to random sampling error."""@en ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000116> "Expert Working Group Agreement: 2024-02-12 vote 5-0 by Lenny Vasanthan, Xing Song, Eric Harvey, Harold Lehmann, Homa Keshavarz." ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000117> "Harold Lehmann, Kenneth Wilkins, Brian S. Alper" ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000119> "COKA/SEVCO group"@en ;
+                                               rdfs:label "standard error of the difference between independent proportions"@en ;
+                                               rdfs:seeAlso "https://fevir.net/resources/CodeSystem/27270#STATO:0000649" .
+
+
+###  http://purl.obolibrary.org/obo/STATO_0000650
+<http://purl.obolibrary.org/obo/STATO_0000650> rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://purl.obolibrary.org/obo/STATO_0000113> ,
+                                                               [ rdf:type owl:Restriction ;
+                                                                 owl:onProperty <http://purl.obolibrary.org/obo/IAO_0000136> ;
+                                                                 owl:someValuesFrom <http://purl.obolibrary.org/obo/STATO_0000502>
+                                                               ] ,
+                                                               [ rdf:type owl:Restriction ;
+                                                                 owl:onProperty <http://purl.obolibrary.org/obo/STATO_0000403> ;
+                                                                 owl:someValuesFrom <http://purl.obolibrary.org/obo/STATO_0000646>
+                                                               ] ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000115> """sampling variance refers to the variability in the estimates of a population parameter that arises from random sampling.
+sampling variance is a variance of the sampling distribution of a random variable and estimates the dispersion of sample estimates about their expected value in hypothetical repetitions of the sample.""" ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000119> """STATO and COKA group.
+adapted from:  https://dx.doi.org/10.4135/9781412963947.n515""" ;
+                                               rdfs:label "sampling variance" .
+
+
+###  http://purl.obolibrary.org/obo/STATO_0000651
+<http://purl.obolibrary.org/obo/STATO_0000651> rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000004> ,
+                                                               [ rdf:type owl:Restriction ;
+                                                                 owl:onProperty <http://purl.obolibrary.org/obo/OBI_0000312> ;
+                                                                 owl:someValuesFrom <http://purl.obolibrary.org/obo/STATO_0000502>
+                                                               ] ,
+                                                               [ rdf:type owl:Restriction ;
+                                                                 owl:onProperty <http://purl.obolibrary.org/obo/STATO_0000115> ;
+                                                                 owl:someValuesFrom <http://purl.obolibrary.org/obo/BFO_0000002>
+                                                               ] ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000115> "the output of a statistical sampling, a draw from a distribution or a population of physical or immaterial entities." ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000117> "Philippe Rocca-Serra" ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000119> "STATO" ;
+                                               rdfs:label "statistical sample" .
+
+
+###  http://purl.obolibrary.org/obo/STATO_0000652
+<http://purl.obolibrary.org/obo/STATO_0000652> rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://purl.obolibrary.org/obo/OBI_0200000> ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000122> ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000115> "calibration in statistics refers to the process of ensuring that the predicted probabilities or scores from a statistical model accurately reflect the true probabilities or outcomes observed in the data. It is an essential aspect of predictive modeling to ensure the reliability and interpretability of model predictions, where the goal is to estimate the likelihood of certain events or outcomes." ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000117> "Philippe Rocca-Serra" ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000118> "predictive model calibration" ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000119> """STATO
+adapted from ChatGPT3.5 with the following prompt: \"define 'calibration' in the context of statistics\"""" ;
+                                               rdfs:label "calibration" .
+
+
+###  http://purl.obolibrary.org/obo/STATO_0000653
+<http://purl.obolibrary.org/obo/STATO_0000653> rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://purl.obolibrary.org/obo/OBI_0200000> ,
+                                                               [ rdf:type owl:Restriction ;
+                                                                 owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000051> ;
+                                                                 owl:someValuesFrom <http://purl.obolibrary.org/obo/STATO_0000149>
+                                                               ] ,
+                                                               [ rdf:type owl:Restriction ;
+                                                                 owl:onProperty <http://purl.obolibrary.org/obo/OBI_0000293> ;
+                                                                 owl:someValuesFrom <http://purl.obolibrary.org/obo/STATO_0000069>
+                                                               ] ,
+                                                               [ rdf:type owl:Restriction ;
+                                                                 owl:onProperty <http://purl.obolibrary.org/obo/OBI_0000293> ;
+                                                                 owl:someValuesFrom <http://purl.obolibrary.org/obo/STATO_0000229>
+                                                               ] ,
+                                                               [ rdf:type owl:Restriction ;
+                                                                 owl:onProperty <http://purl.obolibrary.org/obo/OBI_0000293> ;
+                                                                 owl:someValuesFrom <http://purl.obolibrary.org/obo/STATO_0000390>
+                                                               ] ,
+                                                               [ rdf:type owl:Restriction ;
+                                                                 owl:onProperty <http://purl.obolibrary.org/obo/OBI_0000299> ;
+                                                                 owl:someValuesFrom <http://purl.obolibrary.org/obo/OBI_0000175>
+                                                               ] ,
+                                                               [ rdf:type owl:Restriction ;
+                                                                 owl:onProperty <http://purl.obolibrary.org/obo/OBI_0000417> ;
+                                                                 owl:someValuesFrom <http://purl.obolibrary.org/obo/STATO_0000224>
+                                                               ] ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000122> ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000115> """The Hosmer-Lemeshow test is a statistical test used to assess the goodness of fit of a logistic regression model. It evaluates how well the predicted probabilities from the model match the observed outcomes in the data. The test helps determine whether the logistic regression model adequately captures the relationship between the predictor variables and the binary outcome variable.
+The test statistic follows a chi-square distribution with degrees of freedom equal to the number of groups minus the number of parameters estimated in the logistic regression model.""" ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000117> "Philippe Rocca-Serra" ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000119> """STATO
+adapted from ChatGPT3.5 with the following prompt: \"define Hosmer-Lemeshow test in statistics\"""" ;
+                                               <http://purl.obolibrary.org/obo/STATO_0000041> """hltest(model, verbose = TRUE, ...)
+
+from:
+https://search.r-project.org/CRAN/refmans/glmtoolbox/html/hltest.html""" ;
+                                               rdfs:label "Hosmer-Lemeshow goodness-of-fit test" .
+
+
+###  http://purl.obolibrary.org/obo/STATO_0000654
+<http://purl.obolibrary.org/obo/STATO_0000654> rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://purl.obolibrary.org/obo/OBI_0000675> ,
+                                                               [ rdf:type owl:Restriction ;
+                                                                 owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000051> ;
+                                                                 owl:someValuesFrom <http://purl.obolibrary.org/obo/STATO_0000288>
+                                                               ] ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000115> "the objective of a data transformation to test a null hypothesis of absence of difference within subject holds." ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000117> "Philippe Rocca-Serra" ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000119> "STATO" ;
+                                               rdfs:label "paired observation comparison objective" .
+
+
+###  http://purl.obolibrary.org/obo/STATO_0000655
+<http://purl.obolibrary.org/obo/STATO_0000655> rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000573> ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000122> ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000115> "calibration plot is a line graph which plots values resulting from predictions againts values obtained through observation." ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000117> "Philippe Rocca-Serra" ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000119> "STATO" ;
+                                               <http://purl.obolibrary.org/obo/STATO_0000041> "https://cran.r-project.org/web/packages/predtools/vignettes/calibPlot.html" ;
+                                               rdfs:label "calibration plot" .
+
+
+###  http://purl.obolibrary.org/obo/STATO_0000656
+<http://purl.obolibrary.org/obo/STATO_0000656> rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000027> ,
+                                                               [ rdf:type owl:Restriction ;
+                                                                 owl:onProperty <http://purl.obolibrary.org/obo/IAO_0000219> ;
+                                                                 owl:someValuesFrom <http://purl.obolibrary.org/obo/IAO_0000573>
+                                                               ] ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000122> ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000115> """the slope of a line graph is a data item denoting the rate of change between the two variables represented on the graph.
+the slope is used to visualize and interpret the relationship between two variables.""" ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000117> "Philippe Rocca-Serra" ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000119> "STATO" ;
+                                               rdfs:label "slope" .
+
+
+###  http://purl.obolibrary.org/obo/STATO_0000657
+<http://purl.obolibrary.org/obo/STATO_0000657> rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000027> ,
+                                                               [ rdf:type owl:Restriction ;
+                                                                 owl:onProperty <http://purl.obolibrary.org/obo/IAO_0000219> ;
+                                                                 owl:someValuesFrom <http://purl.obolibrary.org/obo/IAO_0000573>
+                                                               ] ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000122> ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000115> "an intercept is a data item which corresponds to where a graph line cuts (intercepts) an coordinates axis." ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000117> "Philippe Rocca-Serra" ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000119> "STATO" ;
+                                               rdfs:label "intercept" .
+
+
+###  http://purl.obolibrary.org/obo/STATO_0000658
+<http://purl.obolibrary.org/obo/STATO_0000658> rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://purl.obolibrary.org/obo/STATO_0000573> ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000122> ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000115> "A mean of values in which each value is the duration of time between the start of observation and the occurrence of an event." ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000117> "Brian S. Alper, Joanne Dehnbostel, Muhammad Afzal, Yuan Gao" ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000119> "COKA/SEVCO group" ;
+                                               rdfs:label "mean time-to-event" .
+
+
+###  http://purl.obolibrary.org/obo/STATO_0000659
+<http://purl.obolibrary.org/obo/STATO_0000659> rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://purl.obolibrary.org/obo/STATO_0000574> ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000122> ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000115> "A median of values in which each value is the duration of time between the start of observation and the occurrence of an event." ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000117> "Brian S. Alper, Joanne Dehnbostel, Muhammad Afzal, Yuan Gao" ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000119> "COKA/SEVCO group" ;
+                                               rdfs:label "median time-to-event" .
 
 
 #################################################################
