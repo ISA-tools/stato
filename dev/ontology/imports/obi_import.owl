@@ -1,16 +1,16 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://purl.obolibrary.org/obo/stato/obi_import.owl#"
      xml:base="http://purl.obolibrary.org/obo/stato/obi_import.owl"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:terms="http://purl.org/dc/terms/"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:xml="http://www.w3.org/XML/1998/namespace"
-     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
-     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
-     xmlns:dc="http://purl.org/dc/elements/1.1/">
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/stato/obi_import.owl"/>
     
 
@@ -3621,7 +3621,7 @@ editor = PRS</obo:IAO_0000232>
     <!-- http://purl.obolibrary.org/obo/OBI_0000071 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000071">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/stato.owl#&apos;measure_of_hypothesis_testing&apos;"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000609"/>
         <obo:IAO_0000111 xml:lang="en">quantitative confidence value</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
         <obo:IAO_0000115 xml:lang="en">A data item which is used to indicate the degree of uncertainty about a measurement.</obo:IAO_0000115>
@@ -5258,7 +5258,7 @@ http://sourceforge.net/p/obi/obi-terms/716/</obo:IAO_0000116>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0200181"/>
             </owl:Restriction>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000029"/>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">center value</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
         <obo:IAO_0000115 xml:lang="en">A data item that is produced as the output of a center calculation data transformation and represents the center value of the input data.</obo:IAO_0000115>
@@ -5311,7 +5311,7 @@ http://sourceforge.net/p/obi/obi-terms/716/</obo:IAO_0000116>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0200170"/>
             </owl:Restriction>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000029"/>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">average value</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
         <obo:IAO_0000115 xml:lang="en">A  data item that is produced as the output of an averaging data transformation and represents the average value of the input data.</obo:IAO_0000115>
@@ -5654,7 +5654,7 @@ http://sourceforge.net/p/obi/obi-terms/716/</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/OBI_0000789 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000789">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/stato.owl#rate"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000645"/>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">survival rate</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A rate that represents the percentage of people or animals in a study or treatment group who are alive for a given period of time after diagnosis or initiation of monitoring.</obo:IAO_0000115>
@@ -9536,9 +9536,27 @@ addition of has_role restriction</obo:IAO_0000232>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/STATO_0000029 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000029"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/STATO_0000184 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000184"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000609 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000609"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000645 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000645"/>
     
 
 
@@ -9604,18 +9622,6 @@ addition of has_role restriction</obo:IAO_0000232>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uo.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">time unit</rdfs:label>
     </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/stato.owl#rate -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/stato.owl#rate"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/stato.owl#&apos;measure_of_hypothesis_testing&apos; -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/stato.owl#&apos;measure_of_hypothesis_testing&apos;"/>
     
 
 
@@ -10160,5 +10166,5 @@ This interpretation is *not* the same as an at-all-times relation
 
 
 
-<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
 
