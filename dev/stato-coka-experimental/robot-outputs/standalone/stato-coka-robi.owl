@@ -1,0 +1,1602 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.org/obofoundry/stato-riskofbias-extension#"
+     xml:base="http://purl.org/obofoundry/stato-riskofbias-extension"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://purl.org/obofoundry/stato-riskofbias-extension"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000114 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000114"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000116 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000117 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000117"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000118 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000119 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000003"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000015 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000015">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000117 rdf:resource="philippe rocca-serra"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000109 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000109"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000113 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000113">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000117 rdf:resource="philippe rocca-serra"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">variance</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000150 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000150">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000117 rdf:resource="philippe rocca-serra"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">minimum value</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000151 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000151">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000117 rdf:resource="philippe rocca-serra"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">maximum value</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000184 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000184"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000397 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000397"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000607 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000607">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000151"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 rdf:resource="a maximum value which corresponds to theoretical maximum value is a distribution or an ideal population"/>
+        <obo:IAO_0000117 rdf:resource="COKA Group"/>
+        <obo:IAO_0000117 rdf:resource="Philippe Rocca-Serra"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">maximum possible value</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000608 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000608">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000151"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 rdf:resource="a maximum value as seen in the sample population, collected dataset"/>
+        <obo:IAO_0000117 rdf:resource="COKA Group"/>
+        <obo:IAO_0000117 rdf:resource="Philippe Rocca-Serra"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">maximum observed value</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000609 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000609">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000150"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 rdf:resource="a minimum value which corresponds to theoretical minimum value is a distribution or an ideal population"/>
+        <obo:IAO_0000117 rdf:resource="COKA Group"/>
+        <obo:IAO_0000117 rdf:resource="Philippe Rocca-Serra"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">minimum possible value</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000610 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000610">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000150"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 rdf:resource="a minimum value as seen in the sample population, collected dataset"/>
+        <obo:IAO_0000117 rdf:resource="COKA Group"/>
+        <obo:IAO_0000117 rdf:resource="Philippe Rocca-Serra"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">minimum observed value</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000611 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000611">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000113"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 rdf:resource="a variance which  denotes the theorethical, ideal, unobserved population value of variation"/>
+        <obo:IAO_0000117 rdf:resource="COKA Group"/>
+        <obo:IAO_0000117 rdf:resource="Philippe Rocca-Serra"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">variance for population</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000612 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000612">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000113"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 rdf:resource="a variance which  denotes the observed  measured of variation in a statistical sample"/>
+        <obo:IAO_0000117 rdf:resource="COKA Group"/>
+        <obo:IAO_0000117 rdf:resource="Philippe Rocca-Serra"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">variance for sample</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000613 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000613">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 rdf:resource="bias is a process which"/>
+        <obo:IAO_0000117 rdf:resource="COKA Group"/>
+        <obo:IAO_0000117 rdf:resource="Philippe Rocca-Serra"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bias</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000614 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000614">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000613"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 rdf:resource="selection bias is a bias which occurs when individuals or groups in a study differ systematically from the population of interest leading to a systematic error in an association or outcome"/>
+        <obo:IAO_0000116 rdf:resource="ongoing discussion for definition and hierarchy positioning"/>
+        <obo:IAO_0000117 rdf:resource="COKA Group"/>
+        <obo:IAO_0000117 rdf:resource="Philippe Rocca-Serra"/>
+        <obo:IAO_0000119 rdf:resource="adapted from  Catalogue of Bias Collaboration. Banerjee A, Pluddemann A, O’Sullivan J, Nunan D. Performance bias. In: Catalogue Of Bias 2019. https://catalogofbias/biases/performance-bias/"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">selection bias</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000615 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000615">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000613"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 rdf:resource="performance biais is a bias where  systematic differences in the care provided to members of different study groups other than the intervention under investigation occur."/>
+        <obo:IAO_0000116 rdf:resource="ongoing discussion for definition and hierarchy positioning"/>
+        <obo:IAO_0000117 rdf:resource="COKA Group"/>
+        <obo:IAO_0000117 rdf:resource="Philippe Rocca-Serra"/>
+        <obo:IAO_0000119 rdf:resource="adapted from  Catalogue of Bias Collaboration. Banerjee A, Pluddemann A, O’Sullivan J, Nunan D. Performance bias. In: Catalogue Of Bias 2019. https://catalogofbias/biases/performance-bias/"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">performance bias</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000616 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000616">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000613"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 rdf:resource="detection biais is a bias which occurs when the way outcomes are determined differ in systematic ways between groups "/>
+        <obo:IAO_0000116 rdf:resource="ongoing discussion for definition and hierarchy positioning"/>
+        <obo:IAO_0000117 rdf:resource="COKA Group"/>
+        <obo:IAO_0000117 rdf:resource="Philippe Rocca-Serra"/>
+        <obo:IAO_0000119 rdf:resource="adapted from  Catalogue of Bias Collaboration. Banerjee A, Pluddemann A, O’Sullivan J, Nunan D. Performance bias. In: Catalogue Of Bias 2019. https://catalogofbias/biases/performance-bias/"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">detection bias</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000617 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000617">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000613"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 rdf:resource="attrition bias is a king of bias which occurs when unequal number of participants from study groups leave  in a trial"/>
+        <obo:IAO_0000116 rdf:resource="ongoing discussion for definition and hierarchy positioning"/>
+        <obo:IAO_0000117 rdf:resource="COKA Group"/>
+        <obo:IAO_0000117 rdf:resource="Philippe Rocca-Serra"/>
+        <obo:IAO_0000119 rdf:resource="adapted from  Catalogue of Bias Collaboration. Banerjee A, Pluddemann A, O’Sullivan J, Nunan D. Performance bias. In: Catalogue Of Bias 2019. https://catalogofbias/biases/performance-bias/"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">attrition bias</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000618 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000618">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000613"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 rdf:resource="analysis bias is a kind of bias which occurs when there are systemic differences in the way data  are handled"/>
+        <obo:IAO_0000116 rdf:resource="ongoing discussion for definition and hierarchy positioning"/>
+        <obo:IAO_0000117 rdf:resource="COKA Group"/>
+        <obo:IAO_0000117 rdf:resource="Philippe Rocca-Serra"/>
+        <obo:IAO_0000119 rdf:resource="adapted from  Catalogue of Bias Collaboration. Banerjee A, Pluddemann A, O’Sullivan J, Nunan D. Performance bias. In: Catalogue Of Bias 2019. https://catalogofbias/biases/performance-bias/"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">analysis bias</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000619 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000619">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000613"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 rdf:resource="reporting bias is a kind of bias which occurs when systematic distortion  arises from the selective disclosure or withholding of information by parties involved in the design, conduct, analysis, or dissemination of a study or research finding"/>
+        <obo:IAO_0000116 rdf:resource="ongoing discussion for definition and hierarchy positioning"/>
+        <obo:IAO_0000117 rdf:resource="COKA Group"/>
+        <obo:IAO_0000117 rdf:resource="Philippe Rocca-Serra"/>
+        <obo:IAO_0000119 rdf:resource="adapted from  Catalogue of Bias Collaboration. Banerjee A, Pluddemann A, O’Sullivan J, Nunan D. Performance bias. In: Catalogue Of Bias 2019. https://catalogofbias/biases/performance-bias/"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reporting bias</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000620 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000620">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000613"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 rdf:resource="synthesis bias is a kind of bias which occurs when …"/>
+        <obo:IAO_0000116 rdf:resource="ongoing discussion for definition and hierarchy positioning"/>
+        <obo:IAO_0000117 rdf:resource="COKA Group"/>
+        <obo:IAO_0000117 rdf:resource="Philippe Rocca-Serra"/>
+        <obo:IAO_0000119 rdf:resource="adapted from  Catalogue of Bias Collaboration. Banerjee A, Pluddemann A, O’Sullivan J, Nunan D. Performance bias. In: Catalogue Of Bias 2019. https://catalogofbias/biases/performance-bias/"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">synthesis bias</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000621 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000621">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000613"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 rdf:resource="conflicted interest bias is a bias which occurs when study sponsors, participants and or reviewers have not disclose relations between them which have bearing on the outcome or presentation of the results"/>
+        <obo:IAO_0000116 rdf:resource="ongoing discussion for definition and hierarchy positioning"/>
+        <obo:IAO_0000117 rdf:resource="COKA Group"/>
+        <obo:IAO_0000117 rdf:resource="Philippe Rocca-Serra"/>
+        <obo:IAO_0000119 rdf:resource="adapted from  Catalogue of Bias Collaboration. Banerjee A, Pluddemann A, O’Sullivan J, Nunan D. Performance bias. In: Catalogue Of Bias 2019. https://catalogofbias/biases/performance-bias/"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">conflicted interest bias</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000622 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000622">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000613"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 rdf:resource="qualitative research bias is a kind of bias which occurs when "/>
+        <obo:IAO_0000116 rdf:resource="ongoing discussion for definition and hierarchy positioning"/>
+        <obo:IAO_0000117 rdf:resource="COKA Group"/>
+        <obo:IAO_0000117 rdf:resource="Philippe Rocca-Serra"/>
+        <obo:IAO_0000119 rdf:resource="adapted from  Catalogue of Bias Collaboration. Banerjee A, Pluddemann A, O’Sullivan J, Nunan D. Performance bias. In: Catalogue Of Bias 2019. https://catalogofbias/biases/performance-bias/"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">qualitative research bias</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000623 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000623">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000613"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 rdf:resource="mixed method research bias is a kind of bias which occurs when..."/>
+        <obo:IAO_0000116 rdf:resource="ongoing discussion for definition and hierarchy positioning"/>
+        <obo:IAO_0000117 rdf:resource="COKA Group"/>
+        <obo:IAO_0000117 rdf:resource="Philippe Rocca-Serra"/>
+        <obo:IAO_0000119 rdf:resource="adapted from  Catalogue of Bias Collaboration. Banerjee A, Pluddemann A, O’Sullivan J, Nunan D. Performance bias. In: Catalogue Of Bias 2019. https://catalogofbias/biases/performance-bias/"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mixed method research bias</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000624 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000624">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000613"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 rdf:resource="predictive model research bias is a kind of bias which occurs when..."/>
+        <obo:IAO_0000116 rdf:resource="ongoing discussion for definition and hierarchy positioning"/>
+        <obo:IAO_0000117 rdf:resource="COKA Group"/>
+        <obo:IAO_0000117 rdf:resource="Philippe Rocca-Serra"/>
+        <obo:IAO_0000119 rdf:resource="adapted from  Catalogue of Bias Collaboration. Banerjee A, Pluddemann A, O’Sullivan J, Nunan D. Performance bias. In: Catalogue Of Bias 2019. https://catalogofbias/biases/performance-bias/"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">predictive model research bias</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000625 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000625">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000613"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 rdf:resource="allocation bias is a kind of bias which occurs when there are systematic difference in how participants are assigned to comparison groups in a clinical trial."/>
+        <obo:IAO_0000116 rdf:resource="ongoing discussion for definition and hierarchy positioning"/>
+        <obo:IAO_0000117 rdf:resource="COKA Group"/>
+        <obo:IAO_0000117 rdf:resource="Philippe Rocca-Serra"/>
+        <obo:IAO_0000118 rdf:resource="allocation bias"/>
+        <obo:IAO_0000119 rdf:resource="adapted from  Catalogue of Bias Collaboration. Banerjee A, Pluddemann A, O’Sullivan J, Nunan D. Performance bias. In: Catalogue Of Bias 2019. https://catalogofbias/biases/performance-bias/"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">comparator selection bias</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000626 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000626">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000614"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 rdf:resource="participant selection bias is a kind of selection bias which affect the recruitment process of study participants in a clinical trial"/>
+        <obo:IAO_0000116 rdf:resource="ongoing discussion for definition and hierarchy positioning"/>
+        <obo:IAO_0000117 rdf:resource="COKA Group"/>
+        <obo:IAO_0000117 rdf:resource="Philippe Rocca-Serra"/>
+        <obo:IAO_0000119 rdf:resource="adapted from  Catalogue of Bias Collaboration. Banerjee A, Pluddemann A, O’Sullivan J, Nunan D. Performance bias. In: Catalogue Of Bias 2019. https://catalogofbias/biases/performance-bias/"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">participant selection bias</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000627 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000627">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000614"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 rdf:resource="study selection bias is a kind of selection bias which affect the recruitment process of studies in the context of a systematic review"/>
+        <obo:IAO_0000116 rdf:resource="ongoing discussion for definition and hierarchy positioning"/>
+        <obo:IAO_0000117 rdf:resource="COKA Group"/>
+        <obo:IAO_0000117 rdf:resource="Philippe Rocca-Serra"/>
+        <obo:IAO_0000119 rdf:resource="adapted from  Catalogue of Bias Collaboration. Banerjee A, Pluddemann A, O’Sullivan J, Nunan D. Performance bias. In: Catalogue Of Bias 2019. https://catalogofbias/biases/performance-bias/"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">study selection bias</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000628 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000628">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000619"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 rdf:resource="interpretative reporting bias is a reporting bias which involves subjective and systematic variations down to the way how conclusions are drawn and elaborated. "/>
+        <obo:IAO_0000116 rdf:resource="ongoing discussion for definition and hierarchy positioning"/>
+        <obo:IAO_0000117 rdf:resource="COKA Group"/>
+        <obo:IAO_0000117 rdf:resource="Philippe Rocca-Serra"/>
+        <obo:IAO_0000118 rdf:resource="spin bias"/>
+        <obo:IAO_0000119 rdf:resource="adapted from  Catalogue of Bias Collaboration. Banerjee A, Pluddemann A, O’Sullivan J, Nunan D. Performance bias. In: Catalogue Of Bias 2019. https://catalogofbias/biases/performance-bias/"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">interpretative reporting bias</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000629 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000629">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000621"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 rdf:resource="funding bias is a conflicted interested bias which is caused by the influence of the study sponsor to promote findings in lights which favours the sponsor or any products manufactured by the sponsor."/>
+        <obo:IAO_0000116 rdf:resource="ongoing discussion for definition and hierarchy positioning"/>
+        <obo:IAO_0000117 rdf:resource="COKA Group"/>
+        <obo:IAO_0000117 rdf:resource="Philippe Rocca-Serra"/>
+        <obo:IAO_0000119 rdf:resource="adapted from  Catalogue of Bias Collaboration. Banerjee A, Pluddemann A, O’Sullivan J, Nunan D. Performance bias. In: Catalogue Of Bias 2019. https://catalogofbias/biases/performance-bias/"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">funding biais</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000630 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000630">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000613"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 rdf:resource="choice of question bias is a kind of bias which "/>
+        <obo:IAO_0000116 rdf:resource="ongoing discussion for definition and hierarchy positioning"/>
+        <obo:IAO_0000117 rdf:resource="COKA Group"/>
+        <obo:IAO_0000117 rdf:resource="Philippe Rocca-Serra"/>
+        <obo:IAO_0000119 rdf:resource="adapted from  Catalogue of Bias Collaboration. Banerjee A, Pluddemann A, O’Sullivan J, Nunan D. Performance bias. In: Catalogue Of Bias 2019. https://catalogofbias/biases/performance-bias/"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">choice of question bias</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000631 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000631">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000630"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 rdf:resource="population choice bias is a kind of bias which"/>
+        <obo:IAO_0000116 rdf:resource="ongoing discussion for definition and hierarchy positioning"/>
+        <obo:IAO_0000117 rdf:resource="COKA Group"/>
+        <obo:IAO_0000117 rdf:resource="Philippe Rocca-Serra"/>
+        <obo:IAO_0000119 rdf:resource="adapted from  Catalogue of Bias Collaboration. Banerjee A, Pluddemann A, O’Sullivan J, Nunan D. Performance bias. In: Catalogue Of Bias 2019. https://catalogofbias/biases/performance-bias/"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">population choice bias</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000632 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000632">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000630"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 rdf:resource="intervention choice of bias is a kind of bias which"/>
+        <obo:IAO_0000116 rdf:resource="ongoing discussion for definition and hierarchy positioning"/>
+        <obo:IAO_0000117 rdf:resource="COKA Group"/>
+        <obo:IAO_0000117 rdf:resource="Philippe Rocca-Serra"/>
+        <obo:IAO_0000119 rdf:resource="adapted from  Catalogue of Bias Collaboration. Banerjee A, Pluddemann A, O’Sullivan J, Nunan D. Performance bias. In: Catalogue Of Bias 2019. https://catalogofbias/biases/performance-bias/"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">intervention choice bias</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000633 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000633">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000630"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 rdf:resource="comparator choice bias is a kind of bias which"/>
+        <obo:IAO_0000116 rdf:resource="ongoing discussion for definition and hierarchy positioning"/>
+        <obo:IAO_0000117 rdf:resource="COKA Group"/>
+        <obo:IAO_0000117 rdf:resource="Philippe Rocca-Serra"/>
+        <obo:IAO_0000119 rdf:resource="adapted from  Catalogue of Bias Collaboration. Banerjee A, Pluddemann A, O’Sullivan J, Nunan D. Performance bias. In: Catalogue Of Bias 2019. https://catalogofbias/biases/performance-bias/"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">comparator choice bias</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000634 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000634">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000630"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 rdf:resource="outcome choice bias is a kind of bias which "/>
+        <obo:IAO_0000116 rdf:resource="ongoing discussion for definition and hierarchy positioning"/>
+        <obo:IAO_0000117 rdf:resource="COKA Group"/>
+        <obo:IAO_0000117 rdf:resource="Philippe Rocca-Serra"/>
+        <obo:IAO_0000119 rdf:resource="adapted from  Catalogue of Bias Collaboration. Banerjee A, Pluddemann A, O’Sullivan J, Nunan D. Performance bias. In: Catalogue Of Bias 2019. https://catalogofbias/biases/performance-bias/"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">outcome choice bias</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000635 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000635">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000630"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 rdf:resource="hidden agenda bias is a kind of bias which "/>
+        <obo:IAO_0000116 rdf:resource="ongoing discussion for definition and hierarchy positioning"/>
+        <obo:IAO_0000117 rdf:resource="COKA Group"/>
+        <obo:IAO_0000117 rdf:resource="Philippe Rocca-Serra"/>
+        <obo:IAO_0000119 rdf:resource="adapted from  Catalogue of Bias Collaboration. Banerjee A, Pluddemann A, O’Sullivan J, Nunan D. Performance bias. In: Catalogue Of Bias 2019. https://catalogofbias/biases/performance-bias/"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hidden agenda bias</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000636 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000636">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000630"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 rdf:resource="secondary gain bias is a kind of bias which "/>
+        <obo:IAO_0000116 rdf:resource="ongoing discussion for definition and hierarchy positioning"/>
+        <obo:IAO_0000117 rdf:resource="COKA Group"/>
+        <obo:IAO_0000117 rdf:resource="Philippe Rocca-Serra"/>
+        <obo:IAO_0000119 rdf:resource="adapted from  Catalogue of Bias Collaboration. Banerjee A, Pluddemann A, O’Sullivan J, Nunan D. Performance bias. In: Catalogue Of Bias 2019. https://catalogofbias/biases/performance-bias/"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">secondary gain bias</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000637 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000637">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000630"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 rdf:resource="predetermined result bias is a kind of bias which "/>
+        <obo:IAO_0000116 rdf:resource="ongoing discussion for definition and hierarchy positioning"/>
+        <obo:IAO_0000117 rdf:resource="COKA Group"/>
+        <obo:IAO_0000117 rdf:resource="Philippe Rocca-Serra"/>
+        <obo:IAO_0000118 rdf:resource="self fulfilling prophecy bias"/>
+        <obo:IAO_0000118 rdf:resource="shape  the result bias"/>
+        <obo:IAO_0000119 rdf:resource="adapted from  Catalogue of Bias Collaboration. Banerjee A, Pluddemann A, O’Sullivan J, Nunan D. Performance bias. In: Catalogue Of Bias 2019. https://catalogofbias/biases/performance-bias/"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">predetermined result bias</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000638 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000638">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000630"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 rdf:resource="cost and convenience bias is a kind of bias which "/>
+        <obo:IAO_0000116 rdf:resource="ongoing discussion for definition and hierarchy positioning"/>
+        <obo:IAO_0000117 rdf:resource="COKA Group"/>
+        <obo:IAO_0000117 rdf:resource="Philippe Rocca-Serra"/>
+        <obo:IAO_0000119 rdf:resource="adapted from  Catalogue of Bias Collaboration. Banerjee A, Pluddemann A, O’Sullivan J, Nunan D. Performance bias. In: Catalogue Of Bias 2019. https://catalogofbias/biases/performance-bias/"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cost and convenience bias</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000639 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000639">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000630"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 rdf:resource="funding availlability bias is a kind of bias which "/>
+        <obo:IAO_0000116 rdf:resource="ongoing discussion for definition and hierarchy positioning"/>
+        <obo:IAO_0000117 rdf:resource="COKA Group"/>
+        <obo:IAO_0000117 rdf:resource="Philippe Rocca-Serra"/>
+        <obo:IAO_0000119 rdf:resource="adapted from  Catalogue of Bias Collaboration. Banerjee A, Pluddemann A, O’Sullivan J, Nunan D. Performance bias. In: Catalogue Of Bias 2019. https://catalogofbias/biases/performance-bias/"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">funding availlability bias</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000640 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000640">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000630"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 rdf:resource="regulation bias is a kind of bias which "/>
+        <obo:IAO_0000116 rdf:resource="ongoing discussion for definition and hierarchy positioning"/>
+        <obo:IAO_0000117 rdf:resource="COKA Group"/>
+        <obo:IAO_0000117 rdf:resource="Philippe Rocca-Serra"/>
+        <obo:IAO_0000119 rdf:resource="adapted from  Catalogue of Bias Collaboration. Banerjee A, Pluddemann A, O’Sullivan J, Nunan D. Performance bias. In: Catalogue Of Bias 2019. https://catalogofbias/biases/performance-bias/"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">regulation bias</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000641 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000641">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000630"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 rdf:resource="wrong design bias is a kind of bias which "/>
+        <obo:IAO_0000116 rdf:resource="ongoing discussion for definition and hierarchy positioning"/>
+        <obo:IAO_0000117 rdf:resource="COKA Group"/>
+        <obo:IAO_0000117 rdf:resource="Philippe Rocca-Serra"/>
+        <obo:IAO_0000119 rdf:resource="adapted from  Catalogue of Bias Collaboration. Banerjee A, Pluddemann A, O’Sullivan J, Nunan D. Performance bias. In: Catalogue Of Bias 2019. https://catalogofbias/biases/performance-bias/"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wrong design bias</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000642 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000642">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000613"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 rdf:resource="study eligibility criteria bias is a kind of bias which "/>
+        <obo:IAO_0000116 rdf:resource="ongoing discussion for definition and hierarchy positioning"/>
+        <obo:IAO_0000117 rdf:resource="COKA Group"/>
+        <obo:IAO_0000117 rdf:resource="Philippe Rocca-Serra"/>
+        <obo:IAO_0000119 rdf:resource="adapted from  Catalogue of Bias Collaboration. Banerjee A, Pluddemann A, O’Sullivan J, Nunan D. Performance bias. In: Catalogue Of Bias 2019. https://catalogofbias/biases/performance-bias/"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">study eligibility criteria bias</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000643 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000643">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000642"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 rdf:resource="study eligibility criteria bias due to ambiguity is a kind of bias which "/>
+        <obo:IAO_0000116 rdf:resource="ongoing discussion for definition and hierarchy positioning"/>
+        <obo:IAO_0000117 rdf:resource="COKA Group"/>
+        <obo:IAO_0000117 rdf:resource="Philippe Rocca-Serra"/>
+        <obo:IAO_0000119 rdf:resource="adapted from  Catalogue of Bias Collaboration. Banerjee A, Pluddemann A, O’Sullivan J, Nunan D. Performance bias. In: Catalogue Of Bias 2019. https://catalogofbias/biases/performance-bias/"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">study eligibility criteria bias due to ambiguity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000644 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000644">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000642"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 rdf:resource="study eligibility criteria bias due to inadequacy towards review question is a kind of bias which "/>
+        <obo:IAO_0000116 rdf:resource="ongoing discussion for definition and hierarchy positioning"/>
+        <obo:IAO_0000117 rdf:resource="COKA Group"/>
+        <obo:IAO_0000117 rdf:resource="Philippe Rocca-Serra"/>
+        <obo:IAO_0000119 rdf:resource="adapted from  Catalogue of Bias Collaboration. Banerjee A, Pluddemann A, O’Sullivan J, Nunan D. Performance bias. In: Catalogue Of Bias 2019. https://catalogofbias/biases/performance-bias/"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">study eligibility criteria bias due to inadequacy towards review question</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000645 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000645">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000644"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 rdf:resource="study eligibility criteria bias due to inadequacy of study characteristics towards review question is a kind of bias which "/>
+        <obo:IAO_0000116 rdf:resource="ongoing discussion for definition and hierarchy positioning"/>
+        <obo:IAO_0000117 rdf:resource="COKA Group"/>
+        <obo:IAO_0000117 rdf:resource="Philippe Rocca-Serra"/>
+        <obo:IAO_0000119 rdf:resource="adapted from  Catalogue of Bias Collaboration. Banerjee A, Pluddemann A, O’Sullivan J, Nunan D. Performance bias. In: Catalogue Of Bias 2019. https://catalogofbias/biases/performance-bias/"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">study eligibility criteria bias due to inadequacy of study characteristics towards review question</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000646 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000646">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000644"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 rdf:resource="study eligibility criteria bias due to inadequacy of information sources towards review question is a kind of bias which "/>
+        <obo:IAO_0000116 rdf:resource="ongoing discussion for definition and hierarchy positioning"/>
+        <obo:IAO_0000117 rdf:resource="COKA Group"/>
+        <obo:IAO_0000117 rdf:resource="Philippe Rocca-Serra"/>
+        <obo:IAO_0000119 rdf:resource="adapted from  Catalogue of Bias Collaboration. Banerjee A, Pluddemann A, O’Sullivan J, Nunan D. Performance bias. In: Catalogue Of Bias 2019. https://catalogofbias/biases/performance-bias/"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">study eligibility criteria bias due to inadequacy of information sources towards review question</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000647 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000647">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000642"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 rdf:resource="study eligibility criteria bias due to lack of prespecification is a kind of bias which "/>
+        <obo:IAO_0000116 rdf:resource="ongoing discussion for definition and hierarchy positioning"/>
+        <obo:IAO_0000117 rdf:resource="COKA Group"/>
+        <obo:IAO_0000117 rdf:resource="Philippe Rocca-Serra"/>
+        <obo:IAO_0000119 rdf:resource="adapted from  Catalogue of Bias Collaboration. Banerjee A, Pluddemann A, O’Sullivan J, Nunan D. Performance bias. In: Catalogue Of Bias 2019. https://catalogofbias/biases/performance-bias/"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">study eligibility criteria bias due to lack of prespecification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000648 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000648">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000627"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 rdf:resource="study selection bias due to language of study is a kind of bias which "/>
+        <obo:IAO_0000116 rdf:resource="ongoing discussion for definition and hierarchy positioning"/>
+        <obo:IAO_0000117 rdf:resource="COKA Group"/>
+        <obo:IAO_0000117 rdf:resource="Philippe Rocca-Serra"/>
+        <obo:IAO_0000119 rdf:resource="adapted from  Catalogue of Bias Collaboration. Banerjee A, Pluddemann A, O’Sullivan J, Nunan D. Performance bias. In: Catalogue Of Bias 2019. https://catalogofbias/biases/performance-bias/"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">study selection bias due to language of study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000649 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000649">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000627"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 rdf:resource="study selection bias due to geographical origin of study is a kind of bias which "/>
+        <obo:IAO_0000116 rdf:resource="ongoing discussion for definition and hierarchy positioning"/>
+        <obo:IAO_0000117 rdf:resource="COKA Group"/>
+        <obo:IAO_0000117 rdf:resource="Philippe Rocca-Serra"/>
+        <obo:IAO_0000119 rdf:resource="adapted from  Catalogue of Bias Collaboration. Banerjee A, Pluddemann A, O’Sullivan J, Nunan D. Performance bias. In: Catalogue Of Bias 2019. https://catalogofbias/biases/performance-bias/"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">study selection bias due to geographical origin of study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000650 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000650">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000627"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 rdf:resource="study selection bias due to search strategy lack of sensitivity is a kind of bias which "/>
+        <obo:IAO_0000116 rdf:resource="ongoing discussion for definition and hierarchy positioning"/>
+        <obo:IAO_0000117 rdf:resource="COKA Group"/>
+        <obo:IAO_0000117 rdf:resource="Philippe Rocca-Serra"/>
+        <obo:IAO_0000119 rdf:resource="adapted from  Catalogue of Bias Collaboration. Banerjee A, Pluddemann A, O’Sullivan J, Nunan D. Performance bias. In: Catalogue Of Bias 2019. https://catalogofbias/biases/performance-bias/"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">study selection bias due to search strategy lack of sensitivity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000651 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000651">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000627"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 rdf:resource="study selection bias due to search strategy inadequate sources is a kind of bias which "/>
+        <obo:IAO_0000116 rdf:resource="ongoing discussion for definition and hierarchy positioning"/>
+        <obo:IAO_0000117 rdf:resource="COKA Group"/>
+        <obo:IAO_0000117 rdf:resource="Philippe Rocca-Serra"/>
+        <obo:IAO_0000119 rdf:resource="adapted from  Catalogue of Bias Collaboration. Banerjee A, Pluddemann A, O’Sullivan J, Nunan D. Performance bias. In: Catalogue Of Bias 2019. https://catalogofbias/biases/performance-bias/"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">study selection bias due to search strategy inadequate sources</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000652 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000652">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000651"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 rdf:resource="study selection bias due to search strategy inadequate database sources is a kind of bias which "/>
+        <obo:IAO_0000116 rdf:resource="ongoing discussion for definition and hierarchy positioning"/>
+        <obo:IAO_0000117 rdf:resource="COKA Group"/>
+        <obo:IAO_0000117 rdf:resource="Philippe Rocca-Serra"/>
+        <obo:IAO_0000119 rdf:resource="adapted from  Catalogue of Bias Collaboration. Banerjee A, Pluddemann A, O’Sullivan J, Nunan D. Performance bias. In: Catalogue Of Bias 2019. https://catalogofbias/biases/performance-bias/"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">study selection bias due to search strategy inadequate database sources</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000653 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000653">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000627"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 rdf:resource="study selection bias due to search strategy inadequate limits over information sources is a kind of bias which "/>
+        <obo:IAO_0000116 rdf:resource="ongoing discussion for definition and hierarchy positioning"/>
+        <obo:IAO_0000117 rdf:resource="COKA Group"/>
+        <obo:IAO_0000117 rdf:resource="Philippe Rocca-Serra"/>
+        <obo:IAO_0000119 rdf:resource="adapted from  Catalogue of Bias Collaboration. Banerjee A, Pluddemann A, O’Sullivan J, Nunan D. Performance bias. In: Catalogue Of Bias 2019. https://catalogofbias/biases/performance-bias/"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">study selection bias due to search strategy inadequate limits over information sources</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000654 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000654">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000627"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 rdf:resource="study selection bias due to lack of adherence to eligibility criteria is a kind of bias which "/>
+        <obo:IAO_0000116 rdf:resource="ongoing discussion for definition and hierarchy positioning"/>
+        <obo:IAO_0000117 rdf:resource="COKA Group"/>
+        <obo:IAO_0000117 rdf:resource="Philippe Rocca-Serra"/>
+        <obo:IAO_0000119 rdf:resource="adapted from  Catalogue of Bias Collaboration. Banerjee A, Pluddemann A, O’Sullivan J, Nunan D. Performance bias. In: Catalogue Of Bias 2019. https://catalogofbias/biases/performance-bias/"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">study selection bias due to lack of adherence to eligibility criteria</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000655 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000655">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000627"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 rdf:resource="study selection bias due to lack of error minimization during study selection is a kind of bias which "/>
+        <obo:IAO_0000116 rdf:resource="ongoing discussion for definition and hierarchy positioning"/>
+        <obo:IAO_0000117 rdf:resource="COKA Group"/>
+        <obo:IAO_0000117 rdf:resource="Philippe Rocca-Serra"/>
+        <obo:IAO_0000119 rdf:resource="adapted from  Catalogue of Bias Collaboration. Banerjee A, Pluddemann A, O’Sullivan J, Nunan D. Performance bias. In: Catalogue Of Bias 2019. https://catalogofbias/biases/performance-bias/"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">study selection bias due to lack of error minimization during study selection</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000656 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000656">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000627"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 rdf:resource="study selection bias due to one-sided referencing is a kind of bias which "/>
+        <obo:IAO_0000116 rdf:resource="ongoing discussion for definition and hierarchy positioning"/>
+        <obo:IAO_0000117 rdf:resource="COKA Group"/>
+        <obo:IAO_0000117 rdf:resource="Philippe Rocca-Serra"/>
+        <obo:IAO_0000119 rdf:resource="adapted from  Catalogue of Bias Collaboration. Banerjee A, Pluddemann A, O’Sullivan J, Nunan D. Performance bias. In: Catalogue Of Bias 2019. https://catalogofbias/biases/performance-bias/"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">study selection bias due to one-sided referencing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000657 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000657">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000620"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 rdf:resource="synthesis bias due to missing eligible studies is a kind of bias which "/>
+        <obo:IAO_0000116 rdf:resource="ongoing discussion for definition and hierarchy positioning"/>
+        <obo:IAO_0000117 rdf:resource="COKA Group"/>
+        <obo:IAO_0000117 rdf:resource="Philippe Rocca-Serra"/>
+        <obo:IAO_0000119 rdf:resource="adapted from  Catalogue of Bias Collaboration. Banerjee A, Pluddemann A, O’Sullivan J, Nunan D. Performance bias. In: Catalogue Of Bias 2019. https://catalogofbias/biases/performance-bias/"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">synthesis bias due to missing eligible studies</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000658 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000658">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000620"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 rdf:resource="synthesis bias due to inadequate summerization parameters is a kind of bias which "/>
+        <obo:IAO_0000116 rdf:resource="ongoing discussion for definition and hierarchy positioning"/>
+        <obo:IAO_0000117 rdf:resource="COKA Group"/>
+        <obo:IAO_0000117 rdf:resource="Philippe Rocca-Serra"/>
+        <obo:IAO_0000119 rdf:resource="adapted from  Catalogue of Bias Collaboration. Banerjee A, Pluddemann A, O’Sullivan J, Nunan D. Performance bias. In: Catalogue Of Bias 2019. https://catalogofbias/biases/performance-bias/"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">synthesis bias due to inadequate summerization parameters</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000659 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000659">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000620"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 rdf:resource="synthesis bias due to unadressed heterogeneity is a kind of bias which "/>
+        <obo:IAO_0000116 rdf:resource="ongoing discussion for definition and hierarchy positioning"/>
+        <obo:IAO_0000117 rdf:resource="COKA Group"/>
+        <obo:IAO_0000117 rdf:resource="Philippe Rocca-Serra"/>
+        <obo:IAO_0000119 rdf:resource="adapted from  Catalogue of Bias Collaboration. Banerjee A, Pluddemann A, O’Sullivan J, Nunan D. Performance bias. In: Catalogue Of Bias 2019. https://catalogofbias/biases/performance-bias/"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">synthesis bias due to unadressed heterogeneity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000660 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000660">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000620"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 rdf:resource="synthesis bias due to sensitivity to factors is a kind of bias which "/>
+        <obo:IAO_0000116 rdf:resource="ongoing discussion for definition and hierarchy positioning"/>
+        <obo:IAO_0000117 rdf:resource="COKA Group"/>
+        <obo:IAO_0000117 rdf:resource="Philippe Rocca-Serra"/>
+        <obo:IAO_0000119 rdf:resource="adapted from  Catalogue of Bias Collaboration. Banerjee A, Pluddemann A, O’Sullivan J, Nunan D. Performance bias. In: Catalogue Of Bias 2019. https://catalogofbias/biases/performance-bias/"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">synthesis bias due to sensitivity to factors</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000661 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000661">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000620"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 rdf:resource="synthesis bias due to lack of error minimization during data extraction is a kind of bias which "/>
+        <obo:IAO_0000116 rdf:resource="ongoing discussion for definition and hierarchy positioning"/>
+        <obo:IAO_0000117 rdf:resource="COKA Group"/>
+        <obo:IAO_0000117 rdf:resource="Philippe Rocca-Serra"/>
+        <obo:IAO_0000119 rdf:resource="adapted from  Catalogue of Bias Collaboration. Banerjee A, Pluddemann A, O’Sullivan J, Nunan D. Performance bias. In: Catalogue Of Bias 2019. https://catalogofbias/biases/performance-bias/"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">synthesis bias due to lack of error minimization during data extraction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000662 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000662">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000620"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 rdf:resource="synthesis bias due to insufficient study characteristicss for proper result interpretation is a kind of bias which "/>
+        <obo:IAO_0000116 rdf:resource="ongoing discussion for definition and hierarchy positioning"/>
+        <obo:IAO_0000117 rdf:resource="COKA Group"/>
+        <obo:IAO_0000117 rdf:resource="Philippe Rocca-Serra"/>
+        <obo:IAO_0000119 rdf:resource="adapted from  Catalogue of Bias Collaboration. Banerjee A, Pluddemann A, O’Sullivan J, Nunan D. Performance bias. In: Catalogue Of Bias 2019. https://catalogofbias/biases/performance-bias/"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">synthesis bias due to insufficient study characteristicss for proper result interpretation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000663 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000663">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000613"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 rdf:resource="selective analysis reporting bias is a kind of bias which "/>
+        <obo:IAO_0000116 rdf:resource="ongoing discussion for definition and hierarchy positioning"/>
+        <obo:IAO_0000117 rdf:resource="COKA Group"/>
+        <obo:IAO_0000117 rdf:resource="Philippe Rocca-Serra"/>
+        <obo:IAO_0000119 rdf:resource="adapted from  Catalogue of Bias Collaboration. Banerjee A, Pluddemann A, O’Sullivan J, Nunan D. Performance bias. In: Catalogue Of Bias 2019. https://catalogofbias/biases/performance-bias/"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">selective analysis reporting bias</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000664 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000664">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000663"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 rdf:resource="subgroup analysis reporting bias is a kind of bias which "/>
+        <obo:IAO_0000116 rdf:resource="ongoing discussion for definition and hierarchy positioning"/>
+        <obo:IAO_0000117 rdf:resource="COKA Group"/>
+        <obo:IAO_0000117 rdf:resource="Philippe Rocca-Serra"/>
+        <obo:IAO_0000119 rdf:resource="adapted from  Catalogue of Bias Collaboration. Banerjee A, Pluddemann A, O’Sullivan J, Nunan D. Performance bias. In: Catalogue Of Bias 2019. https://catalogofbias/biases/performance-bias/"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subgroup analysis reporting bias</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000665 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000665">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000663"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 rdf:resource="selective analysis reporting bias from availability is a kind of bias which "/>
+        <obo:IAO_0000116 rdf:resource="ongoing discussion for definition and hierarchy positioning"/>
+        <obo:IAO_0000117 rdf:resource="COKA Group"/>
+        <obo:IAO_0000117 rdf:resource="Philippe Rocca-Serra"/>
+        <obo:IAO_0000119 rdf:resource="adapted from  Catalogue of Bias Collaboration. Banerjee A, Pluddemann A, O’Sullivan J, Nunan D. Performance bias. In: Catalogue Of Bias 2019. https://catalogofbias/biases/performance-bias/"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">selective analysis reporting bias from availability</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000666 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000666">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000663"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 rdf:resource="selective analysis reporting bias from repeated analyses at multiple times is a kind of bias which "/>
+        <obo:IAO_0000116 rdf:resource="ongoing discussion for definition and hierarchy positioning"/>
+        <obo:IAO_0000117 rdf:resource="COKA Group"/>
+        <obo:IAO_0000117 rdf:resource="Philippe Rocca-Serra"/>
+        <obo:IAO_0000119 rdf:resource="adapted from  Catalogue of Bias Collaboration. Banerjee A, Pluddemann A, O’Sullivan J, Nunan D. Performance bias. In: Catalogue Of Bias 2019. https://catalogofbias/biases/performance-bias/"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">selective analysis reporting bias from repeated analyses at multiple times</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000667 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000667">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000663"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 rdf:resource="selective analysis reporting bias from multiple analytic models is a kind of bias which "/>
+        <obo:IAO_0000116 rdf:resource="ongoing discussion for definition and hierarchy positioning"/>
+        <obo:IAO_0000117 rdf:resource="COKA Group"/>
+        <obo:IAO_0000117 rdf:resource="Philippe Rocca-Serra"/>
+        <obo:IAO_0000119 rdf:resource="adapted from  Catalogue of Bias Collaboration. Banerjee A, Pluddemann A, O’Sullivan J, Nunan D. Performance bias. In: Catalogue Of Bias 2019. https://catalogofbias/biases/performance-bias/"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">selective analysis reporting bias from multiple analytic models</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000668 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000668">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000663"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 rdf:resource="selective analysis reporting bias from multiple thresholds (thresholds for variable definitions) is a kind of bias which "/>
+        <obo:IAO_0000116 rdf:resource="ongoing discussion for definition and hierarchy positioning"/>
+        <obo:IAO_0000117 rdf:resource="COKA Group"/>
+        <obo:IAO_0000117 rdf:resource="Philippe Rocca-Serra"/>
+        <obo:IAO_0000119 rdf:resource="adapted from  Catalogue of Bias Collaboration. Banerjee A, Pluddemann A, O’Sullivan J, Nunan D. Performance bias. In: Catalogue Of Bias 2019. https://catalogofbias/biases/performance-bias/"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">selective analysis reporting bias from multiple thresholds (thresholds for variable definitions)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000669 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000669">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000663"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 rdf:resource="selective outcome reporting-selective outcome measure reporting within outcome domain is a kind of bias which "/>
+        <obo:IAO_0000116 rdf:resource="ongoing discussion for definition and hierarchy positioning"/>
+        <obo:IAO_0000117 rdf:resource="COKA Group"/>
+        <obo:IAO_0000117 rdf:resource="Philippe Rocca-Serra"/>
+        <obo:IAO_0000119 rdf:resource="adapted from  Catalogue of Bias Collaboration. Banerjee A, Pluddemann A, O’Sullivan J, Nunan D. Performance bias. In: Catalogue Of Bias 2019. https://catalogofbias/biases/performance-bias/"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">selective outcome reporting-selective outcome measure reporting within outcome domain</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000670 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000670">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000618"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 rdf:resource="analysis bias due to improper controlling for confounding factors is a kind of bias which "/>
+        <obo:IAO_0000116 rdf:resource="ongoing discussion for definition and hierarchy positioning"/>
+        <obo:IAO_0000117 rdf:resource="COKA Group"/>
+        <obo:IAO_0000117 rdf:resource="Philippe Rocca-Serra"/>
+        <obo:IAO_0000119 rdf:resource="adapted from  Catalogue of Bias Collaboration. Banerjee A, Pluddemann A, O’Sullivan J, Nunan D. Performance bias. In: Catalogue Of Bias 2019. https://catalogofbias/biases/performance-bias/"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">analysis bias due to improper controlling for confounding factors</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000671 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000671">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000618"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 rdf:resource="analysis bias due to improper statistical model selection is a kind of bias which "/>
+        <obo:IAO_0000116 rdf:resource="ongoing discussion for definition and hierarchy positioning"/>
+        <obo:IAO_0000117 rdf:resource="COKA Group"/>
+        <obo:IAO_0000117 rdf:resource="Philippe Rocca-Serra"/>
+        <obo:IAO_0000119 rdf:resource="adapted from  Catalogue of Bias Collaboration. Banerjee A, Pluddemann A, O’Sullivan J, Nunan D. Performance bias. In: Catalogue Of Bias 2019. https://catalogofbias/biases/performance-bias/"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">analysis bias due to improper statistical model selection</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000672 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000672">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000618"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 rdf:resource="analysis bias due to inadequate number for analysis is a kind of bias which "/>
+        <obo:IAO_0000116 rdf:resource="ongoing discussion for definition and hierarchy positioning"/>
+        <obo:IAO_0000117 rdf:resource="COKA Group"/>
+        <obo:IAO_0000117 rdf:resource="Philippe Rocca-Serra"/>
+        <obo:IAO_0000119 rdf:resource="adapted from  Catalogue of Bias Collaboration. Banerjee A, Pluddemann A, O’Sullivan J, Nunan D. Performance bias. In: Catalogue Of Bias 2019. https://catalogofbias/biases/performance-bias/"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">analysis bias due to inadequate number for analysis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000673 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000673">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000618"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 rdf:resource="analysis bias due to data mishandling is a kind of bias which "/>
+        <obo:IAO_0000116 rdf:resource="ongoing discussion for definition and hierarchy positioning"/>
+        <obo:IAO_0000117 rdf:resource="COKA Group"/>
+        <obo:IAO_0000117 rdf:resource="Philippe Rocca-Serra"/>
+        <obo:IAO_0000119 rdf:resource="adapted from  Catalogue of Bias Collaboration. Banerjee A, Pluddemann A, O’Sullivan J, Nunan D. Performance bias. In: Catalogue Of Bias 2019. https://catalogofbias/biases/performance-bias/"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">analysis bias due to data mishandling</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000674 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000674">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000618"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 rdf:resource="analysis bias due to inadequate intention to treat analysis is a kind of bias which "/>
+        <obo:IAO_0000116 rdf:resource="ongoing discussion for definition and hierarchy positioning"/>
+        <obo:IAO_0000117 rdf:resource="COKA Group"/>
+        <obo:IAO_0000117 rdf:resource="Philippe Rocca-Serra"/>
+        <obo:IAO_0000119 rdf:resource="adapted from  Catalogue of Bias Collaboration. Banerjee A, Pluddemann A, O’Sullivan J, Nunan D. Performance bias. In: Catalogue Of Bias 2019. https://catalogofbias/biases/performance-bias/"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">analysis bias due to inadequate intention to treat analysis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000675 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000675">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000618"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 rdf:resource="analysis bias due to inadequate per protocol analysis(for adverse effects) is a kind of bias which "/>
+        <obo:IAO_0000116 rdf:resource="ongoing discussion for definition and hierarchy positioning"/>
+        <obo:IAO_0000117 rdf:resource="COKA Group"/>
+        <obo:IAO_0000117 rdf:resource="Philippe Rocca-Serra"/>
+        <obo:IAO_0000119 rdf:resource="adapted from  Catalogue of Bias Collaboration. Banerjee A, Pluddemann A, O’Sullivan J, Nunan D. Performance bias. In: Catalogue Of Bias 2019. https://catalogofbias/biases/performance-bias/"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">analysis bias due to inadequate per protocol analysis(for adverse effects)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000676 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000676">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000618"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 rdf:resource="analysis bias during preliminary analysis is a kind of bias which "/>
+        <obo:IAO_0000116 rdf:resource="ongoing discussion for definition and hierarchy positioning"/>
+        <obo:IAO_0000117 rdf:resource="COKA Group"/>
+        <obo:IAO_0000117 rdf:resource="Philippe Rocca-Serra"/>
+        <obo:IAO_0000119 rdf:resource="adapted from  Catalogue of Bias Collaboration. Banerjee A, Pluddemann A, O’Sullivan J, Nunan D. Performance bias. In: Catalogue Of Bias 2019. https://catalogofbias/biases/performance-bias/"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">analysis bias during preliminary analysis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000677 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000677">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000618"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 rdf:resource="analysis bias during to inadequate analysis threshold selection (thresholds for statistical significance) is a kind of bias which "/>
+        <obo:IAO_0000116 rdf:resource="ongoing discussion for definition and hierarchy positioning"/>
+        <obo:IAO_0000117 rdf:resource="COKA Group"/>
+        <obo:IAO_0000117 rdf:resource="Philippe Rocca-Serra"/>
+        <obo:IAO_0000119 rdf:resource="adapted from  Catalogue of Bias Collaboration. Banerjee A, Pluddemann A, O’Sullivan J, Nunan D. Performance bias. In: Catalogue Of Bias 2019. https://catalogofbias/biases/performance-bias/"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">analysis bias during to inadequate analysis threshold selection (thresholds for statistical significance)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000678 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000678">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000618"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 rdf:resource="data dredging bias is a kind of bias which "/>
+        <obo:IAO_0000116 rdf:resource="ongoing discussion for definition and hierarchy positioning"/>
+        <obo:IAO_0000117 rdf:resource="COKA Group"/>
+        <obo:IAO_0000117 rdf:resource="Philippe Rocca-Serra"/>
+        <obo:IAO_0000119 rdf:resource="adapted from  Catalogue of Bias Collaboration. Banerjee A, Pluddemann A, O’Sullivan J, Nunan D. Performance bias. In: Catalogue Of Bias 2019. https://catalogofbias/biases/performance-bias/"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">data dredging bias</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000679 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000679">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000618"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 rdf:resource="analysis bias due to lack of data analysst blinding is a kind of bias which "/>
+        <obo:IAO_0000116 rdf:resource="ongoing discussion for definition and hierarchy positioning"/>
+        <obo:IAO_0000117 rdf:resource="COKA Group"/>
+        <obo:IAO_0000117 rdf:resource="Philippe Rocca-Serra"/>
+        <obo:IAO_0000119 rdf:resource="adapted from  Catalogue of Bias Collaboration. Banerjee A, Pluddemann A, O’Sullivan J, Nunan D. Performance bias. In: Catalogue Of Bias 2019. https://catalogofbias/biases/performance-bias/"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">analysis bias due to lack of data analysst blinding</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000680 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000680">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000618"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 rdf:resource="analysis bias due to inadequate sample size is a kind of bias which "/>
+        <obo:IAO_0000116 rdf:resource="ongoing discussion for definition and hierarchy positioning"/>
+        <obo:IAO_0000117 rdf:resource="COKA Group"/>
+        <obo:IAO_0000117 rdf:resource="Philippe Rocca-Serra"/>
+        <obo:IAO_0000119 rdf:resource="adapted from  Catalogue of Bias Collaboration. Banerjee A, Pluddemann A, O’Sullivan J, Nunan D. Performance bias. In: Catalogue Of Bias 2019. https://catalogofbias/biases/performance-bias/"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">analysis bias due to inadequate sample size</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000681 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000681">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000628"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 rdf:resource="rethoric bias is a kind of bias which "/>
+        <obo:IAO_0000116 rdf:resource="ongoing discussion for definition and hierarchy positioning"/>
+        <obo:IAO_0000117 rdf:resource="COKA Group"/>
+        <obo:IAO_0000117 rdf:resource="Philippe Rocca-Serra"/>
+        <obo:IAO_0000119 rdf:resource="adapted from  Catalogue of Bias Collaboration. Banerjee A, Pluddemann A, O’Sullivan J, Nunan D. Performance bias. In: Catalogue Of Bias 2019. https://catalogofbias/biases/performance-bias/"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rethoric bias</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000682 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000682">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000628"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 rdf:resource="confirmation bias is a kind of bias which "/>
+        <obo:IAO_0000116 rdf:resource="ongoing discussion for definition and hierarchy positioning"/>
+        <obo:IAO_0000117 rdf:resource="COKA Group"/>
+        <obo:IAO_0000117 rdf:resource="Philippe Rocca-Serra"/>
+        <obo:IAO_0000119 rdf:resource="adapted from  Catalogue of Bias Collaboration. Banerjee A, Pluddemann A, O’Sullivan J, Nunan D. Performance bias. In: Catalogue Of Bias 2019. https://catalogofbias/biases/performance-bias/"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">confirmation bias</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000683 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000683">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000628"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 rdf:resource="novelty bias is a kind of bias which "/>
+        <obo:IAO_0000116 rdf:resource="ongoing discussion for definition and hierarchy positioning"/>
+        <obo:IAO_0000117 rdf:resource="COKA Group"/>
+        <obo:IAO_0000117 rdf:resource="Philippe Rocca-Serra"/>
+        <obo:IAO_0000119 rdf:resource="adapted from  Catalogue of Bias Collaboration. Banerjee A, Pluddemann A, O’Sullivan J, Nunan D. Performance bias. In: Catalogue Of Bias 2019. https://catalogofbias/biases/performance-bias/"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">novelty bias</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000684 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000684">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000628"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 rdf:resource="hot stuff bias is a kind of bias which "/>
+        <obo:IAO_0000116 rdf:resource="ongoing discussion for definition and hierarchy positioning"/>
+        <obo:IAO_0000117 rdf:resource="COKA Group"/>
+        <obo:IAO_0000117 rdf:resource="Philippe Rocca-Serra"/>
+        <obo:IAO_0000119 rdf:resource="adapted from  Catalogue of Bias Collaboration. Banerjee A, Pluddemann A, O’Sullivan J, Nunan D. Performance bias. In: Catalogue Of Bias 2019. https://catalogofbias/biases/performance-bias/"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hot stuff bias</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000685 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000685">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000628"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 rdf:resource="positive result bias is a kind of bias which "/>
+        <obo:IAO_0000116 rdf:resource="ongoing discussion for definition and hierarchy positioning"/>
+        <obo:IAO_0000117 rdf:resource="COKA Group"/>
+        <obo:IAO_0000117 rdf:resource="Philippe Rocca-Serra"/>
+        <obo:IAO_0000119 rdf:resource="adapted from  Catalogue of Bias Collaboration. Banerjee A, Pluddemann A, O’Sullivan J, Nunan D. Performance bias. In: Catalogue Of Bias 2019. https://catalogofbias/biases/performance-bias/"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">positive result bias</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000686 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000686">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000628"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 rdf:resource="selective theory reporting bias is a kind of bias which "/>
+        <obo:IAO_0000116 rdf:resource="ongoing discussion for definition and hierarchy positioning"/>
+        <obo:IAO_0000117 rdf:resource="COKA Group"/>
+        <obo:IAO_0000117 rdf:resource="Philippe Rocca-Serra"/>
+        <obo:IAO_0000118 rdf:resource="all&apos;s well literature bias"/>
+        <obo:IAO_0000119 rdf:resource="adapted from  Catalogue of Bias Collaboration. Banerjee A, Pluddemann A, O’Sullivan J, Nunan D. Performance bias. In: Catalogue Of Bias 2019. https://catalogofbias/biases/performance-bias/"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">selective theory reporting bias</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000687 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000687">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000628"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 rdf:resource="interpretative reporting bias due to failure to adress risk of bias is a kind of bias which "/>
+        <obo:IAO_0000116 rdf:resource="ongoing discussion for definition and hierarchy positioning"/>
+        <obo:IAO_0000117 rdf:resource="COKA Group"/>
+        <obo:IAO_0000117 rdf:resource="Philippe Rocca-Serra"/>
+        <obo:IAO_0000119 rdf:resource="adapted from  Catalogue of Bias Collaboration. Banerjee A, Pluddemann A, O’Sullivan J, Nunan D. Performance bias. In: Catalogue Of Bias 2019. https://catalogofbias/biases/performance-bias/"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">interpretative reporting bias due to failure to adress risk of bias</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000688 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000688">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000619"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 rdf:resource="publication bias is a kind of bias which "/>
+        <obo:IAO_0000116 rdf:resource="ongoing discussion for definition and hierarchy positioning"/>
+        <obo:IAO_0000117 rdf:resource="COKA Group"/>
+        <obo:IAO_0000117 rdf:resource="Philippe Rocca-Serra"/>
+        <obo:IAO_0000119 rdf:resource="adapted from  Catalogue of Bias Collaboration. Banerjee A, Pluddemann A, O’Sullivan J, Nunan D. Performance bias. In: Catalogue Of Bias 2019. https://catalogofbias/biases/performance-bias/"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">publication bias</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000689 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000689">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000619"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 rdf:resource="reporting bias evidenced by departure from planned analysis plan is a kind of bias which "/>
+        <obo:IAO_0000116 rdf:resource="ongoing discussion for definition and hierarchy positioning"/>
+        <obo:IAO_0000117 rdf:resource="COKA Group"/>
+        <obo:IAO_0000117 rdf:resource="Philippe Rocca-Serra"/>
+        <obo:IAO_0000119 rdf:resource="adapted from  Catalogue of Bias Collaboration. Banerjee A, Pluddemann A, O’Sullivan J, Nunan D. Performance bias. In: Catalogue Of Bias 2019. https://catalogofbias/biases/performance-bias/"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reporting bias evidenced by departure from planned analysis plan</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000690 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000690">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000619"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 rdf:resource="reporting bias due to emphasis of statistical significance is a kind of bias which "/>
+        <obo:IAO_0000116 rdf:resource="ongoing discussion for definition and hierarchy positioning"/>
+        <obo:IAO_0000117 rdf:resource="COKA Group"/>
+        <obo:IAO_0000117 rdf:resource="Philippe Rocca-Serra"/>
+        <obo:IAO_0000119 rdf:resource="adapted from  Catalogue of Bias Collaboration. Banerjee A, Pluddemann A, O’Sullivan J, Nunan D. Performance bias. In: Catalogue Of Bias 2019. https://catalogofbias/biases/performance-bias/"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reporting bias due to emphasis of statistical significance</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000691 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000691">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000619"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 rdf:resource="reporting bias due to lack of withdrawal justification is a kind of bias which "/>
+        <obo:IAO_0000116 rdf:resource="ongoing discussion for definition and hierarchy positioning"/>
+        <obo:IAO_0000117 rdf:resource="COKA Group"/>
+        <obo:IAO_0000117 rdf:resource="Philippe Rocca-Serra"/>
+        <obo:IAO_0000119 rdf:resource="adapted from  Catalogue of Bias Collaboration. Banerjee A, Pluddemann A, O’Sullivan J, Nunan D. Performance bias. In: Catalogue Of Bias 2019. https://catalogofbias/biases/performance-bias/"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reporting bias due to lack of withdrawal justification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000692 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000692">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000619"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 rdf:resource="reporting bias due to inadequate reporting of analytical strategy is a kind of bias which "/>
+        <obo:IAO_0000116 rdf:resource="ongoing discussion for definition and hierarchy positioning"/>
+        <obo:IAO_0000117 rdf:resource="COKA Group"/>
+        <obo:IAO_0000117 rdf:resource="Philippe Rocca-Serra"/>
+        <obo:IAO_0000119 rdf:resource="adapted from  Catalogue of Bias Collaboration. Banerjee A, Pluddemann A, O’Sullivan J, Nunan D. Performance bias. In: Catalogue Of Bias 2019. https://catalogofbias/biases/performance-bias/"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reporting bias due to inadequate reporting of analytical strategy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000693 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000693">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000619"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 rdf:resource="reporting bias due to pre-final publication form is a kind of bias which "/>
+        <obo:IAO_0000116 rdf:resource="ongoing discussion for definition and hierarchy positioning"/>
+        <obo:IAO_0000117 rdf:resource="COKA Group"/>
+        <obo:IAO_0000117 rdf:resource="Philippe Rocca-Serra"/>
+        <obo:IAO_0000119 rdf:resource="adapted from  Catalogue of Bias Collaboration. Banerjee A, Pluddemann A, O’Sullivan J, Nunan D. Performance bias. In: Catalogue Of Bias 2019. https://catalogofbias/biases/performance-bias/"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reporting bias due to pre-final publication form</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000694 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000694">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000619"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 rdf:resource="reporting bias due to inadequate consideration of relevancy for research question is a kind of bias which "/>
+        <obo:IAO_0000116 rdf:resource="ongoing discussion for definition and hierarchy positioning"/>
+        <obo:IAO_0000117 rdf:resource="COKA Group"/>
+        <obo:IAO_0000117 rdf:resource="Philippe Rocca-Serra"/>
+        <obo:IAO_0000119 rdf:resource="adapted from  Catalogue of Bias Collaboration. Banerjee A, Pluddemann A, O’Sullivan J, Nunan D. Performance bias. In: Catalogue Of Bias 2019. https://catalogofbias/biases/performance-bias/"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reporting bias due to inadequate consideration of relevancy for research question</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000695 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000695">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 rdf:resource="a measurement datum which provides an reading about the consistency and agreement between raters"/>
+        <obo:IAO_0000116 rdf:resource="ongoing discussion for definition and hierarchy positioning"/>
+        <obo:IAO_0000117 rdf:resource="COKA Group"/>
+        <obo:IAO_0000117 rdf:resource="Philippe Rocca-Serra"/>
+        <obo:IAO_0000119 rdf:resource="adapted from  Catalogue of Bias Collaboration. Banerjee A, Pluddemann A, O’Sullivan J, Nunan D. Performance bias. In: Catalogue Of Bias 2019. https://catalogofbias/biases/performance-bias/"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">inter-rater agreement measure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000696 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000696">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000695"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 rdf:resource="a chance-adjusted measure of agreement between two observers"/>
+        <obo:IAO_0000116 rdf:resource="ongoing discussion for definition and hierarchy positioning"/>
+        <obo:IAO_0000117 rdf:resource="COKA Group"/>
+        <obo:IAO_0000117 rdf:resource="Philippe Rocca-Serra"/>
+        <obo:IAO_0000119 rdf:resource="https://en.wikipedia.org/wiki/Cohen%27s_kappa"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cohen&apos;s kappa coefficient</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000697 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000697">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000695"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 rdf:resource="Scott&apos;s pi is a statistic for measuring inter-rater reliability for nominal data in communication studies. T"/>
+        <obo:IAO_0000116 rdf:resource="ongoing discussion for definition and hierarchy positioning"/>
+        <obo:IAO_0000117 rdf:resource="COKA Group"/>
+        <obo:IAO_0000117 rdf:resource="Philippe Rocca-Serra"/>
+        <obo:IAO_0000118 rdf:resource="Scott&apos;s pi"/>
+        <obo:IAO_0000119 rdf:resource="https://en.wikipedia.org/wiki/Scott%27s_Pi"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Scott&apos;s kappa coefficient</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000698 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000698">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000695"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 rdf:resource="is a statistical measure of the agreement achieved when coding a set of units of analysis in terms of the values of a variable."/>
+        <obo:IAO_0000116 rdf:resource="ongoing discussion for definition and hierarchy positioning"/>
+        <obo:IAO_0000117 rdf:resource="COKA Group"/>
+        <obo:IAO_0000117 rdf:resource="Philippe Rocca-Serra"/>
+        <obo:IAO_0000118 rdf:resource="Bennet&apos;s kappa coefficient"/>
+        <obo:IAO_0000119 rdf:resource="https://s3.amazonaws.com/sitesusa/wp-content/uploads/sites/242/2014/05/J4_Xie_2013FCSM.pdf"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bennett, Albert and Goldstein’s S</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000699 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000699">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000695"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 rdf:resource="is a statistical measure of the agreement achieved when coding a set of units of analysis in terms of the values of a variable."/>
+        <obo:IAO_0000116 rdf:resource="ongoing discussion for definition and hierarchy positioning"/>
+        <obo:IAO_0000117 rdf:resource="COKA Group"/>
+        <obo:IAO_0000117 rdf:resource="Philippe Rocca-Serra"/>
+        <obo:IAO_0000119 rdf:resource="https://en.wikipedia.org/wiki/Krippendorff%27s_alpha"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Krippendorff&apos;s alpha</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000700 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000700">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000695"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 rdf:resource="is a statistical measure of the agreement achieved when coding a set of units of analysis in terms of the values of a variable."/>
+        <obo:IAO_0000116 rdf:resource="ongoing discussion for definition and hierarchy positioning"/>
+        <obo:IAO_0000117 rdf:resource="COKA Group"/>
+        <obo:IAO_0000117 rdf:resource="Philippe Rocca-Serra"/>
+        <obo:IAO_0000119 rdf:resource="https://s3.amazonaws.com/sitesusa/wp-content/uploads/sites/242/2014/05/J4_Xie_2013FCSM.pdf"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gwet’s AC1 coefficient</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000701 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000701">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000695"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 rdf:resource="a measure of "/>
+        <obo:IAO_0000116 rdf:resource="ongoing discussion for definition and hierarchy positioning"/>
+        <obo:IAO_0000117 rdf:resource="COKA Group"/>
+        <obo:IAO_0000117 rdf:resource="Philippe Rocca-Serra"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diagnostic accuracy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000702 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000702">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000695"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 rdf:resource="is a measure of the effectiveness of a diagnostic test"/>
+        <obo:IAO_0000116 rdf:resource="ongoing discussion for definition and hierarchy positioning"/>
+        <obo:IAO_0000117 rdf:resource="COKA Group"/>
+        <obo:IAO_0000117 rdf:resource="Philippe Rocca-Serra"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diagnostic Odds Ratio</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000703 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000703">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000184"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000116 rdf:resource="ongoing discussion for definition and hierarchy positioning"/>
+        <obo:IAO_0000117 rdf:resource="COKA Group"/>
+        <obo:IAO_0000117 rdf:resource="Philippe Rocca-Serra"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">misclassification rate</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000704 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000704">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000397"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 rdf:resource="The F1 score is the harmonic mean of the precision and recall"/>
+        <obo:IAO_0000116 rdf:resource="ongoing discussion for definition and hierarchy positioning"/>
+        <obo:IAO_0000117 rdf:resource="COKA Group"/>
+        <obo:IAO_0000117 rdf:resource="Philippe Rocca-Serra"/>
+        <obo:IAO_0000118 rdf:resource="balanced F-score"/>
+        <obo:IAO_0000119 rdf:resource="https://en.wikipedia.org/wiki/F-score"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">F1-score</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.6) https://github.com/owlcs/owlapi -->
+
