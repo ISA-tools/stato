@@ -2368,6 +2368,9 @@
         <Class IRI="http://purl.obolibrary.org/obo/STATO_0000662"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000663"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000050"/>
     </Declaration>
     <Declaration>
@@ -13624,6 +13627,10 @@
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/IAO_0000136"/>
             <Class IRI="http://purl.obolibrary.org/obo/STATO_0000057"/>
         </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000663"/>
+        <Class IRI="http://purl.obolibrary.org/obo/STATO_0000623"/>
     </SubClassOf>
     <DisjointClasses>
         <Class IRI="http://purl.obolibrary.org/obo/BFO_0000002"/>
@@ -41165,7 +41172,7 @@ Precision (PPV) is STATO:0000416</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000628</IRI>
-        <Literal>Harold Lehmann, Kenneth Wilkins, Muhammad Afzal, Joanne Dehnbostel, Brian S. Alper</Literal>
+        <Literal>Harold Lehmann, Kenneth Wilkins, Muhammad Afzal, Joanne Dehnbostel, Brian S. Alper, Philippe Rocca-Serra</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000118"/>
@@ -42420,6 +42427,50 @@ https://search.r-project.org/CRAN/refmans/bayesmeta/html/pppvalue.html</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/STATO_0000662</IRI>
         <Literal xml:lang="en">p-value for two-sided test</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000114"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000663</IRI>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000122</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000663</IRI>
+        <Literal xml:lang="en">The F-beta score is a measure of a model&apos;s accuracy, specifically designed to evaluate the performance of binary classification models. It is a generalized form of the F1 score, which itself is the harmonic mean of precision and recall. The F-beta score introduces a way to weigh recall more heavily than precision (or vice versa) depending on the value of beta.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000116"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000663</IRI>
+        <Literal xml:lang="en">https://github.com/ISA-tools/stato/pull/86</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000663</IRI>
+        <Literal xml:lang="en">Philippe Rocca-Serra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000117"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000663</IRI>
+        <Literal xml:lang="en">Shawn Tan</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000119"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000663</IRI>
+        <Literal xml:lang="en">adapted from ChatGPT using the following prompt: [what is the F-beta score in statistics]
+
+last accessed: July 2024</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/STATO_0000391"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000663</IRI>
+        <Literal xml:lang="en">sklearn.metrics.fbeta_score(y_true, y_pred, *, beta, labels=None, pos_label=1, average=&apos;binary&apos;, sample_weight=None, zero_division=&apos;warn&apos;)[source]
+
+https://scikit-learn.org/stable/modules/generated/sklearn.metrics.fbeta_score.htm</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/STATO_0000663</IRI>
+        <Literal xml:lang="en">F-beta score</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
