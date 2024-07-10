@@ -68,11 +68,7 @@
         <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
-        <rdfs:label>editor preferred label</rdfs:label>
         <rdfs:label xml:lang="en">editor preferred label</rdfs:label>
-        <rdfs:label>editor preferred term</rdfs:label>
-        <rdfs:label xml:lang="en">editor preferred term</rdfs:label>
-        <rdfs:label>editor preferred term~editor preferred label</rdfs:label>
     </owl:AnnotationProperty>
     
 
@@ -137,8 +133,6 @@ We also have the outstanding issue of how to aim different definitions to differ
         <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
         <rdfs:label xml:lang="en">definition</rdfs:label>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">definition</rdfs:label>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">textual definition</rdfs:label>
     </owl:AnnotationProperty>
     
 
@@ -350,7 +344,6 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
          content of the resource.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
         <rdfs:label>Contributor</rdfs:label>
-        <rdfs:label xml:lang="en-us">Contributor</rdfs:label>
     </owl:AnnotationProperty>
     
 
@@ -365,7 +358,6 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
          of the resource.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
         <rdfs:label>Creator</rdfs:label>
-        <rdfs:label xml:lang="en-us">Creator</rdfs:label>
     </owl:AnnotationProperty>
     
 
@@ -381,7 +373,6 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
          resource.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
         <rdfs:label>Date</rdfs:label>
-        <rdfs:label xml:lang="en-us">Date</rdfs:label>
     </owl:AnnotationProperty>
     
 
@@ -481,7 +472,7 @@ https://sourceforge.net/tracker/?func=detail&amp;aid=3603413&amp;group_id=177891
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
         <obo:IAO_0000111>label</obo:IAO_0000111>
-        <rdfs:label>label</rdfs:label>
+        <rdfs:label xml:lang="en">label</rdfs:label>
     </owl:AnnotationProperty>
     
 
@@ -924,7 +915,7 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is_specified_input_of</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">some Autologous EBV(Epstein-Barr virus)-transformed B-LCL (B lymphocyte cell line) is_input_for instance of Chromum Release Assay described at https://wiki.cbil.upenn.edu/obiwiki/index.php/Chromium_Release_assay</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
-        <obo:IAO_0000115 xml:lang="en">A relation between a planned process and a continuant participating in that process that is not created during  the process. The presence of the continuant during the process is explicitly specified in the plan specification which the process realizes the concretization of.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A relation between a continuant participating in that process that is not created during the process. The presence of the continuant during the process is explicitly specified in the plan specification which the process realizes the concretization of.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Bjoern Peters</obo:IAO_0000117>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
@@ -971,7 +962,7 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
         <obo:IAO_0000111 xml:lang="en">is_specified_output_of</obo:IAO_0000111>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is_specified_output_of</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
-        <obo:IAO_0000115 xml:lang="en">A relation between a planned process and a continuant participating in that process. The presence of the continuant at the end of the process is explicitly specified in the objective specification which the process realizes the concretization of.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A relation between a continuant participating in a planned process. The presence of the continuant at the end of the process is explicitly specified in the objective specification which the process realizes the concretization of.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Bjoern Peters</obo:IAO_0000117>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
@@ -1079,7 +1070,6 @@ level of radioactivity is_proxy_for level of toxicity</obo:IAO_0000112>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Person:Helen Parkinson</obo:IAO_0000119>
         <obo:IAO_0000232 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2009/09/28 Alan Ruttenberg. Fucoidan-use-case</obo:IAO_0000232>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is member of organization</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1226,7 +1216,6 @@ https://sourceforge.net/tracker/index.php?func=detail&amp;aid=3512902&amp;group_
         <obo:IAO_0000118 xml:lang="en">has_participant</obo:IAO_0000118>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
         <dc:source>http://www.obofoundry.org/ro/#OBO_REL:has_participant</dc:source>
-        <rdfs:label xml:lang="en">has participant</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -2108,13 +2097,11 @@ https://sourceforge.net/tracker/index.php?func=detail&amp;aid=3512902&amp;group_
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000000">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
         <obo:IAO_0000111 xml:lang="en">cell</obo:IAO_0000111>
-        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">PMID:18089833.Cancer Res. 2007 Dec 15;67(24):12018-25. &quot;...Epithelial cells were harvested from histologically confirmed adenocarcinomas ..&quot;</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A material entity of anatomical origin (part of or deriving from an organism) that has as its parts a maximally connected cell compartment surrounded by a plasma membrane.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
         <rdfs:label xml:lang="en">cell</rdfs:label>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell</rdfs:label>
     </owl:Class>
     
 
@@ -2361,7 +2348,6 @@ of this, different, term.</obo:IAO_0000116>
         <obo:IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">Smith, Ceusters, Ruttenberg, 2000 years of philosophy</obo:IAO_0000119>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-        <rdfs:label xml:lang="en">information carrier</rdfs:label>
     </owl:Class>
     
 
@@ -3066,7 +3052,6 @@ points together with a line.</obo:IAO_0000115>
         <obo:IAO_0000119 xml:lang="en">GROUP:OBI</obo:IAO_0000119>
         <obo:IAO_0000119 xml:lang="en">WEB: http://en.wikipedia.org/wiki/Line_chart</obo:IAO_0000119>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-        <rdfs:label xml:lang="en">line graph</rdfs:label>
     </owl:Class>
     
 
@@ -3621,7 +3606,7 @@ editor = PRS</obo:IAO_0000232>
     <!-- http://purl.obolibrary.org/obo/OBI_0000071 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000071">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000609"/>
         <obo:IAO_0000111 xml:lang="en">quantitative confidence value</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
         <obo:IAO_0000115 xml:lang="en">A data item which is used to indicate the degree of uncertainty about a measurement.</obo:IAO_0000115>
@@ -3932,7 +3917,6 @@ in contrast to the in-vivo data AT-III increased significantly from
         <obo:IAO_0000117 xml:lang="en">PERSON:Chris Stoeckert</obo:IAO_0000117>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WEB: http://en.wikipedia.org/wiki/P-value</obo:IAO_0000119>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-        <rdfs:label xml:lang="en">p-value</rdfs:label>
     </owl:Class>
     
 
@@ -5244,7 +5228,6 @@ http://sourceforge.net/p/obi/obi-terms/716/</obo:IAO_0000116>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">James Malone</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">PERSON: James Malone</obo:IAO_0000119>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-        <rdfs:label xml:lang="en">statistical hypothesis test</rdfs:label>
     </owl:Class>
     
 
@@ -5258,7 +5241,7 @@ http://sourceforge.net/p/obi/obi-terms/716/</obo:IAO_0000116>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0200181"/>
             </owl:Restriction>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000029"/>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">center value</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
         <obo:IAO_0000115 xml:lang="en">A data item that is produced as the output of a center calculation data transformation and represents the center value of the input data.</obo:IAO_0000115>
@@ -5283,7 +5266,6 @@ http://sourceforge.net/p/obi/obi-terms/716/</obo:IAO_0000116>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hypothesis test objective</obo:IAO_0000118>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WEB:  http://en.wikipedia.org/wiki/Statistical_hypothesis_testing</obo:IAO_0000119>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-        <rdfs:label xml:lang="en">statistical hypothesis test objective</rdfs:label>
     </owl:Class>
     
 
@@ -5311,7 +5293,7 @@ http://sourceforge.net/p/obi/obi-terms/716/</obo:IAO_0000116>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0200170"/>
             </owl:Restriction>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000029"/>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">average value</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
         <obo:IAO_0000115 xml:lang="en">A  data item that is produced as the output of an averaging data transformation and represents the average value of the input data.</obo:IAO_0000115>
@@ -5517,7 +5499,6 @@ http://sourceforge.net/p/obi/obi-terms/716/</obo:IAO_0000116>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">James Malone</obo:IAO_0000117>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WEB: http://en.wikipedia.org/wiki/T-test</obo:IAO_0000119>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Student&apos;s t-test</rdfs:label>
     </owl:Class>
     
 
@@ -5618,7 +5599,6 @@ http://sourceforge.net/p/obi/obi-terms/716/</obo:IAO_0000116>
         <obo:IAO_0000232 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2009-03-16: work has been done on this term during during the OBI workshop winter 2009 and the current definition was considered acceptable for use in OBI. If there is a need to modify thisdefinition please notify OBI.</obo:IAO_0000232>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
         <obo:OBI_0001847 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">study factor</obo:OBI_0001847>
-        <rdfs:label xml:lang="en">study design independent variable</rdfs:label>
     </owl:Class>
     
 
@@ -5646,7 +5626,6 @@ http://sourceforge.net/p/obi/obi-terms/716/</obo:IAO_0000116>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WEB: http://en.wikipedia.org/wiki/Dependent_and_independent_variables</obo:IAO_0000119>
         <obo:IAO_0000232 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2009-03-16: work has been done on this term during during the OBI workshop winter 2009 and the current definition was considered acceptable for use in OBI. If there is a need to modify thisdefinition please notify OBI.</obo:IAO_0000232>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-        <rdfs:label xml:lang="en">study design dependent variable</rdfs:label>
     </owl:Class>
     
 
@@ -5654,15 +5633,14 @@ http://sourceforge.net/p/obi/obi-terms/716/</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/OBI_0000789 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000789">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000645"/>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">survival rate</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A measurement data that represents the percentage of people or animals in a study or treatment group who are alive for a given period of time after diagnosis or initiation of monitoring.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A rate that represents the percentage of people or animals in a study or treatment group who are alive for a given period of time after diagnosis or initiation of monitoring.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oliver He</obo:IAO_0000117>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">adapted from wikipedia
 http://en.wikipedia.org/wiki/Survival_rate</obo:IAO_0000119>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">survival rate</rdfs:label>
     </owl:Class>
     
 
@@ -5795,7 +5773,6 @@ http://en.wikipedia.org/wiki/Survival_rate</obo:IAO_0000119>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Likelihood-ratio is a data transformation which tests whether there is evidence of the need to move from a simple model to a more complicated one (where the simple model is nested within the complicated one); tests of the goodness-of-fit between two models.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tina Boussard</obo:IAO_0000117>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Likelihood-ratio test</rdfs:label>
     </owl:Class>
     
 
@@ -5818,7 +5795,6 @@ http://en.wikipedia.org/wiki/Survival_rate</obo:IAO_0000119>
         <obo:IAO_0000117 xml:lang="en">PERSON:Melanie Courtot</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">WEB: http://www.graphpad.com/www/book/survive.htm</obo:IAO_0000119>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-        <rdfs:label xml:lang="en">survival curve</rdfs:label>
     </owl:Class>
     
 
@@ -6300,7 +6276,7 @@ In the examples above, a reagent is an operational component of a device, but th
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A data item of paired values, one indicating the dose of a material, the other quantitating a measured effect at that dose. The dosing intervals are chosen so that effect values be interpolated by a plotting a curve. </obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bjoern Peters; Randi Vita</obo:IAO_0000117>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dose response curve</rdfs:label>
+        <rdfs:label xml:lang="en">dose response curve</rdfs:label>
     </owl:Class>
     
 
@@ -6339,7 +6315,6 @@ In the examples above, a reagent is an operational component of a device, but th
         <obo:IAO_0000117 xml:lang="en">PERS:Philippe Rocca-Serra</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">adapted from wikipedia (http://en.wikipedia.org/wiki/Familywise_error_rate) </obo:IAO_0000119>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FWER adjusted p-value</rdfs:label>
     </owl:Class>
     
 
@@ -6599,7 +6574,6 @@ To compute q-values, it is necessary to know the p-value produced by a test and 
 http://.en/wikipedia.org/wiki/False_discovery_rate
 http://svitsrv25.epfl.ch/R-doc/library/qvalue.html</obo:IAO_0000119>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">q-value</rdfs:label>
     </owl:Class>
     
 
@@ -6636,7 +6610,6 @@ http://svitsrv25.epfl.ch/R-doc/library/qvalue.html</obo:IAO_0000119>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Person: Chris Stoeckert, Jie Zheng</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">MO_560 genotyping_design</obo:IAO_0000119>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-        <rdfs:label xml:lang="en">genotyping design</rdfs:label>
     </owl:Class>
     
 
@@ -7520,7 +7493,6 @@ specified input and output of dt which were missing</obo:IAO_0000116>
         <obo:IAO_0000119 xml:lang="en">PERSON: James Malone</obo:IAO_0000119>
         <obo:IAO_0000119 xml:lang="en">PERSON: Melanie Courtot</obo:IAO_0000119>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-        <rdfs:label xml:lang="en">principal components analysis dimensionality reduction</rdfs:label>
     </owl:Class>
     
 
@@ -7559,7 +7531,6 @@ The &apos;editor preferred term&apos; should be removed</obo:IAO_0000116>
         <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WEB: http://en.wikipedia.org/wiki/Holm%E2%80%93Bonferroni_method</obo:IAO_0000119>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-        <rdfs:label xml:lang="en">Holm-Bonferroni family-wise error rate correction method</rdfs:label>
     </owl:Class>
     
 
@@ -7688,7 +7659,6 @@ allows correct classification of FWER dt</obo:IAO_0000116>
         <obo:IAO_0000117 xml:lang="en">Tina Hernandez-Boussard</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">BOOK: Richard A. Berk, Regression Analysis: A Constructive Critique, Sage Publications (2004) 978-0761929048</obo:IAO_0000119>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-        <rdfs:label xml:lang="en">regression analysis method</rdfs:label>
     </owl:Class>
     
 
@@ -7823,7 +7793,6 @@ information_encoding
         <obo:IAO_0000119 xml:lang="en">PERSON: Monnie McGee</obo:IAO_0000119>
         <obo:IAO_0000232 xml:lang="en">From Monnie&apos;s file comments - need to add center_calculation role but it doesn&apos;t exist yet - (editor note added by James Jan 2008)</obo:IAO_0000232>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-        <rdfs:label xml:lang="en">mode calculation</rdfs:label>
     </owl:Class>
     
 
@@ -7862,7 +7831,6 @@ information_encoding
         <obo:IAO_0000119 xml:lang="en">PERSON: Monnie McGee</obo:IAO_0000119>
         <obo:IAO_0000232 xml:lang="en">From Monnie&apos;s file comments - need to add center_calculation role but it doesn&apos;t exist yet - (editor note added by James Jan 2008)</obo:IAO_0000232>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-        <rdfs:label xml:lang="en">median calculation</rdfs:label>
     </owl:Class>
     
 
@@ -8294,7 +8262,6 @@ to create a common base for comparisons.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: James Malone</obo:IAO_0000117>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Tina Boussard</obo:IAO_0000117>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-        <rdfs:label xml:lang="en">chi square test</rdfs:label>
     </owl:Class>
     
 
@@ -8308,7 +8275,6 @@ to create a common base for comparisons.</obo:IAO_0000115>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ANOVA or analysis of variance is a data transformation in which a statistical test of whether the means of several groups are all equal.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">James Malone</obo:IAO_0000117>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ANOVA</rdfs:label>
     </owl:Class>
     
 
@@ -8730,7 +8696,6 @@ sample for particles of interest based on qualities determined by gating) or dis
         <obo:IAO_0000118 xml:lang="en">experimental design</obo:IAO_0000118>
         <obo:IAO_0000232 xml:lang="en">rediscussed at length (MC/JF/BP). 12/9/08). The definition was clarified to differentiate it from protocol.</obo:IAO_0000232>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-        <rdfs:label xml:lang="en">study design</rdfs:label>
     </owl:Class>
     
 
@@ -8746,7 +8711,6 @@ sample for particles of interest based on qualities determined by gating) or dis
         <obo:IAO_0000117 xml:lang="en">PlanAndPlannedProcess Branch</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">http://www.holah.karoo.net/experimentaldesigns.htm</obo:IAO_0000119>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-        <rdfs:label xml:lang="en">repeated measure design</rdfs:label>
     </owl:Class>
     
 
@@ -8762,7 +8726,6 @@ sample for particles of interest based on qualities determined by gating) or dis
         <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">(source: http://www.sbu.se/Filer/Content0/publikationer/1/literaturesearching_1993/glossary.html)</obo:IAO_0000119>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-        <rdfs:label xml:lang="en">cross over design</rdfs:label>
     </owl:Class>
     
 
@@ -8778,7 +8741,6 @@ sample for particles of interest based on qualities determined by gating) or dis
         <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">http://www.holah.karoo.net/experimentaldesigns.htm</obo:IAO_0000119>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-        <rdfs:label xml:lang="en">matched pairs design</rdfs:label>
     </owl:Class>
     
 
@@ -8811,7 +8773,6 @@ sample for particles of interest based on qualities determined by gating) or dis
         <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">http://www.tufts.edu/~gdallal/ranblock.htm</obo:IAO_0000119>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-        <rdfs:label xml:lang="en">randomized complete block design</rdfs:label>
     </owl:Class>
     
 
@@ -8827,7 +8788,6 @@ sample for particles of interest based on qualities determined by gating) or dis
         <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">Adapted from: http://www.itl.nist.gov/div898/handbook/pri/section3/pri3321.htm and</obo:IAO_0000119>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-        <rdfs:label xml:lang="en">latin square design</rdfs:label>
     </owl:Class>
     
 
@@ -8844,7 +8804,6 @@ sample for particles of interest based on qualities determined by gating) or dis
         <obo:IAO_0000119 xml:lang="en">Adapted from: http://www.itl.nist.gov/div898/handbook/pri/section3/pri3321.htm and</obo:IAO_0000119>
         <obo:IAO_0000232 xml:lang="en">only 2 articles in pubmed -&gt;probably irrelevant</obo:IAO_0000232>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-        <rdfs:label xml:lang="en">graeco latin square design</rdfs:label>
     </owl:Class>
     
 
@@ -8860,7 +8819,6 @@ sample for particles of interest based on qualities determined by gating) or dis
         <obo:IAO_0000119 xml:lang="en">Adapted from: http://www.itl.nist.gov/div898/handbook/pri/section3/pri3321.htm and</obo:IAO_0000119>
         <obo:IAO_0000232 xml:lang="en">no example found in pubmed-&gt;not in use in the community</obo:IAO_0000232>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-        <rdfs:label xml:lang="en">hyper graeco latin square design</rdfs:label>
     </owl:Class>
     
 
@@ -8876,7 +8834,6 @@ sample for particles of interest based on qualities determined by gating) or dis
         <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">http://www.stats.gla.ac.uk/steps/glossary/anova.html#facdes And from wikipedia (01/03/2007): http://en.wikipedia.org/wiki/Factorial_experiment)</obo:IAO_0000119>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-        <rdfs:label xml:lang="en">factorial design</rdfs:label>
     </owl:Class>
     
 
@@ -8892,7 +8849,6 @@ sample for particles of interest based on qualities determined by gating) or dis
         <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">PMID: 17561240</obo:IAO_0000119>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-        <rdfs:label xml:lang="en">2x2 factorial design</rdfs:label>
     </owl:Class>
     
 
@@ -8923,7 +8879,6 @@ sample for particles of interest based on qualities determined by gating) or dis
         <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra on behalf of MO</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">MO_858</obo:IAO_0000119>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-        <rdfs:label xml:lang="en">dye swap design</rdfs:label>
     </owl:Class>
     
 
@@ -8939,7 +8894,6 @@ sample for particles of interest based on qualities determined by gating) or dis
         <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra on behalf of MO</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">MO_887</obo:IAO_0000119>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-        <rdfs:label>time series design</rdfs:label>
     </owl:Class>
     
 
@@ -9533,6 +9487,30 @@ addition of has_role restriction</obo:IAO_0000232>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/so.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">region</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000029 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000029"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000184 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000184"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000609 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000609"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000645 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000645"/>
     
 
 

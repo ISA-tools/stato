@@ -24,3 +24,20 @@ java -jar robot.jar  reason --reasoner hermit --create-new-ontology-with-annotat
 java -jar robot.jar report --input  ../stato/dev/ontology/stato.owl --output ../stato/dev/ontology/reports/stato-report-2021-02-13.tsv
 java -jar robot.jar report --input  ../stato/dev/ontology/results/stato-elk-2021-02-13.owl --output ../stato/dev/ontology/reports/stato-elk-report-2021-02-13.tsv
 java -jar robot.jar report --input  ../stato/dev/ontology/results/stato-hermit-2021-02-13.owl --output ../stato/dev/ontology/reports/stato-hermit-report-2021-02-13.tsv
+
+
+
+
+java -jar robot.jar merge --input ../stato/dev/ontology/stato-no-obi.owl --input ../stato/dev/ontology/imports/obi_import.owl --output ../stato/dev/ontology/results/test-stato-obi-merged.owl
+
+
+java -jar robot.jar  reason --reasoner hermit --create-new-ontology-with-annotations true --input ../stato/dev/ontology/results/test-stato-obi-merged.owl  --output ../stato/dev/ontology/results/test-stato-obi-merge-hermit-2021-02-13.owl
+
+
+
+
+
+
+
+
+

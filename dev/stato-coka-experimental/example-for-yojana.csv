@@ -1,0 +1,9 @@
+Ontology ID	label	alternative term	Superclass	Class Type	Equivalent Axioms	definition	definition source	term editor	example of usage	has curation status	editor note
+ID	LABEL	A IAO:0000118 SPLIT=|	SC % SPLIT=|	C %	SC denotes some %	A IAO:0000115	A IAO:0000119	A IAO:0000117 SPLIT=|	A IAO:0000112	AI IAO:0000114	A IAO:0000116
+BFO:0000015	process		BFO:0000003					philippe rocca-serra		IAO:0000122	
+STATO:0000151	maximum value		IAO:0000109					philippe rocca-serra		IAO:0000122	
+STATO:0000150	minimum value		IAO:0000109					philippe rocca-serra		IAO:0000122	
+STATO:0000113	variance		IAO:0000109					philippe rocca-serra		IAO:0000122	
+STATO:0000607	maximum possible value		STATO:0000151			a maximum value which corresponds to theoretical maximum value is a distribution or an ideal population		COKA Group|Philippe Rocca-Serra		IAO:0000122	
+STATO:0000695	inter-rater agreement measure		IAO:0000109		STATO:0000708	a measurement datum which provides an reading about the consistency and agreement between raters	adapted from  Catalogue of Bias Collaboration. Banerjee A, Pluddemann A, O’Sullivan J, Nunan D. Performance bias. In: Catalogue Of Bias 2019. https://catalogofbias/biases/performance-bias/	COKA Group|Philippe Rocca-Serra		IAO:0000122	ongoing discussion for definition and hierarchy positioning|from STATISTICAL TYPE CODE SYSTEM https://docs.google.com/document/d/1vf_T-s7ILn3XcIZiIg0wXN5MpOnlzlb4/edit
+STATO:0000696	Cohen's kappa coefficient		IAO_0000109|(denotes some STATO:0000708)			a chance-adjusted measure of agreement between two observers	https://en.wikipedia.org/wiki/Cohen%27s_kappa	COKA Group|Philippe Rocca-Serra		IAO:0000122	ongoing discussion for definition and hierarchy positioning|from STATISTICAL TYPE CODE SYSTEM https://docs.google.com/document/d/1vf_T-s7ILn3XcIZiIg0wXN5MpOnlzlb4/edit
