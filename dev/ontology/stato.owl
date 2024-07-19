@@ -48,7 +48,7 @@
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/contributor"/>
-        <Literal xml:lang="nih.gov)">Kenneth Wilkins (kenneth.wilkins</Literal>
+        <Literal>Kenneth Wilkins (kenneth.wilkins@nih.gov)</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/contributor"/>
