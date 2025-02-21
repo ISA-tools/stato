@@ -14,8 +14,8 @@
      xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#">
-    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/stato/stato.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/stato/2025-01-07/stato.owl"/>
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/stato.owl">
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/stato/releases/2025-02-22/stato.owl"/>
         <dc:contributor>Brian Alper (https://orcid.org/000-0003-4300-4928)</dc:contributor>
         <dc:contributor>Camille Maumet (http://orcid.org/0000-0002-6290-553X)</dc:contributor>
         <dc:contributor>Chris Mungall (http://orcid.org/0000-0002-6601-2165)</dc:contributor>
@@ -40,7 +40,7 @@
         <doap:bug-database>https://github.com/ISA-tools/stato/issues</doap:bug-database>
         <doap:homepage>http://stato-ontology.org/</doap:homepage>
         <doap:mailing-list xml:lang="en">stat-ontology@googlegroups.com</doap:mailing-list>
-        <owl:versionInfo>2025-01-07</owl:versionInfo>
+        <owl:versionInfo>2025-02-22</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -32559,8 +32559,8 @@ This interpretation is *not* the same as an at-all-times relation
         <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
         <obo:IAO_0000116 xml:lang="en">Following discussion with OBCS, deprecated of class STATO_0000281 and creation of instance</obo:IAO_0000116>
         <obo:IAO_0000115 xml:lang="en">a false positive rate whose value is 1 per cent</obo:IAO_0000115>
-        <obo:IAO_0000119 xml:lang="en">STATO</obo:IAO_0000119>
         <obo:IAO_0000117 xml:lang="en">Alejandra Gonzalez-Beltran</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">STATO</obo:IAO_0000119>
         <obo:IAO_0000117 xml:lang="en">Orlaith Burke</obo:IAO_0000117>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/obi.owl">
@@ -32568,8 +32568,8 @@ This interpretation is *not* the same as an at-all-times relation
         <dc:creator xml:lang="en">James A. Overton</dc:creator>
         <dc:creator xml:lang="en">Tanya Gray</dc:creator>
         <dc:creator xml:lang="en">Matthew Brush</dc:creator>
-        <dc:creator xml:lang="en">Frank Gibson</dc:creator>
         <dc:creator xml:lang="en">Richard Scheuermann</dc:creator>
+        <dc:creator xml:lang="en">Frank Gibson</dc:creator>
         <dc:creator xml:lang="en">Melanie Courtot</dc:creator>
         <dc:creator xml:lang="en">Chris Stoeckert</dc:creator>
         <dc:creator xml:lang="en">Alan Ruttenberg</dc:creator>
@@ -32578,8 +32578,8 @@ This interpretation is *not* the same as an at-all-times relation
         <dc:creator xml:lang="en">Lawrence Hunter</dc:creator>
         <dc:creator xml:lang="en">John Westbrook</dc:creator>
         <dc:creator xml:lang="en">Jie Zheng</dc:creator>
-        <rdfs:label>obi.owl</rdfs:label>
         <dc:creator xml:lang="en">Yongqun He</dc:creator>
+        <rdfs:label>obi.owl</rdfs:label>
         <dc:creator xml:lang="en">Monnie McGee</dc:creator>
         <protege:defaultLanguage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">en</protege:defaultLanguage>
         <dc:creator xml:lang="en">Bill Bug</dc:creator>
@@ -32589,22 +32589,22 @@ This interpretation is *not* the same as an at-all-times relation
         <dc:creator xml:lang="en">Larisa Soldatova</dc:creator>
         <dc:creator xml:lang="en">Chris Taylor</dc:creator>
         <dc:creator xml:lang="en">Susanna-Assunta Sansone</dc:creator>
-        <dc:creator xml:lang="en">James Malone</dc:creator>
         <dc:creator xml:lang="en">Helen C. Causton</dc:creator>
-        <dc:creator xml:lang="en">Cristian Cocos</dc:creator>
+        <dc:creator xml:lang="en">James Malone</dc:creator>
         <dc:creator xml:lang="en">Stefan Wiemann</dc:creator>
+        <dc:creator xml:lang="en">Cristian Cocos</dc:creator>
         <dc:creator xml:lang="en">Philippe Rocca-Serra</dc:creator>
         <dc:creator xml:lang="en">Norman Morrison</dc:creator>
-        <dc:creator xml:lang="en">Ryan R. Brinkman</dc:creator>
         <dc:creator xml:lang="en">Jay Greenbaum</dc:creator>
+        <dc:creator xml:lang="en">Ryan R. Brinkman</dc:creator>
         <dc:creator xml:lang="en">Dawn Field</dc:creator>
         <dc:creator xml:lang="en">Helen Parkinson</dc:creator>
         <dc:subject xml:lang="en">An ontology for the annotation of biomedical and functional genomics experiments.</dc:subject>
         <dc:creator xml:lang="en">Melissa Haendel</dc:creator>
         <dc:creator xml:lang="en">Robert Stevens</dc:creator>
         <dc:creator xml:lang="en">Philip Lord</dc:creator>
-        <dc:creator xml:lang="en">Bjoern Peters</dc:creator>
         <dc:creator xml:lang="en">Matthew Pocock</dc:creator>
+        <dc:creator xml:lang="en">Bjoern Peters</dc:creator>
         <dc:creator xml:lang="en">Eric Deutsch</dc:creator>
         <dc:contributor xml:lang="en">Advisors for this project come from the IFOMIS group, Saarbruecken and from the Co-ODE group in Manchester</dc:contributor>
         <dc:creator xml:lang="en">Kevin Clancy</dc:creator>
@@ -32617,15 +32617,15 @@ This interpretation is *not* the same as an at-all-times relation
         <dc:creator xml:lang="en">Joe White</dc:creator>
         <dc:creator xml:lang="en">Christian Bolling</dc:creator>
         <dc:creator xml:lang="en">Pierre Grenon</dc:creator>
-        <dc:creator xml:lang="en">Mervi Heiskanen</dc:creator>
         <dc:creator xml:lang="en">Richard Bruskiewich</dc:creator>
+        <dc:creator xml:lang="en">Mervi Heiskanen</dc:creator>
         <dc:description xml:lang="en">The Ontology for Biomedical Investigations (OBI) is build in a collaborative, international effort and will serve as a resource for annotating biomedical investigations, including the study design, protocols and instrumentation used, the data generated and the types of analysis performed on the data. This ontology arose from the Functional Genomics Investigation Ontology (FuGO) and will contain both terms that are common to all biomedical investigations, including functional genomics investigations and those that are more domain specific.</dc:description>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2018-05-23</owl:versionInfo>
         <terms:license>http://creativecommons.org/licenses/by/4.0/</terms:license>
         <obo:IAO_0000589 xml:lang="en">Ontology for Biomedical Investigations</obo:IAO_0000589>
+        <dc:creator xml:lang="en">Jeffrey Grethe</dc:creator>
         <dc:creator xml:lang="en">Luisa Montecchi</dc:creator>
         <dc:creator xml:lang="en">Jennifer Fostel</dc:creator>
-        <dc:creator xml:lang="en">Jeffrey Grethe</dc:creator>
         <dc:creator xml:lang="en">Elisabetta Manduchi</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-07-31</dc:date>
         <dc:creator xml:lang="en">Allyson Lister</dc:creator>
