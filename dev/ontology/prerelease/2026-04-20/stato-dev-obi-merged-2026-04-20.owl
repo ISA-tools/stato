@@ -20600,7 +20600,7 @@ http://www.ontobee.org/browser/rdf.php?o=PCO&amp;iri=http://purl.obolibrary.org/
                 </owl:unionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000741"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">a variable is a data item which can assume any of a set of values, either as determined by an agent or as randomly occuring through observation.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Alejandra Gonzalez-Beltran</obo:IAO_0000117>
@@ -33042,6 +33042,87 @@ A finding of not statistically significant does not mean absence of effect.</obo
         <obo:IAO_0000118>correction for multiple testing</obo:IAO_0000118>
         <obo:IAO_0000119>SEVCO group</obo:IAO_0000119>
         <rdfs:label>correction factor for multiple testing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000738 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000738">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115>A hypothesis test parameter input that represents the probability of incorrectly rejecting the null hypothesis.</obo:IAO_0000115>
+        <obo:IAO_0000117>Brian S. Alper, Harold Lehmann, Kenneth Wilkins, Joanne Dehnbostel, Homa Keshavarz, Airton Stein.</obo:IAO_0000117>
+        <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000119>SEVCO</obo:IAO_0000119>
+        <rdfs:label>alpha level as statistical test input parameter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000739 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000739">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000738"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115>An alpha level that expresses the intended overall probability cutoff without adjustment for multiple comparisons</obo:IAO_0000115>
+        <obo:IAO_0000117>Brian S. Alper, Harold Lehmann, Kenneth Wilkins, Joanne Dehnbostel, Homa Keshavarz, Airton Stein</obo:IAO_0000117>
+        <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000119>SEVCO</obo:IAO_0000119>
+        <rdfs:label>nominal alpha level</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000740 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000740">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000738"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115>An alpha level that is adjusted for multiple comparisons to preserve the intended overall probability cutoff.</obo:IAO_0000115>
+        <obo:IAO_0000117>Brian S. Alper, Harold Lehmann, Joanne Dehnbostel, Airton Stein</obo:IAO_0000117>
+        <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000119>SEVCO</obo:IAO_0000119>
+        <rdfs:label>adjusted alpha level</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000741 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000741">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
+        <obo:IAO_0000116>A statistical model is defined as a set of mathematical relationships that express assumptions related to the generation of the observed data and that sets constraints for the analysis of the data.
+Statistical model components include graphical structures (e.g. directed acyclic graph), equations (e.g. regression model form), components of equations (e.g. covariate term), and distributional assumptions (e.g. regression error distribution)</obo:IAO_0000116>
+        <obo:IAO_0000117>Harold Lehmann, Brian S. Alper, Kenneth Wilkins</obo:IAO_0000117>
+        <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
+        <rdfs:label>statistical model component</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000742 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000742">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000219"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/STATO_0000225"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115>A member of a set of quantities that unambiguously defines a probability distribution function.</obo:IAO_0000115>
+        <obo:IAO_0000116>Parameters serve different roles in defining distributions. Location parameters define the position along the range of possible values. Shape and scale parameters define the dispersion around the expected value.
+
+When the probability distribution parameters have values, the set of values defines a particular probability distribution function.
+
+When a statistic applies to a specific set of data, the specific set of data is called a sample and the statistic is called the sample statistic.  Likewise, when a probability distribution parameter applies to the group from which a sample may be derived, the group is called a population and the probability distribution parameter is called a population parameter.</obo:IAO_0000116>
+        <obo:IAO_0000117>Brian S. Alper, Harold Lehmann, Kenneth Wilkins, Joanne Dehnbostel</obo:IAO_0000117>
+        <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000119>SEVCO</obo:IAO_0000119>
+        <rdfs:label>probability distribution parameter</rdfs:label>
     </owl:Class>
     
 
