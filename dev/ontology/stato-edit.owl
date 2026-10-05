@@ -1871,6 +1871,43 @@ Not extracting to separate ontology (stato-experimental.owl) due to IDs already 
     
 
 
+    <!-- http://purl.obolibrary.org/obo/STATO_33b41413_662a_4e88_af2b_c284429e5c78 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/STATO_33b41413_662a_4e88_af2b_c284429e5c78">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/STATO_0000258"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/STATO_0000265"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/STATO_0000642"/>
+        <rdfs:label xml:lang="en">assigns_to</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_40145a61_082a_4f38_ae65_7e7e073d68a0 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/STATO_40145a61_082a_4f38_ae65_7e7e073d68a0">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/STATO_0000265"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/STATO_0000719"/>
+        <rdfs:label xml:lang="en">applied_to</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_6906351c_6d05_4fe0_b706_2101d2496a2c -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/STATO_6906351c_6d05_4fe0_b706_2101d2496a2c">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/STATO_0000719"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/STATO_0000265"/>
+        <rdfs:label xml:lang="en">receives_treatment</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -10513,23 +10550,51 @@ sample for particles of interest based on qualities determined by gating) or dis
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000054"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/STATO_0000517"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/STATO_0000001"/>
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/STATO_0000248"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000054"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/STATO_0000517"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000115"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0500000"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/STATO_0000001"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/STATO_874741c2_28e0_4157_a37d_d6dfc12eb2c1"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/STATO_25c64764_e086_455d_8cb5_85bfc7fcf311"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/STATO_f7d3b178_4941_4065_9a65_c28b377428de"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/STATO_0000749"/>
         <obo:IAO_0000111 xml:lang="en">randomized complete block design</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">http://www.stats.gla.ac.uk/steps/glossary/anova.html,(A researcher is carrying out a study of the effectiveness of four different skin creams for the treatment of a certain skin disease. He has eighty subjects and plans to divide them into 4 treatment groups of twenty subjects each. Using a randomised blocks&amp; design, the subjects are assessed and put in blocks of four according to how severe their skin condition is; the four most severe cases are the first block, the next four most severe cases are the second block, and so on to the twentieth block. The four &amp;members of each block are then randomly assigned, one to each of the four treatment groups. http://www.stats.gla.ac.uk/steps/glossary/anova.html#rbd))</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
         <obo:IAO_0000115 xml:lang="en">A randomized complete block design is_a study design which assigns randomly treatments to block. The number of units per block equals the number of treatment so each block receives each treatment exactly once (hence the qualifier &apos;complete&apos;). The design was originally devised from field trials used in agronomy and agriculture. The analysis assumes that there is no interaction between block and treatment. The method was then used in other settings So The randomised complete block design is a design in which the subjects are matched according to a variable which the experimenter wishes to control. The subjects are put into groups (blocks) of the same size as the number of treatments. The members of each block are then randomly assigned to different treatment groups.</obo:IAO_0000115>
+        <obo:IAO_0000116>In field trials, a study design which defines Plots nested within (Replicate) Blocks.</obo:IAO_0000116>
         <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000118>RCBD</obo:IAO_0000118>
         <obo:IAO_0000119>http://www.tufts.edu/~gdallal/ranblock.htm</obo:IAO_0000119>
         <obo:IAO_0000119 xml:lang="en">http://www.tufts.edu/~gdallal/ranblock.htm</obo:IAO_0000119>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
@@ -10568,6 +10633,7 @@ sample for particles of interest based on qualities determined by gating) or dis
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
         <obo:IAO_0000115 xml:lang="en">Latin square design is_a study design which allows in its simpler form controlling 2 levels of nuisance variables (also known as blocking variables).he 2 nuisance factors are divided into a tabular grid with the property that each row and each column receive each treatment exactly once.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000118>LS</obo:IAO_0000118>
         <obo:IAO_0000119 xml:lang="en">Adapted from: http://www.itl.nist.gov/div898/handbook/pri/section3/pri3321.htm and</obo:IAO_0000119>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
         <obo:STATO_0000032 xml:lang="en"></obo:STATO_0000032>
@@ -15452,7 +15518,7 @@ http://stat.ethz.ch/R-manual/R-patched/library/stats/html/Multinom.html</obo:STA
     <!-- http://purl.obolibrary.org/obo/STATO_0000104 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000104">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000609"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000039"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
@@ -15946,10 +16012,13 @@ http://hosho.ees.hokudai.ac.jp/~kubo/Rdoc/library/kinship/html/plot.pedigree.htm
         <obo:IAO_0000117 xml:lang="en">Alejandra Gonzalez-Beltran</obo:IAO_0000117>
         <obo:IAO_0000117>Orlaith Burke</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000118>LD</obo:IAO_0000118>
         <obo:IAO_0000118>R squared measure of LD</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">linkage disequilibrium</obo:IAO_0000118>
+        <obo:IAO_0000118>r2</obo:IAO_0000118>
         <obo:IAO_0000119 xml:lang="en">http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2580747/</obo:IAO_0000119>
         <obo:STATO_0000032 xml:lang="en">r2 measure of LD</obo:STATO_0000032>
-        <rdfs:label xml:lang="en">r2 measure of linkage desequilibrium</rdfs:label>
+        <rdfs:label xml:lang="en">r2 measure of linkage disequilibrium</rdfs:label>
     </owl:Class>
     
 
@@ -17564,6 +17633,12 @@ http://stat.ethz.ch/R-manual/R-patched/library/graphics/html/barplot.html</obo:S
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000169">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000300"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000295"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/STATO_0000175"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">Fold change is a number describing how much a quantity changes going from an initial to a final value or one condition to another condition</obo:IAO_0000115>
         <obo:IAO_0000116>30/04/2014 
@@ -17776,7 +17851,7 @@ http://rss.acs.unt.edu/Rdoc/library/rmeta/html/metaplot.html</obo:STATO_0000041>
     <!-- http://purl.obolibrary.org/obo/STATO_0000176 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000176">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000039"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000609"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000295"/>
@@ -19686,11 +19761,18 @@ http://mathworld.wolfram.com/Sensitivity.html</obo:IAO_0000119>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/STATO_0000242"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/STATO_0000403"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/STATO_0000242"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">a residual is a data item which is the output of an error estimate or model fitting process and which is an observable estimate of the unobservable error</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Alejandra Gonzalez-Beltran</obo:IAO_0000117>
         <obo:IAO_0000117>Orlaith Burke</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000118>experimental error</obo:IAO_0000118>
         <rdfs:label xml:lang="en">residual</rdfs:label>
     </owl:Class>
     
@@ -20949,7 +21031,21 @@ plot_RadialPlot(data, na.exclude = TRUE, negatives = &quot;remove&quot;,
     <!-- http://purl.obolibrary.org/obo/STATO_0000266 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000266">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000184"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000609"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/STATO_0000101"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/STATO_0000259"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
@@ -24415,7 +24511,7 @@ the smaller Cp is, the better the model fit is.</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/STATO_0000376 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000376">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000039"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000609"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000295"/>
@@ -26421,26 +26517,7 @@ http://finzi.psych.upenn.edu/library/OutlierDM/html/rgrubbs.test.html</obo:STATO
     <!-- http://purl.obolibrary.org/obo/STATO_0000444 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000444">
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/STATO_0000001"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/STATO_0000447"/>
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/STATO_0000448"/>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0500000"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000054"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/STATO_0000446"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/STATO_0000001"/>
@@ -26467,12 +26544,56 @@ http://finzi.psych.upenn.edu/library/OutlierDM/html/rgrubbs.test.html</obo:STATO
                 <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/OBI_0000750"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/STATO_0000001"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                <owl:onClass>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/STATO_874741c2_28e0_4157_a37d_d6dfc12eb2c1"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/STATO_25c64764_e086_455d_8cb5_85bfc7fcf311"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/STATO_67694d9d_c943_448f_a575_46a7562e4728"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/STATO_f7d3b178_4941_4065_9a65_c28b377428de"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:onClass>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000054"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/STATO_0000446"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115 xml:lang="en">a split-plot design is kind of factorial design  which is used when running a full factorial completely randomized design is inpractical, either for cost or practicalities (e.g. equipment, fields), in other words, when a restricted randomization has to be applied. A split-plot design is used whenever practioners fix the level of &apos;hard to change factor&apos; and run all the combinations of the other factors. The hard to change factor is also refered to as the &apos;whole plot&apos; factor, while the remainders of the factors are refered to as &apos;split plot factor&apos;.
 Performing a split-plot design therefore means fixing one factor level, and then applying the treatments formed by the cartesian products of the levels for the other factors. A mininum of 2 factors are required and one being applied before the other(s).</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Alejandra Gonzalez-Beltran</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">Orlaith Burke</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000118>SPD</obo:IAO_0000118>
+        <obo:IAO_0000118>criss-cross design</obo:IAO_0000118>
         <obo:IAO_0000119 xml:lang="en">adapted from:
 http://www.minitab.com/uploadedFiles/Content/News/Published_Articles/recognize_split_plot_experiment.pdf
 
@@ -26490,12 +26611,6 @@ last accessed: 14.12.2016</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000445">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0500000"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000054"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/STATO_0000446"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/STATO_0000001"/>
@@ -26523,14 +26638,22 @@ last accessed: 14.12.2016</obo:IAO_0000119>
                 <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/OBI_0000750"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000054"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">3</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/STATO_0000446"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-        <obo:IAO_0000115 xml:lang="en">a split split plot design is a study design where restricted randomization affect 2 study factors (and not 1 as in split-plot design). Such design is only possible if at least 3 independent variables are present.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">a split split-plot design is a study design where restricted randomization affect 2 study factors (and not 1 as in split-plot design). Such design is only possible if at least 3 independent variables are present.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Alejandra Gonzalez-Beltran</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">Orlaith Burke</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000118>SSPD</obo:IAO_0000118>
         <obo:IAO_0000119 xml:lang="en">adapted from https://onlinecourses.science.psu.edu/stat503/node/72
 last accessed 2016/12/15</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">split split plot design</rdfs:label>
+        <rdfs:label xml:lang="en">split-split-plot design</rdfs:label>
     </owl:Class>
     
 
@@ -27012,7 +27135,7 @@ https://en.wikipedia.org/wiki/Haybittle%E2%80%93Peto_boundary</obo:IAO_0000119>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000464">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000189"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-        <obo:IAO_0000115 xml:lang="en">A lnear mixed model is a mixed model containing both fixed effects and random effects and in which factors and covariates are assumed to have a linear relationship to the dependent variable. These models are useful in a wide variety of disciplines in the physical, biological and social sciences. They are particularly useful in settings where repeated measurements are made on the same statistical units (longitudinal study), or where measurements are made on clusters of related statistical units. Because of their advantage in dealing with missing values, mixed effects models are often preferred over more traditional approaches such as repeated measures ANOVA.
+        <obo:IAO_0000115 xml:lang="en">A linear mixed model is a mixed model containing both fixed effects and random effects and in which factors and covariates are assumed to have a linear relationship to the dependent variable. These models are useful in a wide variety of disciplines in the physical, biological and social sciences. They are particularly useful in settings where repeated measurements are made on the same statistical units (longitudinal study), or where measurements are made on clusters of related statistical units. Because of their advantage in dealing with missing values, mixed effects models are often preferred over more traditional approaches such as repeated measures ANOVA.
 
 Fixed-effects factors are generally considered to be the variables whose values of interest are all represented in the data file.
 
@@ -27406,15 +27529,18 @@ get_Lb_ddf(fm1, lme4::fixef(fm1))</obo:STATO_0000041>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
-        <obo:IAO_0000115>RR-BLUP is a data transformation used in the context of estimating breeding value using a Bayesian ridge regression. It can be obtained from Bayes B procedure by setting pi parameter to zero ( )  and assuming that all the markers have the same variance.</obo:IAO_0000115>
+        <obo:IAO_0000115>RR-BLUP is a data transformation used in the context of estimating breeding value using a Bayesian ridge regression. It can be obtained from Bayes B procedure by setting pi parameter to zero ( ) and assuming that all the markers have the same variance.</obo:IAO_0000115>
         <obo:IAO_0000116>term request by Guillaume Bauchet, cassavabase.org, Cornell University</obo:IAO_0000116>
         <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000118>RR-BLUP</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">ridge regression best linear unbiaised predictor</obo:IAO_0000118>
+        <obo:IAO_0000118>rrBLUP</obo:IAO_0000118>
         <obo:IAO_0000119>Comparison Between Linear and Non-parametric Regression Models for Genome-Enabled Prediction in Wheat
 Paulino Pérez-Rodríguez, Daniel Gianola, Juan Manuel González-Camacho, José Crossa, Yann Manès and Susanne Dreisigacker
 G3: GENES, GENOMES, GENETICS December 1, 2012 vol. 2 no. 12 1595-1605; https://doi.org/10.1534/g3.112.003665</obo:IAO_0000119>
         <obo:STATO_0000032>RRBLUP</obo:STATO_0000032>
         <obo:STATO_0000041></obo:STATO_0000041>
-        <rdfs:label>ridge regression best linear unbiaised predictor</rdfs:label>
+        <rdfs:label>ridge regression best linear unbiased predictor</rdfs:label>
     </owl:Class>
     
 
@@ -27442,8 +27568,9 @@ G3: GENES, GENOMES, GENETICS December 1, 2012 vol. 2 no. 12 1595-1605; https://d
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
-        <obo:IAO_0000115>a data transformation which calculate predictions of breeding values using an animal model and a relationship matrix calculated from the genomic/genetic markers (G Matrix), in constrast to using Pedigree information as in BLUP, also known as ABLUP</obo:IAO_0000115>
+        <obo:IAO_0000115>a data transformation which calculate predictions of breeding values using an animal model and a relationship matrix calculated from the genomic/genetic markers (G Matrix), in constrast to using Pedigree information as in BLUP, also known as ABLUP.</obo:IAO_0000115>
         <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000118>GBLUP</obo:IAO_0000118>
         <obo:IAO_0000119>adapted from:
 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3382275/
 
@@ -27490,11 +27617,12 @@ https://www.rdocumentation.org/packages/pedigree/versions/1.4/topics/gblup</obo:
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">a data transformation which calculate estimates of genomic estimated breeding values (GEBVs) on an animal or plant model utilizing trait-specific marker information.</obo:IAO_0000115>
         <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">trait-specific relationship matrix best linear unbiaised prediction</obo:IAO_0000118>
         <obo:IAO_0000119>from:
 http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0012648</obo:IAO_0000119>
         <obo:STATO_0000032>TABLUP</obo:STATO_0000032>
         <obo:STATO_0000041></obo:STATO_0000041>
-        <rdfs:label>trait-specific relationship matrix best linear unbiaised prediction</rdfs:label>
+        <rdfs:label>trait-specific relationship matrix best linear unbiased prediction</rdfs:label>
     </owl:Class>
     
 
@@ -28960,7 +29088,7 @@ https://businesswales.gov.wales/farmingconnect/posts/genomic-breeding-values</ob
             </owl:Class>
         </rdfs:subClassOf>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
-        <obo:IAO_0000115>In a planned experiment where to covariance (genotype  x environment) can be controlled and held at 0, the heritability is defined as the ratio of the variance of the genotypic variables to the variance of the phenotypic variables.
+        <obo:IAO_0000115>In a planned experiment where the covariance (genotype x environment) can be controlled and held at 0, the heritability is defined as the ratio of the variance of the genotypic variables to the variance of the phenotypic variables.
 
 H2 = Var(G)/Var(P)
 
@@ -30036,6 +30164,7 @@ ftp://tech.obihiro.ac.jp/suzuki/Henderson.pdf</obo:IAO_0000119>
 Completely randomized designs differ from randomized complete block design and should not be confused as in the latter, a blocking variable is first use to assign experimental units to blocks. Then only, the members of each block are then randomly assigned to different treatment groups</obo:IAO_0000115>
         <obo:IAO_0000116>term request by Hanna Cwiek, https://github.com/ISA-tools/stato/issues/61</obo:IAO_0000116>
         <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000118>CRD</obo:IAO_0000118>
         <obo:IAO_0000119>adapted from http://www.stat.yale.edu/Courses/1997-98/101/expdes.htm and from
 A Dictionary of Statistics (3 ed.) , Graham Upton and Ian Cook
 Publisher: Oxford University Press 
@@ -30111,7 +30240,8 @@ https://github.com/ISA-tools/stato/issues/68</obo:IAO_0000116>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/STATO_0000001"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/STATO_0000248"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/STATO_0000248"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -30561,7 +30691,8 @@ roc_auc()</obo:STATO_0000041>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000609">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000039"/>
-        <obo:IAO_0000115 xml:lang="en"></obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A statistic that represents the relative support for competing hypotheses, based on the observed data under an assumed modeling framework.</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="en">hypothesis testing statistic</obo:IAO_0000118>
         <obo:IAO_0000119 xml:lang="en">COKA/SEVCO group</obo:IAO_0000119>
         <rdfs:label xml:lang="en">measure of hypothesis testing</rdfs:label>
     </owl:Class>
@@ -32443,7 +32574,7 @@ Within the Bayesian framework, use the posterior predictive p-value.</obo:IAO_00
     <!-- http://purl.obolibrary.org/obo/STATO_0000702 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000702">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000039"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000609"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115>A statistic that represents the likelihood of a parameter of interest, before accounting for the observed data from the study.</obo:IAO_0000115>
         <obo:IAO_0000116>This term is core to Bayesian statistics, where the focus is on estimation of the parameter of interest (unlike frequentist statistics, where the focus is on the likelihood of producing an estimate given a specific value of the parameter).
@@ -32460,7 +32591,7 @@ The likelihood of the parameter is usually represented as a distribution over al
     <!-- http://purl.obolibrary.org/obo/STATO_0000703 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000703">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000039"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000609"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115>A statistic that represents the likelihood of a parameter of interest, after updating its prior probability with the observed data from the study.</obo:IAO_0000115>
         <obo:IAO_0000116>This term is core to Bayesian statistics, where the focus is on estimation of the parameter of interest (unlike frequentist statistics, where the focus is on the likelihood of producing an estimate given a specific value of the parameter). The prior probability is the likelihood of a parameter of interest from before the study. For calculating the posterior probability of a parameter, the  prior probability is updated using Bayes&apos; Theorem&apos; and the likelihood function.</obo:IAO_0000116>
@@ -33123,6 +33254,522 @@ When a statistic applies to a specific set of data, the specific set of data is 
         <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
         <obo:IAO_0000119>SEVCO</obo:IAO_0000119>
         <rdfs:label>probability distribution parameter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000743 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000743">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000309"/>
+        <rdfs:label xml:lang="en">Hasse diagram</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000744 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000744">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000309"/>
+        <rdfs:label xml:lang="en">randomization diagram</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000745 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000745">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0500000"/>
+        <obo:IAO_0000118>Williams design</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">williams study design</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000746 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000746">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000642"/>
+        <obo:IAO_0000115 xml:lang="en">a column is a matrix with the dimension n x 1</obo:IAO_0000115>
+        <obo:IAO_0000118>column matrix</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">column vector</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">column</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000747 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000747">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000642"/>
+        <obo:IAO_0000115 xml:lang="en">a row is a matrix with the dimension 1 x n</obo:IAO_0000115>
+        <obo:IAO_0000118>row matrix</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">row vector</obo:IAO_0000118>
+        <rdfs:label>row</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000749 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000749">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0500000"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/STATO_0000001"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/STATO_874741c2_28e0_4157_a37d_d6dfc12eb2c1"/>
+                                    <owl:Class>
+                                        <owl:complementOf>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/STATO_25c64764_e086_455d_8cb5_85bfc7fcf311"/>
+                                            </owl:Restriction>
+                                        </owl:complementOf>
+                                    </owl:Class>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/STATO_70257729_c7d0_4c3d_a56c_24abca0de85d"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/STATO_f7d3b178_4941_4065_9a65_c28b377428de"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000116>in the context of field trials, a study design which defines Plots nested within Blocks</obo:IAO_0000116>
+        <rdfs:label xml:lang="en">balanced complete block design</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000750 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000750">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0500000"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/STATO_0000001"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/STATO_874741c2_28e0_4157_a37d_d6dfc12eb2c1"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/STATO_25c64764_e086_455d_8cb5_85bfc7fcf311"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/STATO_70257729_c7d0_4c3d_a56c_24abca0de85d"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/STATO_f7d3b178_4941_4065_9a65_c28b377428de"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000116>Plots nested within Sub-Blocks within (Replicate) Blocks</obo:IAO_0000116>
+        <obo:IAO_0000118>alpha design</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">resolvable incomplete block design</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000751 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000751">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0500000"/>
+        <rdfs:label xml:lang="en">Youden square design</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000752 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000752">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000750"/>
+        <obo:IAO_0000115>the &apos;whole plot factor&apos; is an independent variable declared in a split-plot design and the factor levels of which are &apos;hard to change&apos; and therefore the application of whole plot factor levels is randomized to &apos;main-plots&apos; located in a block.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">whole plot factor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000753 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000753">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000750"/>
+        <rdfs:label xml:lang="en">sub-plot factor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000754 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000754">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000234"/>
+        <obo:IAO_0000118>Error A</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">main plot error</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000755 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000755">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000234"/>
+        <obo:IAO_0000118>Error B</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">sub-plot error</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_08d61588_5788_4209_aae2_1f20c946d5a8 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_08d61588_5788_4209_aae2_1f20c946d5a8">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/STATO_874741c2_28e0_4157_a37d_d6dfc12eb2c1"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">column of plots within a block</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0ca81c32_3b00_4cb9_a9b7_257d7c7e3542 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0ca81c32_3b00_4cb9_a9b7_257d7c7e3542">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000234"/>
+        <rdfs:label xml:lang="en">within-subject error</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_2397b9dc_02af_49b3_a9bd_0d5fa20a3fb9 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_2397b9dc_02af_49b3_a9bd_0d5fa20a3fb9">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/STATO_f7d3b178_4941_4065_9a65_c28b377428de"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/STATO_874741c2_28e0_4157_a37d_d6dfc12eb2c1"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">long row of plots across blocks</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_25c64764_e086_455d_8cb5_85bfc7fcf311 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_25c64764_e086_455d_8cb5_85bfc7fcf311">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <rdfs:label xml:lang="en">replicate role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_3967a149_648d_4973_879d_8c7194aecf2d -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_3967a149_648d_4973_879d_8c7194aecf2d">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/STATO_efec5fd3_f631_4146_9b6c_58aa1bceca75"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">group of rows of plots</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_67694d9d_c943_448f_a575_46a7562e4728 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_67694d9d_c943_448f_a575_46a7562e4728">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/STATO_0000004"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/STATO_0000444"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">main plot</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_70257729_c7d0_4c3d_a56c_24abca0de85d -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_70257729_c7d0_4c3d_a56c_24abca0de85d">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/STATO_874741c2_28e0_4157_a37d_d6dfc12eb2c1"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000404"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000406"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">sub-block</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_848ac4ff_5882_4ecd_9007_e1e56abde866 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_848ac4ff_5882_4ecd_9007_e1e56abde866">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/STATO_08d61588_5788_4209_aae2_1f20c946d5a8"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">group of columns of plots</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_8638a487_13e0_42f0_b2fc_723699aa8353 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_8638a487_13e0_42f0_b2fc_723699aa8353">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0500000"/>
+        <obo:IAO_0000118>CCD</obo:IAO_0000118>
+        <obo:IAO_0000118>criss-cross design</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">strip plot design</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_874741c2_28e0_4157_a37d_d6dfc12eb2c1 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_874741c2_28e0_4157_a37d_d6dfc12eb2c1">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/STATO_8a30c390_cf32_4443_9426_67865d827855"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000404"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000406"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">block</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_8a30c390_cf32_4443_9426_67865d827855 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_8a30c390_cf32_4443_9426_67865d827855">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000404"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000406"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">field</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_a8fee7be_afd8_4b8d_810c_63cc88b16201 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_a8fee7be_afd8_4b8d_810c_63cc88b16201">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:label xml:lang="en">main main plot</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_b4a76cdd_a500_4710_a5f8_285486334437 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_b4a76cdd_a500_4710_a5f8_285486334437">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/STATO_f7d3b178_4941_4065_9a65_c28b377428de"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000404"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000406"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">sub-plot</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_cd7dfa05_8d90_417b_834f_2c5792fac8dc -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_cd7dfa05_8d90_417b_834f_2c5792fac8dc">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000234"/>
+        <obo:IAO_0000118>Error C</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">sub-sub-plot error</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_dc6f02ca_f0ae_484d_944c_8da3c8562b8b -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_dc6f02ca_f0ae_484d_944c_8da3c8562b8b">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000234"/>
+        <rdfs:label xml:lang="en">between-subject error</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_efec5fd3_f631_4146_9b6c_58aa1bceca75 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_efec5fd3_f631_4146_9b6c_58aa1bceca75">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/STATO_874741c2_28e0_4157_a37d_d6dfc12eb2c1"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">row of plots within a block</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_f7d3b178_4941_4065_9a65_c28b377428de -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_f7d3b178_4941_4065_9a65_c28b377428de">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/STATO_874741c2_28e0_4157_a37d_d6dfc12eb2c1"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/STATO_0000162"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/STATO_6906351c_6d05_4fe0_b706_2101d2496a2c"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/STATO_0000265"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000404"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000406"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">plot</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_ff6675e1_a32a_4af3_ad08_9169e3186037 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_ff6675e1_a32a_4af3_ad08_9169e3186037">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/STATO_f7d3b178_4941_4065_9a65_c28b377428de"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/STATO_874741c2_28e0_4157_a37d_d6dfc12eb2c1"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">long column of plots across blocks</rdfs:label>
     </owl:Class>
     
 
@@ -34315,5 +34962,5 @@ This interpretation is *not* the same as an at-all-times relation
 
 
 
-<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
 
